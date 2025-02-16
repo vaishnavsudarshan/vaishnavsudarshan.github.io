@@ -27,7 +27,7 @@ url: "https://vaishnavsudarshan.github.io" # the base hostname & protocol for yo
 github_username:  vaishnavsudarshan
 
 # Build settings
-theme: hacker
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
