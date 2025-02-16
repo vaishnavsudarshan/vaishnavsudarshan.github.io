@@ -1,2 +1,2 @@
 # Index of all articles
-1. [Cellular Respiration](cellular-respiration.md)
+1. [Cellular Respiration](cellular-respiration)
