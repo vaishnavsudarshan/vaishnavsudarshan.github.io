@@ -1,6 +1,8 @@
 # Cellular respiration
 Our cells need energy; this should be obvious. You might think that we get this energy directly from the glucose in our food... and you'd be wrong. 
+
 Glucose definitely holds energy, but it's not in a form that is usable. Cells can only use energy from a molecule called ATP (adenosine triphosphate), which stores short-term energy. It's kind of like a "currency" for energy, and our cells would only accept that type of currency.
+
 Our cells need a way to make ATP from the glucose, which is what a process called *cellular respiration* does.
 
 Cellular respiration has three steps: 

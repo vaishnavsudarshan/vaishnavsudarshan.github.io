@@ -1,0 +1,310 @@
+---
+title: "Limit riLmOtOpU (Limit For Monkeys)"
+author: "Vaishnav Sudarshan"
+date: "2025-07-03"
+categories: [limit, conlangs]
+image: "LimitFlag.png"
+---
+## Background
+I first heard of [constructed languages](https://en.wikipedia.org/wiki/Constructed_language), or _conlangs_, when I heard of [Esperanto](https://en.wikipedia.org/wiki/Esperanto). I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of [Toki Pona](https://en.wikipedia.org/wiki/Toki_Pona), which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary. 
+
+> Limit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs. 
+
+## Pronunciation and Alphabet
+
+*Limit* is written in Roman characters (for now, that is; we will introduce the real writing system later), but there are some rules to how the script works.  
+
+Consonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is very phonetic; the pronunciation is exactly what is written. There are no silent letters.  
+
+Examples for how to write and pronounce vowels:   
+1. A short "O" like in the word "dog" would be lowercase.  
+2. A long "A" like in the word "cake" would be uppercase.  
+
+::: {.callout-note}
+A quick note: The letter "U" (capital, which means long) does not contain a "y" sound in its pronunciation. It sounds like the o's in the word "food" rather than the u in the word "university".  
+There are some vowel and consonant sounds, of course, that cannot be produced with just the Roman alphabet. Therefore, the Limit alphabet contains some extra characters as well.  
+:::  
+
+### Extra vowel sounds
+*  "%" sounds like “oo” in the word "book".  
+*   "@" sounds like "ow" like in the word "now".  
+*  "α" sounds like "ah" like in the word "drama"   
+*   “&” sounds like “oi” like in the word “boy”.  
+*  “\*” sounds like “er” like in the word “singer”.  
+*   “^” sounds like “on” like in the word “bon” in French (used for foreign loanwords).  
+
+
+### Extra consonant sounds  
+*  "\#" sounds like "zh", like in the s in "measure".  
+*  "\~" sounds like "th", like in the word "think".  
+*  "β" sounds like the n in "song".  
+*   "\!" sounds like "sh", like in the word "shook".  
+
+### Other adjustments to the alphabet  
+* To make the “ar” or “or” sound, take “α” or “O” and add “\*”.   
+* The letter "c" is removed as its sound can be made from either "k" or "s".  
+* The letter "g" only can sound like the g in "gray", and NOT sound like a j, like in "giraffe".  
+* The letter “j” is removed as any sound with a “j” can be made from “d\#”.  
+* The letter "q" is removed as any "qu" sound can be made with "kw" instead. "u", however, is still perfectly safe as it is important for various vowel sounds.  
+* The letter "x" is removed as any sound with an "x" can be made from either "ks" or "z".  
+* Slashes indicate that some specific words are grouped together.  
+
+One last thing: Limit is pronounced in either an Indian or an American accent, except with the new pronunciation rules now given.
+
+## Pronouns and Verbs
+
+If you have a pronoun and a verb, you have a simple sentence, so let us start here in our journey to learn real Limit words. There is no gender or verb conjugation for each pronoun in Limit, so this should be simple.   
+
+### Pronouns 
+
+| English | Limit |
+| ------- | ------|
+| I | LI |   
+| You | dI |
+| He/She/It | krI |
+| We | LId |
+| You (plural) | dId |   
+| They | krId | 
+  
+To make any of these pronouns formal, just add the prefix "sU".  
+To make any of these pronouns insulting, just add the prefix “rU”.  
+If you are talking directly to someone, add the suffix “\*” or “p\*” for "dId" and "dI" respectively.  
+
+### Verbs  
+Present tense: Suffix "UL"   
+Past tense: Suffix "Uz"   
+Future tense: Suffix "Uk"   
+To make something infinitive, remove the Uz/UL/Uk and add the suffix "Up".   
+To negate a verb, add the suffix “O\#U” or “\#U” (depending on if it ends in a vowel or consonant) at the very end of the word.  
+
+#### Example 
+* To eat is "brikUp".   
+* "I did not eat" would be "LI brikUzO\#U".
+
+## Syntax
+
+Here are some rules for sentence structure:  
+
+* The order of a declarative sentence is Subject Object Verb.  
+* Adjectives always come after nouns, attached by a slash, without spaces.   
+* Articles come after nouns as well, also attached by a slash without spaces.  
+* If there is an article and an adjective, the adjective comes after the article, and the adjective and the article are combined with slashes as well.  
+* Adverbs come before the verb or adjective that they modify, with a backslash with no spaces. If they modify an adjective, then it goes before the noun.  
+* There is no distinction between proper and common nouns.  
+* Prepositions work the same way as in English.  
+* Objects, like in English, do not have to just be nouns but also any verb phrase that acts as a noun. Predicate adjectives and predicate nominatives also count as objects.   
+* Prepositional phrases (like “in the house”) count as objects as well.  
+* Indirect objects come right before direct objects.  
+* Indirect objects have the suffix “b", or “Ob” if the word ends in a consonant.  
+* Predicate adjectives would actually be adverbs, as they modify the word “bLIvUp”.  
+Examples:  
+Write "I like to eat" in Limit syntax and spelling.  
+I tU Et LIk  
+Write "I give you a green box" in Limit syntax and spelling.  
+I yUhU boks/A/grEn giv
+
+## Inflections
+
+To inflect a word ending in O, make the final consonant of the inflection thing voiceless. For example, the plural of “riLmO” (monkey) will be “riLmOt” instead of “riLmOd” (riLmOd is not a real word for that reason). And, the possessive of “riLmO” will be “riLmOf” instead of “riLmOv”. Likewise, you’d say “riLmOkE” instead of “riLmOgE”, “riLmOpU” instead of “riLmObU”, and “riLmOsA” instead of “riLmOzA”. 
+
+## Punctuation
+
+Commas are written as “\~”.   
+Periods are written as “-”.  
+Quotation marks are written as “+” on either end of the quote.   
+Question marks are just a word, that being “LE”.
+
+## Possession
+
+### Possessive pronouns/adjectives
+| English | Limit |
+|---------|-------|
+| My/Mine | “LIv” |  
+| Your/Yours | “krIv” |  
+| His/Her/Its | “dIv”   |
+| Our/Ours | “LIdOv”   |
+| Your/Yours (plural) | “krIdOv” |  
+| Their/Theirs | “dIdOv”   |
+
+How to use a possessive noun for a person (for example, “That is Bob’s”):  
+Add “Ov” to the end of their name if it ends in a consonant, otherwise add “v”.  
+If the noun it modifies is plural, then add “Od” or “d”.  
+Examples:  
+My books are big \= “zO\*pOd/LIvOd Lib blivUL”  
+The world is mine \= “h%d/vU LIv blivUL”
+
+## Adjectives
+
+### Articles  
+The (singular): vU  
+The (plural): vUd  
+Indefinite articles are implied if there is no article.  
+Remember, the articles go after the noun and before another adjective, connected with a slash.  
+
+### Demonstratives  
+This: \#%t  
+That: \#at  
+Those: \#atOd  
+These: \#%tOd  
+Demonstratives go after the noun and before another adjective, connected with a slash, just like articles. If they are pronouns, then just treat them as pronouns instead.  
+
+### Plurals  
+Adjectives have to agree with their noun in number. If the noun is singular, the adjectives will also be singular, and if the noun is plural, the adjectives will also be plural. To make a noun or an adjective plural, add a “d” if it ends in a vowel, and add an “Od” if it ends in a consonant.  
+Adjective phrases also go after the noun, and just the first word of the adjective phrase will be combined with a slash to the noun.  
+There will also be a slash after the last word, if the adjective phrase is more than a single word.
+
+## Adverbs
+
+To turn an adjective into an adverb, add the prefix “.@”.  
+This is analogous to adding an “ly” at the end in English.  
+Adverbs go right before the adjective, verb, or adverb that they modify.   
+Example:  
+The word for “real” is “gOhO”, which means the word for “really” is “.@gOhO”.  
+I am really good \= “LI .@gOhO\\LimitO\#U blivUL”
+
+## Numbers
+
+Base 10 is used, like normal.   
+One shorthand is implemented; whenever there is a 1 followed by a 0, it is written as θ.   
+Numbers are written as normal Arabic numerals, but obviously they are said differently.  
+0: “fA”  
+1: “hα”  
+2: “rO”  
+3: “d\#U”  
+4: “yA”  
+5: “.a”  
+6: “brU”  
+7: “,O”  
+8: “we”  
+9: “gI”  
+To get more numbers, you do the following:  
+Write each digit in the bigger number as the sum of each digit times a power of 10\. For example, 243 would be 2\*10^2+4\*10^1+3\*10^0.   
+You may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is “$”, pronounced “sigmα”. Fun fact: this word also means “and”.   
+You would write the each place value from highest exponent to lowest.   
+Instead of saying plus, you would just combine each term with a slash.  
+Units digits do not need to be written as a$0, just a.   
+Back to the example of 243, in Limit you would say this as:  
+2$2/4$1/3, and pronounce this as rO$rO/yA$hα/jU, and remember that $ is pronounced as sigmα.   
+For negative numbers, add the suffix “yO”.  
+For ordinal numbers, add the suffix “hO”, after the “yO” if it is there.   
+For fractions, just use the postposition for “in”, which is the suffix “krA” or “OkrA”. There will be a space after that.   
+You can also just list each digit, but then you must indicate the decimal point when applicable, which is pronounced as “%nd” and is written as “\*”.  
+Example:   
+You would say “31.4th” as “jU$hα/hα/yA$hαyOhO”.
+
+## Questions
+
+Just say the equivalent declarative sentence, then add “LE-” (which means question mark) to the end.  
+Phrasing Examples:  
+“Which one do you like?” \-\> “You one/which like LE-”  
+“How are you?” \-\> “You how are LE-”  
+Here’re the interrogative words:  
+What: 
+
+## Commands
+
+State the equivalent in a future tense declarative sentence, and speak in 2nd person. Use the word for please, “hok”, at the end of the sentence, after the verb.  
+Phrasing Examples:  
+“Go to bed.” \-\> “You will to bed go hok-”  
+Also, instead of saying “hok”, you can say “bOLOdOwO\#O”, which is short for “bU LI dI wopLUkO\#U”, which means something along the lines of “or I will kill you”.  
+Fun fact: the word “hok” is actually a loanword from Proto-Zorbbbb.
+
+## Prepositions
+
+First, be sure to note that Limit uses a suffix for prepositions (so they are actually postpositions) like “in”, “at”, “during”, “of”, etc; this means anything that gives the position or time, not something that is being headed towards. This suffix is “gE”, or “OgE”, depending on if the word ends in a vowel or consonant.   
+There is also a suffix for something you are heading to. This includes words such as “before”, “to”, or “for”. The suffix is “bU”, or “ObU”, depending on if the word ends in a vowel or consonant.  
+Finally, for something you are coming from, such as “from”, “after”, or “past”, the suffix will be either “zA” or “OzA”.
+
+## General Rule of Affixes
+
+If the word ends in a consonant, and the suffix starts with a consonant, then put an “O” between them.  
+If the word ends in a vowel and the suffix starts with a consonant, or the other way around, then there is no need for an extra “O”.  
+This same intuition is to be applied to prefixes.
+
+## Conjunctions
+
+The conjunctions (subordinating and coordinating, and also including relative pronouns) are:  
+And: “$”  
+Or: “bU”  
+But: “pA”  
+So: “skibidE”  
+Because: “nItrE”  
+Although: “OkA”  
+If: “\*m”  
+Note for the next two: If these account for plural antecedents, then add a “d”.  
+Who/That/Which (as a subordinate): “Ligmα”   
+Whose: “Ligmαv”
+
+## Phrases and Clauses
+
+Since phrases cannot go on their own, they will just be treated the same way they act as. For example, the adverb phrase “with great speed” will go right before the verb. Similarly, the noun phrase, “the person who won” would just be treated as a noun.   
+The same works for dependent clauses.  
+Independent clauses will be connected by a coordinating conjunction, but treated as a separate sentence.  
+A lot of this is just a review of English, as it and Limit work the same way, but alright.
+
+## Abbreviations
+
+Just like how there’s “ts pmo” for \[censored\], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO\#U becomes bOLOdOwO\#O. Also, negation affixes are important enough to count as their own word, so just put \#O at the end if it is negated, like in this one.
+
+## Comparatives and Superlatives
+
+How you would phrase this:  
+\[Subject\] \[Person, indirect form\] \[Attribute, locative form\] \[Win/Lose\].   
+The \[Person, indirect form\] can be removed if the sentence is superlative.  
+Note that the indirect form and the locative form both have a postpositional ending, so it may be confusing.  
+The attribute must be a verb. Nouns, adjectives, and adverbs must be reworded.
+
+## VOCABULARY (in progress)
+
+Alright, now that you know all the grammar rules, let’s get into the vocabulary, so you can actually speak in Limit. There aren’t that many vocabulary words, instead you must take the basic vocabulary words and combine them. To negate a word (to make it opposite, basically) add the suffix “O\#U” or “\#U”, which works for verbs, adjectives, nouns, etc. The core vocabulary is mainly for neutral or negative connotation, and to get positive connotation, just negate it.
+
+**Nouns:**  
+Person: nUvak  
+Enemy: dre.O  
+Monkey: riLmO  
+Book: zO\*p  
+World: h%d  
+Non-primate organism: tEkU  
+Tool: dOmα\*  
+Name: Eskα  
+Age: derUm  
+Evilness: Limit  
+Time: dUrin  
+Motion: cU  
+Size: pLevI  
+Color: snib  
+Goal: wOksO  
+X-axis: dAb  
+Y-axis: vEb  
+Z-axis: LUb  
+Nature: nuk  
+Quantity: LodO  
+Food: gla\*nE  
+Set: rimU
+
+**Adjectives:**  
+Evil: Limit  
+Small: pLevI  
+Slow: cU  
+Incorrect: kIf  
+Old: derUm  
+Ugly: t\!Untab  
+Cold: mEkO  
+Unskilled:  
+Late: dUrin  
+Yucky: gla\*nE  
+Black: snib  
+Blue: mraflet  
+Yellow: krUgnip  
+Red: yundrask  
+Liquid: vUgis
+
+**Verbs (infinitive):**  
+Hate: netAbUp  
+Go: drekInUp  
+Use:   
+Make: wopLUp  
+Not know:  
+Steal: prIksUp  
+Want:   
+Lose: 

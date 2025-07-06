@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/MathClub-Week1/index.html",
+    "href": "posts/MathClub-Week1/index.html",
+    "title": "Linear Algebra",
+    "section": "",
+    "text": "Right now, you might be wondering: “Sir, what is this? I learned this in 4th grade! Isn’t linear algebra just graphing lines on the coordinate plane and solving equations?” NO! Linear algebra has almost nothing to do with that, at least in the beginning. Now, let’s get into actual linear algebra.\n\n\nVectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n\\]\nwould represent a vector whose components are 1 unit in the \\(x\\) direction, and 2 units in the \\(y\\) direction: \nIn other words, it’s about \\(2.236\\) units long and points about \\(63.435\\) degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors \\(A\\) and \\(B\\) as first moving along \\(A\\), then from that ending point moving along \\(B\\). The original starting point to the new ending point will be the resultant vector. Similarly, you can compute \\(A - B\\) by scaling \\(B\\) by \\(-1\\). In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n3 \\\\\n4 \\\\\n\\end{pmatrix}\n\\]\nwill be\n\\[\n\\begin{pmatrix}\n4 \\\\\n6 \\\\\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "posts/MathClub-Week1/index.html#vectors",
+    "href": "posts/MathClub-Week1/index.html#vectors",
+    "title": "Linear Algebra",
+    "section": "",
+    "text": "Vectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n\\]\nwould represent a vector whose components are 1 unit in the \\(x\\) direction, and 2 units in the \\(y\\) direction: \nIn other words, it’s about \\(2.236\\) units long and points about \\(63.435\\) degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors \\(A\\) and \\(B\\) as first moving along \\(A\\), then from that ending point moving along \\(B\\). The original starting point to the new ending point will be the resultant vector. Similarly, you can compute \\(A - B\\) by scaling \\(B\\) by \\(-1\\). In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n3 \\\\\n4 \\\\\n\\end{pmatrix}\n\\]\nwill be\n\\[\n\\begin{pmatrix}\n4 \\\\\n6 \\\\\n\\end{pmatrix}\n\\]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLimit riLmOtOpU (Limit For Monkeys)\n\n\n\nlimit\n\nconlangs\n\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 22, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is a blog about math, linguistics and AI."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html",
+    "href": "posts/Limit-TheLanguage/index.html",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "",
+    "text": "I first heard of constructed languages, or conlangs, when I heard of Esperanto. I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of Toki Pona, which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary.\n\nLimit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#background",
+    "href": "posts/Limit-TheLanguage/index.html#background",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "",
+    "text": "I first heard of constructed languages, or conlangs, when I heard of Esperanto. I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of Toki Pona, which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary.\n\nLimit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#pronunciation-and-alphabet",
+    "href": "posts/Limit-TheLanguage/index.html#pronunciation-and-alphabet",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Pronunciation and Alphabet",
+    "text": "Pronunciation and Alphabet\nLimit is written in Roman characters (for now, that is; we will introduce the real writing system later), but there are some rules to how the script works.\nConsonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is very phonetic; the pronunciation is exactly what is written. There are no silent letters.\nExamples for how to write and pronounce vowels:\n1. A short “O” like in the word “dog” would be lowercase.\n2. A long “A” like in the word “cake” would be uppercase.\n\n\n\n\n\n\nNote\n\n\n\nA quick note: The letter “U” (capital, which means long) does not contain a “y” sound in its pronunciation. It sounds like the o’s in the word “food” rather than the u in the word “university”.\nThere are some vowel and consonant sounds, of course, that cannot be produced with just the Roman alphabet. Therefore, the Limit alphabet contains some extra characters as well.\n\n\n\nExtra vowel sounds\n\n“%” sounds like “oo” in the word “book”.\n\n“@” sounds like “ow” like in the word “now”.\n\n“α” sounds like “ah” like in the word “drama”\n\n“&” sounds like “oi” like in the word “boy”.\n\n“*” sounds like “er” like in the word “singer”.\n\n“^” sounds like “on” like in the word “bon” in French (used for foreign loanwords).\n\n\n\nExtra consonant sounds\n\n“#” sounds like “zh”, like in the s in “measure”.\n\n“~” sounds like “th”, like in the word “think”.\n\n“β” sounds like the n in “song”.\n\n“!” sounds like “sh”, like in the word “shook”.\n\n\n\nOther adjustments to the alphabet\n\nTo make the “ar” or “or” sound, take “α” or “O” and add “*”.\n\nThe letter “c” is removed as its sound can be made from either “k” or “s”.\n\nThe letter “g” only can sound like the g in “gray”, and NOT sound like a j, like in “giraffe”.\n\nThe letter “j” is removed as any sound with a “j” can be made from “d#”.\n\nThe letter “q” is removed as any “qu” sound can be made with “kw” instead. “u”, however, is still perfectly safe as it is important for various vowel sounds.\n\nThe letter “x” is removed as any sound with an “x” can be made from either “ks” or “z”.\n\nSlashes indicate that some specific words are grouped together.\n\nOne last thing: Limit is pronounced in either an Indian or an American accent, except with the new pronunciation rules now given."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#pronouns-and-verbs",
+    "href": "posts/Limit-TheLanguage/index.html#pronouns-and-verbs",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Pronouns and Verbs",
+    "text": "Pronouns and Verbs\nIf you have a pronoun and a verb, you have a simple sentence, so let us start here in our journey to learn real Limit words. There is no gender or verb conjugation for each pronoun in Limit, so this should be simple.\n\nPronouns\n\n\n\nEnglish\nLimit\n\n\n\n\nI\nLI\n\n\nYou\ndI\n\n\nHe/She/It\nkrI\n\n\nWe\nLId\n\n\nYou (plural)\ndId\n\n\nThey\nkrId\n\n\n\nTo make any of these pronouns formal, just add the prefix “sU”.\nTo make any of these pronouns insulting, just add the prefix “rU”.\nIf you are talking directly to someone, add the suffix “*” or “p*” for “dId” and “dI” respectively.\n\n\nVerbs\nPresent tense: Suffix “UL”\nPast tense: Suffix “Uz”\nFuture tense: Suffix “Uk”\nTo make something infinitive, remove the Uz/UL/Uk and add the suffix “Up”.\nTo negate a verb, add the suffix “O#U” or “#U” (depending on if it ends in a vowel or consonant) at the very end of the word.\n\nExample\n\nTo eat is “brikUp”.\n\n“I did not eat” would be “LI brikUzO#U”."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#syntax",
+    "href": "posts/Limit-TheLanguage/index.html#syntax",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Syntax",
+    "text": "Syntax\nHere are some rules for sentence structure:\n\nThe order of a declarative sentence is Subject Object Verb.\n\nAdjectives always come after nouns, attached by a slash, without spaces.\n\nArticles come after nouns as well, also attached by a slash without spaces.\n\nIf there is an article and an adjective, the adjective comes after the article, and the adjective and the article are combined with slashes as well.\n\nAdverbs come before the verb or adjective that they modify, with a backslash with no spaces. If they modify an adjective, then it goes before the noun.\n\nThere is no distinction between proper and common nouns.\n\nPrepositions work the same way as in English.\n\nObjects, like in English, do not have to just be nouns but also any verb phrase that acts as a noun. Predicate adjectives and predicate nominatives also count as objects.\n\nPrepositional phrases (like “in the house”) count as objects as well.\n\nIndirect objects come right before direct objects.\n\nIndirect objects have the suffix “b”, or “Ob” if the word ends in a consonant.\n\nPredicate adjectives would actually be adverbs, as they modify the word “bLIvUp”.\nExamples:\nWrite “I like to eat” in Limit syntax and spelling.\nI tU Et LIk\nWrite “I give you a green box” in Limit syntax and spelling.\nI yUhU boks/A/grEn giv"
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#inflections",
+    "href": "posts/Limit-TheLanguage/index.html#inflections",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Inflections",
+    "text": "Inflections\nTo inflect a word ending in O, make the final consonant of the inflection thing voiceless. For example, the plural of “riLmO” (monkey) will be “riLmOt” instead of “riLmOd” (riLmOd is not a real word for that reason). And, the possessive of “riLmO” will be “riLmOf” instead of “riLmOv”. Likewise, you’d say “riLmOkE” instead of “riLmOgE”, “riLmOpU” instead of “riLmObU”, and “riLmOsA” instead of “riLmOzA”."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#punctuation",
+    "href": "posts/Limit-TheLanguage/index.html#punctuation",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Punctuation",
+    "text": "Punctuation\nCommas are written as “~”.\nPeriods are written as “-”.\nQuotation marks are written as “+” on either end of the quote.\nQuestion marks are just a word, that being “LE”."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#possession",
+    "href": "posts/Limit-TheLanguage/index.html#possession",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Possession",
+    "text": "Possession\n\nPossessive pronouns/adjectives\n\n\n\nEnglish\nLimit\n\n\n\n\nMy/Mine\n“LIv”\n\n\nYour/Yours\n“krIv”\n\n\nHis/Her/Its\n“dIv”\n\n\nOur/Ours\n“LIdOv”\n\n\nYour/Yours (plural)\n“krIdOv”\n\n\nTheir/Theirs\n“dIdOv”\n\n\n\nHow to use a possessive noun for a person (for example, “That is Bob’s”):\nAdd “Ov” to the end of their name if it ends in a consonant, otherwise add “v”.\nIf the noun it modifies is plural, then add “Od” or “d”.\nExamples:\nMy books are big = “zO*pOd/LIvOd Lib blivUL”\nThe world is mine = “h%d/vU LIv blivUL”"
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#adjectives",
+    "href": "posts/Limit-TheLanguage/index.html#adjectives",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Adjectives",
+    "text": "Adjectives\n\nArticles\nThe (singular): vU\nThe (plural): vUd\nIndefinite articles are implied if there is no article.\nRemember, the articles go after the noun and before another adjective, connected with a slash.\n\n\nDemonstratives\nThis: #%t\nThat: #at\nThose: #atOd\nThese: #%tOd\nDemonstratives go after the noun and before another adjective, connected with a slash, just like articles. If they are pronouns, then just treat them as pronouns instead.\n\n\nPlurals\nAdjectives have to agree with their noun in number. If the noun is singular, the adjectives will also be singular, and if the noun is plural, the adjectives will also be plural. To make a noun or an adjective plural, add a “d” if it ends in a vowel, and add an “Od” if it ends in a consonant.\nAdjective phrases also go after the noun, and just the first word of the adjective phrase will be combined with a slash to the noun.\nThere will also be a slash after the last word, if the adjective phrase is more than a single word."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#adverbs",
+    "href": "posts/Limit-TheLanguage/index.html#adverbs",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Adverbs",
+    "text": "Adverbs\nTo turn an adjective into an adverb, add the prefix “.@”.\nThis is analogous to adding an “ly” at the end in English.\nAdverbs go right before the adjective, verb, or adverb that they modify.\nExample:\nThe word for “real” is “gOhO”, which means the word for “really” is “.@gOhO”.\nI am really good = “LI .@gOhO\\LimitO#U blivUL”"
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#numbers",
+    "href": "posts/Limit-TheLanguage/index.html#numbers",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Numbers",
+    "text": "Numbers\nBase 10 is used, like normal.\nOne shorthand is implemented; whenever there is a 1 followed by a 0, it is written as θ.\nNumbers are written as normal Arabic numerals, but obviously they are said differently.\n0: “fA”\n1: “hα”\n2: “rO”\n3: “d#U”\n4: “yA”\n5: “.a”\n6: “brU”\n7: “,O”\n8: “we”\n9: “gI”\nTo get more numbers, you do the following:\nWrite each digit in the bigger number as the sum of each digit times a power of 10. For example, 243 would be 2*102+4*101+3*10^0.\nYou may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is “$”, pronounced “sigmα”. Fun fact: this word also means “and”.\nYou would write the each place value from highest exponent to lowest.\nInstead of saying plus, you would just combine each term with a slash.\nUnits digits do not need to be written as a$0, just a.\nBack to the example of 243, in Limit you would say this as:\n2$2/4\\(1/3, and pronounce this as rO\\)rO/yA$hα/jU, and remember that $ is pronounced as sigmα.\nFor negative numbers, add the suffix “yO”.\nFor ordinal numbers, add the suffix “hO”, after the “yO” if it is there.\nFor fractions, just use the postposition for “in”, which is the suffix “krA” or “OkrA”. There will be a space after that.\nYou can also just list each digit, but then you must indicate the decimal point when applicable, which is pronounced as “%nd” and is written as “*”.\nExample:\nYou would say “31.4th” as “jU\\(hα/hα/yA\\)hαyOhO”."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#questions",
+    "href": "posts/Limit-TheLanguage/index.html#questions",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Questions",
+    "text": "Questions\nJust say the equivalent declarative sentence, then add “LE-” (which means question mark) to the end.\nPhrasing Examples:\n“Which one do you like?” -&gt; “You one/which like LE-”\n“How are you?” -&gt; “You how are LE-”\nHere’re the interrogative words:\nWhat:"
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#commands",
+    "href": "posts/Limit-TheLanguage/index.html#commands",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Commands",
+    "text": "Commands\nState the equivalent in a future tense declarative sentence, and speak in 2nd person. Use the word for please, “hok”, at the end of the sentence, after the verb.\nPhrasing Examples:\n“Go to bed.” -&gt; “You will to bed go hok-”\nAlso, instead of saying “hok”, you can say “bOLOdOwO#O”, which is short for “bU LI dI wopLUkO#U”, which means something along the lines of “or I will kill you”.\nFun fact: the word “hok” is actually a loanword from Proto-Zorbbbb."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#prepositions",
+    "href": "posts/Limit-TheLanguage/index.html#prepositions",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Prepositions",
+    "text": "Prepositions\nFirst, be sure to note that Limit uses a suffix for prepositions (so they are actually postpositions) like “in”, “at”, “during”, “of”, etc; this means anything that gives the position or time, not something that is being headed towards. This suffix is “gE”, or “OgE”, depending on if the word ends in a vowel or consonant.\nThere is also a suffix for something you are heading to. This includes words such as “before”, “to”, or “for”. The suffix is “bU”, or “ObU”, depending on if the word ends in a vowel or consonant.\nFinally, for something you are coming from, such as “from”, “after”, or “past”, the suffix will be either “zA” or “OzA”."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#general-rule-of-affixes",
+    "href": "posts/Limit-TheLanguage/index.html#general-rule-of-affixes",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "General Rule of Affixes",
+    "text": "General Rule of Affixes\nIf the word ends in a consonant, and the suffix starts with a consonant, then put an “O” between them.\nIf the word ends in a vowel and the suffix starts with a consonant, or the other way around, then there is no need for an extra “O”.\nThis same intuition is to be applied to prefixes."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#conjunctions",
+    "href": "posts/Limit-TheLanguage/index.html#conjunctions",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Conjunctions",
+    "text": "Conjunctions\nThe conjunctions (subordinating and coordinating, and also including relative pronouns) are:\nAnd: “$”\nOr: “bU”\nBut: “pA”\nSo: “skibidE”\nBecause: “nItrE”\nAlthough: “OkA”\nIf: “*m”\nNote for the next two: If these account for plural antecedents, then add a “d”.\nWho/That/Which (as a subordinate): “Ligmα”\nWhose: “Ligmαv”"
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#phrases-and-clauses",
+    "href": "posts/Limit-TheLanguage/index.html#phrases-and-clauses",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Phrases and Clauses",
+    "text": "Phrases and Clauses\nSince phrases cannot go on their own, they will just be treated the same way they act as. For example, the adverb phrase “with great speed” will go right before the verb. Similarly, the noun phrase, “the person who won” would just be treated as a noun.\nThe same works for dependent clauses.\nIndependent clauses will be connected by a coordinating conjunction, but treated as a separate sentence.\nA lot of this is just a review of English, as it and Limit work the same way, but alright."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#abbreviations",
+    "href": "posts/Limit-TheLanguage/index.html#abbreviations",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Abbreviations",
+    "text": "Abbreviations\nJust like how there’s “ts pmo” for [censored], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO#U becomes bOLOdOwO#O. Also, negation affixes are important enough to count as their own word, so just put #O at the end if it is negated, like in this one."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#comparatives-and-superlatives",
+    "href": "posts/Limit-TheLanguage/index.html#comparatives-and-superlatives",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "Comparatives and Superlatives",
+    "text": "Comparatives and Superlatives\nHow you would phrase this:\n[Subject] [Person, indirect form] [Attribute, locative form] [Win/Lose].\nThe [Person, indirect form] can be removed if the sentence is superlative.\nNote that the indirect form and the locative form both have a postpositional ending, so it may be confusing.\nThe attribute must be a verb. Nouns, adjectives, and adverbs must be reworded."
+  },
+  {
+    "objectID": "posts/Limit-TheLanguage/index.html#vocabulary-in-progress",
+    "href": "posts/Limit-TheLanguage/index.html#vocabulary-in-progress",
+    "title": "Limit riLmOtOpU (Limit For Monkeys)",
+    "section": "VOCABULARY (in progress)",
+    "text": "VOCABULARY (in progress)\nAlright, now that you know all the grammar rules, let’s get into the vocabulary, so you can actually speak in Limit. There aren’t that many vocabulary words, instead you must take the basic vocabulary words and combine them. To negate a word (to make it opposite, basically) add the suffix “O#U” or “#U”, which works for verbs, adjectives, nouns, etc. The core vocabulary is mainly for neutral or negative connotation, and to get positive connotation, just negate it.\nNouns:\nPerson: nUvak\nEnemy: dre.O\nMonkey: riLmO\nBook: zO*p\nWorld: h%d\nNon-primate organism: tEkU\nTool: dOmα*\nName: Eskα\nAge: derUm\nEvilness: Limit\nTime: dUrin\nMotion: cU\nSize: pLevI\nColor: snib\nGoal: wOksO\nX-axis: dAb\nY-axis: vEb\nZ-axis: LUb\nNature: nuk\nQuantity: LodO\nFood: gla*nE\nSet: rimU\nAdjectives:\nEvil: Limit\nSmall: pLevI\nSlow: cU\nIncorrect: kIf\nOld: derUm\nUgly: t!Untab\nCold: mEkO\nUnskilled:\nLate: dUrin\nYucky: gla*nE\nBlack: snib\nBlue: mraflet\nYellow: krUgnip\nRed: yundrask\nLiquid: vUgis\nVerbs (infinitive):\nHate: netAbUp\nGo: drekInUp\nUse:\nMake: wopLUp\nNot know:\nSteal: prIksUp\nWant:\nLose:"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  }
+]
