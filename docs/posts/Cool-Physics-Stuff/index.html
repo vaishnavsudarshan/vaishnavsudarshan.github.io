@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-07-01">
 
-<title>Math Club Notes – Blog</title>
+<title>index – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -137,35 +106,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Math Club Notes</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Vaishnav Sudarshan </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">July 1, 2025</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
@@ -176,40 +117,7 @@ window.Quarto = {
 
 
 
-<section id="linear-algebra" class="level1">
-<h1>Linear Algebra</h1>
-<p>Right now, you might be wondering: “Sir, what is this? I learned this in 4th grade! Isn’t linear algebra just graphing lines on the coordinate plane and solving equations?” NO! Linear algebra has almost nothing to do with that, at least in the beginning. Now, let’s get into actual linear algebra.</p>
-<section id="vectors" class="level2">
-<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
-<p>Vectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector <span class="math display">\[
-\begin{pmatrix}
-1 \\
-2 \\
-\end{pmatrix}
-\]</span></p>
-<p>would represent a vector whose components are 1 unit in the <span class="math inline">\(x\)</span> direction, and 2 units in the <span class="math inline">\(y\)</span> direction: <img src="fig1.png" class="img-fluid quarto-figure quarto-figure-right" style="width:50.0%" alt="A vector representing a point (1,2)."></p>
-<p>In other words, it’s about <span class="math inline">\(2.236\)</span> units long and points about <span class="math inline">\(63.435\)</span> degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> as first moving along <span class="math inline">\(A\)</span>, then from that ending point moving along <span class="math inline">\(B\)</span>. The original starting point to the new ending point will be the resultant vector. Similarly, you can compute <span class="math inline">\(A - B\)</span> by scaling <span class="math inline">\(B\)</span> by <span class="math inline">\(-1\)</span>. In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, <span class="math display">\[
-\begin{pmatrix}
-1 \\
-2 \\
-\end{pmatrix}
-+
-\begin{pmatrix}
-3 \\
-4 \\
-\end{pmatrix}
-\]</span></p>
-<p>will be</p>
-<p><span class="math display">\[
-\begin{pmatrix}
-4 \\
-6 \\
-\end{pmatrix}
-\]</span></p>
 
-
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

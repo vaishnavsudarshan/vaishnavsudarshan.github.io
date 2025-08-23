@@ -1,3 +1,9 @@
+---
+title: "Math Club Notes"
+author: "Vaishnav Sudarshan"
+date: "2025-07-01"
+---
+
 # Linear Algebra
 Right now, you might be wondering: "Sir, what is this? I learned this in 4th grade! Isn't linear algebra just graphing lines on the coordinate plane and solving equations?"
 NO! Linear algebra has almost nothing to do with that, at least in the beginning. Now, let's get into actual linear algebra.

@@ -35,10 +35,10 @@ There are some vowel and consonant sounds, of course, that cannot be produced wi
 
 
 ### Extra consonant sounds  
-*  "\#" sounds like "zh", like in the s in "measure".  
+*  "#" sounds like "zh", like in the s in "measure".  
 *  "\~" sounds like "th", like in the word "think".  
 *  "β" sounds like the n in "song".  
-*   "\!" sounds like "sh", like in the word "shook".  
+*   "!" sounds like "sh", like in the word "shook".  
 
 ### Other adjustments to the alphabet  
 * To make the “ar” or “or” sound, take “α” or “O” and add “\*”.   
@@ -65,9 +65,9 @@ If you have a pronoun and a verb, you have a simple sentence, so let us start he
 | We | LId |
 | You (plural) | dId |   
 | They | krId | 
-  
-To make any of these pronouns formal, just add the prefix "sU".  
-To make any of these pronouns insulting, just add the prefix “rU”.  
+   
+To make any of these pronouns formal, just add the prefix "yU".  
+To make any of these pronouns insulting, just add the prefix “yoL”. 
 If you are talking directly to someone, add the suffix “\*” or “p\*” for "dId" and "dI" respectively.  
 
 ### Verbs  
@@ -142,10 +142,10 @@ Indefinite articles are implied if there is no article.
 Remember, the articles go after the noun and before another adjective, connected with a slash.  
 
 ### Demonstratives  
-This: \#%t  
-That: \#at  
-Those: \#atOd  
-These: \#%tOd  
+This: #%t  
+That: #at  
+Those: #atOd  
+These: #%tOd  
 Demonstratives go after the noun and before another adjective, connected with a slash, just like articles. If they are pronouns, then just treat them as pronouns instead.  
 
 ### Plurals  
@@ -225,22 +225,13 @@ This same intuition is to be applied to prefixes.
 
 The conjunctions (subordinating and coordinating, and also including relative pronouns) are:  
 And: “$”  
-Or: “bU”  
+Or: “bI”  
 But: “pA”  
 So: “skibidE”  
-Because: “nItrE”  
-Although: “OkA”  
 If: “\*m”  
 Note for the next two: If these account for plural antecedents, then add a “d”.  
 Who/That/Which (as a subordinate): “Ligmα”   
 Whose: “Ligmαv”
-
-## Phrases and Clauses
-
-Since phrases cannot go on their own, they will just be treated the same way they act as. For example, the adverb phrase “with great speed” will go right before the verb. Similarly, the noun phrase, “the person who won” would just be treated as a noun.   
-The same works for dependent clauses.  
-Independent clauses will be connected by a coordinating conjunction, but treated as a separate sentence.  
-A lot of this is just a review of English, as it and Limit work the same way, but alright.
 
 ## Abbreviations
 
@@ -260,9 +251,8 @@ Alright, now that you know all the grammar rules, let’s get into the vocabular
 
 **Nouns:**  
 Person: nUvak  
-Enemy: dre.O  
 Monkey: riLmO  
-Book: zO\*p  
+Ignorance: zO\*p  
 World: h%d  
 Non-primate organism: tEkU  
 Tool: dOmα\*  
@@ -302,9 +292,12 @@ Liquid: vUgis
 **Verbs (infinitive):**  
 Hate: netAbUp  
 Go: drekInUp  
-Use:   
+Use:    
 Make: wopLUp  
-Not know:  
+Not know: zO*pUp 
 Steal: prIksUp  
 Want:   
 Lose: 
+
+
+

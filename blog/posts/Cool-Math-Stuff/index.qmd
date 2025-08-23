@@ -1,0 +1,27 @@
+---
+title: "Cool Math Stuff"
+author: "Vaishnav Sudarshan"
+date: "2025-08-11"
+draft: true
+---
+
+## Linear Algebra
+
+### Vectors
+A vector is the 
+
+## Deep Learning
+
+## Calculus
+
+## Geometry
+## Number Theory
+
+### 1.
+Define the following:
+$a | b$ means $a$ divides $b$, or $\frac{b}{a}$ is an integer.
+A number is prime if the only numbers that divide it are $1$ and itself.
+
+## Algebra
+## Combinatorics
+
