@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vaishnav Sudarshan">
+<meta name="dcterms.date" content="2025-07-03">
+
+<title>Limit riLmOtOpU (Limit For Monkeys) – Blog</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Limit riLmOtOpU (Limit For Monkeys)</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">limit</div>
+                <div class="quarto-category">conlangs</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vaishnav Sudarshan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 3, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>I first heard of <a href="https://en.wikipedia.org/wiki/Constructed_language">constructed languages</a>, or <em>conlangs</em>, when I heard of <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a>. I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of <a href="https://en.wikipedia.org/wiki/Toki_Pona">Toki Pona</a>, which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary.</p>
+<blockquote class="blockquote">
+<p>Limit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs.</p>
+</blockquote>
+</section>
+<section id="pronunciation-and-alphabet" class="level2">
+<h2 class="anchored" data-anchor-id="pronunciation-and-alphabet">Pronunciation and Alphabet</h2>
+<p><em>Limit</em> is written in Roman characters (for now, that is; we will introduce the real writing system later), but there are some rules to how the script works.</p>
+<p>Consonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is very phonetic; the pronunciation is exactly what is written. There are no silent letters.</p>
+<p>Examples for how to write and pronounce vowels:<br>
+1. A short “O” like in the word “dog” would be lowercase.<br>
+2. A long “A” like in the word “cake” would be uppercase.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A quick note: The letter “U” (capital, which means long) does not contain a “y” sound in its pronunciation. It sounds like the o’s in the word “food” rather than the u in the word “university”.<br>
+There are some vowel and consonant sounds, of course, that cannot be produced with just the Roman alphabet. Therefore, the Limit alphabet contains some extra characters as well.</p>
+</div>
+</div>
+<section id="extra-vowel-sounds" class="level3">
+<h3 class="anchored" data-anchor-id="extra-vowel-sounds">Extra vowel sounds</h3>
+<ul>
+<li>“%” sounds like “oo” in the word “book”.<br>
+</li>
+<li>“@” sounds like “ow” like in the word “now”.<br>
+</li>
+<li>“α” sounds like “ah” like in the word “drama”<br>
+</li>
+<li>“&amp;” sounds like “oi” like in the word “boy”.<br>
+</li>
+<li>“*” sounds like “er” like in the word “singer”.<br>
+</li>
+<li>“^” sounds like “on” like in the word “bon” in French (used for foreign loanwords).</li>
+</ul>
+</section>
+<section id="extra-consonant-sounds" class="level3">
+<h3 class="anchored" data-anchor-id="extra-consonant-sounds">Extra consonant sounds</h3>
+<ul>
+<li>“#” sounds like “zh”, like in the s in “measure”.<br>
+</li>
+<li>“~” sounds like “th”, like in the word “think”.<br>
+</li>
+<li>“β” sounds like the n in “song”.<br>
+</li>
+<li>“!” sounds like “sh”, like in the word “shook”.</li>
+</ul>
+</section>
+<section id="other-adjustments-to-the-alphabet" class="level3">
+<h3 class="anchored" data-anchor-id="other-adjustments-to-the-alphabet">Other adjustments to the alphabet</h3>
+<ul>
+<li>To make the “ar” or “or” sound, take “α” or “O” and add “*”.<br>
+</li>
+<li>The letter “c” is removed as its sound can be made from either “k” or “s”.<br>
+</li>
+<li>The letter “g” only can sound like the g in “gray”, and NOT sound like a j, like in “giraffe”.<br>
+</li>
+<li>The letter “j” is removed as any sound with a “j” can be made from “d#”.<br>
+</li>
+<li>The letter “q” is removed as any “qu” sound can be made with “kw” instead. “u”, however, is still perfectly safe as it is important for various vowel sounds.<br>
+</li>
+<li>The letter “x” is removed as any sound with an “x” can be made from either “ks” or “z”.<br>
+</li>
+<li>Slashes indicate that some specific words are grouped together.</li>
+</ul>
+<p>One last thing: Limit is pronounced in either an Indian or an American accent, except with the new pronunciation rules now given.</p>
+</section>
+</section>
+<section id="pronouns-and-verbs" class="level2">
+<h2 class="anchored" data-anchor-id="pronouns-and-verbs">Pronouns and Verbs</h2>
+<p>If you have a pronoun and a verb, you have a simple sentence, so let us start here in our journey to learn real Limit words. There is no gender or verb conjugation for each pronoun in Limit, so this should be simple.</p>
+<section id="pronouns" class="level3">
+<h3 class="anchored" data-anchor-id="pronouns">Pronouns</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>English</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I</td>
+<td>LI</td>
+</tr>
+<tr class="even">
+<td>You</td>
+<td>dI</td>
+</tr>
+<tr class="odd">
+<td>He/She/It</td>
+<td>krI</td>
+</tr>
+<tr class="even">
+<td>We</td>
+<td>LId</td>
+</tr>
+<tr class="odd">
+<td>You (plural)</td>
+<td>dId</td>
+</tr>
+<tr class="even">
+<td>They</td>
+<td>krId</td>
+</tr>
+</tbody>
+</table>
+<p>To make any of these pronouns formal, just add the prefix “yU”.<br>
+To make any of these pronouns insulting, just add the prefix “yoL”. If you are talking directly to someone, add the suffix “*” or “p*” for “dId” and “dI” respectively.</p>
+</section>
+<section id="verbs" class="level3">
+<h3 class="anchored" data-anchor-id="verbs">Verbs</h3>
+<p>Present tense: Suffix “UL”<br>
+Past tense: Suffix “Uz”<br>
+Future tense: Suffix “Uk”<br>
+To make something infinitive, remove the Uz/UL/Uk and add the suffix “Up”.<br>
+To negate a verb, add the suffix “O#U” or “#U” (depending on if it ends in a vowel or consonant) at the very end of the word.</p>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example</h4>
+<ul>
+<li>To eat is “brikUp”.<br>
+</li>
+<li>“I did not eat” would be “LI brikUzO#U”.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="syntax" class="level2">
+<h2 class="anchored" data-anchor-id="syntax">Syntax</h2>
+<p>Here are some rules for sentence structure:</p>
+<ul>
+<li>The order of a declarative sentence is Subject Object Verb.<br>
+</li>
+<li>Adjectives always come after nouns, attached by a slash, without spaces.<br>
+</li>
+<li>Articles come after nouns as well, also attached by a slash without spaces.<br>
+</li>
+<li>If there is an article and an adjective, the adjective comes after the article, and the adjective and the article are combined with slashes as well.<br>
+</li>
+<li>Adverbs come before the verb or adjective that they modify, with a backslash with no spaces. If they modify an adjective, then it goes before the noun.<br>
+</li>
+<li>There is no distinction between proper and common nouns.<br>
+</li>
+<li>Prepositions work the same way as in English.<br>
+</li>
+<li>Objects, like in English, do not have to just be nouns but also any verb phrase that acts as a noun. Predicate adjectives and predicate nominatives also count as objects.<br>
+</li>
+<li>Prepositional phrases (like “in the house”) count as objects as well.<br>
+</li>
+<li>Indirect objects come right before direct objects.<br>
+</li>
+<li>Indirect objects have the suffix “b”, or “Ob” if the word ends in a consonant.<br>
+</li>
+<li>Predicate adjectives would actually be adverbs, as they modify the word “bLIvUp”.<br>
+Examples:<br>
+Write “I like to eat” in Limit syntax and spelling.<br>
+I tU Et LIk<br>
+Write “I give you a green box” in Limit syntax and spelling.<br>
+I yUhU boks/A/grEn giv</li>
+</ul>
+</section>
+<section id="inflections" class="level2">
+<h2 class="anchored" data-anchor-id="inflections">Inflections</h2>
+<p>To inflect a word ending in O, make the final consonant of the inflection thing voiceless. For example, the plural of “riLmO” (monkey) will be “riLmOt” instead of “riLmOd” (riLmOd is not a real word for that reason). And, the possessive of “riLmO” will be “riLmOf” instead of “riLmOv”. Likewise, you’d say “riLmOkE” instead of “riLmOgE”, “riLmOpU” instead of “riLmObU”, and “riLmOsA” instead of “riLmOzA”.</p>
+</section>
+<section id="punctuation" class="level2">
+<h2 class="anchored" data-anchor-id="punctuation">Punctuation</h2>
+<p>Commas are written as “~”.<br>
+Periods are written as “-”.<br>
+Quotation marks are written as “+” on either end of the quote.<br>
+Question marks are just a word, that being “LE”.</p>
+</section>
+<section id="possession" class="level2">
+<h2 class="anchored" data-anchor-id="possession">Possession</h2>
+<section id="possessive-pronounsadjectives" class="level3">
+<h3 class="anchored" data-anchor-id="possessive-pronounsadjectives">Possessive pronouns/adjectives</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>English</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>My/Mine</td>
+<td>“LIv”</td>
+</tr>
+<tr class="even">
+<td>Your/Yours</td>
+<td>“krIv”</td>
+</tr>
+<tr class="odd">
+<td>His/Her/Its</td>
+<td>“dIv”</td>
+</tr>
+<tr class="even">
+<td>Our/Ours</td>
+<td>“LIdOv”</td>
+</tr>
+<tr class="odd">
+<td>Your/Yours (plural)</td>
+<td>“krIdOv”</td>
+</tr>
+<tr class="even">
+<td>Their/Theirs</td>
+<td>“dIdOv”</td>
+</tr>
+</tbody>
+</table>
+<p>How to use a possessive noun for a person (for example, “That is Bob’s”):<br>
+Add “Ov” to the end of their name if it ends in a consonant, otherwise add “v”.<br>
+If the noun it modifies is plural, then add “Od” or “d”.<br>
+Examples:<br>
+My books are big = “zO*pOd/LIvOd Lib blivUL”<br>
+The world is mine = “h%d/vU LIv blivUL”</p>
+</section>
+</section>
+<section id="adjectives" class="level2">
+<h2 class="anchored" data-anchor-id="adjectives">Adjectives</h2>
+<section id="articles" class="level3">
+<h3 class="anchored" data-anchor-id="articles">Articles</h3>
+<p>The (singular): vU<br>
+The (plural): vUd<br>
+Indefinite articles are implied if there is no article.<br>
+Remember, the articles go after the noun and before another adjective, connected with a slash.</p>
+</section>
+<section id="demonstratives" class="level3">
+<h3 class="anchored" data-anchor-id="demonstratives">Demonstratives</h3>
+<p>This: #%t<br>
+That: #at<br>
+Those: #atOd<br>
+These: #%tOd<br>
+Demonstratives go after the noun and before another adjective, connected with a slash, just like articles. If they are pronouns, then just treat them as pronouns instead.</p>
+</section>
+<section id="plurals" class="level3">
+<h3 class="anchored" data-anchor-id="plurals">Plurals</h3>
+<p>Adjectives have to agree with their noun in number. If the noun is singular, the adjectives will also be singular, and if the noun is plural, the adjectives will also be plural. To make a noun or an adjective plural, add a “d” if it ends in a vowel, and add an “Od” if it ends in a consonant.<br>
+Adjective phrases also go after the noun, and just the first word of the adjective phrase will be combined with a slash to the noun.<br>
+There will also be a slash after the last word, if the adjective phrase is more than a single word.</p>
+</section>
+</section>
+<section id="adverbs" class="level2">
+<h2 class="anchored" data-anchor-id="adverbs">Adverbs</h2>
+<p>To turn an adjective into an adverb, add the prefix “.@”.<br>
+This is analogous to adding an “ly” at the end in English.<br>
+Adverbs go right before the adjective, verb, or adverb that they modify.<br>
+Example:<br>
+The word for “real” is “gOhO”, which means the word for “really” is “.@gOhO”.<br>
+I am really good = “LI .@gOhO\LimitO#U blivUL”</p>
+</section>
+<section id="numbers" class="level2">
+<h2 class="anchored" data-anchor-id="numbers">Numbers</h2>
+<p>Base 10 is used, like normal.<br>
+One shorthand is implemented; whenever there is a 1 followed by a 0, it is written as θ.<br>
+Numbers are written as normal Arabic numerals, but obviously they are said differently.<br>
+0: “fA”<br>
+1: “hα”<br>
+2: “rO”<br>
+3: “d#U”<br>
+4: “yA”<br>
+5: “.a”<br>
+6: “brU”<br>
+7: “,O”<br>
+8: “we”<br>
+9: “gI”<br>
+To get more numbers, you do the following:<br>
+Write each digit in the bigger number as the sum of each digit times a power of 10. For example, 243 would be 2*10<sup>2+4*10</sup>1+3*10^0.<br>
+You may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is “$”, pronounced “sigmα”. Fun fact: this word also means “and”.<br>
+You would write the each place value from highest exponent to lowest.<br>
+Instead of saying plus, you would just combine each term with a slash.<br>
+Units digits do not need to be written as a$0, just a.<br>
+Back to the example of 243, in Limit you would say this as:<br>
+2$2/4<span class="math inline">\(1/3, and pronounce this as rO\)</span>rO/yA$hα/jU, and remember that $ is pronounced as sigmα.<br>
+For negative numbers, add the suffix “yO”.<br>
+For ordinal numbers, add the suffix “hO”, after the “yO” if it is there.<br>
+For fractions, just use the postposition for “in”, which is the suffix “krA” or “OkrA”. There will be a space after that.<br>
+You can also just list each digit, but then you must indicate the decimal point when applicable, which is pronounced as “%nd” and is written as “*”.<br>
+Example:<br>
+You would say “31.4th” as “jU<span class="math inline">\(hα/hα/yA\)</span>hαyOhO”.</p>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<p>Just say the equivalent declarative sentence, then add “LE-” (which means question mark) to the end.<br>
+Phrasing Examples:<br>
+“Which one do you like?” -&gt; “You one/which like LE-”<br>
+“How are you?” -&gt; “You how are LE-”<br>
+Here’re the interrogative words:<br>
+What:</p>
+</section>
+<section id="commands" class="level2">
+<h2 class="anchored" data-anchor-id="commands">Commands</h2>
+<p>State the equivalent in a future tense declarative sentence, and speak in 2nd person. Use the word for please, “hok”, at the end of the sentence, after the verb.<br>
+Phrasing Examples:<br>
+“Go to bed.” -&gt; “You will to bed go hok-”<br>
+Also, instead of saying “hok”, you can say “bOLOdOwO#O”, which is short for “bU LI dI wopLUkO#U”, which means something along the lines of “or I will kill you”.<br>
+Fun fact: the word “hok” is actually a loanword from Proto-Zorbbbb.</p>
+</section>
+<section id="prepositions" class="level2">
+<h2 class="anchored" data-anchor-id="prepositions">Prepositions</h2>
+<p>First, be sure to note that Limit uses a suffix for prepositions (so they are actually postpositions) like “in”, “at”, “during”, “of”, etc; this means anything that gives the position or time, not something that is being headed towards. This suffix is “gE”, or “OgE”, depending on if the word ends in a vowel or consonant.<br>
+There is also a suffix for something you are heading to. This includes words such as “before”, “to”, or “for”. The suffix is “bU”, or “ObU”, depending on if the word ends in a vowel or consonant.<br>
+Finally, for something you are coming from, such as “from”, “after”, or “past”, the suffix will be either “zA” or “OzA”.</p>
+</section>
+<section id="general-rule-of-affixes" class="level2">
+<h2 class="anchored" data-anchor-id="general-rule-of-affixes">General Rule of Affixes</h2>
+<p>If the word ends in a consonant, and the suffix starts with a consonant, then put an “O” between them.<br>
+If the word ends in a vowel and the suffix starts with a consonant, or the other way around, then there is no need for an extra “O”.<br>
+This same intuition is to be applied to prefixes.</p>
+</section>
+<section id="conjunctions" class="level2">
+<h2 class="anchored" data-anchor-id="conjunctions">Conjunctions</h2>
+<p>The conjunctions (subordinating and coordinating, and also including relative pronouns) are:<br>
+And: “$”<br>
+Or: “bI”<br>
+But: “pA”<br>
+So: “skibidE”<br>
+If: “*m”<br>
+Note for the next two: If these account for plural antecedents, then add a “d”.<br>
+Who/That/Which (as a subordinate): “Ligmα”<br>
+Whose: “Ligmαv”</p>
+</section>
+<section id="abbreviations" class="level2">
+<h2 class="anchored" data-anchor-id="abbreviations">Abbreviations</h2>
+<p>Just like how there’s “ts pmo” for [censored], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO#U becomes bOLOdOwO#O. Also, negation affixes are important enough to count as their own word, so just put #O at the end if it is negated, like in this one.</p>
+</section>
+<section id="comparatives-and-superlatives" class="level2">
+<h2 class="anchored" data-anchor-id="comparatives-and-superlatives">Comparatives and Superlatives</h2>
+<p>How you would phrase this:<br>
+[Subject] [Person, indirect form] [Attribute, locative form] [Win/Lose].<br>
+The [Person, indirect form] can be removed if the sentence is superlative.<br>
+Note that the indirect form and the locative form both have a postpositional ending, so it may be confusing.<br>
+The attribute must be a verb. Nouns, adjectives, and adverbs must be reworded.</p>
+</section>
+<section id="vocabulary-in-progress" class="level2">
+<h2 class="anchored" data-anchor-id="vocabulary-in-progress">VOCABULARY (in progress)</h2>
+<p>Alright, now that you know all the grammar rules, let’s get into the vocabulary, so you can actually speak in Limit. There aren’t that many vocabulary words, instead you must take the basic vocabulary words and combine them. To negate a word (to make it opposite, basically) add the suffix “O#U” or “#U”, which works for verbs, adjectives, nouns, etc. The core vocabulary is mainly for neutral or negative connotation, and to get positive connotation, just negate it.</p>
+<p><strong>Nouns:</strong><br>
+Person: nUvak<br>
+Monkey: riLmO<br>
+Ignorance: zO*p<br>
+World: h%d<br>
+Non-primate organism: tEkU<br>
+Tool: dOmα*<br>
+Name: Eskα<br>
+Age: derUm<br>
+Evilness: Limit<br>
+Time: dUrin<br>
+Motion: cU<br>
+Size: pLevI<br>
+Color: snib<br>
+Goal: wOksO<br>
+X-axis: dAb<br>
+Y-axis: vEb<br>
+Z-axis: LUb<br>
+Nature: nuk<br>
+Quantity: LodO<br>
+Food: gla*nE<br>
+Set: rimU</p>
+<p><strong>Adjectives:</strong><br>
+Evil: Limit<br>
+Small: pLevI<br>
+Slow: cU<br>
+Incorrect: kIf<br>
+Old: derUm<br>
+Ugly: t!Untab<br>
+Cold: mEkO<br>
+Unskilled:<br>
+Late: dUrin<br>
+Yucky: gla*nE<br>
+Black: snib<br>
+Blue: mraflet<br>
+Yellow: krUgnip<br>
+Red: yundrask<br>
+Liquid: vUgis</p>
+<p><strong>Verbs (infinitive):</strong><br>
+Hate: netAbUp<br>
+Go: drekInUp<br>
+Use:<br>
+Make: wopLUp<br>
+Not know: zO*pUp Steal: prIksUp<br>
+Want:<br>
+Lose:</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/vaishnavsudarshan\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
