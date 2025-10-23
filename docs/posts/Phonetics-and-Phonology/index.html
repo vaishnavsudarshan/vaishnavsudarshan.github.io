@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-07-01">
+<meta name="dcterms.date" content="2025-09-14">
 
-<title>Math Club Notes – Blog</title>
+<title>Phonetics and Phonology – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -140,8 +114,11 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Math Club Notes</h1>
-                      </div>
+      <h1 class="title">Phonetics and Phonology</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Cool Linguistics Stuff</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -157,13 +134,19 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 1, 2025</p>
+        <p class="date">September 14, 2025</p>
       </div>
     </div>
     
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      I talk about how sounds work and how they are made.
+    </div>
+  </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -176,36 +159,48 @@ window.Quarto = {
 
 
 
-<section id="linear-algebra" class="level1">
-<h1>Linear Algebra</h1>
-<p>Right now, you might be wondering: “Sir, what is this? I learned this in 4th grade! Isn’t linear algebra just graphing lines on the coordinate plane and solving equations?” NO! Linear algebra has almost nothing to do with that, at least in the beginning. Now, let’s get into actual linear algebra.</p>
-<section id="vectors" class="level2">
-<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
-<p>Vectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector <span class="math display">\[
-\begin{pmatrix}
-1 \\
-2 \\
-\end{pmatrix}
-\]</span></p>
-<p>would represent a vector whose components are 1 unit in the <span class="math inline">\(x\)</span> direction, and 2 units in the <span class="math inline">\(y\)</span> direction: <img src="fig1.png" class="img-fluid quarto-figure quarto-figure-right" style="width:50.0%" alt="A vector representing a point (1,2)."></p>
-<p>In other words, it’s about <span class="math inline">\(2.236\)</span> units long and points about <span class="math inline">\(63.435\)</span> degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> as first moving along <span class="math inline">\(A\)</span>, then from that ending point moving along <span class="math inline">\(B\)</span>. The original starting point to the new ending point will be the resultant vector. Similarly, you can compute <span class="math inline">\(A - B\)</span> by scaling <span class="math inline">\(B\)</span> by <span class="math inline">\(-1\)</span>. In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, <span class="math display">\[
-\begin{pmatrix}
-1 \\
-2 \\
-\end{pmatrix}
-+
-\begin{pmatrix}
-3 \\
-4 \\
-\end{pmatrix}
-\]</span></p>
-<p>will be</p>
-<p><span class="math display">\[
-\begin{pmatrix}
-4 \\
-6 \\
-\end{pmatrix}
-\]</span></p>
+<blockquote class="blockquote">
+<p>This is a series of blogs about linguistics. Check out my ones about math, physics, and AI as well!</p>
+</blockquote>
+<section id="phonetics-and-phonology" class="level1">
+<h1>Phonetics And Phonology</h1>
+<section id="how-sounds-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-sounds-work">How Sounds Work</h2>
+<p>At first, the question of “how do sounds work” may seem dumb - you just vibrate your vocal cords, right? However, it’s more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people’s mouths. Now, it’s more difficult to do so, and you may struggle - unless, of course, you’re a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven’t already.</p>
+<p>In kindergarten, you may have learned that sounds are classified as vowels and consonants, and that sounds are known as phonemes. However, I’ll talk about vowels later. Right now, let’s do consonants. In short, the two main parameters that control how a consonant is made are “place of articulation” and “manner of articulation”.</p>
+<section id="place-of-articulation" class="level3">
+<h3 class="anchored" data-anchor-id="place-of-articulation">Place of Articulation</h3>
+<p>Place of articulation is essentially where in your mouth a sound is being made, whether it be deep in the throat (I’m looking at you, certain language primarily spoken in a country that borders Belgium, Germany, Luxembourg, Spain, Andorra, Monaco, Brazil, Suriname, and Italy) or front in the lips (like at the end of “dumb”). From deepest in the throat to closest in the lips, the most commonly referred to categories include glottal, pharyngeal, uvular, velar, retroflex, palatal, alveolar, dental, labiodental, and bilabial.</p>
+</section>
+<section id="manner-of-articulation" class="level3">
+<h3 class="anchored" data-anchor-id="manner-of-articulation">Manner of Articulation</h3>
+<p>Manner of articulation is how the sound is actually made. For example, there is a difference between “boron” and “moron”, even though both /b/ and /m/ are both “bilabial” sounds (one of the places of articulation mentioned above). Such manners of articulation include: Fricatives (blowing air, like in the “sssss” sound in “snake”); Plosives (stopping the sound, like how in “dart”, pronouncing both the /d/ and /t/ can’t really be continued); Nasals (where air comes out of your “nnnnn-nostrils”); Trills (where a sound is like a plosive but gets rolled, like the Spanish rolled r in “perro”); Clicks (air is sucked in instead of pushed out, but unfortunately these cool sounds don’t exist in English, so I can’t provide an example you know how to pronounce. However, the name of the language Xhosa, (in)famous for having a lot of clicks, has a click in its name when not butchered as /kshosa/); and more.</p>
+</section>
+<section id="more" class="level3">
+<h3 class="anchored" data-anchor-id="more">More</h3>
+<p>Another important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at /s/ and /z/, or /k/ and /g/ (as an exercise, find the voiceless version of /b/). In most languages, this has a really important distinction. For example, take “tie” and “die”. However, we usually just include this within manner of articulation, because we can’t put 3D charts on the iPad screen your face is glued to.</p>
+<p>Consonants are classified in other ways than just the two (or three) parameters, though. For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn’t use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic. There is also sonorance or obstruence. Sonorance means the vocal tract is pretty open, like a vowel. As a result, most sonorants, which include nasals, approximants, and liquids, tend to be voiced. Obstruence means there is some friction or turbulence which make the sounds more easily voiceless and are noisier.</p>
+<p>Additionally, there are more factors that can alter a consonant. If you know Hindi, for example, you know how aspiration - putting extra air after a consonant - can impact a word and does matter, like in the words “पल” (pronounced like “pal”, meaning “moment”) and “फल” (pronounced like “phal”, meaning “fruit”). In Russian, palatalization - making the consonant more like a palatal sound, which basically just makes it sound like “y” sound is at the end - is a very important factor too, with the words “мать” (pronounced like “maty” with the y being as in “yo” and not “corny”) meaning “mother” but “мат” (pronounced like “mat”) meaning a swear word. Gemination - making a consonant pronounced for longer - is important in Finnish, because “tapa” means “way” or “manner”, but “tappa” means “kill”.</p>
+</section>
+<section id="vowels" class="level3">
+<h3 class="anchored" data-anchor-id="vowels">Vowels</h3>
+<p>Even in vowels, two main parameters affect how a vowel is made. While vowels are not that interesting in my opinion, they are definitely required, because without them you’d be speaking either gibberish or Polish. Vowels tend to be voiced because they are sonorant and made by vibrating the vocal cords.</p>
+<p>The parameters are frontness (deep in the throat or front in the mouth) and closedness (is mouth open or closed). A third binary parameter is there, roundedness, which is if your mouth is shaped like a circle or not. For example, the /i/ sound is a closed front unrounded vowel.</p>
+<p>There are many more variations to vowels that can be made now. For example, tone is a big factor in Mandarin. 糖 (táng) means sugar, but 汤 (tāng) means soup. Nasality (how much air comes out of the nostrils) is important in Fr*nch, as “a” means “has” but “an” means “year”. Rhoticity (how much the vowel sounds r-colored) makes the word “or” sound American when rhotic, but British when you only pronounce it like /o/. Vowels can also have creaky or breathy voice (basically making it sound like a sheep or a zombie, respectively).</p>
+</section>
+</section>
+<section id="the-ipa" class="level2">
+<h2 class="anchored" data-anchor-id="the-ipa">The IPA</h2>
+<p>Now that you know how sounds are made, let’s see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the International Phonetic Alphabet where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I’ve used slashes to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds.</p>
+<p>Many letters are just like in English. For example, why don’t you take a random guess at how /p/, /h/, /v/, /z/, /m/, /ɪ/ and /t/ are pronounced? Yes! They are pronounced like “p”, “h”, “v”, “z”, “m”, “ɪ” and “t”! BUT NOT LIKE “pea”, “aich”, “vee”, “zee”, “em”, “eye”, and “tea” - you need to hop off elementary school English if you said that. And if you said “momentum”, “Planck’s constant”, “velocity”, “height coordinate”, “mass”, “current”, and “time”, hop off physics!</p>
+<p>However, there are some tricky ones too that are designed to deceive you. For example, what sounds do you think /j/, /x/, /ɑ/, /r/, /q/, /c/, and /ʔ/ make? No, it is not “jay”, “eks”, “aey”, “ar”, “kyoo”, “see”, and “hmmm?”, or “impulse”, “position”, “acceleration”, “radius”, “charge”, “speed of light”, and “hmmm?”. Instead, they make the voiced palatal approximant, voiceless velar fricative, unrounded open back vowel, voiced alveolar trill, voiceless uvular stop, voiceless palatal stop, and the glottal stop (glottal stop doesn’t have a voiced version, because it’s just the break between “uh” and “oh” in “uh-oh”).</p>
+<p>We’re not done. There’s even Greek letters, which somehow we can never evade, regardless of the subject. /ɸ/, /θ/, /ʎ/, /ɤ/, and /ʊ/ are not phi, theta, lambda, gamma, and upside-down omega, but instead voiceless bilabial fricative, voiceless alveolar fricative, voiced palatal lateral approximant, back close-mid unrounded vowel, and then this random vowel that doesn’t know where it belongs. Phew. That torture is over. Or is it?</p>
+<p>We still have the diacritics to go over, but this time I won’t subject you to the pain of looking at every diacritic. Instead, I’ll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voiceless, tone, and more.</p>
+<p>To see the visual representation of the IPA, look <a href="https://www.ipachart.com/"><em>here</em></a>. Each language has its phonology written, by placing the accurate symbols of all of its phonemes. For example, see the phonology of Fr*nch. <a href="french_phonology.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Fr*nch phonology source"><img src="french_phonology.png" class="img-fluid" alt="Fr*nch phonology source"></a></p>
+</section>
+<section id="to-be-continued" class="level2">
+<h2 class="anchored" data-anchor-id="to-be-continued">To Be Continued</h2>
+<p>Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned, unless you first want to deal with the PTSD of looking at the IPA.</p>
 
 
 </section>
@@ -284,7 +279,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/vaishnavsudarshan\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -612,6 +607,38 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

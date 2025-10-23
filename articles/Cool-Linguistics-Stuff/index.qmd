@@ -1,0 +1,128 @@
+---
+title: "Cool Linguistics Stuff"
+author: "Vaishnav Sudarshan"
+date: "2025-08-23"
+categories: 
+abstract: >
+
+---
+
+
+> This is a series of blogs about linguistics. Check out my ones about math, physics, and AI as well!
+
+# Writing Systems
+## Introduction 
+Have you ever wondered how kids sing their "abc's" in different places? In some places, kids sing their "alpha beta gamma's" or their "alif baa jiim's", which are pretty similar to our own. In some places, kids recite their "ka kha ga gha nga's", quite different from our own. Yet in other places, such a song about their "alphabet" would be physically impossible, with kids thinking this is a preposterous and cruel joke.
+All of these are tricks for remembering letters, which are part of writing systems.
+Writing systems are also known as [_orthographies_](https://en.wikipedia.org/wiki/Orthography). You already know at least one - the Latin alphabet, which you're reading right now. Here's an overview of how all the different writing systems work. 
+
+## Phonetic Orthographies
+In phonetic writing systems, symbols are written based on sound. For example, in the Latin alphabet, the word "cat" is written with a "c" for the "c" sound, "a" for the "a" sound, and "t" for the "t" sound. Of course, it's not always one-to-one, or even consistent, in English itself (cough cough, "*cough*"), but the main point still stands - it's based on sound. In our language, you wouldn't draw an image of a cat to represent a cat, you'd just write "cat" based on the sounds of the word.
+Here are the types of phonetic writing systems:
+
+### Alphabets
+Alphabets work by having symbols for vowels and consonants, and they're just written without really being treated as separate phonemes. These are arguably the simplest. Apart from the Latin alphabet, some others are Cyrillic, Greek, IPA, Georgian, Armenian, etc. 
+Korean's writing system, Hangeul, is kind of like an alphabet because it writes out its vowels and consonants, but it arranges each syllable into its own block. For example, the characters for "ba" would be 바, but the characters for "bo" would be 보. Furthermore, the characters for "bol" would be 볼.
+The word alphabet comes from the first to letters of Greek, alpha and beta. 
+
+### Abjads
+Most alphabets evolved from [_abjads_](https://en.wikipedia.org/wiki/Abjad). Abjads are like alphabets, except usually, most of the vowels aren't written, and instead inferred from context. Only long vowels are written. Sometimes, for clarity, the short vowels may be written in with diacritics. For example, in the Quran, even though the Arabic script is an abjad, all the vowels were written so that there aren't any misinterpretations. 
+The word "abjad" comes from the first sounds of the four letters of the Arabic script, "a", "b", "j", and "d", which is cognate with Greek's "alpha", "beta", "gamma", "delta".
+
+
+The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl. 
+
+### Syllabaries
+In [_syllabaries_](https://en.wikipedia.org/wiki/Syllabary), each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don't have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols. 
+![Chart showing the two syllabaries of Japanese [source](https://cherryblossomstories.com/wp-content/uploads/2013/05/Hiragana-and-Katakana.jpg](Hiragana_and_Katakana.jpg){.lightbox}
+
+### Abugidas
+[_Abugidas_](https://en.wikipedia.org/wiki/Abugida), in my opinion, are by far the coolest type of phonetic orthography. How it works is that if you write a consonant on its own, it comes with a vowel after it. For example, the /k/ sound in [_Devanagari_](https://en.wikipedia.org/wiki/Devanagari), क, is actually pronounced /kə/ because without altering the consonant, it comes with an 
+/ə/ sound. To make it a different vowel, you add a diacritic. So, /ke/ would be के. And, to make it just /k/ with no vowel, you make it क्. The most popular abugidas are from India, including Devanagiri, Tamil, Bengali, etc. However, the word "abugida" comes from the Ge'ez script from Ethiopia, where the first four letters are "a", "bu", "gi", and "da" (and this arrangement is cognate with Greek's "alpha", "beta", "gamma", "delta", just like with the word "Abjad").
+Another notable abugida, apart from Indian scripts, Southeast Asian scripts, and the Ge'ez script, is the Cree script. For changing the vowel, Cree doesn't actually add a diacritic, but instead modifies the consonant through rotations. Cree is actually partially inspired by Devanagiri. 
+
+
+## Semantic Orthographies
+Instead of writing symbols based on sound, some languages have orthographies where symbols are based on meaning. 
+
+### Logographies
+The most common type of semantic writing system is a logography, and the most famous type of logography is [_Hanzi_](https://en.wikipedia.org/wiki/Hanzi) from Sinitic languages, which is also what Japanese's Kanji is based on. 
+For example, look at the symbol for "yi" in Mandarin or "ichi" in Japanese, which means "one":
+"一"
+Now, for "er" in Mandarin or "ni" in Japanese, which means "two":
+"二"
+So, sometimes, the symbol looks like what it means. However, sometimes, it can be more complicated than that. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for "forest" is:
+ 森
+while the symbol for "tree" is:
+ 木
+Also, symbols whose words sound similar can also be used for clarification. 
+Egyptian hieroglyphs were part logography. Some symbols worked just like Chinese, and others evolved into more of a syllabary or abjad. 
+
+### Pictographies
+Pictographies are kind of like logographies, except that it's much more literal. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words.
+![A page showing the Mayan pictographies written down [source](https://3.bp.blogspot.com/_qTDAEasFLtU/S2bCBrxYEBI/AAAAAAAAG1A/eHIKTkXQ2gI/s1600/Tables+for+the+planet+Venus+duo.jpg](mayan_inscription.png.jpg){.lightbox}
+
+### Ideographies
+Ideographies are another type of semantic orthography, where an idea or a concept is directly written, without being tied to a specific sound. For example, some street signs symbols that don't have words but rather symbols, some of the more ancient Hanzi initially, or even some of the more abstract emojis as well are ideographies.
+
+## Evolution of writing
+Many writing systems evolved from Egyptian hieroglyphs, to become primarily alphabets, abjads, or even abugidas. This is primarily in Europe, the Middle East, and North Africa, where Egypt indirectly influenced. For example, the European alphabets evolved from Ancient Greek's alphabet (Latin through the Etruscan alphabet, which in turn came from the Ancient Greek alphabet), which evolved from Phoenecian's abjad, which evolved from Egyptian hieroglyphs. Also, the Semitic abjads evolved from Phoenician's abjad too. The Semitic languages are written from right to left, because it chose a direction to write from Phoenecian, which alternated. Ancient Greek also initially alternated directions line by line, but then chose to stick with only left to right, which all the European languages are written with now. 
+
+In India, as well as some parts of Southeast Asia, including Myanmar, Laos, and Thailand, the orthography (all abugidas) of those languages evolved from the _Brahmi_ script, which was an abugida. It's not certain where the Brahmi script is from, though it's suggested to come from Egyptian hieroglyphs too, but it could also be an artificially created script that evolved naturally. 
+
+![An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, [source](https://live.staticflickr.com/2869/12901396153_374f862d10_b.jpg)](brahmi_script_qutub_minar.jpg){.lightbox}
+
+
+::: {.callout-note}
+## Cool fact to bore your friends with and be called a nerd!!!
+The Brahmi script was initially all straight lines and sharp angles. In South India, Southeast Asia, and Sri Lanka, the letters look more curvy, because they were written on leaves, so sharp turns and straight lines would tear the leaves. However, in North India, the letters can be more angular and sharp, but still also some curves, because they were written on both leaves and stone. 
+:::
+
+In China and Japan, the characters are derived from the Ancient Chinese logographic characters. In Japan, there are three writing systems. Two are syllabaries derived from Chinese, and the other is the normal Chinese logography.
+
+In both Koreas, Hangeul is used. Hangeul is an artificially created script that was made to address the high percentage of illiteracy, due to the fact that Chinese characters were way to hard for the common people to learn. However, Hangeul was designed to be very simple.
+
+The Cherokee syllabary was made after one Native American looked at the European colonizers' writing and tried to mimic the symbols to make a writing system for Cherokee. He'd seen both the Latin and Cyrillic scripts. However, the symbols in Cherokee that look similar to the European writing make completely different sounds, as he only knew the shape of the symbols, not what sound they made.
+
+
+## To Be Continued
+OK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. How does that work? Scroll down to find out!
+
+# Phonetics And Phonology
+## How Sounds Work
+At first, the question of "how do sounds work" may seem dumb - you just vibrate your vocal cords, right? However, it's more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people's mouths. Now, it's more difficult to do so, and you may struggle - unless, of course, you're a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven't already. 
+In kindergarten, you may have learned that sounds are classified as vowels and consonants, and that sounds are known as phonemes. However, I'll talk about vowels later. Right now, let's do consonants. In short, the two main parameters that control how a consonant is made are "place of articulation" and "manner of articulation". 
+### Place of Articulation
+Place of articulation is essentially where in your mouth a sound is being made, whether it be deep in the throat (I'm looking at you, certain language primarily spoken in a country that borders Belgium, Germany, Luxembourg, Spain, Andorra, Monaco, Brazil, Suriname, and Italy) or front in the lips (like at the end of "dumb"). From deepest in the throat to closest in the lips, the most common categories include glottal, uvular, velar, retroflex, palatal, alveolar, dental, labiodental, and bilabial.
+### Manner of Articulation
+Manner of articulation is how the sound is actually made. For example, there is a difference between "boron" and "moron", even though both /b/ and /m/ are both "bilabial" sounds (one of the places of articulation mentioned above). 
+Such manners of articulation include:
+Fricatives (blowing air, like in the "sssss" sound in "snake");
+Plosives (stopping the sound, like how in "dart", pronouncing both the /d/ and /t/ can't really be continued);
+Nasals (where air comes out of your "nnnnn-nostrils");
+Trills (where a sound is like a plosive but gets rolled, like the Spanish rolled r in "perro");
+Clicks (air is sucked in instead of pushed out, but unfortunately these cool sounds don't exist in English, so I can't provide an example you know how to pronounce. However, the name of the language Xhosa, (in)famous for having a lot of clicks, has a click in its name when not butchered as /kshosa/);
+and more. 
+### More
+Another important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at /s/ and /z/, or /k/ and /g/ (as an exercise, find the voiceless version of /b/). In most languages, this has a really important distinction. For example, take "tie" and "die". However, we usually just include this within manner of articulation, because we can't put 3D charts on the iPad screen your face is glued to. 
+Consonants are classified in other ways than just the two (or three) parameters, though. 
+For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn't use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic. 
+There is also sonorance or obstruence. Sonorance means the vocal tract is pretty open, like a vowel. As a result, most sonorants, which include nasals, approximants, and liquids, tend to be voiced. Obstruence means there is some friction or turbulence which make the sounds more easily voiceless and are noisier.
+Additionally, there are more factors that can alter a consonant. If you know Hindi, for example, you know how aspiration - putting extra air after a consonant - can impact a word and does matter, like in the words "पल" (pronounced like "pal", meaning "moment") and "फल" (pronounced like "phal", meaning "fruit"). In Russian, palatalization - making the consonant more like a palatal sound, which basically just makes it sound like "y" sound is at the end - is a very important factor too, with the words "мать" (pronounced like "maty" with the y being as in "yo" and not "corny") meaning "mother" but "мат" (pronounced like "mat") meaning a swear word. Gemination - making a consonant pronounced for longer - is important in Finnish, because "tapa" means "way" or "manner", but "tappa" means "kill". 
+### Vowels
+Even in vowels, two main parameters affect how a vowel is made. While vowels are not that interesting in my opinion, they are definitely required, because without them you'd be speaking either gibberish or Polish. Vowels tend to be voiced because they are sonorant and made by vibrating the vocal cords.
+The parameters are frontness (deep in the throat or front in the mouth) and closedness (is mouth open or closed). A third binary parameter is there, roundedness, which is if your mouth is shaped like a circle or not. 
+For example, the /i/ sound is a closed front unrounded vowel.
+There are many more variations to vowels that can be made now. For example, tone is a big factor in Mandarin. 糖 (táng) means sugar, but 汤 (tāng) means soup. Nasality (how much air comes out of the nostrils) is important in Fr*nch, as "a" means "has" but "an" means "year". Rhoticity (how much the vowel sounds r-colored) makes the word "or" sound American when rhotic, but British when you only pronounce it like /o/. Vowels can also have creaky or breathy voice (basically making it sound like a sheep or a zombie, respectively). 
+## The IPA
+Now that you know how sounds are made, let's see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the International Phonetic Alphabet where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I've used slashes to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds. 
+Many letters are just like in English. For example, why don't you take a random guess at how /p/, /h/, /v/, /z/, /m/, /ɪ/ and /t/ are pronounced? Yes! They are pronounced like "p", "h", "v", "z", "m", "ɪ" and "t"! BUT NOT LIKE "pea", "aich", "vee", "zee", "em", "eye", and "tea" - you need to hop off elementary school English if you said that. And if you said "momentum", "Planck's constant", "velocity", "height coordinate", "mass", "current", and "time", hop off physics! 
+However, there are some tricky ones too that are designed to deceive you. For example, what sounds do you think /j/, /x/, /ɑ/, /r/, /q/, /c/, and /ʔ/ make? No, it is not "jay", "eks", "aey", "ar", "kyoo", "see", and "hmmm?", or "impulse", "position", "acceleration", "radius", "charge", "speed of light", and "hmmm?". Instead, they make the voiced palatal approximant, voiceless velar fricative, unrounded open back vowel, voiced alveolar trill, voiceless uvular stop, voiceless palatal stop, and the glottal stop (glottal stop doesn't have a voiced version, because it's just the break between "uh" and "oh" in "uh-oh"). 
+We're not done. There's even Greek letters, which somehow we can never evade, regardless of the subject. /ɸ/, /θ/, /ʎ/, /ɤ/, and /ʊ/ are not phi, theta, lambda, gamma, and upside-down omega, but instead voiceless bilabial fricative, voiceless alveolar fricative, voiced palatal lateral approximant, back close-mid unrounded vowel, and then this random vowel that doesn't know where it belongs. 
+Phew. That torture is over. Or is it?
+We still have the diacritics to go over, but this time I won't subject you to the pain of looking at every diacritic. Instead, I'll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voiceless, tone, and more.
+To see the visual representation of the IPA, look [_here_](https://www.ipachart.com/).
+Each language has its phonology written, by placing the accurate symbols of all of its phonemes. 
+For example, see the phonology of Fr*nch. ![French phonology [source](https://en.wikipedia.org/wiki/French_language#Phonology)](french_phonology.png){.lightbox}
+## Conclusion 
+Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To see how meaning works, please scroll down, unless you first want to deal with the PTSD of looking at the IPA.

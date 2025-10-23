@@ -1,0 +1,29 @@
+---
+title: "Morphology and Semantics"
+author: "Vaishnav Sudarshan"
+date: "2025-10-12"
+categories:  [Cool Linguistics Stuff]
+abstract: I talk about how different language form words and meaning.
+---
+# Morphology and Semantics
+## "Thought-Provoking" (Confusing) Introduction
+Previously, in orthographies, phonetics, and phonology, we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
+
+Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this.
+
+It may appear that there are exceptions. For example, the "wh" in English commonly indicates an interrogative word, like the five that are commonly referenced - "who", "what", "why", "where", "when". However, there's nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the "w" and the "h" as *phonemes*, we would call "wh" a unit that evolved out of a *morpheme*. 
+
+A *morpheme* is loosely defined as a unit of meaning. You may wonder why we do not just use the term "words" to describe these. The answer is that "words" are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that's generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single "word" because there aren't any spaces? Such a question isn't easy or even helpful. Therefore, we use morphemes instead.
+
+Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some "insightful" meaning (by which I mean that it's definitely not intended to be that deep, and any such annotation is surely a stretch).
+
+## Types of Morphology Across Languages
+
+There are two continuums that determine how a language's morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated. 
+
+The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. 
+Analyitic languages would be something like Mandarin - the sentence "I don't drink tea" would be "我不喝茶" ("Wǒ bù hē chá"). Each word is its own morpheme here. Purely analytic languages don't rely on *inflection*, or altering the form of words - instead, they rely on *particles*, which are words that are put next to other words to change the grammatical meaning. 
+Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn't use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn't get smushed together, and you can still tell apart subjects, verbs, and objects.
+Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages in Greenland, Alaska, and Northern Canada, and wondered what they were yapping. Now you know it's not actual yap, just a normal sentence put together into a giant word. 
+
+

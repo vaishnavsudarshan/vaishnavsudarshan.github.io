@@ -14,14 +14,23 @@ A vector is the
 
 ## Calculus
 
+### Normal Calculus
+### Differential Equations
+### Multivariable Calculus
+### Matrix Calculus
+
+
+
+
 ## Geometry
 ## Number Theory
 
 ### 1.
-Define the following:
+First let's do some definitions.
 $a | b$ means $a$ divides $b$, or $\frac{b}{a}$ is an integer.
 A number is prime if the only numbers that divide it are $1$ and itself.
 
 ## Algebra
 ## Combinatorics
+## Trigonometry
 

@@ -1,0 +1,27 @@
+# Kinematics
+
+## Uniform Circular Motion
+In circular motion, an object travels at a constant SPEED (let it be called $v$) in a circle. However, of course velocity changes, because it's always pointing in a different direction.
+![Uniform circular motion [source](](circular.png){.lightbox}
+From here, we can introduce some new variables to reflect this motion.
+First, $R$ is the radius of the circle. $T$, the period, is defined as the amount of time it takes to make one full rotation, with units of seconds. $f$, frequency, is the reciprocal of period, so it's the amount of rotations per second, with units of inverse seconds, or Hertz (Hz).\
+$\omega$ is the angular velocity, which is how many radians travelled in a second. This means that $\omega = 2 \pi / T$. 
+Now, think about this. $v$ is just the total distance over time, so $v = 2 \pi R / T$. 
+Look! This means that $v = r \omega$!
+Now, you may be wondering something. We may know the speed, but there MUST be acceleration! Otherwise, how can the velocity change?
+The vector for v is $[\omega r cos(\theta), \omega r sin(\theta)]$. These are just the horizontal and vertical components, with the magnitude being $\omega r$. 
+We want to find $a = \frac{dv}{dt}$. We can get this from the Chain Rule, by computing $\frac{dv}{d\theta} \cdot \frac{d\theta}{dt}$.
+$\frac{dv}{d\theta}$ is going to be $[-\omega r sin(\theta), \omega r cos(\theta)]$. Meanwhile, $\frac{d\theta}{dt}$ is just $\omega$, by definition. So, multiplying these, we get $\frac{dv}{dt} = [-\omega^2 r sin(\theta), \omega^2 r cos(\theta)]$.
+The magnitude of this acceleration is just $\omega^2 r$, and the direction is pointed towards the center.
+ (Explanation of that second part: The angles of the components of the velocity were with $cos$ and $sin$, so this means $-sin$ and $cos$ would be perpendicular to that, and more specifically towards the center, if cos and sin were tangent to the circle, which they are.)
+ # Dynamics
+ # Energy
+ # Oscillations
+
+ ## Springs
+Let a spring oscillate with elongation x, acceleration a, and we want to find the frequency. 
+Therefore, we get a differential equation which we can model using a sinusoid.
+ ## Pendulums
+For small angles of pendula, we can use the same format as springs.
+ # Waves
+ # Electrostatics

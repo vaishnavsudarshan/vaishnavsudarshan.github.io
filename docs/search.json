@@ -1,66 +1,73 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/Writing-Systems/index.html",
+    "href": "posts/Writing-Systems/index.html",
+    "title": "Writing Systems",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This is a series of blogs about linguistics. Check out my ones about math, physics, and AI as well!"
   },
   {
-    "objectID": "posts/MathClub-Week1/index.html",
-    "href": "posts/MathClub-Week1/index.html",
-    "title": "Math Club Notes",
-    "section": "",
-    "text": "Right now, you might be wondering: “Sir, what is this? I learned this in 4th grade! Isn’t linear algebra just graphing lines on the coordinate plane and solving equations?” NO! Linear algebra has almost nothing to do with that, at least in the beginning. Now, let’s get into actual linear algebra.\n\n\nVectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n\\]\nwould represent a vector whose components are 1 unit in the \\(x\\) direction, and 2 units in the \\(y\\) direction: \nIn other words, it’s about \\(2.236\\) units long and points about \\(63.435\\) degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors \\(A\\) and \\(B\\) as first moving along \\(A\\), then from that ending point moving along \\(B\\). The original starting point to the new ending point will be the resultant vector. Similarly, you can compute \\(A - B\\) by scaling \\(B\\) by \\(-1\\). In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n3 \\\\\n4 \\\\\n\\end{pmatrix}\n\\]\nwill be\n\\[\n\\begin{pmatrix}\n4 \\\\\n6 \\\\\n\\end{pmatrix}\n\\]"
-  },
-  {
-    "objectID": "posts/MathClub-Week1/index.html#vectors",
-    "href": "posts/MathClub-Week1/index.html#vectors",
-    "title": "Math Club Notes",
-    "section": "",
-    "text": "Vectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n\\]\nwould represent a vector whose components are 1 unit in the \\(x\\) direction, and 2 units in the \\(y\\) direction: \nIn other words, it’s about \\(2.236\\) units long and points about \\(63.435\\) degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors \\(A\\) and \\(B\\) as first moving along \\(A\\), then from that ending point moving along \\(B\\). The original starting point to the new ending point will be the resultant vector. Similarly, you can compute \\(A - B\\) by scaling \\(B\\) by \\(-1\\). In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, \\[\n\\begin{pmatrix}\n1 \\\\\n2 \\\\\n\\end{pmatrix}\n+\n\\begin{pmatrix}\n3 \\\\\n4 \\\\\n\\end{pmatrix}\n\\]\nwill be\n\\[\n\\begin{pmatrix}\n4 \\\\\n6 \\\\\n\\end{pmatrix}\n\\]"
-  },
-  {
-    "objectID": "posts/Cool-Linguistics-Stuff/index.html",
-    "href": "posts/Cool-Linguistics-Stuff/index.html",
-    "title": "Writing systems",
-    "section": "",
-    "text": "This is a first in a series of cool linguistics stuff. Also checkout my blogs on Math and AI as well."
-  },
-  {
-    "objectID": "posts/Cool-Linguistics-Stuff/index.html#introduction",
-    "href": "posts/Cool-Linguistics-Stuff/index.html#introduction",
-    "title": "Writing systems",
+    "objectID": "posts/Writing-Systems/index.html#introduction",
+    "href": "posts/Writing-Systems/index.html#introduction",
+    "title": "Writing Systems",
     "section": "Introduction",
-    "text": "Introduction\nWriting Systems are also known as orthographies. You already know at least one - the Latin alphabet, which you’re reading right now. Here’s an overview of how all the different writing systems work."
+    "text": "Introduction\nHave you ever wondered how kids sing their “abc’s” in different places? In some places, kids sing their “alpha beta gamma’s” or their “alif baa jiim’s”, which are pretty similar to our own. In some places, kids recite their “ka kha ga gha nga’s”, quite different from our own. Yet in other places, such a song about their “alphabet” would be physically impossible, with kids thinking this is a preposterous and cruel joke. All of these are tricks for remembering letters, which are part of writing systems. Writing systems are also known as orthographies. You already know at least one - the Latin alphabet, which you’re reading right now. Here’s an overview of how all the different writing systems work."
   },
   {
-    "objectID": "posts/Cool-Linguistics-Stuff/index.html#phonetic-orthographies",
-    "href": "posts/Cool-Linguistics-Stuff/index.html#phonetic-orthographies",
-    "title": "Writing systems",
+    "objectID": "posts/Writing-Systems/index.html#phonetic-orthographies",
+    "href": "posts/Writing-Systems/index.html#phonetic-orthographies",
+    "title": "Writing Systems",
     "section": "Phonetic Orthographies",
-    "text": "Phonetic Orthographies\nIn phonetic writing systems, symbols are written based on sound. For example, in the Latin alphabet, the word “cat” is written with a “c” for the “c” sound, “a” for the “a” sound, and “t” for the “t” sound. Of course, it’s not always one-to-one, or even consistent, in English itself, but the main point still stands - it’s based on sound. In our language, you wouldn’t draw an image of a cat to represent a cat, you’d just write “cat” based on the sounds of the word. Here are the types of phonetic writing systems:\n\nAlphabets\nAlphabets work by having symbols for vowels and consonants, and they’re just written without really being treated as separate phonemes. These are arguably the simplest. Apart from the Latin alphabet, some others are Cyrillic, Greek, IPA, Georgian, Armenian, etc. Korean’s writing system, Hangeul, is kind of like an alphabet because it writes out its vowels and consonants, but it arranges each syllable into its own block. The word alphabet comes from the first to letters of Greek, alpha and beta.\n\n\nAbjads\nMost alphabets evolved from abjads. Abjads are like alphabets, except usually, most of the vowels aren’t written, and instead inferred from context. Only long vowels are written. Sometimes, for clarity, the short vowels may be written in with diacritics. For example, in the Quran, even though the Arabic script is an abjad, all the vowels were written so that there aren’t any misinterpretations. The word “abjad” comes from the first four letters of the Arabic script, “a”, “b”, “j”, and “d”, which is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”. The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl.\n\n\nSyllabaries\nIn syllabaries, each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don’t have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols.\n\n\nAbugidas\nAbugidas, in my opinion, are by far the coolest type of phonetic orthography. How it works is that if you write a consonant on its own, it comes with a vowel after it. For example, the /k/ sound in Devanagari, क, is actually pronounced /kə/ because without altering the consonant, it comes with an /ə/ sound. To make it a different vowel, you add a diacritic. So, /ke/ would be के. And, to make it just /k/ with no vowel, you make it क्. The most popular abugidas are from India, including Devanagiri, Tamil, Bengali, etc. However, the word “abugida” comes from the Ge’ez script from Ethiopia, where the first four letters are “a”, “bu”, “gi”, and “da” (and this arrangement is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”, just like with the word “Abjad”)."
+    "text": "Phonetic Orthographies\nIn phonetic writing systems, symbols are written based on sound. For example, in the Latin alphabet, the word “cat” is written with a “c” for the “c” sound, “a” for the “a” sound, and “t” for the “t” sound. Of course, it’s not always one-to-one, or even consistent, in English itself (cough cough, “cough”), but the main point still stands - it’s based on sound. In our language, you wouldn’t draw an image of a cat to represent a cat, you’d just write “cat” based on the sounds of the word. Here are the types of phonetic writing systems:\n\nAlphabets\nAlphabets work by having symbols for vowels and consonants, and they’re just written without really being treated as separate phonemes. These are arguably the simplest. Apart from the Latin alphabet, some others are Cyrillic, Greek, IPA, Georgian, Armenian, etc. Korean’s writing system, Hangeul, is kind of like an alphabet because it writes out its vowels and consonants, but it arranges each syllable into its own block. For example, the characters for “ba” would be 바, but the characters for “bo” would be 보. Furthermore, the characters for “bol” would be 볼. The word alphabet comes from the first to letters of Greek, alpha and beta.\n\n\nAbjads\nMost alphabets evolved from abjads. Abjads are like alphabets, except usually, most of the vowels aren’t written, and instead inferred from context. Only long vowels are written. Sometimes, for clarity, the short vowels may be written in with diacritics. For example, in the Quran, even though the Arabic script is an abjad, all the vowels were written so that there aren’t any misinterpretations. The word “abjad” comes from the first sounds of the four letters of the Arabic script, “a”, “b”, “j”, and “d”, which is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”.\nThe most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl.\n\n\nSyllabaries\nIn syllabaries, each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don’t have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols. \n\n\nAbugidas\nAbugidas, in my opinion, are by far the coolest type of phonetic orthography. How it works is that if you write a consonant on its own, it comes with a vowel after it. For example, the /k/ sound in Devanagari, क, is actually pronounced /kə/ because without altering the consonant, it comes with an /ə/ sound. To make it a different vowel, you add a diacritic. So, /ke/ would be के. And, to make it just /k/ with no vowel, you make it क्. The most popular abugidas are from India, including Devanagiri, Tamil, Bengali, etc. However, the word “abugida” comes from the Ge’ez script from Ethiopia, where the first four letters are “a”, “bu”, “gi”, and “da” (and this arrangement is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”, just like with the word “Abjad”). Another notable abugida, apart from Indian scripts, Southeast Asian scripts, and the Ge’ez script, is the Cree script. For changing the vowel, Cree doesn’t actually add a diacritic, but instead modifies the consonant through rotations. Cree is actually partially inspired by Devanagiri."
   },
   {
-    "objectID": "posts/Cool-Linguistics-Stuff/index.html#semantic-orthographies",
-    "href": "posts/Cool-Linguistics-Stuff/index.html#semantic-orthographies",
-    "title": "Writing systems",
+    "objectID": "posts/Writing-Systems/index.html#semantic-orthographies",
+    "href": "posts/Writing-Systems/index.html#semantic-orthographies",
+    "title": "Writing Systems",
     "section": "Semantic Orthographies",
-    "text": "Semantic Orthographies\nInstead of writing symbols based on sound, some languages have orthographies where symbols are based on meaning.\n\nLogographies\nThe most common type of semantic writing system is a logography, and the most famous type of logography is Hanzi from Sinitic languages, which is also what Japanese’s Kanji is based on. For example, look at the symbol for “yi” in Mandarin or “ichi” in Japanese, which means “one”: “一” Now, for “er” in Mandarin or “ni” in Japanese, which means “two”: “二” So, sometimes, the symbol looks like what it means. However, sometimes, it can be more complicated than that. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for “forest” is 森, and the symbol for “tree” is 木. Also, symbols whose words sound similar can also be used for clarification. Egyptian hieroglyphs were part logography. Some symbols worked just like Chinese, and others evolved into more of a syllabary or abjad.\n\n\nPictographies\nPictographies are kind of like logographies, except that it’s much more literal. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words.\n\n\nIdeographies\nIdeographies are another type of semantic orthography, where an idea or a concept is directly written, without being tied to a specific sound. For example, some street signs symbols that don’t have words but rather symbols, some of the more ancient Hanzi initially, or even some of the more abstract emojis as well are ideographies."
+    "text": "Semantic Orthographies\nInstead of writing symbols based on sound, some languages have orthographies where symbols are based on meaning.\n\nLogographies\nThe most common type of semantic writing system is a logography, and the most famous type of logography is Hanzi from Sinitic languages, which is also what Japanese’s Kanji is based on. For example, look at the symbol for “yi” in Mandarin or “ichi” in Japanese, which means “one”: “一” Now, for “er” in Mandarin or “ni” in Japanese, which means “two”: “二” So, sometimes, the symbol looks like what it means. However, sometimes, it can be more complicated than that. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for “forest” is: 森 while the symbol for “tree” is: 木 Also, symbols whose words sound similar can also be used for clarification. Egyptian hieroglyphs were part logography. Some symbols worked just like Chinese, and others evolved into more of a syllabary or abjad.\n\n\nPictographies\nPictographies are kind of like logographies, except that it’s much more literal. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words. \n\n\nIdeographies\nIdeographies are another type of semantic orthography, where an idea or a concept is directly written, without being tied to a specific sound. For example, some street signs symbols that don’t have words but rather symbols, some of the more ancient Hanzi initially, or even some of the more abstract emojis as well are ideographies."
   },
   {
-    "objectID": "posts/Cool-Linguistics-Stuff/index.html#evolution-of-writing",
-    "href": "posts/Cool-Linguistics-Stuff/index.html#evolution-of-writing",
-    "title": "Writing systems",
+    "objectID": "posts/Writing-Systems/index.html#evolution-of-writing",
+    "href": "posts/Writing-Systems/index.html#evolution-of-writing",
+    "title": "Writing Systems",
     "section": "Evolution of writing",
-    "text": "Evolution of writing\nMany writing systems evolved from Egyptian hieroglyphs, to become primarily alphabets, abjads, or even abugidas. This is primarily in Europe, the Middle East, and North Africa, where Egypt indirectly influenced. For example, the European alphabets evolved from Ancient Greek’s alphabet (Latin through the Etruscan alphabet, which in turn came from the Ancient Greek alphabet), which evolved from Phoenecian’s abjad, which evolved from Egyptian hieroglyphs. Also, the Semitic abjads evolved from Phoenician’s abjad too. The Semitic languages are written from right to left, because it chose a direction to write from Phoenecian, which alternated. Ancient Greek also initially alternated directions line by line, but then chose to stick with only left to right, which all the European languages are written with now.\nIn India, as well as some parts of Southeast Asia, including Myanmar, Laos, and Thailand, the orthography (all abugidas) of those languages evolved from the Brahmi script, which was an abugida. It’s not certain where the Brahmi script is from, though it’s suggested to come from Egyptian hieroglyphs too, but it could also be an artificially created script that evolved naturally.\n\n\n\nAn example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, source\n\n\n\n\n\n\n\n\nFun factoid\n\n\n\nThe Brahmi script was initially all straight lines and sharp angles. In South India, Southeast Asia, and Sri Lanka, the letters look more curvy, because they were written on leaves, so sharp turns and straight lines would tear the leaves. However, in North India, the letters can be more angular and sharp, but still also some curves, because they were written on both leaves and stone.\n\n\nIn China and Japan, the characters are derived from the Ancient Chinese logographic characters. In Japan, there are three writing systems. Two are syllabaries derived from Chinese, and the other is the normal Chinese logography.\nIn both Koreas, Hangeul is used. Hangeul is an artificially created script that was made to address the high percentage of illiteracy, due to the fact that Chinese characters were way to hard for the common people to learn. However, Hangeul was designed to be very simple.\nThe Cherokee syllabary was made after one Native American looked at the European colonizers’ writing and tried to mimic the symbols to make a writing system for Cherokee. He’d seen both the Latin and Cyrillic scripts. However, the symbols in Cherokee that look similar to the European writing make completely different sounds, as he only knew the shape of the symbols, not what sound they made."
+    "text": "Evolution of writing\nMany writing systems evolved from Egyptian hieroglyphs, to become primarily alphabets, abjads, or even abugidas. This is primarily in Europe, the Middle East, and North Africa, where Egypt indirectly influenced. For example, the European alphabets evolved from Ancient Greek’s alphabet (Latin through the Etruscan alphabet, which in turn came from the Ancient Greek alphabet), which evolved from Phoenecian’s abjad, which evolved from Egyptian hieroglyphs. Also, the Semitic abjads evolved from Phoenician’s abjad too. The Semitic languages are written from right to left, because it chose a direction to write from Phoenecian, which alternated. Ancient Greek also initially alternated directions line by line, but then chose to stick with only left to right, which all the European languages are written with now.\nIn India, as well as some parts of Southeast Asia, including Myanmar, Laos, and Thailand, the orthography (all abugidas) of those languages evolved from the Brahmi script, which was an abugida. It’s not certain where the Brahmi script is from, though it’s suggested to come from Egyptian hieroglyphs too, but it could also be an artificially created script that evolved naturally.\n\n\n\nAn example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, source\n\n\n\n\n\n\n\n\nCool fact to bore your friends with and be called a nerd!!!\n\n\n\nThe Brahmi script was initially all straight lines and sharp angles. In South India, Southeast Asia, and Sri Lanka, the letters look more curvy, because they were written on leaves, so sharp turns and straight lines would tear the leaves. However, in North India, the letters can be more angular and sharp, but still also some curves, because they were written on both leaves and stone.\n\n\nIn China and Japan, the characters are derived from the Ancient Chinese logographic characters. In Japan, there are three writing systems. Two are syllabaries derived from Chinese, and the other is the normal Chinese logography.\nIn both Koreas, Hangeul is used. Hangeul is an artificially created script that was made to address the high percentage of illiteracy, due to the fact that Chinese characters were way to hard for the common people to learn. However, Hangeul was designed to be very simple.\nThe Cherokee syllabary was made after one Native American looked at the European colonizers’ writing and tried to mimic the symbols to make a writing system for Cherokee. He’d seen both the Latin and Cyrillic scripts. However, the symbols in Cherokee that look similar to the European writing make completely different sounds, as he only knew the shape of the symbols, not what sound they made."
   },
   {
-    "objectID": "posts/Cool-Linguistics-Stuff/index.html#to-be-continued",
-    "href": "posts/Cool-Linguistics-Stuff/index.html#to-be-continued",
-    "title": "Writing systems",
+    "objectID": "posts/Writing-Systems/index.html#to-be-continued",
+    "href": "posts/Writing-Systems/index.html#to-be-continued",
+    "title": "Writing Systems",
     "section": "To Be Continued",
-    "text": "To Be Continued\nOK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. How does that work? Wait until next time to find out!"
+    "text": "To Be Continued\nOK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. How does that work? Scroll down to find out!"
+  },
+  {
+    "objectID": "posts/Morphology-and-Semantics/index.html",
+    "href": "posts/Morphology-and-Semantics/index.html",
+    "title": "Morphology and Semantics",
+    "section": "",
+    "text": "Previously, in orthographies, phonetics, and phonology, we’ve discussed sounds and their symbols. Now, we take a step further into meaning.\nNow, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.\nIt may appear that there are exceptions. For example, the “wh” in English commonly indicates an interrogative word, like the five that are commonly referenced - “who”, “what”, “why”, “where”, “when”. However, there’s nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the “w” and the “h” as phonemes, we would call “wh” a unit that evolved out of a morpheme.\nA morpheme is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? Such a question isn’t easy or even helpful. Therefore, we use morphemes instead.\nSince sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).\n\n\n\nThere are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.\nThe first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. Analyitic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on inflection, or altering the form of words - instead, they rely on particles, which are words that are put next to other words to change the grammatical meaning. Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn’t use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn’t get smushed together, and you can still tell apart subjects, verbs, and objects. Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages in Greenland, Alaska, and Northern Canada, and wondered what they were yapping. Now you know it’s not actual yap, just a normal sentence put together into a giant word."
+  },
+  {
+    "objectID": "posts/Morphology-and-Semantics/index.html#thought-provoking-confusing-introduction",
+    "href": "posts/Morphology-and-Semantics/index.html#thought-provoking-confusing-introduction",
+    "title": "Morphology and Semantics",
+    "section": "",
+    "text": "Previously, in orthographies, phonetics, and phonology, we’ve discussed sounds and their symbols. Now, we take a step further into meaning.\nNow, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.\nIt may appear that there are exceptions. For example, the “wh” in English commonly indicates an interrogative word, like the five that are commonly referenced - “who”, “what”, “why”, “where”, “when”. However, there’s nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the “w” and the “h” as phonemes, we would call “wh” a unit that evolved out of a morpheme.\nA morpheme is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? Such a question isn’t easy or even helpful. Therefore, we use morphemes instead.\nSince sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch)."
+  },
+  {
+    "objectID": "posts/Morphology-and-Semantics/index.html#types-of-morphology-across-languages",
+    "href": "posts/Morphology-and-Semantics/index.html#types-of-morphology-across-languages",
+    "title": "Morphology and Semantics",
+    "section": "",
+    "text": "There are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.\nThe first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. Analyitic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on inflection, or altering the form of words - instead, they rely on particles, which are words that are put next to other words to change the grammatical meaning. Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn’t use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn’t get smushed together, and you can still tell apart subjects, verbs, and objects. Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages in Greenland, Alaska, and Northern Canada, and wondered what they were yapping. Now you know it’s not actual yap, just a normal sentence put together into a giant word."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\nMorphology and Semantics\n\n\n\nCool Linguistics Stuff\n\n\n\nI talk about how different language form words and meaning.\n\n\n\n\n\nOct 12, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nPhonetics and Phonology\n\n\n\nCool Linguistics Stuff\n\n\n\nI talk about how sounds work and how they are made.\n\n\n\n\n\nSep 14, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nWriting Systems\n\n\n\nCool Linguistics Stuff\n\n\n\nI talk about how different types of writing systems work and how they evolve.\n\n\n\n\n\nAug 23, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nLimit riLmOtOpU (Limit For Monkeys)\n\n\n\nconlangs\n\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -70,150 +77,164 @@
     "text": "This is a blog about math, linguistics and AI."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWriting systems\n\n\n\nconlangs\n\n\n\nI introduce writing systems to you!\n\n\n\n\n\nAug 23, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nLimit riLmOtOpU (Limit For Monkeys)\n\n\n\nlimit\n\nconlangs\n\n\n\n\n\n\n\n\n\nJul 3, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nMath Club Notes\n\n\n\n\n\n\n\n\nJul 1, 2025\n\n\nVaishnav Sudarshan\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nJun 22, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJun 19, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/Limit-TheLanguage/index.html",
-    "href": "posts/Limit-TheLanguage/index.html",
+    "objectID": "posts/Limit riLmOtOpU/index.html",
+    "href": "posts/Limit riLmOtOpU/index.html",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "",
     "text": "I first heard of constructed languages, or conlangs, when I heard of Esperanto. I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of Toki Pona, which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary.\n\nLimit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#background",
-    "href": "posts/Limit-TheLanguage/index.html#background",
+    "objectID": "posts/Limit riLmOtOpU/index.html#background",
+    "href": "posts/Limit riLmOtOpU/index.html#background",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "",
     "text": "I first heard of constructed languages, or conlangs, when I heard of Esperanto. I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of Toki Pona, which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary.\n\nLimit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#pronunciation-and-alphabet",
-    "href": "posts/Limit-TheLanguage/index.html#pronunciation-and-alphabet",
+    "objectID": "posts/Limit riLmOtOpU/index.html#pronunciation-and-alphabet",
+    "href": "posts/Limit riLmOtOpU/index.html#pronunciation-and-alphabet",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Pronunciation and Alphabet",
     "text": "Pronunciation and Alphabet\nLimit is written in Roman characters (for now, that is; we will introduce the real writing system later), but there are some rules to how the script works.\nConsonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is very phonetic; the pronunciation is exactly what is written. There are no silent letters.\nExamples for how to write and pronounce vowels:\n1. A short “O” like in the word “dog” would be lowercase.\n2. A long “A” like in the word “cake” would be uppercase.\n\n\n\n\n\n\nNote\n\n\n\nA quick note: The letter “U” (capital, which means long) does not contain a “y” sound in its pronunciation. It sounds like the o’s in the word “food” rather than the u in the word “university”.\nThere are some vowel and consonant sounds, of course, that cannot be produced with just the Roman alphabet. Therefore, the Limit alphabet contains some extra characters as well.\n\n\n\nExtra vowel sounds\n\n“%” sounds like “oo” in the word “book”.\n\n“@” sounds like “ow” like in the word “now”.\n\n“α” sounds like “ah” like in the word “drama”\n\n“&” sounds like “oi” like in the word “boy”.\n\n“*” sounds like “er” like in the word “singer”.\n\n“^” sounds like “on” like in the word “bon” in French (used for foreign loanwords).\n\n\n\nExtra consonant sounds\n\n“#” sounds like “zh”, like in the s in “measure”.\n\n“~” sounds like “th”, like in the word “think”.\n\n“β” sounds like the n in “song”.\n\n“!” sounds like “sh”, like in the word “shook”.\n\n\n\nOther adjustments to the alphabet\n\nTo make the “ar” or “or” sound, take “α” or “O” and add “*”.\n\nThe letter “c” is removed as its sound can be made from either “k” or “s”.\n\nThe letter “g” only can sound like the g in “gray”, and NOT sound like a j, like in “giraffe”.\n\nThe letter “j” is removed as any sound with a “j” can be made from “d#”.\n\nThe letter “q” is removed as any “qu” sound can be made with “kw” instead. “u”, however, is still perfectly safe as it is important for various vowel sounds.\n\nThe letter “x” is removed as any sound with an “x” can be made from either “ks” or “z”.\n\nSlashes indicate that some specific words are grouped together.\n\nOne last thing: Limit is pronounced in either an Indian or an American accent, except with the new pronunciation rules now given."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#pronouns-and-verbs",
-    "href": "posts/Limit-TheLanguage/index.html#pronouns-and-verbs",
+    "objectID": "posts/Limit riLmOtOpU/index.html#pronouns-and-verbs",
+    "href": "posts/Limit riLmOtOpU/index.html#pronouns-and-verbs",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Pronouns and Verbs",
     "text": "Pronouns and Verbs\nIf you have a pronoun and a verb, you have a simple sentence, so let us start here in our journey to learn real Limit words. There is no gender or verb conjugation for each pronoun in Limit, so this should be simple.\n\nPronouns\n\n\n\nEnglish\nLimit\n\n\n\n\nI\nLI\n\n\nYou\ndI\n\n\nHe/She/It\nkrI\n\n\nWe\nLId\n\n\nYou (plural)\ndId\n\n\nThey\nkrId\n\n\n\nTo make any of these pronouns formal, just add the prefix “yU”.\nTo make any of these pronouns insulting, just add the prefix “yoL”. If you are talking directly to someone, add the suffix “*” or “p*” for “dId” and “dI” respectively.\n\n\nVerbs\nPresent tense: Suffix “UL”\nPast tense: Suffix “Uz”\nFuture tense: Suffix “Uk”\nTo make something infinitive, remove the Uz/UL/Uk and add the suffix “Up”.\nTo negate a verb, add the suffix “O#U” or “#U” (depending on if it ends in a vowel or consonant) at the very end of the word.\n\nExample\n\nTo eat is “brikUp”.\n\n“I did not eat” would be “LI brikUzO#U”."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#syntax",
-    "href": "posts/Limit-TheLanguage/index.html#syntax",
+    "objectID": "posts/Limit riLmOtOpU/index.html#syntax",
+    "href": "posts/Limit riLmOtOpU/index.html#syntax",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Syntax",
     "text": "Syntax\nHere are some rules for sentence structure:\n\nThe order of a declarative sentence is Subject Object Verb.\n\nAdjectives always come after nouns, attached by a slash, without spaces.\n\nArticles come after nouns as well, also attached by a slash without spaces.\n\nIf there is an article and an adjective, the adjective comes after the article, and the adjective and the article are combined with slashes as well.\n\nAdverbs come before the verb or adjective that they modify, with a backslash with no spaces. If they modify an adjective, then it goes before the noun.\n\nThere is no distinction between proper and common nouns.\n\nPrepositions work the same way as in English.\n\nObjects, like in English, do not have to just be nouns but also any verb phrase that acts as a noun. Predicate adjectives and predicate nominatives also count as objects.\n\nPrepositional phrases (like “in the house”) count as objects as well.\n\nIndirect objects come right before direct objects.\n\nIndirect objects have the suffix “b”, or “Ob” if the word ends in a consonant.\n\nPredicate adjectives would actually be adverbs, as they modify the word “bLIvUp”.\nExamples:\nWrite “I like to eat” in Limit syntax and spelling.\nI tU Et LIk\nWrite “I give you a green box” in Limit syntax and spelling.\nI yUhU boks/A/grEn giv"
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#inflections",
-    "href": "posts/Limit-TheLanguage/index.html#inflections",
+    "objectID": "posts/Limit riLmOtOpU/index.html#inflections",
+    "href": "posts/Limit riLmOtOpU/index.html#inflections",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Inflections",
     "text": "Inflections\nTo inflect a word ending in O, make the final consonant of the inflection thing voiceless. For example, the plural of “riLmO” (monkey) will be “riLmOt” instead of “riLmOd” (riLmOd is not a real word for that reason). And, the possessive of “riLmO” will be “riLmOf” instead of “riLmOv”. Likewise, you’d say “riLmOkE” instead of “riLmOgE”, “riLmOpU” instead of “riLmObU”, and “riLmOsA” instead of “riLmOzA”."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#punctuation",
-    "href": "posts/Limit-TheLanguage/index.html#punctuation",
+    "objectID": "posts/Limit riLmOtOpU/index.html#punctuation",
+    "href": "posts/Limit riLmOtOpU/index.html#punctuation",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Punctuation",
     "text": "Punctuation\nCommas are written as “~”.\nPeriods are written as “-”.\nQuotation marks are written as “+” on either end of the quote.\nQuestion marks are just a word, that being “LE”."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#possession",
-    "href": "posts/Limit-TheLanguage/index.html#possession",
+    "objectID": "posts/Limit riLmOtOpU/index.html#possession",
+    "href": "posts/Limit riLmOtOpU/index.html#possession",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Possession",
     "text": "Possession\n\nPossessive pronouns/adjectives\n\n\n\nEnglish\nLimit\n\n\n\n\nMy/Mine\n“LIv”\n\n\nYour/Yours\n“krIv”\n\n\nHis/Her/Its\n“dIv”\n\n\nOur/Ours\n“LIdOv”\n\n\nYour/Yours (plural)\n“krIdOv”\n\n\nTheir/Theirs\n“dIdOv”\n\n\n\nHow to use a possessive noun for a person (for example, “That is Bob’s”):\nAdd “Ov” to the end of their name if it ends in a consonant, otherwise add “v”.\nIf the noun it modifies is plural, then add “Od” or “d”.\nExamples:\nMy books are big = “zO*pOd/LIvOd Lib blivUL”\nThe world is mine = “h%d/vU LIv blivUL”"
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#adjectives",
-    "href": "posts/Limit-TheLanguage/index.html#adjectives",
+    "objectID": "posts/Limit riLmOtOpU/index.html#adjectives",
+    "href": "posts/Limit riLmOtOpU/index.html#adjectives",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Adjectives",
     "text": "Adjectives\n\nArticles\nThe (singular): vU\nThe (plural): vUd\nIndefinite articles are implied if there is no article.\nRemember, the articles go after the noun and before another adjective, connected with a slash.\n\n\nDemonstratives\nThis: #%t\nThat: #at\nThose: #atOd\nThese: #%tOd\nDemonstratives go after the noun and before another adjective, connected with a slash, just like articles. If they are pronouns, then just treat them as pronouns instead.\n\n\nPlurals\nAdjectives have to agree with their noun in number. If the noun is singular, the adjectives will also be singular, and if the noun is plural, the adjectives will also be plural. To make a noun or an adjective plural, add a “d” if it ends in a vowel, and add an “Od” if it ends in a consonant.\nAdjective phrases also go after the noun, and just the first word of the adjective phrase will be combined with a slash to the noun.\nThere will also be a slash after the last word, if the adjective phrase is more than a single word."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#adverbs",
-    "href": "posts/Limit-TheLanguage/index.html#adverbs",
+    "objectID": "posts/Limit riLmOtOpU/index.html#adverbs",
+    "href": "posts/Limit riLmOtOpU/index.html#adverbs",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Adverbs",
     "text": "Adverbs\nTo turn an adjective into an adverb, add the prefix “.@”.\nThis is analogous to adding an “ly” at the end in English.\nAdverbs go right before the adjective, verb, or adverb that they modify.\nExample:\nThe word for “real” is “gOhO”, which means the word for “really” is “.@gOhO”.\nI am really good = “LI .@gOhO\\LimitO#U blivUL”"
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#numbers",
-    "href": "posts/Limit-TheLanguage/index.html#numbers",
+    "objectID": "posts/Limit riLmOtOpU/index.html#numbers",
+    "href": "posts/Limit riLmOtOpU/index.html#numbers",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Numbers",
     "text": "Numbers\nBase 10 is used, like normal.\nOne shorthand is implemented; whenever there is a 1 followed by a 0, it is written as θ.\nNumbers are written as normal Arabic numerals, but obviously they are said differently.\n0: “fA”\n1: “hα”\n2: “rO”\n3: “d#U”\n4: “yA”\n5: “.a”\n6: “brU”\n7: “,O”\n8: “we”\n9: “gI”\nTo get more numbers, you do the following:\nWrite each digit in the bigger number as the sum of each digit times a power of 10. For example, 243 would be 2*102+4*101+3*10^0.\nYou may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is “$”, pronounced “sigmα”. Fun fact: this word also means “and”.\nYou would write the each place value from highest exponent to lowest.\nInstead of saying plus, you would just combine each term with a slash.\nUnits digits do not need to be written as a$0, just a.\nBack to the example of 243, in Limit you would say this as:\n2$2/4\\(1/3, and pronounce this as rO\\)rO/yA$hα/jU, and remember that $ is pronounced as sigmα.\nFor negative numbers, add the suffix “yO”.\nFor ordinal numbers, add the suffix “hO”, after the “yO” if it is there.\nFor fractions, just use the postposition for “in”, which is the suffix “krA” or “OkrA”. There will be a space after that.\nYou can also just list each digit, but then you must indicate the decimal point when applicable, which is pronounced as “%nd” and is written as “*”.\nExample:\nYou would say “31.4th” as “jU\\(hα/hα/yA\\)hαyOhO”."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#questions",
-    "href": "posts/Limit-TheLanguage/index.html#questions",
+    "objectID": "posts/Limit riLmOtOpU/index.html#questions",
+    "href": "posts/Limit riLmOtOpU/index.html#questions",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Questions",
     "text": "Questions\nJust say the equivalent declarative sentence, then add “LE-” (which means question mark) to the end.\nPhrasing Examples:\n“Which one do you like?” -&gt; “You one/which like LE-”\n“How are you?” -&gt; “You how are LE-”\nHere’re the interrogative words:\nWhat:"
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#commands",
-    "href": "posts/Limit-TheLanguage/index.html#commands",
+    "objectID": "posts/Limit riLmOtOpU/index.html#commands",
+    "href": "posts/Limit riLmOtOpU/index.html#commands",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Commands",
     "text": "Commands\nState the equivalent in a future tense declarative sentence, and speak in 2nd person. Use the word for please, “hok”, at the end of the sentence, after the verb.\nPhrasing Examples:\n“Go to bed.” -&gt; “You will to bed go hok-”\nAlso, instead of saying “hok”, you can say “bOLOdOwO#O”, which is short for “bU LI dI wopLUkO#U”, which means something along the lines of “or I will kill you”.\nFun fact: the word “hok” is actually a loanword from Proto-Zorbbbb."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#prepositions",
-    "href": "posts/Limit-TheLanguage/index.html#prepositions",
+    "objectID": "posts/Limit riLmOtOpU/index.html#prepositions",
+    "href": "posts/Limit riLmOtOpU/index.html#prepositions",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Prepositions",
     "text": "Prepositions\nFirst, be sure to note that Limit uses a suffix for prepositions (so they are actually postpositions) like “in”, “at”, “during”, “of”, etc; this means anything that gives the position or time, not something that is being headed towards. This suffix is “gE”, or “OgE”, depending on if the word ends in a vowel or consonant.\nThere is also a suffix for something you are heading to. This includes words such as “before”, “to”, or “for”. The suffix is “bU”, or “ObU”, depending on if the word ends in a vowel or consonant.\nFinally, for something you are coming from, such as “from”, “after”, or “past”, the suffix will be either “zA” or “OzA”."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#general-rule-of-affixes",
-    "href": "posts/Limit-TheLanguage/index.html#general-rule-of-affixes",
+    "objectID": "posts/Limit riLmOtOpU/index.html#general-rule-of-affixes",
+    "href": "posts/Limit riLmOtOpU/index.html#general-rule-of-affixes",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "General Rule of Affixes",
     "text": "General Rule of Affixes\nIf the word ends in a consonant, and the suffix starts with a consonant, then put an “O” between them.\nIf the word ends in a vowel and the suffix starts with a consonant, or the other way around, then there is no need for an extra “O”.\nThis same intuition is to be applied to prefixes."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#conjunctions",
-    "href": "posts/Limit-TheLanguage/index.html#conjunctions",
+    "objectID": "posts/Limit riLmOtOpU/index.html#conjunctions",
+    "href": "posts/Limit riLmOtOpU/index.html#conjunctions",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Conjunctions",
     "text": "Conjunctions\nThe conjunctions (subordinating and coordinating, and also including relative pronouns) are:\nAnd: “$”\nOr: “bI”\nBut: “pA”\nSo: “skibidE”\nIf: “*m”\nNote for the next two: If these account for plural antecedents, then add a “d”.\nWho/That/Which (as a subordinate): “Ligmα”\nWhose: “Ligmαv”"
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#abbreviations",
-    "href": "posts/Limit-TheLanguage/index.html#abbreviations",
+    "objectID": "posts/Limit riLmOtOpU/index.html#abbreviations",
+    "href": "posts/Limit riLmOtOpU/index.html#abbreviations",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Abbreviations",
     "text": "Abbreviations\nJust like how there’s “ts pmo” for [censored], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO#U becomes bOLOdOwO#O. Also, negation affixes are important enough to count as their own word, so just put #O at the end if it is negated, like in this one."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#comparatives-and-superlatives",
-    "href": "posts/Limit-TheLanguage/index.html#comparatives-and-superlatives",
+    "objectID": "posts/Limit riLmOtOpU/index.html#comparatives-and-superlatives",
+    "href": "posts/Limit riLmOtOpU/index.html#comparatives-and-superlatives",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "Comparatives and Superlatives",
     "text": "Comparatives and Superlatives\nHow you would phrase this:\n[Subject] [Person, indirect form] [Attribute, locative form] [Win/Lose].\nThe [Person, indirect form] can be removed if the sentence is superlative.\nNote that the indirect form and the locative form both have a postpositional ending, so it may be confusing.\nThe attribute must be a verb. Nouns, adjectives, and adverbs must be reworded."
   },
   {
-    "objectID": "posts/Limit-TheLanguage/index.html#vocabulary-in-progress",
-    "href": "posts/Limit-TheLanguage/index.html#vocabulary-in-progress",
+    "objectID": "posts/Limit riLmOtOpU/index.html#vocabulary-in-progress",
+    "href": "posts/Limit riLmOtOpU/index.html#vocabulary-in-progress",
     "title": "Limit riLmOtOpU (Limit For Monkeys)",
     "section": "VOCABULARY (in progress)",
     "text": "VOCABULARY (in progress)\nAlright, now that you know all the grammar rules, let’s get into the vocabulary, so you can actually speak in Limit. There aren’t that many vocabulary words, instead you must take the basic vocabulary words and combine them. To negate a word (to make it opposite, basically) add the suffix “O#U” or “#U”, which works for verbs, adjectives, nouns, etc. The core vocabulary is mainly for neutral or negative connotation, and to get positive connotation, just negate it.\nNouns:\nPerson: nUvak\nMonkey: riLmO\nIgnorance: zO*p\nWorld: h%d\nNon-primate organism: tEkU\nTool: dOmα*\nName: Eskα\nAge: derUm\nEvilness: Limit\nTime: dUrin\nMotion: cU\nSize: pLevI\nColor: snib\nGoal: wOksO\nX-axis: dAb\nY-axis: vEb\nZ-axis: LUb\nNature: nuk\nQuantity: LodO\nFood: gla*nE\nSet: rimU\nAdjectives:\nEvil: Limit\nSmall: pLevI\nSlow: cU\nIncorrect: kIf\nOld: derUm\nUgly: t!Untab\nCold: mEkO\nUnskilled:\nLate: dUrin\nYucky: gla*nE\nBlack: snib\nBlue: mraflet\nYellow: krUgnip\nRed: yundrask\nLiquid: vUgis\nVerbs (infinitive):\nHate: netAbUp\nGo: drekInUp\nUse:\nMake: wopLUp\nNot know: zO*pUp Steal: prIksUp\nWant:\nLose:"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/Phonetics-and-Phonology/index.html",
+    "href": "posts/Phonetics-and-Phonology/index.html",
+    "title": "Phonetics and Phonology",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "This is a series of blogs about linguistics. Check out my ones about math, physics, and AI as well!"
+  },
+  {
+    "objectID": "posts/Phonetics-and-Phonology/index.html#how-sounds-work",
+    "href": "posts/Phonetics-and-Phonology/index.html#how-sounds-work",
+    "title": "Phonetics and Phonology",
+    "section": "How Sounds Work",
+    "text": "How Sounds Work\nAt first, the question of “how do sounds work” may seem dumb - you just vibrate your vocal cords, right? However, it’s more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people’s mouths. Now, it’s more difficult to do so, and you may struggle - unless, of course, you’re a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven’t already.\nIn kindergarten, you may have learned that sounds are classified as vowels and consonants, and that sounds are known as phonemes. However, I’ll talk about vowels later. Right now, let’s do consonants. In short, the two main parameters that control how a consonant is made are “place of articulation” and “manner of articulation”.\n\nPlace of Articulation\nPlace of articulation is essentially where in your mouth a sound is being made, whether it be deep in the throat (I’m looking at you, certain language primarily spoken in a country that borders Belgium, Germany, Luxembourg, Spain, Andorra, Monaco, Brazil, Suriname, and Italy) or front in the lips (like at the end of “dumb”). From deepest in the throat to closest in the lips, the most commonly referred to categories include glottal, pharyngeal, uvular, velar, retroflex, palatal, alveolar, dental, labiodental, and bilabial.\n\n\nManner of Articulation\nManner of articulation is how the sound is actually made. For example, there is a difference between “boron” and “moron”, even though both /b/ and /m/ are both “bilabial” sounds (one of the places of articulation mentioned above). Such manners of articulation include: Fricatives (blowing air, like in the “sssss” sound in “snake”); Plosives (stopping the sound, like how in “dart”, pronouncing both the /d/ and /t/ can’t really be continued); Nasals (where air comes out of your “nnnnn-nostrils”); Trills (where a sound is like a plosive but gets rolled, like the Spanish rolled r in “perro”); Clicks (air is sucked in instead of pushed out, but unfortunately these cool sounds don’t exist in English, so I can’t provide an example you know how to pronounce. However, the name of the language Xhosa, (in)famous for having a lot of clicks, has a click in its name when not butchered as /kshosa/); and more.\n\n\nMore\nAnother important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at /s/ and /z/, or /k/ and /g/ (as an exercise, find the voiceless version of /b/). In most languages, this has a really important distinction. For example, take “tie” and “die”. However, we usually just include this within manner of articulation, because we can’t put 3D charts on the iPad screen your face is glued to.\nConsonants are classified in other ways than just the two (or three) parameters, though. For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn’t use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic. There is also sonorance or obstruence. Sonorance means the vocal tract is pretty open, like a vowel. As a result, most sonorants, which include nasals, approximants, and liquids, tend to be voiced. Obstruence means there is some friction or turbulence which make the sounds more easily voiceless and are noisier.\nAdditionally, there are more factors that can alter a consonant. If you know Hindi, for example, you know how aspiration - putting extra air after a consonant - can impact a word and does matter, like in the words “पल” (pronounced like “pal”, meaning “moment”) and “फल” (pronounced like “phal”, meaning “fruit”). In Russian, palatalization - making the consonant more like a palatal sound, which basically just makes it sound like “y” sound is at the end - is a very important factor too, with the words “мать” (pronounced like “maty” with the y being as in “yo” and not “corny”) meaning “mother” but “мат” (pronounced like “mat”) meaning a swear word. Gemination - making a consonant pronounced for longer - is important in Finnish, because “tapa” means “way” or “manner”, but “tappa” means “kill”.\n\n\nVowels\nEven in vowels, two main parameters affect how a vowel is made. While vowels are not that interesting in my opinion, they are definitely required, because without them you’d be speaking either gibberish or Polish. Vowels tend to be voiced because they are sonorant and made by vibrating the vocal cords.\nThe parameters are frontness (deep in the throat or front in the mouth) and closedness (is mouth open or closed). A third binary parameter is there, roundedness, which is if your mouth is shaped like a circle or not. For example, the /i/ sound is a closed front unrounded vowel.\nThere are many more variations to vowels that can be made now. For example, tone is a big factor in Mandarin. 糖 (táng) means sugar, but 汤 (tāng) means soup. Nasality (how much air comes out of the nostrils) is important in Fr*nch, as “a” means “has” but “an” means “year”. Rhoticity (how much the vowel sounds r-colored) makes the word “or” sound American when rhotic, but British when you only pronounce it like /o/. Vowels can also have creaky or breathy voice (basically making it sound like a sheep or a zombie, respectively)."
+  },
+  {
+    "objectID": "posts/Phonetics-and-Phonology/index.html#the-ipa",
+    "href": "posts/Phonetics-and-Phonology/index.html#the-ipa",
+    "title": "Phonetics and Phonology",
+    "section": "The IPA",
+    "text": "The IPA\nNow that you know how sounds are made, let’s see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the International Phonetic Alphabet where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I’ve used slashes to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds.\nMany letters are just like in English. For example, why don’t you take a random guess at how /p/, /h/, /v/, /z/, /m/, /ɪ/ and /t/ are pronounced? Yes! They are pronounced like “p”, “h”, “v”, “z”, “m”, “ɪ” and “t”! BUT NOT LIKE “pea”, “aich”, “vee”, “zee”, “em”, “eye”, and “tea” - you need to hop off elementary school English if you said that. And if you said “momentum”, “Planck’s constant”, “velocity”, “height coordinate”, “mass”, “current”, and “time”, hop off physics!\nHowever, there are some tricky ones too that are designed to deceive you. For example, what sounds do you think /j/, /x/, /ɑ/, /r/, /q/, /c/, and /ʔ/ make? No, it is not “jay”, “eks”, “aey”, “ar”, “kyoo”, “see”, and “hmmm?”, or “impulse”, “position”, “acceleration”, “radius”, “charge”, “speed of light”, and “hmmm?”. Instead, they make the voiced palatal approximant, voiceless velar fricative, unrounded open back vowel, voiced alveolar trill, voiceless uvular stop, voiceless palatal stop, and the glottal stop (glottal stop doesn’t have a voiced version, because it’s just the break between “uh” and “oh” in “uh-oh”).\nWe’re not done. There’s even Greek letters, which somehow we can never evade, regardless of the subject. /ɸ/, /θ/, /ʎ/, /ɤ/, and /ʊ/ are not phi, theta, lambda, gamma, and upside-down omega, but instead voiceless bilabial fricative, voiceless alveolar fricative, voiced palatal lateral approximant, back close-mid unrounded vowel, and then this random vowel that doesn’t know where it belongs. Phew. That torture is over. Or is it?\nWe still have the diacritics to go over, but this time I won’t subject you to the pain of looking at every diacritic. Instead, I’ll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voiceless, tone, and more.\nTo see the visual representation of the IPA, look here. Each language has its phonology written, by placing the accurate symbols of all of its phonemes. For example, see the phonology of Fr*nch."
+  },
+  {
+    "objectID": "posts/Phonetics-and-Phonology/index.html#to-be-continued",
+    "href": "posts/Phonetics-and-Phonology/index.html#to-be-continued",
+    "title": "Phonetics and Phonology",
+    "section": "To Be Continued",
+    "text": "To Be Continued\nPhonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned, unless you first want to deal with the PTSD of looking at the IPA."
   }
 ]

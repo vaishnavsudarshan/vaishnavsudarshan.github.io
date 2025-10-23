@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-07-01">
+<meta name="dcterms.date" content="2025-08-23">
 
-<title>Math Club Notes – Blog</title>
+<title>Writing Systems – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -140,8 +114,11 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Math Club Notes</h1>
-                      </div>
+      <h1 class="title">Writing Systems</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Cool Linguistics Stuff</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -157,13 +134,19 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 1, 2025</p>
+        <p class="date">August 23, 2025</p>
       </div>
     </div>
     
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      I talk about how different types of writing systems work and how they evolve.
+    </div>
+  </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -176,36 +159,82 @@ window.Quarto = {
 
 
 
-<section id="linear-algebra" class="level1">
-<h1>Linear Algebra</h1>
-<p>Right now, you might be wondering: “Sir, what is this? I learned this in 4th grade! Isn’t linear algebra just graphing lines on the coordinate plane and solving equations?” NO! Linear algebra has almost nothing to do with that, at least in the beginning. Now, let’s get into actual linear algebra.</p>
-<section id="vectors" class="level2">
-<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
-<p>Vectors are basically the foundation of linear algebra. No, a vector is not named after the Despicable Me villain; it’s the other way around. A vector is, in short, an arrow in space, that you can think of as moving a point at its tail to its tip. In physics, you learn that a vector is a quantity with magnitude and direction. This means that the length of the vector matters, and so does the direction it points in. You can also represent a vector most abstractly, as a list of numbers. This is how computers view vectors. Each number tells the coordinate of each dimension of the arrow. For example, the vector <span class="math display">\[
-\begin{pmatrix}
-1 \\
-2 \\
-\end{pmatrix}
-\]</span></p>
-<p>would represent a vector whose components are 1 unit in the <span class="math inline">\(x\)</span> direction, and 2 units in the <span class="math inline">\(y\)</span> direction: <img src="fig1.png" class="img-fluid quarto-figure quarto-figure-right" style="width:50.0%" alt="A vector representing a point (1,2)."></p>
-<p>In other words, it’s about <span class="math inline">\(2.236\)</span> units long and points about <span class="math inline">\(63.435\)</span> degrees measured counterclockwise from the x axis. Vectors can be multiplied by a number, also known as a scalar. This will scale, or stretch/shrink, the magnitude of the vector by the number. If the number is negative, the vector will be in the opposite direction. You can think of adding vectors <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> as first moving along <span class="math inline">\(A\)</span>, then from that ending point moving along <span class="math inline">\(B\)</span>. The original starting point to the new ending point will be the resultant vector. Similarly, you can compute <span class="math inline">\(A - B\)</span> by scaling <span class="math inline">\(B\)</span> by <span class="math inline">\(-1\)</span>. In terms of the components, you can just add each corresponding component, as this will be the net movement. For example, <span class="math display">\[
-\begin{pmatrix}
-1 \\
-2 \\
-\end{pmatrix}
-+
-\begin{pmatrix}
-3 \\
-4 \\
-\end{pmatrix}
-\]</span></p>
-<p>will be</p>
-<p><span class="math display">\[
-\begin{pmatrix}
-4 \\
-6 \\
-\end{pmatrix}
-\]</span></p>
+<blockquote class="blockquote">
+<p>This is a series of blogs about linguistics. Check out my ones about math, physics, and AI as well!</p>
+</blockquote>
+<section id="writing-systems" class="level1">
+<h1>Writing Systems</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Have you ever wondered how kids sing their “abc’s” in different places? In some places, kids sing their “alpha beta gamma’s” or their “alif baa jiim’s”, which are pretty similar to our own. In some places, kids recite their “ka kha ga gha nga’s”, quite different from our own. Yet in other places, such a song about their “alphabet” would be physically impossible, with kids thinking this is a preposterous and cruel joke. All of these are tricks for remembering letters, which are part of writing systems. Writing systems are also known as <a href="https://en.wikipedia.org/wiki/Orthography"><em>orthographies</em></a>. You already know at least one - the Latin alphabet, which you’re reading right now. Here’s an overview of how all the different writing systems work.</p>
+</section>
+<section id="phonetic-orthographies" class="level2">
+<h2 class="anchored" data-anchor-id="phonetic-orthographies">Phonetic Orthographies</h2>
+<p>In phonetic writing systems, symbols are written based on sound. For example, in the Latin alphabet, the word “cat” is written with a “c” for the “c” sound, “a” for the “a” sound, and “t” for the “t” sound. Of course, it’s not always one-to-one, or even consistent, in English itself (cough cough, “<em>cough</em>”), but the main point still stands - it’s based on sound. In our language, you wouldn’t draw an image of a cat to represent a cat, you’d just write “cat” based on the sounds of the word. Here are the types of phonetic writing systems:</p>
+<section id="alphabets" class="level3">
+<h3 class="anchored" data-anchor-id="alphabets">Alphabets</h3>
+<p>Alphabets work by having symbols for vowels and consonants, and they’re just written without really being treated as separate phonemes. These are arguably the simplest. Apart from the Latin alphabet, some others are Cyrillic, Greek, IPA, Georgian, Armenian, etc. Korean’s writing system, Hangeul, is kind of like an alphabet because it writes out its vowels and consonants, but it arranges each syllable into its own block. For example, the characters for “ba” would be 바, but the characters for “bo” would be 보. Furthermore, the characters for “bol” would be 볼. The word alphabet comes from the first to letters of Greek, alpha and beta.</p>
+</section>
+<section id="abjads" class="level3">
+<h3 class="anchored" data-anchor-id="abjads">Abjads</h3>
+<p>Most alphabets evolved from <a href="https://en.wikipedia.org/wiki/Abjad"><em>abjads</em></a>. Abjads are like alphabets, except usually, most of the vowels aren’t written, and instead inferred from context. Only long vowels are written. Sometimes, for clarity, the short vowels may be written in with diacritics. For example, in the Quran, even though the Arabic script is an abjad, all the vowels were written so that there aren’t any misinterpretations. The word “abjad” comes from the first sounds of the four letters of the Arabic script, “a”, “b”, “j”, and “d”, which is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”.</p>
+<p>The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl.</p>
+</section>
+<section id="syllabaries" class="level3">
+<h3 class="anchored" data-anchor-id="syllabaries">Syllabaries</h3>
+<p>In <a href="https://en.wikipedia.org/wiki/Syllabary"><em>syllabaries</em></a>, each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don’t have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols. <a href="Hiragana_and_Katakana.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Chart showing the two syllabaries of Japanese source(https://cherryblossomstories.com/wp-content/uploads/2013/05/Hiragana-and-Katakana.jpg"><img src="Hiragana_and_Katakana.jpg" class="img-fluid" alt="Chart showing the two syllabaries of Japanese source(https://cherryblossomstories.com/wp-content/uploads/2013/05/Hiragana-and-Katakana.jpg"></a></p>
+</section>
+<section id="abugidas" class="level3">
+<h3 class="anchored" data-anchor-id="abugidas">Abugidas</h3>
+<p><a href="https://en.wikipedia.org/wiki/Abugida"><em>Abugidas</em></a>, in my opinion, are by far the coolest type of phonetic orthography. How it works is that if you write a consonant on its own, it comes with a vowel after it. For example, the /k/ sound in <a href="https://en.wikipedia.org/wiki/Devanagari"><em>Devanagari</em></a>, क, is actually pronounced /kə/ because without altering the consonant, it comes with an /ə/ sound. To make it a different vowel, you add a diacritic. So, /ke/ would be के. And, to make it just /k/ with no vowel, you make it क्. The most popular abugidas are from India, including Devanagiri, Tamil, Bengali, etc. However, the word “abugida” comes from the Ge’ez script from Ethiopia, where the first four letters are “a”, “bu”, “gi”, and “da” (and this arrangement is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”, just like with the word “Abjad”). Another notable abugida, apart from Indian scripts, Southeast Asian scripts, and the Ge’ez script, is the Cree script. For changing the vowel, Cree doesn’t actually add a diacritic, but instead modifies the consonant through rotations. Cree is actually partially inspired by Devanagiri.</p>
+</section>
+</section>
+<section id="semantic-orthographies" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-orthographies">Semantic Orthographies</h2>
+<p>Instead of writing symbols based on sound, some languages have orthographies where symbols are based on meaning.</p>
+<section id="logographies" class="level3">
+<h3 class="anchored" data-anchor-id="logographies">Logographies</h3>
+<p>The most common type of semantic writing system is a logography, and the most famous type of logography is <a href="https://en.wikipedia.org/wiki/Hanzi"><em>Hanzi</em></a> from Sinitic languages, which is also what Japanese’s Kanji is based on. For example, look at the symbol for “yi” in Mandarin or “ichi” in Japanese, which means “one”: “一” Now, for “er” in Mandarin or “ni” in Japanese, which means “two”: “二” So, sometimes, the symbol looks like what it means. However, sometimes, it can be more complicated than that. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for “forest” is: 森 while the symbol for “tree” is: 木 Also, symbols whose words sound similar can also be used for clarification. Egyptian hieroglyphs were part logography. Some symbols worked just like Chinese, and others evolved into more of a syllabary or abjad.</p>
+</section>
+<section id="pictographies" class="level3">
+<h3 class="anchored" data-anchor-id="pictographies">Pictographies</h3>
+<p>Pictographies are kind of like logographies, except that it’s much more literal. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words. <a href="mayan_inscription.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="A page showing the Mayan pictographies written down [source](https://3.bp.blogspot.com/_qTDAEasFLtU/S2bCBrxYEBI/AAAAAAAAG1A/eHIKTkXQ2gI/s1600/Tables+for+the+planet+Venus+duo.jpg"><img src="mayan_inscription.png" class="img-fluid" alt="A page showing the Mayan pictographies written down [source](https://3.bp.blogspot.com/_qTDAEasFLtU/S2bCBrxYEBI/AAAAAAAAG1A/eHIKTkXQ2gI/s1600/Tables+for+the+planet+Venus+duo.jpg"></a></p>
+</section>
+<section id="ideographies" class="level3">
+<h3 class="anchored" data-anchor-id="ideographies">Ideographies</h3>
+<p>Ideographies are another type of semantic orthography, where an idea or a concept is directly written, without being tied to a specific sound. For example, some street signs symbols that don’t have words but rather symbols, some of the more ancient Hanzi initially, or even some of the more abstract emojis as well are ideographies.</p>
+</section>
+</section>
+<section id="evolution-of-writing" class="level2">
+<h2 class="anchored" data-anchor-id="evolution-of-writing">Evolution of writing</h2>
+<p>Many writing systems evolved from Egyptian hieroglyphs, to become primarily alphabets, abjads, or even abugidas. This is primarily in Europe, the Middle East, and North Africa, where Egypt indirectly influenced. For example, the European alphabets evolved from Ancient Greek’s alphabet (Latin through the Etruscan alphabet, which in turn came from the Ancient Greek alphabet), which evolved from Phoenecian’s abjad, which evolved from Egyptian hieroglyphs. Also, the Semitic abjads evolved from Phoenician’s abjad too. The Semitic languages are written from right to left, because it chose a direction to write from Phoenecian, which alternated. Ancient Greek also initially alternated directions line by line, but then chose to stick with only left to right, which all the European languages are written with now.</p>
+<p>In India, as well as some parts of Southeast Asia, including Myanmar, Laos, and Thailand, the orthography (all abugidas) of those languages evolved from the <em>Brahmi</em> script, which was an abugida. It’s not certain where the Brahmi script is from, though it’s suggested to come from Egyptian hieroglyphs too, but it could also be an artificially created script that evolved naturally.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="brahmi_script_qutub_minar.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, source"><img src="brahmi_script_qutub_minar.jpg" class="img-fluid figure-img" alt="An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, source"></a></p>
+<figcaption>An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, <a href="https://live.staticflickr.com/2869/12901396153_374f862d10_b.jpg">source</a></figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cool fact to bore your friends with and be called a nerd!!!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Brahmi script was initially all straight lines and sharp angles. In South India, Southeast Asia, and Sri Lanka, the letters look more curvy, because they were written on leaves, so sharp turns and straight lines would tear the leaves. However, in North India, the letters can be more angular and sharp, but still also some curves, because they were written on both leaves and stone.</p>
+</div>
+</div>
+<p>In China and Japan, the characters are derived from the Ancient Chinese logographic characters. In Japan, there are three writing systems. Two are syllabaries derived from Chinese, and the other is the normal Chinese logography.</p>
+<p>In both Koreas, Hangeul is used. Hangeul is an artificially created script that was made to address the high percentage of illiteracy, due to the fact that Chinese characters were way to hard for the common people to learn. However, Hangeul was designed to be very simple.</p>
+<p>The Cherokee syllabary was made after one Native American looked at the European colonizers’ writing and tried to mimic the symbols to make a writing system for Cherokee. He’d seen both the Latin and Cyrillic scripts. However, the symbols in Cherokee that look similar to the European writing make completely different sounds, as he only knew the shape of the symbols, not what sound they made.</p>
+</section>
+<section id="to-be-continued" class="level2">
+<h2 class="anchored" data-anchor-id="to-be-continued">To Be Continued</h2>
+<p>OK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. How does that work? Scroll down to find out!</p>
 
 
 </section>
@@ -284,7 +313,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/vaishnavsudarshan\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -612,6 +641,38 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
