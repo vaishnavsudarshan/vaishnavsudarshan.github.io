@@ -7,7 +7,7 @@ abstract: I talk about how different language form words and meaning.
 ---
 # Morphology and Semantics
 ## "Thought-Provoking" Introduction
-Previously, in orthographies, phonetics, and phonology, we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
+Previously, in [orthographies](../Writing-Systems/index.qmd), and [phonetics, and phonology](../Phonetics-and-Phonology/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
 
 Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this.
 
