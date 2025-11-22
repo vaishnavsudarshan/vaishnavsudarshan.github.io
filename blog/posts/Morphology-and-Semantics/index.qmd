@@ -6,7 +6,7 @@ categories:  [Cool Linguistics Stuff]
 abstract: I talk about how different language form words and meaning.
 ---
 # Morphology and Semantics
-## "Thought-Provoking" (Confusing) Introduction
+## "Thought-Provoking" Introduction
 Previously, in orthographies, phonetics, and phonology, we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
 
 Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this.
@@ -21,9 +21,38 @@ Since sound and meaning are independent, if your English teacher ever uses somet
 
 There are two continuums that determine how a language's morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated. 
 
+### Spectrum 1
 The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. 
 Analyitic languages would be something like Mandarin - the sentence "I don't drink tea" would be "我不喝茶" ("Wǒ bù hē chá"). Each word is its own morpheme here. Purely analytic languages don't rely on *inflection*, or altering the form of words - instead, they rely on *particles*, which are words that are put next to other words to change the grammatical meaning. 
 Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn't use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn't get smushed together, and you can still tell apart subjects, verbs, and objects.
-Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages in Greenland, Alaska, and Northern Canada, and wondered what they were yapping. Now you know it's not actual yap, just a normal sentence put together into a giant word. 
+Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it's not actual yap, just a normal sentence put together into a giant word. 
+### Spectrum 2
+The second continuum ranges from very clear distinction between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional. 
+An agglutinative language like Turkish clearly separates all of its morphemes. 
+Take the "word" (more like sentence) "Evlerimizdenmişsiniz".
 
+Breakdown:
+
+Ev → "house" (root noun)
+
+-ler → plural → Evler = "houses"
+
+-imiz → our → Evlerimiz = "our houses"
+
+-den → from → Evlerimizden = "from our houses"
+
+-miş → hearsay/past tense → Evlerimizdenmiş = "it seems it was from our houses"
+
+-siniz → second person plural → Evlerimizdenmişsiniz = "apparently you (all) were from our houses"
+
+However, look at fusional languages. In Spanish, "hablamos" means "we speak", with the ending "-amos" indicating that the pronoun is first person, and also plural ("we"). If you just knew the first person ending that's not plural ("-o"), then you still wouldn't be able to derive the ending "-amos" from that. 
+
+## Semantics
+
+Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). 
+
+In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
+[_Natural Language Processing_](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them. 
+
+I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I'll provide a brief explanation. Basically, the AI user's input is split into *tokens*, which are kind of like morphemes except that they don't necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle. 
 

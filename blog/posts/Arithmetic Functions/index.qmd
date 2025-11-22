@@ -1,0 +1,13 @@
+---
+title: "Arithmetic Functions"
+author: "Vaishnav Sudarshan"
+date: "2025-10-12"
+categories:  [Cool Math Stuff]
+abstract: I talk about what arithmetic functions are and their uses.
+---
+# Introduction
+A function is an arithmetic function if it takes in any positive integer and outputs a complex number (remember that any subset of complex numbers like positive integers is still a complex number).
+If you have no brain cells, you might think that this is kind of arbitrary. However, if you passed 3rd grade, you would likely realize that this looks like it can be used in number theory, and you'd be right. 
+# Multiplicative Functions
+Now, things start to seem a lot more arbitrary. A multiplicative function $f$ is an arithmetic function that has the following property: $f(ab)=f(a)f(b)$
+As nonsensical as this may seem, multiplicativity is actually a really useful property. Think of this: If you ever tried to find the number of factors of a number, you just multiplied one more than the exponents of each of the prime factors. For example, if you wanted to find the number of factors of $6741$,  
