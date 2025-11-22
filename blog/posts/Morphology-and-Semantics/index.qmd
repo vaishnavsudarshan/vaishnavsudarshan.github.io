@@ -23,11 +23,17 @@ There are two continuums that determine how a language's morphology works. The f
 
 ### Spectrum 1
 The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. 
-Analyitic languages would be something like Mandarin - the sentence "I don't drink tea" would be "我不喝茶" ("Wǒ bù hē chá"). Each word is its own morpheme here. Purely analytic languages don't rely on *inflection*, or altering the form of words - instead, they rely on *particles*, which are words that are put next to other words to change the grammatical meaning. 
+
+Analytic languages would be something like Mandarin - the sentence "I don't drink tea" would be "我不喝茶" ("Wǒ bù hē chá"). Each word is its own morpheme here. Purely analytic languages don't rely on *inflection*, or altering the form of words - instead, they rely on *particles*, which are words that are put next to other words to c
+hange the grammatical meaning. 
+
 Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn't use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn't get smushed together, and you can still tell apart subjects, verbs, and objects.
+
 Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it's not actual yap, just a normal sentence put together into a giant word. 
+
 ### Spectrum 2
 The second continuum ranges from very clear distinction between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional. 
+
 An agglutinative language like Turkish clearly separates all of its morphemes. 
 Take the "word" (more like sentence) "Evlerimizdenmişsiniz".
 
