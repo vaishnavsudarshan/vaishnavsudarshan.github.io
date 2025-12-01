@@ -3,11 +3,11 @@ title: "Writing Systems"
 author: "Vaishnav Sudarshan"
 date: "2025-08-23"
 categories:  [Cool Linguistics Stuff]
-abstract: I talk about how different types of writing systems work and how they evolve.
+abstract: How do different types of writing systems work? What are they evolved from, and how? All these and more will be answered in this blog post. 
 image: brahmi_script_qutub_minar.jpg
 ---
 
-> This is a series of blogs about linguistics. Check out my ones about math, physics, and AI as well!
+> This is a series of blogs about linguistics. See also: [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/) [_Morphology and Semantics_](../Morphology-and-Semantics/) [_Phonetics and Phonology Part 2_](../Phonetics-and-Phonology-Part2/)
 
 # Writing Systems
 ## Introduction 
@@ -29,7 +29,7 @@ Most alphabets evolved from [_abjads_](https://en.wikipedia.org/wiki/Abjad). Abj
 The word "abjad" comes from the first sounds of the four letters of the Arabic script, "a", "b", "j", and "d", which is cognate with Greek's "alpha", "beta", "gamma", "delta".
 
 
-The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl. 
+The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl.
 
 ### Syllabaries
 In [_syllabaries_](https://en.wikipedia.org/wiki/Syllabary), each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don't have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols. 

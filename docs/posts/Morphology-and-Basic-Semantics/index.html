@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2020-10-12">
+<meta name="dcterms.date" content="2025-11-12">
 
-<title>Matrix Calculus – Blog</title>
+<title>Morphology and Semantics – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -111,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Matrix Calculus</h1>
+      <h1 class="title">Morphology and Semantics</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Cool Linguistics Stuff</div>
               </div>
@@ -131,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 12, 2020</p>
+        <p class="date">November 12, 2025</p>
       </div>
     </div>
     
@@ -141,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      I talk about how different language form words and meaning.
+      How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
     </div>
   </div>
   
@@ -156,19 +188,79 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="making-derivatives-more-abstract" class="level1">
-<h1>Making Derivatives More Abstract</h1>
+<blockquote class="blockquote">
+<p>This is a series of blogs on linguistics. See also: <a href="../Phonetics-and-Phonology-Part2/"><em>Phonetics and Phonology Part 2</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part1/"><em>Phonetics and Phonology Part 1</em></a></p>
+</blockquote>
+<section id="morphology-and-basic-semantics" class="level1">
+<h1>Morphology and Basic Semantics</h1>
+<section id="confusing-introduction" class="level2">
+<h2 class="anchored" data-anchor-id="confusing-introduction">Confusing Introduction</h2>
+<p>Previously, in <a href="../../posts/Writing-Systems/index.html">orthographies</a>, and <a href="../../posts/Phonetics-and-Phonology-Part1/index.html">phonetics and phonology</a>, we’ve discussed <em>sounds</em> and their symbols. Now, we take a step further into <em>meaning</em>.</p>
+<p>Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.</p>
+<p>It may appear that there are exceptions. For example, the “wh” in English commonly indicates an interrogative word, like the five that are commonly referenced - “who”, “what”, “why”, “where”, “when”. However, there’s nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the “w” and the “h” as <em>phonemes</em>, we would call “wh” a unit that evolved out of a <em>morpheme</em>.</p>
+<p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? Such a question isn’t easy or even helpful. Therefore, we use morphemes instead.</p>
+<p>Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).</p>
 </section>
-<section id="section" class="level1">
-<h1></h1>
+<section id="types-of-morphology-across-languages" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-morphology-across-languages">Types of Morphology Across Languages</h2>
+<p>There are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.</p>
+<section id="spectrum-1" class="level3">
+<h3 class="anchored" data-anchor-id="spectrum-1">Spectrum 1</h3>
+<p>The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic.</p>
+<p>Analytic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on <em>inflection</em>, or altering the form of words - instead, they rely on <em>particles</em>, which are words that are put next to other words to c hange the grammatical meaning.</p>
+<p>As a sidenote, Google Translate clearly agrees that each character is a word in this case, as shown here.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="translate.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Shows how Google Translate separates words in Pinyin"><img src="translate.png" class="img-fluid figure-img" alt="Shows how Google Translate separates words in Pinyin"></a></p>
+<figcaption>Shows how Google Translate separates words in Pinyin</figcaption>
+</figure>
+</div>
+<p>Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn’t use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn’t get smushed together, and you can still tell apart subjects, verbs, and objects.</p>
+<p>Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it’s not actual yap, just a normal sentence put together into a giant word.</p>
+<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just on average, how is the density of morphemes generally?</p>
 </section>
-<section id="section-1" class="level1">
-<h1></h1>
+<section id="spectrum-2" class="level3">
+<h3 class="anchored" data-anchor-id="spectrum-2">Spectrum 2</h3>
+<p>The second continuum ranges from very clear distinction between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional.</p>
+<p>An agglutinative language like Turkish clearly separates all of its morphemes. Take the “word” (more like sentence) “Evlerimizdenmişsiniz”.</p>
+<p>Breakdown:</p>
+<p>Ev → “house” (root noun)</p>
+<p>-ler → plural → Evler = “houses”</p>
+<p>-imiz → our → Evlerimiz = “our houses”</p>
+<p>-den → from → Evlerimizden = “from our houses”</p>
+<p>-miş → hearsay/past tense → Evlerimizdenmiş = “it seems it was from our houses”</p>
+<p>-siniz → second person plural → Evlerimizdenmişsiniz = “apparently you (all) were from our houses”</p>
+<p>However, look at fusional languages. In Spanish, “hablamos” means “we speak”, with the ending “-amos” indicating that the pronoun is first person, and also plural (“we”). If you just knew the first person ending that’s not plural (“-o”), then you still wouldn’t be able to derive the ending “-amos” from that.</p>
 </section>
-<section id="section-2" class="level1">
-<h1></h1>
+<section id="consonantal-root-systems" class="level3">
+<h3 class="anchored" data-anchor-id="consonantal-root-systems">Consonantal Root Systems</h3>
+<p>There is a feature in languages where the root meaning is carried out through the consonants, and the vowels between them just modify the meaning. This is pretty much unseen outside of Afro-Asiatic langauges.</p>
+<p>Most famously, Semitic languages (a sub-branch of Afro-Asiatic) such as Arabic and Hebrew use the triconsonantal root system. In Arabic, for example, the root “k-t-b” has to do with writing and books. The word “kitab” means “book”, the word “katib” means “writer”, and the word “maktaba” means “library”.</p>
+<p>Note that the extra consonant “m” in “maktaba” is added, because Arabic itself isn’t purely consonantal, and uses affixes as well. Interestingly, the word “kitab” spread to many languages like Farsi or Hindi to mean “book”, but since those languages aren’t Semitic, they don’t think of “kitab” using the triconsonantal root system, but rather just as any other word.</p>
+<p>Germanic languages like English do just <em>just</em> a little. Primarily, this is shown in tense changes, like “s<em>i</em>ng” -&gt; “s<em>u</em>ng” -&gt; “s<em>a</em>ng”, or “r<em>u</em>n” -&gt; “r<em>u</em>n” -&gt; “r<em>a</em>n” as opposed to something like “reprimand” -&gt; “reprimand<em>ed</em>” -&gt; “reprimand<em>ed</em>”, where the latter is regular.</p>
+</section>
+</section>
+<section id="semantics-intro" class="level2">
+<h2 class="anchored" data-anchor-id="semantics-intro">Semantics Intro</h2>
+<p>Semantics is how we know how close words’ meanings are. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). In fact, “dog” and “cat” are actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
+<p>In a future blog post, I’ll talk exclusively about semantics, but for right now, I’ll talk about a specific aspect of it.</p>
+<section id="applications-in-ai" class="level3">
+<h3 class="anchored" data-anchor-id="applications-in-ai">Applications In AI</h3>
+<p><a href="https://en.wikipedia.org/wiki/Natural_language_processing"><em>Natural Language Processing</em></a> (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them.</p>
+<p>I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I’ll provide a brief explanation. Basically, the AI user’s input is split into <em>tokens</em>, which are kind of like morphemes except that they don’t necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle.</p>
+<p>Every token in the language (in our case, English) is mapped to a vector (the specific details of how that works will be explained in a future blog post). These vectors’ angles’ closeness tries to portray semantic relations, but not exactly in the way you might think.</p>
+<p>For example, synonyms and antonyms (words that mean similar things and words that mean the opposite, respectively) would not be pointing in completely opposite directions, but rather all approximately in a similar direction.</p>
+<p>This is because, if you think it, “hot” and “cold” are still about temperatures, so they should point to a similar place. Something that has nothing to do with temperatures whatsoever, such as “skibidi” (although to be fair, “skibidi” has nothing to do with anything useful whatsoever), should point in the opposite direction. How exactly do the angles portray semantic closeness? The cosine of the angle does.</p>
+<p>If the directions are close, then the cosine will be almost <span class="math inline">\(1\)</span>, but if the directions are near-opposite, then the directions will be <span class="math inline">\(-1\)</span>, so the higher number reflects that the meanings are closer.</p>
+<p>The magnitudes of the vectors refer to how frequent or useful the words are, as well.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>How words arrange meanings is cool, but how do sentences arrange the words containing those meanings? Stay tuned to find out!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -572,6 +664,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

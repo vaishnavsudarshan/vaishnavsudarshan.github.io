@@ -1,13 +1,17 @@
 ---
 title: "Morphology and Semantics"
 author: "Vaishnav Sudarshan"
-date: "2025-10-12"
+date: "2025-11-12"
 categories:  [Cool Linguistics Stuff]
-abstract: I talk about how different language form words and meaning.
+abstract: How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
+image: translate.png
 ---
-# Morphology and Semantics
-## "Thought-Provoking" Introduction
-Previously, in [orthographies](../Writing-Systems/index.qmd), and [phonetics, and phonology](../Phonetics-and-Phonology/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
+
+> This is a series of blogs on linguistics. See also: [_Phonetics and Phonology Part 2_](../Phonetics-and-Phonology-Part2/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/)
+
+# Morphology and Basic Semantics
+## Confusing Introduction
+Previously, in [orthographies](../Writing-Systems/index.qmd), and [phonetics and phonology](../Phonetics-and-Phonology-Part1/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
 
 Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this.
 
@@ -27,9 +31,15 @@ The first continuum ranges from one morpheme per word to multiple morphemes put 
 Analytic languages would be something like Mandarin - the sentence "I don't drink tea" would be "我不喝茶" ("Wǒ bù hē chá"). Each word is its own morpheme here. Purely analytic languages don't rely on *inflection*, or altering the form of words - instead, they rely on *particles*, which are words that are put next to other words to c
 hange the grammatical meaning. 
 
+As a sidenote, Google Translate clearly agrees that each character is a word in this case, as shown here. 
+
+![Shows how Google Translate separates words in Pinyin](translate.png){.lightbox}
+
 Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn't use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn't get smushed together, and you can still tell apart subjects, verbs, and objects.
 
 Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it's not actual yap, just a normal sentence put together into a giant word. 
+
+But hold on, I thought words aren't reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that's how English treats affixes and adjectives). So, it's not purely based on how they're written down, but there doesn't necessarily need to be a clean line either. It's just on average, how is the density of morphemes generally?
 
 ### Spectrum 2
 The second continuum ranges from very clear distinction between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional. 
@@ -53,12 +63,38 @@ Ev → "house" (root noun)
 
 However, look at fusional languages. In Spanish, "hablamos" means "we speak", with the ending "-amos" indicating that the pronoun is first person, and also plural ("we"). If you just knew the first person ending that's not plural ("-o"), then you still wouldn't be able to derive the ending "-amos" from that. 
 
-## Semantics
+### Consonantal Root Systems
 
-Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). 
+There is a feature in languages where the root meaning is carried out through the consonants, and the vowels between them just modify the meaning. This is pretty much unseen outside of Afro-Asiatic langauges.
 
-In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
+Most famously, Semitic languages (a sub-branch of Afro-Asiatic) such as Arabic and Hebrew use the triconsonantal root system. In Arabic, for example, the root "k-t-b" has to do with writing and books. The word "kitab" means "book", the word "katib" means "writer", and the word "maktaba" means "library". 
+
+Note that the extra consonant "m" in "maktaba" is added, because Arabic itself isn't purely consonantal, and uses affixes as well. Interestingly, the word "kitab" spread to many languages like Farsi or Hindi to mean "book", but since those languages aren't Semitic, they don't think of "kitab" using the triconsonantal root system, but rather just as any other word. 
+
+Germanic languages like English do just *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
+
+## Semantics Intro
+
+Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
+
+In a future blog post, I'll talk exclusively about semantics, but for right now, I'll talk about a specific aspect of it.
+
+### Applications In AI
+
 [_Natural Language Processing_](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them. 
 
 I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I'll provide a brief explanation. Basically, the AI user's input is split into *tokens*, which are kind of like morphemes except that they don't necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle. 
 
+Every token in the language (in our case, English) is mapped to a vector (the specific details of how that works will be explained in a future blog post). These vectors' angles' closeness tries to portray semantic relations, but not exactly in the way you might think. 
+
+For example, synonyms and antonyms (words that mean similar things and words that mean the opposite, respectively) would not be pointing in completely opposite directions, but rather all approximately in a similar direction. 
+
+This is because, if you think it, "hot" and "cold" are still about temperatures, so they should point to a similar place. Something that has nothing to do with temperatures whatsoever, such as "skibidi" (although to be fair, "skibidi" has nothing to do with anything useful whatsoever), should point in the opposite direction. How exactly do the angles portray semantic closeness? The cosine of the angle does. 
+
+If the directions are close, then the cosine will be almost $1$, but if the directions are near-opposite, then the directions will be $-1$, so the higher number reflects that the meanings are closer. 
+
+The magnitudes of the vectors refer to how frequent or useful the words are, as well. 
+
+## Conclusion
+
+How words arrange meanings is cool, but how do sentences arrange the words containing those meanings? Stay tuned to find out!

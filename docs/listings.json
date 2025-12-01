@@ -2,12 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/Linear Algebra/index.html",
-      "/posts/Matrix Calculus/index.html",
-      "/posts/Neural Networks/index.html",
-      "/posts/Arithmetic Functions/index.html",
-      "/posts/Morphology-and-Semantics/index.html",
-      "/posts/Phonetics-and-Phonology/index.html",
+      "/posts/Cool-Problem-of-the-Month-1/index.html",
+      "/posts/Morphology-and-Basic-Semantics/index.html",
+      "/posts/Phonetics-and-Phonology-Part1/index.html",
+      "/posts/Phonetics-and-Phonology-Part2/index.html",
       "/posts/Writing-Systems/index.html",
       "/posts/Limit riLmOtOpU/index.html"
     ]

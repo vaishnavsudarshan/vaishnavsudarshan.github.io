@@ -1,0 +1,257 @@
+
+# Phonology and Orthography
+
+## Writing System:
+
+![_Proto-Zorbbbb Orthography_]([proto-zorbbbb_orthography.png]){.lightbox}.
+
+## Romanization:
+
+![_Proto-Zorbbbb Romanization_]([romanization_proto-zorbbbb.png]){.lightbox}.
+
+## Word Order
+
+VOS 
+
+## Lore?
+
+Proto-Zorbbbb is what evolved later into Zorbbbb and Limit, although Limitians deny that their language descends from Proto-Zorbbbb. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani structures.
+
+## Nouns
+
+All nouns have genders, class, animacy, number, politeness, abstractness, color, case, goodness, and person. This means that, theoretically, there are $134217728$ combinations of each noun.  Each will have a sequence of something.
+
+Now, let’s go into the specific categories for each one.
+
+Genders: Vowel
+Animacy: Tone
+Class: Semivowel
+Number: Vowel length
+Politeness: Liquid
+Abstractness: Speech manner
+Color: Altered vowel
+Case: Exercise
+Goodness: Diphthong
+Person: Gesture
+
+### Gender 
+
+Masculine: O A I U EH
+Feminine: E A EH O I
+Neuter: U E I A U
+Both: A E I O U
+
+### Animacy (S = Screech; F = Flat; W = Wave)
+
+Unbelievably nonliving: S S S
+Very nonliving: F S S 
+Pretty nonliving: W S W
+Kinda nonliving: F F W 
+Kinda living: S W F
+Pretty living: W W F
+Very living: S F S 
+Unbelievably living: F F F 
+
+### Class
+
+Vehicle: Y Y Y 
+Power: N Y Y
+Labor: W Y W
+Nature: N N W
+Destruction: Y W N
+Information: W W N
+Food: Y N Y 
+Other: N N N 
+
+### Number (S = Short; N = Normal; L = Long)
+
+Countable Singular: S S S 
+Countable Dual: N S S 
+Countable Zero: L S L 
+Countable Other: N N L 
+Measurable Singular: S L N
+Measurable Dual: L L N 
+Measurable Zero: S N S 
+Measurable Other: N N N 
+
+### Politeness 
+
+Unbelievably trash: R R R 
+Very trash: N R R 
+Pretty trash: L R L 
+Kinda trash: N N L 
+Kinda god: R L N 
+Pretty god: L L N 
+Very god: R N R 
+Unbelievably god: N N N 
+
+### Abstractness (C = Creaky; N = Normal; B = Breathy)
+
+Unbelievably abstract: C C C 
+Very abstract: N C C 
+Pretty abstract: B C B 
+Kinda abstract: N N B 
+Kinda concrete: C B N 
+Pretty concrete: B B N
+Very concrete: C N C 
+Unbelievably concrete: N N N
+
+### Color (NS = Nasal; N = Normal; R = R-Colored)
+
+Black: NS NS NS 
+Green: N NS NS 
+Red: R NS R 
+White: N N R 
+Blue: NS R N
+Orange: R R N
+Pink: NS N NS
+Other: N N N 
+
+### Case (P = Push-Up; W = Walk Up for Plank; N = Nothing; L = Lunge; J = Jumping Jack; S = Squat)
+
+Ergative: L W N P J
+Absolutive: S W J L N
+Genitive: P S N W P
+Locative: W S N L T
+Ablative: J J W T L
+Allative: N T N S J
+Instrumental: L L J W S
+Vocative: P P P P P
+
+### Goodness (N = Normal; SH = Shake Hand; S = Six Seven)
+
+Super good: N N N 
+Good: SH N N
+Bad: S N S
+Super bad: SH SH S
+
+### Person 
+
+First: ɪ ɪ ɪ
+Second: œ ɪ ɪ 
+Third: ɵ ɪ ɵ
+General: œ œ ɵ
+
+### Some notes about nouns
+
+However, there are also case endings, along with the physical exercise coming with it. 
+
+Ergative: - j D
+Absolutive: - FFF q
+Genitive: - c b
+Locative: - GG tt
+Ablative: - z n 
+Allative: - Q k
+Instrumental: - x v
+Vocative: - m h
+
+Holy nouns that are superior to even the highest of the politeness level have special declensions. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “pkstn”, is simply “pkstn”, no vowels, tones, vowel alterations, fitness exercises, etc. 
+
+Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is "sgm". For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left. For example, here’s what the example for case:
+
+Ergative: P P P P P
+Absolutive: J L M N P 
+Genitive: N S M J L 
+Locative: P P S N M 
+Ablative: T M S N L 
+Allative: L J J M T 
+Instrumental: J N T N S 
+Vocative: S L L J M 
+
+## Verb Form
+
+There are 9 auxiliary verbs to account for the main 9 tenses. 
+
+Verbs always agree with the patient (they do not need to add the extra -FFF q though). 
+
+Verbs are conjugated in an agglutinative manner in the following ways:
+
+Tense (Past, Present, Future)
+Aspect (Normal, Progressive, Perfect)
+Transitivity (Intransitive, Transitive, Ditransitive)
+Affirmativement (Positive, Negative, Either)
+Mood (Indicative, Imperative, Interrogative)
+Emotion (Normal, Apprehensive, Admirative)
+Extremity (Weak, Normal, Extreme)
+Effectiveness (No net effect, Some net effect, Huge net effect)
+Evidentiality (First-hand No-cap, Second-hand No-cap, Greater No-cap, First-hand Some-cap, Second-hand Some-cap, Greater Some-cap, First-hand Full-cap, Second-hand Full-cap, Greater Full-cap)
+
+
+Each possibility has a suffix added in this order.
+
+
+### Tense
+
+Past: - q
+Present: - p
+Future: - pppp
+
+### Aspect
+
+Normal: - c
+Progressive: - FFF
+Perfect: - m
+
+### Transitivity
+
+Intransitive: - kkk
+Transitive: - D
+Ditransitive: - v
+
+### Affirmativement
+
+Positive:  - tt
+Negative: - GG
+Either: - n
+
+### Mood
+
+Indicative: - d
+Interrogative: -b
+Imperative: - bbbb
+
+### Emotion
+
+Normal: - T
+Apprehensive: - x
+Admirative: - f
+
+### Extremity
+
+Weak: - j 
+Normal: - Q
+Extreme: - qqq
+
+### Effectiveness
+
+No net effect: - s
+Some net effect: - h 
+Huge net effect: - k
+
+### Evidentiality
+
+First-hand No-cap: - g 
+Second-hand No-cap: - s 
+Greater No-cap: - r
+First-hand Some-cap: - x
+Second-hand Some-cap: - bbbb
+Greater Some-cap: - GG 
+First-hand Full-cap: - m
+Second-hand Full-cap: - t 
+Greater Full-cap: - z 
+
+### Some notes about verbs
+
+The nine auxiliaries are conjugated in a special way. They, just like the holy pronouns, have no conjugations, just the raw verb. 
+
+Tense also changes the vowel alternation of the verb. 
+
+(NS = Nasal; N = Normal; R = R-Colored)
+
+Past: NS
+Present: N
+Future: R
+
+Whatever vowel alteration pattern the absolutive gets, the verb takes this and combines it with this addition. For example, if the patient is blue, it would be NS R N, but if the verb is past tense, then it turns into N R+NS NS. You can think of N as zero, and you can think of NS and R as switches. Combining NS and NS or R and R results in N, and combining N with something results in that thing. 
+
+Also, verbs that mean "to be [adjective]" have their own special conjugations. 

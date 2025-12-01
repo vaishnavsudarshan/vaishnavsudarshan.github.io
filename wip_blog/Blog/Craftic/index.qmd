@@ -1,0 +1,62 @@
+---
+title: "Craftic"
+author: "Vaishnav Sudarshan"
+date: "2025-11-26"
+categories:  [conlangs]
+abstract: Explaining how my conlang "Craftic" works. 
+---
+
+# Introduction
+
+After I made my conlang "Limit" (which was kinda mid), and then planned out "Zorbbbb" (I'll return to it eventually when I'm not too lazy), I felt that I needed to make something better.
+
+It's probably not better because, (a) it's based on [_Infinite Craft_](https://neal.fun/infinite-craft/) which everyone was obsessed with in 2023, and (b) it took like 5 minutes to make.
+
+So, enjoy!
+
+# Craftic
+
+## Nouns
+
+All nouns are derived from Infinite Craft. 
+Sound and written representation: 
+l (/ɬ/) = water
+k (/ʞ/) = fire
+m (/m/) = wind
+b (/ʙ/) = earth
+u (/y/) = plus
+a (/a/) = start parentheses, odd nested
+q (/ʔ/) = end parentheses, odd nested
+s (/ç/) = start parentheses, even nested
+e (/œ/) = end parentheses, even nested 
+
+If there are any adjacent vowels, put a /t/ between them, and if there are any adjacent consonants, put an /o/ between them. 
+Example:
+
+cloud = sabuloquketum, because it is [(earth + water) + fire] + wind = (plant + fire) + wind = smoke + wind = cloud, at least in Infinite Craft.
+
+Oh yeah, I should have mentioned that you'll sound insane if you try to pronounce anything. I should probably come up with some lore to justify this. 
+
+### Actual Noun Orthography
+
+An alphabet is used in actual Craftic, the romanization is just for simplification. Here is the key:
+
+![_craftic orthography for nouns_](craftic_table.png){.lightbox}.
+
+## Verbs
+
+All verbs must be expressed by actually doing them. If it is biologically impossible to do so, or you will get in trouble for doing so, then try your best to mimic the action by gesturing.
+
+There are some agreed upon gestures that you shouldn't make your own of. For example, if others have already established the precedent that the verb "punch" is represented by punching the listener's face, you must also use that same gesture for that word. 
+
+However, if others haven't yet invented the gesture for a certain word, you may take the opportunity to seize the "First Discovery", like how it works in Infinite Craft, and invent your own gesture for it. 
+
+For orthographical purposes, all verbs are pictogram representations of what they mean. For example, the word "jump" is written as this: ![_craftic symbol for "jump"_](craftic_jump.png){.lightbox}. 
+
+What if there is an object? Craftic doesn't actually distinguish between transitive and intransitive. Instead, if there is an object, it is treated as a subject, that accepts the verb "accepts". 
+
+## Syntax
+
+In speech, the verb gesture is performed at the same time as the subject, and is elongated for as long as it takes to finish pronouncing the subject. The object is its own pair with the verb "accept". 
+
+In writing, the subject is written on the top, letters horizontal and left to right, then the verb is written underneath. 

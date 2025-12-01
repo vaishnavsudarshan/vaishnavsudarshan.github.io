@@ -1,0 +1,10 @@
+# Basic Center of Mass Uses
+
+What if you have an entire system with a bunch of individual parts that you just want to approximate as a single point to make your life easier?
+
+# As an Integral
+
+
+
+# Mass Points
+

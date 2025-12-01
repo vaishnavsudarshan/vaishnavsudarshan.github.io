@@ -1,0 +1,33 @@
+---
+title: "Random Problem I Saw #1"
+author: "Vaishnav Sudarshan"
+date: "2025-11-22"
+categories:  [Cool Math Stuff]
+abstract: Lol I found this while ice skating and proved it as rigorously as possible in my head while simultaneously figuring out how to ice skate without looking like a monkey.
+image: aops.png
+---
+
+# Yap
+![The problem I saw ](aops.png){.lightbox}
+I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:
+
+"Does this problem make your brain FREEZE? Combine plus signs and eight 8's to get 1,000."
+
+While the problem was really simple just by brute forcing and intuition that even a six or seven year old (hehe) could solve it. The ad was, after all, placed to a general audience, not a bunch of orz IMO quals. 
+
+However, out of my annoyingness, I sought to prove rigorously that the answer I got was the only possible one. I did this in my head, closing any logic holes, while at the same time figuring out how to ice skate properly (at least I was getting better at moving continuously, but my center of mass was still all over the place, so I ended up looking like a monkey anyway, but at least I never fell in the entirety of the hour I was there). So, without further ado, here's the solution:
+
+# Actual Solution 
+Assume there are $n$ numbers being added up. $1 \leq n \leq 8$, since there are at most eight numbers, one per digit, and at least one number, which is when all the digits are in one number. 
+
+Now, we consider the sum mod $10$. Since all $n$ numbers have a units digit of $8$ as it's the only possible digit, and they add up to $1000$, we get $8n \equiv 0 \pmod{10}$. What this means is that $8n$ is a multiple of $10$, so it must also be a multiple of $5$, since $10$ is a multiple of $5$. Since $8$ is not a multiple of $5$, but $8n$ is a multiple of $5$, then $n$ must be a multiple of $5$. The only multiple of $5$ between $1$ and $8$ is $n = 5$. Therefore, we have five numbers being added up. 
+
+We know that the maximum possible number is $888$, because $8888$ is already greater than $1000$. If there are $2$ or more $888$'s being added up, then the sum is also over $1000$. 
+
+We wish to prove that there are not zero $888$'s either. Assume by contradiction that there actually are zero $888$'s, so the maximum possible number is just $88$. Now, the maximum possible sum is just $4 \cdot 88$ which is far less than $1000$ (this is the maximum because every $88$ is the equivalent of adding eleven $8$'s). Also, to verify that in my head, instead of calculating, I just saw that $4 \cdot 88 < 4 \cdot 100 = 400 < 1000$. Therefore, there must be exactly one $888$ being added up.
+
+We find the remaining four numbers must add up to $112$. We can do a similar process to find the number of $88$'s that must be present. If there are no $88$'s, then the maximum sum is $32$, not even close to $112$. However, if there are two or more $88$'s, then the sum is already over $112$. Therefore, there must be exactly one $88$ present. 
+
+Since there is exactly one $888$ and exactly one $88$, and there aren't any higher possible numbers, the remaining three $8$'s are used with one $8$ per number, filling up the remaining three numbers needed.
+
+Therefore, the final sum is $\fbox{888 + 88 + 8 + 8 + 8 = 1000}$. There are also $40$ different ways to rearrange that same equation and keep it true, because it's $2 \cdot \frac{5!}{3!}$ (the $5!$ is to rearrange all the five numbers being added, the $3!$ is because we don't care the order the individual $8$'s are in because it's all the same, and the $2$ is to make the sum on the left hand side or the right hand side). 

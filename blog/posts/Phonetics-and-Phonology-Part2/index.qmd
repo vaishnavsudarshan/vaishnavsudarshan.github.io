@@ -1,0 +1,41 @@
+---
+title: "Phonetics and Phonology Part 2"
+author: "Vaishnav Sudarshan"
+date: "2025-09-14"
+categories:  [Cool Linguistics Stuff]
+abstract: We know how sounds work biologically, but how do linguists write and organize them?
+image: french_phonology.png
+---
+
+> This is a series of blogs on linguistics. See also: [_Morphology and Semantics_](../Morphology-and-Semantics/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/)
+
+# The IPA
+Now that you know how sounds are made, let's see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the [_International Phonetic Alphabet_](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet).where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I've used slashes to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds. 
+
+## Chill IPA Characters
+
+Many letters are just like in English. For example, why don't you take a random guess at how /p/, /h/, /v/, /z/, /m/, /ɪ/ and /t/ are pronounced? Yes! They are pronounced like "p", "h", "v", "z", "m", "ɪ" and "t"! BUT NOT LIKE "pea", "aich", "vee", "zee", "em", "eye", and "tea" - you need to hop off elementary school English if you said that. 
+
+## Troll IPA Characters
+
+However, there are some tricky ones too that are designed to deceive you. For example, what sounds do you think /j/, /x/, /ɑ/, /r/, /q/, /c/, and /ʔ/ make? No, it is not "jay", "eks", "aey", "ar", "kyoo", "see", and "hmmm?". Instead, they make the voiced palatal approximant, voiceless velar fricative, unrounded open back vowel, voiced alveolar trill, voiceless uvular stop, voiceless palatal stop, and the glottal stop (glottal stop doesn't have a voiced version, because it's just the break between "uh" and "oh" in "uh-oh"). 
+
+## Greek IPA Letters
+
+We're not done. There's even Greek letters, which somehow we can never evade, regardless of the subject. /ɸ/, /θ/, /ʎ/, /ɤ/, and /ʊ/ are not phi, theta, lambda, gamma, and upside-down omega, but instead voiceless bilabial fricative, voiceless alveolar fricative, voiced palatal lateral approximant, back close-mid unrounded vowel, and then this random vowel that doesn't know where it belongs. 
+Phew. That torture is over. Or is it?
+
+## Diacritics Intro
+
+We still have the diacritics to go over, but this time I won't subject you to the pain of looking at every diacritic. Instead, I'll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voiceless, tone, and more.
+
+## Visualization
+
+To see the visual representation of the IPA, and to actually listen to their sounds, click [_here_](https://www.ipachart.com/).
+
+Each language has its phonology written, by placing the accurate symbols of all of its phonemes. 
+For example, see the phonology of Fr\*nch. ![Fr*nch phonology [source](https://en.wikipedia.org/wiki/French_language#Phonology)](french_phonology.png){.lightbox}
+
+# To Be Continued
+Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned [here](../Morphology-and-Basic-Semantics/), unless you first want to deal with the PTSD of looking at the IPA.
+

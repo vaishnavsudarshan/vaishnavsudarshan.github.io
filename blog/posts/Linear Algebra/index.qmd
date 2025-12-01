@@ -1,2 +1,0 @@
-# Vectors
-There are two main ways that vecto
