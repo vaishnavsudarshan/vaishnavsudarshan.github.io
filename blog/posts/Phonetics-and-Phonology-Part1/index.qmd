@@ -21,12 +21,12 @@ In kindergarten, you may have learned that sounds are classified as vowels and c
 Place of articulation is essentially where in your mouth a sound is being made, whether it be deep in the throat (I'm looking at you, certain language primarily spoken in a country that borders Belgium, Germany, Luxembourg, Spain, Andorra, Monaco, Brazil, Suriname, and Italy) or front in the lips (like at the end of "dumb"). From deepest in the throat to closest in the lips, the most commonly referred to categories include glottal, pharyngeal, uvular, velar, retroflex, palatal, alveolar, dental, labiodental, and bilabial.
 
 ### Manner of Articulation
-Manner of articulation is how the sound is actually made. For example, there is a difference between "boron" and "moron", even though both /b/ and /m/ are both "bilabial" sounds (one of the places of articulation mentioned above). 
+Manner of articulation is how the sound is actually made. For example, there is a difference between "boron" and "moron", even though both [b] and [m] are both "bilabial" sounds (one of the places of articulation mentioned above). 
 Such manners of articulation include:
 
 Fricatives (blowing air, like in the "sssss" sound in "snake");
 
-Plosives (stopping the sound, like how in "dart", pronouncing both the /d/ and /t/ can't really be continued);
+Plosives (stopping the sound, like how in "dart", pronouncing both the [d] and [t] can't really be continued);
 
 Nasals (where air comes out of your "nnnnn-nostrils");
 
@@ -37,7 +37,7 @@ Clicks (air is sucked in instead of pushed out, but unfortunately these cool sou
 and more. 
 
 ### More
-Another important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at /s/ and /z/, or /k/ and /g/ (as an exercise, find the voiceless version of /b/). In most languages, this has a really important distinction. For example, take "tie" and "die". However, we usually just include this within manner of articulation, because we can't put 3D charts on the iPad screen your face is glued to. 
+Another important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at [s] and [z], or [k] and [g] (as an exercise, find the voiceless version of [b]). In most languages, this has a really important distinction. For example, take "tie" and "die". However, we usually just include this within manner of articulation, because we can't put 3D charts on the iPad screen your face is glued to. 
 
 Consonants are classified in other ways than just the two (or three) parameters, though. 
 For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn't use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic. 
@@ -62,10 +62,11 @@ The reason why whispering is quiet is because what you're really doing is not vi
 :::
 
 
-The parameters are frontness (deep in the throat or front in the mouth) and closedness (is mouth open or closed). 
+The parameters are backness (deep in the throat or front in the mouth, like the x-axis) and height (vertical position, but described using open or close, like the y-axis). 
 A third binary parameter is there, roundedness, which is if your mouth is shaped like a circle or not. 
-For example, the /i/ sound is a closed front unrounded vowel.
+For example, the [i] sound is a closed front unrounded vowel.
 
+Unlike consonants, backness and height are continuous, and when you chart them, you get essentially a diagram of your mouth, called a [_vowel diagram_](https://en.wikipedia.org/wiki/Vowel_diagram).
 
 There are many more variations to vowels that can be made now. For example, tone is a big factor in Mandarin. 糖 (táng) means sugar, but 汤 (tāng) means soup. Nasality (how much air comes out of the nostrils) is important in Fr\*nch, as "a" means "has" but "an" means "year". Rhoticity (how much the vowel sounds r-colored) makes the word "or" sound American when rhotic, but British when you only pronounce it like /oː/. Vowels can also have creaky or breathy voice (basically making it sound like a sheep or a zombie). 
 

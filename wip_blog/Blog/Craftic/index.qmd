@@ -57,6 +57,12 @@ What if there is an object? Craftic doesn't actually distinguish between transit
 
 ## Syntax
 
-In speech, the verb gesture is performed at the same time as the subject, and is elongated for as long as it takes to finish pronouncing the subject. The object is its own pair with the verb "accept". 
+In speech, the verb gesture is performed at the same time as the subject, and is elongated for as long as it takes to finish pronouncing the subject. 
 
 In writing, the subject is written on the top, letters horizontal and left to right, then the verb is written underneath. 
+
+There aren't technically any grammatical case markings. The accusative and dative cases are their own pair with the verb "accept". The genitive case is made with the verb "possesses". 
+
+By the way, the symbol for "accept" is this: 
+
+![_craftic symbol for "accept"_](craftic_accept.png){.lightbox}.

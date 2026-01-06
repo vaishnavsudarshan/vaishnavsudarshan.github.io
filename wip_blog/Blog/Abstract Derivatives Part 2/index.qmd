@@ -1,0 +1,26 @@
+---
+title: "Abstract Derivatives Part 2"
+author: "Vaishnav Sudarshan"
+date: "2025-11-23"
+categories:  [Cool Math Stuff]
+abstract: Matrix Calculus has derivatives that would typically be annoying, so here's how we deal with them. 
+---
+
+# Making More Derivatives More Abstract
+
+
+## General Matrix Functions
+
+Scalars and vectors are actually just really simple matrices! We've seen how you can take the derivative of any function with some combination of inputs and outputs being scalars and vectors. 
+
+### Converting Matrices to Vectors
+
+If we have matrix-to-matrix functions, from the completely valid and rigorous proof method known as *engineer's induction* (that's a joke, please don't use this if you have to rigorously prove something), we can infer that the derivative would be a *tensor*. A tensor is still a list of numbers, but they have to be physically arranged in 3D. Now, I don't know about you, but having a rectangular prism filled with numbers doesn't sound too fun.
+
+## Chain Rules for All Kinds of Functions
+
+### Scalar and Vector-Valued (Pretty simple)
+
+### Multivariable (With matrix interpretation)
+
+## Vector Field and Matrix

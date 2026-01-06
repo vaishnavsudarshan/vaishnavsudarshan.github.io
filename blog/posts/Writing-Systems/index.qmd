@@ -40,7 +40,6 @@ In [_syllabaries_](https://en.wikipedia.org/wiki/Syllabary), each symbol is a sy
 /ə/ sound. To make it a different vowel, you add a diacritic. So, /ke/ would be के. And, to make it just /k/ with no vowel, you make it क्. The most popular abugidas are from India, including Devanagiri, Tamil, Bengali, etc. However, the word "abugida" comes from the Ge'ez script from Ethiopia, where the first four letters are "a", "bu", "gi", and "da" (and this arrangement is cognate with Greek's "alpha", "beta", "gamma", "delta", just like with the word "Abjad").
 Another notable abugida, apart from Indian scripts, Southeast Asian scripts, and the Ge'ez script, is the Cree script. For changing the vowel, Cree doesn't actually add a diacritic, but instead modifies the consonant through rotations. Cree is actually partially inspired by Devanagiri. 
 
-
 ## Semantic Orthographies
 Instead of writing symbols based on sound, some languages have orthographies where symbols are based on meaning. 
 
@@ -50,15 +49,19 @@ For example, look at the symbol for "yi" in Mandarin or "ichi" in Japanese, whic
 "一"
 Now, for "er" in Mandarin or "ni" in Japanese, which means "two":
 "二"
-So, sometimes, the symbol looks like what it means. However, sometimes, it can be more complicated than that. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for "forest" is:
+So, sometimes, the symbol looks like what it means. However, many logographic symbols have evolved so much that they don't seem to resemble what they mean. For example, "马" means "horse" (pronounced as "ma"). This looks nothing like a horse, but the ancient form of this symbol did. 
+
+ Sometimes, it can be more complicated than this. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for "forest" is:
  森
 while the symbol for "tree" is:
  木
-Also, symbols whose words sound similar can also be used for clarification. 
-Egyptian hieroglyphs were part logography. Some symbols worked just like Chinese, and others evolved into more of a syllabary or abjad. 
+
+Also, symbols whose words sound similar can also be used for clarification. This is called the *rebus principle*. In Chinese, most characters contain a semantic part, like the symbol for "tree" that we saw, and also a phonetic part, that indicates how it's pronounced. For example, the word for "mom", "妈", which is pronounced as "ma", contains the symbol for "horse" ("马") we saw earlier, since that too is pronounced as "ma", even though "mom" has nothing to do with "horse" in terms of meaning. Only the left half actually semantically has anything to do with "mom". Only a small percentage of Chinese characters are actually purely logographic - the vast majority follow the rebus principle. Therefore, it's more accurate to call Hanzi a logo-syllabary, instead of a logography. 
+
+Egyptian hieroglyphs were part logography, part phonetic as well. Some symbols worked just like the ancient form of Chinese, and others evolved into more of a syllabary or abjad. 
 
 ### Pictographies
-Pictographies are kind of like logographies, except that it's much more literal. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words.
+Pictographies are kind of like logographies, except that it's much more literal, without much evolution. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words.
 ![A page showing the Mayan pictographies written down [source](https://3.bp.blogspot.com/_qTDAEasFLtU/S2bCBrxYEBI/AAAAAAAAG1A/eHIKTkXQ2gI/s1600/Tables+for+the+planet+Venus+duo.jpg](mayan_inscription.png){.lightbox}
 
 ### Ideographies

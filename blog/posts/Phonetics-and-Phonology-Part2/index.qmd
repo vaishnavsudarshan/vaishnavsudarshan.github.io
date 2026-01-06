@@ -10,7 +10,13 @@ image: french_phonology.png
 > This is a series of blogs on linguistics. See also: [_Morphology and Semantics_](../Morphology-and-Semantics/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/)
 
 # The IPA
-Now that you know how sounds are made, let's see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the [_International Phonetic Alphabet_](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet).where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I've used slashes to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds. 
+Now that you know how sounds are made, let's see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the [_International Phonetic Alphabet_](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet).where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I've used slashes and brackets to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds. 
+
+## The Difference
+
+Why did I use both [] and //? In short, [] is the actual scientific way of making as many distinctions as you want (phonetic transcription), so it doesn't care about how specific languages perceive sounds. On the other hand, // is when you only care about the distinctions a specific language makes (phonemic transcription), so you'll typically be less descriptive of how to pronounce that sound.
+
+For example, Tamil doesn't distinguish between voiced and voiceless consonants, so you could phonemically write the word for monkey as /kuɾaŋku/, even though phonetically, people actually pronounce it as something like [kuɾaŋɡʊ]. However, it doesn't matter which of those distinctions are used, between [ʊ] and [u] or [k] and [g], since they're perceived as being the same sound for Tamil speakers.
 
 ## Chill IPA Characters
 
@@ -27,7 +33,7 @@ Phew. That torture is over. Or is it?
 
 ## Diacritics Intro
 
-We still have the diacritics to go over, but this time I won't subject you to the pain of looking at every diacritic. Instead, I'll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voiceless, tone, and more.
+We still have the diacritics to go over, but this time I won't subject you to the pain of looking at every diacritic. Instead, I'll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voicelessness, tone, and more.
 
 ## Visualization
 
@@ -35,6 +41,12 @@ To see the visual representation of the IPA, and to actually listen to their sou
 
 Each language has its phonology written, by placing the accurate symbols of all of its phonemes. 
 For example, see the phonology of Fr\*nch. ![Fr*nch phonology [source](https://en.wikipedia.org/wiki/French_language#Phonology)](french_phonology.png){.lightbox}
+
+## Allophonic Variation
+
+Phonemes can have different forms, so a single phoneme is more of a category. In the example for "monkey" in Tamil that we saw, the phoneme /k/ can mean [k] or [g] depending on the specific word. So, we'd say that the voicing of /k/ is NOT *phonemic* in Tamil - variations aren't distinguished in meaning. [k] and [g] are considered *allophones* - different forms of the same phoneme.
+
+A more tangible example is tonality in English. As you (hopefully) know, English is not a tonal language. So, when someone speaks English with tones (for example, Steven's dad in a Steven He video), it means the same thing as speaking normal English without any tones. 
 
 # To Be Continued
 Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned [here](../Morphology-and-Basic-Semantics/), unless you first want to deal with the PTSD of looking at the IPA.

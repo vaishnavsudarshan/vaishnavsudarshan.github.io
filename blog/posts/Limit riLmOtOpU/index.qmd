@@ -8,7 +8,7 @@ image: "LimitFlag.png"
 ## Background
 I first heard of [constructed languages](https://en.wikipedia.org/wiki/Constructed_language), or _conlangs_, when I heard of [Esperanto](https://en.wikipedia.org/wiki/Esperanto). I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of [Toki Pona](https://en.wikipedia.org/wiki/Toki_Pona), which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary. 
 
-> Limit is my first conlang, and the majority of it was made before I knew any linguistics, which makes it more natural and less overthought than my later conlangs. However, it understandably is really really awful. 
+> Limit is my first conlang, and the majority of it was made before I knew any linguistics, so it understandably is really really awful. However, I guess it also means it's less overcomplicated that my later conlangs. 
 
 ## Pronunciation and Alphabet
 
@@ -178,13 +178,13 @@ Numbers are written as normal Arabic numerals, but obviously they are said diffe
 8: “we”  
 9: “gI”  
 To get more numbers, you do the following:  
-Write each digit in the bigger number as the sum of each digit times a power of 10\. For example, 243 would be 2\*10^2+4\*10^1+3\*10^0.   
-You may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is “$”, pronounced “sigmα”. Fun fact: this word also means “and”.   
+Write each digit in the bigger number as the sum of each digit times a power of $10$. For example, $243$ would be $2 \cdot 10^2+4 \cdot 10^1+3 \cdot 10^0$.   
+You may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is ""=”, pronounced “sigmα”. Fun fact: this word also means “and”.   
 You would write the each place value from highest exponent to lowest.   
 Instead of saying plus, you would just combine each term with a slash.  
-Units digits do not need to be written as a$0, just a.   
+Units digits do not need to be written as a=0, just a.   
 Back to the example of 243, in Limit you would say this as:  
-2$2/4$1/3, and pronounce this as rO$rO/yA$hα/jU, and remember that $ is pronounced as sigmα.   
+2=2/4=1/3, and pronounce this as rO=rO/yA=hα/jU, and remember that = is pronounced as sigmα.   
 For negative numbers, add the suffix “yO”.  
 For ordinal numbers, add the suffix “hO”, after the “yO” if it is there.   
 For fractions, just use the postposition for “in”, which is the suffix “krA” or “OkrA”. There will be a space after that.   
@@ -196,8 +196,8 @@ You would say “31.4th” as “jU$hα/hα/yA$hαyOhO”.
 
 Just say the equivalent declarative sentence, then add “LE-” (which means question mark) to the end.  
 Phrasing Examples:  
-“Which one do you like?” \-\> “You one/which like LE-”  
-“How are you?” \-\> “You how are LE-”  
+“Which one do you like?” -> “You one/which like LE-”  
+“How are you?” -> “You how are LE-”  
 Here’re the interrogative words:  
 What: 
 
@@ -205,7 +205,7 @@ What:
 
 State the equivalent in a future tense declarative sentence, and speak in 2nd person. Use the word for please, “hok”, at the end of the sentence, after the verb.  
 Phrasing Examples:  
-“Go to bed.” \-\> “You will to bed go hok-”  
+“Go to bed.” -> “You will to bed go hok-”  
 Also, instead of saying “hok”, you can say “bOLOdOwO\#O”, which is short for “bU LI dI wopLUkO\#U”, which means something along the lines of “or I will kill you”.  
 Fun fact: the word “hok” is actually a loanword from Proto-Zorbbbb.
 
@@ -224,7 +224,7 @@ This same intuition is to be applied to prefixes.
 ## Conjunctions
 
 The conjunctions (subordinating and coordinating, and also including relative pronouns) are:  
-And: “$”  
+And: “=”  
 Or: “bI”  
 But: “pA”  
 So: “skibidE”  
@@ -235,13 +235,13 @@ Whose: “Ligmαv”
 
 ## Abbreviations
 
-Just like how there’s “ts pmo” for \[censored\], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO\#U becomes bOLOdOwO\#O. Also, negation affixes are important enough to count as their own word, so just put \#O at the end if it is negated, like in this one.
+Just like how there’s “ts pmo” for [censored], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO\#U becomes bOLOdOwO\#O. Also, negation affixes are important enough to count as their own word, so just put \#O at the end if it is negated, like in this one.
 
 ## Comparatives and Superlatives
 
 How you would phrase this:  
-\[Subject\] \[Person, indirect form\] \[Attribute, locative form\] \[Win/Lose\].   
-The \[Person, indirect form\] can be removed if the sentence is superlative.  
+[Subject] [Person, indirect form] [Attribute, locative form] [Win/Lose].   
+The [Person, indirect form] can be removed if the sentence is superlative.  
 Note that the indirect form and the locative form both have a postpositional ending, so it may be confusing.  
 The attribute must be a verb. Nouns, adjectives, and adverbs must be reworded.
 
@@ -280,7 +280,6 @@ Incorrect: kIf
 Old: derUm  
 Ugly: t\!Untab  
 Cold: mEkO  
-Unskilled:  
 Late: dUrin  
 Yucky: gla\*nE  
 Black: snib  
@@ -292,12 +291,11 @@ Liquid: vUgis
 **Verbs (infinitive):**  
 Hate: netAbUp  
 Go: drekInUp  
-Use:    
+Use: gUatUp
 Make: wopLUp  
 Not know: zO*pUp 
 Steal: prIksUp  
-Want:   
-Lose: 
+Want: kutlOrUp
 
 
 

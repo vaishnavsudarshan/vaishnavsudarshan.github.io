@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-09-14">
+<meta name="dcterms.date" content="2025-12-18">
 
-<title>Phonetics and Phonology Part 2 – Blog</title>
+<title>Cool Problem of the Month - 2 – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -114,9 +143,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Phonetics and Phonology Part 2</h1>
+      <h1 class="title">Cool Problem of the Month - 2</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Linguistics Stuff</div>
+                <div class="quarto-category">Cool Math Stuff</div>
               </div>
                   </div>
   </div>
@@ -134,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 14, 2025</p>
+        <p class="date">December 18, 2025</p>
       </div>
     </div>
     
@@ -144,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      We know how sounds work biologically, but how do linguists write and organize them?
+      I found this problem that’s really easy but I had a really goofy solution.
     </div>
   </div>
   
@@ -159,47 +188,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<blockquote class="blockquote">
-<p>This is a series of blogs on linguistics. See also: <a href="../Morphology-and-Semantics/"><em>Morphology and Semantics</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part1/"><em>Phonetics and Phonology Part 1</em></a></p>
-</blockquote>
-<section id="the-ipa" class="level1">
-<h1>The IPA</h1>
-<p>Now that you know how sounds are made, let’s see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"><em>International Phonetic Alphabet</em></a>.where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I’ve used slashes and brackets to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds.</p>
-<section id="the-difference" class="level2">
-<h2 class="anchored" data-anchor-id="the-difference">The Difference</h2>
-<p>Why did I use both [] and //? In short, [] is the actual scientific way of making as many distinctions as you want (phonetic transcription), so it doesn’t care about how specific languages perceive sounds. On the other hand, // is when you only care about the distinctions a specific language makes (phonemic transcription), so you’ll typically be less descriptive of how to pronounce that sound.</p>
-<p>For example, Tamil doesn’t distinguish between voiced and voiceless consonants, so you could phonemically write the word for monkey as /kuɾaŋku/, even though phonetically, people actually pronounce it as something like [kuɾaŋɡʊ]. However, it doesn’t matter which of those distinctions are used, between [ʊ] and [u] or [k] and [g], since they’re perceived as being the same sound for Tamil speakers.</p>
+<section id="yapping" class="level1">
+<h1>Yapping</h1>
+<p>I recently have had the hobby of going through past AMC and AIME problems and trying to see if I could think of any goofy solution that’s not on the list of solutions on the AoPS wiki.</p>
+<p>For one problem in particular, 2023 AMC 10B #7 (yeah, it’s still in the single digits), I found a diabolical solution that no one would have wanted to waste their brain cells to completely formulate. It is super easy to do just using 4th grade knowledge of geometry, but when I see rotations in geometry, I immediately think of complex bashing.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Screenshot 2025-12-18 205740.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem with answer choices"><img src="Screenshot 2025-12-18 205740.png" class="img-fluid figure-img" alt="The problem with answer choices"></a></p>
+<figcaption>The problem with answer choices</figcaption>
+</figure>
+</div>
+<p>I actually wrote this solution on AoPS wiki last month, but this crazy backstory deserves its own post for Cool Problem of the Month, and November was already taken. See the solution I wrote <a href="https://artofproblemsolving.com/wiki/index.php?title=2023_AMC_10B_Problems/Problem_7#Solution_7_(Overkill_complex_bash)">here</a>.</p>
+<p>I tried to reword or explain some of the solution a bit more in depth, so you can rest assured that I didn’t just plainly plagiarize myself.</p>
+<p>The complex and trig bashing itself isn’t even bad. If the problem was at least in the double digits, it would likely have been perfectly acceptable to complex bash and then trig bash. However, for a question #7, I’m probably going to be socially ostracized for having done so, especially when a nine year old obsessed with Tung Tung Tung Sahur can beat you to it.</p>
+<p>Without further ado, here is the solution.</p>
 </section>
-<section id="chill-ipa-characters" class="level2">
-<h2 class="anchored" data-anchor-id="chill-ipa-characters">Chill IPA Characters</h2>
-<p>Many letters are just like in English. For example, why don’t you take a random guess at how /p/, /h/, /v/, /z/, /m/, /ɪ/ and /t/ are pronounced? Yes! They are pronounced like “p”, “h”, “v”, “z”, “m”, “ɪ” and “t”! BUT NOT LIKE “pea”, “aich”, “vee”, “zee”, “em”, “eye”, and “tea” - you need to hop off elementary school English if you said that.</p>
-</section>
-<section id="troll-ipa-characters" class="level2">
-<h2 class="anchored" data-anchor-id="troll-ipa-characters">Troll IPA Characters</h2>
-<p>However, there are some tricky ones too that are designed to deceive you. For example, what sounds do you think /j/, /x/, /ɑ/, /r/, /q/, /c/, and /ʔ/ make? No, it is not “jay”, “eks”, “aey”, “ar”, “kyoo”, “see”, and “hmmm?”. Instead, they make the voiced palatal approximant, voiceless velar fricative, unrounded open back vowel, voiced alveolar trill, voiceless uvular stop, voiceless palatal stop, and the glottal stop (glottal stop doesn’t have a voiced version, because it’s just the break between “uh” and “oh” in “uh-oh”).</p>
-</section>
-<section id="greek-ipa-letters" class="level2">
-<h2 class="anchored" data-anchor-id="greek-ipa-letters">Greek IPA Letters</h2>
-<p>We’re not done. There’s even Greek letters, which somehow we can never evade, regardless of the subject. /ɸ/, /θ/, /ʎ/, /ɤ/, and /ʊ/ are not phi, theta, lambda, gamma, and upside-down omega, but instead voiceless bilabial fricative, voiceless alveolar fricative, voiced palatal lateral approximant, back close-mid unrounded vowel, and then this random vowel that doesn’t know where it belongs. Phew. That torture is over. Or is it?</p>
-</section>
-<section id="diacritics-intro" class="level2">
-<h2 class="anchored" data-anchor-id="diacritics-intro">Diacritics Intro</h2>
-<p>We still have the diacritics to go over, but this time I won’t subject you to the pain of looking at every diacritic. Instead, I’ll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voicelessness, tone, and more.</p>
-</section>
-<section id="visualization" class="level2">
-<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
-<p>To see the visual representation of the IPA, and to actually listen to their sounds, click <a href="https://www.ipachart.com/"><em>here</em></a>.</p>
-<p>Each language has its phonology written, by placing the accurate symbols of all of its phonemes. For example, see the phonology of Fr*nch. <a href="french_phonology.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Fr*nch phonology source"><img src="french_phonology.png" class="img-fluid" alt="Fr*nch phonology source"></a></p>
-</section>
-<section id="allophonic-variation" class="level2">
-<h2 class="anchored" data-anchor-id="allophonic-variation">Allophonic Variation</h2>
-<p>Phonemes can have different forms, so a single phoneme is more of a category. In the example for “monkey” in Tamil that we saw, the phoneme /k/ can mean [k] or [g] depending on the specific word. So, we’d say that the voicing of /k/ is NOT <em>phonemic</em> in Tamil - variations aren’t distinguished in meaning. [k] and [g] are considered <em>allophones</em> - different forms of the same phoneme.</p>
-<p>A more tangible example is tonality in English. As you (hopefully) know, English is not a tonal language. So, when someone speaks English with tones (for example, Steven’s dad in a Steven He video), it means the same thing as speaking normal English without any tones.</p>
-</section>
-</section>
-<section id="to-be-continued" class="level1">
-<h1>To Be Continued</h1>
-<p>Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned <a href="../Morphology-and-Basic-Semantics/">here</a>, unless you first want to deal with the PTSD of looking at the IPA.</p>
+<section id="solution" class="level1">
+<h1>Solution</h1>
+<p>Let the center of the square be the origin of the complex plane. Since we only care about angles, and not sides, we can assume WLOG that <span class="math inline">\(A\)</span> is at the point <span class="math inline">\(-1+i\)</span>. To rotate a complex number clockwise by an angle <span class="math inline">\(\theta\)</span>, just multiply the number by <span class="math inline">\(e^{-i \theta}\)</span>, so then we end up decreasing the argument (angle measured counterclockwise from the x-axis) by <span class="math inline">\(\theta\)</span> while preserving the magnitude. In this case <span class="math inline">\(\theta = 20^{\circ}\)</span>.</p>
+<p>So, the point <span class="math inline">\(A'\)</span> is at <span class="math inline">\((-1+i)(e^{-i 20^{\circ}}) = (-1+i)(\cos( - 20^{\circ}) + i \sin( - 20^{\circ}))\)</span> from Euler’s formula (the exponential form is just my shorthand way of remembering how to rotate complex numbers, but you could just go straight to polar form). Since cosine is an even function and sine is odd, this is the same as <span class="math inline">\((-1+i)(\cos(20^{\circ}) - i \sin(20^{\circ}))\)</span>. This expands to <span class="math inline">\((-\cos(20^{\circ}) + \sin(20^{\circ})) + i(\cos(20^{\circ}) + \sin(20^{\circ}))\)</span>.</p>
+<p>The angle we want to find is just the direction of the vector from <span class="math inline">\(A\)</span> to <span class="math inline">\(A'\)</span>. So, this is just <span class="math inline">\(\arctan(\frac{\Delta \Im}{\Delta \Re})\)</span>. <span class="math inline">\(\Delta \Im = \cos(20^{\circ}) + \sin(20^{\circ}) - 1\)</span>, while <span class="math inline">\(\Delta \Re = -\cos(20^{\circ}) + \sin(20^{\circ}) + 1\)</span>. Essentially, the problem is just boiled down to finding out how to trig bash <span class="math inline">\(\arctan(\frac{\cos(20^{\circ}) + \sin(20^{\circ}) - 1}{-\cos(20^{\circ}) + \sin(20^{\circ}) + 1})\)</span>.</p>
+<p>The is an identity that <span class="math inline">\(\cos(A)+\sin(A)=\sqrt{2}\sin(A+45^{\circ})\)</span> and <span class="math inline">\(\cos(A)-\sin(A)=\sqrt{2}\cos(A+45^{\circ})\)</span>. I’ll leave it as an exercise to the reader to verify that. So, if we use this as well as the fact that <span class="math inline">\(\sin(90^\circ - x) = \cos(x)\)</span>, the fraction simplifies to <span class="math inline">\(- \frac{\sqrt{2} \cos(25^\circ)-1}{\sqrt{2} \sin(25^\circ)-1}\)</span>. Substituting <span class="math inline">\(\sqrt{2}=\frac{1}{\cos(45^\circ)}\)</span>, this simplifies to <span class="math inline">\(- \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\cos(45^\circ)} = - \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\sin(45^\circ)}\)</span>.</p>
+<p>Finally, there is an identity that <span class="math inline">\(\cos(A)-\cos(B)=-2\sin(\frac{A+B}{2})\sin(\frac{A-B}{2})\)</span>, and that <span class="math inline">\(\sin(A)-\sin(B)=2\cos(\frac{A+B}{2})\sin(\frac{A-B}{2})\)</span>. Again, verifying it is an exercise for the reader. So, we now have <span class="math inline">\(- \frac{2 \sin(35^\circ)\sin(10^\circ)}{-2 \cos(35^\circ)\cos(10^\circ)}\)</span> = <span class="math inline">\(\tan(35^\circ)\)</span>, so <span class="math inline">\(\arctan(\tan(35^\circ)) = \boxed{35^\circ}\)</span>, or option <span class="math inline">\(B\)</span>.</p>
 
 
 </section>
