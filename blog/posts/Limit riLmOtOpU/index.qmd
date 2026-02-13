@@ -2,7 +2,7 @@
 title: "Limit riLmOtOpU (Limit For Monkeys)"
 author: "Vaishnav Sudarshan"
 date: "2025-07-03"
-categories: [Cool Linguistics Stuff]
+categories: [Cool Linguistics Stuff, Cool Conlangs]
 image: "LimitFlag.png"
 ---
 ## Background
@@ -14,7 +14,7 @@ I first heard of [constructed languages](https://en.wikipedia.org/wiki/Construct
 
 *Limit* is written in Roman characters (for now, that is; we will introduce the real writing system later), but there are some rules to how the script works.  
 
-Consonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is very phonetic; the pronunciation is exactly what is written. There are no silent letters.  
+Consonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is almost phonetic; the pronunciation is exactly what is written, apart from a few rules. There are no silent letters.  
 
 Examples for how to write and pronounce vowels:   
 1. A short "O" like in the word "dog" would be lowercase.  
@@ -47,9 +47,11 @@ There are some vowel and consonant sounds, of course, that cannot be produced wi
 * The letter “j” is removed as any sound with a “j” can be made from “d\#”.  
 * The letter "q" is removed as any "qu" sound can be made with "kw" instead. "u", however, is still perfectly safe as it is important for various vowel sounds.  
 * The letter "x" is removed as any sound with an "x" can be made from either "ks" or "z".  
+* The letter "i" is pronounced as IPA [y], like "y" in Finnish or "u" in French.
+* The letter "L" is pronounced as IPA character of the same shape, like the "L" sound in the word "pull".
 * Slashes indicate that some specific words are grouped together.  
 
-One last thing: Limit is pronounced in either an Indian or an American accent, except with the new pronunciation rules now given.
+One last thing: Limit is pronounced in either an Indian accent, except with the new pronunciation rules now given.
 
 ## Pronouns and Verbs
 
@@ -162,6 +164,13 @@ Example:
 The word for “real” is “gOhO”, which means the word for “really” is “.@gOhO”.  
 I am really good \= “LI .@gOhO\\LimitO\#U blivUL”
 
+## Sandhi and Phonotactic Exceptions
+
+* Any nasal followed directly by a vowel must be turned into a voiceless plosive of the same place of articulation
+    * For example, the "m" in "Limit" is pronouned like the "pppp" in Proto-Zorbbbb. 
+* Any word ending with a consonant must be pronounced, after the consonant, with a monkey scream (a shriek of [ɐ] at the top of your lungs) if the consonant is voiced and a grunt (a very low-pitch, almost confused-sounding [œ]) if the consonant is voiceless. This additional noise is never written. Also, the final consonant is an ejective consonant.
+* Any word starting with a vowel is pronounced with an "f" if the vowel is rounded and a "k" if the vowel is unrounded.
+
 ## Numbers
 
 Base 10 is used, like normal.   
@@ -273,9 +282,10 @@ Food: gla\*nE
 Set: rimU
 
 **Adjectives:**  
+
 Evil: Limit  
 Small: pLevI  
-Slow: cU  
+Slow: kU  
 Incorrect: kIf  
 Old: derUm  
 Ugly: t\!Untab  
@@ -287,6 +297,7 @@ Blue: mraflet
 Yellow: krUgnip  
 Red: yundrask  
 Liquid: vUgis
+Weird: kitU
 
 **Verbs (infinitive):**  
 Hate: netAbUp  

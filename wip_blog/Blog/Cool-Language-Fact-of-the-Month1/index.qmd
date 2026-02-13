@@ -1,9 +1,9 @@
 ---
-title: "Cool Language Fact of the Month 1"
+title: "Why is French so different from the other Romance languages?"
 author: "Vaishnav Sudarshan"
-date: "2026-1-4"
-categories:  [Cool Linguistics Stuff]
-abstract: French (oops, should I have censored that?) spelling is notoriously weird and not phonetic, which is one of the reasons why everyone thinks it's overrated. Let's see why French sounds and looks so strange compared to other Romance languages. 
+date: "2026-2-4"
+categories:  [Cool Linguistics Stuff] [Cool Language Fact of the Month]
+abstract: French spelling is notoriously weird and not phonetic, which is one of the reasons why everyone thinks it's overrated. Let's see why French sounds and looks so strange compared to other Romance languages. 
 image: Screenshot%202025-12-18%20205740.png
 ---
 

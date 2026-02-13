@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-11-23">
+<meta name="dcterms.date" content="2025-01-29">
 
-<title>Abstract Derivatives Part 1 - Linear Operators – Blog</title>
+<title>Historical Linguistics Part 1: The Beginning of Linguistics – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,9 +42,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -143,9 +111,10 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Abstract Derivatives Part 1 - Linear Operators</h1>
+      <h1 class="title">Historical Linguistics Part 1: The Beginning of Linguistics</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Math Stuff</div>
+                <div class="quarto-category">Cool Linguistics Stuff</div>
+                <div class="quarto-category">Cool History Stuff</div>
               </div>
                   </div>
   </div>
@@ -163,7 +132,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 23, 2025</p>
+        <p class="date">January 29, 2025</p>
       </div>
     </div>
     
@@ -173,7 +142,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      Answering the following questions - Why are matrices considered linear? How can differentiation also be interpreted as this?
+      How did people suddenly start thinking about languages scientifically? What were the results of this primary branch of linguistics?
     </div>
   </div>
   
@@ -188,36 +157,46 @@ window.Quarto = {
 
 
 
-<section id="linear-operators" class="level1">
-<h1>Linear Operators</h1>
-<p>A linear operator <span class="math inline">\(L\)</span> is just anything that satisfies <span class="math inline">\(L(ax+by)=aL(x)+bL(y)\)</span>, for constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, and where addition and multiplication are defined. In other words, it is additive, and you can pull out constants from the inside.</p>
-<p>Matrices are where you probably saw this. If you transform a vector <span class="math inline">\(x\)</span> by multiplying it with <span class="math inline">\(A\)</span>, do the same for a vector <span class="math inline">\(y\)</span>, and add the two new vectors, it’s the same as just adding them first and then transforming them. Also, if you scale <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> by some constants, it doesn’t matter if you did it before or after the transformation.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="linoper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the constants rule of linear transformations"><img src="linoper.png" class="img-fluid figure-img" alt="Diagram showing the constants rule of linear transformations"></a></p>
-<figcaption>Diagram showing the constants rule of linear transformations</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="linoper1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing additivity of linear transformations"><img src="linoper1.png" class="img-fluid figure-img" alt="Diagram showing additivity of linear transformations"></a></p>
-<figcaption>Diagram showing additivity of linear transformations</figcaption>
-</figure>
-</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Right now, I’m jumping around the circle of linguistics a little. The trend has been to go from smaller units of language to bigger ones, like sounds to words to sentences. However, I think that going to one of the outermost rings, with the units of languages and language families, is helpful for more context with the inner rings too.</p>
+<p>Historical linguistics is basically how the field of linguistics started - it’s not like early linguists from the 1800’s were saying “Oh, cool, a new field just appeared with barely any competition! Let’s convert tokens to vectors in semantic space using trained embedding matrices!” On the contrary, they were just observing languages at a broader scale, and realized that there actually were patterns, trends, and rules about how they could be related. That’s when they realized that languages could be analyzed scientifically, and weren’t just random gobbledegook.</p>
+<section id="historical-context-of-historical-linguistics" class="level2">
+<h2 class="anchored" data-anchor-id="historical-context-of-historical-linguistics">Historical context of historical linguistics</h2>
+<p>This first part is probably way too much information, but for the full context, here you go.</p>
+<section id="european-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="european-exploration">European Exploration</h3>
+<p>After “la Reconquista” in Spain and Portugal in the late 1400’s, where the Catholics kicked out the Ummayad Caliphate from the Iberian peninsula, they realized that they didn’t have to worry about being religiously persecuted for not being Muslim anymore. So, they made boats and set sail, to religiously persecute the rest of the world for not being Catholic. This is why the year Colombus reached the Americas and immediately started doing terrible things to the people there is the same year that “la Reconquista” finished.</p>
+<p>After the Spanish and the Portuguese made sailing around the world popular, other Europeans joined in as well, like the Italians, the British, the Dutch, and the French. The thing that all these Europeans had in common is that they all spoke Indo-European languages.</p>
+<p>All the Europeans mainly sought after India, as well as nearby places like Southeast Asia, to get some spices, probably because they were sick of bland food. However, there was one major problem with this: the Ottoman Empire occupied Turkiye as well as much of the area around it, and they didn’t let anyone cross; even if they did, they couldn’t cross by boat, since the Suez Canal hadn’t been invented yet. So, they had to sail all the way around Africa, which I doubt anyone these days would have the patience to do.</p>
 </section>
-<section id="derivatives-as-linear-operators" class="level1">
-<h1>Derivatives As Linear Operators</h1>
-<p>Do you remember the sum and product rules of single-variable derivatives?</p>
-<p><span class="math inline">\(\frac{d}{dx} (af(x)) = a \frac{d}{dx} f(x)\)</span> <span class="math inline">\(\frac{d}{dx} (f(x) + g(x)) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x)\)</span></p>
-<p>Wait, what??? Differentiation is also a linear operator on functions??? Now you realize how cool generalizing stuff is.</p>
-<p>Hold on. Is <span class="math inline">\(y=mx+b\)</span> linear on <span class="math inline">\(x\)</span>, for <span class="math inline">\(b \neq 0\)</span>? The answer, surprisingly, is no. <span class="math inline">\(m(x_1+x_2)+b \neq (mx_1+b)+(mx_2+b)\)</span>. Linear, in this the context of this blog post, doesn’t necessarily mean the function is a line, but rather that the function behaves like a linear operator, which are typically different things. However, don’t think this form of function isn’t useful outside of 7th grade - when generalized to matrices, these can be very useful in AI.</p>
-<section id="slight-tangent-on-affine-transformations" class="level2">
-<h2 class="anchored" data-anchor-id="slight-tangent-on-affine-transformations">Slight Tangent on Affine Transformations</h2>
-<p>Transformations of the form <span class="math inline">\(y=mx+b\)</span> aren’t linear, but instead <em>affine</em>. Obviously not everything has to be a scalar, but instead can be about vectors and matrices where you have <span class="math inline">\(f(\vec{v}) = A \vec{v} + \vec{b}\)</span> for some matrix <span class="math inline">\(A\)</span>. Where are affine transformations actually used?</p>
-<p>A really common example is to get from one layer of a neural network to another, right before the activation function (more on that in the <a href="../Neural-Networks-Part1/">blog about neural networks</a>). You multiply the vector of inputs in one layer by the matrix of weights and add to that the vector of biases to get the next layer pre-activation.</p>
+<section id="the-discovery-of-indo-european-languages" class="level3">
+<h3 class="anchored" data-anchor-id="the-discovery-of-indo-european-languages">The discovery of Indo-European languages</h3>
+<p>Upon finally reaching India, many Europeans noticed similarities between the local Indian languages and their own European languages. You can also see this yourself - the Hindu god of fire’s name is “Agni”, and in English, we have the word “ignite”. “Ignite” is from Latin, which means the mostly Romance-speaking Europeans were likely able to notice this with Indian languages. This is where the concept of <em>cognates</em> came from - words in different languages that have a common ancestor.</p>
+<p>Observations like these led the Europeans to hypothesize that all ancient European languages like Latin or Greek came from Sanskrit. At this point, the Europeans were very confused. They used to think that all languages were descended from Hebrew. Lots of fringe theories emerged from the discovery of Indo-European languages, like the idea that Germanic tribes were from Persia. I will probably talk about these theories in a future post, but for now, let’s just say that they would all make you want to cry.</p>
+<p>Finally, a linguist from Germany figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called “Proto-Indo-European”. To do this, he invented the comparative method, which is what we will talk about in the next post.</p>
+<p><a href="ie.png">This is the modern family tree of Indo European languages</a></p>
+</section>
+</section>
+<section id="warning-about-cognates" class="level2">
+<h2 class="anchored" data-anchor-id="warning-about-cognates">Warning About Cognates</h2>
+<p>You have to be really careful about cognates, because it could either be that the words really are similar and semantically related, they are false friends (which means that the words just coincidentally sound similar but don’t have a common ancestor), or they are loanwords, which means that one language borrowed the word from another, but this does not imply relatedness or ancestry.</p>
+<p>An example of loanwords is when Korean uses “keikeu” for “cake”, but this doesn’t mean that Korean is a Germanic language; instead, it just means that Korean had to borrow from English because they didn’t have a word for “cake” before and they were exposed to Anglophone culture.</p>
+<p>False friends are also especially sneaky. If you told a German friend “Ich will dir Gift geben”, which you think means “I want to give you gifts”, they would probably stop being friends with you and even call the authorities on you, because “Gift” in German means “poison”, and has no relation to the English word “gift”.</p>
+</section>
+<section id="sound-changes" class="level2">
+<h2 class="anchored" data-anchor-id="sound-changes">Sound Changes</h2>
+<p>To understand the comparative method that will be covered in the next post, we need to first understand sound changes. For example, the word for “water” in Latin is “aqua”, but in French, which is descended from it, it’s “eau”. We know that “eau” and “aqua” are cognates, because “eau” isn’t a loanword and it isn’t gibberish. How could sound changes have caused this to happen?</p>
+<p>The main idea is that the /kʷ/ in “aqua” gradually turned into a /w/, since the /k/ sound got weakened, so it sounded more like /awa/. After that, the /w/ sound got weakened as well, and it sounded more like /au/. Finally, the /au/ sound got weakened to /o/, which is how we got “eau” (French also preserves its older spelling, which means at one point it really did used to sound something like “eeyeawoo”).</p>
+<p>These sound changes are pretty regular in a single language or language family, and at least have patterns cross-linguistically. For example, it’s more likely for a /tʃ/ to emerge from a /t/ that is near an /i/ or a /j/ than the other way around, because of a trend called palatalization, which is why in Portuguese, the word for “milk” is “leite”, but is pronouned “leiche” (Portuguese preserves historical spelling like French does).</p>
+<p>One of the most famous sound changes is Grimm’s law. It states that in Germanic languages (the transition from Proto-Indo-European to Proto-Germanic, to be exact), the /p/ sound that is found in other Indo-European languages turned into an /f/ sound, the /t/ sound was turned into a /θ/ sound, and the /k/ sound was turned into an /h/ sound. That’s why in English, we say “father”, “three”, and “heart”, while in the Vatican, Latin speakers say “pater”, “tres”, and “cor”. A small note is that the “th” in “father” is actually a /ð/ sound, not a /θ/ sound, but that’s because of a subsequent sound change after being its voiceless version.</p>
+</section>
+</section>
+<section id="to-be-continued" class="level1">
+<h1>To be continued</h1>
+<p>So we know how people discovered that languages were related. We also know how sound changes and cognates work. How did early linguists use this to figure out Proto-Indo-European, and use this same method for other proto languages? That’s what we will talk about in the next post.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -621,38 +600,6 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

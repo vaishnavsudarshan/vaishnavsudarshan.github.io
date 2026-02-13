@@ -1,6 +1,6 @@
 # Basic Center of Mass Uses
 
-What if you have an entire system with a bunch of individual parts that you just want to approximate as a single point to make your life easier?
+What if you have an entire system with a bunch of individual parts that you just want to approximate as a single point to make your life easier? That's why the center of mass exists in physics. 
 
 # As an Integral
 

@@ -1,8 +1,8 @@
 ---
-title: "Cool Problem of the Month 2"
+title: "Why would anyone in their right mind do it like this?"
 author: "Vaishnav Sudarshan"
 date: "2025-12-16"
-categories:  [Cool Math Stuff]
+categories:  [Cool Math Stuff] [Cool Problem of the Month]
 abstract: I found this problem that's really easy but I had a really goofy solution.
 image: Screenshot%202025-12-18%20205740.png
 ---

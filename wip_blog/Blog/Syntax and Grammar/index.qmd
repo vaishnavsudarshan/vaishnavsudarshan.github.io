@@ -1,0 +1,11 @@
+---
+title: "Syntax and Grammar"
+author: "Vaishnav Sudarshan"
+date: "2026-1-23"
+categories:  [Cool Linguistics Stuff]
+abstract: The next step in the linguistics circle - how words work together to form complete sentences.
+---
+
+# Introduction
+
+# Word Order

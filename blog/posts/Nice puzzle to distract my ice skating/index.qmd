@@ -1,8 +1,8 @@
 ---
-title: "Cool Problem of the Month - 1"
+title: "Nice Puzzle to Distract My Ice Skating"
 author: "Vaishnav Sudarshan"
 date: "2025-11-22"
-categories:  [Cool Math Stuff]
+categories:  [Cool Math Stuff, Cool Problem of the Month]
 abstract: Lol I found this while ice skating and proved it as rigorously as possible in my head while simultaneously figuring out how to ice skate without looking like a monkey.
 image: aops.png
 ---
