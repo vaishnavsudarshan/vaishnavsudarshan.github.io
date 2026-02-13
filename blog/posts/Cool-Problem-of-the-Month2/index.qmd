@@ -27,10 +27,82 @@ Without further ado, here is the solution.
 
 Let the center of the square be the origin of the complex plane. Since we only care about angles, and not sides, we can assume WLOG that $A$ is at the point $-1+i$. To rotate a complex number clockwise by an angle $\theta$, just multiply the number by $e^{-i \theta}$, so then we end up decreasing the argument (angle measured counterclockwise from the x-axis) by $\theta$ while preserving the magnitude. In this case $\theta = 20^{\circ}$.
 
-So, the point $A'$ is at $(-1+i)(e^{-i 20^{\circ}}) = (-1+i)(\cos( - 20^{\circ}) + i \sin( - 20^{\circ}))$ from Euler's formula (the exponential form is just my shorthand way of remembering how to rotate complex numbers, but you could just go straight to polar form). Since cosine is an even function and sine is odd, this is the same as $(-1+i)(\cos(20^{\circ}) - i \sin(20^{\circ}))$.  This expands to $(-\cos(20^{\circ}) + \sin(20^{\circ})) + i(\cos(20^{\circ}) + \sin(20^{\circ}))$. 
+So, the point $A'$ is at
+$$
+(-1+i)(e^{-i 20^{\circ}}) = (-1+i)(\cos( - 20^{\circ}) + i \sin( - 20^{\circ}))
+$$ 
+from Euler's formula (the exponential form is just my shorthand way of remembering how to rotate complex numbers, but you could just go straight to polar form). 
 
-The angle we want to find is just the direction of the vector from $A$ to $A'$. So, this is just $\arctan(\frac{\Delta \Im}{\Delta \Re})$. $\Delta \Im = \cos(20^{\circ}) + \sin(20^{\circ}) - 1$, while $\Delta \Re = -\cos(20^{\circ}) + \sin(20^{\circ}) + 1$. Essentially, the problem is just boiled down to finding out how to trig bash $\arctan(\frac{\cos(20^{\circ}) + \sin(20^{\circ}) - 1}{-\cos(20^{\circ}) + \sin(20^{\circ}) + 1})$. 
+Since cosine is an even function and sine is odd, this is the same as: 
+$$
+(-1+i)(\cos(20^{\circ}) - i \sin(20^{\circ}))
+$$.  
 
-The is an identity that $\cos(A)+\sin(A)=\sqrt{2}\sin(A+45^{\circ})$ and $\cos(A)-\sin(A)=\sqrt{2}\cos(A+45^{\circ})$. I'll leave it as an exercise to the reader to verify that. So, if we use this as well as the fact that $\sin(90^\circ - x) = \cos(x)$, the fraction simplifies to $- \frac{\sqrt{2} \cos(25^\circ)-1}{\sqrt{2} \sin(25^\circ)-1}$. Substituting $\sqrt{2}=\frac{1}{\cos(45^\circ)}$, this simplifies to $- \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\cos(45^\circ)} = - \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\sin(45^\circ)}$. 
+This expands to 
+$$
+(-\cos(20^{\circ}) + \sin(20^{\circ})) + i(\cos(20^{\circ}) + \sin(20^{\circ})).
+$$ 
 
-Finally, there is an identity that $\cos(A)-\cos(B)=-2\sin(\frac{A+B}{2})\sin(\frac{A-B}{2})$, and that $\sin(A)-\sin(B)=2\cos(\frac{A+B}{2})\sin(\frac{A-B}{2})$. Again, verifying it is an exercise for the reader. So, we now have $- \frac{2 \sin(35^\circ)\sin(10^\circ)}{-2 \cos(35^\circ)\cos(10^\circ)}$ = $\tan(35^\circ)$, so $\arctan(\tan(35^\circ)) = \boxed{35^\circ}$, or option $B$. 
+The angle we want to find is just the direction of the vector from $A$ to $A'$. So, this is just 
+
+$$
+\arctan\left(\frac{\Delta \Im}{\Delta \Re}\right).
+$$ 
+$$
+\Delta \Im = \cos(20^{\circ}) + \sin(20^{\circ}) - 1
+$$, while: 
+$$
+\Delta \Re = -\cos(20^{\circ}) + \sin(20^{\circ}) + 1
+$$. 
+
+Essentially, the problem is just boiled down to finding out how to trig bash 
+$$
+\arctan\left(\frac{\cos(20^{\circ}) + \sin(20^{\circ}) - 1}{-\cos(20^{\circ}) + \sin(20^{\circ}) + 1}\right).
+$$ 
+
+There is an identity that:
+$$
+\cos(A)+\sin(A)=\sqrt{2}\sin(A+45^{\circ})
+$$ 
+and 
+$$
+\cos(A)-\sin(A)=\sqrt{2}\cos(A+45^{\circ}).
+$$ 
+
+> I'll leave it as an exercise to the reader to verify that. 
+
+So, if we use this as well as the fact that $\sin(90^\circ - x) = \cos(x)$, the fraction simplifies to
+
+$$
+- \frac{\sqrt{2} \cos(25^\circ)-1}{\sqrt{2} \sin(25^\circ)-1}
+$$. 
+
+Substituting 
+$$
+\sqrt{2}=\frac{1}{\cos(45^\circ)}
+$$
+, this simplifies to 
+$$
+- \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\cos(45^\circ)} = - \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\sin(45^\circ)}.
+$$ 
+
+Finally, there is an identity that 
+$$
+\cos(A)-\cos(B)=-2\sin\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)
+$$
+and that 
+$$
+\sin(A)-\sin(B)=2\cos\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)
+$$. 
+
+>  Again, verifying it is an exercise for the reader. 
+
+We now have 
+$$
+- \frac{2 \cdot \sin(35^\circ) \cdot \sin(10^\circ)}{-2 \cdot \cos(35^\circ) \cdot \cos(10^\circ)} = \tan(35^\circ)
+$$
+So 
+$$
+\arctan(\tan(35^\circ)) = \boxed{35^\circ}
+$$ 
+or option $B$. 

@@ -1,7 +1,7 @@
 ---
 title: "Historical Linguistics Part 1: The Beginning of Linguistics"
 author: "Vaishnav Sudarshan"
-date: "2025-1-29"
+date: "2026-1-29"
 categories:  [Cool Linguistics Stuff, Cool History Stuff]
 image: ie.png
 abstract: How did people suddenly start thinking about languages scientifically? What were the results of this primary branch of linguistics? 
@@ -35,7 +35,9 @@ Observations like these led the Europeans to hypothesize that all ancient Europe
 
 Finally, a linguist from Germany figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next post. 
 
-[This is the modern family tree of Indo European languages](ie.png)
+
+![This is the modern family tree of Indo European languages](ie.png)
+
 
 ## Warning About Cognates
 

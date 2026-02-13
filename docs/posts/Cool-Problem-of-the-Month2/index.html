@@ -207,10 +207,56 @@ window.Quarto = {
 <section id="solution" class="level1">
 <h1>Solution</h1>
 <p>Let the center of the square be the origin of the complex plane. Since we only care about angles, and not sides, we can assume WLOG that <span class="math inline">\(A\)</span> is at the point <span class="math inline">\(-1+i\)</span>. To rotate a complex number clockwise by an angle <span class="math inline">\(\theta\)</span>, just multiply the number by <span class="math inline">\(e^{-i \theta}\)</span>, so then we end up decreasing the argument (angle measured counterclockwise from the x-axis) by <span class="math inline">\(\theta\)</span> while preserving the magnitude. In this case <span class="math inline">\(\theta = 20^{\circ}\)</span>.</p>
-<p>So, the point <span class="math inline">\(A'\)</span> is at <span class="math inline">\((-1+i)(e^{-i 20^{\circ}}) = (-1+i)(\cos( - 20^{\circ}) + i \sin( - 20^{\circ}))\)</span> from Euler’s formula (the exponential form is just my shorthand way of remembering how to rotate complex numbers, but you could just go straight to polar form). Since cosine is an even function and sine is odd, this is the same as <span class="math inline">\((-1+i)(\cos(20^{\circ}) - i \sin(20^{\circ}))\)</span>. This expands to <span class="math inline">\((-\cos(20^{\circ}) + \sin(20^{\circ})) + i(\cos(20^{\circ}) + \sin(20^{\circ}))\)</span>.</p>
-<p>The angle we want to find is just the direction of the vector from <span class="math inline">\(A\)</span> to <span class="math inline">\(A'\)</span>. So, this is just <span class="math inline">\(\arctan(\frac{\Delta \Im}{\Delta \Re})\)</span>. <span class="math inline">\(\Delta \Im = \cos(20^{\circ}) + \sin(20^{\circ}) - 1\)</span>, while <span class="math inline">\(\Delta \Re = -\cos(20^{\circ}) + \sin(20^{\circ}) + 1\)</span>. Essentially, the problem is just boiled down to finding out how to trig bash <span class="math inline">\(\arctan(\frac{\cos(20^{\circ}) + \sin(20^{\circ}) - 1}{-\cos(20^{\circ}) + \sin(20^{\circ}) + 1})\)</span>.</p>
-<p>The is an identity that <span class="math inline">\(\cos(A)+\sin(A)=\sqrt{2}\sin(A+45^{\circ})\)</span> and <span class="math inline">\(\cos(A)-\sin(A)=\sqrt{2}\cos(A+45^{\circ})\)</span>. I’ll leave it as an exercise to the reader to verify that. So, if we use this as well as the fact that <span class="math inline">\(\sin(90^\circ - x) = \cos(x)\)</span>, the fraction simplifies to <span class="math inline">\(- \frac{\sqrt{2} \cos(25^\circ)-1}{\sqrt{2} \sin(25^\circ)-1}\)</span>. Substituting <span class="math inline">\(\sqrt{2}=\frac{1}{\cos(45^\circ)}\)</span>, this simplifies to <span class="math inline">\(- \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\cos(45^\circ)} = - \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\sin(45^\circ)}\)</span>.</p>
-<p>Finally, there is an identity that <span class="math inline">\(\cos(A)-\cos(B)=-2\sin(\frac{A+B}{2})\sin(\frac{A-B}{2})\)</span>, and that <span class="math inline">\(\sin(A)-\sin(B)=2\cos(\frac{A+B}{2})\sin(\frac{A-B}{2})\)</span>. Again, verifying it is an exercise for the reader. So, we now have <span class="math inline">\(- \frac{2 \sin(35^\circ)\sin(10^\circ)}{-2 \cos(35^\circ)\cos(10^\circ)}\)</span> = <span class="math inline">\(\tan(35^\circ)\)</span>, so <span class="math inline">\(\arctan(\tan(35^\circ)) = \boxed{35^\circ}\)</span>, or option <span class="math inline">\(B\)</span>.</p>
+<p>So, the point <span class="math inline">\(A'\)</span> is at <span class="math display">\[
+(-1+i)(e^{-i 20^{\circ}}) = (-1+i)(\cos( - 20^{\circ}) + i \sin( - 20^{\circ}))
+\]</span> from Euler’s formula (the exponential form is just my shorthand way of remembering how to rotate complex numbers, but you could just go straight to polar form).</p>
+<p>Since cosine is an even function and sine is odd, this is the same as: <span class="math display">\[
+(-1+i)(\cos(20^{\circ}) - i \sin(20^{\circ}))
+\]</span>.</p>
+<p>This expands to <span class="math display">\[
+(-\cos(20^{\circ}) + \sin(20^{\circ})) + i(\cos(20^{\circ}) + \sin(20^{\circ})).
+\]</span></p>
+<p>The angle we want to find is just the direction of the vector from <span class="math inline">\(A\)</span> to <span class="math inline">\(A'\)</span>. So, this is just</p>
+<p><span class="math display">\[
+\arctan\left(\frac{\Delta \Im}{\Delta \Re}\right).
+\]</span> <span class="math display">\[
+\Delta \Im = \cos(20^{\circ}) + \sin(20^{\circ}) - 1
+\]</span>, while: <span class="math display">\[
+\Delta \Re = -\cos(20^{\circ}) + \sin(20^{\circ}) + 1
+\]</span>.</p>
+<p>Essentially, the problem is just boiled down to finding out how to trig bash <span class="math display">\[
+\arctan\left(\frac{\cos(20^{\circ}) + \sin(20^{\circ}) - 1}{-\cos(20^{\circ}) + \sin(20^{\circ}) + 1}\right).
+\]</span></p>
+<p>There is an identity that: <span class="math display">\[
+\cos(A)+\sin(A)=\sqrt{2}\sin(A+45^{\circ})
+\]</span> and <span class="math display">\[
+\cos(A)-\sin(A)=\sqrt{2}\cos(A+45^{\circ}).
+\]</span></p>
+<blockquote class="blockquote">
+<p>I’ll leave it as an exercise to the reader to verify that.</p>
+</blockquote>
+<p>So, if we use this as well as the fact that <span class="math inline">\(\sin(90^\circ - x) = \cos(x)\)</span>, the fraction simplifies to</p>
+<p><span class="math display">\[
+- \frac{\sqrt{2} \cos(25^\circ)-1}{\sqrt{2} \sin(25^\circ)-1}
+\]</span>.</p>
+<p>Substituting <span class="math display">\[
+\sqrt{2}=\frac{1}{\cos(45^\circ)}
+\]</span> , this simplifies to <span class="math display">\[
+- \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\cos(45^\circ)} = - \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\sin(45^\circ)}.
+\]</span></p>
+<p>Finally, there is an identity that <span class="math display">\[
+\cos(A)-\cos(B)=-2\sin\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)
+\]</span> and that <span class="math display">\[
+\sin(A)-\sin(B)=2\cos\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)
+\]</span>.</p>
+<blockquote class="blockquote">
+<p>Again, verifying it is an exercise for the reader.</p>
+</blockquote>
+<p>We now have <span class="math display">\[
+- \frac{2 \cdot \sin(35^\circ) \cdot \sin(10^\circ)}{-2 \cdot \cos(35^\circ) \cdot \cos(10^\circ)} = \tan(35^\circ)
+\]</span> So <span class="math display">\[
+\arctan(\tan(35^\circ)) = \boxed{35^\circ}
+\]</span> or option <span class="math inline">\(B\)</span>.</p>
 
 
 </section>
