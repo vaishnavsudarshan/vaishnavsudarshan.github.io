@@ -40,6 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -116,8 +148,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="kinematics" class="level1">
+<h1>Kinematics</h1>
+<section id="uniform-circular-motion" class="level2">
+<h2 class="anchored" data-anchor-id="uniform-circular-motion">Uniform Circular Motion</h2>
+<p>In circular motion, an object travels at a constant SPEED (let it be called <span class="math inline">\(v\)</span>) in a circle. However, of course velocity changes, because it’s always pointing in a different direction. <a href="circular.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Uniform circular motion [source]("><img src="circular.png" class="img-fluid" alt="Uniform circular motion [source]("></a> From here, we can introduce some new variables to reflect this motion. First, <span class="math inline">\(R\)</span> is the radius of the circle. <span class="math inline">\(T\)</span>, the period, is defined as the amount of time it takes to make one full rotation, with units of seconds. <span class="math inline">\(f\)</span>, frequency, is the reciprocal of period, so it’s the amount of rotations per second, with units of inverse seconds, or Hertz (Hz).<br>
+<span class="math inline">\(\omega\)</span> is the angular velocity, which is how many radians travelled in a second. This means that <span class="math inline">\(\omega = 2 \pi / T\)</span>. Now, think about this. <span class="math inline">\(v\)</span> is just the total distance over time, so <span class="math inline">\(v = 2 \pi R / T\)</span>. Look! This means that <span class="math inline">\(v = r \omega\)</span>! Now, you may be wondering something. We may know the speed, but there MUST be acceleration! Otherwise, how can the velocity change? The vector for v is <span class="math inline">\([\omega r cos(\theta), \omega r sin(\theta)]\)</span>. These are just the horizontal and vertical components, with the magnitude being <span class="math inline">\(\omega r\)</span>. We want to find <span class="math inline">\(a = \frac{dv}{dt}\)</span>. We can get this from the Chain Rule, by computing <span class="math inline">\(\frac{dv}{d\theta} \cdot \frac{d\theta}{dt}\)</span>. <span class="math inline">\(\frac{dv}{d\theta}\)</span> is going to be <span class="math inline">\([-\omega r sin(\theta), \omega r cos(\theta)]\)</span>. Meanwhile, <span class="math inline">\(\frac{d\theta}{dt}\)</span> is just <span class="math inline">\(\omega\)</span>, by definition. So, multiplying these, we get <span class="math inline">\(\frac{dv}{dt} = [-\omega^2 r sin(\theta), \omega^2 r cos(\theta)]\)</span>. The magnitude of this acceleration is just <span class="math inline">\(\omega^2 r\)</span>, and the direction is pointed towards the center. (Explanation of that second part: The angles of the components of the velocity were with <span class="math inline">\(cos\)</span> and <span class="math inline">\(sin\)</span>, so this means <span class="math inline">\(-sin\)</span> and <span class="math inline">\(cos\)</span> would be perpendicular to that, as their dot product is 0. More specifically towards the center, if cos and sin were tangent to the circle, which they are.)</p>
+<p># Dynamics</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -520,6 +561,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

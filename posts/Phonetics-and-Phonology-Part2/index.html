@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-08-11">
+<meta name="dcterms.date" content="2025-09-14">
 
-<title>Cool Math Stuff – Blog</title>
+<title>Phonetics and Phonology Part 2 – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,37 +72,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -107,7 +80,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -141,8 +114,11 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Cool Math Stuff</h1>
-                      </div>
+      <h1 class="title">Phonetics and Phonology Part 2</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Cool Linguistics Stuff</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -158,13 +134,19 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 11, 2025</p>
+        <p class="date">September 14, 2025</p>
       </div>
     </div>
     
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      We know how sounds work biologically, but how do linguists write and organize them?
+    </div>
+  </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -177,64 +159,48 @@ window.Quarto = {
 
 
 
-<section id="linear-algebra" class="level2">
-<h2 class="anchored" data-anchor-id="linear-algebra">Linear Algebra</h2>
-<section id="vectors" class="level3">
-<h3 class="anchored" data-anchor-id="vectors">Vectors</h3>
-<p>A vector is the</p>
+<blockquote class="blockquote">
+<p>This is a series of blogs on linguistics. See also: <a href="../Morphology-and-Semantics/"><em>Morphology and Semantics</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part1/"><em>Phonetics and Phonology Part 1</em></a></p>
+</blockquote>
+<section id="the-ipa" class="level1">
+<h1>The IPA</h1>
+<p>Now that you know how sounds are made, let’s see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. They made a chart called the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"><em>International Phonetic Alphabet</em></a>.where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics. You may have noticed that throughout this article I’ve used slashes and brackets to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds.</p>
+<section id="the-difference" class="level2">
+<h2 class="anchored" data-anchor-id="the-difference">The Difference</h2>
+<p>Why did I use both [] and //? In short, [] is the actual scientific way of making as many distinctions as you want (phonetic transcription), so it doesn’t care about how specific languages perceive sounds. On the other hand, // is when you only care about the distinctions a specific language makes (phonemic transcription), so you’ll typically be less descriptive of how to pronounce that sound.</p>
+<p>For example, Tamil doesn’t distinguish between voiced and voiceless consonants, so you could phonemically write the word for monkey as /kuɾaŋku/, even though phonetically, people actually pronounce it as something like [kuɾaŋɡʊ]. However, it doesn’t matter which of those distinctions are used, between [ʊ] and [u] or [k] and [g], since they’re perceived as being the same sound for Tamil speakers.</p>
+<section id="allophonic-variation" class="level3">
+<h3 class="anchored" data-anchor-id="allophonic-variation">Allophonic Variation</h3>
+<p>Phonemes can have different forms, so a single phoneme is more of a category. In the example for “monkey” in Tamil, the phoneme /k/ can mean [k] or [g] depending on the specific word. So, we’d say that the voicing of /k/ is NOT <em>phonemic</em> in Tamil - variations aren’t distinguished in meaning. [k] and [g] are considered <em>allophones</em> - different forms of the same phoneme.</p>
+<p>You can write allophones by describing when a certain phoneme varies in a certain environment. So, we get to use nerdy linguistics notation! For example, in Tamil, /k/ is pronounced as [g] after a nasal sound, so we can write /k/ → [g] / [ŋ]__. The underscore represents the position of this phoneme, and the slash indicates that the environment of this variation is about to come next.</p>
+<p>A more tangible example of allophonic variationis tonality in English. As you (hopefully) know, English is not a tonal language. So, when someone speaks English with tones (for example, Steven’s dad in a Steven He video), it means the same thing as speaking normal English without any tones. However, Mandarin is a tonal language, so if you say “ma” with a high tone, it means “mother”, but if you say “ma” with a falling tone, it means “scold”. So, the tones in Mandarin are phonemic, while the tones in English are allophonic.</p>
 </section>
 </section>
-<section id="deep-learning" class="level2">
-<h2 class="anchored" data-anchor-id="deep-learning">Deep Learning</h2>
+<section id="chill-ipa-characters" class="level2">
+<h2 class="anchored" data-anchor-id="chill-ipa-characters">Chill IPA Characters</h2>
+<p>Many letters are just like in English. For example, why don’t you take a random guess at how /p/, /h/, /v/, /z/, /m/, /ɪ/ and /t/ are pronounced? Yes! They are pronounced like “p”, “h”, “v”, “z”, “m”, “ɪ” and “t”! BUT NOT LIKE “pea”, “aich”, “vee”, “zee”, “em”, “eye”, and “tea” - you need to hop off elementary school English if you said that.</p>
 </section>
-<section id="calculus" class="level2">
-<h2 class="anchored" data-anchor-id="calculus">Calculus</h2>
-<section id="normal-calculus" class="level3">
-<h3 class="anchored" data-anchor-id="normal-calculus">Normal Calculus</h3>
+<section id="troll-ipa-characters" class="level2">
+<h2 class="anchored" data-anchor-id="troll-ipa-characters">Troll IPA Characters</h2>
+<p>However, there are some tricky ones too that are designed to deceive you. For example, what sounds do you think /j/, /x/, /ɑ/, /r/, /q/, /c/, and /ʔ/ make? No, it is not “jay”, “eks”, “aey”, “ar”, “kyoo”, “see”, and “hmmm?”. Instead, they make the voiced palatal approximant, voiceless velar fricative, unrounded open back vowel, voiced alveolar trill, voiceless uvular stop, voiceless palatal stop, and the glottal stop (glottal stop doesn’t have a voiced version, because it’s just the break between “uh” and “oh” in “uh-oh”).</p>
 </section>
-<section id="differential-equations" class="level3">
-<h3 class="anchored" data-anchor-id="differential-equations">Differential Equations</h3>
+<section id="greek-ipa-letters" class="level2">
+<h2 class="anchored" data-anchor-id="greek-ipa-letters">Greek IPA Letters</h2>
+<p>We’re not done. There’s even Greek letters, which somehow we can never evade, regardless of the subject. /ɸ/, /θ/, /ʎ/, /ɤ/, and /ʊ/ are not phi, theta, lambda, gamma, and upside-down omega, but instead voiceless bilabial fricative, voiceless alveolar fricative, voiced palatal lateral approximant, back close-mid unrounded vowel, and then this random vowel that doesn’t know where it belongs. Phew. That torture is over. Or is it?</p>
 </section>
-<section id="multivariable-calculus" class="level3">
-<h3 class="anchored" data-anchor-id="multivariable-calculus">Multivariable Calculus</h3>
+<section id="diacritics-intro" class="level2">
+<h2 class="anchored" data-anchor-id="diacritics-intro">Diacritics Intro</h2>
+<p>We still have the diacritics to go over, but this time I won’t subject you to the pain of looking at every diacritic. Instead, I’ll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voicelessness, tone, and more.</p>
 </section>
-</section>
-<section id="matrix-calculus" class="level2">
-<h2 class="anchored" data-anchor-id="matrix-calculus">Matrix Calculus</h2>
-</section>
-<section id="geometry" class="level2">
-<h2 class="anchored" data-anchor-id="geometry">Geometry</h2>
-<section id="triangle-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="triangle-stuff">Triangle Stuff</h3>
-</section>
-<section id="quadrilateral-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="quadrilateral-stuff">Quadrilateral Stuff</h3>
-</section>
-<section id="circle-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="circle-stuff">Circle Stuff</h3>
+<section id="visualization" class="level2">
+<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<p>To see the visual representation of the IPA, and to actually listen to their sounds, click <a href="https://www.ipachart.com/"><em>here</em></a>.</p>
+<p>Each language has its phonology written, by placing the accurate symbols of all of its phonemes. For example, see the phonology of French. <a href="french_phonology.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="French phonology source"><img src="french_phonology.png" class="img-fluid" alt="French phonology source"></a></p>
 </section>
 </section>
-<section id="number-theory" class="level2">
-<h2 class="anchored" data-anchor-id="number-theory">Number Theory</h2>
-<section id="intro" class="level3">
-<h3 class="anchored" data-anchor-id="intro">Intro</h3>
-<p>First let’s do some definitions. <span class="math inline">\(a | b\)</span> means <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, or <span class="math inline">\(\frac{b}{a}\)</span> is an integer. A number is prime iff the only numbers that divide it are <span class="math inline">\(1\)</span> and itself. ### Modular Arithmetic ### Diophantine Equations ### Arithmetic Functions ### Theorems</p>
-</section>
-</section>
-<section id="algebra" class="level2">
-<h2 class="anchored" data-anchor-id="algebra">Algebra</h2>
-</section>
-<section id="combinatorics" class="level2">
-<h2 class="anchored" data-anchor-id="combinatorics">Combinatorics</h2>
-</section>
-<section id="trigonometry" class="level2">
-<h2 class="anchored" data-anchor-id="trigonometry">Trigonometry</h2>
-</section>
-<section id="topology" class="level2">
-<h2 class="anchored" data-anchor-id="topology">Topology</h2>
-</section>
-<section id="differential-geometry" class="level2">
-<h2 class="anchored" data-anchor-id="differential-geometry">Differential Geometry</h2>
+<section id="to-be-continued" class="level1">
+<h1>To Be Continued</h1>
+<p>Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned <a href="../Morphology-and-Basic-Semantics/">here</a>, unless you first want to deal with the PTSD of looking at the IPA.</p>
 
 
 </section>
@@ -312,7 +278,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/vaishnavsudarshan\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -640,6 +606,38 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

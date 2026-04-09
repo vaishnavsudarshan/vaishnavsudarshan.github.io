@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-08-11">
+<meta name="dcterms.date" content="2026-01-29">
 
-<title>Cool Math Stuff – Blog</title>
+<title>Why Pi is not, in fact, equal to 4 – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -107,7 +109,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -141,8 +143,11 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Cool Math Stuff</h1>
-                      </div>
+      <h1 class="title">Why Pi is not, in fact, equal to 4</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Cool Math Stuff</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -158,13 +163,19 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 11, 2025</p>
+        <p class="date">January 29, 2026</p>
       </div>
     </div>
     
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      Most problems are either computational or proofs… but this one’s a disproof, which will hopefully spice up 2026 a little.
+    </div>
+  </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -177,64 +188,39 @@ window.Quarto = {
 
 
 
-<section id="linear-algebra" class="level2">
-<h2 class="anchored" data-anchor-id="linear-algebra">Linear Algebra</h2>
-<section id="vectors" class="level3">
-<h3 class="anchored" data-anchor-id="vectors">Vectors</h3>
-<p>A vector is the</p>
+<section id="yapping" class="level1">
+<h1>Yapping</h1>
+<p><span class="math inline">\(2025\)</span> is over! That was a once in a lifetime year. It was a perfect square, and the next one will come in <span class="math inline">\(2116\)</span>. Yet even that is not very cool number, because who cares about the square of <span class="math inline">\(46\)</span>? <span class="math inline">\(45\)</span> is a much nicer number than that. <span class="math inline">\(45\)</span> is a triangular number (sum of the first nine positive integers in this case), so <span class="math inline">\(2025\)</span> is the square of this triangular number, which you may recall also means it’s the sum of the first nine cubes.</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} i^3 = \frac{n^2 (n-1)^2}{4} = \left[\frac{n(n-1)}{2}\right]^2 = \left(\sum_{i=1}^{n} i\right)^2.
+\]</span></p>
+<p>Also, since <span class="math inline">\(2025\)</span> is the square of <span class="math inline">\(45\)</span>, it’s the sum of the first <span class="math inline">\(45\)</span> odd numbers.</p>
+<p><span class="math inline">\(2026\)</span>, on the other hand, is unbelievably boring. Its prime factorization is literally just <span class="math inline">\(2\cdot 1013\)</span>. So, for the first CPOTM of the year, I’ll try to make <span class="math inline">\(2026\)</span> more interesting by writing a disproof instead of a proof.</p>
+<p>If you’ve seen it, then sorry. If not, here it is:</p>
+<p>If you take a square of side length <span class="math inline">\(r\)</span> and then keep on cutting the corners so you preserve the perimeter <span class="math inline">\(8r\)</span>, but the shape approaches a circle, then why can’t you say that <span class="math inline">\(\pi = 4\)</span>, because the diameter is <span class="math inline">\(2r\)</span>?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The fake proof"><img src="img.png" class="img-fluid figure-img" alt="The fake proof"></a></p>
+<figcaption>The fake proof</figcaption>
+</figure>
+</div>
 </section>
-</section>
-<section id="deep-learning" class="level2">
-<h2 class="anchored" data-anchor-id="deep-learning">Deep Learning</h2>
-</section>
-<section id="calculus" class="level2">
-<h2 class="anchored" data-anchor-id="calculus">Calculus</h2>
-<section id="normal-calculus" class="level3">
-<h3 class="anchored" data-anchor-id="normal-calculus">Normal Calculus</h3>
-</section>
-<section id="differential-equations" class="level3">
-<h3 class="anchored" data-anchor-id="differential-equations">Differential Equations</h3>
-</section>
-<section id="multivariable-calculus" class="level3">
-<h3 class="anchored" data-anchor-id="multivariable-calculus">Multivariable Calculus</h3>
-</section>
-</section>
-<section id="matrix-calculus" class="level2">
-<h2 class="anchored" data-anchor-id="matrix-calculus">Matrix Calculus</h2>
-</section>
-<section id="geometry" class="level2">
-<h2 class="anchored" data-anchor-id="geometry">Geometry</h2>
-<section id="triangle-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="triangle-stuff">Triangle Stuff</h3>
-</section>
-<section id="quadrilateral-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="quadrilateral-stuff">Quadrilateral Stuff</h3>
-</section>
-<section id="circle-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="circle-stuff">Circle Stuff</h3>
-</section>
-</section>
-<section id="number-theory" class="level2">
-<h2 class="anchored" data-anchor-id="number-theory">Number Theory</h2>
-<section id="intro" class="level3">
-<h3 class="anchored" data-anchor-id="intro">Intro</h3>
-<p>First let’s do some definitions. <span class="math inline">\(a | b\)</span> means <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, or <span class="math inline">\(\frac{b}{a}\)</span> is an integer. A number is prime iff the only numbers that divide it are <span class="math inline">\(1\)</span> and itself. ### Modular Arithmetic ### Diophantine Equations ### Arithmetic Functions ### Theorems</p>
-</section>
-</section>
-<section id="algebra" class="level2">
-<h2 class="anchored" data-anchor-id="algebra">Algebra</h2>
-</section>
-<section id="combinatorics" class="level2">
-<h2 class="anchored" data-anchor-id="combinatorics">Combinatorics</h2>
-</section>
-<section id="trigonometry" class="level2">
-<h2 class="anchored" data-anchor-id="trigonometry">Trigonometry</h2>
-</section>
-<section id="topology" class="level2">
-<h2 class="anchored" data-anchor-id="topology">Topology</h2>
-</section>
-<section id="differential-geometry" class="level2">
-<h2 class="anchored" data-anchor-id="differential-geometry">Differential Geometry</h2>
+<section id="solution" class="level1">
+<h1>Solution</h1>
+<p>It seems correct, doesn’t it? The area certainly converges, because after cutting off the corners over and over again, you get the same infinitesimal rectangles that could integrate just like a normal circle to get the same result.</p>
+<p>The problem is that the perimeter doesn’t converge. The arc length of a curve from <span class="math inline">\(t=a\)</span> to <span class="math inline">\(t=b\)</span> where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are both functions of <span class="math inline">\(t\)</span> is given by <span class="math display">\[
+\int_a^b \sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2} dt
+\]</span></p>
+<p>This is NOT the same as <span class="math inline">\(x(b)-x(a)+y(b)-y(a)\)</span>.</p>
+<p>Are you still not convinced that the perimeter doesn’t converge? Zoom in on an infinitesimal piece of the diagram, which is where the arc length of the circle is basically a line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="zoom.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"><img src="zoom.png" class="img-fluid figure-img" alt="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"></a></p>
+<figcaption>When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle</figcaption>
+</figure>
+</div>
+<p>In an infinitesimal piece, the limiting process just turns the square into a staircase-like shape, say of <span class="math inline">\(x\)</span>-length <span class="math inline">\(dx\)</span> and <span class="math inline">\(y\)</span>-length <span class="math inline">\(dy\)</span>. On a tiny “step”, the perimeter is just <span class="math inline">\(dx+dy\)</span>. However, that tiny part of the circle is just a line that goes through the endpoints of the step, so the perimeter is <span class="math inline">\(\sqrt{dx^2+dy^2}\)</span>.</p>
+<p>You might argue that maybe we should zoom in even more, and the snapshot we took wasn’t the true final result. However, the arc of the circle is already basically a line. By cornering in the square even more, you’re just going to get another line going through a step, and the situation won’t change, so we have, in fact, zoomed in enough. To actually make the square match the circle in its perimeter, we must directly make the horizontal and vertical lines turn into diagonal lines, which changes the perimeter. <span class="math inline">\(\blacksquare\)</span></p>
 
 
 </section>
@@ -312,7 +298,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/vaishnavsudarshan\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -640,6 +626,38 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

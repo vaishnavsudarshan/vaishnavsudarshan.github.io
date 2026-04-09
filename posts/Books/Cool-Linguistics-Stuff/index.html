@@ -9,7 +9,7 @@
 <meta name="author" content="Vaishnav Sudarshan">
 <meta name="dcterms.date" content="2025-08-23">
 
-<title>Cool Linguistics Stuff – Blog</title>
+<title>Writing Systems – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -114,8 +114,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Cool Linguistics Stuff</h1>
-                      </div>
+      <h1 class="title">Writing Systems</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Cool Linguistics Stuff</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -138,6 +141,12 @@ ul.task-list li input[type="checkbox"] {
       
     </div>
     
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      I talk about how different types of writing systems work and how they evolve.
+    </div>
+  </div>
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -361,7 +370,7 @@ Cool fact to bore your friends with and be called a nerd!!!
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/vaishnavsudarshan\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
