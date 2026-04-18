@@ -2,7 +2,7 @@
 title: "Why Pi is not, in fact, equal to 4"
 author: "Vaishnav Sudarshan"
 date: "2026-1-29"
-categories:  [Cool Math Stuff, Cool Problem of the Month]
+categories:  [Cool Math Stuff]
 abstract: Most problems are either computational or proofs... but this one's a disproof, which will hopefully spice up 2026 a little. 
 image: img.png
 ---

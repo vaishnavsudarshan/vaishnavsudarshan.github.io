@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2025-09-14">
 
-<title>Nice Puzzle to Distract My Ice Skating – Blog</title>
+<title>Phonetics – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,9 +42,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -143,9 +111,9 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Nice Puzzle to Distract My Ice Skating</h1>
+      <h1 class="title">Phonetics</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Math Stuff</div>
+                <div class="quarto-category">Cool Linguistics Stuff</div>
               </div>
                   </div>
   </div>
@@ -163,7 +131,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 22, 2025</p>
+        <p class="date">September 14, 2025</p>
       </div>
     </div>
     
@@ -173,7 +141,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      Lol I found this while ice skating and proved it as rigorously as possible in my head while simultaneously figuring out how to ice skate without looking like a monkey.
+      How do sounds work? What are some features of sounds that different languages distinguish between or care about? How do you organize any sound biologically possible for humans? All these and more will be answered in this blog post.
     </div>
   </div>
   
@@ -188,22 +156,85 @@ window.Quarto = {
 
 
 
-<section id="yap" class="level1">
-<h1>Yap</h1>
-<p><a href="aops.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem I saw"><img src="aops.png" class="img-fluid" alt="The problem I saw"></a> I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:</p>
-<p>“Does this problem make your brain FREEZE? Combine plus signs and eight 8’s to get 1,000.”</p>
-<p>While the problem was really simple just by brute forcing and intuition that even a six or seven year old (hehe) could solve it. The ad was, after all, placed to a general audience, not a bunch of orz IMO quals.</p>
-<p>However, out of my annoyingness, I sought to prove rigorously that the answer I got was the only possible one. I did this in my head, closing any logic holes, while at the same time figuring out how to ice skate properly (at least I was getting better at moving continuously, but my center of mass was still all over the place, so I ended up looking like a monkey anyway, but at least I never fell in the entirety of the hour I was there). So, without further ado, here’s the solution:</p>
+<blockquote class="blockquote">
+<p>This is a series of blogs about linguistics. See also: <a href="../Morphology-and-Semantics/"><em>Morphology and Semantics</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part2/"><em>Phonetics and Phonology Part 2</em></a></p>
+</blockquote>
+<section id="how-sounds-work" class="level1">
+<h1>How Sounds Work</h1>
+<p>At first, the question of “how do sounds work” may seem dumb - you just vibrate your vocal cords, right? However, it’s more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people’s mouths. Now, it’s more difficult to do so, and you may struggle - unless, of course, you’re a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven’t already.</p>
+<p>In kindergarten, you may have learned that sounds are classified as vowels and consonants, and that sounds are known as phones.</p>
+<p>But what really is the difference between a vowel and a consonant? It’s basically just how much constriction your vocal cords have - vowels are entirely unobstructed, while consonants have noticeable obstruction.</p>
+<section id="consonants" class="level2">
+<h2 class="anchored" data-anchor-id="consonants">Consonants</h2>
+<p>Right now, let’s do consonants. In short, the two main parameters that control how a consonant is made are “place of articulation” and “manner of articulation”.</p>
+<section id="place-of-articulation" class="level3">
+<h3 class="anchored" data-anchor-id="place-of-articulation">Place of Articulation</h3>
+<p>Place of articulation is essentially where in your mouth a sound is being made, whether it be deep in the throat (I’m looking at you, certain language primarily spoken in a country that borders Belgium, Germany, Luxembourg, Spain, Andorra, Monaco, Brazil, Suriname, and Italy) or front in the lips (like at the end of “dumb”). From deepest in the throat to closest in the lips, the most commonly referred to categories include glottal, pharyngeal, uvular, velar, retroflex, palatal, alveolar, dental, labiodental, and bilabial.</p>
 </section>
-<section id="actual-solution" class="level1">
-<h1>Actual Solution</h1>
-<p>Assume there are <span class="math inline">\(n\)</span> numbers being added up. <span class="math inline">\(1 \leq n \leq 8\)</span>, since there are at most eight numbers, which means there is one per digit, and at least one number, which is when all the digits are in one number.</p>
-<p>Now, we consider the sum mod <span class="math inline">\(10\)</span>. Since all <span class="math inline">\(n\)</span> numbers have a units digit of <span class="math inline">\(8\)</span> as it’s the only possible digit, and they add up to <span class="math inline">\(1000\)</span>, we get <span class="math inline">\(8n \equiv 0 \pmod{10}\)</span>. What this means is that <span class="math inline">\(8n\)</span> is a multiple of <span class="math inline">\(10\)</span>, so it must also be a multiple of <span class="math inline">\(5\)</span>, since <span class="math inline">\(10\)</span> is a multiple of <span class="math inline">\(5\)</span>. Since <span class="math inline">\(8\)</span> is not a multiple of <span class="math inline">\(5\)</span>, but <span class="math inline">\(8n\)</span> is a multiple of <span class="math inline">\(5\)</span>, then <span class="math inline">\(n\)</span> must be a multiple of <span class="math inline">\(5\)</span>. The only multiple of <span class="math inline">\(5\)</span> between <span class="math inline">\(1\)</span> and <span class="math inline">\(8\)</span> is <span class="math inline">\(n = 5\)</span>. Therefore, we have five numbers being added up.</p>
-<p>We know that the maximum possible number is <span class="math inline">\(888\)</span>, because <span class="math inline">\(8888\)</span> is already greater than <span class="math inline">\(1000\)</span>. If there are <span class="math inline">\(2\)</span> or more <span class="math inline">\(888\)</span>’s being added up, then the sum is also over <span class="math inline">\(1000\)</span>.</p>
-<p>We wish to prove that there are not zero <span class="math inline">\(888\)</span>’s either. Assume by contradiction that there actually are zero <span class="math inline">\(888\)</span>’s, so the maximum possible number is just <span class="math inline">\(88\)</span>. Now, the maximum possible sum is just <span class="math inline">\(4 \cdot 88\)</span> which is far less than <span class="math inline">\(1000\)</span> (this is the maximum because every <span class="math inline">\(88\)</span> is the equivalent of adding eleven <span class="math inline">\(8\)</span>’s). Also, to verify that in my head, instead of calculating, I just saw that <span class="math inline">\(4 \cdot 88 &lt; 4 \cdot 100 = 400 &lt; 1000\)</span>. Therefore, there must be exactly one <span class="math inline">\(888\)</span> being added up.</p>
-<p>We find the remaining four numbers must add up to <span class="math inline">\(112\)</span>. We can do a similar process to find the number of <span class="math inline">\(88\)</span>’s that must be present. If there are no <span class="math inline">\(88\)</span>’s, then the maximum sum is <span class="math inline">\(32\)</span>, not even close to <span class="math inline">\(112\)</span>. However, if there are two or more <span class="math inline">\(88\)</span>’s, then the sum is already over <span class="math inline">\(112\)</span>. Therefore, there must be exactly one <span class="math inline">\(88\)</span> present.</p>
-<p>Since there is exactly one <span class="math inline">\(888\)</span> and exactly one <span class="math inline">\(88\)</span>, and there aren’t any higher possible numbers, the remaining three <span class="math inline">\(8\)</span>’s are used with one <span class="math inline">\(8\)</span> per number, filling up the remaining three numbers needed.</p>
-<p>Therefore, the final sum is <span class="math inline">\(\fbox{888 + 88 + 8 + 8 + 8 = 1000}\)</span>. There are also <span class="math inline">\(40\)</span> different ways to rearrange that same equation and keep it true, because it’s <span class="math inline">\(2 \cdot \frac{5!}{3!}\)</span> (the <span class="math inline">\(5!\)</span> is to rearrange all the five numbers being added, the <span class="math inline">\(3!\)</span> is because we don’t care the order the individual <span class="math inline">\(8\)</span>’s are in because it’s all the same, and the <span class="math inline">\(2\)</span> is to make the sum on the left hand side or the right hand side).</p>
+<section id="manner-of-articulation" class="level3">
+<h3 class="anchored" data-anchor-id="manner-of-articulation">Manner of Articulation</h3>
+<p>Manner of articulation is how the sound is actually made. For example, there is a difference between “boron” and “moron”, even though both [b] and [m] are both “bilabial” sounds (one of the places of articulation mentioned above). Such manners of articulation include:</p>
+<p>Fricatives (blowing air, like in the “sssss” sound in “snake”);</p>
+<p>Plosives (stopping the sound, like how in “dart”, pronouncing both the [d] and [t] can’t really be continued);</p>
+<p>Nasals (where air comes out of your “nnnnn-nostrils”);</p>
+<p>Trills (where a sound is like a plosive but gets rolled, like the Spanish rolled r in “perro”);</p>
+<p>Clicks (air is sucked in instead of pushed out, but unfortunately these cool sounds don’t exist in English, so I can’t provide an example you know how to pronounce. However, the name of the language Xhosa, (in)famous for having a lot of clicks, has a click in its name when not butchered as /kshosa/);</p>
+<p>and more.</p>
+</section>
+<section id="voicedness" class="level3">
+<h3 class="anchored" data-anchor-id="voicedness">Voicedness</h3>
+<p>Another important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at [s] and [z], or [k] and [g] (as an exercise, find the voiceless version of [b]). In most languages, this has a really important distinction. For example, take “tie” and “die”. However, we usually just include this within manner of articulation, because we can’t put 3D charts on the iPad screen your face is glued to.</p>
+</section>
+<section id="other-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="other-parameters">Other Parameters</h3>
+<p>Consonants are classified in other ways than just the main two or three parameters, though. For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn’t use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic.</p>
+<p>Another classification is continuancy. Fricatives, nasals, approximants, and trills can be pronounced for a long time, so they are continuant, but stops, affricates, and clicks are pronounced instantly. I noticed this specific feature at a young age, because I knew any linguistics, so I find it extra cool.</p>
+<p>Additionally, there are more factors that can alter a consonant.</p>
+<p>If you know Hindi, for example, you know how aspiration - putting extra air after a consonant - can impact a word and does matter, like in the words “पल” (pronounced like “pal”, meaning “moment”) and “फल” (pronounced like “phal”, meaning “fruit”).</p>
+<p>In Russian, palatalization - making the consonant more like a palatal sound, which basically just makes it sound like “y” sound is at the end - is a very important factor too, with the words “мать” (pronounced like “maty” with the y being as in “yo” and not “corny”) meaning “mother” but “мат” (pronounced like “mat”) meaning a swear word.</p>
+<p>Gemination - making a consonant pronounced for longer - is important in Finnish, because “tapa” means “way” or “manner”, but “tappa” means “kill”.</p>
+</section>
+<section id="sonorants-and-obstruents" class="level3">
+<h3 class="anchored" data-anchor-id="sonorants-and-obstruents">Sonorants and Obstruents</h3>
+<p>There is also sonorance or obstruence. Sonorance means the vocal tract is pretty open, like a vowel. As a result, most sonorants, which include nasals, approximants, and liquids, tend to be voiced. Obstruence means there is some friction or turbulence which make the sounds more easily voiceless and are noisier. Obstruents include plosives, fricatives, and affricates. Sonorants include nasals, liquids, and approximants.</p>
+</section>
+</section>
+<section id="vowels" class="level2">
+<h2 class="anchored" data-anchor-id="vowels">Vowels</h2>
+<p>Even in vowels, two main parameters affect how a vowel is made. While vowels are not that interesting in my opinion, they are definitely required, because without them you’d be speaking either gibberish or Polish. Vowels tend to be voiced because they are sonorant and made by vibrating the vocal cords.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cool fact to bore your friends with and be called a nerd!!!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The reason why whispering is quiet is because what you’re really doing is not vibrating your vocal cords at all. Since vowels are inherently voiced, by whispering, you end up not being able to project your voice very much at all, as vowels are kind of the base of speech.</p>
+</div>
+</div>
+<p>The parameters are backness (deep in the throat or front in the mouth, like the x-axis) and height (vertical position, but described using open or close, like the y-axis). A third binary parameter is there, roundedness, which is if your mouth is shaped like a circle or not. For example, the [i] sound is a closed front unrounded vowel.</p>
+<p>Unlike consonants, backness and height are continuous, and when you chart them, you get essentially a diagram of your mouth, called a <a href="https://en.wikipedia.org/wiki/Vowel_diagram"><em>vowel diagram</em></a>.</p>
+<p>There are many more variations to vowels that can be made now. For example, tone is a big factor in Mandarin. 糖 (táng) means sugar, but 汤 (tāng) means soup. Nasality (how much air comes out of the nostrils) is important in Fr*nch, as “a” means “has” but “an” means “year”. Rhoticity (how much the vowel sounds r-colored) makes the word “or” sound American when rhotic, but British when you only pronounce it like /oː/. Vowels can also have creaky or breathy voice (basically making it sound like a sheep or a zombie).</p>
+<section id="vowel-harmony" class="level3">
+<h3 class="anchored" data-anchor-id="vowel-harmony">Vowel Harmony</h3>
+<p>Vowel harmony is a very cool property found in some languages.</p>
+<p>Basically, all vowels in a word must be made with the same frontness, and sometimes closedness or roundedness too.</p>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example</h4>
+<p>For example, in Kazakh, the plural marker is either “-лаp” or “-лер” (/lar/ or /ler/) depending on if the root of the noun is front or back.</p>
+<p>“қала” (/qɑˈlɑ/), meaning “city”, uses back vowels, so “cities” is “қалалар”.</p>
+<p>However, “көл” (/kœl/) meaning “lake”, uses front vowels, so “lakes” is “көлдер”.</p>
+<p>Kazakh also has roundedness vowel harmony.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="to-be-continued" class="level1">
+<h1>To Be Continued</h1>
+<p>Now that you know how sounds are produced, let’s find out how linguists write them.</p>
 
 
 </section>
@@ -609,38 +640,6 @@ window.Quarto = {
   });
   </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

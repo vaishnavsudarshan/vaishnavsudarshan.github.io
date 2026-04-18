@@ -1,7 +1,69 @@
 ---
 title: "Historical Linguistics Part 2: The Comparative Method"
 author: "Vaishnav Sudarshan"
-date: "2025-1-29"
+date: "2026-4-15"
 categories:  [Cool Linguistics Stuff] 
 abstract: How did old people figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
 ---
+
+# Introduction
+
+Imagine you see the following Romanized words for "three" in a bunch of different languages:
+
+|---------------|-----------------|-----------|
+| Language      |Word for "three" | IPA       |
+|---------------|-----------------|-----------|
+| English       |	three         |[θɹiː]     |
+| German        |	drei          |[dʁaɪ]     |
+| Swedish       |	tre           |[tɾe]      |
+| Latin         |	trēs          |[ˈtreːs]   |
+| French        |	trois         |[tʁwa]     |
+| Sanskrit      |	tráyas        |[ˈtr̩ajəs]  |
+| Romani        |	trin          |[tɾin]     |
+| Bengali       |	tin           |[tɪn]      |
+| Tajik         |	se            |[se]       |
+| Ancient Greek |	treîs         |[treːs]    |
+| Russian       |	tri           |[trʲi]     |
+| Polish        |	trzy          |[tʂɨ]      |
+| Irish         |	trí           |[tɾʲiː]    |
+| Armenian      |	erek’         |[ɛɾɛk']    |
+|---------------|-----------------|-----------|
+
+Most of these look very similar. They are definitely not just loanwords; if they were, then the sound changes would be completely different, since they would match the phonotactics of the language borrowing them, instead of the natural sound changes that actually occurred. 
+This means that these words must be related, which means they come from a common ancestor language that split and diverged into all of these different languages.
+
+A simpler, more tangible example is the Romance languages, which most people know come from Latin. For example, the word for "three" in Spanish is "tres", in Italian is "tre", in French is "trois", and in Romanian is "trei". These are all very similar, and they all come from the Latin word "trēs". As Latin speakers spread out, their forms and pronounciations changed over time.
+
+Now, you wonder what the common ancestor word for "three" even is. However, this feels like a question that is way too open-ended just by looking at the words, because with enough creativity or weirdness, you could probably evolve any word into any other word. However, there is a certain technique that is used to reconstruct many such ancestor words to a pretty confident degree of accuracy, called the comparative method. And if you had many more words and many more languages, you could even be able to reconstruct the entire ancestor language and even understand a bit about the culture of its speakers.
+
+## Proto-Languages
+
+So, what is this kind of language that all these words come from? It is called a proto-language, which means it has never been directly observed in speech or writing, but instead was reconstructed by linguists using the comparative method. While its grammar and vocabulary aren't necessarily 100% correct, because no one knows its exact form, its existence is almost guaranteed since it was able to be fully reconstructed.
+
+In this case, this language is called Proto-Indo-European. It is estimated to have been spoken around 6000 years ago in the Eurasian Steppe. 
+
+The name of a language family, which is a group of languages that are all related to each other, usually shares a name with of the proto-language. For example, the Indo-European language family descends from Proto-Indo-European, and the Dravidian language family descend from Proto-Dravidian.
+
+Proto-languages can also be the ancient, reconstructed ancestor of any group of languages, not just the whole family. For example, the ancestor of all Germanic languages, like English, German, and Swedish, is called Proto-Germanic. 
+
+Another example is even for the Romance languages. Even though we know they are all descended from Latin, there is still a proto-language called Proto-Romance, which is the intermediate language between the Latin spoken by the elites in the Roman Empire and the modern Romance languages. So, proto-languages can even be spoken after a known, recorded language.
+
+# The Comparative Method and Backtracking Sound Changes
+
+I've mentioned that the comparative method is how linguists reconstruct proto-languages, but how does it work?
+
+An important fact is that sound changes are regular, so typically, a certain rule like "a /k/ sound turns into a /h/ sound" will apply to all words in a language, and not just some of them. This is what allows us to backtrack sound changes, which is the main technique used in the comparative method. This, by the way, was one of the sound changes from Grimm's Law, which I talked about in the previous post.
+
+Also, some sound changes are much more likely to occur than others. For example, it's much more likely for a /t/ sound to turn into a /tʃ/ sound if it's near an /i/ or a /j/ sound, than if it is near an /o/ or an /a/ sound, because of a trend called palatalization. Also, /t/ probably won't turn into a /ɬ/ near an /i/ or a /j/. This is how the Latin word "leite" turned into the Portuguese word "leiche".
+
+Typically, simplifications or reductions won't be reversed, because it's like trying to censor out 90% of the letters in a word and guess the original word. This is why the word "eau" in French won't turn back into "aqua" in Latin, because a lot of information was lost, so if we know that either French or Latin is the ancestor of the other, we can tell that Latin is the ancestor of French. 
+
+Looking for corresponding phonemes cross-linguistically is the first step. For example, if you look across Tamil, Telugu, and Kannada to try an reconstruct Proto-South-Dravidian (a descendant of Proto-Dravidian), you might notice that wherever Telugu and Kannada end in a /u/, Tamil reduces this final vowel and turns it into the null phoneme, /∅/. 
+
+Then, you try to figure out which sound change is the most likely to have happened. 
+
+## Representing Sound Changes
+
+# Proving Language Relationships
+
+At first, we don't know for sure if languages are related or not. One of the most reliable ways to prove that they are related is to try and reconstruct a proto-language including that language, and see if it can be done completely and without much of a stretch. 

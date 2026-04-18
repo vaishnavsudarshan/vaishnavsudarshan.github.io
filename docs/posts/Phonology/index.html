@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2025-09-14">
 
-<title>Nice Puzzle to Distract My Ice Skating – Blog</title>
+<title>Phonology – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -143,9 +114,9 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Nice Puzzle to Distract My Ice Skating</h1>
+      <h1 class="title">Phonology</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Math Stuff</div>
+                <div class="quarto-category">Cool Linguistics Stuff</div>
               </div>
                   </div>
   </div>
@@ -163,7 +134,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 22, 2025</p>
+        <p class="date">September 14, 2025</p>
       </div>
     </div>
     
@@ -173,7 +144,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      Lol I found this while ice skating and proved it as rigorously as possible in my head while simultaneously figuring out how to ice skate without looking like a monkey.
+      We know how sounds work biologically, but how do languages perceive them?
     </div>
   </div>
   
@@ -188,22 +159,59 @@ window.Quarto = {
 
 
 
-<section id="yap" class="level1">
-<h1>Yap</h1>
-<p><a href="aops.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem I saw"><img src="aops.png" class="img-fluid" alt="The problem I saw"></a> I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:</p>
-<p>“Does this problem make your brain FREEZE? Combine plus signs and eight 8’s to get 1,000.”</p>
-<p>While the problem was really simple just by brute forcing and intuition that even a six or seven year old (hehe) could solve it. The ad was, after all, placed to a general audience, not a bunch of orz IMO quals.</p>
-<p>However, out of my annoyingness, I sought to prove rigorously that the answer I got was the only possible one. I did this in my head, closing any logic holes, while at the same time figuring out how to ice skate properly (at least I was getting better at moving continuously, but my center of mass was still all over the place, so I ended up looking like a monkey anyway, but at least I never fell in the entirety of the hour I was there). So, without further ado, here’s the solution:</p>
+<blockquote class="blockquote">
+<p>This is a series of blogs on linguistics. See also: <a href="../Morphology-and-Semantics/"><em>Morphology and Semantics</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part1/"><em>Phonetics and Phonology Part 1</em></a></p>
+</blockquote>
+<section id="the-ipa-introduction" class="level1">
+<h1>The IPA Introduction</h1>
+<p>The <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet"><em>International Phonetic Alphabet</em></a>, or the IPA, is how sound are represented. Each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about in the Phonetics blog.. We will get into the specific characters of the IPA in the next part, but for now, we’re just going to be talking about the different ways that linguists represent sounds. To fully understand how some of the examples in this post are pronounced, you might want to check out <a href="https://www.ipachart.com/">the IPA chart</a>.</p>
+<p>You may have noticed that throughout the last article I’ve used slashes and brackets to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds.</p>
 </section>
-<section id="actual-solution" class="level1">
-<h1>Actual Solution</h1>
-<p>Assume there are <span class="math inline">\(n\)</span> numbers being added up. <span class="math inline">\(1 \leq n \leq 8\)</span>, since there are at most eight numbers, which means there is one per digit, and at least one number, which is when all the digits are in one number.</p>
-<p>Now, we consider the sum mod <span class="math inline">\(10\)</span>. Since all <span class="math inline">\(n\)</span> numbers have a units digit of <span class="math inline">\(8\)</span> as it’s the only possible digit, and they add up to <span class="math inline">\(1000\)</span>, we get <span class="math inline">\(8n \equiv 0 \pmod{10}\)</span>. What this means is that <span class="math inline">\(8n\)</span> is a multiple of <span class="math inline">\(10\)</span>, so it must also be a multiple of <span class="math inline">\(5\)</span>, since <span class="math inline">\(10\)</span> is a multiple of <span class="math inline">\(5\)</span>. Since <span class="math inline">\(8\)</span> is not a multiple of <span class="math inline">\(5\)</span>, but <span class="math inline">\(8n\)</span> is a multiple of <span class="math inline">\(5\)</span>, then <span class="math inline">\(n\)</span> must be a multiple of <span class="math inline">\(5\)</span>. The only multiple of <span class="math inline">\(5\)</span> between <span class="math inline">\(1\)</span> and <span class="math inline">\(8\)</span> is <span class="math inline">\(n = 5\)</span>. Therefore, we have five numbers being added up.</p>
-<p>We know that the maximum possible number is <span class="math inline">\(888\)</span>, because <span class="math inline">\(8888\)</span> is already greater than <span class="math inline">\(1000\)</span>. If there are <span class="math inline">\(2\)</span> or more <span class="math inline">\(888\)</span>’s being added up, then the sum is also over <span class="math inline">\(1000\)</span>.</p>
-<p>We wish to prove that there are not zero <span class="math inline">\(888\)</span>’s either. Assume by contradiction that there actually are zero <span class="math inline">\(888\)</span>’s, so the maximum possible number is just <span class="math inline">\(88\)</span>. Now, the maximum possible sum is just <span class="math inline">\(4 \cdot 88\)</span> which is far less than <span class="math inline">\(1000\)</span> (this is the maximum because every <span class="math inline">\(88\)</span> is the equivalent of adding eleven <span class="math inline">\(8\)</span>’s). Also, to verify that in my head, instead of calculating, I just saw that <span class="math inline">\(4 \cdot 88 &lt; 4 \cdot 100 = 400 &lt; 1000\)</span>. Therefore, there must be exactly one <span class="math inline">\(888\)</span> being added up.</p>
-<p>We find the remaining four numbers must add up to <span class="math inline">\(112\)</span>. We can do a similar process to find the number of <span class="math inline">\(88\)</span>’s that must be present. If there are no <span class="math inline">\(88\)</span>’s, then the maximum sum is <span class="math inline">\(32\)</span>, not even close to <span class="math inline">\(112\)</span>. However, if there are two or more <span class="math inline">\(88\)</span>’s, then the sum is already over <span class="math inline">\(112\)</span>. Therefore, there must be exactly one <span class="math inline">\(88\)</span> present.</p>
-<p>Since there is exactly one <span class="math inline">\(888\)</span> and exactly one <span class="math inline">\(88\)</span>, and there aren’t any higher possible numbers, the remaining three <span class="math inline">\(8\)</span>’s are used with one <span class="math inline">\(8\)</span> per number, filling up the remaining three numbers needed.</p>
-<p>Therefore, the final sum is <span class="math inline">\(\fbox{888 + 88 + 8 + 8 + 8 = 1000}\)</span>. There are also <span class="math inline">\(40\)</span> different ways to rearrange that same equation and keep it true, because it’s <span class="math inline">\(2 \cdot \frac{5!}{3!}\)</span> (the <span class="math inline">\(5!\)</span> is to rearrange all the five numbers being added, the <span class="math inline">\(3!\)</span> is because we don’t care the order the individual <span class="math inline">\(8\)</span>’s are in because it’s all the same, and the <span class="math inline">\(2\)</span> is to make the sum on the left hand side or the right hand side).</p>
+<section id="the-difference-between-slashes-and-brackets" class="level1">
+<h1>The Difference Between Slashes and Brackets</h1>
+<p>Why did I use both [] and //? In short, [] is the actual scientific way of making as many distinctions as you want (phonetic transcription), so it doesn’t care about how specific languages perceive sounds. On the other hand, // is when you only care about the distinctions a specific language makes (phonemic transcription), so you’ll typically be less descriptive of how to pronounce that sound.</p>
+<p>For example, Tamil doesn’t distinguish between voiced and voiceless consonants, so you could phonemically write the word for monkey as /kuɾaŋku/, even though phonetically, people actually pronounce it as something like [kuɾaŋɡʊ]. However, it doesn’t matter which of those distinctions are used, between [ʊ] and [u] or [k] and [g], since they’re perceived as being the same sound for Tamil speakers.</p>
+</section>
+<section id="allophonic-variation" class="level1">
+<h1>Allophonic Variation</h1>
+<p>Phonemes can have different forms, so a single phoneme is more of a category. In the example for “monkey” in Tamil, the phoneme /k/ can mean [k] or [g] depending on the specific word. So, we’d say that the voicing of /k/ is NOT <em>phonemic</em> in Tamil - variations aren’t distinguished in meaning. [k] and [g] are considered <em>allophones</em> - different forms of the same phoneme.</p>
+<p>You can write allophones by describing when a certain phoneme varies in a certain environment. So, we get to use nerdy linguistics notation! For example, in Tamil, /k/ is pronounced as [g] after a nasal sound, so we can write /k/ → [g] / [ŋ]__. The underscore represents the position of this phoneme, and the slash indicates that the environment of this variation is about to come next.</p>
+<p>A more tangible example of allophonic variationis tonality in English. As you (hopefully) know, English is not a tonal language. So, when someone speaks English with tones (for example, Steven’s dad in a Steven He video), it means the same thing as speaking normal English without any tones. However, Mandarin is a tonal language, so if you say “ma” with a high tone, it means “mother”, but if you say “ma” with a falling tone, it means “scold”. So, the tones in Mandarin are phonemic, while the tones in English are allophonic.</p>
+</section>
+<section id="intuition-for-phonemes" class="level1">
+<h1>Intuition for Phonemes</h1>
+<p>Does this whole idea of languages perceiving sounds feel kind of weird? It might be, because it is mainly subconscious, and also feels more like psychology than linguistics. However, let me show you why talking about phonemes is actually necessary.</p>
+<p>The concept of phonemes can be boiled down to distinguishing between sounds. From the phonetics blog, you might remember that that are a BUNCH of different features that can be present in sounds. There’s not just place and manner of articulation, but also voice, gemination, nasality, and more.</p>
+<p>Imagine that there was no such notion of distinguishing between those different features. Then, you would have a BUNCH of different sounds that all sound basically the same to you, based on every single combination of these features. Even if the features are just binary, which is the smallest amount of distinction in a feature, they would still grow exponentially, so 20 features would already give you over a million different sounds that you can’t distinguish between. Theoretically, you could even have tiny, continuous distinctions, like the amount of time pronouncing a vowel. Then, you would have to deal with an infinite amount of different sounds. So, all languages have a system of distinguishing sounds into phonemes.</p>
+</section>
+<section id="minimal-pairs" class="level1">
+<h1>Minimal Pairs</h1>
+<p>So, how do you know if a language distinguishes between two sounds? The main, most reliable way is to find minimal pairs. A minimal pair is two words that mean different things whose pronounciations differ by only one sound at the same, corresponding positions. For example, in English, “bag” and “back” ([bæg] and [bæk]) are a minimal pair, since they have different meanings and the only difference in their pronounciation is the [g] and [k], which means they are two different phonemes, /k/ and /g/. Typically, even one minimal pair suffices to show that two sounds are perceived as different phonemes, but more examples could help to provide further evidence.</p>
+<section id="weird-example-of-telugu-with-sanskrit-loanwords" class="level2">
+<h2 class="anchored" data-anchor-id="weird-example-of-telugu-with-sanskrit-loanwords">Weird Example of Telugu with Sanskrit loanwords</h2>
+<p>Telugu is the most widely spoken Dravidian language. It has a lot of Sanskrit loanwords. In Sanskrit, [k], [g], [kʰ], and [gʰ] are all their own phonemes, but in native Dravidian vocabulary, they are allophones of the same phoneme /k/.</p>
+<p>As a result, there are two layers of phonology in Telugu. The vocabulary that is from before the Sanskrit loanwords contains no minimal pairs that distinguish across aspiration or voicing, while the Sanskrit loanwords do contain such minimal pairs.</p>
+<p>Fun fact: This is one reason why the Telugu script’s letters for voicing and aspiration are so much easier than Devanagari’s. Initially, the Telugu script only had one letter for all these sounds ( క ), like the Tamil ( க ). After borrowing the Sanskrit loanwords, they just added diacritics to that letter to represent those distinctions.</p>
+<p>As a bonus fun fact, the reason why representing those Sanskrit loanwords was so important is because a lot of them were words that represented concepts that weren’t present in Telugu before, like a lot of Hindu ideas, and written text typically was about religious topics, so it was important not to cause any misunderstandings.</p>
+</section>
+</section>
+<section id="representation-of-features-as-vectors" class="level1">
+<h1>Representation of features as vectors</h1>
+<p>While you can describe the pronounciation of a phoneme using the IPA, a more helpful way is to describe that symbol with a vector of features, but only the features that are distinguished in a certain language. For example, in English, the phoneme /p/ might be represented as [+bilabial, +stop, -voice], while /b/ might be [+bilabial, +stop, +voice].</p>
+<section id="example-in-korean-for-how-tones-might-develop" class="level2">
+<h2 class="anchored" data-anchor-id="example-in-korean-for-how-tones-might-develop">Example in Korean for how tones might develop</h2>
+<p>Lots of times, losing distinguishing features causes ambiguity, and new features naturally arise to resolve that ambiguity. One can observe this happening in Korean. Korean has a three-way distinction between /k/, /kʰ/, and /k͈/ (plain, aspirated, and tense). However, the younger generations of Korean speakers nowadays have a hard time distinguishing between the plain and tense phonemes, so their pronounciations start merging, and this results in a lot of homophones, which may create confusion. Younger speakers have been observed to use differences in pitch to fill in this gap in information. Over time, this could lead to the development of tones in future dialects of Korean. This is very similar to how tones developed in most Chinese languages, since Old Chinese actually was not tonal and had consonant clusters instead that simplified and converged over time and created ambiguity. This phenomenon is called tonogenesis, and is also currently happening in Afrikaans, which is spoken about 12,500 kilometers away.</p>
+</section>
+</section>
+<section id="french-example-of-phonology" class="level1">
+<h1>French Example of Phonology</h1>
+<p>Each language has its phonology written, by placing the accurate symbols of all of its phonemes. For example, see the phonology of French. <a href="french_phonology.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="French phonology source"><img src="french_phonology.png" class="img-fluid" alt="French phonology source"></a></p>
+</section>
+<section id="structure-of-syllables-and-phonotactics" class="level1">
+<h1>Structure of Syllables and Phonotactics</h1>
+<p>Each language has its own rule system for how certain phonemes can be placed together into words and syllables. Most syllables cross-linguistically have some sort of nucleus (typically a vowel, but sometimes some sonorant consonants), an optional onset (consonants before the nucleus), and an optional coda (any consonants after the nucleus). The combination of the nucleus and the coda is called the rhyme, which is why in poems, you would call rhyming words anything where the phonemes after the onset match.</p>
+<p>Languages can vary in how restrictive or permissive they are with their syllable structure, and this is called phonotactics. Phonotactics also determine how syllables may stack together in words. Hawaiian, for example, is very restrictive, since the most complicated syllable structure it allows is CV (consonant + vowel), while English is very permissive, since it allows syllables like CCCVCCCC, in the word “strengths” (/strɛŋkθs/).</p>
+<p>This is why some languages like Wifi Password Language (unofficially known as Polish) have a bunch of consonant clusters that English speakers find despicable; its most complex syllable is way, way, way longer than “strengths”. Meanwhile, Spanish’s phonotactics are pretty restrictive compared to English, which is why “student” is “estudiante” in Spanish; a consonant cluster may not begin a word, so they add a vowel at the beginning.</p>
 
 
 </section>

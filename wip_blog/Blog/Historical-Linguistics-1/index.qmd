@@ -18,11 +18,11 @@ This first part is probably way too much information, but for the full context, 
 
 ### European Exploration 
 
-After "la Reconquista" in Spain and Portugal in the late 1400's, where the Catholics kicked out the Ummayad Caliphate from the Iberian peninsula, they realized that they didn't have to worry about being religiously persecuted for not being Muslim anymore. So, they made boats and set sail, to religiously persecute the rest of the world for not being Catholic. This is why the year Colombus reached the Americas and immediately started doing terrible things to the people there is the same year that "la Reconquista" finished. 
+After "la Reconquista" in Spain and Portugal in the late 1400's, the Ummayad Caliphate was kicked out from the Iberian peninsula. So, the Spanish and Portuguese Catholics made boats and set sail, to try to become rich. This is why the year Colombus accidentally reached the Americas is the same year that "la Reconquista" finished. 
 
 After the Spanish and the Portuguese made sailing around the world popular, other Europeans joined in as well, like the Italians, the British, the Dutch, and the French. The thing that all these Europeans had in common is that they all spoke Indo-European languages.
 
-All the Europeans mainly sought after India, as well as nearby places like Southeast Asia, to get some spices, probably because they were sick of bland food. However, there was one major problem with this: the Ottoman Empire occupied Turkiye as well as much of the area around it, and they didn't let anyone cross; even if they did, they couldn't cross by boat, since the Suez Canal hadn't been invented yet. So, they had to sail all the way around Africa, which I doubt anyone these days would have the patience to do. 
+All the Europeans mainly sought after India, as well as nearby places like Southeast Asia, to get some spices, probably because they were sick of their relatively bland food. However, there was one major problem with this: the Ottoman Empire occupied Turkiye as well as much of the area around it, and they didn't let anyone cross; even if they did, they couldn't cross by boat, since the Suez Canal hadn't been invented yet. So, they had to sail all the way around Africa, which I doubt anyone these days would have the patience to do. 
 
 ### The discovery of Indo-European languages
 
@@ -30,9 +30,7 @@ Upon finally reaching India, many Europeans noticed similarities between the loc
 
 Observations like these led the Europeans to hypothesize that all ancient European languages like Latin or Greek came from Sanskrit. At this point, the Europeans were very confused. They used to think that all languages were descended from Hebrew. Lots of fringe theories emerged from the discovery of Indo-European languages, like the idea that Germanic tribes were from Persia. I will probably talk about these theories in a future post, but for now, let's just say that they would all make you want to cry. 
 
-
-
-Finally, a linguist from Germany figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next post. 
+Finally, a linguist from Germany figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next part. 
 
 [This is the modern family tree of Indo European languages](ie.png)
 
@@ -46,7 +44,7 @@ False friends are also especially sneaky. If you told a German friend "Ich will 
 
 ## Sound Changes
 
-To understand the comparative method that will be covered in the next post, we need to first understand sound changes. For example, the word for "water" in Latin is "aqua", but in French, which is descended from it, it's "eau". We know that "eau" and "aqua" are cognates, because "eau" isn't a loanword and it isn't gibberish. How could sound changes have caused this to happen?
+To understand the comparative method that will be covered in the next part, we need to first understand sound changes. For example, the word for "water" in Latin is "aqua", but in French, which is descended from it, it's "eau". We know that "eau" and "aqua" are cognates, because "eau" isn't a loanword and it isn't gibberish. How could sound changes have caused this to happen?
 
 The main idea is that the /kʷ/ in "aqua" gradually turned into a /w/, since the /k/ sound got weakened, so it sounded more like /awa/. After that, the /w/ sound got weakened as well, and it sounded more like /au/. Finally, the /au/ sound got weakened to /o/, which is how we got "eau" (French also preserves its older spelling, which means at one point it really did used to sound something like "eeyeawoo"). 
 

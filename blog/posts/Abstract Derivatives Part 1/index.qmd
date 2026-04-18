@@ -33,3 +33,6 @@ Transformations of the form $y=mx+b$ aren't linear, but instead *affine*. Obviou
 
 A really common example is to get from one layer of a neural network to another, right before the activation function (more on that in the [blog about neural networks](../Neural-Networks-Part1/)). You multiply the vector of inputs in one layer by the matrix of weights and add to that the vector of biases to get the next layer pre-activation.
 
+# To be continued
+
+Well, this was not very abstract... yet. In the following parts, we will actually make derivatives more abstract, but this one was just the setup. So, don't leave just yet.

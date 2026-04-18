@@ -1,0 +1,34 @@
+---
+title: "Amazing Orthography I Made"
+author: "Vaishnav Sudarshan"
+date: "2026-3-18"
+categories:  [Cool Linguistics Stuff] [Cool Conlangs]
+abstract: Description of a really cool orthography I made out of boredom.
+---
+
+We had to do AP mocks today, except they gave us way too much time. Since I had an hour left after already checking my work multiple times, I decided to make a random orthography that isn't really for any conlang I am working on. 
+
+# How it works
+
+## Consonants
+
+One option is to have this orthography be an abjad, so vowels are not written.
+Let the diagram of the place of articulation and manner of articulation be axes, arranged similarly to the IPA. Each consonant phoneme, then, can be represented as a point.
+
+Draw the points in order, and then use lines to connect the dots. For consecutive repeated consonants, draw a star for every extra repeat. 
+
+For the first consonant, draw a horizontal line underneath. For the final consonant, draw two lines, like an arrow. 
+
+If the consonant is voiced, then the point is a hollow circle, while if it is voiceless, then the circle is filled in. 
+
+For example, here is how you would write "cat", ignoring the vowel:
+
+
+
+## Vowels
+
+Represent how far into the vowel space you go with a chart. The number of vertical lines is the vertical position, and the number of horizontal lines is the horizontal position. 
+
+## Some more notes
+
+This transcription is supposed to be phonetic, not phonemic. 

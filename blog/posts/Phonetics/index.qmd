@@ -1,5 +1,5 @@
 ---
-title: "Phonetics and Phonology Part 1"
+title: "Phonetics"
 author: "Vaishnav Sudarshan"
 date: "2025-09-14"
 categories:  [Cool Linguistics Stuff]
@@ -13,9 +13,13 @@ abstract: How do sounds work? What are some features of sounds that different la
 # How Sounds Work
 At first, the question of "how do sounds work" may seem dumb - you just vibrate your vocal cords, right? However, it's more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people's mouths. Now, it's more difficult to do so, and you may struggle - unless, of course, you're a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven't already. 
 
-In kindergarten, you may have learned that sounds are classified as vowels and consonants, and that sounds are known as phonemes. However, I'll talk about vowels later. Right now, let's do consonants. In short, the two main parameters that control how a consonant is made are "place of articulation" and "manner of articulation". 
+In kindergarten, you may have learned that sounds are classified as vowels and consonants, and that sounds are known as phones. 
+
+But what really is the difference between a vowel and a consonant? It's basically just how much constriction your vocal cords have - vowels are entirely unobstructed, while consonants have noticeable obstruction.
 
 ## Consonants 
+
+Right now, let's do consonants. In short, the two main parameters that control how a consonant is made are "place of articulation" and "manner of articulation".
 
 ### Place of Articulation
 Place of articulation is essentially where in your mouth a sound is being made, whether it be deep in the throat (I'm looking at you, certain language primarily spoken in a country that borders Belgium, Germany, Luxembourg, Spain, Andorra, Monaco, Brazil, Suriname, and Italy) or front in the lips (like at the end of "dumb"). From deepest in the throat to closest in the lips, the most commonly referred to categories include glottal, pharyngeal, uvular, velar, retroflex, palatal, alveolar, dental, labiodental, and bilabial.
@@ -36,13 +40,15 @@ Clicks (air is sucked in instead of pushed out, but unfortunately these cool sou
 
 and more. 
 
-### More
+### Voicedness
 Another important parameter is voicedness. Voicedness is just if the vocal cords are vibrating while the sound is being made. To understand this, look at [s] and [z], or [k] and [g] (as an exercise, find the voiceless version of [b]). In most languages, this has a really important distinction. For example, take "tie" and "die". However, we usually just include this within manner of articulation, because we can't put 3D charts on the iPad screen your face is glued to. 
 
-Consonants are classified in other ways than just the two (or three) parameters, though. 
-For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn't use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic. 
-There is also sonorance or obstruence. Sonorance means the vocal tract is pretty open, like a vowel. As a result, most sonorants, which include nasals, approximants, and liquids, tend to be voiced. Obstruence means there is some friction or turbulence which make the sounds more easily voiceless and are noisier.
+### Other Parameters
 
+Consonants are classified in other ways than just the main two or three parameters, though. 
+For example, there are pulmonic and non-pulmonic consonants. This just means if the sound is normal or a freak that doesn't use air coming from the lungs. The only non-pulmonic consonants are implosives, ejectives, and clicks, and the rest are generally pulmonic. 
+
+Another classification is continuancy. Fricatives, nasals, approximants, and trills can be pronounced for a long time, so they are continuant, but stops, affricates, and clicks are pronounced instantly. I noticed this specific feature at a young age, because I knew any linguistics, so I find it extra cool.
 
 Additionally, there are more factors that can alter a consonant. 
 
@@ -51,6 +57,10 @@ If you know Hindi, for example, you know how aspiration - putting extra air afte
 In Russian, palatalization - making the consonant more like a palatal sound, which basically just makes it sound like "y" sound is at the end - is a very important factor too, with the words "мать" (pronounced like "maty" with the y being as in "yo" and not "corny") meaning "mother" but "мат" (pronounced like "mat") meaning a swear word. 
 
 Gemination - making a consonant pronounced for longer - is important in Finnish, because "tapa" means "way" or "manner", but "tappa" means "kill". 
+
+### Sonorants and Obstruents
+
+There is also sonorance or obstruence. Sonorance means the vocal tract is pretty open, like a vowel. As a result, most sonorants, which include nasals, approximants, and liquids, tend to be voiced. Obstruence means there is some friction or turbulence which make the sounds more easily voiceless and are noisier. Obstruents include plosives, fricatives, and affricates. Sonorants include nasals, liquids, and approximants.
 
 ## Vowels
 Even in vowels, two main parameters affect how a vowel is made. While vowels are not that interesting in my opinion, they are definitely required, because without them you'd be speaking either gibberish or Polish. Vowels tend to be voiced because they are sonorant and made by vibrating the vocal cords. 
@@ -84,6 +94,7 @@ For example, in Kazakh, the plural marker is either "-лаp" or "-лер" (/lar/
 However, "көл" (/kœl/) meaning "lake", uses front vowels, so "lakes" is "көлдер". 
 
 Kazakh also has roundedness vowel harmony. 
+
 
 # To Be Continued
 

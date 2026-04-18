@@ -1,0 +1,16 @@
+---
+title: "Disproving The Common Misconception About AI"
+author: "Vaishnav Sudarshan"
+date: "2026-4-8"
+categories:  [Cool Linguistics Stuff] [Cool AI Stuff]
+abstract: So many people think that Large Language Models literally just choose the next most common word. Here, I will show you why this idea fails miserably.
+---
+
+# The Common Misconception
+
+If you ask a random person how they think ChatGPT works, they might say "Oh, ChatGPT just chooses the next most common word based on the previous word!" However, this is completely wrong. 
+
+## Transitional Probabilities
+
+What do these people even mean by "next most common word", even if it's wrong? Clearly, it can't just be the most common word, because then the same word would be repeated over and over again. Transitional probabilities are what people are probably thinking about in this misconception. 
+
