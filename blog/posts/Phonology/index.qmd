@@ -7,7 +7,7 @@ abstract: We know how sounds work biologically, but how do languages perceive th
 image: french_phonology.png
 ---
 
-> This is a series of blogs on linguistics. See also: [_Morphology and Semantics_](../Morphology-and-Semantics/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/)
+> This is a series of blogs on linguistics. See also: [_Morphology_](../Morphology-and-Semantics/), [_Writing Systems_](../Writing-Systems/), [_Phonetics_](../Phonetics-and-Phonology-Part1/)
 
 # The IPA Introduction
 

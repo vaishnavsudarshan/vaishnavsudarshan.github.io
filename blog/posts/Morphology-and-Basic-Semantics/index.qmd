@@ -1,5 +1,5 @@
 ---
-title: "Morphology and Semantics"
+title: "Morphology"
 author: "Vaishnav Sudarshan"
 date: "2025-11-12"
 categories:  [Cool Linguistics Stuff]
@@ -9,7 +9,7 @@ image: translate.png
 
 > This is a series of blogs on linguistics. See also: [_Phonetics and Phonology Part 2_](../Phonetics-and-Phonology-Part2/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/)
 
-# Morphology and Basic Semantics
+# Morphology
 ## Confusing Introduction
 Previously, in [orthographies](../Writing-Systems/index.qmd), and [phonetics and phonology](../Phonetics-and-Phonology-Part1/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
 
@@ -73,28 +73,3 @@ Note that the extra consonant "m" in "maktaba" is added, because Arabic itself i
 
 Germanic languages like English do just *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
 
-## Semantics Intro
-
-Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
-
-In a future blog post, I'll talk exclusively about semantics, but for right now, I'll talk about a specific aspect of it.
-
-### Applications In AI
-
-[_Natural Language Processing_](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them. 
-
-I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I'll provide a brief explanation. Basically, the AI user's input is split into *tokens*, which are kind of like morphemes except that they don't necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle. 
-
-Every token in the language (in our case, English) is mapped to a vector (the specific details of how that works will be explained in a future blog post). These vectors' angles' closeness tries to portray semantic relations, but not exactly in the way you might think. 
-
-For example, synonyms and antonyms (words that mean similar things and words that mean the opposite, respectively) would not be pointing in completely opposite directions, but rather all approximately in a similar direction. 
-
-This is because, if you think it, "hot" and "cold" are still about temperatures, so they should point to a similar place. Something that has nothing to do with temperatures whatsoever, such as "skibidi" (although to be fair, "skibidi" has nothing to do with anything useful whatsoever), should point in the opposite direction. How exactly do the angles portray semantic closeness? The cosine of the angle does. 
-
-If the directions are close, then the cosine will be almost $1$, but if the directions are near-opposite, then the directions will be $-1$, so the higher number reflects that the meanings are closer. 
-
-The magnitudes of the vectors refer to how frequent or useful the words are, as well. 
-
-## Conclusion
-
-How words arrange meanings is cool, but how do sentences arrange the words containing those meanings? Stay tuned to find out!
