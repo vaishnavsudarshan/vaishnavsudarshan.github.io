@@ -22,7 +22,7 @@ After "la Reconquista" in Spain and Portugal in the late 1400's, the Ummayad Cal
 
 After the Spanish and the Portuguese made sailing around the world popular, other Europeans joined in as well, like the Italians, the British, the Dutch, and the French. The thing that all these Europeans had in common is that they all spoke Indo-European languages.
 
-All the Europeans mainly sought after India, as well as nearby places like Southeast Asia, to get some spices, probably because they were sick of their relatively bland food. However, there was one major problem with this: the Ottoman Empire occupied Turkiye as well as much of the area around it, and they didn't let anyone cross; even if they did, they couldn't cross by boat, since the Suez Canal hadn't been invented yet. So, they had to sail all the way around Africa, which I doubt anyone these days would have the patience to do. 
+All the Europeans mainly sought after India, as well as nearby places like Southeast Asia, to get some spices. However, there was one major problem with this: the Ottoman Empire occupied Turkiye as well as much of the area around it, and they didn't let anyone cross; even if they did, they couldn't cross by boat, since the Suez Canal hadn't been invented yet. So, they had to sail all the way around Africa, which I doubt anyone these days would have the patience to do. 
 
 ### The discovery of Indo-European languages
 
@@ -32,7 +32,9 @@ Observations like these led the Europeans to hypothesize that all ancient Europe
 
 Finally, a linguist from Germany figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next part. 
 
-[This is the modern family tree of Indo European languages](ie.png)
+![This is the modern family tree of Indo European languages](ie.png)
+
+For the original source, click [here](https://www.worldhistory.org/image/1028/indo-european-language-family-tree/).
 
 ## Warning About Cognates
 
