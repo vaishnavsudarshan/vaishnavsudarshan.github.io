@@ -1,17 +1,17 @@
 ---
 title: "Morphology"
 author: "Vaishnav Sudarshan"
-date: "2025-11-12"
+date: "2026-3-20"
 categories:  [Cool Linguistics Stuff]
 abstract: How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
 image: translate.png
 ---
 
-> This is a series of blogs on linguistics. See also: [_Phonetics and Phonology Part 2_](../Phonetics-and-Phonology-Part2/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 1_](../Phonetics-and-Phonology-Part1/)
+> This is a series of blogs on linguistics. See also: [_Phonology_](../Phonology/), [_Writing Systems_](../Writing-Systems/), [_Phonetics_](../Phonetics/)
 
 # Morphology
 ## Confusing Introduction
-Previously, in [orthographies](../Writing-Systems/index.qmd), and [phonetics and phonology](../Phonetics-and-Phonology-Part1/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
+Previously, in [orthographies](../Writing-Systems/index.qmd), [phonology](../Phonology/index.qmd), and [phonetics](../Phonetics/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
 
 Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this.
 
