@@ -30,7 +30,7 @@ Upon finally reaching India, many Europeans noticed similarities between the loc
 
 Observations like these led the Europeans to hypothesize that all ancient European languages like Latin or Greek came from Sanskrit. At this point, the Europeans were very confused. They used to think that all languages were descended from Hebrew. Lots of fringe theories emerged from the discovery of Indo-European languages, like the idea that Germanic tribes were from Persia. I will probably talk about these theories in a future post, but for now, let's just say that they would all make you want to cringe. 
 
-Finally, a linguist from Germany figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next part. 
+Finally, a linguist from Germany [Franz Bopp](https://en.wikipedia.org/wiki/Franz_Bopp) figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next part. 
 
 ![This is the modern family tree of Indo European languages](ie.png)
 

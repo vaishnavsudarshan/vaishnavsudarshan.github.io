@@ -2,7 +2,7 @@
 title: "Craftic"
 author: "Vaishnav Sudarshan"
 date: "2025-11-26"
-categories:  [conlangs]
+categories:  [Cool Conlang Stuff]
 abstract: Explaining how my conlang "Craftic" works. 
 ---
 

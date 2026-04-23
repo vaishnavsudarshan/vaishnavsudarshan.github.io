@@ -1,0 +1,7 @@
+---
+title: "The math and physics behind pianos"
+author: "Vaishnav Sudarshan"
+date: "2026-3-10"
+categories:  [Cool Math Stuff, Cool Physics Stuff, Cool Music Stuff]
+abstract: How you thought pianos worked your whole life might have been a lie. Here's why.
+---

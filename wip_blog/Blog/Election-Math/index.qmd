@@ -1,0 +1,7 @@
+---
+title: "Election Math"
+author: "Vaishnav Sudarshan"
+date: "2026-3-10"
+categories:  [Cool Math Stuff, Cool Politics Stuff, Cool Economics Stuff]
+abstract: How do certain phenomena occur in different types of elections, and how do people use their money wisely for this?
+---

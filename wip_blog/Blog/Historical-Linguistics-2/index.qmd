@@ -29,7 +29,8 @@ Imagine you see the following Romanized words for "three" in a bunch of differen
 | Armenian      |	erek’         |[ɛɾɛk']    |
 |---------------|-----------------|-----------|
 
-Most of these look very similar. They are definitely not just loanwords; if they were, then the sound changes would be completely different, since they would match the phonotactics of the language borrowing them, instead of the natural sound changes that actually occurred. 
+Most of these look very similar. They are definitely not just loanwords; if they were, then the sound changes would be completely different, since they would match the phonotactics of the language borrowing them, instead of the natural sound changes that actually occurred. This would also be very crazy historically, since a lot of these languages never even contacted each other.
+
 This means that these words must be related, which means they come from a common ancestor language that split and diverged into all of these different languages.
 
 A simpler, more tangible example is the Romance languages, which most people know come from Latin. For example, the word for "three" in Spanish is "tres", in Italian is "tre", in French is "trois", and in Romanian is "trei". These are all very similar, and they all come from the Latin word "trēs". As Latin speakers spread out, their forms and pronounciations changed over time.
@@ -52,17 +53,29 @@ Another example is even for the Romance languages. Even though we know they are 
 
 I've mentioned that the comparative method is how linguists reconstruct proto-languages, but how does it work?
 
-An important fact is that sound changes are regular, so typically, a certain rule like "a /k/ sound turns into a /h/ sound" will apply to all words in a language, and not just some of them. This is what allows us to backtrack sound changes, which is the main technique used in the comparative method. This, by the way, was one of the sound changes from Grimm's Law, which I talked about in the previous post.
+An important fact is that sound changes are regular, so typically, a certain rule like "a /k/ sound turns into a /h/ sound" will apply to all words in a language, and not just some of them. This is what allows us to backtrack sound changes, which is the main technique used in the comparative method. This, by the way, was one of the sound changes from Grimm's Law, which I talked about in the previous post. 
+
+::::{.callout-note}
+As a fun note, you can also find out timelines using sound changes. For example, in Arabic, there was a sound change where /p/ turned into /f/, and this time period is known. Nowadays, since the /p/ sound doesn't exist, speakers might borrow words with that sound but pronounce it like a /b/. So, if an Arabic loanword is pronounced as /b/ while other languages pronounce that same word with a /p/, then we know that this word was borrowed after the sound change, because if it was borrowed before, then it would be pronounced as an /f/ instead.
+::::
 
 Also, some sound changes are much more likely to occur than others. For example, it's much more likely for a /t/ sound to turn into a /tʃ/ sound if it's near an /i/ or a /j/ sound, than if it is near an /o/ or an /a/ sound, because of a trend called palatalization. Also, /t/ probably won't turn into a /ɬ/ near an /i/ or a /j/. This is how the Latin word "leite" turned into the Portuguese word "leiche".
 
-Typically, simplifications or reductions won't be reversed, because it's like trying to censor out 90% of the letters in a word and guess the original word. This is why the word "eau" in French won't turn back into "aqua" in Latin, because a lot of information was lost, so if we know that either French or Latin is the ancestor of the other, we can tell that Latin is the ancestor of French. 
+Typically, simplifications or reductions won't be reversed, because that information is gone. This is why the word "eau" in French won't turn back into "aqua" in Latin, because a lot of information was lost, so if we know that either French or Latin is the ancestor of the other, we can tell that Latin is the ancestor of French. 
 
-Looking for corresponding phonemes cross-linguistically is the first step. For example, if you look across Tamil, Telugu, and Kannada to try an reconstruct Proto-South-Dravidian (a descendant of Proto-Dravidian), you might notice that wherever Telugu and Kannada end in a /u/, Tamil reduces this final vowel and turns it into the null phoneme, /∅/. 
+Looking for corresponding phonemes cross-linguistically and across many cognates is the first step. For example, if you look across Tamil, Telugu, and Kannada to try an reconstruct Proto-South-Dravidian (a descendant of Proto-Dravidian), you might notice that wherever Telugu and Kannada end in a /u/, Tamil reduces this final vowel and turns it into the null phoneme, /∅/. 
 
-Then, you try to figure out which sound change is the most likely to have happened. 
+Then, you try to figure out which sound change is the most likely to have happened, which kind of feels like mathematical optimization and is a pretty hard puzzle.
+
+## Figuring out the culture of the speakers 
+
+Reconstructions from cognates can tell us a lot how the speakers lived. For example, across the Indo-European languages, there are cognates for "wheel", like "cyclos" (related to "cycle") in Greek, "chakra" in Sanskrit, and the word "wheel" itself. The reconstructed word is *kʷékʷlos in Proto-Indo-European. While it's possible that semantic drift happened, and the original word meant something else, it's pretty unlikely, since that would imply that the exact same drift happened in every single Indo-European language, which is nearly impossible. Also, there are reconstructed words for many other transportation technology related vocabulary as well, like "axle". So, the Proto-Indo-European speakers, at least at some point, probably had wheels. 
+
+This works for mythology too. The word "Zeus" is the shortened form of "Zeus Pater", meaning "Sky Father" in Greek. The Latin word "Jupiter", representing the same god, also means the same and is etymologically related to it. Even the Hindu sky god Indra's original name was "Dyaus Pitar", again meaning the same thing. The Norse god "Tyr" is also derived from the same root for "sky". So, the Proto-Indo-European speakers probably had a sky father god as well, whose reconstructed name was "*Dyēus Phtḗr".
 
 ## Representing Sound Changes
+
+
 
 # Proving Language Relationships
 

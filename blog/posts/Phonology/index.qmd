@@ -1,7 +1,7 @@
 ---
 title: "Phonology"
 author: "Vaishnav Sudarshan"
-date: "2026-4-11"
+date: "2026-4-12"
 categories:  [Cool Linguistics Stuff]
 abstract: We know how sounds work biologically, but how do languages perceive them?
 image: french_phonology.png
@@ -27,7 +27,7 @@ Phonemes can have different forms, so a single phoneme is more of a category. In
 
 You can write allophones by describing when a certain phoneme varies in a certain environment. So, we get to use nerdy linguistics notation! For example, in Tamil, /k/ is pronounced as [g] after a nasal sound, so we can write /k/ → [g] / [ŋ]__. The underscore represents the position of this phoneme, and the slash indicates that the environment of this variation is about to come next. 
 
-A more tangible example of allophonic variationis tonality in English. As you (hopefully) know, English is not a tonal language. So, when someone speaks English with tones (for example, Steven's dad in a Steven He video), it means the same thing as speaking normal English without any tones. However, Mandarin is a tonal language, so if you say "ma" with a high tone, it means "mother", but if you say "ma" with a falling tone, it means "scold". So, the tones in Mandarin are phonemic, while the tones in English are allophonic. 
+A more tangible example, if you're in the 98.94% of people who don't speak Tamil, of allophonic variation is aspiration in English. You might notice that the "tone" in "stone" and "tone" are pronounced differently. Sure enough, in the IPA (broad transcription since we only care about aspiration), the first consonant or consonant cluster is pronounced as [t] and [tʰ] respectively. This is because aspiration is allophonic. At the beginning of a word, before a vowel, stops are aspirated, but they aren't aspirated after a fricative. So, you could write /t/ → [tʰ] / #_V. The hashtag indicates the start of a word, and V represents a vowel. 
 
 # Intuition for Phonemes
 
@@ -73,3 +73,6 @@ Languages can vary in how restrictive or permissive they are with their syllable
 
 This is why some languages like Wifi Password Language (unofficially known as Polish) have a bunch of consonant clusters that English speakers find despicable; its most complex syllable is way, way, way longer than "strengths". Meanwhile, Spanish's phonotactics are pretty restrictive compared to English, which is why "student" is "estudiante" in Spanish; a consonant cluster may not begin a word, so they add a vowel at the beginning.
 
+# Original date
+
+9/12/2025

@@ -1,0 +1,7 @@
+---
+title: "The Language of DNA"
+author: "Vaishnav Sudarshan"
+date: "2026-3-10"
+categories:  [Cool Linguistics Stuff, Cool Biology Stuff, Cool Chemistry Stuff]
+abstract: It's not just humans that use languages through speech anymore.
+---

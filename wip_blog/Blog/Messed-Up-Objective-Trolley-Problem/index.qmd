@@ -1,0 +1,8 @@
+---
+title: "New game in the trolley problem"
+author: "Vaishnav Sudarshan"
+date: "2025-1-29"
+categories:  [Cool Math Stuff, Cool Philosophy Stuff] 
+abstract: How about trying to maximize the kill count in the Trolley Problem?
+---
+
