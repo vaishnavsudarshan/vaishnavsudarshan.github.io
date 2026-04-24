@@ -2,7 +2,7 @@
 title: "Blog"
 listing:
   contents: posts
-  sort: "date desc"
+  sort: "date-modified desc"
   type: default
   categories: true
   sort-ui: true

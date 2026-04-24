@@ -1,7 +1,7 @@
 ---
 title: "Phonology"
 author: "Vaishnav Sudarshan"
-date: "2026-4-12"
+date: "2025-9-14"
 categories:  [Cool Linguistics Stuff]
 abstract: We know how sounds work biologically, but how do languages perceive them?
 image: french_phonology.png
@@ -72,7 +72,3 @@ Each language has its own rule system for how certain phonemes can be placed tog
 Languages can vary in how restrictive or permissive they are with their syllable structure, and this is called phonotactics. Phonotactics also determine how syllables may stack together in words. Hawaiian, for example, is very restrictive, since the most complicated syllable structure it allows is CV (consonant + vowel), while English is very permissive, since it allows syllables like CCCVCCCC, in the word "strengths" (/strɛŋkθs/). 
 
 This is why some languages like Wifi Password Language (unofficially known as Polish) have a bunch of consonant clusters that English speakers find despicable; its most complex syllable is way, way, way longer than "strengths". Meanwhile, Spanish's phonotactics are pretty restrictive compared to English, which is why "student" is "estudiante" in Spanish; a consonant cluster may not begin a word, so they add a vowel at the beginning.
-
-# Original date
-
-9/12/2025

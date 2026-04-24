@@ -1,7 +1,7 @@
 ---
 title: "Morphology"
 author: "Vaishnav Sudarshan"
-date: "2026-3-22"
+date: "2025-10-13"
 categories:  [Cool Linguistics Stuff]
 abstract: How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
 image: translate.png
@@ -73,6 +73,3 @@ Note that the extra consonant "m" in "maktaba" is added, because Arabic itself i
 
 Germanic languages like English do just *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
 
-# Original Date
-
-10/13/2025

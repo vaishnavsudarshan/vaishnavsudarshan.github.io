@@ -17,5 +17,9 @@ format:
       - brand
     css: styles.css
 
+language:
+  title-block-published: "Originally Published"
+  title-block-modified: "Last Updated"
+
 
 
