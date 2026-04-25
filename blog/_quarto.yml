@@ -3,12 +3,12 @@ project:
   output-dir: ../docs
 
 website:
-  title: "Blog"
+  title: "Vaishnav Sudarshan's Blog on Linguistics, Math and AI"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/vaishnavsudarshan
         
 format:
   html:
@@ -16,6 +16,10 @@ format:
       - litera
       - brand
     css: styles.css
+    include-in-header:
+      - text: |
+          <script defer src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
+
 
 language:
   title-block-published: "Originally Published"
