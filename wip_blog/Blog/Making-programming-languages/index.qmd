@@ -1,0 +1,25 @@
+---
+title: "Making your own programming languages: ProtUniv Part 1"
+author: "Vaishnav Sudarshan"
+date: "2026-22-5"
+categories:  [Cool Linguistics Stuff, Cool Computer Science Stuff, Cool Conlang Stuff]
+abstract: Have you ever wondered how the languages themselves you use are made? This is a very basic introduction to that, from my experience.
+---
+
+# Introduction
+
+I had my AP CS A exam on May 15th, and it was way too easy. As a result, I had around half the time, 45 minutes of each section, to do whatever I wanted. Usually, I make conlangs, but I was in the mood to make a programming language (I wouldn't call it a con-programming language because it's not like any programming languages are actually natural). 
+
+Ironically, it was way easier to write a programming language on paper than a conlang, since writing conlangs (except for the orthography) without a computer is kinda tedious or not very fun. Since I started this during the MCQs, I decided to just write the code for the programming language in Java, because if I wrote it in Python, then my muscle memory might adapt to Python and fail me during the FRQs, and I didn't want to risk that. Anyway, here's what I invented so far, and how I did it.
+
+# Lore
+
+I actually had the idea to write a programming language for quite a long time, but the first thing I always knew was that the keywords would NOT be in English - that's boring. Then I thought, "hey, what if the keywords themselves are from a conlang?" I also thought it would be interesting if the programming language is actually just a subset of the conlang itself, kind of like how Python occasionally reads like English, except this would be identical, and the speakers of this language would communicate to a computer the exact same way they'd communicate to each other, maybe just about a more limited range of conversation (instructing someone about sorting algorithms is very different from small-talking about the weather). Maybe it would be like how people vibe-code using English, except the only difference is, this would be a programming language itself, not just based on NLP. 
+
+Just to troll all the other linguists, this language will be Proto-Universe, the hypothetical common ancestor of all languages in the universe, formed during the Big Bang, which DEFINITELY is supported by historical linguistics. The programming langauge will just be called ProtUniv for short. 
+
+Every keyword is pronounced like if it was an IPA transcription. So, "ca" (as you'll see later on) is pronounced [ca], not [kæ]. 
+
+# Parsing
+
+The first thing I did was make a Scanner, which takes in each next line. With a simple split between spaces, I have an array of tokens. 

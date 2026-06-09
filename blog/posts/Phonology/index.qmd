@@ -35,13 +35,13 @@ Does this whole idea of languages perceiving sounds feel kind of weird? It might
 
 The concept of phonemes can be boiled down to distinguishing between sounds. From the phonetics blog, you might remember that that are a BUNCH of different features that can be present in sounds. There's not just place and manner of articulation, but also voice, gemination, nasality, and more. 
 
-Imagine that there was no such notion of distinguishing between those different features. Then, you would have a BUNCH of different sounds that all sound basically the same to you, based on every single combination of these features. Even if the features are just binary, which is the smallest amount of distinction in a feature, they would still grow exponentially, so 20 features would already give you over a million different sounds that you can't distinguish between. Theoretically, you could even have tiny, continuous distinctions, like the amount of time pronouncing a vowel. Then, you would have to deal with an infinite amount of different sounds. So, all languages have a system of distinguishing sounds into phonemes. 
+Imagine that there was no such notion of distinguishing between those different features. Then, you would have a BUNCH of different sounds that all sound basically the same to you, based on every single combination of these features. Even if the features are just binary, which is the smallest amount of distinction in a feature, they would still grow exponentially, so 20 binary features would already give you over a million different sounds that you have to distinguish between. Theoretically, you could even have tiny, continuous distinctions, like the amount of time pronouncing a vowel. Then, you would have to deal with an infinite amount of different sounds. Therefore, all languages have a system of distinguishing sounds into phonemes. 
 
 # Minimal Pairs
 
 So, how do you know if a language distinguishes between two sounds? The main, most reliable way is to find minimal pairs. A minimal pair is two words that mean different things whose pronounciations differ by only one sound at the same, corresponding positions. For example, in English, "bag" and "back" ([bæg] and [bæk]) are a minimal pair, since they have different meanings and the only difference in their pronounciation is the [g] and [k], which means they are two different phonemes, /k/ and /g/. Typically, even one minimal pair suffices to show that two sounds are perceived as different phonemes, but more examples could help to provide further evidence.
 
-## Weird Example of Telugu with Sanskrit loanwords
+# Weird Example of Telugu with Sanskrit loanwords
 
 Telugu is the most widely spoken Dravidian language. It has a lot of Sanskrit loanwords. In Sanskrit, [k], [g], [kʰ], and [gʰ] are all their own phonemes, but in native Dravidian vocabulary, they are allophones of the same phoneme /k/. 
 
@@ -55,10 +55,17 @@ As a bonus fun fact, the reason why representing those Sanskrit loanwords was so
 
 While you can describe the pronounciation of a phoneme using the IPA, a more helpful way is to describe that symbol with a vector of features, but only the features that are distinguished in a certain language. For example, in English, the phoneme /p/ might be represented as [+bilabial, +stop, -voice], while /b/ might be [+bilabial, +stop, +voice]. 
 
-## Example in Korean for how tones might develop
+# Example in Korean for how tones might develop
 
 Lots of times, losing distinguishing features causes ambiguity, and new features naturally arise to resolve that ambiguity. One can observe this happening in Korean. Korean has a three-way distinction between /k/, /kʰ/, and /k͈/ (plain, aspirated, and tense). However, the younger generations of Korean speakers nowadays have a hard time distinguishing between the plain and tense phonemes, so their pronounciations start merging, and this results in a lot of homophones, which may create confusion. Younger speakers have been observed to use differences in pitch to fill in this gap in information. Over time, this could lead to the development of tones in future dialects of Korean. This is very similar to how tones developed in most Chinese languages, since Old Chinese actually was not tonal and had consonant clusters instead that simplified and converged over time and created ambiguity. This phenomenon is called tonogenesis, and is also currently happening in Afrikaans, which is spoken about 12,500 kilometers away.
 
+# Weird Edge Cases
+
+Many phonological rules have strange edge cases that most people wouldn't immediately think about. Here are some of them.
+
+## Neutralization
+
+What if there is a phoneme /A/ and a phoneme /B/, which both turn into the allophone [X] in a certain environment? This is called neutralization, where both phonemes' pronounciations are indistinguishable sometimes. 
 
 # French Example of Phonology
 
@@ -72,3 +79,7 @@ Each language has its own rule system for how certain phonemes can be placed tog
 Languages can vary in how restrictive or permissive they are with their syllable structure, and this is called phonotactics. Phonotactics also determine how syllables may stack together in words. Hawaiian, for example, is very restrictive, since the most complicated syllable structure it allows is CV (consonant + vowel), while English is very permissive, since it allows syllables like CCCVCCCC, in the word "strengths" (/strɛŋkθs/). 
 
 This is why some languages like Wifi Password Language (unofficially known as Polish) have a bunch of consonant clusters that English speakers find despicable; its most complex syllable is way, way, way longer than "strengths". Meanwhile, Spanish's phonotactics are pretty restrictive compared to English, which is why "student" is "estudiante" in Spanish; a consonant cluster may not begin a word, so they add a vowel at the beginning.
+
+# Conclusion
+
+Now we know how languages' perceived sounds interact with each other, but how does meaning form? Stay tuned for morphology.
