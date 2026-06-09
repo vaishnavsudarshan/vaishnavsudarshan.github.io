@@ -66,4 +66,4 @@ One cool thing now is that if $J$ is a constant matrix, the vector field is just
 
 # Conclusion
 
-So far, what we've seen is just seeing pretty simple derivatives with a new interpretation. Stay tuned
+So far, what we've seen is just seeing pretty simple derivatives with a new interpretation. Stay tuned for even more abstract derivatives, and how they relate to AI!

@@ -106,3 +106,7 @@ $$
 \arctan(\tan(35^\circ)) = \boxed{35^\circ}
 $$ 
 or option $B$. 
+
+# Conclusion
+
+So that's how to NOT solve a really simple problem! Please don't do something like this!

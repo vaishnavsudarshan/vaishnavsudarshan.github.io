@@ -1,7 +1,7 @@
 ---
 title: "Why orbits have equal area in equal time"
 author: "Vaishnav Sudarshan"
-date: "2025-1-29"
+date: "2026-6-8"
 categories:  [Cool Physics Stuff, Cool Astronomy Stuff, Cool Math Stuff] 
 abstract: You may have heard the Kepler's law about planets sweeping equal areas in equal times, but this kind of sounds weird. Here's the proof.
 ---
@@ -27,3 +27,7 @@ Remember that the angular momentum $L$ is defined as $L = m \vec{r} \times \vec{
 We can substitute this in to get $\frac{dA}{dt} = \frac{|L|}{2m}$.
 
 Because angular momentum is conserved, and the mass is constant, $\frac{dA}{dt}$ is constant, which is what we wanted to prove.
+
+# Conclusion
+
+Now we know where Kepler's second law come from, and stay tuned for more physics and astronomy derivations!

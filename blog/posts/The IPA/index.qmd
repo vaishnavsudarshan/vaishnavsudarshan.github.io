@@ -25,7 +25,7 @@ Phew. That torture is over. Or is it?
 
 # Diacritics Intro
 
-We still have the diacritics to go over, but this time I won't subject you to the pain of looking at every diacritic. Instead, I'll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality, gemination, voicelessness, tone, and more.
+We still have the diacritics to go over, but this time I won't subject you to the pain of looking at every diacritic. Instead, I'll just say that the diacritics can alter a sound to fit any of the variations for consonants and vowels I talked about earlier, such as nasality (so a nasalized [a] is [ã]), gemination (so a geminated [t] is [t:]), voicelessness (circle underneath), tone, and more.
 
 
 # Visualization

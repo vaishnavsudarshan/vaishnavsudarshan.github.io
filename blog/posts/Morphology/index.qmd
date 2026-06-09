@@ -86,7 +86,11 @@ Most famously, Semitic languages (a sub-branch of Afro-Asiatic) such as Arabic a
 
 Note that the extra consonant "m" in "maktaba" is added, because Arabic itself isn't purely consonantal, and uses affixes as well. Interestingly, the word "kitab" spread to many languages like Farsi or Hindi to mean "book", but since those languages aren't Semitic, they don't think of "kitab" using the triconsonantal root system, but rather just as any other word. 
 
-Germanic languages like English do just *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
+Germanic languages like English do *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
+
+# Note
+
+One important thing to note is that trying to classify languages into categories like this isn't super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian. As a result, these spectrums don't necessarily account for every single language. Arabic, for example, can't really be plotted on the 2D grid of the two spectrums, because a consonantal root system is way more complicated. There are many more morphological spectrums that could exist as well, but these are just the most commonly used references ones.
 
 # Conclusion
 

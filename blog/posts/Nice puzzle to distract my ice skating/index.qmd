@@ -30,4 +30,7 @@ We find the remaining four numbers must add up to $112$. We can do a similar pro
 
 Since there is exactly one $888$ and exactly one $88$, and there aren't any higher possible numbers, the remaining three $8$'s are used with one $8$ per number, filling up the remaining three numbers needed.
 
+# Conclusion
+
 Therefore, the final sum is $\fbox{888 + 88 + 8 + 8 + 8 = 1000}$. There are also $40$ different ways to rearrange that same equation and keep it true, because it's $2 \cdot \frac{5!}{3!}$ (the $5!$ is to rearrange all the five numbers being added, the $3!$ is because we don't care the order the individual $8$'s are in because it's all the same, and the $2$ is to make the sum on the left hand side or the right hand side). 
+

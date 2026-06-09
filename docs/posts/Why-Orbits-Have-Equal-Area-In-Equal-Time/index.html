@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-12-16">
+<meta name="dcterms.date" content="2026-06-08">
 
-<title>Why would anyone in their right mind do it like this? – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
+<title>Why orbits have equal area in equal time – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,8 +144,10 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Why would anyone in their right mind do it like this?</h1>
+      <h1 class="title">Why orbits have equal area in equal time</h1>
                                 <div class="quarto-categories">
+                <div class="quarto-category">Cool Physics Stuff</div>
+                <div class="quarto-category">Cool Astronomy Stuff</div>
                 <div class="quarto-category">Cool Math Stuff</div>
               </div>
                   </div>
@@ -164,7 +166,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Originally Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 16, 2025</p>
+        <p class="date">June 8, 2026</p>
       </div>
     </div>
     
@@ -180,7 +182,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      I found this problem that’s really easy but I had a really goofy solution.
+      You may have heard the Kepler’s law about planets sweeping equal areas in equal times, but this kind of sounds weird. Here’s the proof.
     </div>
   </div>
   
@@ -195,78 +197,24 @@ window.Quarto = {
 
 
 
-<section id="yapping" class="level1">
-<h1>Yapping</h1>
-<p>I recently have had the hobby of going through past AMC and AIME problems and trying to see if I could think of any goofy solution that’s not on the list of solutions on the AoPS wiki.</p>
-<p>For one problem in particular, 2023 AMC 10B #7 (yeah, it’s still in the single digits), I found a diabolical solution that no one would have wanted to waste their brain cells to completely formulate. It is super easy to do just using 4th grade knowledge of geometry, but when I see rotations in geometry, I immediately think of complex bashing.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="Screenshot 2025-12-18 205740.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem with answer choices"><img src="Screenshot 2025-12-18 205740.png" class="img-fluid figure-img" alt="The problem with answer choices"></a></p>
-<figcaption>The problem with answer choices</figcaption>
-</figure>
-</div>
-<p>I actually wrote this solution on AoPS wiki last month, but this crazy backstory deserves its own post for Cool Problem of the Month, and November was already taken. See the solution I wrote <a href="https://artofproblemsolving.com/wiki/index.php?title=2023_AMC_10B_Problems/Problem_7#Solution_7_(Overkill_complex_bash)">here</a>.</p>
-<p>I tried to reword or explain some of the solution a bit more in depth, so you can rest assured that I didn’t just plainly plagiarize myself.</p>
-<p>The complex and trig bashing itself isn’t even bad. If the problem was at least in the double digits, it would likely have been perfectly acceptable to complex bash and then trig bash. However, for a question #7, I’m probably going to be socially ostracized for having done so, especially when a nine year old obsessed with Tung Tung Tung Sahur can beat you to it.</p>
-<p>Without further ado, here is the solution.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Usually when you learn the laws of physics, it’s something that instantly makes sense. The first law of thermodynamics is that energy is conserved, duhhh! Newton’s second law is that <span class="math inline">\(F_{net} = ma\)</span>, duhhh! But then Kepler’s second law is that when planets are in orbit, which are usually eliptical, the area is swept out at a constant rate. Huhhh? That sounds so random! However, there is a pretty nice reason for why this is.</p>
 </section>
-<section id="solution" class="level1">
-<h1>Solution</h1>
-<p>Let the center of the square be the origin of the complex plane. Since we only care about angles, and not sides, we can assume WLOG that <span class="math inline">\(A\)</span> is at the point <span class="math inline">\(-1+i\)</span>. To rotate a complex number clockwise by an angle <span class="math inline">\(\theta\)</span>, just multiply the number by <span class="math inline">\(e^{-i \theta}\)</span>, so then we end up decreasing the argument (angle measured counterclockwise from the x-axis) by <span class="math inline">\(\theta\)</span> while preserving the magnitude. In this case <span class="math inline">\(\theta = 20^{\circ}\)</span>.</p>
-<p>So, the point <span class="math inline">\(A'\)</span> is at <span class="math display">\[
-(-1+i)(e^{-i 20^{\circ}}) = (-1+i)(\cos( - 20^{\circ}) + i \sin( - 20^{\circ}))
-\]</span> from Euler’s formula (the exponential form is just my shorthand way of remembering how to rotate complex numbers, but you could just go straight to polar form).</p>
-<p>Since cosine is an even function and sine is odd, this is the same as: <span class="math display">\[
-(-1+i)(\cos(20^{\circ}) - i \sin(20^{\circ}))
-\]</span>.</p>
-<p>This expands to <span class="math display">\[
-(-\cos(20^{\circ}) + \sin(20^{\circ})) + i(\cos(20^{\circ}) + \sin(20^{\circ})).
-\]</span></p>
-<p>The angle we want to find is just the direction of the vector from <span class="math inline">\(A\)</span> to <span class="math inline">\(A'\)</span>. So, this is just</p>
-<p><span class="math display">\[
-\arctan\left(\frac{\Delta \Im}{\Delta \Re}\right).
-\]</span> <span class="math display">\[
-\Delta \Im = \cos(20^{\circ}) + \sin(20^{\circ}) - 1
-\]</span>, while: <span class="math display">\[
-\Delta \Re = -\cos(20^{\circ}) + \sin(20^{\circ}) + 1
-\]</span>.</p>
-<p>Essentially, the problem is just boiled down to finding out how to trig bash <span class="math display">\[
-\arctan\left(\frac{\cos(20^{\circ}) + \sin(20^{\circ}) - 1}{-\cos(20^{\circ}) + \sin(20^{\circ}) + 1}\right).
-\]</span></p>
-<p>There is an identity that: <span class="math display">\[
-\cos(A)+\sin(A)=\sqrt{2}\sin(A+45^{\circ})
-\]</span> and <span class="math display">\[
-\cos(A)-\sin(A)=\sqrt{2}\cos(A+45^{\circ}).
-\]</span></p>
-<blockquote class="blockquote">
-<p>I’ll leave it as an exercise to the reader to verify that.</p>
-</blockquote>
-<p>So, if we use this as well as the fact that <span class="math inline">\(\sin(90^\circ - x) = \cos(x)\)</span>, the fraction simplifies to</p>
-<p><span class="math display">\[
-- \frac{\sqrt{2} \cos(25^\circ)-1}{\sqrt{2} \sin(25^\circ)-1}
-\]</span>.</p>
-<p>Substituting <span class="math display">\[
-\sqrt{2}=\frac{1}{\cos(45^\circ)}
-\]</span> , this simplifies to <span class="math display">\[
-- \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\cos(45^\circ)} = - \frac{\cos(25^\circ)-\cos(45^\circ)}{\sin(25^\circ)-\sin(45^\circ)}.
-\]</span></p>
-<p>Finally, there is an identity that <span class="math display">\[
-\cos(A)-\cos(B)=-2\sin\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)
-\]</span> and that <span class="math display">\[
-\sin(A)-\sin(B)=2\cos\left(\frac{A+B}{2}\right)\sin\left(\frac{A-B}{2}\right)
-\]</span>.</p>
-<blockquote class="blockquote">
-<p>Again, verifying it is an exercise for the reader.</p>
-</blockquote>
-<p>We now have <span class="math display">\[
-- \frac{2 \cdot \sin(35^\circ) \cdot \sin(10^\circ)}{-2 \cdot \cos(35^\circ) \cdot \cos(10^\circ)} = \tan(35^\circ)
-\]</span> So <span class="math display">\[
-\arctan(\tan(35^\circ)) = \boxed{35^\circ}
-\]</span> or option <span class="math inline">\(B\)</span>.</p>
+<section id="proof" class="level1">
+<h1>Proof</h1>
+<p>Basically, what we seek to prove is that <span class="math inline">\(\frac{dA}{dt}\)</span> is constant, where <span class="math inline">\(A\)</span> is the area swept out by the planet.</p>
+<p><a href="dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram of what we seek"><img src="dur.png" class="img-fluid" alt="Diagram of what we seek"></a>.</p>
+<p>First, we need to find <span class="math inline">\(dA\)</span>, a tiny change in the area swept out, in relation to the other tiny changes like in position or time. The planet is moving in an ellipse, so the distance from the center keeps on changing. For a tiny change in position <span class="math inline">\(\vec{dx}\)</span>, the distance from the center has barely changed, and we can call this distance <span class="math inline">\(\vec{r}\)</span>. The reason for this is because the new distance is <span class="math inline">\(\vec{r} + d\vec{r}\)</span>, but since <span class="math inline">\(d\vec{r}\)</span>, the change in the radius, is infinitesimal, this is the same as <span class="math inline">\(\vec{r}\)</span>.</p>
+<p><span class="math inline">\(\vec{dx}\)</span> is basically the length of the arc made by this tiny change in time, because the curve is zoomed in so much that it looks like a straight line. The area <span class="math inline">\(dA\)</span> formed by this sector, which is approximately a triangle with two of the side lengths being <span class="math inline">\(|\vec{r}|\)</span> and <span class="math inline">\(|\vec{dx}|\)</span>, is <span class="math inline">\(\frac{1}{2} |\vec{r}| |\vec{dx}| \sin(\theta)\)</span>, where <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\vec{r}\)</span> and <span class="math inline">\(\vec{dx}\)</span>. This is just a basic formula in geometry for the area of a triangle given two sides and the angle between them. You might realize that this is the same as <span class="math inline">\(\frac{1}{2} |\vec{r} \times \vec{dx}|\)</span>. This is because the area of the parallelogram formed by two vectors is the magnitude of their cross product, and the area of this triangle is half of that.</p>
+<p>Because <span class="math inline">\(\vec{dx} = \vec{v} dt\)</span>, where <span class="math inline">\(\vec{v}\)</span> is the velocity of the planet, and also <span class="math inline">\(dt\)</span> is a scalar (which means we can remove it from the magnitude), we can substitute this in to get <span class="math inline">\(dA = \frac{1}{2} |\vec{r}| |\vec{v}| dt \sin(\theta)\)</span>, so <span class="math inline">\(\frac{dA}{dt} = \frac{1}{2} |\vec{r}| |\vec{v}| \sin(\theta)\)</span>. Similar to <span class="math inline">\(\vec{r}\)</span>, <span class="math inline">\(\vec{v}\)</span> doesn’t change after an infinitesimal change in time <span class="math inline">\(dt\)</span>, because again, <span class="math inline">\(\vec{v} + d\vec{v}\)</span> is infinitesimally close to <span class="math inline">\(\vec{v}\)</span>.</p>
+<p>Remember that the angular momentum <span class="math inline">\(L\)</span> is defined as <span class="math inline">\(L = m \vec{r} \times \vec{v}\)</span>, where <span class="math inline">\(m\)</span> is the mass of the planet. So, <span class="math inline">\(|L| = m |\vec{r}| |\vec{v}| \sin(\theta)\)</span></p>
+<p>We can substitute this in to get <span class="math inline">\(\frac{dA}{dt} = \frac{|L|}{2m}\)</span>.</p>
+<p>Because angular momentum is conserved, and the mass is constant, <span class="math inline">\(\frac{dA}{dt}\)</span> is constant, which is what we wanted to prove.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>So that’s how to NOT solve a really simple problem! Please don’t do something like this!</p>
+<p>Now we know where Kepler’s second law come from, and stay tuned for more physics and astronomy derivations!</p>
 
 
 </section>
