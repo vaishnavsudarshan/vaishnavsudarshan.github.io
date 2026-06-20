@@ -9,6 +9,17 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/vaishnavsudarshan
+  comments: 
+    giscus: 
+      repo: vaishnavsudarshan/vaishnavsudarshan.github.io 
+      repo-id: R_kgDONzCjJQ 
+      category: Announcements 
+      category-id: DIC_kwDONzCjJc4C_jEt 
+      mapping: pathname 
+      reactions-enabled: true 
+      input-position: bottom 
+      theme: light 
+      language: en
         
 format:
   html:
