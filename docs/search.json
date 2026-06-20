@@ -53,7 +53,7 @@
     "href": "posts/Syntax Part 1/index.html",
     "title": "Syntax Part 1 - Recursion, Constituent Units, and Trees",
     "section": "",
-    "text": "You may have learned about syntax in English class in school, and parts of what you likely learned are pretty close to linguistics, like phrases and stuff, while others are horrendously off.\nSyntax is basically sentence structure. However, if someone says, “this sentence has short syntax” when referring to a short or simple sentence, that statement sounds reasonable, but it’s like saying “this rock is intelligent”, as in it’s kinda nonsensical. Just say “this sentence is short” or something. To avoid confusion about what syntax actually is, it’s probably better to define syntax as the set of rules that govern how a language allows for sentences to be formed (synt)."
+    "text": "You may have learned about syntax in English class in school, and parts of what you likely learned are pretty close to linguistics, like phrases and stuff, while others are horrendously off.\nSyntax is basically sentence structure. However, if someone says, “this sentence has short syntax” when referring to a short or simple sentence, that statement sounds reasonable, but it’s like saying “this rock is intelligent”, as in it’s kinda nonsensical. Just say “this sentence is short” or something. To avoid confusion about what syntax actually is, it’s probably better to define syntax as the set of rules that govern how a language allows for sentences to be formed (syntax describes a language, not an individual sentence)."
   },
   {
     "objectID": "posts/Syntax Part 1/index.html#trees",
