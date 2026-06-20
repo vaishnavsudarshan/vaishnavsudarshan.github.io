@@ -9,9 +9,9 @@ image: caca.png
 
 # Introduction
 
-You may have learned about syntax in English class in school, and parts of what you likely learned are pretty close to linguistics, while others are horrendously off. 
+You may have learned about syntax in English class in school, and parts of what you likely learned are pretty close to linguistics, like phrases and stuff, while others are horrendously off. 
 
-Syntax is basically sentence structure. However, if someone says, "this sentence has short syntax" when referring to a short or simple sentence, that statement sounds reasonable, but it's like saying "this rock is intelligent", as in it's kinda nonsensical. So, it's probably better to define syntax as the set of rules that govern how a language allows for sentences to be formed; this way, people won't get confused as to what syntax actually is.
+Syntax is basically sentence structure. However, if someone says, "this sentence has short syntax" when referring to a short or simple sentence, that statement sounds reasonable, but it's like saying "this rock is intelligent", as in it's kinda nonsensical. Just say "this sentence is short" or something. To avoid confusion about what syntax actually is, it's probably better to define syntax as the set of rules that govern how a language allows for sentences to be formed (syntax describes a language, not an individual sentence).
 
 # Bracketing and Constituents
 
@@ -35,31 +35,35 @@ We can start the top node of the tree with S, which represents the sentence.
 graph TD
 S --> NP 
 S --> VP 
+VP --> V
 NP --> NP1
 NP1 --> Det
 Det --> The
-NP1 --> N
-N --> student
+NP1 --> N1
+N1 --> student
 NP --> MP 
 MP --> Rel
 Rel --> who
 MP --> NP2
 MP --> VP1
-NP2 --> Pos
+VP1 --> V1
+NP3 --> Pos
 Pos --> his
-NP2 --> N1
-N1 --> professor
+NP3 --> N2
+N2 --> professor
+NP2 --> NP3
 NP2 --> MP1
 MP1 --> whom
-MP1 --> NP3
+MP1 --> NP4
 MP1 --> VP2
-NP3 --> Det1
+VP2 --> V2
+NP4 --> Det1
 Det1 --> the
-NP3 --> N2
-N2 --> dean
-VP2 --> hired
-VP1 --> praised
-VP --> left
+NP4 --> N4
+N4 --> dean
+V2 --> hired
+V1 --> praised
+V --> left
 ```
 
 Here, NP means noun phrase, VP means verb phrase, Det means determiner, N means noun, MP means modifier phrase, and Pos means possessive. 
