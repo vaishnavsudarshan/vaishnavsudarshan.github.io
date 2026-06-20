@@ -2,7 +2,7 @@
 title: "Historical Linguistics Part 2: The Comparative Method"
 author: "Vaishnav Sudarshan"
 date: "2026-4-15"
-categories:  [Cool Linguistics Stuff] 
+categories:  [Cool Linguistics Stuff] [Cool History Stuff]
 abstract: How did old people figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
 ---
 
@@ -71,11 +71,13 @@ Then, you try to figure out which sound change is the most likely to have happen
 
 Reconstructions from cognates can tell us a lot how the speakers lived. For example, across the Indo-European languages, there are cognates for "wheel", like "cyclos" (related to "cycle") in Greek, "chakra" in Sanskrit, and the word "wheel" itself. The reconstructed word is *kʷékʷlos in Proto-Indo-European. While it's possible that semantic drift happened, and the original word meant something else, it's pretty unlikely, since that would imply that the exact same drift happened in every single Indo-European language, which is nearly impossible. Also, there are reconstructed words for many other transportation technology related vocabulary as well, like "axle". So, the Proto-Indo-European speakers, at least at some point, probably had wheels. 
 
+One extra detail is that Anatolian languages' word for "wheel" is NOT related to the other Indo-European words for "wheel". Therefore, we can deduce that the Anatolian languages (like Hittite or Luwian) split off from Proto-Indo-European the earliest before Indo-European speakers had access to wheels. This is why some linguists prefer to call the language that gave rise to both Proto-Anatolian and the other Indo-European branches as Proto-Indo-Anatolian, having Proto-Indo-European refer solely to the ancestor of non-Anatolian Indo-European languages. 
+
 This works for mythology too. The word "Zeus" is the shortened form of "Zeus Pater", meaning "Sky Father" in Greek. The Latin word "Jupiter", representing the same god, also means the same and is etymologically related to it. Even the Hindu sky god Indra's original name was "Dyaus Pitar", again meaning the same thing. The Norse god "Tyr" is also derived from the same root for "sky". So, the Proto-Indo-European speakers probably had a sky father god as well, whose reconstructed name was "*Dyēus Phtḗr".
 
 ## Representing Sound Changes
 
-
+## Common Sound Changes
 
 # Proving Language Relationships
 

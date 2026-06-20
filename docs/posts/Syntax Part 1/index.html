@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-11-23">
+<meta name="dcterms.date" content="2026-06-10">
 
-<title>Abstract Derivatives Part 2 - Multivariable and Beyond – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
+<title>Syntax Part 1 - Recursion, Constituent Units, and Trees – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -72,6 +107,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -144,10 +182,10 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Abstract Derivatives Part 2 - Multivariable and Beyond</h1>
+      <h1 class="title">Syntax Part 1 - Recursion, Constituent Units, and Trees</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Math Stuff</div>
-                <div class="quarto-category">Cool AI Stuff</div>
+                <div class="quarto-category">Cool Linguistics Stuff</div>
+                <div class="quarto-category">Cool Computer Science Stuff</div>
               </div>
                   </div>
   </div>
@@ -165,7 +203,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Originally Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 23, 2025</p>
+        <p class="date">June 10, 2026</p>
       </div>
     </div>
     
@@ -181,7 +219,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      How can the idea of derivatives as linear operators be applied to more complex functions, like multivariable functions, vector-valued functions, and vector fields? How does this relate in the slightest to AI?
+      How are sentences actually formed in language? This post is answering the first part of this question.
     </div>
   </div>
   
@@ -196,56 +234,211 @@ window.Quarto = {
 
 
 
-<section id="making-derivatives-more-abstract" class="level1">
-<h1>Making Derivatives More Abstract</h1>
-<p>For single variable functions, we have a scalar in and a scalar out (one input, one output). You could technically think of it as 1D vectors, as we’ll do soon, but it’s basically the same thing.</p>
-<p>The main thing we want to emphasize here is that for the derivative, we write it as differentials (<span class="math inline">\(df = f'(x) dx\)</span>) instead of <span class="math inline">\(\frac{df}{dx}\)</span>. In scalar functions, that works, but later on, it won’t make much sense to divide by a vector or a matrix.</p>
-<p>Derivatives, however, aren’t just limited to acting on single-variables to be linear operators. Here are some other types of derivatives.</p>
-<section id="multivariable-functions" class="level2">
-<h2 class="anchored" data-anchor-id="multivariable-functions">Multivariable Functions</h2>
-<p>For multivariable functions, we have many inputs in and one output out, where each input or output is a number. However, one interpretation of a vector is a list of numbers, so one could think of it as a vector in and a scalar out. What this means is that, for a 2D input space, <span class="math inline">\(f(\vec{x}) = f(x, y)\)</span>. For any point, or vector, on the 2D <span class="math inline">\(xy\)</span> plane, there is a <span class="math inline">\(z\)</span> coordinate corresponding to that, to form some sort of surface.</p>
-<p>Again, what we basically just mean in this case is that a vector has two or more dimensions, and a scalar has just one. If we think of a list of numbers as a vector, then we can do vector operations on it, but if we think of a single number as a vector, doing vector operations on it wouldn’t make a difference.</p>
-<p>As for the derivative? It’s a vector, known as the gradient! It is the vector of partial derivatives with respect to each variable. The gradient will always have the same “shape” as the input space, because it also represents the direction of steepest ascent. It’s written as <span class="math inline">\(\nabla f = [...\frac{\partial f}{\partial x_i}...]\)</span>, where <span class="math inline">\(x_i\)</span> is each component in the input.</p>
-<section id="slight-tangent-on-gradient-descent" class="level3">
-<h3 class="anchored" data-anchor-id="slight-tangent-on-gradient-descent">Slight Tangent on Gradient Descent</h3>
-<p>Why? Because think about this way: in differential form, we can write <span class="math inline">\(df = \Sigma {(\frac{\partial f}{\partial x_i} dx_i)}\)</span>. Oh, the sum of the corresponding products? Reminds me of dot product! We can write this as <span class="math inline">\(df = \nabla f \cdot \vec{dx}\)</span>. In terms of magnitudes, it can also be written as <span class="math inline">\(df = |\nabla f| |d\vec{x}| \cos(\theta)\)</span>. We can’t really do much with the given magnitudes to maximize <span class="math inline">\(df\)</span>.</p>
-<p>At a particular input point <span class="math inline">\(\vec{x}\)</span>, the magnitude of <span class="math inline">\(\nabla f\)</span> is going to be some constant when we’re dealing with anything but that input point and the function. Also, the magnitude of <span class="math inline">\(d\vec{x}\)</span> can’t be dealt with because it’s an infinitesimal, not an actual number. So, the only thing we can do to maximize <span class="math inline">\(df\)</span> is the <span class="math inline">\(\cos(\theta)\)</span> term. The maximum of <span class="math inline">\(\cos(\theta)\)</span> is <span class="math inline">\(1\)</span>, when <span class="math inline">\(\theta = 0^\circ\)</span>. So, if <span class="math inline">\(d\vec{x}\)</span> is in the same direction as the gradient, the function increases the most.</p>
-<p>Similarly, for <span class="math inline">\(df\)</span> to be as low as possible, we want <span class="math inline">\(\cos(\theta)\)</span> to be at its minimum (<span class="math inline">\(-1\)</span>), which is when <span class="math inline">\(\theta = 180^\circ\)</span>, or when we move in the opposite direction as the gradient. Now, it is guaranteed that <span class="math inline">\(df \leq 0\)</span>, because we’re dealing with just magnitudes (always nonnegative) times <span class="math inline">\(-1\)</span>.</p>
-<p>So, we can do some local linearization. If we have some random point <span class="math inline">\(\vec{x}, f(\vec{x})\)</span>, we can change <span class="math inline">\(\vec{x}\)</span> by some small vector in the opposite direction of <span class="math inline">\(\nabla f\)</span>. Where do we get that small vector? First, we normalize <span class="math inline">\(-\nabla f\)</span> by dividing by its magnitude to get a unit vector. Then, to scale it so that our local linearization approximation isn’t horrendous, we multiply this vector by a small scalar <span class="math inline">\(\mu\)</span>, known as the <em>learning step</em>. We subtract add this to the original <span class="math inline">\(\vec{x}\)</span>, and recalculate <span class="math inline">\(f(\vec{x})\)</span>.</p>
-<p>When training neural networks, this is the best way to find a local minimum. Even though the absolute minimum is better, the computations to do that would cost way more money.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>You may have learned about syntax in English class in school, and parts of what you likely learned are pretty close to linguistics, while others are horrendously off.</p>
+<p>Syntax is basically sentence structure. However, if someone says, “this sentence has short syntax” when referring to a short or simple sentence, that statement sounds reasonable, but it’s like saying “this rock is intelligent”, as in it’s kinda nonsensical. So, it’s probably better to define syntax as the set of rules that govern how a language allows for sentences to be formed; this way, people won’t get confused as to what syntax actually is.</p>
+</section>
+<section id="bracketing-and-constituents" class="level1">
+<h1>Bracketing and Constituents</h1>
+<p>Take any complicated sentence in English. For example, take the sentence “The student who the professor whom the dean hired praised left.” This seems so confusing at first. However, we see that the basic sentence is just “the student left”. We can put brackets around the stuff in between, that just describes the student: “The student [who the professor whom the dean hired praised] left”. The “whom the dean hired” just describes the professor, so we can put brackets around that: “The student [who the professor [whom the dean hired] praised] left”.</p>
+<p>Each of the bracketed parts, next to the thing it describes, is called a <em>constituent</em>. These are basically units of structure that show some syntactic role.</p>
+<p>One way to tell the role that a constituent plays is to replace it with a smaller unit whose role we know. For example, “The student [who the professor whom the dean hired praised]” can be replaced with “The student”, which we know represents the subject. Therefore, every single wrd before “left” is a constituent that represents the subject. Similarly, “left” is a constituent that represents the verb. If you want, you can replace “left” with “ate ice cream”, because this constituent represents what the student <em>did</em>.</p>
+<section id="trees" class="level2">
+<h2 class="anchored" data-anchor-id="trees">Trees</h2>
+<p>Using brackets might sound easy at first, but once you have a LOT of brackets, it can get really confusing and tedious. Think about in programming or math when you have too many parentheses because you want to do things in a single line, so you end up saying something like “print(int(input(str(range(x, y, z)[-1]) + str(int(s[0]) + int(s[1])))) + 3)” in Python. This is really hard to read, which is why it’s considered bad programming practice by most people (not me though, hehe).</p>
+<p>In programming languages, it’s hard to have a different, less confusing representation of parentheses to program nested things in an actual coding editor (unless you have something like block code in Scratch). However, in linguistics, especially when a lot of it was hand-drawn, people found it easier to use trees.</p>
+<p>Let’s take the same sentence again: “The student who his professor whom the dean hired praised left.”</p>
+<p>We can start the top node of the tree with S, which represents the sentence.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+S --&gt; NP 
+S --&gt; VP 
+NP --&gt; NP1
+NP1 --&gt; Det
+Det --&gt; The
+NP1 --&gt; N
+N --&gt; student
+NP --&gt; MP 
+MP --&gt; Rel
+Rel --&gt; who
+MP --&gt; NP2
+MP --&gt; VP1
+NP2 --&gt; Pos
+Pos --&gt; his
+NP2 --&gt; N1
+N1 --&gt; professor
+NP2 --&gt; MP1
+MP1 --&gt; whom
+MP1 --&gt; NP3
+MP1 --&gt; VP2
+NP3 --&gt; Det1
+Det1 --&gt; the
+NP3 --&gt; N2
+N2 --&gt; dean
+VP2 --&gt; hired
+VP1 --&gt; praised
+VP --&gt; left
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Here, NP means noun phrase, VP means verb phrase, Det means determiner, N means noun, MP means modifier phrase, and Pos means possessive.</p>
+<p>Note that these descriptions for parts of speech aren’t universal (as we’ll see in a later part), but they are convenient for English to show how constituents are related. In fact, really important takeaway in descriptive linguistics is that these terms may be useful approximations for the syntactic roles in nearby related languages, but don’t necessarily have an equivalent in every single language.</p>
+<p>Additionally, note that we can stop breaking the sentence down whenever we want. This syntax tree broke down the sentence into individual words just to show how complicated it really got, but if you want, you can stop early, after you reach units of phrases, or you can go further, all the way to the units of morphemes. You get to choose the level of precise detail based on the specific task in linguistics, kind of like how you get to choose the level of precise detail when making a phonetic IPA transcription depending on what features you’re interested in examining.</p>
+</section>
+<section id="example-of-why-bracketing-is-helpful" class="level2">
+<h2 class="anchored" data-anchor-id="example-of-why-bracketing-is-helpful">Example of why bracketing is helpful</h2>
+<p>You may have heard the joke “Time flies like an arrow, but fruit flies like a banana”. It’s funny because most people can tell the syntactic difference between these two, but the words are mostly still the same. So, as any good linguist would do, let’s ruin the joke by overanalyzing it!</p>
+<p>Let’s look at the first sentence. “Time flies like an arrow” can be broken down into the noun phrase, “Time”, and verb phrase, “flies like an arrow”, which can be broken down into the verb “flies” and the modifier “like an arrow”.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+S --&gt; NP
+S --&gt; VP
+NP --&gt; N
+N --&gt; Time
+VP --&gt; V
+V --&gt; flies
+VP --&gt; MP
+MP --&gt; Prep
+Prep --&gt; like
+MP --&gt; NP1
+NP1 --&gt; Det
+NP1 --&gt; N1
+Det --&gt; an
+N1 --&gt; arrow
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Meanwhile, the second sentence can be broken down into the noun phrase, “Fruit flies”, and the verb phrase “like a banana”, which can be broken down into the verb “like” and the noun phrase “a banana”.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+S --&gt; NP
+NP --&gt; M
+NP --&gt; N
+M --&gt; Fruit
+N --&gt; flies
+S --&gt; VP
+VP --&gt; V
+V --&gt; like
+VP --&gt; NP1
+NP1 --&gt; Det
+Det --&gt; a
+NP1 --&gt; N1
+N1 --&gt; banana
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="vector-valued-functions" class="level2">
-<h2 class="anchored" data-anchor-id="vector-valued-functions">Vector-Valued Functions</h2>
-<p>What about a vector output for a scalar input? This could be represented as a parametric equation, and the derivative would also be a vector. An example of this is in physics, with velocity and acceleration, both as a function of time. See the diagram for these in circular motion.</p>
+<section id="recursion-introduction" class="level1">
+<h1>Recursion Introduction</h1>
+<p>Let’s talk about something that is seemingly completely different, but is actually the heart of what we just did with our nested brackets.</p>
+<p>Take the Fibonacci sequence, which you’ve probably heard of before. Let’s look at one of the most common representations of its defitions:</p>
+<p>Let <span class="math inline">\(F_0 = 0, F_1 = 1\)</span> and <span class="math inline">\(F_n = F_{n-1} + F_{n-2}\)</span> for <span class="math inline">\(n \geq 2\)</span>.</p>
+<p>Given only this information, you cannot instantly figure out what <span class="math inline">\(F_{100}\)</span> is. You have to write it as <span class="math inline">\(F_{100} = F_{99} + F_{98}\)</span>, and then you have to write <span class="math inline">\(F_{99}\)</span> as <span class="math inline">\(F_{98} + F_{97}\)</span>, and so on, until you get down to <span class="math inline">\(F_1\)</span> and <span class="math inline">\(F_0\)</span>. Without the base case, you’d be simplifying forever, because you’d never get it only in terms of numbers.</p>
+<p>Now, look at this code snippet in Java:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="bu">String</span> <span class="fu">reverse</span><span class="op">(</span><span class="bu">String</span> s<span class="op">)</span> <span class="op">{</span> <span class="co">// return a String that is the reverse of s</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>s<span class="op">.</span><span class="fu">length</span><span class="op">()</span> <span class="op">&lt;=</span> <span class="dv">1</span><span class="op">)</span> <span class="op">{</span> <span class="co">// base case: if the string has 0 or 1 characters, </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> s<span class="op">;</span> <span class="co">// it is inherently the reverse of itself, so we can just return it</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span>s<span class="op">.</span><span class="fu">length</span><span class="op">()-</span><span class="dv">1</span><span class="op">)</span> <span class="op">+</span> <span class="fu">reverse</span><span class="op">(</span>s<span class="op">.</span><span class="fu">substring</span><span class="op">(</span><span class="dv">1</span><span class="op">,</span> s<span class="op">.</span><span class="fu">length</span><span class="op">()-</span><span class="dv">1</span><span class="op">))</span> <span class="op">+</span> s<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span><span class="dv">0</span><span class="op">);</span> <span class="co">// return the last character plus the reverse of the middle part plus the first character</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As you can guess from the name of this function, it reverses a string by taking the last letter, the first letter, and the reverse of the middle part in between. As a result, it calls itself. Again, there is a base case, which is that the string being called on has 0 or 1 characters eventually, but it allows us to reverse a string of any length, up to infinity.</p>
+<p>Here’s another pattern: Serpenski’s Triangle. You start with an equilateral triangle, then split it into four congruent equilateral triangles, such that the middle part is cut out, and then repeat this for every single equilateral triangle inside, being able to go for an indefinite amount of layers:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="circular.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"><img src="circular.png" class="img-fluid figure-img" alt="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"></a></p>
-<figcaption>Diagram showing the vector-valued functions of velocity and acceleration during circular motion</figcaption>
+<p><a href="serpinski.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A diagram of generating Serpenski’s Triangle"><img src="serpinski.png" class="img-fluid figure-img" alt="A diagram of generating Serpenski’s Triangle"></a></p>
+<figcaption>A diagram of generating Serpenski’s Triangle</figcaption>
 </figure>
 </div>
-<p>To demonstrate where more abstract derivatives can be used in this case, we can use parametric equations. Let the counterclockwise angle above the horizontal of the particle moving in a circle be <span class="math inline">\(\theta\)</span>, and the radius be <span class="math inline">\(r\)</span>. From components, the direction of the position of the particle from the center is <span class="math inline">\([\cos(\theta), \sin(\theta)]\)</span>. Then, from geometry, since motion is perpendicular to the radius, the horizontal component of velocity (assuming constant speed <span class="math inline">\(v\)</span>) is <span class="math inline">\(-v \sin(\theta)\)</span>, and the vertical component is <span class="math inline">\(v \cos(\theta)\)</span>. Given that <span class="math inline">\(\omega = d\theta/dt\)</span> and <span class="math inline">\(v=\omega r\)</span>, try to prove for yourself that the centripetal acceleration must have magnitude <span class="math inline">\(\frac{v^2}{r}\)</span> and point towards the center! The full solution is in my <a href="../Circular Motion/"><em>blog post about circular motion</em></a>.</p>
+<p>The base case of this diagram is that the the triangle has finite size, because the biggest triangle isn’t inside of a bigger one, but you can make triangles as small as you want, that are all just miniature, similar versions to the bigger ones.</p>
+<p>There’s one more thing I want to show, to make the pattern evident. Suppose we name the acronym LING to mean LING Is Not Good. Then, a letter of the acronym is the first letter of the acronym itself. So, we have an infinite loop trying to figure out what LING stands for, but we never get there because it keeps on referring to itself, unless we define a base case later on to what LING actually stands for.</p>
+<p>This acronym is the same pattern as the Fibonacci sequence, Serpenski’s Triangle, and the reverse function, and it’s called recursion - you define a base case, and then each next step is based on the previous one(s), allowing you to go as far as you want.</p>
 </section>
-<section id="vector-fields" class="level2">
-<h2 class="anchored" data-anchor-id="vector-fields">Vector Fields</h2>
-<p>At this point, we are exiting the more basic types of functions, and finally, matrices come into use here. You may recall that a vector field is a kind of function where for every point (vector) in space, there is an output which is a vector that moves that input somewhere else. As a result, what we can get by reiterating this process can be modeled for something like fluid flow. Maybe you’ve seen some of these diagrams before. Typically, since varying magnitudes get out of hand when drawn on paper, each point has a vector of a fixed length showing just direction, and the magnitudes are portrayed through color, where the “hotter” the color, the longer the magnitude is.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="vector_field.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing a vector field"><img src="vector_field.png" class="img-fluid figure-img" alt="Diagram showing a vector field"></a></p>
-<figcaption>Diagram showing a vector field</figcaption>
-</figure>
+<section id="recursion-in-syntax" class="level1">
+<h1>Recursion in Syntax</h1>
+<p>In syntax, recursion is when you can put a constituent inside another constituent of the same level. For example, look at the phrase “the monkey of the friend of the neighbor of the student of the uncle”. This is a noun phrase, because the overall constituent is “the monkey”. Inside of the entire phrase, we have “the monkey of the friend of the neighbor of the student” which is also a noun phrase, and inside of that, we have “the monkey of the friend of the neighbor”, which is also a noun phrase, and so on.</p>
+<p>English allows for infinite recursion like this, which is why there is no limit to how long a sentence can be - we can always just recurse one more time. For example, “the uncle” can have “of the person” added to it. We don’t need to explicitly worry about a base case - no matter how long the sentence is, we can always ultimately simplify it down to a single noun (or generally a single constituent or unit), which is the base case. You can also recurse the other direction, like adding “the toy of” before “the monkey”.</p>
+</section>
+<section id="more-examples-of-english-recursion" class="level1">
+<h1>More Examples of English Recursion</h1>
+<p>English doesn’t just need “of” (or equivalently, “’s”) to be able to recurse. Using “of” means a noun phrase is being a recursed. Here are some other examples of English being able to recurse on different constituents.</p>
+<p>There can be recursion on full sentences (specifically of the structure where a noun phrase is the subject and it enacts a verb phrase). For example, “I ate food” is a complete sentence. You can also insert this into “You think that I ate food”, which itself is another complete sentence. You can further insert this into “He doesn’t believe that you think that I ate food”, and so on.</p>
+<p>The very first sentence we made a tree out of, “The student who the professor whom the dean hired praised left”, is also recursive, because “whom the dean hired” is called a relative clause, and this, describing “professor”, is inside the relative clause “who the professor praised”, which in turn describes “student”.</p>
+<p>Prepositional phrases can also be recursed. If you have the phrase “on the table in the house near the window”, this contains the prepositional phrase “on the table in the house”, which contains the prepositional phrase “on the table”.</p>
+<p>All this goes to show that English has many mechanisms to recurse different types of constituents.</p>
+</section>
+<section id="embedding" class="level1">
+<h1>Embedding</h1>
+<p>Recursion is just one subset of a larger phenomenon called embedding. Embedding is inserting some constituent into another constituent, regardless of what type of constituent they are, and recursion is when the constituents have the same type.</p>
+<p>For example, “the bird flew in the sky” has embedding in the verb phrase “flew in the sky”, because it contains “in the sky”, which is a prepositional phrase.</p>
+</section>
+<section id="recursion-in-other-languages" class="level1">
+<h1>Recursion in Other Languages</h1>
+<p>All languages that linguists had encountered up to 2005 had some means to recurse indefinitely. For example, in French, the first recursion example above would be translated as “le singe de l’ami du voisin de l’étudiant de l’oncle”. The word “de” has the same syntactic function that “of” has, which allows the same recursion to work. Note that “du” is just a contraction of “de” and “le”, so it doesn’t do anything different from “de l’”.</p>
+<p>You might think that maybe that’s just because English and French are so close, both geographically and linguistically, because English is basically half French anyway (it’s actually 29%, that was an exaggeration).</p>
+<p>However, it has nothing to do with proximity, beacuse even Chinese, which is not even in the same language family as English and French and is spoken in an entirely different part of the world, allows for this exact phrase to recurse as “shūshu de xuéshēng de línjū de péngyǒu de hóuzǐ”. Here, “de” (not at all related to the French “de”) is basically the Chinese equivalent of “’s”, so it’s more along the lines of “the uncle’s student’s neighbor’s friend’s monkey”. It just so happens that English allows you to recurse in both directions (because “A’s B” is the same as “the B of A”), while Chinese only allows you to use “’s” and French only allows you to use “of”. This doesn’t matter. The point is, all the languages that linguists encountered so far had some syntactic mechanism to be able to directly translate this phrase.</p>
+</section>
+<section id="pirahã-counterexample" class="level1">
+<h1>Pirahã Counterexample</h1>
+<p>However, the linguist Daniel Everett encountered an indigenous Brazilian language isolate called Pirahã. While you can embed a constituent into another constituent exactly once, to do so indefinitely, you must use multiple sentences. In 2005, Everett published his claim that Pirahã lacks syntactic recursion. For example, instead of saying “the monkey of the friend of the neighbor of the student of the uncle”, you have to say something like this:</p>
+<p>The uncle has a student. This student has a neighbor. This neighbor has a friend. This friend has a monkey. This monkey [insert whatever you want to say about the monkey].</p>
+<p>In a sense, Pirahã might not have the same idea of recursion as linguists view it, but it’s actually closer to the structure of recursion used in programming. Instead of having all the information in a single unit, you can use the one word (“monkey”) that is the noun phrase in question, that is referenced by a different word (“friend”), and so on, causing you to trace the overall meaning to represent every step all the way to the base case, which is “uncle” in this example. This is pretty similar to calling the a recursive function, like the reverse string function, on a smaller piece, like the middle of the string, until you get enough information, like having a string that has length 0 or 1. The only difference is that there’s not a mandatory base case in Pirahã, and you can stop whenever you want, like at “student”.</p>
+<p>Noam Chomsky, the guy who basically invented modern linguistics, thought that all languages had the capacity to recurse, and that it was some universal cognitive trait to humankind as a whole. This is why Chomsky’s supporters find Everett’s claim to be controversial - perhaps Pirahã does have recursion, but it’s in a different sense than what Everett’s notion of recursion was.</p>
+</section>
+<section id="syntax-trees-in-programming-languages" class="level1">
+<h1>Syntax Trees in Programming Languages</h1>
+<p>Statements from programming languages can also be represented with smaller pieces. Syntax trees for them have to be very precise, because they allow statements to be parsed.</p>
+<p>Take the following Python statement:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">5</span> <span class="op">*</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This can be represented with the following tree:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+Assignment --&gt; x["x"]
+Assignment --&gt; Addition
+Addition --&gt; 3["3"]
+Addition --&gt; Multiplication
+Multiplication --&gt; 5["5"]
+Multiplication --&gt; 2["2"]
+</pre>
 </div>
-<p>The diagram even looks intuitive. At each point, it tells you where to go next, and by how much. Even if you had no idea about what vector fields are, that’s literally what is looks like.</p>
-<p>The derivative is a matrix called the Jacobian. Each row is basically the gradient with respect to the entire input from each component of the output.</p>
-<p>If you think of it as looking at each component of the input, the Jacobian is also the derivative of the entire output with respect to each input.</p>
-<p>So, if the input space is a vector in <span class="math inline">\(\mathbb{R}^n\)</span> and the output space is a vector in <span class="math inline">\(\mathbb{R}^m\)</span>, the Jacobian is a matrix with dimensions <span class="math inline">\(m \times n\)</span>.</p>
-<p>Now, the derivative can be written as <span class="math inline">\(d \vec{f} = J d \vec{x}\)</span> for the Jacobian <span class="math inline">\(J\)</span>. Now, this looks like a proper matrix multiplication with no scalars involved apart from doing things component-wise.</p>
-<p>One cool thing now is that if <span class="math inline">\(J\)</span> is a constant matrix, the vector field is just a normal linear transformation of <span class="math inline">\(\vec{f}(\vec{x}) = J \vec{x}\)</span>, which is an interesting interpretation of linear transformations.</p>
-</section>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>There is a very similar recursive structure here, because there is an operator (multiplication) inside of another operator (addition) inside of yet another operator (assignment). If you’ve ever wondered how computers understand order of operations, recursive syntax trees are how - blindly going left to right might cause a mistake, but using a syntax tree is basically foolproof.</p>
+<p>The word “syntax” for programming languages is kind of equivalent to the word “grammar” for natural languages, but this is one of the actual instances of “syntax”, the one used for natural languages as an aspect of “grammar”, in programming languages.</p>
+<p>I will probably write a future blog post specifically about programming language theory later, but this is an interesting preview into how it uses linguistics tools.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>So far, what we’ve seen is just seeing pretty simple derivatives with a new interpretation. Stay tuned for even more abstract derivatives, and how they relate to AI!</p>
+<p>Now that we know how you can break apart sentences into smaller pieces, we can talk about the roles of the smaller pieces themselves! Stay tuned for morphosyntax in part 2, including one of the most confusing concepts in linguistics (good luck)!</p>
 
 
 </section>

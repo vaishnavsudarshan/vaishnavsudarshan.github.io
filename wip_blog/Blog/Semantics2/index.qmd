@@ -1,0 +1,8 @@
+---
+title: "Semantics Part 2: How to express ideas"
+author: "Vaishnav Sudarshan"
+date: "2025-4-11"
+categories:  [Cool Linguistics Stuff]
+abstract: We know how meanings are arranged and put together, but how are meanings actually understood?
+---
+

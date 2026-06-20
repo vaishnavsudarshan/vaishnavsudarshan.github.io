@@ -2,7 +2,7 @@
 title: "Abstract Derivatives Part 1"
 author: "Vaishnav Sudarshan"
 date: "2025-11-23"
-categories:  [Cool Math Stuff]
+categories:  [Cool Math Stuff, Cool AI Stuff]
 abstract: Answering the following questions - Why are matrices considered linear? How can differentiation also be interpreted as such?
 ---
 

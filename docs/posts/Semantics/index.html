@@ -9,7 +9,7 @@
 <meta name="author" content="Vaishnav Sudarshan">
 <meta name="dcterms.date" content="2025-04-11">
 
-<title>Semantics – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
+<title>Semantics Part 1: – Vaishnav Sudarshan's Blog on Linguistics, Math and AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,7 +141,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Semantics</h1>
+      <h1 class="title">Semantics Part 1:</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Cool Linguistics Stuff</div>
                 <div class="quarto-category">Cool AI Stuff</div>
@@ -169,7 +169,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">April 18, 2026</p>
+        <p class="date-modified">June 19, 2026</p>
       </div>
     </div>
       
@@ -197,8 +197,9 @@ window.Quarto = {
 <h1>Semantics Intro</h1>
 <p>Semantics is how we know how close words’ meanings are. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). In fact, “dog” and “cat” are actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
 <p>In a future blog post, I’ll talk exclusively about semantics, but for right now, I’ll talk about a specific aspect of it.</p>
-<section id="applications-in-ai" class="level2">
-<h2 class="anchored" data-anchor-id="applications-in-ai">Applications In AI</h2>
+</section>
+<section id="applications-in-ai" class="level1">
+<h1>Applications In AI</h1>
 <p><a href="https://en.wikipedia.org/wiki/Natural_language_processing"><em>Natural Language Processing</em></a> (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them.</p>
 <p>I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I’ll provide a brief explanation. Basically, the AI user’s input is split into <em>tokens</em>, which are kind of like morphemes except that they don’t necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle.</p>
 <p>Every token in the language (in our case, English) is mapped to a vector (the specific details of how that works will be explained in a future blog post). These vectors’ angles’ closeness tries to portray semantic relations, but not exactly in the way you might think.</p>
@@ -206,7 +207,6 @@ window.Quarto = {
 <p>This is because, if you think it, “hot” and “cold” are still about temperatures, so they should point to a similar place. Something that has nothing to do with temperatures whatsoever, such as “skibidi” (although to be fair, “skibidi” has nothing to do with anything useful whatsoever), should point in the opposite direction. How exactly do the angles portray semantic closeness? The cosine of the angle does.</p>
 <p>If the directions are close, then the cosine will be almost <span class="math inline">\(1\)</span>, but if the directions are near-opposite, then the directions will be <span class="math inline">\(-1\)</span>, so the higher number reflects that the meanings are closer.</p>
 <p>The magnitudes of the vectors refer to how frequent or useful the words are, as well.</p>
-</section>
 <section id="to-be-continued" class="level2">
 <h2 class="anchored" data-anchor-id="to-be-continued">To be continued</h2>
 <p>But what about context? If you say “wow, that’s so impressive”, you could mean that genuinely, or you could be sarcastic. Stay tuned for pragmatics.</p>

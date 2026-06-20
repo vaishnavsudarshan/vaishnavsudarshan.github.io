@@ -2,7 +2,7 @@
 title: "Abstract Derivatives Part 2 - Multivariable and Beyond"
 author: "Vaishnav Sudarshan"
 date: "2025-11-23"
-categories:  [Cool Math Stuff]
+categories:  [Cool Math Stuff, Cool AI Stuff]
 abstract: How can the idea of derivatives as linear operators be applied to more complex functions, like multivariable functions, vector-valued functions, and vector fields? How does this relate in the slightest to AI?
 image: circular.png
 ---
@@ -33,9 +33,9 @@ At a particular input point $\vec{x}$, the magnitude of $\nabla f$ is going to b
 
 Similarly, for $df$ to be as low as possible, we want $\cos(\theta)$ to be at its minimum ($-1$), which is when $\theta = 180^\circ$, or when we move in the opposite direction as the gradient. Now, it is guaranteed that $df \leq 0$, because we're dealing with just magnitudes (always nonnegative) times $-1$.
 
-So, we can do some local linearization. If we have some random point $\vec{x}, f(\vec{x})$, we can change $\vec{x}$ by some small vector in the opposite direction of $\nabla f$. Where do we get that small vector? First, we normalize $-\nabla f$ by dividing by its magnitude to get a unit vector. Then, to scale it so that our local linearization approximation isn't horrendous, we multiply this vector by a small scalar $\mu$, known as the *learning step*. We subtract add this to the original $\vec{x}$, and recalculate $f(\vec{x})$. 
+So, we can do some local linearization. If we have some random point $\vec{x}, f(\vec{x})$, we can change $\vec{x}$ by some small vector in the opposite direction of $\nabla f$. Where do we get that small vector? First, we normalize $-\nabla f$ by dividing by its magnitude to get a unit vector. Then, to scale it so that our local linearization approximation isn't horrendous, we multiply this vector by a small scalar $\mu$, known as the *learning step*. We subtract add this to the original $\vec{x}$, and recalculate $f(\vec{x})$.
 
-For more on this, visit [my blog on neural networks](../Neural-Networks-Part2/). 
+When training neural networks, this is the best way to find a local minimum. Even though the absolute minimum is better, the computations to do that would cost way more money.
 
 ## Vector-Valued Functions
 
