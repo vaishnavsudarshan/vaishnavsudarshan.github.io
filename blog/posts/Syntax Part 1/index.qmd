@@ -49,8 +49,8 @@ MP --> VP1
 VP1 --> V1
 NP3 --> Pos
 Pos --> his
-NP3 --> N2
-N2 --> professor
+NP3 --> N3
+N3 --> professor
 NP2 --> NP3
 NP2 --> MP1
 MP1 --> whom
