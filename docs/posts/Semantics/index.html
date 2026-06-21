@@ -9,7 +9,7 @@
 <meta name="author" content="Vaishnav Sudarshan">
 <meta name="dcterms.date" content="2025-04-11">
 
-<title>Semantics Part 1: – Vaishnav Sudarshan's Blog on Linguistics, Math and AI</title>
+<title>Semantics Part 1: How Meanings Work – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -141,10 +112,10 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Semantics Part 1:</h1>
+      <h1 class="title">Semantics Part 1: How Meanings Work</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Cool Linguistics Stuff</div>
-                <div class="quarto-category">Cool AI Stuff</div>
+                <div class="quarto-category">Cool Philosophy Stuff</div>
               </div>
                   </div>
   </div>
@@ -169,7 +140,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 19, 2026</p>
+        <p class="date-modified">June 21, 2026</p>
       </div>
     </div>
       
@@ -178,7 +149,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      We know how meanings are arranged and put together, but how are meanings actually understood?
+      We know how meanings are arranged and put together, but how are they actually understood?
     </div>
   </div>
   
@@ -196,20 +167,22 @@ window.Quarto = {
 <section id="semantics-intro" class="level1">
 <h1>Semantics Intro</h1>
 <p>Semantics is how we know how close words’ meanings are. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). In fact, “dog” and “cat” are actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
-<p>In a future blog post, I’ll talk exclusively about semantics, but for right now, I’ll talk about a specific aspect of it.</p>
+<p>In this blog post, we’ll talk about the origins of semantics as well as modern semantics, and the next part will be all about how LLMs understand meanings.</p>
 </section>
-<section id="applications-in-ai" class="level1">
-<h1>Applications In AI</h1>
-<p><a href="https://en.wikipedia.org/wiki/Natural_language_processing"><em>Natural Language Processing</em></a> (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them.</p>
-<p>I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I’ll provide a brief explanation. Basically, the AI user’s input is split into <em>tokens</em>, which are kind of like morphemes except that they don’t necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle.</p>
-<p>Every token in the language (in our case, English) is mapped to a vector (the specific details of how that works will be explained in a future blog post). These vectors’ angles’ closeness tries to portray semantic relations, but not exactly in the way you might think.</p>
-<p>For example, synonyms and antonyms (words that mean similar things and words that mean the opposite, respectively) would not be pointing in completely opposite directions, but rather all approximately in a similar direction.</p>
-<p>This is because, if you think it, “hot” and “cold” are still about temperatures, so they should point to a similar place. Something that has nothing to do with temperatures whatsoever, such as “skibidi” (although to be fair, “skibidi” has nothing to do with anything useful whatsoever), should point in the opposite direction. How exactly do the angles portray semantic closeness? The cosine of the angle does.</p>
-<p>If the directions are close, then the cosine will be almost <span class="math inline">\(1\)</span>, but if the directions are near-opposite, then the directions will be <span class="math inline">\(-1\)</span>, so the higher number reflects that the meanings are closer.</p>
-<p>The magnitudes of the vectors refer to how frequent or useful the words are, as well.</p>
-<section id="to-be-continued" class="level2">
-<h2 class="anchored" data-anchor-id="to-be-continued">To be continued</h2>
-<p>But what about context? If you say “wow, that’s so impressive”, you could mean that genuinely, or you could be sarcastic. Stay tuned for pragmatics.</p>
+<section id="philosophy-of-language" class="level1">
+<h1>Philosophy of Language</h1>
+<p>The first people who pondered about how meaning comes from words were actually not linguists, but philosophers!</p>
+<p>The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word “dog” represents some idea called “dog” that doesn’t exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them</p>
+<p>Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words</p>
+<p>Ludwig Wittgenstein necessary trait sense and reference</p>
+</section>
+<section id="complications" class="level1">
+<h1>Complications</h1>
+<section id="negations" class="level2">
+<h2 class="anchored" data-anchor-id="negations">Negations</h2>
+</section>
+<section id="tense" class="level2">
+<h2 class="anchored" data-anchor-id="tense">Tense</h2>
 
 
 </section>
@@ -615,6 +588,35 @@ window.Quarto = {
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "vaishnavsudarshan/vaishnavsudarshan.github.io";
+    script.dataset.repoId = "R_kgDONzCjJQ";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDONzCjJc4C_jEt";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "bottom";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 
 

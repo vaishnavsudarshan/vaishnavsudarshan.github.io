@@ -210,7 +210,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 20, 2026</p>
+        <p class="date-modified">June 21, 2026</p>
       </div>
     </div>
       
@@ -255,38 +255,81 @@ window.Quarto = {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">graph TD
+<pre class="mermaid mermaid-js">%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "70px",
+    "primaryTextColor": "#000000",
+    "lineWidth": 3
+  }
+}}%%
+
+graph TD
+
 S --&gt; NP 
 S --&gt; VP 
 VP --&gt; V
+
 NP --&gt; NP1
 NP1 --&gt; Det
-Det --&gt; The
 NP1 --&gt; N1
+
+Det --&gt; The
 N1 --&gt; student
+
 NP --&gt; MP 
 MP --&gt; Rel
-Rel --&gt; who
 MP --&gt; NP2
 MP --&gt; VP1
+
+Rel --&gt; who
+
 VP1 --&gt; V1
+
 NP3 --&gt; Pos
 Pos --&gt; his
 NP3 --&gt; N3
 N3 --&gt; professor
+
 NP2 --&gt; NP3
 NP2 --&gt; MP1
-MP1 --&gt; whom
+
+MP1 --&gt; Rel1
+Rel1 --&gt; whom
+
 MP1 --&gt; NP4
 MP1 --&gt; VP2
+
 VP2 --&gt; V2
+
 NP4 --&gt; Det1
 Det1 --&gt; the
 NP4 --&gt; N4
 N4 --&gt; dean
+
 V2 --&gt; hired
 V1 --&gt; praised
 V --&gt; left
+
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:2px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:2px,color:#000;
+classDef mpGroup fill:#fff2cc,stroke:#d4a017,stroke-width:2px,color:#000;
+classDef relGroup fill:#ffd6e0,stroke:#e6005c,stroke-width:2px,color:#000;
+
+class S sentenceGroup;
+
+class NP,NP1,NP2,NP3,NP4,N1,N3,N4 nounGroup;
+
+class VP,VP1,VP2,V,V1,V2 verbGroup;
+
+class MP,MP1,Det,Det1,Pos mpGroup;
+
+class Rel,Rel1 relGroup;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -306,21 +349,63 @@ V --&gt; left
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">graph TD
+<pre class="mermaid mermaid-js">%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "70px",
+    "primaryTextColor": "#000000",
+    "lineColor": "#000000",
+    "lineWidth": 3
+  },
+  "flowchart": {
+    "htmlLabels": true
+  }
+}}%%
+
+graph TD
+
 S --&gt; NP
 S --&gt; VP
+
 NP --&gt; N
 N --&gt; Time
+
 VP --&gt; V
 V --&gt; flies
 VP --&gt; MP
+
 MP --&gt; Prep
 Prep --&gt; like
 MP --&gt; NP1
+
 NP1 --&gt; Det
 NP1 --&gt; N1
 Det --&gt; an
 N1 --&gt; arrow
+
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:2px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:2px,color:#000;
+classDef mpGroup fill:#fff2cc,stroke:#d4a017,stroke-width:2px,color:#000;
+classDef prepGroup fill:#e6ddff,stroke:#6f42c1,stroke-width:2px,color:#000;
+
+%% -----------------------
+%% APPLY CLASSES
+%% -----------------------
+
+class S sentenceGroup;
+
+class NP,N,N1,NP1 nounGroup;
+
+class VP,V verbGroup;
+
+class MP,Det mpGroup;
+
+class Prep prepGroup;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -333,20 +418,53 @@ N1 --&gt; arrow
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">graph TD
+<pre class="mermaid mermaid-js">%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "70px",
+    "primaryTextColor": "#000000",
+    "lineColor": "#000000",
+    "lineWidth": 3
+  },
+  "flowchart": {
+    "htmlLabels": true
+  }
+}}%%
+
+graph TD
+
 S --&gt; NP
 NP --&gt; M
 NP --&gt; N
 M --&gt; Fruit
 N --&gt; flies
+
 S --&gt; VP
 VP --&gt; V
 V --&gt; like
+
 VP --&gt; NP1
 NP1 --&gt; Det
 Det --&gt; a
 NP1 --&gt; N1
 N1 --&gt; banana
+
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:2px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:2px,color:#000;
+classDef modGroup fill:#fff2cc,stroke:#d4a017,stroke-width:2px,color:#000;
+
+class S sentenceGroup;
+
+class NP,N,N1,NP1 nounGroup;
+
+class VP,V verbGroup;
+
+class M,Det modGroup;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -355,20 +473,21 @@ N1 --&gt; banana
 </div>
 </section>
 </section>
+<section id="possible-sentences" class="level1">
+<h1>Possible Sentences</h1>
+<p>There are a finite amount of rules for how to generate a valid sentence, but an infinite amount of possible sentences (partially thanks to recursion, as you are about to see). You can represent the structure of possible sentences using trees. Note that only the last layer of a tree actually says what each word is. So, “fruit flies like a banana” and “hungry people eat that food” would have their trees looking about the same. Because a language is so complex, it’s hard to write down every specific structure of sentences, so you can only be pretty general.</p>
+</section>
 <section id="recursion-introduction" class="level1">
 <h1>Recursion Introduction</h1>
 <p>Let’s talk about something that is seemingly completely different, but is actually the heart of what we just did with our nested brackets.</p>
 <p>Take the Fibonacci sequence, which you’ve probably heard of before. Let’s look at one of the most common representations of its defitions:</p>
 <p>Let <span class="math inline">\(F_0 = 0, F_1 = 1\)</span> and <span class="math inline">\(F_n = F_{n-1} + F_{n-2}\)</span> for <span class="math inline">\(n \geq 2\)</span>.</p>
 <p>Given only this information, you cannot instantly figure out what <span class="math inline">\(F_{100}\)</span> is. You have to write it as <span class="math inline">\(F_{100} = F_{99} + F_{98}\)</span>, and then you have to write <span class="math inline">\(F_{99}\)</span> as <span class="math inline">\(F_{98} + F_{97}\)</span>, and so on, until you get down to <span class="math inline">\(F_1\)</span> and <span class="math inline">\(F_0\)</span>. Without the base case, you’d be simplifying forever, because you’d never get it only in terms of numbers.</p>
-<p>Now, look at this code snippet in Java:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">static</span> <span class="bu">String</span> <span class="fu">reverse</span><span class="op">(</span><span class="bu">String</span> s<span class="op">)</span> <span class="op">{</span> <span class="co">// return a String that is the reverse of s</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>s<span class="op">.</span><span class="fu">length</span><span class="op">()</span> <span class="op">&lt;=</span> <span class="dv">1</span><span class="op">)</span> <span class="op">{</span> <span class="co">// base case: if the string has 0 or 1 characters, </span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> s<span class="op">;</span> <span class="co">// it is inherently the reverse of itself, so we can just return it</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span>s<span class="op">.</span><span class="fu">length</span><span class="op">()-</span><span class="dv">1</span><span class="op">)</span> <span class="op">+</span> <span class="fu">reverse</span><span class="op">(</span>s<span class="op">.</span><span class="fu">substring</span><span class="op">(</span><span class="dv">1</span><span class="op">,</span> s<span class="op">.</span><span class="fu">length</span><span class="op">()-</span><span class="dv">1</span><span class="op">))</span> <span class="op">+</span> s<span class="op">.</span><span class="fu">charAt</span><span class="op">(</span><span class="dv">0</span><span class="op">);</span> <span class="co">// return the last character plus the reverse of the middle part plus the first character</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now, look at this code snippet in Python:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reverse(s): <span class="co"># return a String that is the reverse of s</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(s) <span class="op">==</span> <span class="dv">1</span>: <span class="co"># base case: if the string has 1 character, </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> s <span class="co"># it is inherently the reverse of itself, so we can just return it</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s[<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> reverse(s[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>]) <span class="co"># move the last letter to the beginning and find the reverse of the rest</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>As you can guess from the name of this function, it reverses a string by taking the last letter, the first letter, and the reverse of the middle part in between. As a result, it calls itself. Again, there is a base case, which is that the string being called on has 0 or 1 characters eventually, but it allows us to reverse a string of any length, up to infinity.</p>
 <p>Here’s another pattern: Serpenski’s Triangle. You start with an equilateral triangle, then split it into four congruent equilateral triangles, such that the middle part is cut out, and then repeat this for every single equilateral triangle inside, being able to go for an indefinite amount of layers:</p>
 <div class="quarto-figure quarto-figure-center">

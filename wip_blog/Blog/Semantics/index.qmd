@@ -1,48 +1,33 @@
 ---
-title: "Semantics Part 1: Philosophy of Language"
+title: "Semantics Part 1: How Meanings Work"
 author: "Vaishnav Sudarshan"
 date: "2025-4-11"
 categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff]
-abstract: We know how meanings are arranged and put together, but how are meanings actually understood?
+abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
 # Semantics Intro
 
 Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
 
-In a future blog post, I'll talk exclusively about semantics, but for right now, I'll talk about a specific aspect of it.
+In this blog post, we'll talk about the origins of semantics as well as modern semantics, and the next part will be all about how LLMs understand meanings.
 
 # Philosophy of Language
 
-The first people who pondered about how meaning comes from words were actually not linguists, but philosophers!
+The first people who pondered about how meaning comes from words were actually not linguists, but philosophers! Some of the ideas presented by them are now core concepts in semantics. 
+
+The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has nothing to do with meaning. 
+
+Gottlob Frege first created the distinction between sense and reference. 
+
+Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words 
 
 Ludwig Wittgenstein
+necessary trait
 sense and reference
 
-"No cat has two tails"
-"Every cat has one more tail than no cat"
-"Thus every cat has three tails"
+# Complications 
 
-# Semantic Relations
+## Negations
 
-# Applications In AI
-
-[_Natural Language Processing_](https://en.wikipedia.org/wiki/Natural_language_processing) (NLP) not only allows computers to get a sense of how meanings are related, but also provides us humans a nice way to visualize them. 
-
-I will talk about meanings in the context of NLP more in my AI blogs, but for right now, I'll provide a brief explanation. Basically, the AI user's input is split into *tokens*, which are kind of like morphemes except that they don't necessarily provide any grammatical meaning, instead just smaller meanings that are convenient for the AI to handle. 
-
-Every token in the language (in our case, English) is mapped to a vector (the specific details of how that works will be explained in a future blog post). These vectors' angles' closeness tries to portray semantic relations, but not exactly in the way you might think. 
-
-For example, synonyms and antonyms (words that mean similar things and words that mean the opposite, respectively) would not be pointing in completely opposite directions, but rather all approximately in a similar direction. 
-
-This is because, if you think it, "hot" and "cold" are still about temperatures, so they should point to a similar place. Something that has nothing to do with temperatures whatsoever, such as "skibidi" (although to be fair, "skibidi" has nothing to do with anything useful whatsoever), should point in the opposite direction. How exactly do the angles portray semantic closeness? The cosine of the angle does. 
-
-If the directions are close, then the cosine will be almost $1$, but if the directions are near-opposite, then the directions will be $-1$, so the higher number reflects that the meanings are closer. 
-
-The magnitudes of the vectors refer to how frequent or useful the words are, as well. 
-
-# How meanings are really trained
-
-## To be continued
-
-But what about context? If you say "wow, that's so impressive", you could mean that genuinely, or you could be sarcastic. Stay tuned for pragmatics.
+## Tense

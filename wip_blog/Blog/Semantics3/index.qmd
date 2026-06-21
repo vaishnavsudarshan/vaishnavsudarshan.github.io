@@ -1,8 +1,0 @@
----
-title: "Semantics Part 3: How LLMs Understand Words"
-author: "Vaishnav Sudarshan"
-date: "2025-4-11"
-categories:  [Cool Linguistics Stuff, Cool AI Stuff]
-abstract: We know how meanings are arranged and put together, but how are meanings actually understood?
----
-
