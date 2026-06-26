@@ -2,7 +2,8 @@
 title: "Why orbits have equal area in equal time"
 author: "Vaishnav Sudarshan"
 date: "2026-6-8"
-categories:  [Cool Physics Stuff, Cool Astronomy Stuff, Cool Math Stuff] 
+categories:  [Cool Physics Stuff] 
+tags: [Cool Astronomy Stuff]
 abstract: You may have heard the Kepler's law about planets sweeping equal areas in equal times, but this kind of sounds weird. Here's the proof.
 ---
 

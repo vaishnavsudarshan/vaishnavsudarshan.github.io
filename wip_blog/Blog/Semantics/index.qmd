@@ -2,7 +2,8 @@
 title: "Semantics Part 1: How Meanings Work"
 author: "Vaishnav Sudarshan"
 date: "2025-4-11"
-categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff]
+categories:  ["Cool Linguistics Stuff"]
+tags: ["Cool Philosophy Stuff", "Cool Logic Stuff"]
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
@@ -18,16 +19,24 @@ The first people who pondered about how meaning comes from words were actually n
 
 The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has nothing to do with meaning. 
 
-Gottlob Frege first created the distinction between sense and reference. 
+Gottlob Frege first created the distinction between sense and reference. Reference is the actual thing that the word *refers* to, hence the name. Meanwhile, sense is just what you express that reference as. 
 
-Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words 
+Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words can't be directly defined, but instead speakers can tell what concepts match a word well. This is called family resemblence. For example, what is a game? There's not a single answer that can always indicate whether something is a game or not. Chess, FizzBuzz, Monopoly, and soccer are all considered games, but you can't really find a defining feature that is common to every single example of a game. All examples of games have links to other examples, but not necessarily to every single example, forming a *family*, hence that name. 
 
 Ludwig Wittgenstein
+Gradients, prototype theory
 necessary trait
-sense and reference
 
-# Complications 
+
+
+# Interesting Ambiguities
 
 ## Negations
 
 ## Tense
+
+## Double Meanings
+
+# Formal Semantics
+
+# Semantic Drift

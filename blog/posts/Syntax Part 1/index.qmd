@@ -44,50 +44,50 @@ We can start the top node of the tree with S, which represents the sentence.
 
 graph TD
 
-S --> NP 
-S --> VP 
-VP --> V
+S ==> NP 
+S ==> VP 
+VP ==> V
 
-NP --> NP1
-NP1 --> Det
-NP1 --> N1
+NP ==> NP1["NP"]
+NP1 ==> Det
+NP1 ==> N1["N"]
 
-Det --> The
-N1 --> student
+Det ==> The
+N1 ==> student
 
-NP --> MP 
-MP --> Rel
-MP --> NP2
-MP --> VP1
+NP ==> MP 
+MP ==> Rel
+MP ==> NP2["NP"]
+MP ==> VP1["VP"]
 
-Rel --> who
+Rel ==> A["who"]
 
-VP1 --> V1
+VP1 ==> V1["V"]
 
-NP3 --> Pos
-Pos --> his
-NP3 --> N3
-N3 --> professor
+NP3 ==> Pos
+Pos ==> his
+NP3 ==> N3["N"]
+N3 ==> professor
 
-NP2 --> NP3
-NP2 --> MP1
+NP2 ==> NP3["NP"]
+NP2 ==> MP1
 
-MP1 --> Rel1
-Rel1 --> whom
+MP1 ==> Rel1["Rel"]
+Rel1 ==> B["who"]
 
-MP1 --> NP4
-MP1 --> VP2
+MP1 ==> NP4["NP"]
+MP1 ==> VP2["VP"]
 
-VP2 --> V2
+VP2 ==> V2["V"]
 
-NP4 --> Det1
-Det1 --> the
-NP4 --> N4
-N4 --> dean
+NP4 ==> Det1["Det"]
+Det1 ==> the
+NP4 ==> N4["N"]
+N4 ==> dean
 
-V2 --> hired
-V1 --> praised
-V --> left
+V2 ==> hired
+V1 ==> praised
+V ==> left
 
 %% -----------------------
 %% STYLES
@@ -138,24 +138,24 @@ Let's look at the first sentence. "Time flies like an arrow" can be broken down 
 
 graph TD
 
-S --> NP
-S --> VP
+S ==> NP
+S ==> VP
 
-NP --> N
-N --> Time
+NP ==> N
+N ==> Time
 
-VP --> V
-V --> flies
-VP --> MP
+VP ==> V
+V ==> flies
+VP ==> MP
 
-MP --> Prep
-Prep --> like
-MP --> NP1
+MP ==> Prep
+Prep ==> like
+MP ==> NP1["NP"]
 
-NP1 --> Det
-NP1 --> N1
-Det --> an
-N1 --> arrow
+NP1 ==> Det
+NP1 ==> N1["N"]
+Det ==> an
+N1 ==> arrow
 
 %% -----------------------
 %% STYLES
@@ -200,21 +200,21 @@ Meanwhile, the second sentence can be broken down into the noun phrase, "Fruit f
 
 graph TD
 
-S --> NP
-NP --> M
-NP --> N
-M --> Fruit
-N --> flies
+S ==> NP
+NP ==> M
+NP ==> N
+M ==> Fruit
+N ==> flies
 
-S --> VP
-VP --> V
-V --> like
+S ==> VP
+VP ==> V
+V ==> like
 
-VP --> NP1
-NP1 --> Det
-Det --> a
-NP1 --> N1
-N1 --> banana
+VP ==> NP1["NP"]
+NP1 ==> Det
+Det ==> a
+NP1 ==> N1["N"]
+N1 ==> banana
 
 %% -----------------------
 %% STYLES
@@ -254,7 +254,7 @@ Now, look at this code snippet in Python:
 def reverse(s): # return a String that is the reverse of s
     if len(s) == 1: # base case: if the string has 1 character, 
         return s # it is inherently the reverse of itself, so we can just return it
-    return s[-1] + reverse(s[0:-1]) # move the last letter to the beginning and find the reverse of the rest
+    return s[-1] + reverse(s[:-1]) # move the last letter to the beginning and find the reverse of the rest
 ```
 
 As you can guess from the name of this function, it reverses a string by taking the last letter, the first letter, and the reverse of the middle part in between. As a result, it calls itself. Again, there is a base case, which is that the string being called on has 0 or 1 characters eventually, but it allows us to reverse a string of any length, up to infinity.
@@ -329,12 +329,12 @@ This can be represented with the following tree:
 
 ``` {mermaid}
 graph TD
-Assignment --> x["x"]
-Assignment --> Addition
-Addition --> 3["3"]
-Addition --> Multiplication
-Multiplication --> 5["5"]
-Multiplication --> 2["2"]
+Assignment ==> x["x"]
+Assignment ==> Addition
+Addition ==> 3["3"]
+Addition ==> Multiplication
+Multiplication ==> 5["5"]
+Multiplication ==> 2["2"]
 ```
 
 There is a very similar recursive structure here, because there is an operator (multiplication) inside of another operator (addition) inside of yet another operator (assignment). If you've ever wondered how computers understand order of operations, recursive syntax trees are how - blindly going left to right might cause a mistake, but using a syntax tree is basically foolproof. 
