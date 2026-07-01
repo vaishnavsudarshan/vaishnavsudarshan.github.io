@@ -1,7 +1,7 @@
 ---
 title: "Historical Linguistics Part 2: Language Evolution, The Comparative Method and Language Families"
 author: "Vaishnav Sudarshan"
-date: "2026-4-15"
+date: "2026-6-30"
 categories:  [Cool Linguistics Stuff]
 tags: [Cool History, Cool Logic Stuff, Cool Geography Stuff]
 image: "hundred.png"
