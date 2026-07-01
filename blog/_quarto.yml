@@ -3,7 +3,7 @@ project:
   output-dir: ../docs
 
 website:
-  title: "Vaishnav Sudarshan's Blog on Linguistics, Math and AI"
+  title: "Vaishnav Sudarshan's Blog on Cool Stuff"
   navbar:
     right:
       - about.qmd

@@ -1,5 +1,5 @@
 ---
-title: "Abstract Derivatives Part 2"
+title: "Abstract Derivatives Part 3"
 author: "Vaishnav Sudarshan"
 date: "2025-11-23"
 categories:  [Cool Math Stuff]

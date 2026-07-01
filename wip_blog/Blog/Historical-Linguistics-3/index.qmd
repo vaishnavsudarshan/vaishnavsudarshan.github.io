@@ -1,13 +1,8 @@
 ---
-title: "Historical Linguistics Part 3: Language Families, Dialects, and Stupid Theories"
+title: "Historical Linguistics Part 3: Stupid Theories"
 author: "Vaishnav Sudarshan"
 date: "2025-1-29"
 categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff] 
 abstract: If you thought you were alone in having annoying younger siblings, wait until you see languages and their annoying younger siblings. It doesn't help that humans are also really bad at classifying them.
 ---
 
-# What makes a language/dialect?
-
-## My own interpretation that everyone has their own languages that just overlap similarly enough
-
-### Personal example, I adhere to standard english decently, but for me, "I were to" sounds ungrammatical
