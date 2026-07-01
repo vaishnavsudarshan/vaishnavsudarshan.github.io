@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2026-06-08">
+<meta name="dcterms.date" content="2026-04-15">
 
-<title>Why orbits have equal area in equal time – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
+<title>Historical Linguistics Part 2: Language Evolution, The Comparative Method and Language Families – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,9 +42,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,37 +69,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -144,10 +115,9 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Why orbits have equal area in equal time</h1>
+      <h1 class="title">Historical Linguistics Part 2: Language Evolution, The Comparative Method and Language Families</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Physics Stuff</div>
-                <div class="quarto-category">Cool Math Stuff</div>
+                <div class="quarto-category">Cool Linguistics Stuff</div>
               </div>
                   </div>
   </div>
@@ -165,7 +135,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Originally Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 8, 2026</p>
+        <p class="date">April 15, 2026</p>
       </div>
     </div>
     
@@ -181,7 +151,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      You may have heard the Kepler’s law about planets sweeping equal areas in equal times, but this kind of sounds weird. Here’s the proof.
+      How did old people figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
     </div>
   </div>
   
@@ -198,22 +168,206 @@ window.Quarto = {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Usually when you learn the laws of physics, it’s something that instantly makes sense. The first law of thermodynamics is that energy is conserved, duhhh! Newton’s second law is that <span class="math inline">\(F_{net} = ma\)</span>, duhhh! But then Kepler’s second law is that when planets are in orbit, which are usually eliptical, the area is swept out at a constant rate. Huhhh? That sounds so random! However, there is a pretty nice reason for why this is.</p>
+<p>Imagine you see the following Romanized words for “three” in a bunch of different languages:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Language</th>
+<th>Word for “three”</th>
+<th>IPA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>English</td>
+<td>three</td>
+<td>[θɹiː]</td>
+</tr>
+<tr class="even">
+<td>German</td>
+<td>drei</td>
+<td>[dʁaɪ]</td>
+</tr>
+<tr class="odd">
+<td>Swedish</td>
+<td>tre</td>
+<td>[tɾe]</td>
+</tr>
+<tr class="even">
+<td>Latin</td>
+<td>trēs</td>
+<td>[ˈtreːs]</td>
+</tr>
+<tr class="odd">
+<td>French</td>
+<td>trois</td>
+<td>[tʁwa]</td>
+</tr>
+<tr class="even">
+<td>Sanskrit</td>
+<td>tráyas</td>
+<td>[ˈtr̩ajəs]</td>
+</tr>
+<tr class="odd">
+<td>Romani</td>
+<td>trin</td>
+<td>[tɾin]</td>
+</tr>
+<tr class="even">
+<td>Bengali</td>
+<td>tin</td>
+<td>[tɪn]</td>
+</tr>
+<tr class="odd">
+<td>Tajik</td>
+<td>se</td>
+<td>[se]</td>
+</tr>
+<tr class="even">
+<td>Ancient Greek</td>
+<td>treîs</td>
+<td>[treːs]</td>
+</tr>
+<tr class="odd">
+<td>Russian</td>
+<td>tri</td>
+<td>[trʲi]</td>
+</tr>
+<tr class="even">
+<td>Polish</td>
+<td>trzy</td>
+<td>[tʂɨ]</td>
+</tr>
+<tr class="odd">
+<td>Irish</td>
+<td>trí</td>
+<td>[tɾʲiː]</td>
+</tr>
+</tbody>
+</table>
+<p>Most of these look very similar. They are definitely not just loanwords, because this would also be very crazy historically - a lot of these languages never even contacted each other. Additionally, loanwords would have to fit the phonology of the language borrowing them, but those aren’t the sound changes that happened. Loanwords are typically also not for core, fundamental cultural concepts like numbers, but rather some idea the speakers didn’t have access to before.</p>
+<p>This means that these words must be related, which means they come from a common ancestor language that split and diverged into all of these different languages.</p>
+<p>A simpler, more tangible example is the Romance languages, which most people know come from Latin. For example, the word for “three” in Spanish is “tres”, in Italian is “tre”, in French is “trois”, and in Romanian is “trei”. These are all very similar, and they all come from the Latin word “trēs”. As Latin speakers spread out, their forms and pronounciations changed over time.</p>
+<p>Now, you wonder what the common ancestor word for “three” even is. However, this feels like a question that is way too open-ended just by looking at the words, because with enough creativity or weirdness, you could probably evolve any word into any other word. However, there is a certain technique that is used to reconstruct many such ancestor words to a pretty confident degree of accuracy, called the comparative method. And if you had many more words and many more languages, you could even be able to reconstruct the entire ancestor language and even understand a bit about the culture of its speakers.</p>
+<section id="proto-languages" class="level2">
+<h2 class="anchored" data-anchor-id="proto-languages">Proto-Languages</h2>
+<p>So, what is this kind of language that all these words come from? It is called a proto-language, which means it has never been directly observed in speech or writing, but instead was reconstructed by linguists using the comparative method. While its grammar and vocabulary aren’t necessarily 100% correct, because no one knows its exact form, its existence is almost guaranteed since it was able to be fully reconstructed.</p>
+<p>In this case, this language is called Proto-Indo-European. It is estimated to have been spoken around 6000 years ago in the Eurasian Steppe.</p>
+<p>The name of a language family, which is a group of languages that are all related to each other, usually shares a name with of the proto-language. For example, the Indo-European language family descends from Proto-Indo-European, and the Dravidian language family descends from Proto-Dravidian.</p>
+<p>Proto-languages can also be the ancient, reconstructed ancestor of any group of languages, not just the whole family. For example, the ancestor of all Germanic languages, like English, German, and Swedish, is called Proto-Germanic.</p>
+<p>Another strange example is of the Romance languages. Even though we know they are all descended from Latin, there is still a proto-language called Proto-Romance, which is in between the Latin spoken by the elites in the Roman Empire and the modern Romance languages. It’s obtained using the comparative method on all the living Romance languages to find the most recent common ancestor. So, proto-languages can even be spoken after a known, recorded language.</p>
 </section>
-<section id="proof" class="level1">
-<h1>Proof</h1>
-<p>Basically, what we seek to prove is that <span class="math inline">\(\frac{dA}{dt}\)</span> is constant, where <span class="math inline">\(A\)</span> is the area swept out by the planet.</p>
-<p><a href="dur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram of what we seek"><img src="dur.png" class="img-fluid" alt="Diagram of what we seek"></a>.</p>
-<p>First, we need to find <span class="math inline">\(dA\)</span>, a tiny change in the area swept out, in relation to the other tiny changes like in position or time. The planet is moving in an ellipse, so the distance from the center keeps on changing. For a tiny change in position <span class="math inline">\(\vec{dx}\)</span>, the distance from the center has barely changed, and we can call this distance <span class="math inline">\(\vec{r}\)</span>. The reason for this is because the new distance is <span class="math inline">\(\vec{r} + d\vec{r}\)</span>, but since <span class="math inline">\(d\vec{r}\)</span>, the change in the radius, is infinitesimal, this is the same as <span class="math inline">\(\vec{r}\)</span>.</p>
-<p><span class="math inline">\(\vec{dx}\)</span> is basically the length of the arc made by this tiny change in time, because the curve is zoomed in so much that it looks like a straight line. The area <span class="math inline">\(dA\)</span> formed by this sector, which is approximately a triangle with two of the side lengths being <span class="math inline">\(|\vec{r}|\)</span> and <span class="math inline">\(|\vec{dx}|\)</span>, is <span class="math inline">\(\frac{1}{2} |\vec{r}| |\vec{dx}| \sin(\theta)\)</span>, where <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\vec{r}\)</span> and <span class="math inline">\(\vec{dx}\)</span>. This is just a basic formula in geometry for the area of a triangle given two sides and the angle between them. You might realize that this is the same as <span class="math inline">\(\frac{1}{2} |\vec{r} \times \vec{dx}|\)</span>. This is because the area of the parallelogram formed by two vectors is the magnitude of their cross product, and the area of this triangle is half of that.</p>
-<p>Because <span class="math inline">\(\vec{dx} = \vec{v} dt\)</span>, where <span class="math inline">\(\vec{v}\)</span> is the velocity of the planet, and also <span class="math inline">\(dt\)</span> is a scalar (which means we can remove it from the magnitude), we can substitute this in to get <span class="math inline">\(dA = \frac{1}{2} |\vec{r}| |\vec{v}| dt \sin(\theta)\)</span>, so <span class="math inline">\(\frac{dA}{dt} = \frac{1}{2} |\vec{r}| |\vec{v}| \sin(\theta)\)</span>. Similar to <span class="math inline">\(\vec{r}\)</span>, <span class="math inline">\(\vec{v}\)</span> doesn’t change after an infinitesimal change in time <span class="math inline">\(dt\)</span>, because again, <span class="math inline">\(\vec{v} + d\vec{v}\)</span> is infinitesimally close to <span class="math inline">\(\vec{v}\)</span>.</p>
-<p>Remember that the angular momentum <span class="math inline">\(L\)</span> is defined as <span class="math inline">\(L = m \vec{r} \times \vec{v}\)</span>, where <span class="math inline">\(m\)</span> is the mass of the planet. So, <span class="math inline">\(|L| = m |\vec{r}| |\vec{v}| \sin(\theta)\)</span></p>
-<p>We can substitute this in to get <span class="math inline">\(\frac{dA}{dt} = \frac{|L|}{2m}\)</span>.</p>
-<p>Because angular momentum is conserved, and the mass is constant, <span class="math inline">\(\frac{dA}{dt}\)</span> is constant, which is what we wanted to prove.</p>
+</section>
+<section id="the-comparative-method-and-backtracking-sound-changes" class="level1">
+<h1>The Comparative Method and Backtracking Sound Changes</h1>
+<p>I’ve mentioned that the comparative method is how linguists reconstruct proto-languages, but how does it work?</p>
+<p>An important fact is that sound changes are regular, so typically, a certain rule like “a [k] sound turns into an [h] sound” will apply to all words in a language, and not just some of them. This is what allows us to backtrack sound changes, which is the main technique used in the comparative method. This, by the way, was one of the sound changes from Grimm’s Law, which I talked about in the previous post.</p>
+<p>As a fun note, you can also find out timelines using sound changes. For example, in Arabic, there was a sound change where [p] turned into [f], and this time period is known. Nowadays, since the [p] sound doesn’t exist, speakers might borrow words with that sound but pronounce it like a [b]. So, if an Arabic loanword is pronounced as [b] while other languages pronounce that same word with a [p], then we know that this word was borrowed after the sound change, because if it was borrowed before, then it would be pronounced as an [f] instead.</p>
+<p>Also, the Indo-European languages are usually classified into “centum” (Latin) or “satem” (Avestan), based on the first consonant in their word for “hundred”. The Indo-Iranian, Armenian, and Balto-Slavic languages underwent a sound change where the *ḱ was pronounced as [s]. The Italic, Hellenic, and Celtic languages have the first consonant in “hundred” pronounced like [k], so we know that they split off before that sound change happened (there’s not any known sound change that would have brought the [s] back to the [k], otherwise). The Germanic languages are where we have to apply multiple sound laws. The first consonant in “hundred” (or “Hundert” in German) is pronounced as [h]. There is no law changing [s] to [h] for Germanic languages (but this does exist for Iranian languages). However, Grimm’s Law does bring *k to [h]. Therefore, we can conclude that the Germanic languages split off before the sound change that shaped the satem languages.</p>
+<p>Here is a diagram showing how the word for “hundred” evolved through the different Indo-European languages. This is a much smaller diagram, only showing a few selected branches and languages. It also points out some of the notable sound changes.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+PIE["PIE: *ḱm̥tóm"] --&gt; Centum["Centum Languages"]
+PIE --&gt;|*k-&gt;s| Satem["Satem Languages"]
+Satem --&gt; PBS["Proto-Balto-Slavic: *śimtas"]
+Satem --&gt; PII["Proto-Indo-Iranian: *ćatám"]
+PII --&gt; Iranian
+Iranian --&gt; Avestan["Avestan: satem"]
+PII --&gt; Indo-Aryan
+Indo-Aryan --&gt; Sanskrit["Sanskrit: śatam"]
+PBS --&gt; Baltic
+PBS --&gt; Slavic
+Baltic --&gt; Lithuanian["Lithuanian: šimtas"]
+Slavic --&gt; Russian["Russian: sto"]
+Centum --&gt; Italic
+Centum --&gt; Germanic
+Italic --&gt; Latin["Latin: centum"]
+Latin --&gt;|*k-&gt;s| Spanish["Spanish: cien"]
+Germanic --&gt;|*k-&gt;h| PG["Proto-Germanic: *hundą"]
+PG --&gt; English["English: hundred"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Note that the Romance languages, descended from Latin, pronounced it as [s], not [k] - it’s the same sound change that caused the centum-satem split, but it happened much later. Additionally, the satem languages don’t necessarily pronounce the first consonant as exactly [s], but it is generally a voiceless fricative in around that area, like [ʃ] for instance.</p>
+<p>Some sound changes are much more likely to occur than others. For example, it’s much more likely for a /t/ sound to turn into a /tʃ/ sound if it’s near an /i/ or a /j/ sound, than if it is near an /o/ or an /a/ sound, because of a trend called palatalization. Also, /t/ probably won’t turn into a /ɬ/ near an /i/ or a /j/. This is how the Latin word “leite” turned into the Spanish word “leche”.</p>
+<p>Typically, simplifications or reductions won’t be reversed, because that information is gone. This is why the word “eau” in French won’t turn back into “aqua” in Latin, because a lot of information was lost, so if we know that either French or Latin is the ancestor of the other, we can tell that Latin is the ancestor of French.</p>
+<p>Looking for corresponding phonemes cross-linguistically and across many cognates is the first step. For example, if you look across Tamil, Telugu, and Kannada to try an reconstruct Proto-South-Dravidian (a descendant of Proto-Dravidian), you might notice that wherever Telugu and Kannada end in a /u/, Tamil reduces this final vowel and turns it into the null phoneme, /∅/.</p>
+<p>Then, you try to figure out which sound change is the most likely to have happened, which kind of feels like a pretty hard puzzle. With enough data, you can reconstruct common vocabulary for the ancestor language without any logical contradictions.</p>
+<p>Sometimes there are multiple possible reconstructions. Since they are all valid from the data alone, you need to rely on other tools, like how likely the sound changes are cross-linguistically.</p>
+<section id="figuring-out-the-culture-of-the-speakers" class="level2">
+<h2 class="anchored" data-anchor-id="figuring-out-the-culture-of-the-speakers">Figuring out the culture of the speakers</h2>
+<p>Reconstructions from cognates can tell us a lot how the speakers lived. For example, across the Indo-European languages, there are cognates for “wheel”, like “cyclos” (related to “cycle”) in Greek, “chakra” in Sanskrit, and the word “wheel” itself. The reconstructed word is *kʷékʷlos in Proto-Indo-European. While it’s possible that semantic drift happened, and the original word meant something else, it’s pretty unlikely, since that would imply that the exact same drift happened in every single Indo-European language, which is nearly impossible. Also, there are reconstructed words for many other transportation technology related vocabulary as well, like “axle”. So, the Proto-Indo-European speakers, at least at some point, probably had wheels.</p>
+<p>One extra detail is that Anatolian languages did NOT have a word for wheel that was related to the other Indo-European words for “wheel”. Anatolian languages were discovered after Proto-Indo-European was already reconstructed using non-Anatolian languages. Therefore, many people believe that that the Anatolian languages (like Hittite or Luwian) split off from Proto-Indo-European the earliest before Indo-European speakers had access to wheels. This is why some linguists prefer to call the language that gave rise to both Proto-Anatolian and the other Indo-European branches as Proto-Indo-Anatolian, having Proto-Indo-European refer solely to the ancestor of non-Anatolian Indo-European languages. However, it’s possible that Anatolian just obtained a different word for “wheel” from some other origin, but its ancestral speakers always had wheels.</p>
+<p>This works for mythology too. The word “Zeus” is the shortened form of “Zeus Pater”, meaning “Sky Father” in Greek. The Latin word “Jupiter”, representing the same god, also means the same and is etymologically related to it. Even the Hindu sky god Indra’s father’s name was “Dyaus Pitar”, again meaning the same thing. The Norse god “Tyr” is also derived from the same root for “sky”. So, the Proto-Indo-European speakers probably had a sky father god as well, whose reconstructed name was “*Dyēus Phtḗr”.</p>
+</section>
+<section id="representing-sound-changes" class="level2">
+<h2 class="anchored" data-anchor-id="representing-sound-changes">Representing Sound Changes</h2>
+<p>We can represent sound changes by writing the original and altered pronunciation of a sound, and also including the environment where the change takes place. This looks pretty similar to representing the allophonic variation of a phoneme.</p>
+<p>For example, Proto-Dravidian had a *k before unbacked vowels. In Tamil, this sometimes changed to a c (pronounced as [s]) if the consonant after the unbacked vowel wasn’t retroflex.</p>
+<p>We can represent this as the following rule:</p>
+<p>*k –&gt; c / _ V[-BACKED] C[-RETROFLEX]</p>
+</section>
+</section>
+<section id="order-of-sound-changes" class="level1">
+<h1>Order of sound changes</h1>
+<p>If you have multiple sound changes, the order in which they take place matters a lot. For a very simple example, take these two hypothetical sound changes:</p>
+<p>Suppose that in Proto-X, the word for “cat” is *zop.</p>
+<p>To get that word in the modern language X (zombe), we know there are three sound changes that happened:</p>
+<ol type="1">
+<li>Final voiceless stops become voiced (zob).</li>
+<li>Final voiced stops have an “e” added after them (zobe).</li>
+<li>Vowels before voiced stops have a nasal added right after them (zombe).</li>
+</ol>
+<p>Now, see what happens if we put 2, then 3, then 1:</p>
+<p>First, no change, because the final consonant isn’t voiced. Second, no change, because there is no vowel before a voiced stop. Third, the final consonant becomes voiced, so the word is “zob”.</p>
+<p>Thus, due to the nature of conditionals in sound changes, changing the order of sound changes can lead to different outcomes. In this sense, finding the right order is heavily reliant on logic.</p>
+<p>It’s not always true that the order of sound changes matters, if the sound changes are independent of each other and can only build on each other, not mutually interfering. For example, if you start with the sound *ɸ, you can have these sound changes, and all 5040 rearrangements of them will lead to the same result:</p>
+<ol type="1">
+<li>fricatives become stops</li>
+<li>voiceless consonants become voiced</li>
+<li>unaspirated consonants become aspirated</li>
+<li>ungeminated consonants become geminated</li>
+<li>add an “a” after all consonants</li>
+<li>add a “u” before all consonants</li>
+<li>bilabial consonants become alveolar</li>
+</ol>
+<p>There is a really easy NACLO problem exactly like this, except for a real language, called <a href="https://www.naclo.org/resources/problems/2007/N2007-G.pdf">Rewrite me badd</a>.</p>
+</section>
+<section id="proving-language-relationships" class="level1">
+<h1>Proving Language Relationships</h1>
+<p>At first, we don’t know for sure if languages are related or not. One of the most reliable ways to prove that they are related is to try and reconstruct a proto-language including that language, and see if it can be done completely and without much of a stretch.</p>
+<p>This isn’t always a simple yes or no. The Niger-Congo family is hypothesized to link the Atlantic-Congo and Mande language families. Although Proto-Niger-Congo has not been reconstructed apart from some vocabulary, the theory is still relatively strongly believed in.</p>
+<p>Some people who weren’t quite linguists, such as Nicolaes Witsen and Philip Johan von Strahlenberg, believed that the Turkic, Mongolic, and Tungusic languages (Manchu, the language of the early part of the Qing Dynasty, is a Tungusic language) were all part of the same language family, a hypothetical Altaic family. The philologist Matthias Castrén even went so far as to add the Uralic languages as a separate branch too. The mainstream pro-Altaic view sometimes added Japonic and Koreanic languages (mainly Japanese and Korean respectively, but they have smaller languages too) to the proposed family as well, making it the Macro-Altaic hypothesis.</p>
+<p>The basis in this theory was mainly due to similarities in syntax, like how they all had agglutinative morphology. They did have some shared vocabulary that appeared to be basic, like body parts. However, there was simply just not enough data to reconstruct a proto-language. Therefore, the Altaic hypothesis was not proven. Some linguists argue that technically, all languages, even English and Chinese, could be related, but we just have no way of knowing since they have diverged so much.</p>
+</section>
+<section id="sprachbunds" class="level1">
+<h1>Sprachbunds</h1>
+<p>In fact, there is a much more convincing explanation for the similarities between the Altaic languages, and this is that they form a sprachbund instead. A sprachbund means that languages that are not necessarily related can influence each other, including both loanwords and grammatical structure, due to their geographical proximity. Sprachbunds typically get closer and closer over time, because of their continued contact, whereas language families actually tend to diverge over time because they spread out. The Altaic languages showed signs of the former, because the early forms of Mongolic, Turkic, and Tungusic languages differed more than they do now, and there is no evidence of them diverging at some point.</p>
+<p>It is possible for sprachbunds to consist of related languages. For example, the Balkan sprachbund contains Greek, Bulgarian, Serbain, Albanian, Romanian, Romani, and some dialects of Turkish. Apart from Turkish (which is, and you’ll never guess this, a Turkic language), the others are all Indo-European. The similarities between them (articles as postpositions, evidentiality, shared cases, loanwords/cliques, and a lot more) cannnot be explained because they are Indo-European - that would mean the Romance, Slavic, Hellenic, Albanian, and even Indo-Iranian languages all share a pretty close common ancestor, but that contradicts how ancient the centum-satem split is, and the Balkan languages are on either side of it.</p>
+</section>
+<section id="conservative-languages" class="level1">
+<h1>Conservative Languages</h1>
+<p>Some people might be surprised that Sanskrit is more mutually intelligible with Lithuanian than it is with Hindi, even though Hindi is a direct descendant of Sanskrit, while Lithuanian isn’t even Indo-Iranian.</p>
+<p>For example, look at the sentence “your gift is the fire”.</p>
+<p>Sanskrit: तव दानं अग्निः अस्ति (tava dānaṃ agniḥ)</p>
+<p>Lithuanian: tavo dovana ugnis</p>
+<p>Hindi: तुम्हारा उपहार आग है (tumhārā upahār āg hai)</p>
+<p>As you can see, the Sanskrit and Lithuanian sentences both have a similar structure, and the vocabulary appears more similar. While Hindi has cognates for “your” and “fire”, they are less recognizeable than the Lithuanian ones. Also, the copula (the word for “is”) is mandatory in Hindi, because it is more analytic. Meanwhile, since Sanskrit and Lithuanian are more synthetic, the parts of speech are built into the words themselves, so the copula is not needed and used more for emphasis (they are asti and yra, respectively). Also, Lithuanian happens to have SVO word order while Sanskrit and Hindi have SOV word order, but Sanskrit and Lithuanian both have flexible word order.</p>
+<p>So why is Lithuanian so similar to Sanskrit? It’s because Lithuanian is pretty conservative, or resistant to change.</p>
+<p>Sanskrit, being an ancient language, is relatively close to Proto-Indo-European, because it hasn’t had that much time to evolve compared to modern languages. While it was alive, it still was conservative, because it was heavily standardized.</p>
+<p>Lithuanian, on the other hand, is still spoken natively to this day. However, the Baltic countries were relatively isolated from the rest of Europe and all the conquests that happened that caused language change, so their languages (excluding Estonian, which is Uralic) have preserved many features from Proto-Indo-European, and innovated new features relatively slowly. Because of this, Lithuanian and Sanskrit are both similar to Proto-Indo-European, and therefore similar to each other.</p>
+<p>Tamil is another example of a conservative language. It is relatively close to Proto-Dravidian, compared to Telugu and Kannada, which have innovated more. This is why ancient Tamil literature is still understandable to modern Tamil speakers. However, Tamil has huge diglossia between the formal variety learned in school and spoken on the news, and the colloquial variety spoken on the streets and at home. The formal variety is the one that is more conservative. I only understand the colloquial variety, which is why ancient Tamil literature sounds like an alien language to me. I’m going to write a future blog post about languages and dialects, but this is a small taste of that.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>Now we know where Kepler’s second law come from, and stay tuned for more physics and astronomy derivations!</p>
+<p>Now, we know how proto languages are reconstructed, and how to disprove language family claims. However, some linguists didn’t get the memo that theories about language families must be realistic, so that’s what part 3 is gonna be all about.</p>
 
 
 </section>
@@ -648,38 +802,6 @@ window.Quarto = {
   loadGiscus();
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

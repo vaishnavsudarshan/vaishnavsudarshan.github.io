@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,9 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
 
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 25, 2026</p>
+        <p class="date-modified">June 30, 2026</p>
       </div>
     </div>
       
@@ -184,25 +184,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Upon finally reaching India, many Europeans noticed similarities between the local Indian languages and their own European languages. You can also see this yourself - the Hindu god of fire’s name is “Agni”, and in English, we have the word “ignite”. “Ignite” is from Latin, which means the mostly Romance-speaking Europeans were likely able to notice this with Indian languages. This is where the concept of <em>cognates</em> came from - words in different languages that have a common ancestor.</p>
 <p>Observations like these led the Europeans to hypothesize that all ancient European languages like Latin or Greek came from Sanskrit. At this point, the Europeans were very confused. They used to think that all languages were descended from Hebrew. Lots of fringe theories emerged from the discovery of Indo-European languages, like the idea that Germanic tribes were from Persia. I will probably talk about these theories in a future post, but for now, let’s just say that they would all make you want to cringe.</p>
 <p>Finally, a linguist from Germany <a href="https://en.wikipedia.org/wiki/Franz_Bopp">Franz Bopp</a> figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called “Proto-Indo-European”. To do this, he invented the comparative method, which is what we will talk about in the next part.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-A["Proto-Indo-European"] --&gt; B["Proto-Anatolian"]
-B --&gt; Hittite
-B --&gt; Luwian
-A --&gt; C["Proto-Indo-Tocharian"]
-C --&gt; D["Proto-Tocharian"]
-D --&gt; E["Tocharian A"]
-
-</pre>
+<p>The modern Indo-European language family tree is shown below. As you can see from how complicated it is, Indo-European is the most documented and studied language family, and it’s also quite widespread, which is why other language family trees don’t have the same level of detail.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="ie.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Indo-European language family tree"><img src="ie.png" class="img-fluid figure-img" alt="Indo-European language family tree"></a></p>
+<figcaption>Indo-European language family tree</figcaption>
+</figure>
 </div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<p>The original image is from <a href="https://www.worldhistory.org/image/1028/indo-european-language-family-tree/">here</a>.</p>
 </section>
 </section>
 <section id="warning-about-cognates" class="level2">
@@ -217,6 +206,7 @@ D --&gt; E["Tocharian A"]
 <p>The main idea is that the /kʷ/ in “aqua” gradually turned into a /w/, since the /k/ sound got weakened, so it sounded more like /awa/. After that, the /w/ sound got weakened as well, and it sounded more like /au/. Finally, the /au/ sound got weakened to /o/, which is how we got “eau” (French also preserves its older spelling, which means at one point it really did used to sound something like “eeyeawoo”).</p>
 <p>These sound changes are pretty regular in a single language or language family, and at least have patterns cross-linguistically. For example, it’s more likely for a /tʃ/ to emerge from a /t/ that is near an /i/ or a /j/ than the other way around, because of a trend called palatalization, which is why in Portuguese, the word for “milk” is “leite”, but is pronouned “leiche” (Portuguese preserves historical spelling like French does).</p>
 <p>One of the most famous sound changes is Grimm’s law. It states that in Germanic languages, the /p/ sound that is found in other Indo-European languages turned into an /f/ sound, the /t/ sound was turned into a /θ/ sound, and the /k/ sound was turned into an /h/ sound. That’s why in English, we say “father”, “three”, and “heart”, while in the Vatican, Latin speakers say “pater”, “tres”, and “cor”.</p>
+<p>This will be explained in more detail in part 2.</p>
 </section>
 </section>
 <section id="to-be-continued" class="level1">
@@ -656,6 +646,38 @@ D --&gt; E["Tocharian A"]
   loadGiscus();
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

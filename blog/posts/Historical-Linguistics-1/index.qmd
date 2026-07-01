@@ -4,6 +4,7 @@ author: "Vaishnav Sudarshan"
 date: "2026-1-29"
 categories:  [Cool Linguistics Stuff]
 tags: [Cool History Stuff]
+image: "ie.png"
 abstract: How did people suddenly start thinking about languages scientifically? What were the results of this primary branch of linguistics? 
 ---
 
@@ -31,18 +32,13 @@ Upon finally reaching India, many Europeans noticed similarities between the loc
 
 Observations like these led the Europeans to hypothesize that all ancient European languages like Latin or Greek came from Sanskrit. At this point, the Europeans were very confused. They used to think that all languages were descended from Hebrew. Lots of fringe theories emerged from the discovery of Indo-European languages, like the idea that Germanic tribes were from Persia. I will probably talk about these theories in a future post, but for now, let's just say that they would all make you want to cringe. 
 
-Finally, a linguist from Germany [Franz Bopp](https://en.wikipedia.org/wiki/Franz_Bopp) figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next part. 
+Finally, a linguist from Germany [Franz Bopp](https://en.wikipedia.org/wiki/Franz_Bopp) figured out that Sanskrit, Latin, Greek, and many other languages were all descended from a common ancestor language, which he called "Proto-Indo-European". To do this, he invented the comparative method, which is what we will talk about in the next part.
 
-```{mermaid}
-graph TD
-A["Proto-Indo-European"] --> B["Proto-Anatolian"]
-B --> Hittite
-B --> Luwian
-A --> C["Proto-Indo-Tocharian"]
-C --> D["Proto-Tocharian"]
-D --> E["Tocharian A"]
+The modern Indo-European language family tree is shown below. As you can see from how complicated it is, Indo-European is the most documented and studied language family, and it's also quite widespread, which is why other language family trees don't have the same level of detail. 
 
-```
+![Indo-European language family tree](ie.png){.lightbox}
+
+The original image is from [here](https://www.worldhistory.org/image/1028/indo-european-language-family-tree/). 
 
 ## Warning About Cognates
 
@@ -61,6 +57,8 @@ The main idea is that the /kʷ/ in "aqua" gradually turned into a /w/, since the
 These sound changes are pretty regular in a single language or language family, and at least have patterns cross-linguistically. For example, it's more likely for a /tʃ/ to emerge from a /t/ that is near an /i/ or a /j/ than the other way around, because of a trend called palatalization, which is why in Portuguese, the word for "milk" is "leite", but is pronouned "leiche" (Portuguese preserves historical spelling like French does). 
 
 One of the most famous sound changes is Grimm's law. It states that in Germanic languages, the /p/ sound that is found in other Indo-European languages turned into an /f/ sound, the /t/ sound was turned into a /θ/ sound, and the /k/ sound was turned into an /h/ sound. That's why in English, we say "father", "three", and "heart", while in the Vatican, Latin speakers say "pater", "tres", and "cor".
+
+This will be explained in more detail in part 2.
 
 # To be continued
 

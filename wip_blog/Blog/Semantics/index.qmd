@@ -1,9 +1,9 @@
 ---
-title: "Semantics Part 1: How Meanings Work"
+title: "Semantics Part 1: Theory behind semantics"
 author: "Vaishnav Sudarshan"
 date: "2025-4-11"
-categories:  ["Cool Linguistics Stuff"]
-tags: ["Cool Philosophy Stuff", "Cool Logic Stuff"]
+categories:  [Cool Linguistics Stuff]
+tags: [Cool Philosophy Stuff, Cool Logic Stuff]
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
@@ -11,7 +11,7 @@ abstract: We know how meanings are arranged and put together, but how are they a
 
 Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
 
-In this blog post, we'll talk about the origins of semantics as well as modern semantics, and the next part will be all about how LLMs understand meanings.
+In this blog post, we'll talk about the origins of semantics, the next part will be about modern semantics, and the final part will be all about how LLMs understand meanings.
 
 # Philosophy of Language
 
@@ -19,24 +19,12 @@ The first people who pondered about how meaning comes from words were actually n
 
 The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has nothing to do with meaning. 
 
-Gottlob Frege first created the distinction between sense and reference. Reference is the actual thing that the word *refers* to, hence the name. Meanwhile, sense is just what you express that reference as. 
+Gottlob Frege first created the distinction between sense and reference. Reference is the actual thing that the word *refers* to, hence the name. Meanwhile, sense is the ideas and concepts behind what you express that reference as, and how you perceive it. 
 
 Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words can't be directly defined, but instead speakers can tell what concepts match a word well. This is called family resemblence. For example, what is a game? There's not a single answer that can always indicate whether something is a game or not. Chess, FizzBuzz, Monopoly, and soccer are all considered games, but you can't really find a defining feature that is common to every single example of a game. All examples of games have links to other examples, but not necessarily to every single example, forming a *family*, hence that name. 
 
-Ludwig Wittgenstein
+
+
 Gradients, prototype theory
 necessary trait
 
-
-
-# Interesting Ambiguities
-
-## Negations
-
-## Tense
-
-## Double Meanings
-
-# Formal Semantics
-
-# Semantic Drift
