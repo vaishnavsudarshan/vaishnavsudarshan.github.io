@@ -1,0 +1,8 @@
+---
+title: "Optimality Theory"
+author: "Vaishnav Sudarshan"
+date: "2025-4-11"
+categories:  [Cool Linguistics Stuff, Cool Computer Science Stuff]
+tags: [Cool Economics Stuff]
+abstract: We know how meanings are arranged and put together, but how are they actually understood?
+---

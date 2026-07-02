@@ -88,13 +88,13 @@ Note that the Romance languages, descended from Latin, pronounced it as [s], not
 
 Some sound changes are much more likely to occur than others. For example, it's much more likely for a /t/ sound to turn into a /tʃ/ sound if it's near an /i/ or a /j/ sound, than if it is near an /o/ or an /a/ sound, because of a trend called palatalization. Also, /t/ probably won't turn into a /ɬ/ near an /i/ or a /j/. This is how the Latin word "leite" turned into the Spanish word "leche".
 
-Typically, simplifications or reductions won't be reversed, because that information is gone. This is why the word "eau" in French won't turn back into "aqua" in Latin, because a lot of information was lost, so if we know that either French or Latin is the ancestor of the other, we can tell that Latin is the ancestor of French. 
+Typically, simplifications or reductions won't be reversed, because that information is gone. This is why the word "eau" in French won't turn back into "aqua" in Latin, because a lot of information was lost, so if we know that either French or Latin is the ancestor of the other, we can tell that Latin is the ancestor of French. If a sound change causes a sound to be added, it's most likely due to the language's phonotactics changing - for example, in Latin, the beginning consonant cluster "st" (like in "studere", meaning "to study") was allowed, but in Spanish, it wasn't, so an "e" was added to the beginning to make it "estudiar". 
 
-Looking for corresponding phonemes cross-linguistically and across many cognates is the first step. For example, if you look across Tamil, Telugu, and Kannada to try an reconstruct Proto-South-Dravidian (a descendant of Proto-Dravidian), you might notice that wherever Telugu and Kannada end in a /u/, Tamil reduces this final vowel and turns it into the null phoneme, /∅/. 
+Looking for corresponding phonemes cross-linguistically and across many cognates is an important step. For example, if you look across Tamil, Telugu, and Kannada to try an reconstruct Proto-South-Dravidian (a descendant of Proto-Dravidian), you might notice that wherever Telugu and Kannada end in a /u/, Tamil reduces this final vowel and turns it into the null phoneme, /∅/. 
 
 Then, you try to figure out which sound change is the most likely to have happened, which kind of feels like  a pretty hard puzzle. With enough data, you can reconstruct common vocabulary for the ancestor language without any logical contradictions. 
 
-Sometimes there are multiple possible reconstructions. Since they are all valid from the data alone, you need to rely on other tools, like how likely the sound changes are cross-linguistically. 
+Sometimes there are multiple possible reconstructions. Since they are all valid from the data alone, you need to rely on other tools to determine which is better, like how relatively likely the sound changes are cross-linguistically, or how many exceptions your rules have. 
 
 ## Figuring out the culture of the speakers 
 
@@ -134,7 +134,7 @@ Third, the final consonant becomes voiced, so the word is "zob".
 
 Thus, due to the nature of conditionals in sound changes, changing the order of sound changes can lead to different outcomes. In this sense, finding the right order is heavily reliant on logic.
 
-It's not always true that the order of sound changes matters, if the sound changes are independent of each other and can only build on each other, not mutually interfering. For example, if you start with the sound *ɸ, you can have these sound changes, and all 5040 rearrangements of them will lead to the same result: 
+It's not always true that the order of sound changes matters, if the sound changes are independent of each other and can only build on each other, not mutually interfering. For example, if you start with the single-sound word *ɸ, you can have these sound changes, and all 5040 rearrangements of them will lead to the same resultant word, udʱ:a.
 
 1. fricatives become stops
 2. voiceless consonants become voiced
@@ -144,7 +144,7 @@ It's not always true that the order of sound changes matters, if the sound chang
 6. add a "u" before all consonants
 7. bilabial consonants become alveolar
 
-There is a really easy NACLO problem exactly like this, except for a real language, called [Rewrite me badd](https://www.naclo.org/resources/problems/2007/N2007-G.pdf). 
+There is a really easy NACLO problem exactly like this called [Rewrite me badd](https://www.naclo.org/resources/problems/2007/N2007-G.pdf), except it is for a real language.
 
 # Proving Language Relationships
 
@@ -161,6 +161,12 @@ The basis in this theory was mainly due to similarities in grammar, like how the
 In fact, there is a much more convincing explanation for the similarities between the Altaic languages, and this is that they form a sprachbund instead. A sprachbund means that languages that are not necessarily related can influence each other, including both loanwords and grammatical structure, due to their geographical proximity. Sprachbunds typically get closer and closer over time, because of their continued contact, whereas language families actually tend to diverge over time because they spread out. The Altaic languages showed signs of the former, because the early forms of Mongolic, Turkic, and Tungusic languages differed more than they do now, and there is no evidence of them diverging at some point.
 
 It is possible for sprachbunds to consist of related languages. For example, the Balkan sprachbund contains Greek, Bulgarian, Serbain, Albanian, Romanian, Romani, and some dialects of Turkish. Apart from Turkish (which is, and you'll never guess this, a Turkic language), the others are all Indo-European. The similarities between them (articles as postpositions, evidentiality, shared cases, loanwords/cliques, and a lot more) cannnot be explained because they are Indo-European - that would mean the Romance, Slavic, Hellenic, Albanian, and even Indo-Iranian languages all share a pretty close common ancestor, but that contradicts how ancient the centum-satem split is, and the Balkan languages are on either side of it. 
+
+# Loanwords
+
+If a language has loanwords from another language, this is a huge piece of evidence that they came into contact at some point. A huge part of English vocabulary is borrowed from French, mostly the fancy big words that aren't Greek or Latin. It's not that big of a deal if we already know the history behind this - it's well known that these loanwords are because of the Norman conquest of England, where French was used as the language of the elite, which explains why the words associated with the elite were French (for farm animal names, the word for the living creature, which the English-speaking commoners interacted with, are Germanic, like "cow" or "lamb", but the word for the dead creature, which the French-speaking elite ate, were French, like "beef" or "mutton").  
+
+However, if we find loanwords as a result of a historical event that wasn't well documented or known about, or even from prehistory, we can even reconstruct that event. For example, the Germanic languages have a lot of loanwords (we know these must be loanwords because they don't have any Indo-European cognates or etymology) from Pre-Indo-European languages (with unrelated languages), especially for concepts that were new to the Indo-Europeans, because they were local to the area that they arrived to. Therefore, we can deduce that the Indo-Europeans encountered Pre-Indo-European speakers when they arrived in that region of Europe. 
 
 # Conservative Languages
 

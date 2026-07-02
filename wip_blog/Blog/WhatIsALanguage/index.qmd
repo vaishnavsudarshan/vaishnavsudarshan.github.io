@@ -3,12 +3,15 @@ title: "What is a Language?"
 author: "Vaishnav Sudarshan"
 date: "2026-22-5"
 categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff]
+tags: [Cool Politics Stuff]
 abstract: How do you decide if something is its own language or just a dialect of another language?
 ---
 
-# What makes a language/dialect?
+# What makes a language?
 
+Since linguistics is the scientific study of language, you can't really do that without knowing what a language is. Most people would agree that a language is a way to communicate with others. Natural languages (natlangs) like English, French, Hindi, Korean, and Quechua are what most people think of when they think about languages, and they can express most things that the speakers find relevant, usually including abstract thought. 
 
+What about programming languages? They allow people to communicate with computers. You can tell the computer how to do a sorting algorithm, but you can't really ask it how the weather is. 
 
 # Dialect Continuum
 
