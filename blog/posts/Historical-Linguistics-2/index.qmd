@@ -12,7 +12,7 @@ abstract: How did ~~old people~~ historical linguists figure out the ancestor la
 
 Imagine you see the following Romanized words for "three" in a bunch of different languages:
 
-| Language      |Word for "three" | IPA       |
+| Language      |Word for "three" | [IPA](https://vaishnavs.net/posts/The%20IPA/)       |
 |---------------|-----------------|-----------|
 | English       |	three         |[θɹiː]     |
 | German        |	drei          |[dʁaɪ]     |
@@ -120,7 +120,7 @@ linkStyle default stroke-width:5px;
 ```
 
 
-Note that the Romance languages, descended from Latin, pronounced it as [s], not [k] - it's the same sound change that caused the centum-satem split, but it happened much later. Additionally, the satem languages don't necessarily pronounce the first consonant as exactly [s], but it is generally a voiceless fricative in around that area, like [ʃ] for instance.
+Note that the Romance languages, descended from Latin, pronounced it as [s], not [k] - it's coincidentally the same sound change that caused the centum-satem split, but it happened much later. Additionally, the satem languages don't necessarily pronounce the first consonant as exactly [s], but it is generally a voiceless fricative in around that area, like [ʃ] for instance.
 
 Some sound changes are much more likely to occur than others. For example, it's much more likely for a /t/ sound to turn into a /tʃ/ sound if it's near an /i/ or a /j/ sound, than if it is near an /o/ or an /a/ sound, because of a trend called palatalization. Also, /t/ probably won't turn into a /ɬ/ near an /i/ or a /j/. This is how the Latin word "leite" turned into the Spanish word "leche".
 
@@ -234,5 +234,5 @@ Now, we know how proto languages are reconstructed, and how to disprove language
 
 The Arabic example is from [this human1011 YouTube short](https://www.youtube.com/shorts/ES5qpzNG1ew).
 
-Most of the information about the Indo-European languages is from the book "Proto" by Laura Spinney. I'd recommend it if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics.
+Most of the information about the Indo-European languages is from the book ["Proto"](https://www.goodreads.com/en/book/show/217387741-proto) by Laura Spinney. I'd recommend it if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics.
 
