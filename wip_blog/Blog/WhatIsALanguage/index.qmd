@@ -9,12 +9,40 @@ abstract: How do you decide if something is its own language or just a dialect o
 
 # What makes a language?
 
-Since linguistics is the scientific study of language, you can't really do that without knowing what a language is. Most people would agree that a language is a way to communicate with others. Natural languages (natlangs) like English, French, Hindi, Korean, and Quechua are what most people think of when they think about languages, and they can express most things that the speakers find relevant, usually including abstract thought. 
+Since linguistics is the scientific study of language, you can't really do that without knowing what a language is. Most people would agree that a language is a system to communicate with others. Natural languages (natlangs) like English, French, Hindi, Korean, and Quechua are what most people think of when they think about languages, and they can express most things that the speakers find relevant, usually including abstract thought. Constructed languages (conlangs), like Klingon, Esperanto, Ithkuil, Toki Pona, and Sindarin, though they didn't develop naturally, are typically able to do the same things. 
 
-What about programming languages? They allow people to communicate with computers. You can tell the computer how to do a sorting algorithm, but you can't really ask it how the weather is. 
+## Programming languages
 
-# Dialect Continuum
+What about programming languages? They allow people to directly communicate with computers (besides speaking in English to LLMs, which some view as a 5th generation programming language). You can tell the computer how to do a sorting algorithm (though you must give it every single detail, which is a constraint not really present in natural languages), but you can't really ask it how the weather is using, say, Python. However, a computer doesn't really communicate back to you, apart from maybe the program's output (which still isn't in that programming language), so it's not really a language in the same sense as a natural language. It's also kind of weird when sometimes, you're telling the computer how to interact with another user. I think most people would agree that programming languages are, in some ways, languages.
 
-## My own interpretation that everyone has their own languages that just overlap similarly enough
+## Animals
 
-### Personal example, I adhere to standard english decently, but for me, "I were to" sounds ungrammatical
+And what about when a dog barks for different emotions, like if it doesn't recognize someone or if it's hungry? You might argue that it's not, because the barking just points to whatever is going on, so the communication is dependent on whether the thing being talked about is physically present, which is not the point of language. However, barking could just be a very limited language, similar to how programming languages are also limited.
+
+## DNA
+
+Would any sort of code also be a compiler for a language? For example, you could think of the genetic code as a way to translate every three nucleotides of DNA to a protein, and in that sense, DNA is almost like a programming language because it dictates what proteins to make. I'll probably write a blog post about this in more detail in the future. There's even a NACLO problem, [Sk8 Parsr](https://www.naclo.org/resources/problems/2009/N2009-G.pdf), about a "language" used to represent a video game. 
+
+Just getting a baseline definition of what a language is already causes so much disagreement, just wait until you argue about whether languages are distinct or not. For the purposes of this blog post though, I'm going to stick to natlangs, because that's where most of the tension is (there isn't much physical hostility between C and C++ users or anything).
+
+# Mutual Intelligibility
+
+Usually, two languages are said to be the same language if they are *mutually intelligible*, which means speakers of one language can understand speakers of the other language for the most part. However, this has some problems. How intelligible is intelligible enough for two languages to be the same, and wouldn't making such a line be subjective and arbitrary? Also, what intelligibility score would you use? 
+
+For the second question, you might suggest using *lexical similarity*. 
+
+## Ciphers?
+
+Would Pig Latin be considered part of English or not?
+
+## Dialect Continuums
+
+## Language Evolution
+
+# Role of Politics, Nationalism, and Standardization
+
+# Idiolects
+
+# My own solution that everyone has their own languages that just overlap similarly enough, but language differs across space and time
+
+## Personal example, I adhere to standard english decently, but for me, "I were to" sounds ungrammatical

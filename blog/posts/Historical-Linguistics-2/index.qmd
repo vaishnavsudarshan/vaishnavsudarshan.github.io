@@ -5,7 +5,7 @@ date: "2026-6-30"
 categories:  [Cool Linguistics Stuff]
 tags: [Cool History, Cool Logic Stuff, Cool Geography Stuff]
 image: "hundred.png"
-abstract: How did old people figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
+abstract: How did ~~old people~~ historical linguists figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
 ---
 
 # Introduction
@@ -55,32 +55,68 @@ I've mentioned that the comparative method is how linguists reconstruct proto-la
 
 An important fact is that sound changes are regular, so typically, a certain rule like "a [k] sound turns into an [h] sound" will apply to all words in a language, and not just some of them. This is what allows us to backtrack sound changes, which is the main technique used in the comparative method. This, by the way, was one of the sound changes from Grimm's Law, which I talked about in the previous post. 
 
-As a fun note, you can also find out timelines using sound changes. For example, in Arabic, there was a sound change where [p] turned into [f], and this time period is known. Nowadays, since the [p] sound doesn't exist, speakers might borrow words with that sound but pronounce it like a [b]. So, if an Arabic loanword is pronounced as [b] while other languages pronounce that same word with a [p], then we know that this word was borrowed after the sound change, because if it was borrowed before, then it would be pronounced as an [f] instead.
+As a fun note, you can also find out timelines using sound changes. For example, in Arabic, there was a sound change where [p] turned into [f], and this time period is known. Nowadays, since the [p] sound doesn't exist, speakers might borrow words with that sound but pronounce it like a [b]. So, if an Arabic loanword is pronounced as [b] while other languages pronounce that same word with a [p], then we know that this word was borrowed after the sound change, because if it was borrowed before, then it would be pronounced as an [f] instead. Since Arabic speakers have inhabited Palestine for a long time, they pronounce it as "filastin", while newer concepts to Arabic speakers, like "pizza", are pronounced as "bizza". 
 
 Also, the Indo-European languages are usually classified into "centum" (Latin) or "satem" (Avestan), based on the first consonant in their word for "hundred". The Indo-Iranian, Armenian, and Balto-Slavic languages underwent a sound change where the \*ḱ was pronounced as [s]. The Italic, Hellenic, and Celtic languages have the first consonant in "hundred" pronounced like [k], so we know that they split off before that sound change happened (there's not any known sound change that would have brought the [s] back to the [k], otherwise). The Germanic languages are where we have to apply multiple sound laws. The first consonant in "hundred" (or "Hundert" in German) is pronounced as [h]. There is no law changing [s] to [h] for Germanic languages (but this does exist for Iranian languages). However, Grimm's Law does bring \*k to [h]. Therefore, we can conclude that the Germanic languages split off before the sound change that shaped the satem languages. 
 
 Here is a diagram showing how the word for "hundred" evolved through the different Indo-European languages. This is a much smaller diagram, only showing a few selected branches and languages. It also points out some of the notable sound changes. 
 
 ```{mermaid}
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontSize": "60px"
+  }
+}}%%
+
 graph TD
-PIE["PIE: *ḱm̥tóm"] --> Centum["Centum Languages"]
-PIE -->|*k->s| Satem["Satem Languages"]
+
+PIE["PIE: *ḱm̥tóm"]
+
+PIE --> Centum["Centum Languages"]
+PIE -->|"*k → s"| Satem["Satem Languages"]
+
 Satem --> PBS["Proto-Balto-Slavic: *śimtas"]
 Satem --> PII["Proto-Indo-Iranian: *ćatám"]
+
 PII --> Iranian
 Iranian --> Avestan["Avestan: satem"]
-PII --> Indo-Aryan
-Indo-Aryan --> Sanskrit["Sanskrit: śatam"]
+
+PII --> IndoAryan["Indo-Aryan"]
+IndoAryan --> Sanskrit["Sanskrit: śatam"]
+
 PBS --> Baltic
 PBS --> Slavic
+
 Baltic --> Lithuanian["Lithuanian: šimtas"]
 Slavic --> Russian["Russian: sto"]
+
 Centum --> Italic
 Centum --> Germanic
+
 Italic --> Latin["Latin: centum"]
-Latin -->|*k->s| Spanish["Spanish: cien"]
-Germanic -->|*k->h| PG["Proto-Germanic: *hundą"]
+Latin -->|"*k → s"| Spanish["Spanish: cien"]
+
+Germanic -->|"*k → h"| PG["Proto-Germanic: *hundą"]
 PG --> English["English: hundred"]
+
+%% PIE styling (green root node)
+classDef pie fill:#7CFC90,stroke:#1B5E20,stroke-width:4px,color:#000,font-size:26px;
+
+%% Centum (blue branch)
+classDef centum fill:#CFE8FF,stroke:#1565C0,stroke-width:4px,color:#000,font-size:26px;
+
+%% Satem (red branch)
+classDef satem fill:#FFD6D6,stroke:#C62828,stroke-width:4px,color:#000,font-size:26px;
+
+class PIE pie;
+
+class Centum,Italic,Germanic,Latin,Spanish,PG,English centum;
+
+class Satem,PBS,PII,Iranian,Avestan,IndoAryan,Sanskrit,Baltic,Slavic,Lithuanian,Russian satem;
+
+%% thick links
+linkStyle default stroke-width:5px;
 ```
 
 
@@ -158,7 +194,7 @@ The basis in this theory was mainly due to similarities in grammar, like how the
 
 # Sprachbunds
 
-In fact, there is a much more convincing explanation for the similarities between the Altaic languages, and this is that they form a sprachbund instead. A sprachbund means that languages that are not necessarily related can influence each other, including both loanwords and grammatical structure, due to their geographical proximity. Sprachbunds typically get closer and closer over time, because of their continued contact, whereas language families actually tend to diverge over time because they spread out. The Altaic languages showed signs of the former, because the early forms of Mongolic, Turkic, and Tungusic languages differed more than they do now, and there is no evidence of them diverging at some point.
+In fact, there is a much more convincing explanation for the similarities between the Altaic languages, and this is that they form a *sprachbund* instead. A sprachbund, from the German "Sprachbund", meaning "language alliance", means that languages that are not necessarily related can influence each other, including both loanwords and grammatical structure, due to their geographical proximity. Sprachbunds typically get closer and closer over time, because of their continued contact, whereas language families actually tend to diverge over time because they spread out. The Altaic languages showed signs of the former, because the early forms of Mongolic, Turkic, and Tungusic languages differed more than they do now, and there is no evidence of them diverging at some point.
 
 It is possible for sprachbunds to consist of related languages. For example, the Balkan sprachbund contains Greek, Bulgarian, Serbain, Albanian, Romanian, Romani, and some dialects of Turkish. Apart from Turkish (which is, and you'll never guess this, a Turkic language), the others are all Indo-European. The similarities between them (articles as postpositions, evidentiality, shared cases, loanwords/cliques, and a lot more) cannnot be explained because they are Indo-European - that would mean the Romance, Slavic, Hellenic, Albanian, and even Indo-Iranian languages all share a pretty close common ancestor, but that contradicts how ancient the centum-satem split is, and the Balkan languages are on either side of it. 
 
@@ -188,8 +224,15 @@ Sanskrit, being an ancient language, is relatively close to Proto-Indo-European,
 
 Lithuanian, on the other hand, is still spoken natively to this day. However, the Baltic countries were relatively isolated (since the forests, wetlands, and rivers formed natural barriers) from the rest of Europe and all the conquests that happened that caused language change, so their languages (excluding Estonian, which is Uralic) have preserved many features from Proto-Indo-European, and innovated new features relatively slowly. Because of this, Lithuanian and Sanskrit are both similar to Proto-Indo-European, and therefore similar to each other.
 
-Tamil is another example of a conservative language. It is relatively close to Proto-Dravidian, compared to Telugu and Kannada, which have innovated more. This is why ancient Tamil literature is still understandable to modern Tamil speakers. However, Tamil has huge diglossia between the formal variety learned in school and spoken on the news, and the colloquial variety spoken on the streets and at home. The formal variety is the one that is more conservative. I only understand the colloquial variety, which is why ancient Tamil literature sounds like an alien language to me. I'm going to write a future blog post about languages and dialects, but this is a small taste of that. 
+Tamil is another example of a conservative language. It is relatively close to Proto-Dravidian, compared to Telugu and Kannada, which have innovated more. This is why ancient Tamil literature is still understandable to modern Tamil speakers. However, Tamil has huge diglossia, or intelligibility gap, between the formal variety learned in school and spoken on the news, and the colloquial variety spoken on the streets and at home. The formal variety is the one that is more conservative. I only understand the colloquial variety, which is why ancient Tamil literature sounds like an alien language to me. I'm going to write a future blog post about languages and dialects, but this is a small taste of that. 
 
 # Conclusion
 
 Now, we know how proto languages are reconstructed, and how to disprove language family claims. However, some linguists didn't get the memo that theories about language families must be realistic, so that's what part 3 is gonna be all about. 
+
+# References
+
+The Arabic example is from [this human1011 YouTube short](https://www.youtube.com/shorts/ES5qpzNG1ew).
+
+Most of the information about the Indo-European languages is from the book "Proto" by Laura Spinney. I'd recommend it if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics.
+
