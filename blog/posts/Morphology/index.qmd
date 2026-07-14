@@ -15,7 +15,7 @@ Previously, in [orthographies](../Writing-Systems/index.qmd), [phonology](../Pho
 
 Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this.
 
-It may appear that there are exceptions. For example, the "wh" in English commonly indicates an interrogative word, like the five that are commonly referenced - "who", "what", "why", "where", "when". However, there's nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the "w" and the "h" as *phonemes*, we would call "wh" a unit that evolved out of a *morpheme*. 
+It may appear that there are exceptions. For example, the "wh" in English commonly indicates an interrogative word, like the five that are commonly referenced - "who", "what", "why", "where", "when". However, there's nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the "w" and the "h" as *phonemes*, we would call "wh" a unit that evolved out of a *morpheme*.
 
 ### Definition
 

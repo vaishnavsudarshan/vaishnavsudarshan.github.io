@@ -125,7 +125,7 @@ However, if you mess up some distinctions while trying to speak a language, its 
 
 # Spectrograms
 
-Basically, this is just a graph that records a word being pronounced, where the y axis is frequency and the x axis is time, and both are independent of each other (at a given time, your vocal cords produce a combination of frequencies, which are separated using Fourier analysis). We also want to encode energy as a function of these two, but instead of drawing a z axis, it's indicated through shading instead. Darker shading means more acoustic energy (or loudness), and lighter shading means less. 
+Basically, this is just a graph that records a word being pronounced, where the y axis is frequency and the x axis is time, and both are independent of each other (at a given time, your vocal cords produce a combination of frequencies, which are separated using Fourier analysis). We also want to encode energy as a function of these two, but instead of drawing a z axis, it's indicated through shading instead. Darker shading means more acoustic energy (or loudness), and lighter shading means less.
 
 Bands of shading are called *formants*, and they're mainly for vowels. They are basically the three parameters that vowels take - F1 is high/low, F2 is front/back, and F3 is rounded/unrounded.
 

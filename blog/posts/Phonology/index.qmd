@@ -86,7 +86,7 @@ For example, in Kazakh, the plural marker is either "-лаp" or "-лер" (/lar/
 
 "қала" (/qɑˈlɑ/), meaning "city", uses back vowels, so "cities" is "қалалар". 
 
-However, "көл" (/kœl/), meaning "lake", uses front vowels, so "lakes" is "көлдер". 
+However, "көл" (/kœl/), meaning "lake", uses front vowels, so "lakes" is "көлдер".
 
 # Structure of Syllables and Phonotactics
 
