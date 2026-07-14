@@ -6,24 +6,3 @@ categories:  [Cool Linguistics Stuff]
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
-# Interesting Ambiguities
-
-## Negations
-
-## Tense
-
-## Double Meanings
-
-# Formal Semantics
-
-# Semantic Drift
-
-
-
-## Example: lol
-
-The abbreviation "lol" technically means "laughing out loud", but nowadays, no one uses it for extreme humor.  
-
-# Replacement
-
-## Example: bear in PIE

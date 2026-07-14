@@ -2,7 +2,7 @@
 title: "Syntax Part 1 - Recursion, Constituent Units, and Trees"
 author: "Vaishnav Sudarshan"
 date: "2026-6-10"
-categories:  [Cool Linguistics Stuff, Cool Computer Science Stuff]
+categories:  [Cool Linguistics Stuff, Cool CS Stuff]
 abstract: How are sentences actually formed in language? This post is answering the first part of this question.
 image: caca.png
 ---
@@ -13,14 +13,15 @@ You may have learned about syntax in English class in school, and parts of what 
 
 Syntax is basically sentence structure. However, if someone says, "this sentence has short syntax" when referring to a short or simple sentence, that statement sounds reasonable, but it's like saying "this rock is intelligent", as in it's kinda nonsensical. Just say "this sentence is short" or something. To avoid confusion about what syntax actually is, it's probably better to define syntax as the set of rules that govern how a language allows for sentences to be formed (syntax describes a language, not an individual sentence).
 
-
 # Bracketing and Constituents
 
 Take any complicated sentence in English. For example, take the sentence "The student who the professor whom the dean hired praised left." This seems so confusing at first. However, we see that the basic sentence is just "the student left". We can put brackets around the stuff in between, that just describes the student: "The student [who the professor whom the dean hired praised] left". The "whom the dean hired" just describes the professor, so we can put brackets around that: "The student [who the professor [whom the dean hired] praised] left". 
 
 Each of the bracketed parts, next to the thing it describes, is called a *constituent*. These are basically units of structure that show some syntactic role. 
 
-One way to tell the role that a constituent plays is to replace it with a smaller unit whose role we know. For example, "The student [who the professor whom the dean hired praised]" can be replaced with "The student", which we know represents the subject. Therefore, every single wrd before "left" is a constituent that represents the subject. Similarly, "left" is a constituent that represents the verb. If you want, you can replace "left" with "ate ice cream", because this constituent represents what the student *did*.
+One way to tell the role that a constituent plays is to replace it with another unit whose role we know. For example, "The student [who the professor whom the dean hired praised]" can be replaced with "The student", which we know represents the subject. Therefore, every single wrd before "left" is a constituent that represents the subject. Similarly, "left" is a constituent that represents the verb. If you want, you can replace "left" with "ate ice cream", because this constituent represents what the student *did*.
+
+Constituents help us figure out what words can be put together. In English, subjects and objects are *noun phrases*. Pronouns, plurals, and proper nouns can be their own noun phrases, while common nouns need a determiner. So, "Canada" is its own noun phrase, while "a country" is also a noun phrase that is the same syntactic unit. You can say "I go to [Canada]" or "I go to [a country]" but you can't say "I go to country" or "I go to a Canada" . 
 
 ## Trees
 

@@ -1,0 +1,25 @@
+---
+title: "Morphosyntax (Morphology Part 2, Syntax Part 2)"
+author: "Vaishnav Sudarshan"
+date: "2026-3-10"
+categories:  [Cool Linguistics Stuff]
+abstract: The next step in the linguistics circle - how words work together to form complete sentences.
+---
+
+# Word Order
+
+# Nouns
+
+## Cases
+
+# Alignment
+
+# Verbs
+
+# Inflection/Derivation
+
+## Transitive/Intransitive
+
+# Movement
+
+# How different languages classify parts of speech (substitution test)

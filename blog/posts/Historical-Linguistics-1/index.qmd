@@ -58,7 +58,9 @@ These sound changes are pretty regular in a single language or language family, 
 
 One of the most famous sound changes is Grimm's law. It states that in Germanic languages, the /p/ sound that is found in other Indo-European languages turned into an /f/ sound, the /t/ sound was turned into a /θ/ sound, and the /k/ sound was turned into an /h/ sound. That's why in English, we say "father", "three", and "heart", while in the Vatican, Latin speakers say "pater", "tres", and "cor".
 
-This will be explained in more detail in part 2.
+There are certain properties about sound changes. They have no exception (a certain rule must apply everywhere in that environment) and they ignore grammar.
+
+Sound changes can also be conditioned or unconditioned. Conditioned means that a sound turns into another sound only in certain environments, while unconditioned means that the sound changes no matter what environment it is in. 
 
 # To be continued
 

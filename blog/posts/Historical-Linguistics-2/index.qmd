@@ -3,7 +3,7 @@ title: "Historical Linguistics Part 2: Language Evolution, The Comparative Metho
 author: "Vaishnav Sudarshan"
 date: "2026-6-30"
 categories:  [Cool Linguistics Stuff]
-tags: [Cool History, Cool Logic Stuff, Cool Geography Stuff]
+tags: [Cool History Stuff, Cool Logic Stuff, Cool Geography Stuff, Cool Food Stuff]
 image: "hundred.png"
 abstract: How did ~~old people~~ historical linguists figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
 ---
@@ -12,24 +12,24 @@ abstract: How did ~~old people~~ historical linguists figure out the ancestor la
 
 Imagine you see the following Romanized words for "three" in a bunch of different languages:
 
-| Language      |Word for "three" | [IPA](https://vaishnavs.net/posts/The%20IPA/)       |
-|---------------|-----------------|-----------|
-| English       |	three         |[θɹiː]     |
-| German        |	drei          |[dʁaɪ]     |
-| Swedish       |	tre           |[tɾe]      |
-| Latin         |	trēs          |[ˈtreːs]   |
-| French        |	trois         |[tʁwa]     |
-| Sanskrit      |	tráyas        |[ˈtr̩ajəs]  |
-| Romani        |	trin          |[tɾin]     |
-| Bengali       |	tin           |[tɪn]      |
-| Tajik         |	se            |[se]       |
-| Ancient Greek |	treîs         |[treːs]    |
-| Russian       |	tri           |[trʲi]     |
-| Polish        |	trzy          |[tʂɨ]      |
-| Irish         |	trí           |[tɾʲiː]    |
+| Language      |Word for "three"| IPA     |
+|---------------|----------------|---------|
+| English       |	three          |[θɹiː]   |
+| German        |	drei           |[dʁaɪ]   |
+| Swedish       |	tre            |[tɾe]    |
+| Latin         |	trēs           |[ˈtreːs] |
+| French        |	trois          |[tʁwa]   |
+| Sanskrit      |	tráyas         |[ˈtr̩ajəs]|
+| Romani        |	trin           |[tɾin]   |
+| Bengali       |	tin            |[tɪn]    |
+| Tajik         |	se             |[se]     |
+| Ancient Greek |	treîs          |[treːs]  |
+| Russian       |	tri            |[trʲi]   |
+| Polish        |	trzy           |[tʂɨ]    |
+| Irish         |	trí            |[tɾʲiː]  |
 
 
-Most of these look very similar. They are definitely not just loanwords, because this would also be very crazy historically - a lot of these languages never even contacted each other. Additionally, loanwords would have to fit the phonology of the language borrowing them, but those aren't the sound changes that happened. Loanwords are typically also not for core, fundamental cultural concepts like numbers, but rather some idea the speakers didn't have access to before. 
+Most of these look very similar. They are definitely not just loanwords, because this would also be very crazy historically - a lot of these languages never even contacted each other, or had a chain of subsequent borrowings. Additionally, loanwords would have to fit the phonology of the language borrowing them, but those aren't the sound changes that happened. Loanwords are typically also not for core, fundamental cultural concepts like numbers, but rather some idea the speakers didn't have access to before. 
 
 This means that these words must be related, which means they come from a common ancestor language that split and diverged into all of these different languages.
 
@@ -182,6 +182,30 @@ It's not always true that the order of sound changes matters, if the sound chang
 
 There is a really easy NACLO problem exactly like this called [Rewrite me badd](https://www.naclo.org/resources/problems/2007/N2007-G.pdf), except it is for a real language.
 
+# Push/Pull Chains
+
+Sometimes, if a sound change pushes one sound into another existing sound, then that sound will turn into another sound to maintain the distinction, and so on. This is called a push chain.
+
+An example of this is the Great Vowel Shift in English. /e:/ (beet) and /o:/ (boot) sounded more like /i:/ and /u:/, so /i:/ (time) and /u:/ (house) sounded more like /aɪ/ and /aʊ/. 
+
+The reverse may also happen. If a sound change turns into another sound that didn't exist before, then the previous sound is unused, so another sound may turn into that, and so on, and this is called a pull chain.
+
+# Common Sound Changes
+
+Here are the most common types of sound changes:
+
+* Assimilation: A sound becomes more like its neighbors, like "octo" in Latin turning into "otto" in Italian (the /k/ became a /t/)
+* Dissimilation: A sound tries to contrast with its neighbors more (like saying "February" as "Febyuary")
+* Insertion: A sound must be added to make the word easier to say (like "something" ocassionally having a [p] between the /m/ and /θ/)
+* Deletion: A sound disappears (the /k/ in "knight" actually used to be pronounced)
+* Metathesis: Two sounds get replaced (like how my sister once said "can we please stop having this conservation" instead of "conversation")
+* Strengthening: A sound becomes more like a consonant (some people pronounce "this" as "dis" because stops are more consonant-like than fricatives)
+* Weakening: A sound becomes more like a vowel (Grimm's law where stops became fricatives)
+
+# Analogy and Morphological Change
+
+Sometimes, analogies cause speakers to change a language's morphology and make it more regular. I've seen this happening to my sister. Often, she says "drinked" and "hurted" for past tense instead of "drank" and "hurt". In fact, relatively less common words are more likely to be regularized by analogy, because speakers are less likely to interact with all the irregularity. This is why you'll never find my sister saying "eated" or "haved". 
+
 # Proving Language Relationships
 
 At first, we don't know for sure if languages are related or not. One of the most reliable ways to prove that they are related is to try and reconstruct a proto-language including that language, and see if it can be done completely and without much of a stretch. 
@@ -206,7 +230,7 @@ However, if we find loanwords as a result of a historical event that wasn't well
 
 # Conservative Languages
 
-Some people might be surprised that Sanskrit is more mutually intelligible with Lithuanian than it is with Hindi, even though Hindi is a direct descendant of Sanskrit, while Lithuanian isn't even Indo-Iranian. 
+Some people might be surprised about a famous observation in historical linguistics, that Sanskrit is more mutually intelligible with Lithuanian than it is with Hindi, even though Hindi is a direct descendant of Sanskrit, while Lithuanian isn't even Indo-Iranian. 
 
 For example, look at the sentence "your gift is the fire". 
 
@@ -230,9 +254,9 @@ Tamil is another example of a conservative language. It is relatively close to P
 
 Now, we know how proto languages are reconstructed, and how to disprove language family claims. However, some linguists didn't get the memo that theories about language families must be realistic, so that's what part 3 is gonna be all about. 
 
-# References
+# Further information
 
 The Arabic example is from [this human1011 YouTube short](https://www.youtube.com/shorts/ES5qpzNG1ew).
 
-Most of the information about the Indo-European languages is from the book ["Proto"](https://www.goodreads.com/en/book/show/217387741-proto) by Laura Spinney. I'd recommend it if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics.
+I'd recommend the book ["Proto"](https://www.goodreads.com/en/book/show/217387741-proto) by Laura Spinney if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics.
 

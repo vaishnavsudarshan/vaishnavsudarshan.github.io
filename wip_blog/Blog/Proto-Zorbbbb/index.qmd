@@ -13,17 +13,19 @@
 
 VOS 
 
-## Lore?
+## Lore
 
-Proto-Zorbbbb is what evolved later into Zorbbbb and Limit, although Limitians deny that their language descends from Proto-Zorbbbb. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani structures.
+Proto-Zorbbbb is what evolved later into Zorbbbb and Limit, although Limitians deny that their language descends from Proto-Zorbbbb. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani structures. All the resources for Zorbbbb have also been destroyed.
+
+Zorbbbbistan and Limitland both overlap in space (since Zorbbbbistan is from the past), but both has land that the other doesn't have too.
 
 ## Nouns
 
-All nouns have genders, class, animacy, number, politeness, abstractness, color, case, goodness, and person. This means that, theoretically, there are $134217728$ combinations of each noun.  Each will have a sequence of something.
+All nouns have genders, class, animacy, number, politeness, abstractness, color, case, goodness, and person. This means that, theoretically, there are $134217728$ combinations of each noun. Each will have a sequence of something.
 
 Now, let’s go into the specific categories for each one.
 
-Genders: Vowel
+Space: Vowel
 Animacy: Tone
 Class: Semivowel
 Number: Vowel length
@@ -34,12 +36,12 @@ Case: Exercise
 Goodness: Diphthong
 Person: Gesture
 
-### Gender 
+### Space
 
-Masculine: O A I U EH
-Feminine: E A EH O I
-Neuter: U E I A U
-Both: A E I O U
+Inside Zorbbbbistan, inside Limitland: O A I U EH
+Inside Zorbbbbistan, outside Limitland: E A EH O I
+Outside Zorbbbbistan, inside Limitland: U E I A U
+Outside Zorbbbbistan, outside Limitland: A E I O U
 
 ### Animacy (S = Screech; F = Flat; W = Wave)
 
@@ -160,7 +162,7 @@ Vocative: S L L J M
 
 ## Verb Form
 
-There are 9 auxiliary verbs to account for the main 9 tenses. 
+There are 9 auxiliary verbs to account for the main 9 tense-aspect combinations. 
 
 Verbs always agree with the patient (they do not need to add the extra -FFF q though). 
 
@@ -175,10 +177,10 @@ Emotion (Normal, Apprehensive, Admirative)
 Extremity (Weak, Normal, Extreme)
 Effectiveness (No net effect, Some net effect, Huge net effect)
 Evidentiality (First-hand No-cap, Second-hand No-cap, Greater No-cap, First-hand Some-cap, Second-hand Some-cap, Greater Some-cap, First-hand Full-cap, Second-hand Full-cap, Greater Full-cap)
+Speed (Super Fast, Very Fast, Pretty Fast, Kinda Fast, Super Slow, Very Slow, Pretty Slow, Kinda Slow, No Speed)
 
 
 Each possibility has a suffix added in this order.
-
 
 ### Tense
 
@@ -240,6 +242,18 @@ First-hand Full-cap: - m
 Second-hand Full-cap: - t 
 Greater Full-cap: - z 
 
+### Speed
+
+Super Fast: - q q
+Very Fast: - s k
+Pretty Fast: - p tt
+Kinda Fast: - bbbb bbbb bbbb
+Super Slow: - p q 
+Very Slow: - b qqq
+Pretty Slow: - GG j
+Kinda Slow: - d tt
+No Speed: - NULL
+
 ### Some notes about verbs
 
 The nine auxiliaries are conjugated in a special way. They, just like the holy pronouns, have no conjugations, just the raw verb. 
@@ -254,4 +268,9 @@ Future: R
 
 Whatever vowel alteration pattern the absolutive gets, the verb takes this and combines it with this addition. For example, if the patient is blue, it would be NS R N, but if the verb is past tense, then it turns into N R+NS NS. You can think of N as zero, and you can think of NS and R as switches. Combining NS and NS or R and R results in N, and combining N with something results in that thing. 
 
-Also, verbs that mean "to be [adjective]" have their own special conjugations. 
+Also, verbs that mean "to be [adjective]" have their own special conjugations. Basically, the voicing switch of every suffix is swapped. So, here's what transitivity for "to be [adjective]" would work:
+
+Intransitive: - ggg
+Transitive: - T
+Ditransitive: - f
+

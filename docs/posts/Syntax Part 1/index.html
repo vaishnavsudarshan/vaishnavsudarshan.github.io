@@ -185,7 +185,7 @@ window.Quarto = {
       <h1 class="title">Syntax Part 1 - Recursion, Constituent Units, and Trees</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Cool Linguistics Stuff</div>
-                <div class="quarto-category">Cool Computer Science Stuff</div>
+                <div class="quarto-category">Cool CS Stuff</div>
               </div>
                   </div>
   </div>
@@ -210,7 +210,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 25, 2026</p>
+        <p class="date-modified">July 13, 2026</p>
       </div>
     </div>
       
@@ -243,7 +243,8 @@ window.Quarto = {
 <h1>Bracketing and Constituents</h1>
 <p>Take any complicated sentence in English. For example, take the sentence “The student who the professor whom the dean hired praised left.” This seems so confusing at first. However, we see that the basic sentence is just “the student left”. We can put brackets around the stuff in between, that just describes the student: “The student [who the professor whom the dean hired praised] left”. The “whom the dean hired” just describes the professor, so we can put brackets around that: “The student [who the professor [whom the dean hired] praised] left”.</p>
 <p>Each of the bracketed parts, next to the thing it describes, is called a <em>constituent</em>. These are basically units of structure that show some syntactic role.</p>
-<p>One way to tell the role that a constituent plays is to replace it with a smaller unit whose role we know. For example, “The student [who the professor whom the dean hired praised]” can be replaced with “The student”, which we know represents the subject. Therefore, every single wrd before “left” is a constituent that represents the subject. Similarly, “left” is a constituent that represents the verb. If you want, you can replace “left” with “ate ice cream”, because this constituent represents what the student <em>did</em>.</p>
+<p>One way to tell the role that a constituent plays is to replace it with another unit whose role we know. For example, “The student [who the professor whom the dean hired praised]” can be replaced with “The student”, which we know represents the subject. Therefore, every single wrd before “left” is a constituent that represents the subject. Similarly, “left” is a constituent that represents the verb. If you want, you can replace “left” with “ate ice cream”, because this constituent represents what the student <em>did</em>.</p>
+<p>Constituents help us figure out what words can be put together. In English, subjects and objects are <em>noun phrases</em>. Pronouns, plurals, and proper nouns can be their own noun phrases, while common nouns need a determiner. So, “Canada” is its own noun phrase, while “a country” is also a noun phrase that is the same syntactic unit. You can say “I go to [Canada]” or “I go to [a country]” but you can’t say “I go to country” or “I go to a Canada” .</p>
 <section id="trees" class="level2">
 <h2 class="anchored" data-anchor-id="trees">Trees</h2>
 <p>Using brackets might sound easy at first, but once you have a LOT of brackets, it can get really confusing and tedious. Think about in programming or math when you have too many parentheses because you want to do things in a single line, so you end up saying something like “print(int(input(str(range(x, y, z)[-1]) + str(int(s[0]) + int(s[1])))) + 3)” in Python. This is really hard to read, which is why it’s considered bad programming practice by most people (not me though, hehe).</p>

@@ -51,6 +51,11 @@ Fun fact: This is one reason why the Telugu script's letters for voicing and asp
 
 As a bonus fun fact, the reason why representing those Sanskrit loanwords was so important is because a lot of them were words that represented concepts that weren't present in Telugu before, like a lot of Hindu ideas, and written text typically was about religious topics, so it was important not to cause any misunderstandings.
 
+# French Example of Phonology
+
+Each language has its phonology written, by placing the accurate symbols of all of its phonemes. 
+For example, see the phonology of French. ![French phonology [source](https://en.wikipedia.org/wiki/French_language#Phonology)](french_phonology.png){.lightbox}
+
 # Representation of features as vectors
 
 While you can describe the pronounciation of a phoneme using the IPA, a more helpful way is to describe that symbol with a vector of features, but only the features that are distinguished in a certain language. For example, in English, the phoneme /p/ might be represented as [+bilabial, +stop, -voice], while /b/ might be [+bilabial, +stop, +voice]. 
@@ -67,10 +72,21 @@ Many phonological rules have strange edge cases that most people wouldn't immedi
 
 What if there is a phoneme /A/ and a phoneme /B/, which both turn into the allophone [X] in a certain environment? This is called neutralization, where both phonemes' pronounciations are indistinguishable sometimes. 
 
-# French Example of Phonology
+An example of this is in Korean, which distinguishes aspirated and unaspirated stops. However, at the end of a word, like American English, both of these become unreleased stops, which sound identical (because if you're not even pronouncing a stop, you can't pronounce it with an extra breath of air). 
 
-Each language has its phonology written, by placing the accurate symbols of all of its phonemes. 
-For example, see the phonology of French. ![French phonology [source](https://en.wikipedia.org/wiki/French_language#Phonology)](french_phonology.png){.lightbox}
+## Vowel Harmony
+
+Vowel harmony is a very cool property found in some languages. 
+
+Basically, all vowels in a word must be made with the same frontness, and sometimes closedness or roundedness too. This is because if you have a wide range of vowels, the vowels might jump around everywhere in your mouth and cause it to do a bunch of gymnastics. To prevent this, some languages limit the physical range of vowels a certain word can have (or in the case of roundedness vowel harmony, the shape of your lips). 
+
+## Example
+
+For example, in Kazakh, the plural marker is either "-лаp" or "-лер" (/lar/ or /ler/) depending on if the root of the noun is front or back. 
+
+"қала" (/qɑˈlɑ/), meaning "city", uses back vowels, so "cities" is "қалалар". 
+
+However, "көл" (/kœl/), meaning "lake", uses front vowels, so "lakes" is "көлдер". 
 
 # Structure of Syllables and Phonotactics
 
@@ -78,7 +94,7 @@ Each language has its own rule system for how certain phonemes can be placed tog
 
 Languages can vary in how restrictive or permissive they are with their syllable structure, and this is called phonotactics. Phonotactics also determine how syllables may stack together in words. Hawaiian, for example, is very restrictive, since the most complicated syllable structure it allows is CV (consonant + vowel), while English is very permissive, since it allows syllables like CCCVCCCC, in the word "strengths" (/strɛŋkθs/). 
 
-This is why some languages like Wifi Password Language (unofficially known as Polish) have a bunch of consonant clusters that English speakers find despicable; its most complex syllable is way, way, way longer than "strengths". Meanwhile, Spanish's phonotactics are pretty restrictive compared to English, which is why "student" is "estudiante" in Spanish; a consonant cluster may not begin a word, so they add a vowel at the beginning.
+This is why some languages like Wifi Password Language (Polish) have a bunch of consonant clusters that English speakers find despicable; its most complex syllable is way, way, way longer than "strengths". Meanwhile, Spanish's phonotactics are pretty restrictive compared to English, which is why "student" is "estudiante" in Spanish; a consonant cluster may not begin a word, so they add a vowel at the beginning.
 
 # Conclusion
 

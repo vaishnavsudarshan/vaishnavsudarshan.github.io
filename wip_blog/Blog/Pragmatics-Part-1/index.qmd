@@ -1,7 +1,26 @@
 ---
-title: "Pragmatics Part 1: The maxims of conversation"
+title: "Pragmatics"
 author: "Vaishnav Sudarshan"
 date: "2026-22-5"
 categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff]
+tags: [Cool Economics Stuff]
 abstract: What do nonverbal cues reveal about meaning in context in a conversation?
 ---
+
+# Cooperative Principle
+
+# Maxims 
+
+# Maxim of Quality
+
+# Maxim of Quantity
+
+# Maxim of Relevance
+
+# Maxim of Manner
+
+# Violating Maxims
+
+# Flouting Maxims
+
+# Balancing and Optimization

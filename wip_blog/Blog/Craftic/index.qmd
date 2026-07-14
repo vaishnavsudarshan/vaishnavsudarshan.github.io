@@ -16,9 +16,10 @@ So, enjoy!
 
 # Craftic
 
-## Nouns
+## Nouns (and noun phrases)
 
 All nouns are derived from Infinite Craft. 
+Note that phonemes have no extra allophones, and would just be pronounced like how they would if the same symbol was written in square brackets.
 Sound and written representation: 
 l (/ɬ/) = water
 k (/ʞ/) = fire
@@ -30,18 +31,21 @@ q (/ʔ/) = end parentheses, odd nested
 s (/ç/) = start parentheses, even nested
 e (/œ/) = end parentheses, even nested 
 
-If there are any adjacent vowels, put a /t/ between them, and if there are any adjacent consonants, put an /o/ between them. 
+If there are any adjacent vowels, put a [t] between them, and if there are any adjacent consonants, put an [o] between them. 
+
 Example:
 
 cloud = sabuloquketum, because it is [(earth + water) + fire] + wind = (plant + fire) + wind = smoke + wind = cloud, at least in Infinite Craft.
 
-Oh yeah, I should have mentioned that you'll sound insane if you try to pronounce anything. I should probably come up with some lore to justify this. 
+Oh yeah, I should have mentioned that you'll sound insane if you try to pronounce anything. 
 
 ### Actual Noun Orthography
 
-An alphabet is used in actual Craftic, the romanization is just for simplification. Here is the key:
+An alphabet (top/down) is used in actual Craftic, the romanization is just for simplification. Here is the key:
 
 ![_craftic orthography for nouns_](craftic_table.png){.lightbox}.
+
+As you can see 
 
 ## Verbs
 

@@ -1,9 +1,9 @@
 ---
-title: "Semantics Part 1: Theory behind semantics"
+title: "Semantics Part 1: Theory Behind Semantics"
 author: "Vaishnav Sudarshan"
 date: "2025-4-11"
-categories:  [Cool Linguistics Stuff]
-tags: [Cool Philosophy Stuff, Cool Logic Stuff]
+categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff, Cool Math Stuff]
+tags: [Cool Logic Stuff]
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
@@ -11,20 +11,62 @@ abstract: We know how meanings are arranged and put together, but how are they a
 
 Semantics is how we know how close words' meanings are. Just from writing, it's not always possible. For example, take the words "cat", "dog", and "catastrophe". If you didn't know English, you might guess that perhaps "cat" and "catastrophe" are close in meaning, but that's not true, relative to "dog" (dog-lovers, I know you'll strongly object and point out that cats are a form of catastrophes). In fact, "dog" and "cat" are actually more closely related to each other than to "catastrophe", because they both are pets.
 
-In this blog post, we'll talk about the origins of semantics, the next part will be about modern semantics, and the final part will be all about how LLMs understand meanings.
+In this blog post, we'll talk about the origins of semantics and modern semantics, and the second part will be all about how LLMs understand meanings.
 
 # Philosophy of Language
 
 The first people who pondered about how meaning comes from words were actually not linguists, but philosophers! Some of the ideas presented by them are now core concepts in semantics. 
 
-The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has nothing to do with meaning. 
+The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has nothing to do with meaning. This is why Plato isn't the most trustworthy source, but you can still take that first theory into consideration if you want.
 
-Gottlob Frege first created the distinction between sense and reference. Reference is the actual thing that the word *refers* to, hence the name. Meanwhile, sense is the ideas and concepts behind what you express that reference as, and how you perceive it. 
+## Sense and Reference
+
+Gottlob Frege first created the distinction between sense and reference. Reference is the actual thing (or set of things) that the word *refers* to, hence the name. Meanwhile, sense is the ideas and concepts behind what you express that reference as, and how you perceive it. 
+
+Multiple senses can have the same reference - for example, a 2D plane with evenly spaced, perpendicular gridlines of unit length can be thought of as either the Cartesian plane where each point is of the form $(x, y)$, the complex plane where each point is of the form $x + i y$, or a vector space with basis vectors of $[1, 0]$ and $[0, 1]$, where each point is a vector of the form $[x, y]$ starting from the origin. 
+
+One sense can also point to multiple references - for example, if you think of a "person", then that reference points to over 8 billion people. You could potentionally solve this problem by saying that the set of all people is still a single set. 
+
+## Family Resemblence
 
 Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words can't be directly defined, but instead speakers can tell what concepts match a word well. This is called family resemblence. For example, what is a game? There's not a single answer that can always indicate whether something is a game or not. Chess, FizzBuzz, Monopoly, and soccer are all considered games, but you can't really find a defining feature that is common to every single example of a game. All examples of games have links to other examples, but not necessarily to every single example, forming a *family*, hence that name. 
 
+## Necessary and Sufficient Conditions
 
+Necessary and sufficient conditions are also very important in semantics. A condition is *necessary* when a statement is true if and only if that condition holds, while it's *sufficient* when if the condition holds, then the statement must be true, but the statement *can* also be true otherwise. 
 
-Gradients, prototype theory
-necessary trait
+You can also think of it as the sufficient condition being a subset of the necessary condition, because if the sufficient condition holds, then the necessary condition holds too. 
 
+An example of this is when it comes to defining life. In biology, an organism is living if and only if it has cells and DNA (among five other conditions) - if it doesn't have them, then it's not living. This is a necessary condition of life. 
+
+On the other side, if an organism is an animal, then that is a sufficient condition to say that it is living. However, not all living organisms are animals. Again, you can view it like this: animals are a subset of anything with cells and DNA, and there aren't any animals without cells and DNA - then it wouldn't be sufficient to say that if something it an animal, then it is living. 
+
+# compositional semantics
+
+## principle of compositionality
+
+## non compositional meaning
+
+## Hyponyms and Hypernyms
+
+## Types of Antonyms
+
+# Interesting Ambiguities
+
+## Negations
+
+## Tense
+
+## Double Meanings
+
+# Formal Semantics
+
+# Semantic Drift
+
+## Example: lol
+
+The abbreviation "lol" technically means "laughing out loud", but nowadays, no one uses it for extreme humor.  
+
+# Replacement
+
+## Example: bear in PIE

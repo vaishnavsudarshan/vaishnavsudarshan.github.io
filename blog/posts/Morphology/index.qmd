@@ -27,6 +27,8 @@ Since sound and meaning are independent, if your English teacher ever uses somet
 
 There are two continuums that determine how a language's morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated. 
 
+These are usually talking about inflection, not derivation, which we will get to in part 2.
+
 ### Spectrum 1
 The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. 
 
@@ -88,9 +90,30 @@ Note that the extra consonant "m" in "maktaba" is added, because Arabic itself i
 
 Germanic languages like English do *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
 
+# Free and Bound Morphemes
+
+There is also a difference between free and bound morphemes. *Free morphemes* can exist on their own, while *bound morphemes* can only exist attached to other morphemes. 
+
+For example, look at the word "dogs". The "s" is a plural marker, but you can't have a plural marker on its own, so it is bound. Meanwhile, "dog" is free, because it is a word on its own.
+
+# Merging Morphemes Subconsciously
+
+Sometimes, a single morpheme could etymologically be derived from two other morphemes, but our brains treat it like a single morpheme due to semantic drifting.
+
+For example, take the word "forgive". Etymologically, it was derived from "for" and "give". However, over time, the meaning of "forgive" stopped being derived from "for" and "give" individually. So, people perceive it as a single morpheme, because those historical morphemes don't contribute to the meaning of "forgive" anymore. 
+
+# Affixes
+
+Most languages' morphologies involve *affixes*, or morphemes being added to words. Here are the main types:
+
+* Prefixes: Go before the word, like "un" in English to mean "not" (unhappy).
+* Suffixes: Go after the word, like "s" in English to mean plural (dogs).
+* Circumfixes: Go before and after the word, but the parts going on either side don't mean anything individually, like "ge...t" in German to form the past tense ("kaufen" -> "gekauft")
+* Infixes: Go inside a word, like swear words in some people's English to make emphasis (abso-[bleep]ing-lutely)
+
 # Note
 
-One important thing to note is that trying to classify languages into categories like this isn't super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian. As a result, these spectrums don't necessarily account for every single language. Arabic, for example, can't really be plotted on the 2D grid of the two spectrums, because a consonantal root system is way more complicated. There are many more morphological spectrums that could exist as well, but these are just the most commonly used references ones.
+One important thing to note is that trying to classify languages into categories like this isn't super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian. As a result, these spectrums don't necessarily account for every single language. Arabic, for example, can't really be plotted on the 2D grid of the two spectrums, because a consonantal root system is way more complicated. There are many more morphological spectrums (like concatenative and non-concatenative, the latter of which Arabic falls into) that could exist as well, but these are just the most commonly used references ones.
 
 # Conclusion
 
