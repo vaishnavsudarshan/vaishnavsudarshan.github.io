@@ -8,7 +8,7 @@ abstract: Explaining how my conlang "Craftic" works.
 
 # Introduction
 
-After I made my conlang "Limit" (which was kinda mid), and then planned out "Zorbbbb" (I'll return to it eventually when I'm not too lazy), I felt that I needed to make something better.
+After I made my conlang "Limit" (which was kinda mid), and then planned out "Proto-Zorbbbb" (I'm working on it), I felt that I needed to make something better.
 
 It's probably not better because, (a) it's based on [_Infinite Craft_](https://neal.fun/infinite-craft/) which everyone was obsessed with in 2023, and (b) it took like 5 minutes to make.
 
@@ -16,7 +16,7 @@ So, enjoy!
 
 # Craftic
 
-## Nouns (and noun phrases)
+## Nouns (and noun phrases) (derived from phonology)
 
 All nouns are derived from Infinite Craft. 
 Note that phonemes have no extra allophones, and would just be pronounced like how they would if the same symbol was written in square brackets.
@@ -30,6 +30,8 @@ a (/a/) = start parentheses, odd nested
 q (/ʔ/) = end parentheses, odd nested
 s (/ç/) = start parentheses, even nested
 e (/œ/) = end parentheses, even nested 
+
+Each phoneme is also a morpheme, you're welcome!
 
 If there are any adjacent vowels, put a [t] between them, and if there are any adjacent consonants, put an [o] between them. 
 
@@ -45,7 +47,7 @@ An alphabet (top/down) is used in actual Craftic, the romanization is just for s
 
 ![_craftic orthography for nouns_](craftic_table.png){.lightbox}.
 
-As you can see 
+As you can see, all the letters start and end with the same shape. This allows for a word to be transcribed without lifting your pen, so it is continuous (however, the curve is not differentiable because some letters contain sharp turns). [t] and [o] don't have their own glyphs, because they can be inferred when you read it - the environments and the sounds are one to one. At the start of a word, the first letter should start with a stroke going down-right before writing its normal variant, and at the end of a word, the last letter should end with an up-right stroke after writing its normal variant. 
 
 ## Verbs
 
@@ -55,9 +57,22 @@ There are some agreed upon gestures that you shouldn't make your own of. For exa
 
 However, if others haven't yet invented the gesture for a certain word, you may take the opportunity to seize the "First Discovery", like how it works in Infinite Craft, and invent your own gesture for it. 
 
-For orthographical purposes, all verbs are pictogram representations of what they mean. For example, the word "jump" is written as this: ![_craftic symbol for "jump"_](craftic_jump.png){.lightbox}. 
+For orthographical purposes, all verbs are pictogram representations of what they mean, usually involving a stick figure as a placeholder for the subject. For example, the word "jump" is written as this: ![_craftic symbol for "jump"_](craftic_jump.png){.lightbox}. 
 
 What if there is an object? Craftic doesn't actually distinguish between transitive and intransitive. Instead, if there is an object, it is treated as a subject, that accepts the verb "accepts". 
+
+## Adjectives and Adverbs
+
+So, adjectives and adverbs on their own don't really exist. 
+
+If a noun phrase involving an adjective exists in Infinite Craft (like "little red book"), then you can just use that as a noun. 
+
+Otherwise, just use a noun that the adjective is close to. For example, if you want to say "scary", say "monster" instead. Once a speaker coins a new match, that is what sticks forever. Adverbs work very similarly. Instead of saying "quickly", just say "cheetah". Both come before the thing they modify. 
+
+
+## Prepositions
+
+Like adjectives, prepositions might just be whatever noun it is the closest to. For example, "in" is "country". Some prepositions have special constructions, like "of" just being made using "have" instead. 
 
 ## Syntax
 
@@ -65,8 +80,17 @@ In speech, the verb gesture is performed at the same time as the subject, and is
 
 In writing, the subject is written on the top, letters horizontal and left to right, then the verb is written underneath. 
 
-There aren't technically any grammatical case markings. The accusative and dative cases are their own pair with the verb "accept". The genitive case is made with the verb "possesses". 
+There aren't technically any grammatical case markings. The accusative and dative cases are their own pair with the verb "accept". The genitive case doesn't really exist.
 
 By the way, the symbol for "accept" is this: 
 
 ![_craftic symbol for "accept"_](craftic_accept.png){.lightbox}.
+
+This is what "my evil cat eats yummier food than the dog" would look like:
+
+I have
+Villain cat accept
+Villain cat eat
+Ice cream food accept
+Dog eat
+Brussels sprouts food accept
