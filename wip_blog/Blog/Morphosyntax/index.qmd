@@ -1,16 +1,34 @@
 ---
-title: "Morphosyntax (Morphology Part 2, Syntax Part 2)"
+title: "Morphosyntax"
 author: "Vaishnav Sudarshan"
 date: "2026-3-10"
 categories:  [Cool Linguistics Stuff]
-abstract: The next step in the linguistics circle - how words work together to form complete sentences.
+abstract: Where morphology and syntax meet for the sequel.
 ---
 
+# Introduction
+
+How do different languages organize words and how they relate to each other? If you read morphology and syntax, you might realize that this question can't be answered from either one in isolation - they must merge here to be answered. So, let's get into it.
+
 # Word Order
+
+The most basic way to figure out how words are arranged is how the following sentence would be ordered in a language:
+
+"I like [the] blue book".
+
+If you have a single brain cell, you probably know that "I" is the subject, "like" is the verb, and "blue book" is the object. 
+
+If you have two brain cells, you probably know that there are three elements here (treating "blue book" as a single unit), so the number of ways to rearrange this is $3! = 6$, namely SVO (English), SOV (Tamil), VSO (Arabic), VOS (Proto-Zorbbbb), OVS ([FIND ONE]), and OSV (Yoda). 
+
+If you have three brain cells, you probably know that if you allow "blue" and "book" to switch places, then there are $2! \cdot 3! = 12$ orderings. 
+
+I apologize for the unprecedented parallelism, this has no poetic effect, I promise.
 
 # Nouns
 
 ## Cases
+
+## Classes
 
 # Alignment
 

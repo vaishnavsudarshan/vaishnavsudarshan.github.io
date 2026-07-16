@@ -22,7 +22,7 @@ What about programming languages? They allow people to directly communicate with
 
 ## Animals
 
-And what about when a dog barks for different emotions, like if it doesn't recognize someone or if it's hungry? You might argue that it's not, because the barking just points to whatever is going on, so the communication is dependent on whether the thing being talked about is physically present, which is not the point of language. However, barking could just be a very limited language, similar to how programming languages are also limited.
+And what about when a dog barks for different emotions, like if it doesn't recognize someone or if it's hungry? You might argue that it's not, because the barking just points to whatever is going on, so the communication is dependent on whether the thing being talked about is physically present, which is not the point of language. However, barking could just be a very limited language, similar to how programming languages are also limited.    
 
 ## DNA and more
 

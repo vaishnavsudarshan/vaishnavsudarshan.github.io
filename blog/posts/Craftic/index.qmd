@@ -1,9 +1,10 @@
 ---
-title: "Craftic (satatatatatabuloqutabuloqoquloqutatabuloqutabulqoqoqutatatatabulqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqoquloqoqoqutatatatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoqulqutatabuloqutabuloqoqoqoqoqe)"
+title: "Craftic"
 author: "Vaishnav Sudarshan"
 date: "2025-11-26"
 categories:  [Cool Conlang Stuff, Cool Linguistics Stuff]
-abstract: Explaining how my conlang "Craftic" works. 
+image: "craftic_jump.png"
+abstract: Explaining how my conlang "Craftic" works. The real name was too long to fit in the title.
 ---
 
 # Introduction
@@ -18,7 +19,9 @@ So, enjoy!
 
 "Craftic" is an exonym. The endonym is this:
 
-satatatatatabuloqutabuloqoquloqutatabuloqutabulqoqoqutatatatabulqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqoquloqoqoqutatatatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoqulqutatabuloqutabuloqoqoqoqoqe
+satatatatatabuloqutabuloqoquloqutatabuloqutabulqoqoqutatatatabulqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqo
+quloqoqoqutatatatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatata
+buloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoqulqutatabuloqutabuloqoqoqoqoqe
 
 ## Nouns (and noun phrases) (derived from phonology)
 

@@ -342,7 +342,7 @@ There is a very similar recursive structure here, because there is an operator (
 
 The word "syntax" for programming languages is kind of equivalent to the word "grammar" for natural languages, but this is one of the actual instances of "syntax", the one used for natural languages as an aspect of "grammar", in programming languages. 
 
-I will probably write a future blog post specifically about programming language theory later, but this is an interesting preview into how it uses linguistics tools.
+I will probably write a future blog post specifically about programming language theory later, but this is an interesting preview into how it uses linguistics tools.  
 
 # Conclusion
 

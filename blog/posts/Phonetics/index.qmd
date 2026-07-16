@@ -121,7 +121,7 @@ Vowels can also have creaky or breathy voice (basically making it sound like a s
 
 Vowel length, like gemination but for vowels, is distinguished in Thai.
 
-However, if you mess up some distinctions while trying to speak a language, its native speakers will most likely still understand you based on context, although they would likely notice that it sounds off. 
+However, if you mess up some distinctions while trying to speak a language, its native speakers will most likely still understand you based on context, although they would likely notice that it sounds off.  
 
 # Spectrograms
 

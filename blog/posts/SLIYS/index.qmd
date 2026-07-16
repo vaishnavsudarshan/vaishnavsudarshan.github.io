@@ -1,9 +1,9 @@
 ---
-title: "My Experience With SLIYS"
+title: "SLIYS - a linguistics summer program for high schoolers"
 author: "Vaishnav Sudarshan"
 date: "2026-7-10"
 categories:  [Miscellaneous Stuff]
-abstract: I talk about a very unique opportunity that high schoolers interested in linguistics can take part in.
+abstract: A very unique opportunity that high schoolers interested in linguistics can take part in.
 ---
 
 # Linguistics in High School
@@ -12,11 +12,11 @@ If you're in high school and you are interested in linguistics, chances are that
 
 While I find language puzzles to be very fun, and they do sometimes teach you certain concepts in linguistics, they still don't replace actually learning linguistics. It's kind of like the difference between sudoku and algebra. 
 
-During 8th and 9th grade, I was forced to learn linguistics through a combination of YouTube, Wikipedia, and ChatGPT - not exactly the best way to learn, although it was still much better than one might expect.
+During 8th and 9th grade, I learned linguistics through a combination of YouTube, Wikipedia, ChatGPT, Discord, and books - it's ok but not that good compared to learning it formally. 
 
 # SLIYS
 
-That's why I was thrilled to learn that every summer, the Ohio State University hosts a program called SLIYS (Summer Linguistics Institute for Youth Scholars) that actually formally teaches you the basics of linguistics. They have two one-week online sessions - SLIYS 1 and SLIYS 2, which are more introductory and more in-depth respectively. You have to take SLIYS 1 in order to be eligible to take SLIYS 2 later on. Sadly, I was only able to take SLIYS 1 this summer, because I had a schedule conflict during SLIYS 2, but I hope to take it next year. 
+That's why I was thrilled to learn that every summer, the Ohio State University hosts a program called [SLIYS](https://linguistics.osu.edu/undergrad/sliys) (Summer Linguistics Institute for Youth Scholars) that actually formally teaches you the basics of linguistics. They have two one-week online sessions - SLIYS 1 and SLIYS 2, which are more introductory and more in-depth respectively. You have to take SLIYS 1 in order to be eligible to take SLIYS 2 later on. Sadly, I was only able to take SLIYS 1 this summer, because I had a schedule conflict during SLIYS 2, but I hope to take it next year. 
 
 ## Content 
 
@@ -45,3 +45,5 @@ On the last day, we were able to ask questions to PhD and research students work
 # Conclusion
 
 Overall, SLIYS is an extremely unique opportunity that you get in high school to learn and do linguistics, and I'd strongly recommend that you participate in it if you want to learn more about the field.
+
+Thank you to my instructors, Lindon Dedvukaj, Kyler Laycock, Angelica Aviles Bosques, and Ellie Wren-Hardin!
