@@ -8,7 +8,7 @@ abstract: A very unique opportunity that high schoolers interested in linguistic
 
 # Linguistics in High School
 
-If you're in high school and you are interested in linguistics, chances are that your opportunities are pretty limited. The major thing you can do is take the North American Computational Linguistics Open (NACLO). However, the entire contest is built around the fact that most high schoolers don't have background linguistics knowledge, which is why the problems are based on logic and puzzle solving rather than linguistic theory. 
+If you're in high school and you are interested in linguistics, chances are that your opportunities are pretty limited. The major thing you can do is take the North American Computational Linguistics Open ([NACLO](https://naclo.org/)). However, the entire contest is built around the fact that most high schoolers don't have background linguistics knowledge, which is why the problems are based on logic and puzzle solving rather than linguistic theory. 
 
 While I find language puzzles to be very fun, and they do sometimes teach you certain concepts in linguistics, they still don't replace actually learning linguistics. It's kind of like the difference between sudoku and algebra. 
 
@@ -44,6 +44,6 @@ On the last day, we were able to ask questions to PhD and research students work
 
 # Conclusion
 
-Overall, SLIYS is an extremely unique opportunity that you get in high school to learn and do linguistics, and I'd strongly recommend that you participate in it if you want to learn more about the field.
+Overall, SLIYS is an extremely unique opportunity that you get in high school to learn and do linguistics, and I'd strongly recommend that you [participate in it](https://linguistics.osu.edu/undergrad/sliys/sliys-how-apply) if you want to learn more about the field. 
 
 Thank you to my instructors, Lindon Dedvukaj, Kyler Laycock, Angelica Aviles Bosques, and Ellie Wren-Hardin!

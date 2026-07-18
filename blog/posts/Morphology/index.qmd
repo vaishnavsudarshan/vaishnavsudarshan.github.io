@@ -119,3 +119,4 @@ One important thing to note is that trying to classify languages into categories
 
 So, now we know how meanings can be arranged within "words" of a language. However, how do these meanings interact? This is what we need syntax for, which will be covered next. 
 
+

@@ -99,3 +99,4 @@ This is why some languages like Wifi Password Language (Polish) have a bunch of 
 # Conclusion
 
 Now we know how languages' perceived sounds interact with each other, but how does meaning form? Stay tuned for morphology.
+

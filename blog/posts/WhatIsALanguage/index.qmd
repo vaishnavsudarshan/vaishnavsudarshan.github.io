@@ -159,3 +159,4 @@ There must in theory be some metric to measure mutual intelligibility that can f
 # Conclusion
 
 As you can see, there are many complications when it comes to defining a language. If you disagree with my solution to this issue (which you likely will), please write your interpretation in the comments, because different opinions will be very cool. 
+

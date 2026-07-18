@@ -43,6 +43,8 @@ On the other side, if an organism is an animal, then that is a sufficient condit
 
 # compositional semantics
 
+
+
 ## principle of compositionality
 
 ## non compositional meaning

@@ -9,7 +9,7 @@ abstract: Explaining how my conlang "Craftic" works. The real name was too long 
 
 # Introduction
 
-After I made my conlang "Limit" (which was kinda mid), and then planned out "Proto-Zorbbbb" (I'm working on it), I felt that I needed to make something better.
+After I made my conlang ["Limit"](https://vaishnavs.net/posts/Limit%20riLmOtOpU/) (which was kinda mid), and then planned out "Proto-Zorbbbb" (I'm working on it), I felt that I needed to make something better.
 
 It's probably not better because, (a) it's based on [_Infinite Craft_](https://neal.fun/infinite-craft/) which everyone was obsessed with in 2023, and (b) it took like 5 minutes to make.
 

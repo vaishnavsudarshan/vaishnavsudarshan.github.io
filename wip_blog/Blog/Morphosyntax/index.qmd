@@ -18,11 +18,13 @@ The most basic way to figure out how words are arranged is how the following sen
 
 If you have a single brain cell, you probably know that "I" is the subject, "like" is the verb, and "blue book" is the object. 
 
-If you have two brain cells, you probably know that there are three elements here (treating "blue book" as a single unit), so the number of ways to rearrange this is $3! = 6$, namely SVO (English), SOV (Tamil), VSO (Arabic), VOS (Proto-Zorbbbb), OVS ([FIND ONE]), and OSV (Yoda). 
+If you have two brain cells, you probably know that there are three elements here (treating "blue book" as a single unit), so the number of ways to rearrange this is $3! = 6$, namely SVO (English), SOV (Tamil), VSO (Arabic), VOS (Proto-Zorbbbb), OVS (Klingon), and OSV (Yoda) (notice how we went from real languages to aliens???)
 
 If you have three brain cells, you probably know that if you allow "blue" and "book" to switch places, then there are $2! \cdot 3! = 12$ orderings. 
 
-I apologize for the unprecedented parallelism, this has no poetic effect, I promise.
+I apologize for the unprovoked parallelism, this has no poetic effect, I promise. 
+
+These are the very basic factors that are pretty much universal (cough cough Craftic without any objects). However, you can also worry about prepositions or postpositions (whether that sort of particle comes before or after the noun - in English, you say "to the house", but in Hindi, you say "ghar ko", or literally, "[the] house to"). 
 
 # Nouns
 
@@ -30,13 +32,21 @@ I apologize for the unprecedented parallelism, this has no poetic effect, I prom
 
 ## Classes
 
-# Alignment
-
 # Verbs
+
+## Transitive/Intransitive
+
+## TAM
+
+
 
 # Inflection/Derivation
 
-## Transitive/Intransitive
+
+# Alignment
+
+
+
 
 # Movement
 
