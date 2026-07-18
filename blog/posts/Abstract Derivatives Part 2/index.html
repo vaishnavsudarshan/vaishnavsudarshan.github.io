@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vaishnav Sudarshan">
+<meta name="dcterms.date" content="2025-11-23">
+
+<title>Abstract Derivatives Part 2 - Multivariable and Beyond – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Vaishnav Sudarshan’s Blog on Cool Stuff</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vaishnavsudarshan"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Abstract Derivatives Part 2 - Multivariable and Beyond</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Cool Math Stuff</div>
+                <div class="quarto-category">Cool AI Stuff</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vaishnav Sudarshan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Originally Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 23, 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Last Updated</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">July 12, 2026</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      How can the idea of derivatives as linear operators be applied to more complex functions, like multivariable functions, vector-valued functions, and vector fields? How does this relate in the slightest to AI?
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="making-derivatives-more-abstract" class="level1">
+<h1>Making Derivatives More Abstract</h1>
+<p>For single variable functions, we have a scalar in and a scalar out (one input, one output). You could technically think of it as 1D vectors, as we’ll do soon, but it’s basically the same thing.</p>
+<p>The main thing we want to emphasize here is that for the derivative, we write it as differentials (<span class="math inline">\(df = f'(x) dx\)</span>) instead of <span class="math inline">\(\frac{df}{dx}\)</span>. In scalar functions, that works, but later on, it won’t make much sense to divide by a vector or a matrix.</p>
+<p>Derivatives, however, aren’t just limited to acting on single-variables to be linear operators. Here are some other types of derivatives.</p>
+<section id="multivariable-functions" class="level2">
+<h2 class="anchored" data-anchor-id="multivariable-functions">Multivariable Functions</h2>
+<p>For multivariable functions, we have many inputs in and one output out, where each input or output is a number. However, one interpretation of a vector is a list of numbers, so one could think of it as a vector in and a scalar out. What this means is that, for a 2D input space, <span class="math inline">\(f(\vec{x}) = f(x, y)\)</span>. For any point, or vector, on the 2D <span class="math inline">\(xy\)</span> plane, there is a <span class="math inline">\(z\)</span> coordinate corresponding to that, to form some sort of surface.</p>
+<p>Again, what we basically just mean in this case is that a vector has two or more dimensions, and a scalar has just one. If we think of a list of numbers as a vector, then we can do vector operations on it, but if we think of a single number as a vector, doing vector operations on it wouldn’t make a difference.</p>
+<p>As for the derivative? It’s a vector, known as the gradient! It is the vector of partial derivatives with respect to each variable. The gradient will always have the same “shape” as the input space, because it also represents the direction of steepest ascent. It’s written as <span class="math inline">\(\nabla f = [...\frac{\partial f}{\partial x_i}...]\)</span>, where <span class="math inline">\(x_i\)</span> is each component in the input.</p>
+<section id="slight-tangent-on-gradient-descent" class="level3">
+<h3 class="anchored" data-anchor-id="slight-tangent-on-gradient-descent">Slight Tangent on Gradient Descent</h3>
+<p>Why? Because think about this way: in differential form, we can write <span class="math inline">\(df = \Sigma {(\frac{\partial f}{\partial x_i} dx_i)}\)</span>. Oh, the sum of the corresponding products? Reminds me of dot product! We can write this as <span class="math inline">\(df = \nabla f \cdot \vec{dx}\)</span>. In terms of magnitudes, it can also be written as <span class="math inline">\(df = |\nabla f| |d\vec{x}| \cos(\theta)\)</span>. We can’t really do much with the given magnitudes to maximize <span class="math inline">\(df\)</span>.</p>
+<p>At a particular input point <span class="math inline">\(\vec{x}\)</span>, the magnitude of <span class="math inline">\(\nabla f\)</span> is going to be some constant when we’re dealing with anything but that input point and the function. Also, the magnitude of <span class="math inline">\(d\vec{x}\)</span> can’t be dealt with because it’s an infinitesimal, not an actual number. So, the only thing we can do to maximize <span class="math inline">\(df\)</span> is the <span class="math inline">\(\cos(\theta)\)</span> term. The maximum of <span class="math inline">\(\cos(\theta)\)</span> is <span class="math inline">\(1\)</span>, when <span class="math inline">\(\theta = 0^\circ\)</span>. So, if <span class="math inline">\(d\vec{x}\)</span> is in the same direction as the gradient, the function increases the most.</p>
+<p>Similarly, for <span class="math inline">\(df\)</span> to be as low as possible, we want <span class="math inline">\(\cos(\theta)\)</span> to be at its minimum (<span class="math inline">\(-1\)</span>), which is when <span class="math inline">\(\theta = 180^\circ\)</span>, or when we move in the opposite direction as the gradient. Now, it is guaranteed that <span class="math inline">\(df \leq 0\)</span>, because we’re dealing with just magnitudes (always nonnegative) times <span class="math inline">\(-1\)</span>.</p>
+<p>So, we can do some local linearization. If we have some random point <span class="math inline">\(\vec{x}, f(\vec{x})\)</span>, we can change <span class="math inline">\(\vec{x}\)</span> by some small vector in the opposite direction of <span class="math inline">\(\nabla f\)</span>. Where do we get that small vector? First, we normalize <span class="math inline">\(-\nabla f\)</span> by dividing by its magnitude to get a unit vector. Then, to scale it so that our local linearization approximation isn’t horrendous, we multiply this vector by a small scalar <span class="math inline">\(\mu\)</span>, known as the <em>learning step</em>. We subtract add this to the original <span class="math inline">\(\vec{x}\)</span>, and recalculate <span class="math inline">\(f(\vec{x})\)</span>.</p>
+<p>When training neural networks, this is the best way to find a local minimum. Even though the absolute minimum is better, the computations to do that would cost way more money.</p>
+</section>
+</section>
+<section id="vector-valued-functions" class="level2">
+<h2 class="anchored" data-anchor-id="vector-valued-functions">Vector-Valued Functions</h2>
+<p>What about a vector output for a scalar input? This could be represented as a parametric equation, and the derivative would also be a vector. An example of this is in physics, with velocity and acceleration, both as a function of time. See the diagram for these in circular motion.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="circular.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"><img src="circular.png" class="img-fluid figure-img" alt="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"></a></p>
+<figcaption>Diagram showing the vector-valued functions of velocity and acceleration during circular motion</figcaption>
+</figure>
+</div>
+<p>To demonstrate where more abstract derivatives can be used in this case, we can use parametric equations. Let the counterclockwise angle above the horizontal of the particle moving in a circle be <span class="math inline">\(\theta\)</span>, and the radius be <span class="math inline">\(r\)</span>. From components, the direction of the position of the particle from the center is <span class="math inline">\([\cos(\theta), \sin(\theta)]\)</span>. Then, from geometry, since motion is perpendicular to the radius, the horizontal component of velocity (assuming constant speed <span class="math inline">\(v\)</span>) is <span class="math inline">\(-v \sin(\theta)\)</span>, and the vertical component is <span class="math inline">\(v \cos(\theta)\)</span>. Given that <span class="math inline">\(\omega = d\theta/dt\)</span> and <span class="math inline">\(v=\omega r\)</span>, try to prove for yourself that the centripetal acceleration must have magnitude <span class="math inline">\(\frac{v^2}{r}\)</span> and point towards the center! The full solution is in my <a href="../Circular Motion/"><em>blog post about circular motion</em></a>.</p>
+</section>
+<section id="vector-fields" class="level2">
+<h2 class="anchored" data-anchor-id="vector-fields">Vector Fields</h2>
+<p>At this point, we are exiting the more basic types of functions, and finally, matrices come into use here. You may recall that a vector field is a kind of function where for every point (vector) in space, there is an output which is a vector that moves that input somewhere else. As a result, what we can get by reiterating this process can be modeled for something like fluid flow. Maybe you’ve seen some of these diagrams before. Typically, since varying magnitudes get out of hand when drawn on paper, each point has a vector of a fixed length showing just direction, and the magnitudes are portrayed through color, where the “hotter” the color, the longer the magnitude is.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="vector_field.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing a vector field"><img src="vector_field.png" class="img-fluid figure-img" alt="Diagram showing a vector field"></a></p>
+<figcaption>Diagram showing a vector field</figcaption>
+</figure>
+</div>
+<p>The diagram even looks intuitive. At each point, it tells you where to go next, and by how much. Even if you had no idea about what vector fields are, that’s literally what is looks like.</p>
+<p>The derivative is a matrix called the Jacobian. Each row is basically the gradient with respect to the entire input from each component of the output.</p>
+<p>If you think of it as looking at each component of the input, the Jacobian is also the derivative of the entire output with respect to each input.</p>
+<p>So, if the input space is a vector in <span class="math inline">\(\mathbb{R}^n\)</span> and the output space is a vector in <span class="math inline">\(\mathbb{R}^m\)</span>, the Jacobian is a matrix with dimensions <span class="math inline">\(m \times n\)</span>.</p>
+<p>Now, the derivative can be written as <span class="math inline">\(d \vec{f} = J d \vec{x}\)</span> for the Jacobian <span class="math inline">\(J\)</span>. Now, this looks like a proper matrix multiplication with no scalars involved apart from doing things component-wise.</p>
+<p>One cool thing now is that if <span class="math inline">\(J\)</span> is a constant matrix, the vector field is just a normal linear transformation of <span class="math inline">\(\vec{f}(\vec{x}) = J \vec{x}\)</span>, which is an interesting interpretation of linear transformations.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>So far, what we’ve seen is just seeing pretty simple derivatives with a new interpretation. Stay tuned for even more abstract derivatives, and how they relate to AI!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "vaishnavsudarshan/vaishnavsudarshan.github.io";
+    script.dataset.repoId = "R_kgDONzCjJQ";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDONzCjJc4C_jEt";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "bottom";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
