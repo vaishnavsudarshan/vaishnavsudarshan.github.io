@@ -111,12 +111,19 @@ For comparing A to B in quality X, just say "A X, B ! X"
 This is what "my evil cat from France eats yummier food than the dog" would look like:
 
 I have
+
 Villain cat accept
+
 Villain cat exist
+
 France accept
+
 Villain cat eat
+
 (Ice cream) food accept
+
 Dog eat
+
 (Brussels sprouts) food accept
 
 # Conclusion
