@@ -3,6 +3,7 @@ title: "Phonology"
 author: "Vaishnav Sudarshan"
 date: "2025-9-14"
 categories:  [Cool Linguistics Stuff]
+tags: [Cool Psychology Stuff]
 abstract: We know how sounds work biologically, but how do languages perceive them?
 image: french_phonology.png
 ---
@@ -99,4 +100,5 @@ This is why some languages like Wifi Password Language (Polish) have a bunch of 
 # Conclusion
 
 Now we know how languages' perceived sounds interact with each other, but how does meaning form? Stay tuned for morphology.
+
 

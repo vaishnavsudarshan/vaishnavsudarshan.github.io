@@ -3,7 +3,7 @@ title: "Historical Linguistics Part 2: Language Evolution, The Comparative Metho
 author: "Vaishnav Sudarshan"
 date: "2026-6-30"
 categories:  [Cool Linguistics Stuff]
-tags: [Cool History Stuff, Cool Logic Stuff, Cool Geography Stuff, Cool Food Stuff]
+tags: [Cool History Stuff, Cool Logic Stuff, Cool Geography Stuff, Cool Food Stuff, Cool Anthropology Stuff]
 image: "hundred.png"
 abstract: How did historical linguists figure out the ancestor language to all the Indo-European languages? Or the Dravidian languages? Or any other group of languages that people believe to be related? The comparative method is how.
 ---

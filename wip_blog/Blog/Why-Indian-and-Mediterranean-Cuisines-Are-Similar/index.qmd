@@ -1,0 +1,9 @@
+---
+title: "Why are Indian and Mediterranean cuisines so similar?"
+author: "Vaishnav Sudarshan"
+date: "2025-4-11"
+categories:  [Cool Food Stuff]
+tags: [Cool Chemistry Stuff, Cool Economics Stuff]
+abstract: Is it just a coincidence that Indian and Mediterranean food resemble each other? I think not. 
+---
+

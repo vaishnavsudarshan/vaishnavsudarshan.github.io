@@ -2,7 +2,8 @@
 title: "Craftic"
 author: "Vaishnav Sudarshan"
 date: "2025-11-26"
-categories:  [Cool Conlang Stuff, Cool Linguistics Stuff]
+categories:  [Cool Linguistics Stuff]
+tags: [Cool Conlang Stuff]
 image: "craftic_jump.png"
 abstract: Explaining how my conlang "Craftic" works. The real name was too long to fit in the title.
 ---
@@ -28,12 +29,19 @@ buloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutata
 All nouns are derived from Infinite Craft. 
 Note that phonemes have no extra allophones, and would just be pronounced like how they would if the same symbol was written in square brackets.
 Sound and written representation: 
+
 l (/ɬ/) = water
+
 k (/ʞ/) = fire
+
 m (/m/) = wind
+
 b (/ʙ/) = earth
+
 u (/y/) = plus
+
 a (/a/) = start parentheses
+
 q (/ħ/) = end parentheses
 
 Each phoneme is also a morpheme, you're welcome!
@@ -45,8 +53,6 @@ Parentheses are required for adding any units that aren't fundamental.
 There is communtative property symmetry, where both ways to put two things together are valid with the same meaning (so a non-one-to-one mapping).
 
 Cloud = [Steam] + [Smoke] = [Water + Fire] + [Fire + Wind] = salukoqutakumoqe
-
-
 
 Oh yeah, I should have mentioned that you'll sound insane if you try to pronounce anything. 
 

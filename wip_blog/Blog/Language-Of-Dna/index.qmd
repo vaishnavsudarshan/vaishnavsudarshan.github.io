@@ -6,3 +6,11 @@ categories:  [Cool Linguistics Stuff, Cool Biology Stuff]
 tags: [Cool Chemistry Stuff]
 abstract: It's not just humans that use languages through speech anymore.
 ---
+
+# RNA and DNA
+
+# Codons and Nucleotides
+
+# The Genetic Code
+
+# 

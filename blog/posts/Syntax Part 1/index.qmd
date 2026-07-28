@@ -239,6 +239,20 @@ class M,Det modGroup;
 
 There are a finite amount of rules for how to generate a valid sentence, but an infinite amount of possible sentences (partially thanks to recursion, as you are about to see). You can represent the structure of possible sentences using trees. Note that only the last layer of a tree actually says what each word is. So, "fruit flies like a banana" and "hungry people eat that food" would have their trees looking about the same. Because a language is so complex, it's hard to write down every specific structure of sentences, so you can only be pretty general.
 
+# Scope Ambiguity
+
+Obviously, in spoken language, you don't have brackets or syntax trees. So, how would you interpret this sentence?
+
+"The dog and the cat that you own fought each other".
+
+Either this means that you own both the dog and the cat ("[[The dog and the cat] that you own] fought each other"), or your cat fought another dog ("[The dog and [the cat that you own]] fought each other").  
+
+Another example is "I saw the man with a telescope", which either means the man has a telescope and you saw him, or you used a telescope to see the man.
+
+In general, scope ambiguity is when you can't tell what constituent is being modified.
+
+Prescriptivists are always like, "commas save lives, people" ("Let's eat kids" vs "Let's eat, kids"). However, sentences like these are perfectly acceptable in standard English and the ambiguity can't just be fixed by adding commas (because that would be considered grammatically incorrect then since prescriptivists say that you can't put commas in those places). This is just yet another argument for descriptive linguistics - prescriptivists can't even be consistent with their own objectives, so it's better to just let language be. 
+
 # Recursion Introduction
 
 Let's talk about something that is seemingly completely different, but is actually the heart of what we just did with our nested brackets.
@@ -347,4 +361,5 @@ I will probably write a future blog post specifically about programming language
 # Conclusion
 
 Now that we know how you can break apart sentences into smaller pieces, we can talk about the roles of the smaller pieces themselves! Stay tuned for morphosyntax in part 2, including one of the most confusing concepts in linguistics (good luck)! 
+
 
