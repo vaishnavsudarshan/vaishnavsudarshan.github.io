@@ -2,7 +2,7 @@
 title: "Abstract Derivatives Part 2 - Multivariable and Beyond"
 author: "Vaishnav Sudarshan"
 date: "2025-11-23"
-categories:  [Cool Math Stuff, Cool AI Stuff]
+categories:  [Math, AI]
 abstract: How can the idea of derivatives as linear operators be applied to more complex functions, like multivariable functions, vector-valued functions, and vector fields? How does this relate in the slightest to AI?
 image: circular.png
 ---

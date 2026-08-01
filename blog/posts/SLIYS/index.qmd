@@ -2,7 +2,7 @@
 title: "SLIYS - a linguistics summer program for high schoolers"
 author: "Vaishnav Sudarshan"
 date: "2026-7-10"
-categories:  [Miscellaneous Stuff]
+categories:  [Miscellaneous]
 abstract: A very unique opportunity that high schoolers interested in linguistics can take part in.
 ---
 

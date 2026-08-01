@@ -2,7 +2,7 @@
 title: "Writing Systems"
 author: "Vaishnav Sudarshan"
 date: "2025-08-23"
-categories:  [Cool Linguistics Stuff]
+categories:  [Linguistics]
 abstract: How do different types of writing systems work? What are they evolved from, and how? All these and more will be answered in this blog post. 
 image: brahmi_script_qutub_minar.jpg
 ---

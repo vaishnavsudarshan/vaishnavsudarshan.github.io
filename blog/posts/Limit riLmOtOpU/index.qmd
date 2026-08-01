@@ -2,8 +2,8 @@
 title: "Limit riLmOtOpU (Limit For Monkeys)"
 author: "Vaishnav Sudarshan"
 date: "2025-07-03"
-categories: [Cool Linguistics Stuff]
-tags: [Cool Conlang Stuff]
+categories: [Linguistics]
+tags: [Conlangs]
 image: "LimitFlag.png"
 ---
 ## Background

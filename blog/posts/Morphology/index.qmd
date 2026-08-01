@@ -2,7 +2,7 @@
 title: "Morphology"
 author: "Vaishnav Sudarshan"
 date: "2025-10-13"
-categories:  [Cool Linguistics Stuff]
+categories:  [Linguistics]
 abstract: How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
 image: translate.png
 ---

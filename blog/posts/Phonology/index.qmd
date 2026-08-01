@@ -2,17 +2,17 @@
 title: "Phonology"
 author: "Vaishnav Sudarshan"
 date: "2025-9-14"
-categories:  [Cool Linguistics Stuff]
-tags: [Cool Psychology Stuff]
+categories:  [Linguistics]
+tags: [Psychology]
 abstract: We know how sounds work biologically, but how do languages perceive them?
 image: french_phonology.png
 ---
 
 > This is a series of blogs on linguistics. See also: [_Morphology_](../Morphology-and-Semantics/), [_Writing Systems_](../Writing-Systems/), [_Phonetics_](../Phonetics-and-Phonology-Part1/)
 
-# The IPA Introduction
+# The IPA Review
 
-The [_International Phonetic Alphabet_](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet), or the IPA, is how sound are represented. Each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about in the Phonetics blog.. We will get into the specific characters of the IPA in the next part, but for now, we're just going to be talking about the different ways that linguists represent sounds. To fully understand how some of the examples in this post are pronounced, you might want to check out [the IPA chart](https://www.ipachart.com/).
+The [_International Phonetic Alphabet_](https://vaishnavs.net/posts/The%20IPA/), or the IPA, is how sounds are represented. Each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about in the Phonetics blog post. To fully understand how some of the examples in this post are pronounced, you might want to check out [the IPA chart](https://www.ipachart.com/).
 
 You may have noticed that throughout the last article I've used slashes and brackets to refer to sounds. That was not just something random I did because a monkey walked on my keyboard one time and then I stuck with it - this is actually the notation of referencing IPA sounds. 
 

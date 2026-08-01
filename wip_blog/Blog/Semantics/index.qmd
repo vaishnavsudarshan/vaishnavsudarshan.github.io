@@ -51,7 +51,7 @@ For example, English took "déja vu" from French, which literally translates to 
 
 Words can also shorten. The full name of "soccer" originated from "association football" (which obviously no one wants to say every time), so that became "assoc", and then "soccer". 
 
-However, these cases don't take away from the main point that meanings as a whole are derived from smaller parts - that's how you understand this sentence, for example. Syntax allows you to arrange these meanings in the correct way, but compositional semantics allows you to get the overall idea as to what the sentence is actually saying.
+However, these cases don't take away from the main point that meanings as a whole are derived from smaller parts - that's how you understand this sentence, for example. [Syntax](https://vaishnavs.net/posts/Syntax%20Part%201/) might allow you to arrange these meanings in the correct way, but compositional semantics allows you to get the overall idea as to what the sentence is actually saying.
 
 ## Non-Compositional Meaning
 
@@ -77,9 +77,13 @@ One problem in semantics is about how negation works. You might think it's relat
 
 Imagine we have a spectrum (with integer values for simplicity) ranging from -10 (cold) to 10 (hot), and we wish to find the numerical value of "not hot".  
 
-If you do computer science, you might think of negation as the not/! operator, that switches a boolean. You might have a variable for the temperature, and "hot" means "temperature == 10". With this logic, "not hot" means "temperature != 10", which means it is any number from -10 to 9. This is the same line of reasoning from set theory, where negation might be the complement of a set ("hot" is a set with a single element, 10), so "not hot" means anything but 10. 
+If you do computer science or logic, you might think of negation as the not/! operator, that switches a boolean. You might have a variable for the temperature, and "hot" means "temperature == 10". With this logic, "not hot" means "temperature != 10", which means it is any number from -10 to 9. This is the same line of reasoning from set theory, where negation might be the complement of a set ("hot" is a set with a single element, 10), so "not hot" means anything but 10. 
 
 However, "negate" literally means to multiply by -1, that's why if you negate 3, you get -3, not every number but 3. So, the traditional view might say "not hot" is exactly "cold", or "-10".
+
+There's also the pragmatic perspective (future blog post). You have to think about why someone would say "not hot" as opposed to "cold". Depending on their intention, the range of what it represents on the spectrum can vary a lot. 
+
+![Some of the interpretations for "not hot"](not_hot.png){.lightbox}
 
 If you think this is just a silly thought experiment, think again. One focus of semantics is to find out how languages convey negation. Here's a more practical example of an English sentence. "I can not do it" could either mean "I am incapable of doing it", or it could mean "I am capable of not doing it". You can probably see the difference yourself. 
 
@@ -92,6 +96,8 @@ Adding on to the idea of negation, we have the problem of *antonyms*, or pairs o
 * Converse: Different ends of a relationship, and one can't exist without another. For example, you can't "buy" something without someone else there to "sell" it.
 * Reversible: One undoes the other. For example, you can "turn on" a light and then "turn off" the same light, which has the same result as not doing anything (in other words, it has an orbit size of 2).
 
+Again, it brings up the question of what "opposite" really is. 
+
 # Time
 
 Another topic in semantics is how languages express time through tense and aspect, as well as time words. If you want to mark when some verb took place, different languages mark the boundaries differently.
@@ -100,7 +106,7 @@ English has past, present, and future, obviously, but it also accounts for wheth
 
 However, Thai doesn't require that you distinguish tense, especially if you have context surrounding it. 
 
-Zulu has an extra tense, for distinguishing recent and distant past, but it's also asymmetric because 
+Zulu has an extra tense, for distinguishing recent and distant past, but it's also asymmetric because it only has a single future tense.
 
 Hindi has something weird, where "yesterday" and "tomorrow" have the same word, "kal". 
 
@@ -119,15 +125,15 @@ In [this NACLO problem](https://www.naclo.org/resources/problems/2026/N2026-G.pd
 <details>
 <summary>Spoiler: Explains the main idea of the problem</summary>
 
-Basically, the way talking about siblings works in Manam is quite different from "brother" or "sister". There is one word for "younger sibling of opposite gender", another word for "younger sibling of same gender", and a third for "older sibling". However, "younger" and "older" are also symmetrical for the purposes of this problem, so you could get the same solution by making the younger sibling the one that merges genders. 
+Basically, the way talking about siblings works in Manam is quite different from "brother" or "sister". There is one word for "younger sibling of opposite gender", another word for "younger sibling of same gender", and a third for "older sibling" (apart from "I" in the problem, which should be obvious). However, "younger" and "older" are also symmetrical for the purposes of this problem, so you could get the same solution by making the younger sibling the one that merges genders. 
 
 </details>
 
 # Number
 
-A final note on how different languages perceive meanings differently is for number. As you know, English counts numbers using base 10 (decimal numbers). However, different languages use other bases, though they are less rare.
+A final note on how different languages perceive meanings is for number. As you know, English counts numbers using base 10 (decimal numbers). However, different languages use other bases, though they are less rare.
 
-The most common example is French. Although it mostly uses base 10, there are still remnants of vigesimal counting (base 20) from the previous Celtic languages in modern-day France before Latin arrived, like Gaulish (Asterix and Obelix is all about the Gauls resisting the Romans). To observe this, look at these numbers:
+The most common example is French. Although it mostly uses base 10, there are still remnants of vigesimal counting (base 20) from the previous Celtic languages in modern-day France before Latin arrived, like Gaulish (if you're interested, Asterix and Obelix is all about the Gauls resisting the Romans). To observe this, look at these numbers:
 
 * 19: dix-neuf (this is base 10, literally "ten nine", similar to how English "nineteen" is connected to "nine ten")
 * 79: soixante dix-neuf (literally "sixty nineteen")
@@ -142,23 +148,33 @@ There are other bases too (such as base 60 from the Babylonians, which is where 
 
 # Semantic Drift
 
-Semantic drift is when the meaning of a word shifts over time. This can cause something similar to push or pull chains in sound changes, except for word meanings. Looking at some examples might illustrate this better.
+Semantic drift is when the meaning of a word shifts over time. Looking at some common examples might illustrate this better.
 
 ## "Incredible"
 
-"Incredible" means something like "amazing" or "awesome". 
+"Incredible" means something like "amazing" or "awesome". You might realize that "credible" means "believable", so "incredible" means "unbelievable"... right? Well, it used to! 
+
+Friend: "Yo bro, I just got a 5 on all my 31 AP exams this year!"
+You: "Really? That's incredible!"
+Friend: "HOW DARE YOU SUGGEST THAT I CHEATED??? WE'RE NOT FRIENDS ANYMORE!!!"
+
+Obviously, that won't actually happen. 
 
 ## Semantic Bleaching with "lol"
+
+Semantic drift can cause something similar to push or pull chains in sound changes, except for word meanings. 
 
 The abbreviation "lol" on the Internet technically means "laughing out loud", but nowadays, no one uses it for extreme humor. It has evolved to mean very mild laughter. If someone says a very hilarious joke, and you simply reply "lol", that might even be offensive because you didn't find it that funny. 
 
 Therefore, people started adding profanity to intensify their humor. This is why "lol" got replaced with "lmao" (which I'm not gonna write out). However, after being used so much, even this got less intense in meaning. So, they just added even more bad stuff to humorous reactions to make it less mild.
 
-This is why now people might elongate the "o" to make it "lmaoooooo" or they might do all caps like "LMAO" or even add even worse 
+This is why now people might elongate the "o" or they might do all caps or even add even worse curse words in the middle (like the voiceless labiodental fricative one) or just shift to other things entirely, like the skull emoji / "I'M DEAD" (which itself is quite dead now), "son i'm crine", or who knows what else these days. 
+
+Semantic bleaching is when a word's meaning gets less intense or "bleached" over time, so it causes replacements to be necessary. 
 
 ## Euphemism with "bear"
 
-
+In PIE, the word for "bear" was *h₂ŕ̥tḱos. This is the ancestor to "ṛ́kṣa" in Sanskrit and "ursus" in Latin. 
 
 # Feature Vectors
 
@@ -166,8 +182,10 @@ This is why now people might elongate the "o" to make it "lmaoooooo" or they mig
 
 One way for linguists to avoid ambiguity is to represent stuff using mathematical notation. For example, take the "I can not do it" example. If we use "¬" to mean negation (as in flipping a boolean value), then the two meanings can be represented as can(¬do(x)) or ¬can(do(x)). Modal verbs like "can" in this case are kind of like functions. 
 
-Here, x is a variable that can stand for any element that we're interested in.
+Here, x is a variable that can stand for any element that we're interested in. 
 
 ## Truth Conditions
 
 # Conclusion
+
+Now that you know how humans traditionally understand meanings, let's learn about how machines understand them. Stay tuned for part 2!

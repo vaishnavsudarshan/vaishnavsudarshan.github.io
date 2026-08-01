@@ -3,7 +3,7 @@ title: "Morphosyntax"
 author: "Vaishnav Sudarshan"
 date: "2026-3-10"
 categories:  [Cool Linguistics Stuff]
-abstract: Where morphology and syntax meet for the sequel.
+abstract: Where morphology and syntax have a sequel.
 ---
 
 # Introduction
@@ -47,7 +47,7 @@ These are the very basic factors that are pretty much universal (cough cough Cra
 
 
 
-
 # Movement
 
-# How different languages classify parts of speech (substitution test)
+# How different languages classify parts of speech 
+

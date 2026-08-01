@@ -2,7 +2,7 @@
 title: "Phonetics"
 author: "Vaishnav Sudarshan"
 date: "2025-09-14"
-categories:  [Cool Linguistics Stuff, Cool Biology Stuff, Cool Physics Stuff]
+categories:  [Linguistics, Biology, Physics]
 abstract: How do sounds work? How do you organize any sound biologically possible for humans? All these and more will be answered in this blog post.
 ---
 
@@ -139,4 +139,4 @@ This blue line measures how fast the vocal cords are vibrating. After the "th", 
 
 # To Be Continued
 
-Now that you know how sounds are produced, let's find out how linguists [write them](vaishnavs.net/posts/).
+Now that you know how sounds are produced, let's find out how linguists [write them](https://vaishnavs.net/posts/The%20IPA/).

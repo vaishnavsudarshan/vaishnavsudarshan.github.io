@@ -2,13 +2,13 @@
 title: "The IPA"
 author: "Vaishnav Sudarshan"
 date: "2025-09-14"
-categories:  [Cool Linguistics Stuff]
-abstract: We know how sounds work biologically and how they are perceived, but how do linguists write them?
+categories:  [Linguistics]
+abstract: Before we learn how sounds work biologically and how they are perceived, we must first understand how linguists write them.
 ---
 
 # The IPA
 
-Now that you know how sounds are made, and how languages distinguish them, let's see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them. As you may recall from the Phonology blog, the [_International Phonetic Alphabet_](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) is a system where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about in the Phonetics blog, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics.
+Before you learn how sounds are made, and how languages distinguish them, let's see how 𝚗̶𝚎̶𝚛̶𝚍̶𝚜̶ linguists actually write them (since you are well accustomed to [writing systems](https://vaishnavs.net/posts/Writing-Systems/), right?). The [_International Phonetic Alphabet_](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) is a system where each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about in the Phonetics blog, like voiceless geminated bilabial trill (basically just horse noises). The IPA is kind of like the Periodic Table of linguistics.
 
 # Chill IPA Characters
 
@@ -32,5 +32,6 @@ We still have the diacritics to go over, but this time I won't subject you to th
 To see the visual representation of the IPA, and to actually listen to their sounds, click [_here_](https://www.ipachart.com/).
 
 # To Be Continued
-Phonemes, used by the IPA, are the building blocks of morphemes, which are the building blocks of words, sentences, and languages. However, I want to specify that phonemes are not usually connected to morphemes, as sound and meaning are generally independent. To talk about meaning, please stay tuned [here](../Morphology-and-Basic-Semantics/), unless you first want to deal with the PTSD of looking at the IPA.
+
+Now, since having a bunch of fancy symbols is meaningless on its own, we need to learn how sounds actually [work](https://vaishnavs.net/posts/Phonetics/) so that they have a purpose.
 

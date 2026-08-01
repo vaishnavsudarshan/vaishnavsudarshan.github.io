@@ -2,7 +2,7 @@
 title: "Historical Linguistics Part 1: The Beginning of Linguistics"
 author: "Vaishnav Sudarshan"
 date: "2026-1-29"
-categories:  [Cool Linguistics Stuff]
+categories:  [Linguistics]
 tags: [Cool History Stuff]
 image: "ie.png"
 abstract: How did people suddenly start thinking about languages scientifically? What were the results of this primary branch of linguistics? 
