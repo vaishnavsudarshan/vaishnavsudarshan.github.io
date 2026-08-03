@@ -1,7 +1,7 @@
 ---
 title: "Semantics Part 1: Theory Behind Semantics"
 author: "Vaishnav Sudarshan"
-date: "2025-4-11"
+date: "2026-8-03"
 categories:  [Linguistics, Philosophy, Math]
 tags: [Logic, Psychology]
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
@@ -220,3 +220,6 @@ Truth conditions are kind of like checking if-statements in programming. Buildin
 
 Now that you know how humans traditionally understand meanings, let's learn about how machines understand them. Stay tuned for part 2!
 
+# Further Information
+
+* 
