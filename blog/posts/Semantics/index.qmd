@@ -1,9 +1,10 @@
 ---
-title: "Semantics Part 1: Theory Behind Semantics"
+title: "Semantics Part 1: Theory Behind Meanings"
 author: "Vaishnav Sudarshan"
-date: "2025-4-11"
-categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff, Cool Math Stuff]
-tags: [Cool Logic Stuff, Cool Psychology Stuff]
+date: "2026-8-03"
+categories:  [Linguistics, Philosophy, Math]
+tags: [Logic, Psychology]
+image: not_hot.png
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
@@ -17,7 +18,7 @@ In this blog post, we'll talk about the origins of semantics and modern semantic
 
 The first people who pondered about how meaning comes from words were actually not linguists, but philosophers! Some of the ideas presented by them are now core concepts in semantics. 
 
-The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has nothing to do with meaning. This is why Plato isn't the most trustworthy source, but you can still take that first theory into consideration if you want.
+The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word "dog" represents some idea called "dog" that doesn't exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has almost nothing to do with meaning. This is why Plato isn't the most trustworthy source, but you can still take that first theory into consideration if you want. 
 
 ## Sense and Reference
 
@@ -45,13 +46,7 @@ On the other side, if an organism is an animal, then that is a sufficient condit
 
 A major concept in semantics is the Principle of Compositionality. Basically, since there are infinite possible meanings in the world but you can't have a brand new word for EVERY single new concept due to the finite amount of mental capacity you have, more complex meanings must be derived from simpler ones. 
 
-Of course, if you're going to use a concept very often, and it's tedious to describe it using many words, it can either shorten or take a loanword. 
-
-For example, English took "déja vu" from French, which literally translates to "already seen", which, in grammatically correct English (for most people's internal grammar), would have to be expressed as "the feeling of having experienced something before" if not for this loanword. This is obviously much more concise. 
-
-Words can also shorten. The full name of "soccer" originated from "association football" (which obviously no one wants to say every time), so that became "assoc", and then "soccer". 
-
-However, these cases don't take away from the main point that meanings as a whole are derived from smaller parts - that's how you understand this sentence, for example. [Syntax](https://vaishnavs.net/posts/Syntax%20Part%201/) might allow you to arrange these meanings in the correct way, but compositional semantics allows you to get the overall idea as to what the sentence is actually saying. If you understand each smaller part, then you will understand the whole sentence, even if you haven't seen this specific syntactical structure before. 
+[Syntax](https://vaishnavs.net/posts/Syntax%20Part%201/) might allow you to arrange these meanings in the correct way, but compositional semantics allows you to get the overall idea as to what the sentence is actually saying. If you understand each smaller part, then you will understand the whole sentence, even if you haven't seen this specific syntactical structure before. 
 
 ## Non-Compositional Meaning
 
@@ -59,7 +54,17 @@ One complication that arises from the idea of compositionality is that sometimes
 
 Imagine if someone says, "That problem was a piece of cake". Are you REALLY going to interpret this as something absurd like "ah yes, the problem they're talking about was secretly part of a cake in disguise"? I think not. The meaning of "piece of cake", even if it was derived from this image, just means "easy". 
 
-![_What the person did NOT mean_](piece_of_cake.png.png){.lightbox}.
+
+![_What the person did NOT mean_](piece_of_cake.png){.lightbox}.
+
+
+Also, if you're going to use a concept very often, and it's tedious to describe it using many words, it can either shorten or take a loanword. 
+
+For example, English took "déja vu" from French, which literally translates to "already seen", which, in grammatically correct English (for most people's internal grammar), would have to be expressed as "the feeling of having experienced something before" if not for this loanword. This is obviously much more concise. 
+
+Words can also shorten. The full name of "soccer" originated from "association football" (which obviously no one wants to say every time), so that became "assoc", and then "soccer". 
+
+However, these cases don't take away from the main point that meanings as a whole are derived from smaller parts - that's how you understand this sentence. It's just that sometimes, meanings do become new smaller parts.  
 
 # Hyponyms and Hypernyms
 
@@ -166,8 +171,11 @@ Semantic drift is when the meaning of a word shifts over time. Looking at some c
 
 "Incredible" means something like "amazing" or "awesome". You might realize that "credible" means "believable", so "incredible" means "unbelievable"... right? Well, it used to! 
 
+
 Friend: "Yo bro, I just got a 5 on all my 31 AP exams this year!"
+
 You: "Really? That's incredible!"
+
 Friend: "HOW DARE YOU SUGGEST THAT I CHEATED??? WE'RE NOT FRIENDS ANYMORE!!!"
 
 Obviously, that won't actually happen. Why? Because "incredible" has semantically drifted to mean something closer to "amazing" than "unbelievable". It was used for things that were so good that it was almost hard to believe, but eventually it was only associated with those good things. What's very cool is that this causes non-compositional meaning, because the meaning of "incredible" is no longer derived from "in" and "credible". 
@@ -188,9 +196,9 @@ Semantic bleaching is when a word's meaning gets less intense or "bleached" over
 
 ## Euphemism with "bear"
 
-In PIE, the word for "bear" was *h₂ŕ̥tḱos. This is the ancestor to "ṛ́kṣa" in Sanskrit and "ursus" in Latin. Checks out so far, let's try Greek - "arktos". Cool, now, uh, let's try the next common Indo-European language that most people use as examples - English. Wait, "bear"? 
+In PIE, the word for "bear" was \*h₂ŕ̥tḱos. This is the ancestor to "ṛ́kṣa" in Sanskrit and "ursus" in Latin. Checks out so far, let's try Greek - "arktos". Cool, now, uh, let's try the next common Indo-European language that most people use as examples - English. Wait, "bear"? 
 
-Yes, that's right. Turns out, *h₂ŕ̥tḱos was one of the world's oldest no-no words. In Proto-Germanic, the word for "bear" was *berô, meaning "the brown one". Early Germanic people must have been terrified of bears, and they thought even saying the word for it would summon one. So, they used this euphemism instead. 
+Yes, that's right. Turns out, \*h₂ŕ̥tḱos was one of the world's oldest no-no words. In Proto-Germanic, the word for "bear" was \*berô, meaning "the brown one". Early Germanic people must have been terrified of bears, and they thought even saying the word for it would summon one. So, they used this euphemism instead. 
 
 Slavic languages have the same story, except their euphemism is "honey-eater" instead of "the brown one" ("medvedj" in Russian). 
 
@@ -198,7 +206,7 @@ Slavic languages have the same story, except their euphemism is "honey-eater" in
 
 One way for linguists to avoid ambiguity is to represent stuff using mathematical notation. Note in advance that most of this is common sense. 
 
-For example, take the "I can not do it" example. If we use "¬" to mean negation (as in flipping a boolean value), then the two meanings can be represented as can(¬do(x)) or ¬can(do(x)). Modal verbs like "can" in this case are kind of like functions. Here, x is a variable that can stand for any element that we're interested in, and it behaves like the parameter for the inner function. 
+Take the "I can not do it" example. If we use "¬" to mean negation (as in flipping a boolean value), then the two meanings can be represented as can(¬do(x)) or ¬can(do(x)). Modal verbs like "can" in this case are kind of like functions. Here, x is a variable that can stand for any element that we're interested in, and it behaves like the parameter for the inner function. 
 
 ## Feature Vectors
 
@@ -214,7 +222,7 @@ Quantifiers are symbols for how many elements in a set are being talked about. F
 
 Truth conditions are kind of like checking if-statements in programming. Building on this, constructing the set of all worlds is a lot like list comprehensions, where you can filter out invalid worlds. 
 
-"Every student passed" would be written as ∀x (student(x) -> passed(x)). Basically, x can be anything, and if it is a student, then it passed, due to the universal quantifier. This should hopefully illustrate how formal semantics works without a bunch of yapping.
+"Every student passed" would be written as ∀x (student(x) -> passed(x)). Basically, x can be anything, and if it is a student, then it passed, due to the universal quantifier. It specifically represents the set of all such x. This should hopefully illustrate how formal semantics works without a bunch of yapping.
 
 # Conclusion
 

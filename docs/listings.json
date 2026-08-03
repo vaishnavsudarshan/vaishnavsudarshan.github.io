@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Semantics/index.html",
       "/posts/Craftic/index.html",
       "/posts/WhatIsALanguage/index.html",
-      "/posts/SLIYS/index.html",
       "/posts/Historical-Linguistics-2/index.html",
       "/posts/Syntax Part 1/index.html",
       "/posts/Why-Orbits-Have-Equal-Area-In-Equal-Time/index.html",
@@ -19,6 +19,7 @@
       "/posts/Phonology/index.html",
       "/posts/The IPA/index.html",
       "/posts/Writing-Systems/index.html",
+      "/posts/SLIYS/index.html",
       "/posts/Limit riLmOtOpU/index.html"
     ]
   }

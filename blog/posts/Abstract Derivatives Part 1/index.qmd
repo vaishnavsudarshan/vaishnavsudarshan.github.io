@@ -16,10 +16,10 @@ Matrices are where you probably saw this. If you transform a vector $x$ by multi
 
 ![Diagram showing additivity of linear transformations](linoper1.png){.lightbox}
 
-# Derivatives As Linear Operators
+# Derivatives As Linear Opexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qsxwrators
 
 Do you remember the sum and product rules of single-variable derivatives? 
-
+1qsaxwxq
 $\frac{d}{dx} (af(x)) = a \frac{d}{dx} f(x)$
 $\frac{d}{dx} (f(x) + g(x)) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x)$
 

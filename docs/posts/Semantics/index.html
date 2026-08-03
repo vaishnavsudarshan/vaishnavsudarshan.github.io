@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-04-11">
+<meta name="dcterms.date" content="2026-08-03">
 
-<title>Semantics Part 1: How Meanings Work – Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</title>
+<title>Semantics Part 1: Theory Behind Meanings – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -83,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Vaishnav Sudarshan’s Blog on Linguistics, Math and AI</span>
+    <span class="navbar-title">Vaishnav Sudarshan’s Blog on Cool Stuff</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -112,10 +144,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Semantics Part 1: How Meanings Work</h1>
+      <h1 class="title">Semantics Part 1: Theory Behind Meanings</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Cool Linguistics Stuff</div>
-                <div class="quarto-category">Cool Philosophy Stuff</div>
+                <div class="quarto-category">Linguistics</div>
+                <div class="quarto-category">Philosophy</div>
+                <div class="quarto-category">Math</div>
               </div>
                   </div>
   </div>
@@ -133,14 +166,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Originally Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 11, 2025</p>
+        <p class="date">August 3, 2026</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">June 21, 2026</p>
+        <p class="date-modified">August 3, 2026</p>
       </div>
     </div>
       
@@ -167,25 +200,173 @@ ul.task-list li input[type="checkbox"] {
 <section id="semantics-intro" class="level1">
 <h1>Semantics Intro</h1>
 <p>Semantics is how we know how close words’ meanings are. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). In fact, “dog” and “cat” are actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
-<p>In this blog post, we’ll talk about the origins of semantics as well as modern semantics, and the next part will be all about how LLMs understand meanings.</p>
+<p>In this blog post, we’ll talk about the origins of semantics and modern semantics, and the second part will be all about how LLMs understand meanings.</p>
 </section>
 <section id="philosophy-of-language" class="level1">
 <h1>Philosophy of Language</h1>
-<p>The first people who pondered about how meaning comes from words were actually not linguists, but philosophers!</p>
-<p>The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word “dog” represents some idea called “dog” that doesn’t exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them</p>
-<p>Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words</p>
-<p>Ludwig Wittgenstein necessary trait sense and reference</p>
+<p>The first people who pondered about how meaning comes from words were actually not linguists, but philosophers! Some of the ideas presented by them are now core concepts in semantics.</p>
+<p>The ancient Greek philosopher Plato believed that a word represents a perfect abstract concept. For example, the word “dog” represents some idea called “dog” that doesn’t exist in the real world. All instances of a dog that you actually see are just imperfect imitations of that concept. Plato also thought that individual phonemes had some universal, objective, inherent meaning to them, but as you know, this is false, because sound has almost nothing to do with meaning. This is why Plato isn’t the most trustworthy source, but you can still take that first theory into consideration if you want.</p>
+<section id="sense-and-reference" class="level2">
+<h2 class="anchored" data-anchor-id="sense-and-reference">Sense and Reference</h2>
+<p>Gottlob Frege first created the distinction between sense and reference. Reference is the actual thing (or set of things) that the word <em>refers</em> to, hence the name. Meanwhile, sense is the ideas and concepts behind what you express that reference as, and how you perceive it.</p>
+<p>Multiple senses can have the same reference - for example, a 2D plane with evenly spaced, perpendicular gridlines of unit length can be thought of as either the Cartesian plane where each point is of the form <span class="math inline">\((x, y)\)</span>, the complex plane where each point is of the form <span class="math inline">\(x + i y\)</span>, or a vector space with basis vectors of <span class="math inline">\([1, 0]\)</span> and <span class="math inline">\([0, 1]\)</span>, where each point is a vector of the form <span class="math inline">\([x, y]\)</span> starting from the origin.</p>
+<p>One sense can also point to multiple references - for example, if you think of a “person”, then that reference points to over 8 billion people. You could potentionally solve this problem by saying that the set of all people is still a single set.</p>
 </section>
-<section id="complications" class="level1">
-<h1>Complications</h1>
-<section id="negations" class="level2">
-<h2 class="anchored" data-anchor-id="negations">Negations</h2>
+<section id="family-resemblence" class="level2">
+<h2 class="anchored" data-anchor-id="family-resemblence">Family Resemblence</h2>
+<p>Traditionally, meanings of words were given through their dictionary definitions. However, Ludwig Wittgenstein thought that maybe words can’t be directly defined, but instead speakers can tell what concepts match a word well. This is called family resemblence. For example, what is a game? There’s not a single answer that can always indicate whether something is a game or not. Chess, FizzBuzz, Monopoly, and soccer are all considered games, but you can’t really find a defining feature that is common to every single example of a game. All examples of games have links to other examples, but not necessarily to every single example, forming a <em>family</em>, hence that name.</p>
 </section>
-<section id="tense" class="level2">
-<h2 class="anchored" data-anchor-id="tense">Tense</h2>
+<section id="necessary-and-sufficient-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="necessary-and-sufficient-conditions">Necessary and Sufficient Conditions</h2>
+<p>Necessary and sufficient conditions are also very important in semantics. A condition is <em>necessary</em> when a statement is true if and only if that condition holds, while it’s <em>sufficient</em> when if the condition holds, then the statement must be true, but the statement <em>can</em> also be true otherwise.</p>
+<p>You can also think of it as the sufficient condition being a subset of the necessary condition, because if the sufficient condition holds, then the necessary condition holds too.</p>
+<p>An example of this is when it comes to defining life. In biology, an organism is living if and only if it has cells and DNA (among five other conditions) - if it doesn’t have them, then it’s not living. This is a necessary condition of life.</p>
+<p>On the other side, if an organism is an animal, then that is a sufficient condition to say that it is living. However, not all living organisms are animals. Again, you can view it like this: animals are a subset of anything with cells and DNA, and there aren’t any animals without cells and DNA - then it wouldn’t be sufficient to say that if something it an animal, then it is living.</p>
+</section>
+</section>
+<section id="compositionality" class="level1">
+<h1>Compositionality</h1>
+<p>A major concept in semantics is the Principle of Compositionality. Basically, since there are infinite possible meanings in the world but you can’t have a brand new word for EVERY single new concept due to the finite amount of mental capacity you have, more complex meanings must be derived from simpler ones.</p>
+<p><a href="https://vaishnavs.net/posts/Syntax%20Part%201/">Syntax</a> might allow you to arrange these meanings in the correct way, but compositional semantics allows you to get the overall idea as to what the sentence is actually saying. If you understand each smaller part, then you will understand the whole sentence, even if you haven’t seen this specific syntactical structure before.</p>
+<section id="non-compositional-meaning" class="level2">
+<h2 class="anchored" data-anchor-id="non-compositional-meaning">Non-Compositional Meaning</h2>
+<p>One complication that arises from the idea of compositionality is that sometimes, the meanings of whole phrases can’t be derived from their smaller units.</p>
+<p>Imagine if someone says, “That problem was a piece of cake”. Are you REALLY going to interpret this as something absurd like “ah yes, the problem they’re talking about was secretly part of a cake in disguise”? I think not. The meaning of “piece of cake”, even if it was derived from this image, just means “easy”.</p>
+<p><a href="piece_of_cake.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="What the person did NOT mean"><img src="piece_of_cake.png" class="img-fluid" alt="What the person did NOT mean"></a>.</p>
+<p>Also, if you’re going to use a concept very often, and it’s tedious to describe it using many words, it can either shorten or take a loanword.</p>
+<p>For example, English took “déja vu” from French, which literally translates to “already seen”, which, in grammatically correct English (for most people’s internal grammar), would have to be expressed as “the feeling of having experienced something before” if not for this loanword. This is obviously much more concise.</p>
+<p>Words can also shorten. The full name of “soccer” originated from “association football” (which obviously no one wants to say every time), so that became “assoc”, and then “soccer”.</p>
+<p>However, these cases don’t take away from the main point that meanings as a whole are derived from smaller parts - that’s how you understand this sentence. It’s just that sometimes, meanings do become new smaller parts.</p>
+</section>
+</section>
+<section id="hyponyms-and-hypernyms" class="level1">
+<h1>Hyponyms and Hypernyms</h1>
+<p>Now, let’s get into how words relate to each other in terms of how specific they are. A <em>hyponym</em> is a more specific meaning, and a <em>hypernym</em> is more general. So, “cat” is a hyponym of “animal”, and “animal” is a hypernym of “cat”.</p>
+<p>To be precise, the hyponym is a subset of the hypernym. This is why every cat is an animal, but not every animal is a cat.</p>
+<p>The same concept of unions and intersections from set theory also applies here. “green cat” is just the intersection of anything that is a cat and anything that is green.</p>
+<p>You could represent the sets of everything that words or phrases refer to and how they interact using Venn Diagrams, but this stuff is mostly just common sense, not some deep concept in linguistics. There is <a href="https://www.naclo.org/resources/problems/2026/N2026-B.pdf">a NACLO problem</a> on this.</p>
+</section>
+<section id="negations" class="level1">
+<h1>Negations</h1>
+<p>One problem in semantics is about how negation works. You might think it’s relatively straightforward, until you realize there’s actually not a single way to “negate” something.</p>
+<p>Imagine we have a spectrum (with integer values for simplicity) ranging from -10 (cold) to 10 (hot), and we wish to find the numerical value of “not hot”.</p>
+<p>If you do computer science or logic, you might think of negation as the not/! operator, that switches a boolean. You might have a variable for the temperature, and “hot” means “temperature == 10”. With this logic, “not hot” means “temperature != 10”, which means it is any number from -10 to 9. This is the same line of reasoning from set theory, where negation might be the complement of a set (“hot” is a set with a single element, 10), so “not hot” means anything but 10.</p>
+<p>However, “negate” literally means to multiply by -1, that’s why if you negate 3, you get -3, not every number but 3. So, the traditional view might say “not hot” is exactly “cold”, or “-10”.</p>
+<p>Maybe “hot” just means anything that is leaning towards 10 (so it’s more hot than cold), so “not hot” is all the negative numbers.</p>
+<p>You must also consider the pragmatic perspective (future blog post). Why would someone say “not hot” as opposed to “cold”? Depending on their intention, the range of what it represents on the spectrum can vary a lot.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="not_hot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Some of the interpretations for “not hot”"><img src="not_hot.png" class="img-fluid figure-img" alt="Some of the interpretations for “not hot”"></a></p>
+<figcaption>Some of the interpretations for “not hot”</figcaption>
+</figure>
+</div>
+<p>If you think this is just a silly thought experiment, think again. One focus of semantics is to find out how languages convey negation. Here’s a more practical example of an English sentence. “I can not do it” could either mean “I am incapable of doing it”, or it could mean “I am capable of not doing it”. You can probably see the difference yourself.</p>
+<section id="antonyms" class="level2">
+<h2 class="anchored" data-anchor-id="antonyms">Antonyms</h2>
+<p>Adding on to the idea of negation, we have the problem of <em>antonyms</em>, or pairs of opposite words. However, the concept of “opposite” is not really a single thing. There are different types of antonyms.</p>
+<ul>
+<li>Gradable: Two ends of a spectrum, allowing for stuff in between. For example, “hot” and “cold” are extremes, but you can also have “room temperature”, “somewhat chilly”, etc.</li>
+<li>Complementary: Exist as a binary, nothing in betwen. For example, someone can be “alive” or “dead”, but there is a clear cutoff distinguishing the two.</li>
+<li>Converse: Different ends of a relationship, and one can’t exist without another. For example, you can’t “buy” something without someone else there to “sell” it.</li>
+<li>Reversible: One undoes the other. For example, you can “turn on” a light and then “turn off” the same light, which has the same result as not doing anything (in other words, it has an orbit size of 2).</li>
+</ul>
+<p>Again, it brings up the question of what “opposite” really is.</p>
+</section>
+</section>
+<section id="questions" class="level1">
+<h1>Questions</h1>
+<p>There are actually a few different types of questions, if you think about it.</p>
+<p>The first is a question with a binary yes or no answer, which would usually start with “is/are” or “do/does”, like “do you eat food” or “is the sky blue”.</p>
+<p>The second is a question where there is a set of possible answers, possibly of infinite size, and your answer is a subset of that (which can be a single element), like “where do you live” or “who are all in your class”, but even something with a really long answer like “what is the meaning of life”. Semantically, the first type can be thought of as a special case of this type.</p>
+<p>Then, there are questions where you list all the options, like “what do you want, tea or coffee”, which assumes you will pick one of them.</p>
+</section>
+<section id="time" class="level1">
+<h1>Time</h1>
+<p>Another topic in semantics is how languages express time through tense and aspect, as well as time words. If you want to mark when some verb took place, different languages mark the boundaries differently.</p>
+<ul>
+<li><p>English has past, present, and future, obviously, but it also accounts for whether something happens and it’s completed, or it’s reoccurring, or it’s completed after reoccurring, or it’s just general.</p></li>
+<li><p>Thai doesn’t require that you distinguish tense or aspect, especially if you have context surrounding it.</p></li>
+<li><p>Zulu has an extra tense, for distinguishing recent and distant past, but it’s also asymmetric because it only has a single future tense.</p></li>
+<li><p>Hindi has something weird, where “yesterday” and “tomorrow” have the same word, “kal”.</p></li>
+</ul>
+<p>All this goes to show that distinguishing events based on time can work very differently based on the language.</p>
+</section>
+<section id="kinship" class="level1">
+<h1>Kinship</h1>
+<p>One more interesting observation is that languages can distinguish words for family members differently. You may or may not have realized this problem, but English’s inventory for family members is kind of limited for relatively prominent stuff.</p>
+<p>“Uncle” and “aunt”, for example, can mean both someone who shares a very recent common ancestor with you (their parents are the same as your grandparents) or it can mean someone who was married in to your family. Also, it doesn’t encode whether they are your father or your mother’s siblings / sibling in laws.</p>
+<p>Tamil has a LOT of distinctions, meanwhile. Its vocabulary for “uncle” and “aunt” encodes for additional features, such as whether they are an older or younger sibling, whether they are a blood relative or not, etc.</p>
+<p>In <a href="https://www.naclo.org/resources/problems/2026/N2026-G.pdf">this NACLO problem</a>, you see just how different other languages express kinship.</p>
+<details>
+<summary>
+Spoiler: Explains the main idea of the problem
+</summary>
+<p>Basically, the way talking about siblings works in Manam is quite different from “brother” or “sister”. There is one word for “younger sibling of opposite gender”, another word for “younger sibling of same gender”, and a third for “older sibling” (apart from “I” in the problem, which should be obvious). However, “younger” and “older” are also symmetrical for the purposes of this problem, so you could get the same solution by making the younger sibling the one that merges genders.</p>
+</details>
+</section>
+<section id="number" class="level1">
+<h1>Number</h1>
+<p>A final note on how different languages perceive meanings is for number. As you know, English counts numbers using base 10 (decimal numbers). However, different languages use other bases, though they are less rare.</p>
+<p>The most common example is French. Although it mostly uses base 10, there are still remnants of vigesimal counting (base 20) from the previous Celtic languages in modern-day France before Latin arrived, like Gaulish (if you’re interested, Asterix and Obelix is all about the Gauls resisting the Romans). To observe this, look at these numbers:</p>
+<ul>
+<li>19: dix-neuf (this is base 10, literally “ten nine”, similar to how English “nineteen” is connected to “nine ten”)</li>
+<li>79: soixante dix-neuf (literally “sixty nineteen”)</li>
+<li>80: quatre-vingt (literally “four twenty”, instead of English “eighty”, connected to “eight ten”, very vigesimal)</li>
+<li>99: quatre-vingt dix-neuf (literally “four twenty nineteen”, this is full-on base 20)</li>
+</ul>
+<p>For larger digit numbers, it goes back to base 10 (hundreds, thousands, etc), and base 20 is only used for the last two digits sometimes.</p>
+<p>Base 10 likely originated because people have 10 fingers to count, so base 20 means they used their toes to count as well.</p>
+<p>There are other bases too (such as base 60 from the Babylonians, which is where we get 60 in time and angles from), but they are much more uncommon. Even base 20 is rarely seen anymore.</p>
+</section>
+<section id="semantic-drift" class="level1">
+<h1>Semantic Drift</h1>
+<p>Semantic drift is when the meaning of a word shifts over time. Looking at some common examples might illustrate this better.</p>
+<section id="incredible" class="level2">
+<h2 class="anchored" data-anchor-id="incredible">“Incredible”</h2>
+<p>“Incredible” means something like “amazing” or “awesome”. You might realize that “credible” means “believable”, so “incredible” means “unbelievable”… right? Well, it used to!</p>
+<p>Friend: “Yo bro, I just got a 5 on all my 31 AP exams this year!”</p>
+<p>You: “Really? That’s incredible!”</p>
+<p>Friend: “HOW DARE YOU SUGGEST THAT I CHEATED??? WE’RE NOT FRIENDS ANYMORE!!!”</p>
+<p>Obviously, that won’t actually happen. Why? Because “incredible” has semantically drifted to mean something closer to “amazing” than “unbelievable”. It was used for things that were so good that it was almost hard to believe, but eventually it was only associated with those good things. What’s very cool is that this causes non-compositional meaning, because the meaning of “incredible” is no longer derived from “in” and “credible”.</p>
+<p>Just for the record, I think the friend did cheat.</p>
+</section>
+<section id="semantic-bleaching-with-lol" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-bleaching-with-lol">Semantic Bleaching with “lol”</h2>
+<p>Semantic drift can cause something similar to push or pull chains in sound changes, except for word meanings.</p>
+<p>The abbreviation “lol” on the Internet technically means “laughing out loud”, but nowadays, no one uses it for extreme humor. It has evolved to mean very mild laughter. If someone says a very hilarious joke, and you simply reply “lol”, that might even be offensive because you didn’t find it that funny.</p>
+<p>Therefore, people started adding profanity to intensify their humor. This is why “lol” got replaced with “lmao” (which I’m not gonna write out). However, after being used so much, even this got less intense in meaning. So, they just added even more bad stuff to humorous reactions to make it less mild.</p>
+<p>This is why now people might elongate the “o” or they might do all caps or even add even worse curse words in the middle (like the voiceless labiodental fricative one) or just shift to other things entirely, like the skull emoji / “I’M DEAD” (which itself is quite dead now), “son i’m crine”, or who knows what else these days.</p>
+<p>Semantic bleaching is when a word’s meaning gets less intense or “bleached” over time, so it causes replacements to be necessary.</p>
+</section>
+<section id="euphemism-with-bear" class="level2">
+<h2 class="anchored" data-anchor-id="euphemism-with-bear">Euphemism with “bear”</h2>
+<p>In PIE, the word for “bear” was *h₂ŕ̥tḱos. This is the ancestor to “ṛ́kṣa” in Sanskrit and “ursus” in Latin. Checks out so far, let’s try Greek - “arktos”. Cool, now, uh, let’s try the next common Indo-European language that most people use as examples - English. Wait, “bear”?</p>
+<p>Yes, that’s right. Turns out, *h₂ŕ̥tḱos was one of the world’s oldest no-no words. In Proto-Germanic, the word for “bear” was *berô, meaning “the brown one”. Early Germanic people must have been terrified of bears, and they thought even saying the word for it would summon one. So, they used this euphemism instead.</p>
+<p>Slavic languages have the same story, except their euphemism is “honey-eater” instead of “the brown one” (“medvedj” in Russian).</p>
+</section>
+</section>
+<section id="mathematical-representation" class="level1">
+<h1>Mathematical Representation</h1>
+<p>One way for linguists to avoid ambiguity is to represent stuff using mathematical notation. Note in advance that most of this is common sense.</p>
+<p>Take the “I can not do it” example. If we use “¬” to mean negation (as in flipping a boolean value), then the two meanings can be represented as can(¬do(x)) or ¬can(do(x)). Modal verbs like “can” in this case are kind of like functions. Here, x is a variable that can stand for any element that we’re interested in, and it behaves like the parameter for the inner function.</p>
+<section id="feature-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="feature-vectors">Feature Vectors</h2>
+<p>Just like how you can make a vector out of features for phonemes, you can do the same for meanings. For example, “king” can be represented as [+ human, + male, + royal, + adult], while “queen” can be represented as [+ human, - male, + royal, + adult], and “prince” can be represented as [+ human, + male, + royal, - adult]. The specific features depend on what you’re interesting in representing and contrasting, but this is the main idea.</p>
+</section>
+<section id="truth-conditions-logic-and-set-theory" class="level2">
+<h2 class="anchored" data-anchor-id="truth-conditions-logic-and-set-theory">Truth Conditions, Logic, and Set Theory</h2>
+<p>Truth conditions are basically a way to decompose a sentence into what conditions must make it true (kind of like necessary conditions). In the Minecraft Movie’s famous line “I… am STEVE”, the truth condition is that the speaker is Steve, so the set of all worlds where this speaker is Steve make this sentence true.</p>
+<p>Now, if someone says “I like cats and dogs”, then the truth condition, because of the “and”, is the intersection of the set of all worlds where the speaker likes cats and the set of all worlds where the speaker likes dogs. If it was “or” instead, it would be the union of those two sets, but it could also be the union minus the intersection if it’s intended to not be both (basically “xor”).</p>
+<p>Quantifiers are symbols for how many elements in a set are being talked about. For example, the universal quantifier (∀) means “all” or “every”, and the existential quantifier (∃) means “at least one” or “a”.</p>
+<p>Truth conditions are kind of like checking if-statements in programming. Building on this, constructing the set of all worlds is a lot like list comprehensions, where you can filter out invalid worlds.</p>
+<p>“Every student passed” would be written as ∀x (student(x) -&gt; passed(x)). Basically, x can be anything, and if it is a student, then it passed, due to the universal quantifier. It specifically represents the set of all such x. This should hopefully illustrate how formal semantics works without a bunch of yapping.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Now that you know how humans traditionally understand meanings, let’s learn about how machines understand them. Stay tuned for part 2!</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -618,6 +799,38 @@ ul.task-list li input[type="checkbox"] {
   loadGiscus();
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

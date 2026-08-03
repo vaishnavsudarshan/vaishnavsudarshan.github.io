@@ -26,7 +26,7 @@ All nouns have genders, class, animacy, number, politeness, abstractness, color,
 Now, let’s go into the specific categories for each one.
 
 Space: Vowel
-Animacy: Tone
+Animacy: Musical note
 Class: Semivowel
 Number: Vowel length
 Politeness: Liquid
@@ -43,15 +43,15 @@ Inside Zorbbbbistan, outside Limitland: E A EH O I
 Outside Zorbbbbistan, inside Limitland: U E I A U
 Outside Zorbbbbistan, outside Limitland: A E I O U
 
-### Animacy (S = Screech; F = Flat; W = Wave)
+### Animacy
 
-Unbelievably nonliving: S S S
-Very nonliving: F S S 
-Pretty nonliving: W S W
-Kinda nonliving: F F W 
-Kinda living: S W F
-Pretty living: W W F
-Very living: S F S 
+Unbelievably nonliving: C C C
+Very nonliving: F C C 
+Pretty nonliving: B C B
+Kinda nonliving: F F B 
+Kinda living: C B F
+Pretty living: B B F
+Very living: C F C 
 Unbelievably living: F F F 
 
 ### Class
