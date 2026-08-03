@@ -4,5 +4,6 @@ author: "Vaishnav Sudarshan"
 date: "2025-1-29"
 categories:  [Food]
 tags: [History, Economics] 
-abstract: If you thought you were alone in having annoying younger siblings, wait until you see languages and their annoying younger siblings. It doesn't help that humans are also really bad at classifying them.
+abstract: Turns out, a lot of foods that I thought were Indian are actually from very different places. 
 ---
+

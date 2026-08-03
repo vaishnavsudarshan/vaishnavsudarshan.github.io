@@ -9,7 +9,7 @@ abstract: It's not just humans that use languages through speech anymore.
 
 # Introduction
 
-
+All the information that creates you has to exist somewhere, right? 
 
 # RNA and DNA
 
