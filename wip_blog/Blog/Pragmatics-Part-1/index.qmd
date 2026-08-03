@@ -2,8 +2,8 @@
 title: "Pragmatics"
 author: "Vaishnav Sudarshan"
 date: "2026-22-5"
-categories:  [Cool Linguistics Stuff, Cool Philosophy Stuff]
-tags: [Cool Economics Stuff]
+categories:  [Linguistics, Philosophy]
+tags: [Economics]
 abstract: What do nonverbal cues reveal about meaning in context in a conversation?
 ---
 
