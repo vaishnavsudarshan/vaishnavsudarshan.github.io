@@ -1,0 +1,180 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "745a67a0",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "title: \"About\"\n",
+    "image: profile.jpg\n",
+    "about:\n",
+    "  template: jolla\n",
+    "  links:\n",
+    "    - icon: github\n",
+    "      text: Github\n",
+    "      href: https://github.com/vaishnavsudarshan\n",
+    "\n",
+    "---\n",
+    "\n",
+    "# About me\n",
+    "Hello! My name is Vaishnav Sudarshan, a high schooler (class of 2029) at Basis Independent Bellevue (Washington State, USA, North America, Earth, Solar System, Milky Way, Virgo Supercluster, Universe, Multiverse???). \n",
+    "\n",
+    "The question of who I *am* (not specifically me, obviously) has been debated by philosophers for millenia and they still haven't come to a consensus, so I'll talk *about* me instead. \n",
+    "\n",
+    "My main interests are in math (CNAG for now, but this ranking is kinda unstable and subject to change), linguistics, and computer science (mostly since it's deeply intertwined with the first two), and these may or may not combine with somewhat related fields like AI, biology, or physics. This is reflected in the subject matter of my blog posts. However, I occasionally might go off-topic if something random is really interesting, like food or philosophy. \n",
+    "\n",
+    "As for languages, I speak English and Tamil natively. I  know a decent amount of French, and I have also dabbled / am dabbling in many other languages (that are more for analyzing linguistically to notice cool observations than actually aiming for proficiency), such as Hindi, Telugu, Chinese, Portuguese, Indonesian, Thai, and German. \n",
+    "\n",
+    "I guess I speak proficient Python and Java as well if that counts??? I do know the basics of a few other programming languages too, though (JavaScript, C++, Asymptote, and Lua for example), just not with nearly as much experience. \n",
+    "\n",
+    "I like stuff at the intersection of different fields, like applying math to linguistics or linguistics to biology. \n",
+    "\n",
+    "# Blog stats"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "d0787199",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#| echo: false\n",
+    "#| warning: false\n",
+    "\n",
+    "import os, time, datetime as dt\n",
+    "import requests\n",
+    "\n",
+    "BASE = \"https://umami-production-36aa.up.railway.app\"\n",
+    "WID  = \"6558c60e-1ff1-49ad-bd30-bbf782d457c7\"\n",
+    "UNAME = \"admin\"\n",
+    "PASS = \"gybfiw-0cyrzo-qaFmiz\"\n",
+    "\n",
+    "try:\n",
+    "    tok = requests.post(f\"{BASE}/api/auth/login\", json={\n",
+    "        \"username\": os.environ[\"UMAMI_USERNAME\"],\n",
+    "        \"password\": os.environ[\"UMAMI_PASSWORD\"],\n",
+    "    }, timeout=15).json()[\"token\"]\n",
+    "    H = {\"Authorization\": f\"Bearer {tok}\"}\n",
+    "\n",
+    "    end   = int(time.time() * 1000)\n",
+    "    start = int(dt.datetime(2024, 1, 1).timestamp() * 1000)   # \"all time\"\n",
+    "    P = {\"startAt\": start, \"endAt\": end}\n",
+    "\n",
+    "    def metric(mtype):\n",
+    "        r = requests.get(f\"{BASE}/api/websites/{WID}/metrics\",\n",
+    "                         headers=H, params={**P, \"type\": mtype}, timeout=15)\n",
+    "        return r.json()   # list of {\"x\": label, \"y\": count}\n",
+    "\n",
+    "    stats = requests.get(f\"{BASE}/api/websites/{WID}/stats\",\n",
+    "                         headers=H, params=P, timeout=15).json()\n",
+    "    def total(k):\n",
+    "        v = stats.get(k, 0)\n",
+    "        return v.get(\"value\", 0) if isinstance(v, dict) else v\n",
+    "\n",
+    "    pages = sorted(metric(\"url\"), key=lambda d: d[\"y\"], reverse=True)\n",
+    "    countries = metric(\"country\")   # [{\"x\": \"US\", \"y\": N}, ...]\n",
+    "    ok = True\n",
+    "except Exception as e:\n",
+    "    ok, err = False, str(e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "b2d670c2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/markdown": [
+       "*Analytics unavailable at build time: string indices must be integers, not 'str'*"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Markdown object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "#| echo: false\n",
+    "#| output: asis\n",
+    "from IPython.display import display, Markdown\n",
+    "\n",
+    "if not ok:\n",
+    "    display(Markdown(f\"*Analytics unavailable at build time: {err}*\"))\n",
+    "else:\n",
+    "    header = (f\"**Total page views:** {total('pageviews'):,} &nbsp;•&nbsp; \"\n",
+    "              f\"**Visitors:** {total('visitors'):,}\\n\\n### Most-read posts\\n\\n\")\n",
+    "    table = \"| Page | Views |\\n|---|---:|\\n\" + \"\\n\".join(\n",
+    "        f\"| {TITLES.get(d['x'], d['x'])} | {d['y']:,} |\" for d in pages[:20]\n",
+    "    )\n",
+    "    display(Markdown(header + table))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "2417063d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#| echo: false\n",
+    "if ok and countries:\n",
+    "    import folium, pycountry, branca.colormap as cm\n",
+    "\n",
+    "    def a2_to_a3(a2):\n",
+    "        c = pycountry.countries.get(alpha_2=a2)\n",
+    "        return c.alpha_3 if c else None\n",
+    "\n",
+    "    data = {a2_to_a3(d[\"x\"]): d[\"y\"] for d in countries if a2_to_a3(d[\"x\"])}\n",
+    "\n",
+    "    geo = requests.get(\"https://raw.githubusercontent.com/python-visualization/\"\n",
+    "                       \"folium/main/examples/data/world-countries.json\",\n",
+    "                       timeout=15).json()\n",
+    "    for f in geo[\"features\"]:\n",
+    "        f[\"properties\"][\"views\"] = data.get(f[\"id\"], 0)\n",
+    "\n",
+    "    scale = cm.linear.YlGnBu_09.scale(min(data.values()), max(data.values()))\n",
+    "    scale.caption = \"Page views by country\"\n",
+    "\n",
+    "    def style_fn(feature):\n",
+    "        v = data.get(feature[\"id\"])\n",
+    "        return {\"fillColor\": scale(v) if v else \"#f0f0f0\",\n",
+    "                \"color\": \"white\", \"weight\": 0.3, \"fillOpacity\": 0.8}\n",
+    "\n",
+    "    m = folium.Map(location=[20, 0], zoom_start=2, tiles=\"cartodbpositron\")\n",
+    "    folium.GeoJson(geo, style_function=style_fn,\n",
+    "                   tooltip=folium.GeoJsonTooltip(fields=[\"name\", \"views\"],\n",
+    "                                                 aliases=[\"Country\", \"Views\"])).add_to(m)\n",
+    "    scale.add_to(m)\n",
+    "    m"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3",
+   "path": "C:\\Users\\vaish\\miniconda3\\envs\\vaishnavs-blog\\share\\jupyter\\kernels\\python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.14.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

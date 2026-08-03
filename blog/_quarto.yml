@@ -8,7 +8,7 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/vaishnavsudarshan
+        href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1
   comments: 
     giscus: 
       repo: vaishnavsudarshan/vaishnavsudarshan.github.io 

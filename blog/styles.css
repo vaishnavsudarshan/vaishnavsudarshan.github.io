@@ -3,3 +3,8 @@ div {
   text-align: justify;
   text-justify: inter-word;
 }
+
+.quarto-about-jolla main.content p {
+  text-align: justify;
+  hyphens: auto;
+}

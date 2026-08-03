@@ -10,6 +10,7 @@ about:
 
 ---
 
+# About me
 Hello! My name is Vaishnav Sudarshan, a high schooler (class of 2029) at Basis Independent Bellevue (Washington State, USA, North America, Earth, Solar System, Milky Way, Virgo Supercluster, Universe, Multiverse???). 
 
 The question of who I *am* (not specifically me, obviously) has been debated by philosophers for millenia and they still haven't come to a consensus, so I'll talk *about* me instead. 
@@ -21,4 +22,6 @@ As for languages, I speak English and Tamil natively. I  know a decent amount of
 I guess I speak proficient Python and Java as well if that counts??? I do know the basics of a few other programming languages too, though (JavaScript, C++, Asymptote, and Lua for example), just not with nearly as much experience. 
 
 I like stuff at the intersection of different fields, like applying math to linguistics or linguistics to biology. 
+
+Here are some [analytics](https://tinyurl.com/vaishnav-blog-stats) for my blog. 
 

@@ -4,7 +4,7 @@ author: "Vaishnav Sudarshan"
 date: "2026-8-03"
 categories:  [Linguistics, Philosophy, Math]
 tags: [Logic, Psychology]
-image: not_hot.png
+image: not_hot1.png
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
@@ -60,7 +60,7 @@ One complication that arises from the idea of compositionality is that sometimes
 
 Imagine if someone says, "That problem was a piece of cake". Are you REALLY going to interpret this as something absurd like "ah yes, the problem they're talking about was secretly part of a cake in disguise"? I think not. The meaning of "piece of cake", even if it was derived from this image, just means "easy". 
 
-![_What the person did NOT mean_](piece_of_cake.png.png){.lightbox}.
+![_What the person did NOT mean_](piece_of_cake.png){.lightbox}.
 
 # Hyponyms and Hypernyms
 
