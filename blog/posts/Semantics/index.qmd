@@ -4,6 +4,7 @@ author: "Vaishnav Sudarshan"
 date: "2026-8-03"
 categories:  [Linguistics, Philosophy, Math]
 tags: [Logic, Psychology]
+image: not_hot.png
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---
 
