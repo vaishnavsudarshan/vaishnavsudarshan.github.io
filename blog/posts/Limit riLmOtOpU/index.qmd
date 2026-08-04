@@ -56,7 +56,7 @@ One last thing: Limit is pronounced in an Australian accent, with the modificati
 
 ## Orthography
 
-Every consonant (the default form of each phoneme, ignoring the allophonic variations) is a node representing its position in the IPA when you plot places against manners of articulation. The starting node is a hollow circle for voiceless consonants and a filled in circle for voiced consonants. You draw vectors from one node to the next to represent subsequent consonants. If a word starts with a vowel, you can start with either k or f, in accordance to the sandhi and allophony. If two consecutive consonants are the same, then the vector is a circle with radius $1$, starting from that consonant and making a full counterclockwise circle and drawing an arrow at the end before getting to that node again. For vowels in between consonants, draw a grid starting from the top-left corner of a vowel diagram to show how deep the vowel is. If the vowel is rounded, shade alternating squares (starting from the top-left corner) like a checkerboard, and otherwise, none of the squares are filled in. 
+Every consonant (the default form of each phoneme, ignoring the allophonic variations) is a node representing its position in the IPA when you plot places against manners of articulation. The starting node is a hollow circle for voiceless consonants and a filled in circle for voiced consonants. You draw vectors from one node to the next to represent subsequent consonants. If a word starts with a vowel, you can start with either k or f, in accordance to the sandhi and allophony. If two consecutive consonants are the same, then the vector is a circle with radius $1$, starting from that consonant and making a full loop through the $n$-th roots of unity (where this node is the local origin), where $n$ is the number of consonants you have done before doing this repeated one, and drawing an arrow at the end before getting to that node again. For vowels in between consonants, draw a grid starting from the top-left corner of a vowel diagram to show how deep the vowel is. If the vowel is rounded, shade alternating squares (starting from the top-left corner) like a checkerboard, and otherwise, none of the squares are filled in. Specifically for /i/ and /y/ (since their rectangle would just be a point), draw an X or a ✔ on that line respectively. 
 
 ## Pronouns and Verbs
 
@@ -171,10 +171,14 @@ I am really good \= “LI .@gOhO\\LimitO\#U blivUL”
 
 ## Allophony
 
-* Any nasal followed directly by a vowel must be turned into a voiceless plosive of the same place of articulation
+Apply these variations in order:
+
+* Any nasal followed directly by a vowel must be turned into a voiceless trill of the same place of articulation
     * For example, the "m" in "Limit" is pronouned like the "pppp" in Proto-Zorbbbb. 
-* Any word ending with a consonant must be pronounced, after the consonant, with a monkey scream (a shriek of [ɐ] at the top of your lungs) if the consonant is voiced and a grunt (a very low-pitch, almost confused-sounding [œ]) if the consonant is voiceless. This additional noise is never written. Also, the final consonant is an ejective consonant.
 * Any word starting with a vowel is pronounced with an "f" if the vowel is rounded and a "k" if the vowel is unrounded. 
+* Any word ending with a vowel must be pronounced with the same consonants that are added if a word starts with a vowel, except rounded and unrounded are reversed. 
+* Any word ending with a consonant (which is all of them, at this point) must be pronounced, after the consonant, with a monkey scream (a shriek of [ɐ] at the top of your lungs) if the consonant is voiced and a grunt (a very low-pitch, almost confused-sounding [œ]) if the consonant is voiceless. This additional noise is never written. Also, the final consonant is an ejective consonant.
+* Starting stops become fricatives, and starting fricatives become stops. This part only applies to pronunciation, not orthography. 
 
 ## Numbers
 
