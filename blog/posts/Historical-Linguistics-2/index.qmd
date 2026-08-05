@@ -35,7 +35,9 @@ This means that these words must be related, which means they come from a common
 
 A simpler, more tangible example is the Romance languages, which most people know come from Latin. For example, the word for "three" in Spanish is "tres", in Italian is "tre", in French is "trois", and in Romanian is "trei". These are all very similar, and they all come from the Latin word "trēs". As Latin speakers spread out, their forms and pronounciations changed over time.
 
-Now, you wonder what the common ancestor word for "three" even is. However, this feels like a question that is way too open-ended just by looking at the words, because with enough creativity or weirdness, you could probably evolve any word into any other word. However, there is a certain technique that is used to reconstruct many such ancestor words to a pretty confident degree of accuracy, called the comparative method. And if you had many more words and many more languages, you could even be able to reconstruct the entire ancestor language and even understand a bit about the culture of its speakers. By the way, the answer is *tréyes. 
+Now, you wonder what the common ancestor word for "three" even is. However, this feels like a question that is way too open-ended just by looking at the words, because with enough creativity or weirdness, you could probably evolve any word into any other word. For example, here is "proof" that "hello" comes from "vanakkam":
+
+However, there is a certain technique that is used to reconstruct many such ancestor words to a pretty confident degree of accuracy, called the comparative method. And if you had many more words and many more languages, you could even be able to reconstruct the entire ancestor language and even understand a bit about the culture of its speakers. By the way, the answer is *tréyes. 
 
 ## Proto-Languages
 

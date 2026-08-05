@@ -30,6 +30,10 @@ Multiple senses can have the same reference - for example, a 2D plane with evenl
 
 One sense can also point to multiple references - for example, if you think of a "person", then that reference points to over 8 billion people. You could potentionally solve this problem by saying that the set of all people is still a single set. 
 
+### Sapir-Whorf Hypothesis
+
+There was once a theory, the Sapir-Whorf Hypothesis that the words a language contains limits what the speakers' brains can perceive. This is now considered to be pseudoscience. A brain's capacity to perceive meanings isn't strongly tied to how many distinct senses there are. There is now a less bold claim that is more widely accepted, called *linguistics relativity* - that someone's language may affect how they perceive the world, but that doesn't mean if their language doesn't distinguish certain references, then their brain is incapable of understanding the difference. 
+
 ## Family Resemblence
 
 Traditionally, meanings of words were given through their dictionary definitions. However, [Ludwig Wittgenstein](https://en.wikipedia.org/wiki/Ludwig_Wittgenstein) thought that maybe words can't be directly defined, but instead speakers can tell what concepts match a word well. This is called family resemblence. For example, what is a game? There's not a single answer that can always indicate whether something is a game or not. Chess, FizzBuzz, Monopoly, and soccer are all considered games, but you can't really find a defining feature that is common to every single example of a game. All examples of games have links to other examples, but not necessarily to every single example, forming a *family*, hence that name. 
@@ -132,9 +136,10 @@ All this goes to show that distinguishing events based on time can work very dif
 There's also a joke in Arthur that goes like this:
 
 Mom: “You can stay up when you’re Arthur’s age, D.W.”
+
 D.W.: “But I’ll never be Arthur’s age. He’s always going to be three years older than me!”
 
-This is an interesting case of semantic ambiguity with time. I'm gonna use a bit of math (to foreshadow formal semantics, which is later) to formalize this, although you subconsciously get the joke because it's common sense. Basically, let $t_0$ be the time right now, $A(T)$ be Arthur's age at a moment in time, $D(T)$ to be D.W.'s age at a moment in time, and $t$ be their age gap. Their mom means $A(t_0) = D(t_0+t)$, but D.W. thinks it means $A(T) = D(T)$ for some $T$ which is impossible because $A(T) - D(T) = t \neq 0$ for all $T$. 
+This is an interesting case of semantic ambiguity with time. I'm gonna use a bit of math (to foreshadow formal semantics, which is later) to formalize this, although you subconsciously get the joke because it's common sense, and so is the math. Basically, let $t_0$ be the time right now, $A(T)$ be Arthur's age at a moment in time, $D(T)$ to be D.W.'s age at a moment in time, and $t = A(T) - D(T)$ be their age gap. Their mom means $A(t_0) = D(t_0+t)$, but D.W. thinks it means $A(T) = D(T)$ for some $T$, which is impossible because $A(T) - D(T) = t \neq 0$ for all $T$. 
 
 # Kinship
 
@@ -179,7 +184,9 @@ Semantic drift is when the meaning of a word shifts over time. Looking at some c
 "Incredible" means something like "amazing" or "awesome". You might realize that "credible" means "believable", so "incredible" means "unbelievable"... right? Well, it used to! 
 
 Friend: "Yo bro, I just got a 5 on all my 31 AP exams this year!"
+
 You: "Really? That's incredible!"
+
 Friend: "HOW DARE YOU SUGGEST THAT I CHEATED??? WE'RE NOT FRIENDS ANYMORE!!!"
 
 Obviously, that won't actually happen. Why? Because "incredible" has semantically drifted to mean something closer to "amazing" than "unbelievable". It was used for things that were so good that it was almost hard to believe, but eventually it was only associated with those good things. What's very cool is that this causes non-compositional meaning, because the meaning of "incredible" is no longer derived from "in" and "credible". 
@@ -200,9 +207,9 @@ Semantic bleaching is when a word's meaning gets less intense or "bleached" over
 
 ## Euphemism with "bear"
 
-In PIE, the word for "bear" was *h₂ŕ̥tḱos. This is the ancestor to "ṛ́kṣa" in Sanskrit and "ursus" in Latin. Checks out so far, let's try Greek - "arktos". Cool, now, uh, let's try the next common Indo-European language that most people use as examples - English. Wait, "bear"? 
+In Proto-Indo-European (which has been talked about a LOT in [my historical linguistics blog post](https://vaishnavs.net/posts/Historical-Linguistics-2/)), the word for "bear" was \*h₂ŕ̥tḱos. This is the ancestor to "ṛ́kṣa" in Sanskrit and "ursus" in Latin. Checks out so far, let's try Greek - "arktos". Cool, now, uh, let's try the next common Indo-European language that most people use as examples - English. Wait, "bear"? 
 
-Yes, that's right. Turns out, *h₂ŕ̥tḱos was one of the world's oldest no-no words. In Proto-Germanic, the word for "bear" was *berô, meaning "the brown one". Early Germanic people must have been terrified of bears, and they thought even saying the word for it would summon one. So, they used this euphemism instead. 
+Yes, that's right. Turns out, \*h₂ŕ̥tḱos was one of the world's oldest no-no words. In Proto-Germanic, the word for "bear" was \*berô, meaning "the brown one". Early Germanic people must have been terrified of bears, and they thought even saying the word for it would summon one. So, they used this euphemism instead. 
 
 Slavic languages have the same story, except their euphemism is "honey-eater" instead of "the brown one" ("medvedj" in Russian). 
 
@@ -216,7 +223,9 @@ For example, take the "I can not do it" example. If we use "¬" to mean negation
 
 Just like how you can make a vector out of features for phonemes, you can do the same for meanings. For example, "king" can be represented as [+ human, + male, + royal, + adult], while "queen" can be represented as [+ human, - male, + royal, + adult], and "prince" can be represented as [+ human, + male, + royal, - adult]. The specific features depend on what you're interesting in representing and contrasting, but this is the main idea. 
 
-## Truth Conditions, Logic, and Set Theory
+Since all these features are binary, you can even represent them in an $n$-dimensional boolean cube. 
+
+## Formal Semantics - Truth Conditions, Logic, and Set Theory
 
 Truth conditions are basically a way to decompose a sentence into what conditions must make it true (kind of like necessary conditions). In the Minecraft Movie's famous line "I... am STEVE", the truth condition is that the speaker is Steve, so the set of all worlds where this speaker is Steve make this sentence true. 
 
@@ -234,6 +243,21 @@ Now that you know how humans traditionally understand meanings, let's learn abou
 
 # Further Information
 
-* [Crash Course Linguistics Episode 5: Semantics]()
+* [Crash Course Linguistics Episode 5: Semantics](https://www.youtube.com/watch?v=6geQjY8b7sA)
 
-* 
+* [MIT OCW Introduction to Linguistics: Semantics](https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-fall-2012/resources/mit24_900f12_semantics/) especially for formal and compositional semantics
+
+* [A Short Introduction to Semantics](https://www.academypublication.com/issues/past/jltr/vol02/06/27.pdf)
+
+* [Gottlob Frege](https://plato.stanford.edu/entries/frege/)
+
+* [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/)
+
+* [Truth-Conditional Semantics](https://people.ucsc.edu/~panand/Courses/0607/SemanticsB/handout1.pdf)
+
+* [Etymology of "bear" from nardi](https://www.youtube.com/shorts/klWFJ_-kA6c)
+
+* [Sufficient Conditions for Counterfactual Transitivity and Antecedent Strengthening](https://philpapers.org/archive/HAZSCF.pdf) more in depth for formal logic
+
+* [The Arthur joke is from this episode](https://arthur.fandom.com/wiki/Arthur%27s_New_Year%27s_Eve/Transcript)
+
