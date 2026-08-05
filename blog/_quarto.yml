@@ -4,11 +4,17 @@ project:
 
 website:
   title: "Vaishnav Sudarshan's Blog on Cool Stuff"
+  site-url: https://vaishnavs.net
+  description: "Vaishnav Sudarshan's blog on linguistics, math, computer science and natural language processing"
   navbar:
     right:
       - about.qmd
+      - icon: rss
+        href: index.xml
       - icon: github
-        href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1
+        href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/ 
+      - icon: graph-up-arrow
+        href: https://tinyurl.com/vaishnav-blog-stats
   comments: 
     giscus: 
       repo: vaishnavsudarshan/vaishnavsudarshan.github.io 

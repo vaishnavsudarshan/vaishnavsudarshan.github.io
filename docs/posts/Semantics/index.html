@@ -9,7 +9,7 @@
 <meta name="author" content="Vaishnav Sudarshan">
 <meta name="dcterms.date" content="2026-08-03">
 
-<title>Semantics Part 1: Theory Behind Semantics – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
+<title>Semantics Part 1: Theory Behind Meanings – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,7 +129,17 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://tinyurl.com/vaishnav-blog-stats"> <i class="bi bi-graph-up-arrow" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -144,7 +154,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Semantics Part 1: Theory Behind Semantics</h1>
+      <h1 class="title">Semantics Part 1: Theory Behind Meanings</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Linguistics</div>
                 <div class="quarto-category">Philosophy</div>
@@ -199,7 +209,8 @@ window.Quarto = {
 
 <section id="semantics-intro" class="level1">
 <h1>Semantics Intro</h1>
-<p>Semantics is how we know how close words’ meanings are. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). In fact, “dog” and “cat” are actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
+<p>Semantics is the study of meanings and how they are derived. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). The words “dog” and “cat” are in fact actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
+<p>But why would you need an entire subfield of linguistics dedicated to meanings? You can just look up a word in the dictionary, right? WRONG! For one, it’s very hard for dictionaries to account for language variation - semantic drift is omnipresent, and different dialects or idiolects perceive meanings differently.</p>
 <p>In this blog post, we’ll talk about the origins of semantics and modern semantics, and the second part will be all about how LLMs understand meanings.</p>
 </section>
 <section id="philosophy-of-language" class="level1">
@@ -218,10 +229,11 @@ window.Quarto = {
 </section>
 <section id="necessary-and-sufficient-conditions" class="level2">
 <h2 class="anchored" data-anchor-id="necessary-and-sufficient-conditions">Necessary and Sufficient Conditions</h2>
-<p>Necessary and sufficient conditions are also very important in semantics. A condition is <em>necessary</em> when a statement is true if and only if that condition holds, while it’s <em>sufficient</em> when if the condition holds, then the statement must be true, but the statement <em>can</em> also be true otherwise.</p>
+<p>Necessary and sufficient conditions are also very important in semantics when it comes to determining the criteria that should be present in a definition. A condition is <em>necessary</em> when a statement is true if and only if that condition holds, while it’s <em>sufficient</em> when if the condition holds, then the statement must be true, but the statement <em>can</em> also be true otherwise.</p>
 <p>You can also think of it as the sufficient condition being a subset of the necessary condition, because if the sufficient condition holds, then the necessary condition holds too.</p>
 <p>An example of this is when it comes to defining life. In biology, an organism is living if and only if it has cells and DNA (among five other conditions) - if it doesn’t have them, then it’s not living. This is a necessary condition of life.</p>
 <p>On the other side, if an organism is an animal, then that is a sufficient condition to say that it is living. However, not all living organisms are animals. Again, you can view it like this: animals are a subset of anything with cells and DNA, and there aren’t any animals without cells and DNA - then it wouldn’t be sufficient to say that if something it an animal, then it is living.</p>
+<p>Note that some biologists consider viruses to be living, even though they don’t satisfy all the seven characteristics of life.</p>
 </section>
 </section>
 <section id="compositionality" class="level1">
@@ -289,6 +301,9 @@ window.Quarto = {
 <li><p>Hindi has something weird, where “yesterday” and “tomorrow” have the same word, “kal”.</p></li>
 </ul>
 <p>All this goes to show that distinguishing events based on time can work very differently based on the language.</p>
+<p>There’s also a joke in Arthur that goes like this:</p>
+<p>Mom: “You can stay up when you’re Arthur’s age, D.W.” D.W.: “But I’ll never be Arthur’s age. He’s always going to be three years older than me!”</p>
+<p>This is an interesting case of semantic ambiguity with time. I’m gonna use a bit of math (to foreshadow formal semantics, which is later) to formalize this, although you subconsciously get the joke because it’s common sense. Basically, let <span class="math inline">\(t_0\)</span> be the time right now, <span class="math inline">\(A(T)\)</span> be Arthur’s age at a moment in time, <span class="math inline">\(D(T)\)</span> to be D.W.’s age at a moment in time, and <span class="math inline">\(t\)</span> be their age gap. Their mom means <span class="math inline">\(A(t_0) = D(t_0+t)\)</span>, but D.W. thinks it means <span class="math inline">\(A(T) = D(T)\)</span> for some <span class="math inline">\(T\)</span> which is impossible because <span class="math inline">\(A(T) - D(T) = t \neq 0\)</span> for all <span class="math inline">\(T\)</span>.</p>
 </section>
 <section id="kinship" class="level1">
 <h1>Kinship</h1>
@@ -366,6 +381,7 @@ Spoiler: Explains the main idea of the problem
 <section id="further-information" class="level1">
 <h1>Further Information</h1>
 <ul>
+<li><p><a href="">Crash Course Linguistics Episode 5: Semantics</a></p></li>
 <li></li>
 </ul>
 
@@ -445,7 +461,7 @@ Spoiler: Explains the main idea of the problem
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/vaishnavs\.net");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

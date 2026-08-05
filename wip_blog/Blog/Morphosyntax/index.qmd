@@ -50,4 +50,3 @@ These are the very basic factors that are pretty much universal (cough cough Cra
 # Movement
 
 # How different languages classify parts of speech 
-

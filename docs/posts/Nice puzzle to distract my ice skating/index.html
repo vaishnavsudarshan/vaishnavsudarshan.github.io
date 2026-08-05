@@ -129,7 +129,17 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://tinyurl.com/vaishnav-blog-stats"> <i class="bi bi-graph-up-arrow" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -172,7 +182,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 3, 2026</p>
+        <p class="date-modified">August 5, 2026</p>
       </div>
     </div>
       
@@ -198,7 +208,7 @@ window.Quarto = {
 
 <section id="yap" class="level1">
 <h1>Yap</h1>
-<p><a href="aops.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem I saw"><img src="aops.png" class="img-fluid" alt="The problem I saw"></a> I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:</p>
+<p><a href="aops.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem I saw"><img src="aops.jpg" class="img-fluid" alt="The problem I saw"></a> I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:</p>
 <p>“Does this problem make your brain FREEZE? Combine plus signs and eight 8’s to get 1,000.”</p>
 <p>While the problem was really simple just by brute forcing and intuition that even a six or seven year old (hehe) could solve it. The ad was, after all, placed to a general audience, not a bunch of orz IMO quals.</p>
 <p>However, out of my annoyingness, I sought to prove rigorously that the answer I got was the only possible one. I did this in my head, closing any logic holes, while at the same time figuring out how to ice skate properly (at least I was getting better at moving continuously, but my center of mass was still all over the place, so I ended up looking like a monkey anyway, but at least I never fell in the entirety of the hour I was there). So, without further ado, here’s the solution:</p>
@@ -292,7 +302,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/vaishnavs\.net");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
