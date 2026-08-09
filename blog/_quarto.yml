@@ -12,7 +12,11 @@ website:
       - icon: rss
         href: index.xml
       - icon: github
-        href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/ 
+        menu:
+          - text: Source code
+            href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io
+          - text: Discussion
+            href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1 
       - icon: graph-up-arrow
         href: https://tinyurl.com/vaishnav-blog-stats
   comments: 

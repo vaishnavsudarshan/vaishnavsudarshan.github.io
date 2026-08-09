@@ -211,15 +211,15 @@ Spoiler: Explains the main idea of the problem
 <section id="further-information" class="level1">
 <h1>Further Information</h1>
 <ul>
-<li><p><a href="https://www.youtube.com/watch?v=6geQjY8b7sA">Crash Course Linguistics Episode 5: Semantics</a></p></li>
-<li><p><a href="https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-fall-2012/resources/mit24_900f12_semantics/">MIT OCW Introduction to Linguistics: Semantics</a> especially for formal and compositional semantics</p></li>
-<li><p><a href="https://www.academypublication.com/issues/past/jltr/vol02/06/27.pdf">A Short Introduction to Semantics</a></p></li>
-<li><p><a href="https://plato.stanford.edu/entries/frege/">Gottlob Frege</a></p></li>
-<li><p><a href="https://plato.stanford.edu/entries/wittgenstein/">Ludwig Wittgenstein</a></p></li>
-<li><p><a href="https://people.ucsc.edu/~panand/Courses/0607/SemanticsB/handout1.pdf">Truth-Conditional Semantics</a></p></li>
+<li><p><a href="https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022/">MIT’s 24.900: Introduction to Linguistics</a> course is an excellent resource for linguistics, with both lectures and notes, and semantics starts <a href="https://www.youtube.com/watch?t=2562&amp;v=Di8e2opeGA0">here</a>.</p></li>
+<li><p>I really liked <a href="https://www.youtube.com/watch?v=6geQjY8b7sA">Crash Course Linguistics Episode 5: Semantics</a> for a quick overview of semantics.</p></li>
+<li><p>The paper <a href="https://www.academypublication.com/issues/past/jltr/vol02/06/27.pdf">A Short Introduction to Semantics</a> is really good for the philosophy and logic behind semantics.</p></li>
+<li><p>More about <a href="https://plato.stanford.edu/entries/frege/">Gottlob Frege</a></p></li>
+<li><p>More about <a href="https://plato.stanford.edu/entries/wittgenstein/">Ludwig Wittgenstein</a></p></li>
+<li><p>The UCSC course LING 232 Semantics B has a great handout on representing semantics mathematically, with <a href="https://people.ucsc.edu/~panand/Courses/0607/SemanticsB/handout1.pdf">Truth-Conditional Semantics</a></p></li>
 <li><p><a href="https://www.youtube.com/shorts/klWFJ_-kA6c">Etymology of “bear” from nardi</a></p></li>
-<li><p><a href="https://philpapers.org/archive/HAZSCF.pdf">Sufficient Conditions for Counterfactual Transitivity and Antecedent Strengthening</a> more in depth for formal logic</p></li>
-<li><p><a href="https://arthur.fandom.com/wiki/Arthur%27s_New_Year%27s_Eve/Transcript">The Arthur joke is from this episode</a></p></li>
+<li><p><a href="https://philpapers.org/archive/HAZSCF.pdf">Sufficient Conditions for Counterfactual Transitivity and Antecedent Strengthening</a> is a paper that goes more in depth for formal logic.</p></li>
+<li><p>The Arthur joke is from <a href="https://arthur.fandom.com/wiki/Arthur%27s_New_Year%27s_Eve/Transcript">this episode</a></p></li>
 </ul>
 
 
@@ -782,7 +782,7 @@ linkStyle default stroke-width:5px;
 <p>So why is Lithuanian so similar to Sanskrit? It’s because Lithuanian is pretty conservative, or resistant to change.</p>
 <p>Sanskrit, being an ancient language, is relatively close to Proto-Indo-European, because it hasn’t had that much time to evolve compared to modern languages. While it was alive, it still was conservative, because it was heavily standardized.</p>
 <p>Lithuanian, on the other hand, is still spoken natively to this day. However, the Baltic countries were relatively isolated (since the forests, wetlands, and rivers formed natural barriers) from the rest of Europe and all the conquests that happened that caused language change, so their languages (excluding Estonian, which is Uralic) have preserved many features from Proto-Indo-European, and innovated new features relatively slowly. Because of this, Lithuanian and Sanskrit are both similar to Proto-Indo-European, and therefore similar to each other.</p>
-<p>Tamil is another example of a conservative language. It is relatively close to Proto-Dravidian, compared to Telugu and Kannada, which have innovated more. This is why ancient Tamil literature is still understandable to modern Tamil speakers. However, Tamil has huge diglossia, or intelligibility gap, between the formal variety learned in school and spoken on the news, and the colloquial variety spoken on the streets and at home. The formal variety is the one that is more conservative. I only understand the colloquial variety, which is why to me, ancient Tamil literature might as well be written by aliens from Jupiter. I’m going to write a future blog post about languages and dialects, but this is a small taste of that.</p>
+<p>Tamil is another example of a conservative language. It is relatively close to Proto-Dravidian, compared to Telugu and Kannada, which have innovated more. This is why ancient Tamil literature is still understandable to modern Tamil speakers. However, Tamil has huge diglossia, or intelligibility gap, between the formal variety learned in school and spoken on the news, and the colloquial variety spoken on the streets and at home. The formal variety is the one that is more conservative. I only understand the colloquial variety, which is why to me, ancient Tamil literature might as well be written by aliens from Jupiter. This is a small taste of language variation in <a href="https://vaishnavs.net/posts/WhatIsALanguage/">this blog post</a>.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
@@ -790,8 +790,13 @@ linkStyle default stroke-width:5px;
 </section>
 <section id="further-information" class="level1">
 <h1>Further information</h1>
-<p>The Arabic example is from <a href="https://www.youtube.com/shorts/ES5qpzNG1ew">this human1011 YouTube short</a>.</p>
-<p>I’d recommend the book <a href="https://www.goodreads.com/en/book/show/217387741-proto">“Proto”</a> by Laura Spinney if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics.</p>
+<ul>
+<li><p>The Arabic example is from <a href="https://www.youtube.com/shorts/ES5qpzNG1ew">this human1011 YouTube short</a>.</p></li>
+<li><p>I’d recommend the book <a href="https://www.goodreads.com/en/book/show/217387741-proto">“Proto”</a> by Laura Spinney if you want a broader picture of how the Indo-European languages spread, using not just linguistics but also archaeology and genetics. For example, it goes more in depth into why the Baltic languages are conservative (yet they’ve still innovated in different aspects like the copula), or how we know the Indo-Europeans (we’re not sure about Anatolians, though) had wheels.</p></li>
+<li><p>The history behind pairs of animal names in English where one is French and one is native Germanic is best explained through Oversimplified’s <a href="https://www.youtube.com/watch?v=Jl3K63Rbygw">Battle of Hastings video</a>.</p></li>
+<li><p>This famous paper <a href="https://altaica.ru/LIBRARY/CLAUSON/Clauson_against.pdf">The Case Against The Altaic Theory</a> provides a really good explanation as to why the Altaic Hypothesis is probably false and was very influential.</p></li>
+<li><p>This <a href="https://websites.umich.edu/~thomason/papers/areas.pdf">paper</a> goes more in detail about how sprachbunds work.</p></li>
+</ul>
 
 
 </section>
@@ -819,10 +824,15 @@ linkStyle default stroke-width:5px;
 </section>
 <section id="bracketing-and-constituents" class="level1">
 <h1>Bracketing and Constituents</h1>
-<p>Take any complicated sentence in English. For example, take the sentence “The student who the professor whom the dean hired praised left.” This seems so confusing at first. However, we see that the basic sentence is just “the student left”. We can put brackets around the stuff in between, that just describes the student: “The student [who the professor whom the dean hired praised] left”. The “whom the dean hired” just describes the professor, so we can put brackets around that: “The student [who the professor [whom the dean hired] praised] left”.</p>
+<p>Take any complicated sentence in English. For example, take the sentence “The student who the professor whom the dean hired praised left.” This seems so confusing at first. However, we see that the basic sentence is just “the student left”. We can put brackets around “left”, as well as everything before “left”, that just boils down to the student: “[The student who the professor whom the dean hired praised] [left]”. The “who the professor who the dean hired praised” describes the student, and the “whom the dean hired” just describes the professor, so we can put brackets around each of those: “[The student [who the professor [whom the dean hired] praised]] [left]”.</p>
 <p>Each of the bracketed parts, next to the thing it describes, is called a <em>constituent</em>. These are basically units of structure that show some syntactic role.</p>
-<p>One way to tell the role that a constituent plays is to replace it with another unit whose role we know. For example, “The student [who the professor whom the dean hired praised]” can be replaced with “The student”, which we know represents the subject. Therefore, every single wrd before “left” is a constituent that represents the subject. Similarly, “left” is a constituent that represents the verb. If you want, you can replace “left” with “ate ice cream”, because this constituent represents what the student <em>did</em>.</p>
-<p>Constituents help us figure out what words can be put together. In English, subjects and objects are <em>noun phrases</em>. Pronouns, plurals, and proper nouns can be their own noun phrases, while common nouns need a determiner. So, “Canada” is its own noun phrase, while “a country” is also a noun phrase that is the same syntactic unit. You can say “I go to [Canada]” or “I go to [a country]” but you can’t say “I go to country” or “I go to a Canada” .</p>
+<p>One way to tell the role that a constituent plays is to replace it with another unit whose role we know. For example, “[The student [who the professor whom the dean hired praised]]” can be replaced with “[The student]”, which we know represents the subject. Therefore, every single wrd before “left” is a constituent that represents the subject. Similarly, “left” is a constituent that represents the verb. If you want, you can replace “left” with “ate ice cream”, because this constituent represents what the student <em>did</em>.</p>
+<p>Constituents help us figure out what words can be put together. In English, subjects and objects are <em>noun phrases</em>. Pronouns, plurals, and proper nouns can be their own noun phrases, while common nouns need a determiner. So, “Canada” is its own noun phrase, while “a country” is also a noun phrase that is the same syntactic unit. You can say “I go to [Canada]” or “I go to [a country]” but you can’t say “I go to country” or “I go to a Canada”.</p>
+<section id="head-initial-and-head-final-order" class="level2">
+<h2 class="anchored" data-anchor-id="head-initial-and-head-final-order">Head-Initial and Head-Final Order</h2>
+<p>Languages can be syntactically classified under whether the beginning or end of a phrase determines what type of constituent it behaves like. In English, “ate the cake” is a verb phrase (VP), which can be written as V NP (verb noun phrase). The category of “ate the cake” is the same as “ate”, not “the cake”. Additionally, “to the house” is a prepositional phrase (PP), and it can be decomposed as P NP. Therefore, we call English a head-initial language.</p>
+<p>Tamil, on the other hand, is a head-final language. The equivalent VP to “ate the cake” would be “cake sappitten”, and that last word means “(I) ate”, which is a verb, so the phrase can be decomposed as NP V. Tamil also uses postpositions. The postpositional phrase “to the house” would be “veetu ku” (/ʋi/)</p>
+</section>
 <section id="trees" class="level2">
 <h2 class="anchored" data-anchor-id="trees">Trees</h2>
 <p>Using brackets might sound easy at first, but once you have a LOT of brackets, it can get really confusing and tedious. Think about in programming or math when you have too many parentheses because you want to do things in a single line, so you end up saying something like “print(int(input(str(range(x, y, z)[-1]) + str(int(s[0]) + int(s[1])))) + 3)” in Python. This is really hard to read, which is why it’s considered bad programming practice by most people (not me though, hehe).</p>
@@ -1935,7 +1945,7 @@ Cool fact to bore your friends with and be called a nerd!!!
 <item>
   <title>The IPA</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/The IPA/</link>
+  <link>https://vaishnavs.net/posts/The-IPA/</link>
   <description><![CDATA[ 
 
 
@@ -1975,7 +1985,7 @@ Cool fact to bore your friends with and be called a nerd!!!
 
  ]]></description>
   <category>Linguistics</category>
-  <guid>https://vaishnavs.net/posts/The IPA/</guid>
+  <guid>https://vaishnavs.net/posts/The-IPA/</guid>
   <pubDate>Sat, 13 Sep 2025 18:30:00 GMT</pubDate>
 </item>
 <item>

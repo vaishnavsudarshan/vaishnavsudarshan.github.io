@@ -260,21 +260,21 @@ Now that you know how humans traditionally understand meanings, let's learn abou
 
 # Further Information
 
-* [Crash Course Linguistics Episode 5: Semantics](https://www.youtube.com/watch?v=6geQjY8b7sA)
+* [MIT's 24.900: Introduction to Linguistics](https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022/) course is an excellent resource for linguistics, with both lectures and notes, and semantics starts [here](https://www.youtube.com/watch?t=2562&v=Di8e2opeGA0).
 
-* [MIT OCW Introduction to Linguistics: Semantics](https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-fall-2012/resources/mit24_900f12_semantics/) especially for formal and compositional semantics
+* I really liked [Crash Course Linguistics Episode 5: Semantics](https://www.youtube.com/watch?v=6geQjY8b7sA) for a quick overview of semantics.
 
-* [A Short Introduction to Semantics](https://www.academypublication.com/issues/past/jltr/vol02/06/27.pdf)
+* The paper [A Short Introduction to Semantics](https://www.academypublication.com/issues/past/jltr/vol02/06/27.pdf) is really good for the philosophy and logic behind semantics.
 
-* [Gottlob Frege](https://plato.stanford.edu/entries/frege/)
+* More about [Gottlob Frege](https://plato.stanford.edu/entries/frege/) 
 
-* [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/)
+* More about [Ludwig Wittgenstein](https://plato.stanford.edu/entries/wittgenstein/) 
 
-* [Truth-Conditional Semantics](https://people.ucsc.edu/~panand/Courses/0607/SemanticsB/handout1.pdf)
+* The UCSC course LING 232 Semantics B has a great handout on representing semantics mathematically, with [Truth-Conditional Semantics](https://people.ucsc.edu/~panand/Courses/0607/SemanticsB/handout1.pdf) 
 
 * [Etymology of "bear" from nardi](https://www.youtube.com/shorts/klWFJ_-kA6c)
 
-* [Sufficient Conditions for Counterfactual Transitivity and Antecedent Strengthening](https://philpapers.org/archive/HAZSCF.pdf) more in depth for formal logic
+* [Sufficient Conditions for Counterfactual Transitivity and Antecedent Strengthening](https://philpapers.org/archive/HAZSCF.pdf) is a paper that goes more in depth for formal logic.
 
-* [The Arthur joke is from this episode](https://arthur.fandom.com/wiki/Arthur%27s_New_Year%27s_Eve/Transcript)
+* The Arthur joke is from [this episode](https://arthur.fandom.com/wiki/Arthur%27s_New_Year%27s_Eve/Transcript)
 
