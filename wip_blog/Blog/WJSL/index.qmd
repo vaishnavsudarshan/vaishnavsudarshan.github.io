@@ -1,0 +1,13 @@
+# Structure
+
+Sign language
+
+Everything is simultaneous so no "word order"
+
+The two basic things in a sentence are the subject and the object (intransitive sentences are reflexive)
+
+Each semantic dimension (adjective or adverb) is shown through a time derivative of something's position at t = n seconds since the speaker started speaking, where n is the speaker's age in centuries. 
+
+Subjects and objects have a person - either in or out the conversation (in other words, first and second are merged). if all the time derivatives are 0, it means a personal pronoun
+
+Oscillation of one's back is the base verb "relates". If all the time derivatives are 0, then it means the copula.  

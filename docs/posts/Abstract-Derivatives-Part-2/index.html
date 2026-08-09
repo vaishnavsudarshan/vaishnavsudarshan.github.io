@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-10-13">
+<meta name="dcterms.date" content="2025-11-23">
 
-<title>Morphology – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
+<title>Abstract Derivatives Part 2 - Multivariable and Beyond – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -125,9 +154,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Morphology</h1>
+      <h1 class="title">Abstract Derivatives Part 2 - Multivariable and Beyond</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Linguistics</div>
+                <div class="quarto-category">Math</div>
+                <div class="quarto-category">AI</div>
               </div>
                   </div>
   </div>
@@ -145,14 +175,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Originally Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 13, 2025</p>
+        <p class="date">November 23, 2025</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 9, 2026</p>
+        <p class="date-modified">August 1, 2026</p>
       </div>
     </div>
       
@@ -161,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
+      How can the idea of derivatives as linear operators be applied to more complex functions, like multivariable functions, vector-valued functions, and vector fields? How does this relate in the slightest to AI?
     </div>
   </div>
   
@@ -176,106 +206,56 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<blockquote class="blockquote">
-<p>This is a series of blogs on linguistics. See also: <a href="../Phonology/"><em>Phonology</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics/"><em>Phonetics</em></a></p>
-</blockquote>
-<section id="morphology" class="level1">
-<h1>Morphology</h1>
-<section id="confusing-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="confusing-introduction">Confusing Introduction</h2>
-<p>Previously, in <a href="../../posts/Writing-Systems/index.html">orthographies</a>, <a href="../../posts/Phonology/index.html">phonology</a>, and <a href="../../posts/Phonetics/index.html">phonetics</a>, we’ve discussed <em>sounds</em> and their symbols. Now, we take a step further into <em>meaning</em>.</p>
-<p>Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.</p>
-<section id="definition" class="level3">
-<h3 class="anchored" data-anchor-id="definition">Definition</h3>
-<p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? And then polysynthetic language (like we’ll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn’t easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.</p>
-<p>Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).</p>
+<section id="making-derivatives-more-abstract" class="level1">
+<h1>Making Derivatives More Abstract</h1>
+<p>For single variable functions, we have a scalar in and a scalar out (one input, one output). You could technically think of it as 1D vectors, as we’ll do soon, but it’s basically the same thing.</p>
+<p>The main thing we want to emphasize here is that for the derivative, we write it as differentials (<span class="math inline">\(df = f'(x) dx\)</span>) instead of <span class="math inline">\(\frac{df}{dx}\)</span>. In scalar functions, that works, but later on, it won’t make much sense to divide by a vector or a matrix.</p>
+<p>Derivatives, however, aren’t just limited to acting on single-variables to be linear operators. Here are some other types of derivatives.</p>
+<section id="multivariable-functions" class="level2">
+<h2 class="anchored" data-anchor-id="multivariable-functions">Multivariable Functions</h2>
+<p>For multivariable functions, we have many inputs in and one output out, where each input or output is a number. However, one interpretation of a vector is a list of numbers, so one could think of it as a vector in and a scalar out. What this means is that, for a 2D input space, <span class="math inline">\(f(\vec{x}) = f(x, y)\)</span>. For any point, or vector, on the 2D <span class="math inline">\(xy\)</span> plane, there is a <span class="math inline">\(z\)</span> coordinate corresponding to that, to form some sort of surface.</p>
+<p>Again, what we basically just mean in this case is that a vector has two or more dimensions, and a scalar has just one. If we think of a list of numbers as a vector, then we can do vector operations on it, but if we think of a single number as a vector, doing vector operations on it wouldn’t make a difference.</p>
+<p>As for the derivative? It’s a vector, known as the gradient! It is the vector of partial derivatives with respect to each variable. The gradient will always have the same “shape” as the input space, because it also represents the direction of steepest ascent. It’s written as <span class="math inline">\(\nabla f = [...\frac{\partial f}{\partial x_i}...]\)</span>, where <span class="math inline">\(x_i\)</span> is each component in the input.</p>
+<section id="slight-tangent-on-gradient-descent" class="level3">
+<h3 class="anchored" data-anchor-id="slight-tangent-on-gradient-descent">Slight Tangent on Gradient Descent</h3>
+<p>Why? Because think about this way: in differential form, we can write <span class="math inline">\(df = \Sigma {(\frac{\partial f}{\partial x_i} dx_i)}\)</span>. Oh, the sum of the corresponding products? Reminds me of dot product! We can write this as <span class="math inline">\(df = \nabla f \cdot \vec{dx}\)</span>. In terms of magnitudes, it can also be written as <span class="math inline">\(df = |\nabla f| |d\vec{x}| \cos(\theta)\)</span>. We can’t really do much with the given magnitudes to maximize <span class="math inline">\(df\)</span>.</p>
+<p>At a particular input point <span class="math inline">\(\vec{x}\)</span>, the magnitude of <span class="math inline">\(\nabla f\)</span> is going to be some constant when we’re dealing with anything but that input point and the function. Also, the magnitude of <span class="math inline">\(d\vec{x}\)</span> can’t be dealt with because it’s an infinitesimal, not an actual number. So, the only thing we can do to maximize <span class="math inline">\(df\)</span> is the <span class="math inline">\(\cos(\theta)\)</span> term. The maximum of <span class="math inline">\(\cos(\theta)\)</span> is <span class="math inline">\(1\)</span>, when <span class="math inline">\(\theta = 0^\circ\)</span>. So, if <span class="math inline">\(d\vec{x}\)</span> is in the same direction as the gradient, the function increases the most.</p>
+<p>Similarly, for <span class="math inline">\(df\)</span> to be as low as possible, we want <span class="math inline">\(\cos(\theta)\)</span> to be at its minimum (<span class="math inline">\(-1\)</span>), which is when <span class="math inline">\(\theta = 180^\circ\)</span>, or when we move in the opposite direction as the gradient. Now, it is guaranteed that <span class="math inline">\(df \leq 0\)</span>, because we’re dealing with just magnitudes (always nonnegative) times <span class="math inline">\(-1\)</span>.</p>
+<p>So, we can do some local linearization. If we have some random point <span class="math inline">\(\vec{x}, f(\vec{x})\)</span>, we can change <span class="math inline">\(\vec{x}\)</span> by some small vector in the opposite direction of <span class="math inline">\(\nabla f\)</span>. Where do we get that small vector? First, we normalize <span class="math inline">\(-\nabla f\)</span> by dividing by its magnitude to get a unit vector. Then, to scale it so that our local linearization approximation isn’t horrendous, we multiply this vector by a small scalar <span class="math inline">\(\mu\)</span>, known as the <em>learning step</em>. We subtract add this to the original <span class="math inline">\(\vec{x}\)</span>, and recalculate <span class="math inline">\(f(\vec{x})\)</span>.</p>
+<p>When training neural networks, this is the best way to find a local minimum. Even though the absolute minimum is better, the computations to do that would cost way more money.</p>
 </section>
 </section>
-<section id="types-of-morphology-across-languages" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-morphology-across-languages">Types of Morphology Across Languages</h2>
-<p>There are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.</p>
-<section id="spectrum-1" class="level3">
-<h3 class="anchored" data-anchor-id="spectrum-1">Spectrum 1</h3>
-<p>The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic.</p>
-<section id="analytic-languages" class="level4">
-<h4 class="anchored" data-anchor-id="analytic-languages">Analytic languages</h4>
-<p>Analytic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on <em>inflection</em>, or altering the form of words - instead, they rely on <em>particles</em>, which are words that are put next to other words to c hange the grammatical meaning.</p>
-<p>As a sidenote, Google Translate clearly agrees that each character is a word in this case, as shown here.</p>
+<section id="vector-valued-functions" class="level2">
+<h2 class="anchored" data-anchor-id="vector-valued-functions">Vector-Valued Functions</h2>
+<p>What about a vector output for a scalar input? This could be represented as a parametric equation, and the derivative would also be a vector. An example of this is in physics, with velocity and acceleration, both as a function of time. See the diagram for these in circular motion.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="translate.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Shows how Google Translate separates words in Pinyin"><img src="translate.png" class="img-fluid figure-img" alt="Shows how Google Translate separates words in Pinyin"></a></p>
-<figcaption>Shows how Google Translate separates words in Pinyin</figcaption>
+<p><a href="circular.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"><img src="circular.png" class="img-fluid figure-img" alt="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"></a></p>
+<figcaption>Diagram showing the vector-valued functions of velocity and acceleration during circular motion</figcaption>
 </figure>
 </div>
+<p>To demonstrate where more abstract derivatives can be used in this case, we can use parametric equations. Let the counterclockwise angle above the horizontal of the particle moving in a circle be <span class="math inline">\(\theta\)</span>, and the radius be <span class="math inline">\(r\)</span>. From components, the direction of the position of the particle from the center is <span class="math inline">\([\cos(\theta), \sin(\theta)]\)</span>. Then, from geometry, since motion is perpendicular to the radius, the horizontal component of velocity (assuming constant speed <span class="math inline">\(v\)</span>) is <span class="math inline">\(-v \sin(\theta)\)</span>, and the vertical component is <span class="math inline">\(v \cos(\theta)\)</span>. Given that <span class="math inline">\(\omega = d\theta/dt\)</span> and <span class="math inline">\(v=\omega r\)</span>, try to prove for yourself that the centripetal acceleration must have magnitude <span class="math inline">\(\frac{v^2}{r}\)</span> and point towards the center! The full solution is in my <a href="../Circular Motion/"><em>blog post about circular motion</em></a>.</p>
 </section>
-<section id="synthetic-languages" class="level4">
-<h4 class="anchored" data-anchor-id="synthetic-languages">Synthetic Languages</h4>
-<p>Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn’t use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn’t get smushed together, and you can still tell apart subjects, verbs, and objects.</p>
+<section id="vector-fields" class="level2">
+<h2 class="anchored" data-anchor-id="vector-fields">Vector Fields</h2>
+<p>At this point, we are exiting the more basic types of functions, and finally, matrices come into use here. You may recall that a vector field is a kind of function where for every point (vector) in space, there is an output which is a vector that moves that input somewhere else. As a result, what we can get by reiterating this process can be modeled for something like fluid flow. Maybe you’ve seen some of these diagrams before. Typically, since varying magnitudes get out of hand when drawn on paper, each point has a vector of a fixed length showing just direction, and the magnitudes are portrayed through color, where the “hotter” the color, the longer the magnitude is.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="vector_field.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing a vector field"><img src="vector_field.png" class="img-fluid figure-img" alt="Diagram showing a vector field"></a></p>
+<figcaption>Diagram showing a vector field</figcaption>
+</figure>
+</div>
+<p>The diagram even looks intuitive. At each point, it tells you where to go next, and by how much. Even if you had no idea about what vector fields are, that’s literally what is looks like.</p>
+<p>The derivative is a matrix called the Jacobian. Each row is basically the gradient with respect to the entire input from each component of the output.</p>
+<p>If you think of it as looking at each component of the input, the Jacobian is also the derivative of the entire output with respect to each input.</p>
+<p>So, if the input space is a vector in <span class="math inline">\(\mathbb{R}^n\)</span> and the output space is a vector in <span class="math inline">\(\mathbb{R}^m\)</span>, the Jacobian is a matrix with dimensions <span class="math inline">\(m \times n\)</span>.</p>
+<p>Now, the derivative can be written as <span class="math inline">\(d \vec{f} = J d \vec{x}\)</span> for the Jacobian <span class="math inline">\(J\)</span>. Now, this looks like a proper matrix multiplication with no scalars involved apart from doing things component-wise.</p>
+<p>One cool thing now is that if <span class="math inline">\(J\)</span> is a constant matrix, the vector field is just a normal linear transformation of <span class="math inline">\(\vec{f}(\vec{x}) = J \vec{x}\)</span>, which is an interesting interpretation of linear transformations.</p>
 </section>
-<section id="polysynthetic-languages" class="level4">
-<h4 class="anchored" data-anchor-id="polysynthetic-languages">Polysynthetic Languages</h4>
-<p>Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it’s not actual yap, just a normal sentence put together into a giant word.</p>
-</section>
-<section id="clarification-on-words" class="level4">
-<h4 class="anchored" data-anchor-id="clarification-on-words">Clarification on “Words”</h4>
-<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just on average, how is the density of morphemes generally?</p>
-</section>
-</section>
-<section id="spectrum-2" class="level3">
-<h3 class="anchored" data-anchor-id="spectrum-2">Spectrum 2</h3>
-<p>The second continuum ranges from very clear distinctions between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional.</p>
-<section id="agglutinative-languages" class="level4">
-<h4 class="anchored" data-anchor-id="agglutinative-languages">Agglutinative Languages</h4>
-<p>An agglutinative language like Turkish clearly separates all of its morphemes. Take the “word” (more like sentence) “Evlerimizdenmişsiniz”.</p>
-<p>Breakdown:</p>
-<p>Ev → “house” (root noun)</p>
-<p>-ler → plural → Evler = “houses”</p>
-<p>-imiz → our → Evlerimiz = “our houses”</p>
-<p>-den → from → Evlerimizden = “from our houses”</p>
-<p>-miş → hearsay/past tense → Evlerimizdenmiş = “it seems it was from our houses”</p>
-<p>-siniz → second person plural → Evlerimizdenmişsiniz = “apparently you (all) were from our houses”</p>
-</section>
-<section id="fusional-languages" class="level4">
-<h4 class="anchored" data-anchor-id="fusional-languages">Fusional Languages</h4>
-<p>However, look at fusional languages. In Spanish, “hablamos” means “we speak”, with the ending “-amos” indicating that the pronoun is first person, and also plural (“we”). If you just knew the first person ending that’s not plural (“-o”), then you still wouldn’t be able to derive the ending “-amos” from that.</p>
-</section>
-</section>
-<section id="consonantal-root-systems" class="level3">
-<h3 class="anchored" data-anchor-id="consonantal-root-systems">Consonantal Root Systems</h3>
-<p>There is a feature in languages where the root meaning is carried out through the consonants, and the vowels between them just modify the meaning. This is pretty much unseen outside of Afro-Asiatic langauges.</p>
-<p>Most famously, Semitic languages (a sub-branch of Afro-Asiatic) such as Arabic and Hebrew use the triconsonantal root system. In Arabic, for example, the root “k-t-b” has to do with writing and books. The word “kitab” means “book”, the word “katib” means “writer”, and the word “maktaba” means “library”.</p>
-<p>Note that the extra consonant “m” in “maktaba” is added, because Arabic itself isn’t purely consonantal, and uses affixes as well. Interestingly, the word “kitab” spread to many languages like Farsi or Hindi to mean “book”, but since those languages aren’t Semitic, they don’t think of “kitab” using the triconsonantal root system, but rather just as any other word.</p>
-<p>Germanic languages like English do <em>just</em> a little. Primarily, this is shown in tense changes, like “s<em>i</em>ng” -&gt; “s<em>u</em>ng” -&gt; “s<em>a</em>ng”, or “r<em>u</em>n” -&gt; “r<em>u</em>n” -&gt; “r<em>a</em>n” as opposed to something like “reprimand” -&gt; “reprimand<em>ed</em>” -&gt; “reprimand<em>ed</em>”, where the latter is regular.</p>
-</section>
-</section>
-</section>
-<section id="free-and-bound-morphemes" class="level1">
-<h1>Free and Bound Morphemes</h1>
-<p>There is also a difference between free and bound morphemes. <em>Free morphemes</em> can exist on their own, while <em>bound morphemes</em> can only exist attached to other morphemes.</p>
-<p>For example, look at the word “dogs”. The “s” is a plural marker, but you can’t have a plural marker on its own, so it is bound. Meanwhile, “dog” is free, because it is a word on its own.</p>
-</section>
-<section id="merging-morphemes-subconsciously" class="level1">
-<h1>Merging Morphemes Subconsciously</h1>
-<p>Sometimes, a single morpheme could etymologically be derived from two other morphemes, but our brains treat it like a single morpheme due to semantic drifting.</p>
-<p>For example, take the word “forgive”. Etymologically, it was derived from “for” and “give”. However, over time, the meaning of “forgive” stopped being derived from “for” and “give” individually. So, people perceive it as a single morpheme, because those historical morphemes don’t contribute to the meaning of “forgive” anymore.</p>
-</section>
-<section id="affixes" class="level1">
-<h1>Affixes</h1>
-<p>Most languages’ morphologies involve <em>affixes</em>, or morphemes being added to words. Here are the main types:</p>
-<ul>
-<li>Prefixes: Go before the word, like “un” in English to mean “not” (unhappy).</li>
-<li>Suffixes: Go after the word, like “s” in English to mean plural (dogs).</li>
-<li>Circumfixes: Go before and after the word, but the parts going on either side don’t mean anything individually, like “ge…t” in German to form the past tense (“kaufen” -&gt; “gekauft”)</li>
-<li>Infixes: Go inside a word, like swear words in some people’s English to make emphasis (abso-[bleep]ing-lutely)</li>
-</ul>
-</section>
-<section id="note" class="level1">
-<h1>Note</h1>
-<p>One important thing to note is that trying to classify languages into categories like this isn’t super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian. As a result, these spectrums don’t necessarily account for every single language. Arabic, for example, can’t really be plotted on the 2D grid of the two spectrums, because a consonantal root system is way more complicated. There are many more morphological spectrums (like concatenative and non-concatenative, the latter of which Arabic falls into) that could exist as well, but these are just the most commonly used references ones.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>So, now we know how meanings can be arranged within “words” of a language. However, how do these meanings interact? This is what we need syntax for, which will be covered next.</p>
+<p>So far, what we’ve seen is just seeing pretty simple derivatives with a new interpretation. Stay tuned for even more abstract derivatives, and how they relate to AI!</p>
 
 
 </section>

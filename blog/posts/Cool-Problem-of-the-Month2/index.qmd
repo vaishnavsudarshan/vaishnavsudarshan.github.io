@@ -13,7 +13,7 @@ I recently have had the hobby of going through past AMC and AIME problems and tr
 
 For one problem in particular, 2023 AMC 10B #7 (yeah, it's still in the single digits), I found a diabolical solution that no one would have wanted to waste their brain cells to completely formulate. It is super easy to do just using 4th grade knowledge of geometry, but when I see rotations in geometry, I immediately think of complex bashing.
 
-![The problem with answer choices](Screenshot%202025-12-18%20205740.png){.lightbox}
+![The problem with answer choices](problem.png){.lightbox}
 
 I actually wrote this solution on AoPS wiki last month, but this crazy backstory deserves its own post for Cool Problem of the Month, and November was already taken. See the solution I wrote [here](https://artofproblemsolving.com/wiki/index.php?title=2023_AMC_10B_Problems/Problem_7#Solution_7_(Overkill_complex_bash)). 
 

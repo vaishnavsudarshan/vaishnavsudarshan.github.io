@@ -3,7 +3,7 @@ title: "Indian Foods That Aren't Indian"
 author: "Vaishnav Sudarshan"
 date: "2025-1-29"
 categories:  [Food]
-tags: [History, Economics] 
+tags: [History, Economics, Chemistry] 
 abstract: Turns out, a lot of foods that I thought were Indian are actually from very different places. 
 ---
 

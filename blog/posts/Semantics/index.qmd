@@ -237,6 +237,23 @@ Truth conditions are kind of like checking if-statements in programming. Buildin
 
 "Every student passed" would be written as ∀x (student(x) -> passed(x)). Basically, x can be anything, and if it is a student, then it passed, due to the universal quantifier. This should hopefully illustrate how formal semantics works without a bunch of yapping.
 
+## "or"
+
+A cool ambiguity between formal logic and natural language is "or". In spoken English, "or" can either mean the logical "or" where "A or B" is true if at least one of them is true. This is what "or" means in Python, for instance. 
+
+| A   | B    | A or B |
+|True | True | True   |
+|True | False| True   |
+|False| True | True   |
+|False| False| False  |
+
+"A or B" can also mean the logical "xor", where only one of them is true, not both. If someone says "you will choose chocolate or vanilla", and each person gets exactly one full scoop, you can't get two people's worth of ice cream by getting both. 
+
+|A    | B    | A xor B |
+|True | True | False   |
+|True | False| True    |
+
+
 # Conclusion
 
 Now that you know how humans traditionally understand meanings, let's learn about how machines understand them. Stay tuned for part 2!

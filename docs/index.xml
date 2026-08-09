@@ -195,6 +195,14 @@ Spoiler: Explains the main idea of the problem
 <p>Truth conditions are kind of like checking if-statements in programming. Building on this, constructing the set of all worlds is a lot like list comprehensions, where you can filter out invalid worlds.</p>
 <p>“Every student passed” would be written as ∀x (student(x) -&gt; passed(x)). Basically, x can be anything, and if it is a student, then it passed, due to the universal quantifier. This should hopefully illustrate how formal semantics works without a bunch of yapping.</p>
 </section>
+<section id="or" class="level2">
+<h2 class="anchored" data-anchor-id="or">“or”</h2>
+<p>A cool ambiguity between formal logic and natural language is “or”. In spoken English, “or” can either mean the logical “or” where “A or B” is true if at least one of them is true. This is what “or” means in Python, for instance.</p>
+<div class="line-block">A | B | A or B |</div>
+<p>|True | True | True | |True | False| True | |False| True | True | |False| False| False |</p>
+<p>“A or B” can also mean the logical “xor”, where only one of them is true, not both. If someone says “you will choose chocolate or vanilla”, and each person gets exactly one full scoop, you can’t get two people’s worth of ice cream by getting both.</p>
+<p>|A | B | A xor B | |True | True | False | |True | False| True |</p>
+</section>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
@@ -797,7 +805,7 @@ linkStyle default stroke-width:5px;
 <item>
   <title>Syntax - Recursion, Constituent Units, and Trees</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Syntax Part 1/</link>
+  <link>https://vaishnavs.net/posts/Syntax-Part-1/</link>
   <description><![CDATA[ 
 
 
@@ -1108,7 +1116,7 @@ font-style: inherit;"># move the last letter to the beginning and find the rever
 <p>Here’s another pattern: Serpenski’s Triangle. You start with an equilateral triangle, then split it into four congruent equilateral triangles, such that the middle part is cut out, and then repeat this for every single equilateral triangle inside, being able to go for an indefinite amount of layers:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="serpinski.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A diagram of generating Serpenski’s Triangle"><img src="https://vaishnavs.net/posts/Syntax Part 1/serpinski.png" class="img-fluid figure-img" alt="A diagram of generating Serpenski’s Triangle"></a></p>
+<p><a href="serpinski.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A diagram of generating Serpenski’s Triangle"><img src="https://vaishnavs.net/posts/Syntax-Part-1/serpinski.png" class="img-fluid figure-img" alt="A diagram of generating Serpenski’s Triangle"></a></p>
 <figcaption>A diagram of generating Serpenski’s Triangle</figcaption>
 </figure>
 </div>
@@ -1197,9 +1205,9 @@ Multiplication ==&gt; 2["2"]
  ]]></description>
   <category>Linguistics</category>
   <category>CS</category>
-  <guid>https://vaishnavs.net/posts/Syntax Part 1/</guid>
+  <guid>https://vaishnavs.net/posts/Syntax-Part-1/</guid>
   <pubDate>Tue, 09 Jun 2026 18:30:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Syntax Part 1/caca.png" medium="image" type="image/png" height="90" width="144"/>
+  <media:content url="https://vaishnavs.net/posts/Syntax-Part-1/caca.png" medium="image" type="image/png" height="90" width="144"/>
 </item>
 <item>
   <title>Why orbits have equal area in equal time</title>
@@ -1309,7 +1317,7 @@ Multiplication ==&gt; 2["2"]
 <item>
   <title>Why Pi is not, in fact, equal to 4</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Why Pi Is Not 4/</link>
+  <link>https://vaishnavs.net/posts/Why-Pi-Is-Not-4/</link>
   <description><![CDATA[ 
 
 
@@ -1326,7 +1334,7 @@ Multiplication ==&gt; 2["2"]
 <p>If you take a square of side length <img src="https://latex.codecogs.com/png.latex?r"> and then keep on cutting the corners so you preserve the perimeter <img src="https://latex.codecogs.com/png.latex?8r">, but the shape approaches a circle, then why can’t you say that <img src="https://latex.codecogs.com/png.latex?%5Cpi%20=%204">, because the diameter is <img src="https://latex.codecogs.com/png.latex?2r">?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="img.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The fake proof"><img src="https://vaishnavs.net/posts/Why Pi Is Not 4/img.png" class="img-fluid figure-img" alt="The fake proof"></a></p>
+<p><a href="img.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The fake proof"><img src="https://vaishnavs.net/posts/Why-Pi-Is-Not-4/img.png" class="img-fluid figure-img" alt="The fake proof"></a></p>
 <figcaption>The fake proof</figcaption>
 </figure>
 </div>
@@ -1339,7 +1347,7 @@ Multiplication ==&gt; 2["2"]
 <p>Are you still not convinced that the perimeter doesn’t converge? Zoom in on an infinitesimal piece of the diagram, which is where the arc length of the circle is basically a line.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="zoom.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"><img src="https://vaishnavs.net/posts/Why Pi Is Not 4/zoom.png" class="img-fluid figure-img" alt="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"></a></p>
+<p><a href="zoom.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"><img src="https://vaishnavs.net/posts/Why-Pi-Is-Not-4/zoom.png" class="img-fluid figure-img" alt="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"></a></p>
 <figcaption>When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle</figcaption>
 </figure>
 </div>
@@ -1351,9 +1359,9 @@ Multiplication ==&gt; 2["2"]
 
  ]]></description>
   <category>Math</category>
-  <guid>https://vaishnavs.net/posts/Why Pi Is Not 4/</guid>
+  <guid>https://vaishnavs.net/posts/Why-Pi-Is-Not-4/</guid>
   <pubDate>Wed, 31 Dec 2025 18:30:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Why Pi Is Not 4/img.png" medium="image" type="image/png" height="107" width="144"/>
+  <media:content url="https://vaishnavs.net/posts/Why-Pi-Is-Not-4/img.png" medium="image" type="image/png" height="107" width="144"/>
 </item>
 <item>
   <title>Why would anyone in their right mind do it like this?</title>
@@ -1371,7 +1379,7 @@ Multiplication ==&gt; 2["2"]
 <p>For one problem in particular, 2023 AMC 10B #7 (yeah, it’s still in the single digits), I found a diabolical solution that no one would have wanted to waste their brain cells to completely formulate. It is super easy to do just using 4th grade knowledge of geometry, but when I see rotations in geometry, I immediately think of complex bashing.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Screenshot 2025-12-18 205740.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem with answer choices"><img src="https://vaishnavs.net/posts/Cool-Problem-of-the-Month2/Screenshot 2025-12-18 205740.png" class="img-fluid figure-img" alt="The problem with answer choices"></a></p>
+<p><a href="problem.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem with answer choices"><img src="https://vaishnavs.net/posts/Cool-Problem-of-the-Month2/problem.png" class="img-fluid figure-img" alt="The problem with answer choices"></a></p>
 <figcaption>The problem with answer choices</figcaption>
 </figure>
 </div>
@@ -1418,7 +1426,7 @@ Multiplication ==&gt; 2["2"]
 <item>
   <title>Abstract Derivatives Part 1 - Linear Operators</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Abstract Derivatives Part 1/</link>
+  <link>https://vaishnavs.net/posts/Abstract-Derivatives-Part-1/</link>
   <description><![CDATA[ 
 
 
@@ -1431,13 +1439,13 @@ Multiplication ==&gt; 2["2"]
 <p>Matrices are where you probably saw this. If you transform a vector <img src="https://latex.codecogs.com/png.latex?x"> by multiplying it with <img src="https://latex.codecogs.com/png.latex?A">, do the same for a vector <img src="https://latex.codecogs.com/png.latex?y">, and add the two new vectors, it’s the same as just adding them first and then transforming them. Also, if you scale <img src="https://latex.codecogs.com/png.latex?x"> and <img src="https://latex.codecogs.com/png.latex?y"> by some constants, it doesn’t matter if you did it before or after the transformation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="linoper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the constants rule of linear transformations"><img src="https://vaishnavs.net/posts/Abstract Derivatives Part 1/linoper.png" class="img-fluid figure-img" alt="Diagram showing the constants rule of linear transformations"></a></p>
+<p><a href="linoper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the constants rule of linear transformations"><img src="https://vaishnavs.net/posts/Abstract-Derivatives-Part-1/linoper.png" class="img-fluid figure-img" alt="Diagram showing the constants rule of linear transformations"></a></p>
 <figcaption>Diagram showing the constants rule of linear transformations</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="linoper1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing additivity of linear transformations"><img src="https://vaishnavs.net/posts/Abstract Derivatives Part 1/linoper1.png" class="img-fluid figure-img" alt="Diagram showing additivity of linear transformations"></a></p>
+<p><a href="linoper1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing additivity of linear transformations"><img src="https://vaishnavs.net/posts/Abstract-Derivatives-Part-1/linoper1.png" class="img-fluid figure-img" alt="Diagram showing additivity of linear transformations"></a></p>
 <figcaption>Diagram showing additivity of linear transformations</figcaption>
 </figure>
 </div>
@@ -1462,13 +1470,13 @@ Multiplication ==&gt; 2["2"]
 
  ]]></description>
   <category>Math</category>
-  <guid>https://vaishnavs.net/posts/Abstract Derivatives Part 1/</guid>
+  <guid>https://vaishnavs.net/posts/Abstract-Derivatives-Part-1/</guid>
   <pubDate>Sat, 22 Nov 2025 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Abstract Derivatives Part 2 - Multivariable and Beyond</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Abstract Derivatives Part 2/</link>
+  <link>https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/</link>
   <description><![CDATA[ 
 
 
@@ -1499,7 +1507,7 @@ Multiplication ==&gt; 2["2"]
 <p>What about a vector output for a scalar input? This could be represented as a parametric equation, and the derivative would also be a vector. An example of this is in physics, with velocity and acceleration, both as a function of time. See the diagram for these in circular motion.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="circular.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"><img src="https://vaishnavs.net/posts/Abstract Derivatives Part 2/circular.png" class="img-fluid figure-img" alt="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"></a></p>
+<p><a href="circular.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"><img src="https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/circular.png" class="img-fluid figure-img" alt="Diagram showing the vector-valued functions of velocity and acceleration during circular motion"></a></p>
 <figcaption>Diagram showing the vector-valued functions of velocity and acceleration during circular motion</figcaption>
 </figure>
 </div>
@@ -1510,7 +1518,7 @@ Multiplication ==&gt; 2["2"]
 <p>At this point, we are exiting the more basic types of functions, and finally, matrices come into use here. You may recall that a vector field is a kind of function where for every point (vector) in space, there is an output which is a vector that moves that input somewhere else. As a result, what we can get by reiterating this process can be modeled for something like fluid flow. Maybe you’ve seen some of these diagrams before. Typically, since varying magnitudes get out of hand when drawn on paper, each point has a vector of a fixed length showing just direction, and the magnitudes are portrayed through color, where the “hotter” the color, the longer the magnitude is.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="vector_field.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing a vector field"><img src="https://vaishnavs.net/posts/Abstract Derivatives Part 2/vector_field.png" class="img-fluid figure-img" alt="Diagram showing a vector field"></a></p>
+<p><a href="vector_field.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing a vector field"><img src="https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/vector_field.png" class="img-fluid figure-img" alt="Diagram showing a vector field"></a></p>
 <figcaption>Diagram showing a vector field</figcaption>
 </figure>
 </div>
@@ -1532,14 +1540,14 @@ Multiplication ==&gt; 2["2"]
  ]]></description>
   <category>Math</category>
   <category>AI</category>
-  <guid>https://vaishnavs.net/posts/Abstract Derivatives Part 2/</guid>
+  <guid>https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/</guid>
   <pubDate>Sat, 22 Nov 2025 18:30:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Abstract Derivatives Part 2/circular.png" medium="image" type="image/png" height="178" width="144"/>
+  <media:content url="https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/circular.png" medium="image" type="image/png" height="178" width="144"/>
 </item>
 <item>
   <title>Nice Puzzle to Distract My Ice Skating</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Nice puzzle to distract my ice skating/</link>
+  <link>https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/</link>
   <description><![CDATA[ 
 
 
@@ -1548,7 +1556,7 @@ Multiplication ==&gt; 2["2"]
 
 <section id="yap" class="level1">
 <h1>Yap</h1>
-<p><a href="aops.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem I saw"><img src="https://vaishnavs.net/posts/Nice puzzle to distract my ice skating/aops.jpg" class="img-fluid" alt="The problem I saw"></a> I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:</p>
+<p><a href="aops.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The problem I saw"><img src="https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/aops.jpg" class="img-fluid" alt="The problem I saw"></a> I went ice skating today. I only go around once a year, which means I basically forget any progress I make in not looking like a monkey when I try each time. Just as I started to remotely get the hang of it for the third time in my life, I went to take a look at all the sponsors of the rink putting ads around it. One that caught my eye was, of course, from AoPS, which is what is shown on the image:</p>
 <p>“Does this problem make your brain FREEZE? Combine plus signs and eight 8’s to get 1,000.”</p>
 <p>While the problem was really simple just by brute forcing and intuition that even a six or seven year old (hehe) could solve it. The ad was, after all, placed to a general audience, not a bunch of orz IMO quals.</p>
 <p>However, out of my annoyingness, I sought to prove rigorously that the answer I got was the only possible one. I did this in my head, closing any logic holes, while at the same time figuring out how to ice skate properly (at least I was getting better at moving continuously, but my center of mass was still all over the place, so I ended up looking like a monkey anyway, but at least I never fell in the entirety of the hour I was there). So, without further ado, here’s the solution:</p>
@@ -1572,9 +1580,9 @@ Multiplication ==&gt; 2["2"]
  ]]></description>
   <category>Math</category>
   <category>Random</category>
-  <guid>https://vaishnavs.net/posts/Nice puzzle to distract my ice skating/</guid>
+  <guid>https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/</guid>
   <pubDate>Fri, 21 Nov 2025 18:30:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Nice puzzle to distract my ice skating/aops.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/aops.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Morphology</title>
@@ -1595,17 +1603,15 @@ Multiplication ==&gt; 2["2"]
 <h2 class="anchored" data-anchor-id="confusing-introduction">Confusing Introduction</h2>
 <p>Previously, in <a href="../../posts/Writing-Systems/index.html">orthographies</a>, <a href="../../posts/Phonology/index.html">phonology</a>, and <a href="../../posts/Phonetics/index.html">phonetics</a>, we’ve discussed <em>sounds</em> and their symbols. Now, we take a step further into <em>meaning</em>.</p>
 <p>Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.</p>
-<p>It may appear that there are exceptions. For example, the “wh” in English commonly indicates an interrogative word, like the five that are commonly referenced - “who”, “what”, “why”, “where”, “when”. However, there’s nothing about the labiovelar approximant that is inherently tied to interrogative words. Instead, that was just an arbitrary sound that happened to evolve this way. Instead of calling the “w” and the “h” as <em>phonemes</em>, we would call “wh” a unit that evolved out of a <em>morpheme</em>.</p>
 <section id="definition" class="level3">
 <h3 class="anchored" data-anchor-id="definition">Definition</h3>
-<p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? Such a question isn’t easy or even helpful. Therefore, we use morphemes instead.</p>
+<p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? And then polysynthetic language (like we’ll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn’t easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.</p>
 <p>Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).</p>
 </section>
 </section>
 <section id="types-of-morphology-across-languages" class="level2">
 <h2 class="anchored" data-anchor-id="types-of-morphology-across-languages">Types of Morphology Across Languages</h2>
 <p>There are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.</p>
-<p>These are usually talking about inflection, not derivation, which we will get to in part 2.</p>
 <section id="spectrum-1" class="level3">
 <h3 class="anchored" data-anchor-id="spectrum-1">Spectrum 1</h3>
 <p>The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic.</p>
@@ -2163,6 +2169,7 @@ There are some vowel and consonant sounds, of course, that cannot be produced wi
 <section id="orthography" class="level2">
 <h2 class="anchored" data-anchor-id="orthography">Orthography</h2>
 <p>Every consonant (the default form of each phoneme, ignoring the allophonic variations) is a node representing its position in the IPA when you plot places against manners of articulation. The starting node is a hollow circle for voiceless consonants and a filled in circle for voiced consonants. You draw vectors from one node to the next to represent subsequent consonants. If a word starts with a vowel, you can start with either k or f, in accordance to the sandhi and allophony. If two consecutive consonants are the same, then the vector is a circle with radius <img src="https://latex.codecogs.com/png.latex?1">, starting from that consonant and making a full loop through the <img src="https://latex.codecogs.com/png.latex?n">-th roots of unity (where this node is the local origin), where <img src="https://latex.codecogs.com/png.latex?n"> is the number of consonants you have done before doing this repeated one, and drawing an arrow at the end before getting to that node again. For vowels in between consonants, draw a grid starting from the top-left corner of a vowel diagram to show how deep the vowel is. If the vowel is rounded, shade alternating squares (starting from the top-left corner) like a checkerboard, and otherwise, none of the squares are filled in. Specifically for /i/ and /y/ (since their rectangle would just be a point), draw an X or a ✔ on that line respectively.</p>
+<p>Note that the entire thing is basically a directed multigraph.</p>
 </section>
 <section id="pronouns-and-verbs" class="level2">
 <h2 class="anchored" data-anchor-id="pronouns-and-verbs">Pronouns and Verbs</h2>

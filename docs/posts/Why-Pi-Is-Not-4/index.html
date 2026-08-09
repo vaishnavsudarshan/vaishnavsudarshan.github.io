@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Vaishnav Sudarshan">
-<meta name="dcterms.date" content="2025-10-13">
+<meta name="dcterms.date" content="2026-01-01">
 
-<title>Morphology – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
+<title>Why Pi is not, in fact, equal to 4 – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -125,9 +154,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Morphology</h1>
+      <h1 class="title">Why Pi is not, in fact, equal to 4</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Linguistics</div>
+                <div class="quarto-category">Math</div>
               </div>
                   </div>
   </div>
@@ -145,14 +174,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Originally Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 13, 2025</p>
+        <p class="date">January 1, 2026</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 9, 2026</p>
+        <p class="date-modified">August 5, 2026</p>
       </div>
     </div>
       
@@ -161,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      How do languages organize different units of meaning in a word? What even is a word? How does meaning relate to writing and sound? All of these and more will be answered in this blog post.
+      Most problems are either computational or proofs… but this one’s a disproof, which will hopefully spice up 2026 a little.
     </div>
   </div>
   
@@ -176,106 +205,39 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<blockquote class="blockquote">
-<p>This is a series of blogs on linguistics. See also: <a href="../Phonology/"><em>Phonology</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics/"><em>Phonetics</em></a></p>
-</blockquote>
-<section id="morphology" class="level1">
-<h1>Morphology</h1>
-<section id="confusing-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="confusing-introduction">Confusing Introduction</h2>
-<p>Previously, in <a href="../../posts/Writing-Systems/index.html">orthographies</a>, <a href="../../posts/Phonology/index.html">phonology</a>, and <a href="../../posts/Phonetics/index.html">phonetics</a>, we’ve discussed <em>sounds</em> and their symbols. Now, we take a step further into <em>meaning</em>.</p>
-<p>Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.</p>
-<section id="definition" class="level3">
-<h3 class="anchored" data-anchor-id="definition">Definition</h3>
-<p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? And then polysynthetic language (like we’ll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn’t easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.</p>
-<p>Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).</p>
-</section>
-</section>
-<section id="types-of-morphology-across-languages" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-morphology-across-languages">Types of Morphology Across Languages</h2>
-<p>There are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.</p>
-<section id="spectrum-1" class="level3">
-<h3 class="anchored" data-anchor-id="spectrum-1">Spectrum 1</h3>
-<p>The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic.</p>
-<section id="analytic-languages" class="level4">
-<h4 class="anchored" data-anchor-id="analytic-languages">Analytic languages</h4>
-<p>Analytic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on <em>inflection</em>, or altering the form of words - instead, they rely on <em>particles</em>, which are words that are put next to other words to c hange the grammatical meaning.</p>
-<p>As a sidenote, Google Translate clearly agrees that each character is a word in this case, as shown here.</p>
+<section id="yapping" class="level1">
+<h1>Yapping</h1>
+<p><span class="math inline">\(2025\)</span> is over! That was a once in a lifetime year. It was a perfect square, and the next one will come in <span class="math inline">\(2116\)</span>. Yet even that is not very cool number, because who cares about the square of <span class="math inline">\(46\)</span>? <span class="math inline">\(45\)</span> is a much nicer number than that. <span class="math inline">\(45\)</span> is a triangular number (sum of the first nine positive integers in this case), so <span class="math inline">\(2025\)</span> is the square of this triangular number, which you may recall also means it’s the sum of the first nine cubes.</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} i^3 = \frac{n^2 (n-1)^2}{4} = \left[\frac{n(n-1)}{2}\right]^2 = \left(\sum_{i=1}^{n} i\right)^2.
+\]</span></p>
+<p>Also, since <span class="math inline">\(2025\)</span> is the square of <span class="math inline">\(45\)</span>, it’s the sum of the first <span class="math inline">\(45\)</span> odd numbers.</p>
+<p><span class="math inline">\(2026\)</span>, on the other hand, is unbelievably boring. Its prime factorization is literally just <span class="math inline">\(2\cdot 1013\)</span>. So, for the first CPOTM of the year, I’ll try to make <span class="math inline">\(2026\)</span> more interesting by writing a disproof instead of a proof.</p>
+<p>If you’ve seen it, then sorry. If not, here it is:</p>
+<p>If you take a square of side length <span class="math inline">\(r\)</span> and then keep on cutting the corners so you preserve the perimeter <span class="math inline">\(8r\)</span>, but the shape approaches a circle, then why can’t you say that <span class="math inline">\(\pi = 4\)</span>, because the diameter is <span class="math inline">\(2r\)</span>?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="translate.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Shows how Google Translate separates words in Pinyin"><img src="translate.png" class="img-fluid figure-img" alt="Shows how Google Translate separates words in Pinyin"></a></p>
-<figcaption>Shows how Google Translate separates words in Pinyin</figcaption>
+<p><a href="img.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The fake proof"><img src="img.png" class="img-fluid figure-img" alt="The fake proof"></a></p>
+<figcaption>The fake proof</figcaption>
 </figure>
 </div>
 </section>
-<section id="synthetic-languages" class="level4">
-<h4 class="anchored" data-anchor-id="synthetic-languages">Synthetic Languages</h4>
-<p>Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn’t use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn’t get smushed together, and you can still tell apart subjects, verbs, and objects.</p>
-</section>
-<section id="polysynthetic-languages" class="level4">
-<h4 class="anchored" data-anchor-id="polysynthetic-languages">Polysynthetic Languages</h4>
-<p>Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it’s not actual yap, just a normal sentence put together into a giant word.</p>
-</section>
-<section id="clarification-on-words" class="level4">
-<h4 class="anchored" data-anchor-id="clarification-on-words">Clarification on “Words”</h4>
-<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just on average, how is the density of morphemes generally?</p>
-</section>
-</section>
-<section id="spectrum-2" class="level3">
-<h3 class="anchored" data-anchor-id="spectrum-2">Spectrum 2</h3>
-<p>The second continuum ranges from very clear distinctions between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional.</p>
-<section id="agglutinative-languages" class="level4">
-<h4 class="anchored" data-anchor-id="agglutinative-languages">Agglutinative Languages</h4>
-<p>An agglutinative language like Turkish clearly separates all of its morphemes. Take the “word” (more like sentence) “Evlerimizdenmişsiniz”.</p>
-<p>Breakdown:</p>
-<p>Ev → “house” (root noun)</p>
-<p>-ler → plural → Evler = “houses”</p>
-<p>-imiz → our → Evlerimiz = “our houses”</p>
-<p>-den → from → Evlerimizden = “from our houses”</p>
-<p>-miş → hearsay/past tense → Evlerimizdenmiş = “it seems it was from our houses”</p>
-<p>-siniz → second person plural → Evlerimizdenmişsiniz = “apparently you (all) were from our houses”</p>
-</section>
-<section id="fusional-languages" class="level4">
-<h4 class="anchored" data-anchor-id="fusional-languages">Fusional Languages</h4>
-<p>However, look at fusional languages. In Spanish, “hablamos” means “we speak”, with the ending “-amos” indicating that the pronoun is first person, and also plural (“we”). If you just knew the first person ending that’s not plural (“-o”), then you still wouldn’t be able to derive the ending “-amos” from that.</p>
-</section>
-</section>
-<section id="consonantal-root-systems" class="level3">
-<h3 class="anchored" data-anchor-id="consonantal-root-systems">Consonantal Root Systems</h3>
-<p>There is a feature in languages where the root meaning is carried out through the consonants, and the vowels between them just modify the meaning. This is pretty much unseen outside of Afro-Asiatic langauges.</p>
-<p>Most famously, Semitic languages (a sub-branch of Afro-Asiatic) such as Arabic and Hebrew use the triconsonantal root system. In Arabic, for example, the root “k-t-b” has to do with writing and books. The word “kitab” means “book”, the word “katib” means “writer”, and the word “maktaba” means “library”.</p>
-<p>Note that the extra consonant “m” in “maktaba” is added, because Arabic itself isn’t purely consonantal, and uses affixes as well. Interestingly, the word “kitab” spread to many languages like Farsi or Hindi to mean “book”, but since those languages aren’t Semitic, they don’t think of “kitab” using the triconsonantal root system, but rather just as any other word.</p>
-<p>Germanic languages like English do <em>just</em> a little. Primarily, this is shown in tense changes, like “s<em>i</em>ng” -&gt; “s<em>u</em>ng” -&gt; “s<em>a</em>ng”, or “r<em>u</em>n” -&gt; “r<em>u</em>n” -&gt; “r<em>a</em>n” as opposed to something like “reprimand” -&gt; “reprimand<em>ed</em>” -&gt; “reprimand<em>ed</em>”, where the latter is regular.</p>
-</section>
-</section>
-</section>
-<section id="free-and-bound-morphemes" class="level1">
-<h1>Free and Bound Morphemes</h1>
-<p>There is also a difference between free and bound morphemes. <em>Free morphemes</em> can exist on their own, while <em>bound morphemes</em> can only exist attached to other morphemes.</p>
-<p>For example, look at the word “dogs”. The “s” is a plural marker, but you can’t have a plural marker on its own, so it is bound. Meanwhile, “dog” is free, because it is a word on its own.</p>
-</section>
-<section id="merging-morphemes-subconsciously" class="level1">
-<h1>Merging Morphemes Subconsciously</h1>
-<p>Sometimes, a single morpheme could etymologically be derived from two other morphemes, but our brains treat it like a single morpheme due to semantic drifting.</p>
-<p>For example, take the word “forgive”. Etymologically, it was derived from “for” and “give”. However, over time, the meaning of “forgive” stopped being derived from “for” and “give” individually. So, people perceive it as a single morpheme, because those historical morphemes don’t contribute to the meaning of “forgive” anymore.</p>
-</section>
-<section id="affixes" class="level1">
-<h1>Affixes</h1>
-<p>Most languages’ morphologies involve <em>affixes</em>, or morphemes being added to words. Here are the main types:</p>
-<ul>
-<li>Prefixes: Go before the word, like “un” in English to mean “not” (unhappy).</li>
-<li>Suffixes: Go after the word, like “s” in English to mean plural (dogs).</li>
-<li>Circumfixes: Go before and after the word, but the parts going on either side don’t mean anything individually, like “ge…t” in German to form the past tense (“kaufen” -&gt; “gekauft”)</li>
-<li>Infixes: Go inside a word, like swear words in some people’s English to make emphasis (abso-[bleep]ing-lutely)</li>
-</ul>
-</section>
-<section id="note" class="level1">
-<h1>Note</h1>
-<p>One important thing to note is that trying to classify languages into categories like this isn’t super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian. As a result, these spectrums don’t necessarily account for every single language. Arabic, for example, can’t really be plotted on the 2D grid of the two spectrums, because a consonantal root system is way more complicated. There are many more morphological spectrums (like concatenative and non-concatenative, the latter of which Arabic falls into) that could exist as well, but these are just the most commonly used references ones.</p>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>So, now we know how meanings can be arranged within “words” of a language. However, how do these meanings interact? This is what we need syntax for, which will be covered next.</p>
+<section id="solution" class="level1">
+<h1>Solution</h1>
+<p>It seems correct, doesn’t it? The area certainly converges, because after cutting off the corners over and over again, you get the same infinitesimal rectangles that could integrate just like a normal circle to get the same result.</p>
+<p>The problem is that the perimeter doesn’t converge. The arc length of a curve from <span class="math inline">\(t=a\)</span> to <span class="math inline">\(t=b\)</span> where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are both functions of <span class="math inline">\(t\)</span> is given by <span class="math display">\[
+\int_a^b \sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2} dt
+\]</span></p>
+<p>This is NOT the same as <span class="math inline">\(x(b)-x(a)+y(b)-y(a)\)</span>.</p>
+<p>Are you still not convinced that the perimeter doesn’t converge? Zoom in on an infinitesimal piece of the diagram, which is where the arc length of the circle is basically a line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="zoom.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"><img src="zoom.png" class="img-fluid figure-img" alt="When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle"></a></p>
+<figcaption>When you zoom in to a single tiny step, ignoring nearby steps and exaggerating the nearby curvature so you can see it’s still a circle</figcaption>
+</figure>
+</div>
+<p>In an infinitesimal piece, the limiting process just turns the square into a staircase-like shape, say of <span class="math inline">\(x\)</span>-length <span class="math inline">\(dx\)</span> and <span class="math inline">\(y\)</span>-length <span class="math inline">\(dy\)</span>. On a tiny “step”, the perimeter is just <span class="math inline">\(dx+dy\)</span>. However, that tiny part of the circle is just a line that goes through the endpoints of the step, so the perimeter is <span class="math inline">\(\sqrt{dx^2+dy^2}\)</span>.</p>
+<p>You might argue that maybe we should zoom in even more, and the snapshot we took wasn’t the true final result. However, the arc of the circle is already basically a line. By cornering in the square even more, you’re just going to get another line going through a step, and the situation won’t change, so we have, in fact, zoomed in enough. To actually make the square match the circle in its perimeter, we must directly make the horizontal and vertical lines turn into diagonal lines, which changes the perimeter. <span class="math inline">\(\blacksquare\)</span></p>
 
 
 </section>
