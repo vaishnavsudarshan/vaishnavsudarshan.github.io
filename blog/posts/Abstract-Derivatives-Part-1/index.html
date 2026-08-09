@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Vaishnav Sudarshan">
+<meta name="dcterms.date" content="2025-11-23">
 
-<title>About – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
+<title>Abstract Derivatives Part 1 - Linear Operators – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,18 +74,47 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Vaishnav Sudarshan’s Blog on Cool Stuff</span>
     </a>
   </div>
@@ -90,11 +125,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -128,42 +163,105 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Abstract Derivatives Part 1 - Linear Operators</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Math</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vaishnav Sudarshan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Originally Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 23, 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Last Updated</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">August 1, 2026</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      Answering the following questions - Why are matrices considered linear? How can differentiation also be interpreted as this?
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="profile.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<p>Hello! My name is Vaishnav Sudarshan, a high schooler (class of 2029) at Basis Independent Bellevue (Washington State, USA, North America, Earth, Solar System, Milky Way, Virgo Supercluster, Universe, Multiverse???).</p>
-<p>The question of who I <em>am</em> (not specifically me, obviously) has been debated by philosophers for millenia and they still haven’t come to a consensus, so I’ll talk <em>about</em> me instead.</p>
-<p>My main interests are in math (CNAG for now, but this ranking is kinda unstable and subject to change), linguistics, and computer science (mostly since it’s deeply intertwined with the first two), and these may or may not combine with somewhat related fields like AI, biology, or physics. This is reflected in the subject matter of my blog posts. However, I occasionally might go off-topic if something random is really interesting, like food or philosophy.</p>
-<p>As for languages, I speak English and Tamil natively. I know a decent amount of French, and I have also dabbled / am dabbling in many other languages (that are more for analyzing linguistically to notice cool observations than actually aiming for proficiency), such as Hindi, Telugu, Chinese, Portuguese, Indonesian, Thai, and German.</p>
-<p>I guess I speak proficient Python and Java as well if that counts??? I do know the basics of a few other programming languages too, though (JavaScript, C++, Asymptote, and Lua for example), just not with nearly as much experience.</p>
-<p>I like stuff at the intersection of different fields, like applying math to linguistics or linguistics to biology.</p>
-<p>Here are some <a href="https://tinyurl.com/vaishnav-blog-stats">analytics</a> for my blog.</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://github.com/vaishnavsudarshan" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+
+
+
+<section id="linear-operators" class="level1">
+<h1>Linear Operators</h1>
+<p>A linear operator <span class="math inline">\(L\)</span> is just anything that satisfies <span class="math inline">\(L(ax+by)=aL(x)+bL(y)\)</span>, for constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, and where addition and multiplication are defined. In other words, it is additive, and you can pull out constants from the inside.</p>
+<p>Matrices are where you probably saw this. If you transform a vector <span class="math inline">\(x\)</span> by multiplying it with <span class="math inline">\(A\)</span>, do the same for a vector <span class="math inline">\(y\)</span>, and add the two new vectors, it’s the same as just adding them first and then transforming them. Also, if you scale <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> by some constants, it doesn’t matter if you did it before or after the transformation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="linoper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Diagram showing the constants rule of linear transformations"><img src="linoper.png" class="img-fluid figure-img" alt="Diagram showing the constants rule of linear transformations"></a></p>
+<figcaption>Diagram showing the constants rule of linear transformations</figcaption>
+</figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="linoper1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Diagram showing additivity of linear transformations"><img src="linoper1.png" class="img-fluid figure-img" alt="Diagram showing additivity of linear transformations"></a></p>
+<figcaption>Diagram showing additivity of linear transformations</figcaption>
+</figure>
 </div>
- <!-- /main -->
+</section>
+<section id="derivatives-as-linear-opexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qsxwrators" class="level1">
+<h1>Derivatives As Linear Opexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qa1qsxwrators</h1>
+<p>Do you remember the sum and product rules of single-variable derivatives? 1qsaxwxq <span class="math inline">\(\frac{d}{dx} (af(x)) = a \frac{d}{dx} f(x)\)</span> <span class="math inline">\(\frac{d}{dx} (f(x) + g(x)) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x)\)</span></p>
+<p>Wait, what??? Differentiation is also a linear operator on functions??? Now you realize how cool generalizing stuff is.</p>
+<p>Hold on. Is <span class="math inline">\(y=mx+b\)</span> linear on <span class="math inline">\(x\)</span>, for <span class="math inline">\(b \neq 0\)</span>? The answer, surprisingly, is no. <span class="math inline">\(m(x_1+x_2)+b \neq (mx_1+b)+(mx_2+b)\)</span>. Linear, in this the context of this blog post, doesn’t necessarily mean the function is a line, but rather that the function behaves like a linear operator, which are typically different things. However, don’t think this form of function isn’t useful outside of 7th grade - when generalized to matrices, these can be very useful in AI.</p>
+<section id="slight-tangent-on-affine-transformations" class="level2">
+<h2 class="anchored" data-anchor-id="slight-tangent-on-affine-transformations">Slight Tangent on Affine Transformations</h2>
+<p>Transformations of the form <span class="math inline">\(y=mx+b\)</span> aren’t linear, but instead <em>affine</em>. Obviously not everything has to be a scalar, but instead can be about vectors and matrices where you have <span class="math inline">\(f(\vec{v}) = A \vec{v} + \vec{b}\)</span> for some matrix <span class="math inline">\(A\)</span>. Where are affine transformations actually used?</p>
+<p>A really common example is to get from one layer of a neural network to another, right before the activation function (more on that in the <a href="../Neural-Networks-Part1/">blog about neural networks</a>). You multiply the vector of inputs in one layer by the matrix of weights and add to that the vector of biases to get the next layer pre-activation.</p>
+</section>
+</section>
+<section id="to-be-continued" class="level1">
+<h1>To be continued</h1>
+<p>Well, this was not very abstract… yet. In the following parts, we will actually make derivatives more abstract, but this one was just the setup. So, don’t leave just yet.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -584,6 +682,38 @@ ul.task-list li input[type="checkbox"] {
   loadGiscus();
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Vaishnav Sudarshan&#39;s Blog on Cool Stuff</title>
+<link>https://vaishnavs.net/</link>
+<atom:link href="https://vaishnavs.net/index.xml" rel="self" type="application/rss+xml"/>
+<description>Vaishnav Sudarshan&#39;s blog on linguistics, math, computer science and natural language processing</description>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Sun, 02 Aug 2026 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/Semantics/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Semantics/</link>
+  <description>{B4F502887207:/posts/Semantics/index.html}</description>
+  <category>Linguistics</category>
+  <category>Philosophy</category>
+  <category>Math</category>
+  <guid>https://vaishnavs.net/posts/Semantics/</guid>
+  <pubDate>Sun, 02 Aug 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Semantics/not_hot1.png" medium="image" type="image/png" height="74" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Craftic/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Craftic/</link>
+  <description>{B4F502887207:/posts/Craftic/index.html}</description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/Craftic/</guid>
+  <pubDate>Wed, 15 Jul 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Craftic/craftic_jump.png" medium="image" type="image/png" height="164" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/WhatIsALanguage/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/WhatIsALanguage/</link>
+  <description>{B4F502887207:/posts/WhatIsALanguage/index.html}</description>
+  <category>Linguistics</category>
+  <category>Philosophy</category>
+  <guid>https://vaishnavs.net/posts/WhatIsALanguage/</guid>
+  <pubDate>Sat, 11 Jul 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/WhatIsALanguage/indo-aryan.png" medium="image" type="image/png" height="95" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/SLIYS/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/SLIYS/</link>
+  <description>{B4F502887207:/posts/SLIYS/index.html}</description>
+  <category>Linguistics</category>
+  <category>Random</category>
+  <guid>https://vaishnavs.net/posts/SLIYS/</guid>
+  <pubDate>Thu, 09 Jul 2026 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Historical-Linguistics-2/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Historical-Linguistics-2/</link>
+  <description>{B4F502887207:/posts/Historical-Linguistics-2/index.html}</description>
+  <category>Linguistics</category>
+  <category>History</category>
+  <guid>https://vaishnavs.net/posts/Historical-Linguistics-2/</guid>
+  <pubDate>Mon, 29 Jun 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Historical-Linguistics-2/hundred.png" medium="image" type="image/png" height="69" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Syntax-Part-1/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Syntax-Part-1/</link>
+  <description>{B4F502887207:/posts/Syntax-Part-1/index.html}</description>
+  <category>Linguistics</category>
+  <category>CS</category>
+  <guid>https://vaishnavs.net/posts/Syntax-Part-1/</guid>
+  <pubDate>Tue, 09 Jun 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Syntax-Part-1/caca.png" medium="image" type="image/png" height="90" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Why-Orbits-Have-Equal-Area-In-Equal-Time/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Why-Orbits-Have-Equal-Area-In-Equal-Time/</link>
+  <description>{B4F502887207:/posts/Why-Orbits-Have-Equal-Area-In-Equal-Time/index.html}</description>
+  <category>Physics</category>
+  <category>Math</category>
+  <guid>https://vaishnavs.net/posts/Why-Orbits-Have-Equal-Area-In-Equal-Time/</guid>
+  <pubDate>Sun, 07 Jun 2026 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Historical-Linguistics-1/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Historical-Linguistics-1/</link>
+  <description>{B4F502887207:/posts/Historical-Linguistics-1/index.html}</description>
+  <category>Linguistics</category>
+  <category>History</category>
+  <guid>https://vaishnavs.net/posts/Historical-Linguistics-1/</guid>
+  <pubDate>Wed, 28 Jan 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Historical-Linguistics-1/ie.png" medium="image" type="image/png" height="143" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Why-Pi-Is-Not-4/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Why-Pi-Is-Not-4/</link>
+  <description>{B4F502887207:/posts/Why-Pi-Is-Not-4/index.html}</description>
+  <category>Math</category>
+  <guid>https://vaishnavs.net/posts/Why-Pi-Is-Not-4/</guid>
+  <pubDate>Wed, 31 Dec 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Why-Pi-Is-Not-4/img.png" medium="image" type="image/png" height="107" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Cool-Problem-of-the-Month2/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Cool-Problem-of-the-Month2/</link>
+  <description>{B4F502887207:/posts/Cool-Problem-of-the-Month2/index.html}</description>
+  <category>Math</category>
+  <guid>https://vaishnavs.net/posts/Cool-Problem-of-the-Month2/</guid>
+  <pubDate>Mon, 15 Dec 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Cool-Problem-of-the-Month2/Screenshot%202025-12-18%20205740.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Abstract-Derivatives-Part-1/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Abstract-Derivatives-Part-1/</link>
+  <description>{B4F502887207:/posts/Abstract-Derivatives-Part-1/index.html}</description>
+  <category>Math</category>
+  <guid>https://vaishnavs.net/posts/Abstract-Derivatives-Part-1/</guid>
+  <pubDate>Sat, 22 Nov 2025 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Abstract-Derivatives-Part-2/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/</link>
+  <description>{B4F502887207:/posts/Abstract-Derivatives-Part-2/index.html}</description>
+  <category>Math</category>
+  <category>AI</category>
+  <guid>https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/</guid>
+  <pubDate>Sat, 22 Nov 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Abstract-Derivatives-Part-2/circular.png" medium="image" type="image/png" height="178" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Nice-puzzle-to-distract-my-ice-skating/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/</link>
+  <description>{B4F502887207:/posts/Nice-puzzle-to-distract-my-ice-skating/index.html}</description>
+  <category>Math</category>
+  <category>Random</category>
+  <guid>https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/</guid>
+  <pubDate>Fri, 21 Nov 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Nice-puzzle-to-distract-my-ice-skating/aops.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Morphology/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Morphology/</link>
+  <description>{B4F502887207:/posts/Morphology/index.html}</description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/Morphology/</guid>
+  <pubDate>Sun, 12 Oct 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Morphology/translate.png" medium="image" type="image/png" height="101" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Phonetics/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Phonetics/</link>
+  <description>{B4F502887207:/posts/Phonetics/index.html}</description>
+  <category>Linguistics</category>
+  <category>Biology</category>
+  <category>Physics</category>
+  <guid>https://vaishnavs.net/posts/Phonetics/</guid>
+  <pubDate>Sat, 13 Sep 2025 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Phonology/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Phonology/</link>
+  <description>{B4F502887207:/posts/Phonology/index.html}</description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/Phonology/</guid>
+  <pubDate>Sat, 13 Sep 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Phonology/french_phonology.png" medium="image" type="image/png" height="123" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/The-IPA/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/The-IPA/</link>
+  <description>{B4F502887207:/posts/The-IPA/index.html}</description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/The-IPA/</guid>
+  <pubDate>Sat, 13 Sep 2025 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Writing-Systems/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Writing-Systems/</link>
+  <description>{B4F502887207:/posts/Writing-Systems/index.html}</description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/Writing-Systems/</guid>
+  <pubDate>Fri, 22 Aug 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Writing-Systems/brahmi_script_qutub_minar.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/Limit riLmOtOpU/index.html}</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Limit riLmOtOpU/</link>
+  <description>{B4F502887207:/posts/Limit riLmOtOpU/index.html}</description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/Limit riLmOtOpU/</guid>
+  <pubDate>Wed, 02 Jul 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Limit riLmOtOpU/LimitFlag.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>

@@ -803,6 +803,7 @@ linkStyle default stroke-width:5px;
 
  ]]></description>
   <category>Linguistics</category>
+  <category>History</category>
   <guid>https://vaishnavs.net/posts/Historical-Linguistics-2/</guid>
   <pubDate>Mon, 29 Jun 2026 18:30:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Historical-Linguistics-2/hundred.png" medium="image" type="image/png" height="69" width="144"/>
@@ -831,7 +832,7 @@ linkStyle default stroke-width:5px;
 <section id="head-initial-and-head-final-order" class="level2">
 <h2 class="anchored" data-anchor-id="head-initial-and-head-final-order">Head-Initial and Head-Final Order</h2>
 <p>Languages can be syntactically classified under whether the beginning or end of a phrase determines what type of constituent it behaves like. In English, “ate the cake” is a verb phrase (VP), which can be written as V NP (verb noun phrase). The category of “ate the cake” is the same as “ate”, not “the cake”. Additionally, “to the house” is a prepositional phrase (PP), and it can be decomposed as P NP. Therefore, we call English a head-initial language.</p>
-<p>Tamil, on the other hand, is a head-final language. The equivalent VP to “ate the cake” would be “cake sappitten”, and that last word means “(I) ate”, which is a verb, so the phrase can be decomposed as NP V. Tamil also uses postpositions. The postpositional phrase “to the house” would be “veetu ku” (/ʋi/)</p>
+<p>Tamil, on the other hand, is a head-final language. The equivalent VP to “ate the cake” would be “cake sappitten”, and that last word means “(I) ate”, which is a verb, so the phrase can be decomposed as NP V. Tamil also uses postpositions. The postpositional phrase “to the house” would be “vi:tu ku”. Since “ku” means “to” and “vi:tu” means “house”, this is decomposed as NP P, the latter of which determines the constituency.</p>
 </section>
 <section id="trees" class="level2">
 <h2 class="anchored" data-anchor-id="trees">Trees</h2>
@@ -1320,6 +1321,7 @@ Multiplication ==&gt; 2["2"]
 
  ]]></description>
   <category>Linguistics</category>
+  <category>History</category>
   <guid>https://vaishnavs.net/posts/Historical-Linguistics-1/</guid>
   <pubDate>Wed, 28 Jan 2026 18:30:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Historical-Linguistics-1/ie.png" medium="image" type="image/png" height="143" width="144"/>
