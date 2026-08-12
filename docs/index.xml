@@ -198,10 +198,105 @@ Spoiler: Explains the main idea of the problem
 <section id="or" class="level2">
 <h2 class="anchored" data-anchor-id="or">“or”</h2>
 <p>A cool ambiguity between formal logic and natural language is “or”. In spoken English, “or” can either mean the logical “or” where “A or B” is true if at least one of them is true. This is what “or” means in Python, for instance.</p>
-<div class="line-block">A | B | A or B |</div>
-<p>|True | True | True | |True | False| True | |False| True | True | |False| False| False |</p>
-<p>“A or B” can also mean the logical “xor”, where only one of them is true, not both. If someone says “you will choose chocolate or vanilla”, and each person gets exactly one full scoop, you can’t get two people’s worth of ice cream by getting both.</p>
-<p>|A | B | A xor B | |True | True | False | |True | False| True |</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>A</th>
+<th>B</th>
+<th>A or B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="odd">
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>“A or B” in spoken English can also mean the logical “xor”, where only one of them is true, not both. If someone says “you will choose chocolate or vanilla”, and each person gets exactly one full scoop, you can’t get two people’s worth of ice cream by getting both. Usually, the word “either” clarifies that exactly one is true, like “you will EITHER choose chocolate or vanilla”</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>A</th>
+<th>B</th>
+<th>A xor B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>True</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="even">
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="odd">
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>Now, just for funsies, if someone says, “you CAN get either chocolate or vanilla”, that’s different.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>A</th>
+<th>B</th>
+<th>can(A xor B)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>True</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="even">
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="odd">
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>That last row is weird, but the “can” basically implies that you can get at MOST one flavor, but none is also an option.</p>
+<p>English has yet another use for “or” that’s not even a truth condition. It’s only used in questions. These truth tables we’ve seen have A and B symmetrical, which means swapping their values returns the same result. In this context, however, we quite literally care about which one is favored.</p>
+<p>This type of “or” can create some ambiguity in this example which will illustrate what it is. What do you think this means: “Do you want tea or coffee?”</p>
+<p>It can either mean that they are asking you whether you want at least one of them to drink (so you’d say “no” if you want neither of them), or it means they are asking you whether you want coffee or tea, and they want to know specifically which one. Luckily, in speech, this ambiguity is resolved through intonation - the first scenario would have a rising intonation, while the second would have a falling intonation. This saves you from the embarrassment you’ll face if someone asks this question IRL intending to know which one you want, and you just say “yes”.</p>
 </section>
 </section>
 <section id="conclusion" class="level1">
@@ -1610,23 +1705,30 @@ Multiplication ==&gt; 2["2"]
 <blockquote class="blockquote">
 <p>This is a series of blogs on linguistics. See also: <a href="../Phonology/"><em>Phonology</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics/"><em>Phonetics</em></a></p>
 </blockquote>
-<section id="morphology" class="level1">
-<h1>Morphology</h1>
-<section id="confusing-introduction" class="level2">
-<h2 class="anchored" data-anchor-id="confusing-introduction">Confusing Introduction</h2>
+<section id="confusing-introduction" class="level1">
+<h1>Confusing Introduction</h1>
 <p>Previously, in <a href="../../posts/Writing-Systems/index.html">orthographies</a>, <a href="../../posts/Phonology/index.html">phonology</a>, and <a href="../../posts/Phonetics/index.html">phonetics</a>, we’ve discussed <em>sounds</em> and their symbols. Now, we take a step further into <em>meaning</em>.</p>
 <p>Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of “meaning” is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word “meaning” tied to the idea of “the idea tied to that word”. Note to reader: I do not apologize for provding confusing examples like this.</p>
-<section id="definition" class="level3">
-<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<section id="definition" class="level2">
+<h2 class="anchored" data-anchor-id="definition">Definition</h2>
 <p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? And then polysynthetic language (like we’ll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn’t easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.</p>
 <p>Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).</p>
 </section>
 </section>
+<section id="free-and-bound-morphemes" class="level1">
+<h1>Free and Bound Morphemes</h1>
+<p>There is also a difference between free and bound morphemes. <em>Free morphemes</em> can exist on their own, while <em>bound morphemes</em> can only exist attached to other morphemes.</p>
+<p>For example, look at the word “dogs”. The “s” is a plural marker, but you can’t have a plural marker on its own, so it is bound. Meanwhile, “dog” is free, because it is a word on its own.</p>
+</section>
+<section id="allomorphy" class="level1">
+<h1>Allomorphy</h1>
+<p>Allomorphy is when the meaning of a morpheme may take on a different form based on the environment, just like how allophony is when the production of a phoneme may change based on the environment.</p>
+<p>Allomorphs often occur as a result of the phonological environment. Take the words “ineffective”, “imperfect”, “illiterate”, and “irrelevant”. All</p>
 <section id="types-of-morphology-across-languages" class="level2">
 <h2 class="anchored" data-anchor-id="types-of-morphology-across-languages">Types of Morphology Across Languages</h2>
-<p>There are two continuums that determine how a language’s morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated.</p>
-<section id="spectrum-1" class="level3">
-<h3 class="anchored" data-anchor-id="spectrum-1">Spectrum 1</h3>
+<p>When classifying different morphologies, there are few things to keep in mind. Let’s look at them and zoom in.</p>
+<section id="morphemes-per-word" class="level3">
+<h3 class="anchored" data-anchor-id="morphemes-per-word">Morphemes per word</h3>
 <p>The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic.</p>
 <section id="analytic-languages" class="level4">
 <h4 class="anchored" data-anchor-id="analytic-languages">Analytic languages</h4>
@@ -1649,7 +1751,7 @@ Multiplication ==&gt; 2["2"]
 </section>
 <section id="clarification-on-words" class="level4">
 <h4 class="anchored" data-anchor-id="clarification-on-words">Clarification on “Words”</h4>
-<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just on average, how is the density of morphemes generally?</p>
+<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just thinking about the general density of morphemes.</p>
 </section>
 </section>
 <section id="spectrum-2" class="level3">
@@ -1679,11 +1781,6 @@ Multiplication ==&gt; 2["2"]
 <p>Germanic languages like English do <em>just</em> a little. Primarily, this is shown in tense changes, like “s<em>i</em>ng” -&gt; “s<em>u</em>ng” -&gt; “s<em>a</em>ng”, or “r<em>u</em>n” -&gt; “r<em>u</em>n” -&gt; “r<em>a</em>n” as opposed to something like “reprimand” -&gt; “reprimand<em>ed</em>” -&gt; “reprimand<em>ed</em>”, where the latter is regular.</p>
 </section>
 </section>
-</section>
-<section id="free-and-bound-morphemes" class="level1">
-<h1>Free and Bound Morphemes</h1>
-<p>There is also a difference between free and bound morphemes. <em>Free morphemes</em> can exist on their own, while <em>bound morphemes</em> can only exist attached to other morphemes.</p>
-<p>For example, look at the word “dogs”. The “s” is a plural marker, but you can’t have a plural marker on its own, so it is bound. Meanwhile, “dog” is free, because it is a word on its own.</p>
 </section>
 <section id="merging-morphemes-subconsciously" class="level1">
 <h1>Merging Morphemes Subconsciously</h1>

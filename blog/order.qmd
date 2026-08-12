@@ -1,0 +1,67 @@
+---
+title: "Blog Mind Map"
+---
+
+# Linguistics
+
+Are you interested in learning about linguistics? There are two parallel tracks that you can read. The first goes into how languages can vary and change, and the second goes into the major components of theoretical linguistics - sounds/symbols, structure, and meaning. 
+
+```{mermaid}
+%%| fig-align: center
+%%{init: {"themeVariables": {"fontSize": "28px"}}}%%
+flowchart TB
+    Start([Start here]) --> WS
+    subgraph S1 [" "]
+        direction TB
+        WS[Writing systems] --> IPA[The IPA] --> PH[Phonetics] --> PN[Phonology]
+    end
+    subgraph S2 [" "]
+        direction TB
+        MO[Morphology] --> SY[Syntax] --> MS[Morphosyntax]
+    end
+    subgraph S3 [" "]
+        direction TB
+        SE[Semantics] --> S2b[Semantics part 2] --> PR[Pragmatics]
+    end
+    subgraph S4 [" "]
+        direction TB
+        WIL[What is a language?] --> H1[Historical linguistics 1] --> H2[Historical linguistics 2]
+    end
+    PN --> MO
+    MS --> SE
+    Start -.-> WIL
+    classDef start fill:#111827,stroke:#111827,color:#ffffff
+    classDef s1 fill:#d5f2ee,stroke:#0f9d8e,stroke-width:1.5px,color:#0a3b36
+    classDef s2 fill:#e6e2fb,stroke:#6b5fd6,stroke-width:1.5px,color:#2c256e
+    classDef s3 fill:#fdeacd,stroke:#d18a10,stroke-width:1.5px,color:#6e4708
+    classDef s4 fill:#fbdde8,stroke:#d1517f,stroke-width:1.5px,color:#6e213f
+    classDef soon fill:#f3f4f6,stroke:#9aa1ac,stroke-width:1.5px,color:#6b7280,stroke-dasharray:5 4
+    class Start start
+    class WS,IPA,PH,PN s1
+    class MO,SY s2
+    class SE s3
+    class WIL,H1,H2 s4
+    class MS,S2b,PR soon
+    style S1 fill:#eafaf6,stroke:#0f9d8e
+    style S2 fill:#efecfd,stroke:#6b5fd6
+    style S3 fill:#fef5e6,stroke:#d18a10
+    style S4 fill:#fdeef4,stroke:#d1517f
+    click WS href "https://vaishnavs.net/posts/Writing-Systems/" _blank
+    click IPA href "https://vaishnavs.net/posts/The-IPA/" _blank
+    click PH href "https://vaishnavs.net/posts/Phonetics/" _blank
+    click PN href "https://vaishnavs.net/posts/Phonology/" _blank
+    click MO href "https://vaishnavs.net/posts/Morphology/" _blank
+    click SY href "https://vaishnavs.net/posts/Syntax-Part-1/" _blank
+    click SE href "https://vaishnavs.net/posts/Semantics/" _blank
+    click WIL href "https://vaishnavs.net/posts/WhatIsALanguage/" _blank
+    click H1 href "https://vaishnavs.net/posts/Historical-Linguistics-1/" _blank
+    click H2 href "https://vaishnavs.net/posts/Historical-Linguistics-2/" _blank
+```
+
+# Math
+
+So far, since most people don't start math from the fundamentals like they do for linguistics, my math blog posts aren't necessarily meant to be read in any order, and their topics are more random, so you can just read whichever ones you like. However, I imagine that in the future, they might have more relatedness. 
+
+# AI
+
+Blog posts and structure on AI coming in the future

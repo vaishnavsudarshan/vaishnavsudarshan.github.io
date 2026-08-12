@@ -8,3 +8,13 @@ div {
   text-align: justify;
   hyphens: auto;
 }
+
+.quarto-title-banner {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+#title-block-header { margin-bottom: 0; }
+main#quarto-document-content { margin-top: 0.25rem; }
+
+.quarto-title-banner .title { font-size: 4rem; }

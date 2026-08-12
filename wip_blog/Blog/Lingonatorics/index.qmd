@@ -1,0 +1,7 @@
+---
+title: "Lingonatorics"
+author: "Vaishnav Sudarshan"
+date: "2026-11-8"
+categories:  [Cool Linguistics Stuff, Cool Math Stuff]
+abstract: Theoretical linguistics lends itself nicely to combinatorics
+---

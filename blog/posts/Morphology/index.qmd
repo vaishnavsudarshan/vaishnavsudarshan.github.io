@@ -9,23 +9,35 @@ image: translate.png
 
 > This is a series of blogs on linguistics. See also: [_Phonology_](../Phonology/), [_Writing Systems_](../Writing-Systems/), [_Phonetics_](../Phonetics/)
 
-# Morphology
-## Confusing Introduction
+# Confusing Introduction
 Previously, in [orthographies](../Writing-Systems/index.qmd), [phonology](../Phonology/index.qmd), and [phonetics](../Phonetics/index.qmd), we've discussed *sounds* and their symbols. Now, we take a step further into *meaning*.
 
 Now, I want to emphasize that GENERALLY, sound and meaning are two separate things. This should make sense if you think about it - the meaning of "meaning" is just the idea tied to that word, and the sound is how that word is pronounced. There is nothing about the voiced bilabial nasal /m/ or the closed front unrounded vowel /i/ that makes the word "meaning" tied to the idea of "the idea tied to that word". Note to reader: I do not apologize for provding confusing examples like this. 
 
-### Definition
+## Definition
 
 A *morpheme* is loosely defined as a unit of meaning. You may wonder why we do not just use the term "words" to describe these. The answer is that "words" are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that's generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single "word" because there aren't any spaces? And then polysynthetic language (like we'll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn't easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.
 
 Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some "insightful" meaning (by which I mean that it's definitely not intended to be that deep, and any such annotation is surely a stretch).
 
+# Free and Bound Morphemes
+
+There is also a difference between free and bound morphemes. *Free morphemes* can exist on their own, while *bound morphemes* can only exist attached to other morphemes. 
+
+For example, look at the word "dogs". The "s" is a plural marker, but you can't have a plural marker on its own, so it is bound. Meanwhile, "dog" is free, because it is a word on its own.
+
+# Allomorphy
+
+Allomorphy is when the meaning of a morpheme may take on a different form based on the environment, just like how allophony is when the production of a phoneme may change based on the environment.
+
+Allomorphs often occur as a result of the phonological environment. Take the words "ineffective", "imperfect", "illiterate", and "irrelevant". All 
+
 ## Types of Morphology Across Languages
 
-There are two continuums that determine how a language's morphology works. The first measures how many morphemes are squished into a single word, and the second measures how clearly morphemes are separated. 
+When classifying different morphologies, there are few things to keep in mind. Let's look at them and zoom in. 
 
-### Spectrum 1
+### Morphemes per word
+
 The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic. 
 
 #### Analytic languages
@@ -37,7 +49,7 @@ As a sidenote, Google Translate clearly agrees that each character is a word in 
 
 ![Shows how Google Translate separates words in Pinyin](translate.png){.lightbox}
 
-#### Synthetic Languages
+#### Synthetic Languages 
 
 Synthetic languages actually inflect more and rely less on particles. For example, Latin uses verb conjugations and noun declensions to reflect gender, number, case, person, and more. As a result, it doesn't use articles, pronouns are optional, and there are less words in general. However, the entire sentence doesn't get smushed together, and you can still tell apart subjects, verbs, and objects.
 
@@ -45,10 +57,9 @@ Synthetic languages actually inflect more and rely less on particles. For exampl
 
 Polysynthetic languages are like an extreme form of regular synthetic languages. A single word could contain the meaning of an entire sentence, combining morphemes of subjects, objects, and verbs. You may have seen super long words of some indigenous languages of the Eskimo-Aleut family in Greenland, Alaska, and Northern Canada (possibly on signs while playing GeoGuessr), and wondered what they were yapping. Now you know it's not actual yap, just a normal sentence put together into a giant word. 
 
-
 #### Clarification on "Words"
 
-But hold on, I thought words aren't reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that's how English treats affixes and adjectives). So, it's not purely based on how they're written down, but there doesn't necessarily need to be a clean line either. It's just on average, how is the density of morphemes generally?
+But hold on, I thought words aren't reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that's how English treats affixes and adjectives). So, it's not purely based on how they're written down, but there doesn't necessarily need to be a clean line either. It's just thinking about the general density of morphemes. 
 
 ### Spectrum 2
 The second continuum ranges from very clear distinctions between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional. 
@@ -86,11 +97,6 @@ Note that the extra consonant "m" in "maktaba" is added, because Arabic itself i
 
 Germanic languages like English do *just* a little. Primarily, this is shown in tense changes, like "s*i*ng" -> "s*u*ng" -> "s*a*ng", or "r*u*n" -> "r*u*n" -> "r*a*n" as opposed to something like "reprimand" -> "reprimand*ed*" -> "reprimand*ed*", where the latter is regular. 
 
-# Free and Bound Morphemes
-
-There is also a difference between free and bound morphemes. *Free morphemes* can exist on their own, while *bound morphemes* can only exist attached to other morphemes. 
-
-For example, look at the word "dogs". The "s" is a plural marker, but you can't have a plural marker on its own, so it is bound. Meanwhile, "dog" is free, because it is a word on its own.
 
 # Merging Morphemes Subconsciously
 

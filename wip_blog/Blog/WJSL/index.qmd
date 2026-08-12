@@ -1,13 +1,16 @@
 # Structure
 
-Sign language
+WJSL is a sign language.
 
-Everything is simultaneous so no "word order"
+Everything is simultaneous so there is no "word order".
 
-The two basic things in a sentence are the subject and the object (intransitive sentences are reflexive)
+The two basic things in a sentence are the subject and the object (intransitive sentences are reflexive, so object is the same as subject).
 
-Each semantic dimension (adjective or adverb) is shown through a time derivative of something's position at t = n seconds since the speaker started speaking, where n is the speaker's age in centuries. 
+Subjects and objects have a person - either in or out the conversation (in other words, first and second are merged). If all the time derivatives are 0, it means a personal pronoun.
 
-Subjects and objects have a person - either in or out the conversation (in other words, first and second are merged). if all the time derivatives are 0, it means a personal pronoun
+Subjects (shown by hands) with first/second are flapping your hands, and third means doing a weird thing with your fingers with your palm cupped up. Objects (shown by legs) are either running with a limp or moving your legs back and forth respectively. 
+
+Each semantic dimension (adjective or adverb) is shown through a time derivative of something's position at t = n seconds since the speaker started speaking, where n is the number of crimes that the speaker has committed. 
 
 Oscillation of one's back is the base verb "relates". If all the time derivatives are 0, then it means the copula.  
+

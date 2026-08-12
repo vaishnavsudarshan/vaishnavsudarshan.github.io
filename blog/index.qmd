@@ -1,5 +1,5 @@
 ---
-title: "Blog posts"
+title: "Welcome to my blog"
 listing:
   contents: posts
   sort: "date desc"
@@ -12,4 +12,10 @@ page-layout: full
 title-block-banner: true
 ---
 
+```{=html}
+<style>
+.quarto-title-banner .title { font-size: 4rem; }
+</style>
+```
 
+If you are new to my blog and want to know where to start, click [here](order.qmd). 

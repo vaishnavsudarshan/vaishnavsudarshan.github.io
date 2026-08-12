@@ -1,19 +1,27 @@
 
-# Phonology and Orthography
+# Sounds and Writing
+
+## Sound Inventory
+
+Note that there are a bunch of seemingly unproducable sounds here. For example, the glottal nasal. If there is a closure at the glottis, how can air escape through the nasal cavities? It's simple - Proto-Zorbbbistanis were able to manipulate 4D space, allowing air to extend beyond 3D barriers and come back. This phenomenon is kind of like if you live on the real number line and there is a barrier at x=0 and you want to cross from the negatives to the positives, you can jump into the complex plane to go around it. 
 
 ## Writing System:
 
 ![_Proto-Zorbbbb Orthography_]([proto-zorbbbb_orthography.png]){.lightbox}.
 
-## Romanization:
+## Romanization: 
 
 ![_Proto-Zorbbbb Romanization_]([romanization_proto-zorbbbb.png]){.lightbox}.
+
+## Allophony
+
+
 
 ## Word Order
 
 VOS 
 
-## Lore
+# Lore
 
 Proto-Zorbbbb is what evolved later into Zorbbbb and Limit, although Limitians deny that their language descends from Proto-Zorbbbb. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani structures. All the resources for Zorbbbb have also been destroyed.
 
@@ -38,8 +46,8 @@ Person: Gesture
 
 ### Space
 
-Inside Zorbbbbistan, inside Limitland: O A I U EH
-Inside Zorbbbbistan, outside Limitland: E A EH O I
+Inside Zorbbbbistan, inside Limitland: O A I U E
+Inside Zorbbbbistan, outside Limitland: E A E O I
 Outside Zorbbbbistan, inside Limitland: U E I A U
 Outside Zorbbbbistan, outside Limitland: A E I O U
 
@@ -96,7 +104,7 @@ Kinda abstract: N N B
 Kinda concrete: C B N 
 Pretty concrete: B B N
 Very concrete: C N C 
-Unbelievably concrete: N N N
+Unbelievably concrete: N N N 
 
 ### Color (NS = Nasal; N = Normal; R = R-Colored)
 
@@ -109,7 +117,8 @@ Orange: R R N
 Pink: NS N NS
 Other: N N N 
 
-### Case (P = Push-Up; W = Walk Up for Plank; N = Nothing; L = Lunge; J = Jumping Jack; S = Squat)
+### Case (
+    ; W = Walk-Up Plank; N = Nothing; L = Lunge; J = Jumping Jack; S = Squat)
 
 Ergative: L W N P J
 Absolutive: S W J L N
@@ -136,18 +145,18 @@ General: œ œ ɵ
 
 ### Some notes about nouns
 
-However, there are also case endings, along with the physical exercise coming with it. 
+However, there are also case endings, along with the physical exercise coming with it, making these physical exercises optional but highly recommended in formal speech. 
 
-Ergative: - j D
-Absolutive: - FFF q
-Genitive: - c b
-Locative: - GG tt
-Ablative: - z n 
-Allative: - Q k
-Instrumental: - x v
-Vocative: - m h
+Ergative: - 
+Absolutive: - 
+Genitive: -  
+Locative: -  
+Ablative: -  
+Allative: -  
+Instrumental: -  
+Vocative: -  
 
-Holy nouns that are superior to even the highest of the politeness level have special declensions. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “pkstn”, is simply “pkstn”, no vowels, tones, vowel alterations, fitness exercises, etc. 
+Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “zbk”, is simply “zbk”, no vowels, tones, vowel alterations, fitness exercises, etc. 
 
 Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is "sgm". For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left. For example, here’s what the example for case:
 
@@ -184,81 +193,81 @@ Each possibility has a suffix added in this order.
 
 ### Tense
 
-Past: - q
-Present: - p
-Future: - pppp
+Past: - 
+Present: - 
+Future: - 
 
 ### Aspect
 
-Normal: - c
-Progressive: - FFF
-Perfect: - m
+Normal: -
+Progressive: - 
+Perfect: - 
 
 ### Transitivity
 
-Intransitive: - kkk
-Transitive: - D
-Ditransitive: - v
+Intransitive: - 
+Transitive: - 
+Ditransitive: - 
 
 ### Affirmativement
 
-Positive:  - tt
-Negative: - GG
-Either: - n
+Positive:  - 
+Negative: - 
+Either: - 
 
 ### Mood
 
-Indicative: - d
-Interrogative: -b
-Imperative: - bbbb
+Indicative: - 
+Interrogative: -
+Imperative: - 
 
 ### Emotion
 
-Normal: - T
-Apprehensive: - x
-Admirative: - f
+Normal: - 
+Apprehensive: - 
+Admirative: -
 
 ### Extremity
 
-Weak: - j 
-Normal: - Q
-Extreme: - qqq
+Weak: - 
+Normal: -
+Extreme: - 
 
 ### Effectiveness
 
-No net effect: - s
-Some net effect: - h 
-Huge net effect: - k
+No net effect: - 
+Some net effect: - 
+Huge net effect: - 
 
 ### Evidentiality
 
-First-hand No-cap: - g 
-Second-hand No-cap: - s 
-Greater No-cap: - r
-First-hand Some-cap: - x
-Second-hand Some-cap: - bbbb
-Greater Some-cap: - GG 
-First-hand Full-cap: - m
-Second-hand Full-cap: - t 
-Greater Full-cap: - z 
+First-hand No-cap: -  
+Second-hand No-cap: -  
+Greater No-cap: - 
+First-hand Some-cap: - 
+Second-hand Some-cap: - 
+Greater Some-cap: -  
+First-hand Full-cap: - 
+Second-hand Full-cap: - 
+Greater Full-cap: -  
 
 ### Speed
 
-Super Fast: - q q
-Very Fast: - s k
-Pretty Fast: - p tt
-Kinda Fast: - bbbb bbbb bbbb
-Super Slow: - p q 
-Very Slow: - b qqq
-Pretty Slow: - GG j
-Kinda Slow: - d tt
-No Speed: - NULL
+Super Fast: -  
+Very Fast: -  
+Pretty Fast: - 
+Kinda Fast: -  
+Super Slow: -  
+Very Slow: - 
+Pretty Slow: - 
+Kinda Slow: -  
+No Speed: - 
 
 ### Some notes about verbs
 
 The nine auxiliaries are conjugated in a special way. They, just like the holy pronouns, have no conjugations, just the raw verb. 
 
-Tense also changes the vowel alternation of the verb. 
+Tense also changes the vowel alteration of the verb. 
 
 (NS = Nasal; N = Normal; R = R-Colored)
 
@@ -268,9 +277,10 @@ Future: R
 
 Whatever vowel alteration pattern the absolutive gets, the verb takes this and combines it with this addition. For example, if the patient is blue, it would be NS R N, but if the verb is past tense, then it turns into N R+NS NS. You can think of N as zero, and you can think of NS and R as switches. Combining NS and NS or R and R results in N, and combining N with something results in that thing. 
 
-Also, verbs that mean "to be [adjective]" have their own special conjugations. Basically, the voicing switch of every suffix is swapped. So, here's what transitivity for "to be [adjective]" would work:
+Also, verbs that mean "to be [adjective]" have their own special conjugations. Basically, the suffix is doubled. So, here's what transitivity for "to be [adjective]" would work:
 
-Intransitive: - ggg
-Transitive: - T
-Ditransitive: - f
+Intransitive: - 
+Transitive: -  
+Ditransitive: -  
+
 

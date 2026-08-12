@@ -242,19 +242,39 @@ Truth conditions are kind of like checking if-statements in programming. Buildin
 A cool ambiguity between formal logic and natural language is "or". In spoken English, "or" can either mean the logical "or" where "A or B" is true if at least one of them is true. This is what "or" means in Python, for instance. 
 
 | A   | B    | A or B |
+|-----|------|--------|
 |True | True | True   |
 |True | False| True   |
 |False| True | True   |
 |False| False| False  |
 
-"A or B" can also mean the logical "xor", where only one of them is true, not both. If someone says "you will choose chocolate or vanilla", and each person gets exactly one full scoop, you can't get two people's worth of ice cream by getting both. 
+"A or B" in spoken English can also mean the logical "xor", where only one of them is true, not both. If someone says "you will choose chocolate or vanilla", and each person gets exactly one full scoop, you can't get two people's worth of ice cream by getting both. Usually, the word "either" clarifies that exactly one is true, like "you will EITHER choose chocolate or vanilla"
 
-|A    | B    | A xor B |
+| A   | B    | A xor B |
+|-----|------|---------|
 |True | True | False   |
 |True | False| True    |
+|False| True | True    |
+|False|False | False   | 
 
+Now, just for funsies, if someone says, "you CAN get either chocolate or vanilla", that's different. 
 
-# Conclusion
+| A   | B     | can(A xor B) |
+|-----|-------|--------------|
+|True | True  | False        |
+|True | False | True         |
+|False| True  | True         |
+|False| False | True         |
+
+That last row is weird, but the "can" basically implies that you can get at MOST one flavor, but none is also an option. 
+
+English has yet another use for "or" that's not even a truth condition. It's only used in questions. These truth tables we've seen have A and B symmetrical, which means swapping their values returns the same result. In this context, however, we quite literally care about which one is favored. 
+
+This type of "or" can create some ambiguity in this example which will illustrate what it is. What do you think this means: "Do you want tea or coffee?" 
+
+It can either mean that they are asking you whether you want at least one of them to drink (so you'd say "no" if you want neither of them), or it means they are asking you whether you want coffee or tea, and they want to know specifically which one. Luckily, in speech, this ambiguity is resolved through intonation - the first scenario would have a rising intonation, while the second would have a falling intonation. This saves you from the embarrassment you'll face if someone asks this question IRL intending to know which one you want, and you just say "yes". 
+
+# Conclusion 
 
 Now that you know how humans traditionally understand meanings, let's learn about how machines understand them. Stay tuned for part 2!
 
