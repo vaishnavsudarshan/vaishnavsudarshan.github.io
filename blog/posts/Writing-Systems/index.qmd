@@ -28,8 +28,7 @@ The word alphabet comes from the first to letters of Greek, alpha and beta.
 Most alphabets evolved from [_abjads_](https://en.wikipedia.org/wiki/Abjad). Abjads are like alphabets, except usually, most of the vowels aren't written, and instead inferred from context. Only long vowels are written. Sometimes, for clarity, the short vowels may be written in with diacritics. For example, in the Quran, even though the Arabic script is an abjad, all the vowels were written so that there aren't any misinterpretations. 
 The word "abjad" comes from the first sounds of the four letters of the Arabic script, "a", "b", "j", and "d", which is cognate with Greek's "alpha", "beta", "gamma", "delta".
 
-
-The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl.
+The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl. 
 
 ### Syllabaries
 In [_syllabaries_](https://en.wikipedia.org/wiki/Syllabary), each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don't have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols. 
@@ -87,5 +86,16 @@ In both Koreas, Hangeul is used. Hangeul is an artificially created script that 
 The Cherokee syllabary was made after one Native American looked at the European colonizers' writing and tried to mimic the symbols to make a writing system for Cherokee. He'd seen both the Latin and Cyrillic scripts. However, the symbols in Cherokee that look similar to the European writing make completely different sounds, as he only knew the shape of the symbols, not what sound they made.
 
 
-## To Be Continued
-OK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. How does that work? Read the linked blogs to find out!
+# Conclusion
+
+OK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. How does that work? Read [phonetics](https://vaishnavs.net/posts/Phonetics/) to find out!
+
+# Challenge yourself with these NACLO problems
+
+Also, now that you know about writing systems, try out these problems!
+
+[Hmong](https://www.naclo.org/resources/problems/2007/N2007-D.pdf)
+
+[Putting a Place to a Name](https://www.naclo.org/resources/problems/2021/N2021-K.pdf)
+
+[Around the World in Armenian](https://naclo.org/resources/problems/2025/N2025-E.pdf)
