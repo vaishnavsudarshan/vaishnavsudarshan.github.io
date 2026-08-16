@@ -2,7 +2,7 @@
 title: "Craftic"
 author: "Vaishnav Sudarshan"
 date: "2026-7-16"
-categories:  [Linguistics, Conlangs]
+categories:  [Conlangs]
 image: "craftic_jump.png"
 abstract: Explaining how my conlang "Craftic" works. The real name was too long to fit in the title.
 ---
