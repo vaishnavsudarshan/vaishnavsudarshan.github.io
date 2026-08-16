@@ -25,6 +25,51 @@
 <h1>Semantics Intro</h1>
 <p>Semantics is the study of meanings and how they are derived. Just from writing, it’s not always possible. For example, take the words “cat”, “dog”, and “catastrophe”. If you didn’t know English, you might guess that perhaps “cat” and “catastrophe” are close in meaning, but that’s not true, relative to “dog” (dog-lovers, I know you’ll strongly object and point out that cats are a form of catastrophes). The words “dog” and “cat” are in fact actually more closely related to each other than to “catastrophe”, because they both are pets.</p>
 <p>But why would you need an entire subfield of linguistics dedicated to meanings? You can just look up a word in the dictionary, right? WRONG! For one, it’s very hard for dictionaries to account for language variation - semantic drift is omnipresent, and different dialects or idiolects perceive meanings differently.</p>
+<p>Still, from the perspective of describing a language’s grammar, why would you need semantics? Is syntax not enough to explain how a language works? Nope! Consider this famous counterexample by <a href="https://en.wikipedia.org/wiki/Noam_Chomsky">Noam Chomsky</a>:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+S --&gt; NP
+S --&gt; VP
+NP --&gt; A["Adj"]
+A --&gt; C["Colorless"]
+NP --&gt; NP1["NP"]
+NP1 --&gt; A1["Adj"]
+NP1 --&gt; NP2["NP"]
+A1 --&gt; G["Green"]
+NP2 --&gt; I["Ideas"]
+VP --&gt; V["VP"]
+VP --&gt; A2["Adv"]
+V --&gt; S1["Sleep"]
+A2 --&gt; F["Furiously"]
+
+%% Styling
+style S fill:#ffcccc,stroke:#333,stroke-width:2px,font-size:18px
+style NP fill:#ccffcc,stroke:#333,stroke-width:2px,font-size:18px
+style NP1 fill:#ccffcc,stroke:#333,stroke-width:2px,font-size:18px
+style NP2 fill:#ccffcc,stroke:#333,stroke-width:2px,font-size:18px
+style VP fill:#ccccff,stroke:#333,stroke-width:2px,font-size:18px
+style V fill:#ccccff,stroke:#333,stroke-width:2px,font-size:18px
+style A fill:#fff3b0,stroke:#333,stroke-width:2px,font-size:18px
+style A1 fill:#fff3b0,stroke:#333,stroke-width:2px,font-size:18px
+style A2 fill:#f9c0ff,stroke:#333,stroke-width:2px,font-size:18px
+style C fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style G fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style I fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style S1 fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style F fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>This sentence is of the form <img src="https://latex.codecogs.com/png.latex?S%20%5Cto%20%5Ctext%7BAdj%20Adj%20N%20V%20Adv%7D">. This is syntactically valid. Consider the sentence “big golden dogs run quickly”. This is also of the form <img src="https://latex.codecogs.com/png.latex?S%20%5Cto%20%5Ctext%7BAdj%20Adj%20N%20V%20Adv%7D">.</p>
+<p>However, the former is ungrammatical to most sane English speakers, while the latter is perfectly fine. For one, “colorless” and “green” logically contradict each other, since green is a color. Also, when we look at the rest of the sentence, how can an idea be green? Or sleep? And that too, sleep <em>furiously</em>? Most people would only use physical attributes on concrete things, unless they’re being poetic or metaphorical. Without any such specification, however, it definitely seems to be nonsensical. Therefore, a language’s grammar must also include the logic behind meanings.</p>
 <p>In this blog post, we’ll talk about the origins of semantics and modern semantics, and the second part will be all about how LLMs understand meanings.</p>
 </section>
 <section id="philosophy-of-language" class="level1">
@@ -1312,6 +1357,9 @@ Multiplication ==&gt; 2["2"]
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <p>Now that we know how you can break apart sentences into smaller pieces, we can talk about the roles of the smaller pieces themselves! Stay tuned for morphosyntax, including one of the most confusing concepts in linguistics (good luck)!</p>
+</section>
+<section id="further-information" class="level1">
+<h1>Further information</h1>
 
 
 </section>

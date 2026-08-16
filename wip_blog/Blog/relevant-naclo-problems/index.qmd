@@ -1,0 +1,8 @@
+---
+title: "Relevant NACLO problems"
+author: "Vaishnav Sudarshan"
+date: "2026-3-10"
+categories:  [Linguistics]
+abstract: Solutions to NACLO problems relating to my blog posts. 
+---
+

@@ -14,6 +14,46 @@ Semantics is the study of meanings and how they are derived. Just from writing, 
 
 But why would you need an entire subfield of linguistics dedicated to meanings? You can just look up a word in the dictionary, right? WRONG! For one, it's very hard for dictionaries to account for language variation - semantic drift is omnipresent, and different dialects or idiolects perceive meanings differently.
 
+Still, from the perspective of describing a language's grammar, why would you need semantics? Is syntax not enough to explain how a language works? Nope! Consider this famous counterexample by [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky):
+
+```{mermaid}
+graph TD
+S --> NP
+S --> VP
+NP --> A["Adj"]
+A --> C["Colorless"]
+NP --> NP1["NP"]
+NP1 --> A1["Adj"]
+NP1 --> NP2["NP"]
+A1 --> G["Green"]
+NP2 --> I["Ideas"]
+VP --> V["VP"]
+VP --> A2["Adv"]
+V --> S1["Sleep"]
+A2 --> F["Furiously"]
+
+%% Styling
+style S fill:#ffcccc,stroke:#333,stroke-width:2px,font-size:18px
+style NP fill:#ccffcc,stroke:#333,stroke-width:2px,font-size:18px
+style NP1 fill:#ccffcc,stroke:#333,stroke-width:2px,font-size:18px
+style NP2 fill:#ccffcc,stroke:#333,stroke-width:2px,font-size:18px
+style VP fill:#ccccff,stroke:#333,stroke-width:2px,font-size:18px
+style V fill:#ccccff,stroke:#333,stroke-width:2px,font-size:18px
+style A fill:#fff3b0,stroke:#333,stroke-width:2px,font-size:18px
+style A1 fill:#fff3b0,stroke:#333,stroke-width:2px,font-size:18px
+style A2 fill:#f9c0ff,stroke:#333,stroke-width:2px,font-size:18px
+style C fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style G fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style I fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style S1 fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+style F fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
+
+```
+
+This sentence is of the form $S \to \text{Adj Adj N V Adv}$. This is syntactically valid. Consider the sentence "big golden dogs run quickly". This is also of the form $S \to \text{Adj Adj N V Adv}$. 
+
+However, the former is ungrammatical to most sane English speakers, while the latter is perfectly fine. For one, "colorless" and "green" logically contradict each other, since green is a color. Also, when we look at the rest of the sentence, how can an idea be green? Or sleep? And that too, sleep *furiously*? Most people would only use physical attributes on concrete things, unless they're being poetic or metaphorical. Without any such specification, however, it definitely seems to be nonsensical. Therefore, a language's grammar must also include the logic behind meanings. 
+
 In this blog post, we'll talk about the origins of semantics and modern semantics, and the second part will be all about how LLMs understand meanings.
 
 # Philosophy of Language
