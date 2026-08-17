@@ -2,16 +2,40 @@
 title: "Proto-Zorbbbb"
 author: "Vaishnav Sudarshan"
 date: "2026-3-10"
-categories:  [Linguistics, Conlangs]
-abstract: Where morphology and syntax have a sequel.
+categories:  [Conlangs]
+abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb and possibly Limit and West Jikur Sign Language. 
 ---
 
 # Introduction
+
+I made a conlang out of a friend's Discord username. If you know you know. Otherwise don't ask. Hopefully, this language is better Limit, because 
+
+# Lore
+
+Zorbbbb is a planet. 
+
+Proto-Zorbbbb is what evolved later into Zorbbbb, and strongly influenced West Jikur Sign Language, and Limit. Some Limitian linguists believe that Proto-Zorbbbb may be the ancestor of Limit and WJSL, but it's hard to prove. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani buildings. That's good, because otherwise it would have been impossible to reconstruct it using Zorbbbb, which is completely different, and Limit and WJSL, which might not even be related to it. 
+
+West Jikur is a city in rural Limitland inhabited by aliens who *can* process frequencies, just from mechanical oscillations rather than sound waves. More on that entire language in a future blog post. 
+
+Zorbbbbistan and Limitland are countries that overlap in space (since Zorbbbbistan is from the past), and each has land that the other doesn't have too. 
+
+The Proto-Zorbbbbistanis invented their own orthography. Later, with the arrival of English to the planet Zorbbbb, they made their own romanization to teach newcomers their language. There is a second romanization that is only used for typing (the default graph's first letter). 
+
+<details>
+<summary>Slight tangent</summary>
+
+Ok, you know how fiction entertainment industries hire conlangers to make a language for their story using a few clues about the language throughout? I think I need to do the reverse - hire a fiction writer to write a book about the speakers of my language given the few clues about the lore. I'm not a fiction writer, I only conlang because it's basically just math at the end of the day. 
+
+Fun fact: Tolkien wrote Lord of the Rings to house his conlangs like Sindarin and Quenya, so he also went the backwards route. 
+
+</details>
 
 # Sounds and Writing
 
 ## Sound Inventory
 
+Let's start with the sound inventory. 
 
 ![_Proto-Zorbbbb Phone Inventory (color-coded to show which allophones are under which phoneme)_]([inventory.png]){.lightbox}.
 
@@ -51,25 +75,18 @@ Pretty much the only rules are that there may be at most two vowels between cons
 
 ## Prosody
 
-Since each syllable has a specified musical note and length, stress really doesn't exist. 
+Since each syllable has a specified musical note and length (as you will see soon), stress really doesn't exist from these factors. However, the only hope for having prosody is loudness and octave, which are not phonemic. 
+
+Loudness is either normal or loud, and it's relative. 
 
 ## Orthography
 
-Since the main meaning of a word comes from 
+Since the main meaning of a word comes from the consonantal roots, these are the only symbols with mandatory glyphs, just like Arabic. Therefore, the orthography is an abjad. 
 
-* Abjad
+
+
 * Allograph for start of a word - upside down
 * Cursive
-
-# Lore
-
-Proto-Zorbbbb is what evolved later into Zorbbbb, and strongly influenced West Jikur Sign Language, and Limit. Some Limitial linguists believe that Proto-Zorbbbb may be the ancestor of Limit and WJSL, but it's hard to prove. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani buildings. 
-
-West Jikur is a city in rural Limitland inhabited by aliens who can process frequencies, just from mechanical oscillations rather than sound waves. More on that in a future blog post. 
-
-Zorbbbbistan and Limitland both overlap in space (since Zorbbbbistan is from the past), but both has land that the other doesn't have too. 
-
-The Proto-Zorbbbbistanis invented their own orthography. Later, with the arrival of English to the planet Zorbbbb, they made their own romanization to teach newcomers their language. There is a second romanization that is only used for typing (the default graph's first letter). 
 
 # Nouns
 
@@ -542,15 +559,19 @@ The only difference is that $X_i = 2^i$ for a binary system, but it's the $i^\te
 
 How did this system originate? Humans use base 5, 10, or 20 to count using either their fingers on one hand, their fingers on both hands, or their fingers on both hands and their toes on both feet. Computers, fundamentally working in "on"s and "off"s, use base 2 or base 16. 
 
-Proto-Zorbbbbistanis, however, were very greedy but in a weird way. At the annual national Zorbbbbistani meeting, there were $n$ candies to eat. The representatives of each territory hated equality within their own land. Representatives didn't want every single person in their constituency, including themselves, who received a candy to receive the same amount of candies, so a composite number wouldn't do. A prime number would ensure that if the candies were distributed evenly, everyone who got a candy would either get a single one, or one person would get all of them. 
+Proto-Zorbbbbistanis, however, were very greedy but in a weird way. At the annual national Zorbbbbistani meeting, there were $n$ candies to eat. The representatives of each territory had to take some of that candy and distribute it across their respective territory. 
 
-A national law had three parts: 
+There was national law (with a capital punishment for any violators) about how candies must be distributed with three parts: 
 
 * A representative must distribute their candies evenly for anyone in the territory they govern who gets some (that is, any constituent can either not get a candy, or they get the same amount as everyone else who got a candy). 
 
 * Someone must get at least two candies.
 
-* The representative must g
+* The representative must be among the people who receive candy. 
+
+A prime number would ensure that if the candies were distributed evenly, everyone who got a candy would either get a single one, or one person would get all of them. However, the first case violates the second part. The third part then guarantees that the representative is the one who gains all these candies. This loophole was never amended, and this corruption displayed by the Proto-Zorbbbbistani government is what led to their collapse.
+
+
 
 # Syntax
 
@@ -562,7 +583,7 @@ A copula is the thing mapping X to Y in "X is Y".
 
 ## Recursion 
 
-The particle *tts tts* means approximately "such that". In English, consider the sentence "The brown cat sees the big dog". The particle "such that" introduces a single precondition for the main sentence to be true, and it would be recursed that way. In Proto-Zorbbbb, the sentence above would be phrased like "Such that the cat is brown, such that the dog is big, the cat sees the dog". Note that ecah precondition has exactly one condition, and there can be infinitely many preconditions, since you can have the rule $S \to P S$, where $S$ is a sentence and $P$ is a precondition. 
+The particle *tts tts* means approximately "such that". In English, consider the sentence "The brown cat sees the big dog". The particle "such that" introduces a single precondition for the main sentence to be true, and it would be recursed that way. In Proto-Zorbbbb, the sentence above would be phrased like "Such that the cat is brown, such that the dog is big, the cat sees the dog". Note that each precondition has exactly one condition, and there can be infinitely many preconditions, since you can have the rule $S \to P S$, where $S$ is a sentence and $P$ is a precondition. 
 
 This can be used for relative clauses, too. "I don't like the dog that bit me" would become "Such that the dog bit me, I don't like the dog". 
 
