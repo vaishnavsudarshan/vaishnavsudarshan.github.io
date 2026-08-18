@@ -715,7 +715,7 @@ Let's write the raw consonants for now:
 
 *tts-tts l-E-df-bbbb df-E-df-bbbb-tts-bbbb-g-df-bbbb-df-g-bbbb-bbbb-l-g-tts-l-tts-E-g-l-?!-bbbb l-g-g-bbbb-tts-bbbb-g-df-bbbb-df-g-bbbb-bbbb-l-g-tts-l-tts-E-g-l-?!-bbbb l-E-df-bbbb bbbb-g-tts-l-E-?! l-E-df-bbbb E-E-df-?!-E-g ?!-g-g-bbbb-E-g  l-g-bbbb-tts-bbbb-df-bbbb-?!-df-l-df-g-l-bbbb-l-g-tts-l-tts-?!-g-l-E-tts  l-E-df-bbbb bbbb-g-tts-l-E-g  df-bbbb-g-E-tts*
 
-such-that and walk lose and beast-gen and pride-abs burden-abs invent god-erg and beast-abs
+such-that and walk lose and beast-gen and pride-abs burden-abs invent and beast-abs god-erg
 
 And these verbs have all those giant suffixes. Decode them yourelf (exercise for the reader, right)?
 
