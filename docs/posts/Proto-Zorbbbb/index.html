@@ -1373,7 +1373,7 @@ Fontmaking
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>            root_word <span class="op">+=</span> <span class="st">"tts "</span></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> root_word</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This algorithm is quite similar to how you’d encode a number in binary with a unique sum:</p>
-<p><span class="math inline">\(n = \sum_{i=0}^{k} C_i X_i\)</span>, where <span class="math inline">\(C_i \in {0, 1}\)</span> and <span class="math inline">\(k\)</span> is the number such that <span class="math inline">\(X_k \leq n\)</span> but <span class="math inline">\(X_{k+1} &gt; n\)</span>.</p>
+<p><span class="math inline">\(n = \sum_{i=0}^{k} C_i X_i\)</span>, where <span class="math inline">\(C_i \in \{0, 1\}\)</span> and <span class="math inline">\(k\)</span> is the number such that <span class="math inline">\(X_k \leq n\)</span> but <span class="math inline">\(X_{k+1} &gt; n\)</span>.</p>
 <p>The only difference is that <span class="math inline">\(X_i = 2^i\)</span> for a binary system, but it’s the <span class="math inline">\(i^\text{th}\)</span> prime number in the Proto-Zorbbbbistani system.</p>
 <p>How did this system originate? Humans use base 5, 10, or 20 to count using either their fingers on one hand, their fingers on both hands, or their fingers on both hands and their toes on both feet. Computers, fundamentally working in “on”s and “off”s, use base 2 or base 16.</p>
 <p>Proto-Zorbbbbistanis, however, were very greedy but in a weird way. At the annual national Zorbbbbistani meeting, there were <span class="math inline">\(n\)</span> candies to eat. The representatives of each territory had to take some of that candy and distribute it across their respective territory.</p>
@@ -1384,6 +1384,8 @@ Fontmaking
 <li><p>The representative must be among the people who receive candy.</p></li>
 </ul>
 <p>A prime number would ensure that if the candies were distributed evenly, everyone who got a candy would either get a single one, or one person would get all of them. However, the first case violates the second part. The third part then guarantees that the representative is the one who gains all these candies. This loophole was never amended, and this corruption displayed by the Proto-Zorbbbbistani government is what led to their collapse.</p>
+<p>So obviously, a prime number would be optimal. Now, which prime number? The biggest one that is at most <span class="math inline">\(n\)</span>, of course, otherwise you’re missing out on free candy! Then the next in line would have to take the largest remaining prime number and so on.</p>
+<p>After repeatedly taking the largest prime number every annual meeting, this eventually became the number system.</p>
 </section>
 <section id="syntax" class="level1">
 <h1>Syntax</h1>

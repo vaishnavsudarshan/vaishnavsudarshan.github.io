@@ -604,7 +604,7 @@ def make_root_word(n):
 
 This algorithm is quite similar to how you'd encode a number in binary with a unique sum:
 
-$n = \sum_{i=0}^{k} C_i X_i$, where $C_i \in {0, 1}$ and $k$ is the number such that $X_k \leq n$ but $X_{k+1} > n$. 
+$n = \sum_{i=0}^{k} C_i X_i$, where $C_i \in \{0, 1\}$ and $k$ is the number such that $X_k \leq n$ but $X_{k+1} > n$. 
 
 The only difference is that $X_i = 2^i$ for a binary system, but it's the $i^\text{th}$ prime number in the Proto-Zorbbbbistani system. 
 
@@ -621,6 +621,10 @@ There was national law (with a capital punishment for any violators) about how c
 * The representative must be among the people who receive candy. 
 
 A prime number would ensure that if the candies were distributed evenly, everyone who got a candy would either get a single one, or one person would get all of them. However, the first case violates the second part. The third part then guarantees that the representative is the one who gains all these candies. This loophole was never amended, and this corruption displayed by the Proto-Zorbbbbistani government is what led to their collapse.
+
+So obviously, a prime number would be optimal. Now, which prime number? The biggest one that is at most $n$, of course, otherwise you're missing out on free candy! Then the next in line would have to take the largest remaining prime number and so on. 
+
+After repeatedly taking the largest prime number every annual meeting, this eventually became the number system. 
 
 # Syntax
 

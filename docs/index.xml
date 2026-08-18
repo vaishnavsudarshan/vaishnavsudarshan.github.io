@@ -1320,7 +1320,7 @@ background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> root_word</span></code></pre></div>
 <p>This algorithm is quite similar to how you’d encode a number in binary with a unique sum:</p>
-<p><img src="https://latex.codecogs.com/png.latex?n%20=%20%5Csum_%7Bi=0%7D%5E%7Bk%7D%20C_i%20X_i">, where <img src="https://latex.codecogs.com/png.latex?C_i%20%5Cin%20%7B0,%201%7D"> and <img src="https://latex.codecogs.com/png.latex?k"> is the number such that <img src="https://latex.codecogs.com/png.latex?X_k%20%5Cleq%20n"> but <img src="https://latex.codecogs.com/png.latex?X_%7Bk+1%7D%20%3E%20n">.</p>
+<p><img src="https://latex.codecogs.com/png.latex?n%20=%20%5Csum_%7Bi=0%7D%5E%7Bk%7D%20C_i%20X_i">, where <img src="https://latex.codecogs.com/png.latex?C_i%20%5Cin%20%5C%7B0,%201%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?k"> is the number such that <img src="https://latex.codecogs.com/png.latex?X_k%20%5Cleq%20n"> but <img src="https://latex.codecogs.com/png.latex?X_%7Bk+1%7D%20%3E%20n">.</p>
 <p>The only difference is that <img src="https://latex.codecogs.com/png.latex?X_i%20=%202%5Ei"> for a binary system, but it’s the <img src="https://latex.codecogs.com/png.latex?i%5E%5Ctext%7Bth%7D"> prime number in the Proto-Zorbbbbistani system.</p>
 <p>How did this system originate? Humans use base 5, 10, or 20 to count using either their fingers on one hand, their fingers on both hands, or their fingers on both hands and their toes on both feet. Computers, fundamentally working in “on”s and “off”s, use base 2 or base 16.</p>
 <p>Proto-Zorbbbbistanis, however, were very greedy but in a weird way. At the annual national Zorbbbbistani meeting, there were <img src="https://latex.codecogs.com/png.latex?n"> candies to eat. The representatives of each territory had to take some of that candy and distribute it across their respective territory.</p>
@@ -1331,6 +1331,8 @@ font-style: inherit;">return</span> root_word</span></code></pre></div>
 <li><p>The representative must be among the people who receive candy.</p></li>
 </ul>
 <p>A prime number would ensure that if the candies were distributed evenly, everyone who got a candy would either get a single one, or one person would get all of them. However, the first case violates the second part. The third part then guarantees that the representative is the one who gains all these candies. This loophole was never amended, and this corruption displayed by the Proto-Zorbbbbistani government is what led to their collapse.</p>
+<p>So obviously, a prime number would be optimal. Now, which prime number? The biggest one that is at most <img src="https://latex.codecogs.com/png.latex?n">, of course, otherwise you’re missing out on free candy! Then the next in line would have to take the largest remaining prime number and so on.</p>
+<p>After repeatedly taking the largest prime number every annual meeting, this eventually became the number system.</p>
 </section>
 <section id="syntax" class="level1">
 <h1>Syntax</h1>
