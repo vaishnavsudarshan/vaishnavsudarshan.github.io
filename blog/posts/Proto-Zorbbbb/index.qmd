@@ -107,7 +107,7 @@ See the font [here](orthography.png).
 <details>
 <summary>Fontmaking</summary>
 
-I used the website [https://www.textstudio.com/font-maker](https://www.textstudio.com/font-maker) to map each character 
+I used the website [https://www.textstudio.com/font-maker](https://www.textstudio.com/font-maker) to map each character to a glyph. 
 
 </details>
 
