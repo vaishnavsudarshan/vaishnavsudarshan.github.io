@@ -283,7 +283,7 @@ Fontmaking
 </tr>
 </tbody>
 </table>
-<p>Lemme explain what this means. Discrete means the number of possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?%5Caleph_0">, and continuous means the number of possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D">.</p>
+<p>Lemme explain what this means. Discrete means the number of theoretically possible quantities for this noun is at most <img src="https://latex.codecogs.com/png.latex?%5Caleph_0">, and continuous means the number of theoretically possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D">.</p>
 <p>1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for</p>
 </section>
 <section id="politeness" class="level2">

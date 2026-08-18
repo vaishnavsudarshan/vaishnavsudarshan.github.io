@@ -191,7 +191,7 @@ All in the same octave starting at one C and ending strictly before the C higher
 | 4D Discrete     | S N S |
 | Beyond Discrete | N N N |
 
-Lemme explain what this means. Discrete means the number of possible quantities for this noun is $\aleph_0$, and continuous means the number of possible quantities for this noun is $2^{\aleph_0}$. 
+Lemme explain what this means. Discrete means the number of theoretically possible quantities for this noun is at most $\aleph_0$, and continuous means the number of theoretically possible quantities for this noun is $2^{\aleph_0}$. 
 
 1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for 
 

@@ -144,7 +144,7 @@
     "href": "posts/Proto-Zorbbbb/index.html#number",
     "title": "Proto-Zorbbbb",
     "section": "Number",
-    "text": "Number\n(S = Short; N = Normal; L = Long)\n\n\n\nNumber\nLength\n\n\n\n\n1D Continuous\nS S S\n\n\n2D Continuous\nN S S\n\n\n4D Continuous\nL S L\n\n\nBeyond Continuous\nS N L\n\n\n1D Discrete\nN L N\n\n\n2D Discrete\nL L N\n\n\n4D Discrete\nS N S\n\n\nBeyond Discrete\nN N N\n\n\n\nLemme explain what this means. Discrete means the number of possible quantities for this noun is \\(\\aleph_0\\), and continuous means the number of possible quantities for this noun is \\(2^{\\aleph_0}\\).\n1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for"
+    "text": "Number\n(S = Short; N = Normal; L = Long)\n\n\n\nNumber\nLength\n\n\n\n\n1D Continuous\nS S S\n\n\n2D Continuous\nN S S\n\n\n4D Continuous\nL S L\n\n\nBeyond Continuous\nS N L\n\n\n1D Discrete\nN L N\n\n\n2D Discrete\nL L N\n\n\n4D Discrete\nS N S\n\n\nBeyond Discrete\nN N N\n\n\n\nLemme explain what this means. Discrete means the number of theoretically possible quantities for this noun is at most \\(\\aleph_0\\), and continuous means the number of theoretically possible quantities for this noun is \\(2^{\\aleph_0}\\).\n1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for"
   },
   {
     "objectID": "posts/Proto-Zorbbbb/index.html#politeness",
