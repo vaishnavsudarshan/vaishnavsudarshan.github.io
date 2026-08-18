@@ -9,7 +9,7 @@ abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb.
 
 # Introduction
 
-I made a conlang out of a friend's Discord username. If you know you know. Otherwise don't ask. Hopefully, this language is better than Limit, because I recently finished reading David J. Peterson's book *The Art of Language Invention*. 
+I made a conlang out of a friend's Discord username. If you know you know. Otherwise don't ask. Hopefully, this language is better than [Limit](https://vaishnavs.net/posts/Limit%20riLmOtOpU/), because I recently finished reading David J. Peterson's book *The Art of Language Invention*. 
 
 A lot of features that *should* exist aren't yet present. This is because Proto-Zorbbbb, is, well, a proto-language. Just wait for my blog post on Zorbbbb to see that evolution emerge. 
 
