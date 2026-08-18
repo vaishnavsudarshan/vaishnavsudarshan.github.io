@@ -358,7 +358,7 @@ There are also case *endings*, along with the body positions coming with it, mak
 
 Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “df bbbb g”, is simply “df bbbb g”, no vowels, tones, vowel alterations, gestures, etc. 
 
-Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is "sgm". For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:
+Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is "E g bbbb". For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:
 
 | Case       | Position  |
 |------------|-----------|
