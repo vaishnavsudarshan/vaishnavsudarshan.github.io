@@ -10,7 +10,1417 @@
 <atom:link href="https://vaishnavs.net/index.xml" rel="self" type="application/rss+xml"/>
 <description>Vaishnav Sudarshan&#39;s blog on linguistics, math, computer science and natural language processing</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Sun, 02 Aug 2026 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 17 Aug 2026 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Proto-Zorbbbb</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Proto-Zorbbbb/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>I made a conlang out of a friend’s Discord username. If you know you know. Otherwise don’t ask. Hopefully, this language is better Limit, because I recently finished reading David J. Peterson’s book <em>The Art of Language Invention</em>.</p>
+<p>A lot of features that <em>should</em> exist aren’t yet present. This is because Proto-Zorbbbb, is, well, a proto-language. Just wait for my blog post on Zorbbbb to see that evolution emerge.</p>
+</section>
+<section id="lore" class="level1">
+<h1>Lore</h1>
+<p>Zorbbbb is a planet from an unknown solar system and galaxy, and it’s what the country, and in turn the language, is named after.</p>
+<p>Proto-Zorbbbb is what evolved later into Zorbbbb, and strongly influenced West Jikur Sign Language, and Limit. Some Limitian linguists believe that Proto-Zorbbbb may be the ancestor of Limit and WJSL, but it’s hard to prove. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani buildings. That’s good, because otherwise it would have been impossible to reconstruct it using Zorbbbb, which is completely different, and Limit and WJSL, which might not even be related to it.</p>
+<p>West Jikur is a city in rural Limitland inhabited by aliens who <em>can</em> process frequencies, just from mechanical oscillations rather than sound waves. More on that entire language in a future blog post.</p>
+<p>Zorbbbbistan and Limitland are countries that overlap in space (since Zorbbbbistan is from the past), and each has land that the other doesn’t have too.</p>
+<p>The Proto-Zorbbbbistanis invented their own orthography. Later, with the arrival of English to the planet Zorbbbb, they made their own romanization to teach newcomers their language, but the letter choices might seem nonsensical, since the Proto-Zorbbbbistanis didn’t formally learn the alphabet. There is a second romanization that is only used for typing (the default graph’s first letter).</p>
+<details>
+<summary>
+Slight tangent
+</summary>
+<p>Ok, you know how fiction entertainment industries hire conlangers to make a language for their story using a few clues about the language throughout? I think I need to do the reverse - hire a fiction writer to write a book about the speakers of my language given the few clues about the lore. I’m not a fiction writer, I only conlang because it’s basically just math at the end of the day.</p>
+<p>Fun fact: Tolkien wrote Lord of the Rings to house his conlangs like Sindarin and Quenya, so he also went the backwards route.</p>
+</details>
+</section>
+<section id="sounds-and-writing" class="level1">
+<h1>Sounds and Writing</h1>
+<section id="sound-inventory" class="level2">
+<h2 class="anchored" data-anchor-id="sound-inventory">Sound Inventory</h2>
+<p>Let’s start with the sound inventory.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="inventory.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Proto-Zorbbbb Phone Inventory (color-coded to show which allophones are under which phoneme)"><img src="https://vaishnavs.net/posts/Proto-Zorbbbb/inventory.png" class="img-fluid figure-img" alt="Proto-Zorbbbb Phone Inventory (color-coded to show which allophones are under which phoneme)"></a></p>
+<figcaption><em>Proto-Zorbbbb Phone Inventory (color-coded to show which allophones are under which phoneme)</em></figcaption>
+</figure>
+</div>
+<p>Note that there are a bunch of seemingly unproducable sounds here. For example, the glottal nasal. If there is a closure at the glottis, how can air escape through the nasal cavities? It’s simple - Proto-Zorbbbistanis were able to manipulate 4D space, allowing air to extend beyond 3D barriers and come back. This phenomenon is kind of like if you live on the real number line and there is a barrier at x=0 and you want to cross from the negatives to the positives, you can jump into the complex plane to go around it.</p>
+</section>
+<section id="allophony" class="level2">
+<h2 class="anchored" data-anchor-id="allophony">Allophony</h2>
+<p>Note that this will look a LOT like pseudocode.</p>
+<p>The default form of each phoneme is a voiced stop. Only the manner of articulation may change, but the place of articulation remains constant.</p>
+<p>If it is at the beginning of a word,</p>
+<ul>
+<li><p>If it is followed by a rounded monothong, it becomes a voiced fricative.</p></li>
+<li><p>Otherwise if it is followed by an unrounded monothong, it becomes a voiceless fricative.</p></li>
+<li><p>Otherwise if it is followed by a dipthong, it becomes a click.</p></li>
+<li><p>Otherwise if the next consonant is voiceless, it too becomes a voiceless stop.</p></li>
+</ul>
+<p>Otherwise if it is in the middle of a word and has vowels on either side,</p>
+<ul>
+<li><p>If it is preceeded by a nasal vowel, it becomes a voiced nasal.</p></li>
+<li><p>Otherwise if the vowels have the same roundedness, it becomes a voiceless ejective stop.</p></li>
+<li><p>Otherwise if they don’t have the same roundedness, it becomes a voiceless ejective fricative.</p></li>
+</ul>
+<p>Otherwise if it is at the very end of a word (with no vowel following it), it becomes a voiced trill.</p>
+<p>Otherwise, it remains as a voiced stop.</p>
+</section>
+<section id="phonotactics" class="level2">
+<h2 class="anchored" data-anchor-id="phonotactics">Phonotactics</h2>
+<p>Pretty much the only rules are that there may be at most two vowels between consonants, and a word may not start with a vowel. In theory, a tense auxiliary or a holy being could have any number of adjacent consonants, but since they don’t, 5 is the maximum number of consonants you can have in a row.</p>
+<p>A syllable is just a vowel and, before that, how many ever consonants precede it before you reach another vowel or the start of the word. Or, in the case of a tense auxiliary or a holy being, that entire word will be a single syllable.</p>
+</section>
+<section id="prosody" class="level2">
+<h2 class="anchored" data-anchor-id="prosody">Prosody</h2>
+<p>Since each syllable has a specified musical note and length (as you will see soon), stress really doesn’t exist from these factors. However, the only hope for having prosody is loudness and octave, which are not phonemic. These are both relative binary features - as in, anything that’s not the highest possible octave can be considered “low”, and so on.</p>
+<p>The first syllable is loud if it has up to three consonants. Otherwise, it’s the final. If there’s only one syllable with at least four consonants, then I guess these two cases are the same thing.</p>
+<p>Octave is the other way around. The last syllable has a high octave if it has up to three consonants, otherwise it’s the first.</p>
+<p>Yeah, don’t listen to Proto-Zorbbbbistani poetry.</p>
+</section>
+<section id="orthography" class="level2">
+<h2 class="anchored" data-anchor-id="orthography">Orthography</h2>
+<p>The romanizations of the root consonants are given in the sound inventory chart.</p>
+<p>Since the main meaning of a word comes from the consonantal roots, these are the only symbols with mandatory glyphs, just like Arabic. Therefore, the orthography is an abjad.</p>
+<p>Sentences are written from left to right for 8 characters, then right to left on the next line below (but the orientation of each character doesn’t change) for another 8 characters, and so on.</p>
+<p>There are characters for bbbb, df, l, E, ?!, g, tts, word boundaries, and sentence boundaries. Note that there are no commas. There are also allographs for the consonant characters. However, while the romanization only uses the allographs when the first consonant is followed by a vowel, the native orthography uses allographs for the first consonants of all words.</p>
+<p>The orthography is also cursive. The Proto-Zorbbbbistanis used to trace writing in the air before paper came along. They could only manipulate the 4th dimension in their mouths, not outside, so they couldn’t teleport their hands. As a result, the writing was analyzed as cursive.</p>
+<p>Note that the allograph in the second romanization is switching the case of the first letter, except for ?!, where ? turns to !. Also, 0 refers to word bounaries (spaces) and 1 refers to sentence boundaries (periods).</p>
+<p>See the font <a href="orthography.png">here</a>.</p>
+<details>
+<summary>
+Fontmaking
+</summary>
+<p>I used the website <a href="https://www.textstudio.com/font-maker">https://www.textstudio.com/font-maker</a> to map each character</p>
+</details>
+</section>
+</section>
+<section id="nouns" class="level1">
+<h1>Nouns</h1>
+<p>All nouns have genders, class, animacy, number, politeness, abstractness, color, case, goodness, and person. This means that, theoretically, there are <img src="https://latex.codecogs.com/png.latex?134217728"> combinations of each noun. Each will have a sequence of something.</p>
+<p>Now, let’s go into the specific categories for each one.</p>
+<p>Location: Vowel</p>
+<p>Animacy: Musical note</p>
+<p>Class: Semivowel (right after consonant)</p>
+<p>Number: Vowel length</p>
+<p>Politeness: Liquid (right after semivowel - or consonant, if the semivowel doesn’t exist)</p>
+<p>Abstractness: Speech manner</p>
+<p>Color: Altered vowel</p>
+<p>Case: Exercise</p>
+<p>Goodness: Gesture</p>
+<p>Person: Second Vowel</p>
+<section id="location" class="level2">
+<h2 class="anchored" data-anchor-id="location">Location</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Location</th>
+<th>Vowel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inside Zorbbbbistan, inside Limitland</td>
+<td>o a Ø u e</td>
+</tr>
+<tr class="even">
+<td>Inside Zorbbbbistan, outside Limitland</td>
+<td>a Ø i o Ø</td>
+</tr>
+<tr class="odd">
+<td>Outside Zorbbbbistan, inside Limitland</td>
+<td>u Ø i a Ø</td>
+</tr>
+<tr class="even">
+<td>Outside Zorbbbbistan, outside Limitland</td>
+<td>e e o i a</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="animacy" class="level2">
+<h2 class="anchored" data-anchor-id="animacy">Animacy</h2>
+<p>All in the same octave starting at one C and ending strictly before the C higher than that.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Animacy</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unbelievably nonliving</td>
+<td>C F# F B G#</td>
+</tr>
+<tr class="even">
+<td>Very nonliving</td>
+<td>E G G# B A</td>
+</tr>
+<tr class="odd">
+<td>Pretty nonliving</td>
+<td>C C# D D# E</td>
+</tr>
+<tr class="even">
+<td>Kinda nonliving</td>
+<td>D D# C# E F</td>
+</tr>
+<tr class="odd">
+<td>Kinda living</td>
+<td>C# D C# C C#</td>
+</tr>
+<tr class="even">
+<td>Pretty living</td>
+<td>F# D D F# B</td>
+</tr>
+<tr class="odd">
+<td>Very living</td>
+<td>C E E B F#</td>
+</tr>
+<tr class="even">
+<td>Unbelievably living</td>
+<td>F# F F# G A#</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="class" class="level2">
+<h2 class="anchored" data-anchor-id="class">Class</h2>
+<p>(N = none, Y = /j/, W = /w/)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Semivowel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vehicle</td>
+<td>Y Y Y</td>
+</tr>
+<tr class="even">
+<td>Power</td>
+<td>N Y Y</td>
+</tr>
+<tr class="odd">
+<td>Labor</td>
+<td>N N N</td>
+</tr>
+<tr class="even">
+<td>Nature</td>
+<td>N N W</td>
+</tr>
+<tr class="odd">
+<td>Destruction</td>
+<td>W Y W</td>
+</tr>
+<tr class="even">
+<td>Information</td>
+<td>W W N</td>
+</tr>
+<tr class="odd">
+<td>Food</td>
+<td>Y N Y</td>
+</tr>
+<tr class="even">
+<td>Other</td>
+<td>Y W N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="number" class="level2">
+<h2 class="anchored" data-anchor-id="number">Number</h2>
+<p>(S = Short; N = Normal; L = Long)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Length</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1D Continuous</td>
+<td>S S S</td>
+</tr>
+<tr class="even">
+<td>2D Continuous</td>
+<td>N S S</td>
+</tr>
+<tr class="odd">
+<td>4D Continuous</td>
+<td>L S L</td>
+</tr>
+<tr class="even">
+<td>Beyond Continuous</td>
+<td>S N L</td>
+</tr>
+<tr class="odd">
+<td>1D Discrete</td>
+<td>N L N</td>
+</tr>
+<tr class="even">
+<td>2D Discrete</td>
+<td>L L N</td>
+</tr>
+<tr class="odd">
+<td>4D Discrete</td>
+<td>S N S</td>
+</tr>
+<tr class="even">
+<td>Beyond Discrete</td>
+<td>N N N</td>
+</tr>
+</tbody>
+</table>
+<p>Lemme explain what this means. Discrete means the number of possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?%5Caleph_0">, and continuous means the number of possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D">.</p>
+<p>1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for</p>
+</section>
+<section id="politeness" class="level2">
+<h2 class="anchored" data-anchor-id="politeness">Politeness</h2>
+<p>(X = [l], R = [ɹ])</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Liquid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unbelievably trash</td>
+<td>R R R</td>
+</tr>
+<tr class="even">
+<td>Very trash</td>
+<td>N R R</td>
+</tr>
+<tr class="odd">
+<td>Pretty trash</td>
+<td>X R X</td>
+</tr>
+<tr class="even">
+<td>Kinda trash</td>
+<td>N N X</td>
+</tr>
+<tr class="odd">
+<td>Kinda god</td>
+<td>R X N</td>
+</tr>
+<tr class="even">
+<td>Pretty god</td>
+<td>X X N</td>
+</tr>
+<tr class="odd">
+<td>Very god</td>
+<td>R N R</td>
+</tr>
+<tr class="even">
+<td>Unbelievably god</td>
+<td>N N N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="abstractness" class="level2">
+<h2 class="anchored" data-anchor-id="abstractness">Abstractness</h2>
+<p>(C = Creaky; N = Normal; B = Breathy)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Abstractness</th>
+<th>Manner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unbelievably abstract</td>
+<td>C C C</td>
+</tr>
+<tr class="even">
+<td>Very abstract</td>
+<td>N C C</td>
+</tr>
+<tr class="odd">
+<td>Pretty abstract</td>
+<td>B C B</td>
+</tr>
+<tr class="even">
+<td>Kinda abstract</td>
+<td>N B N</td>
+</tr>
+<tr class="odd">
+<td>Kinda concrete</td>
+<td>C B N</td>
+</tr>
+<tr class="even">
+<td>Pretty concrete</td>
+<td>B B N</td>
+</tr>
+<tr class="odd">
+<td>Very concrete</td>
+<td>C N C</td>
+</tr>
+<tr class="even">
+<td>Unbelievably concrete</td>
+<td>N N N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="color" class="level2">
+<h2 class="anchored" data-anchor-id="color">Color</h2>
+<p>(NS = Nasal; N = Normal; R = R-Colored)</p>
+<p>We take the three color components needed to form all colors: Red, Green and Blue.</p>
+<p>For any component X, !X means its value is between 0 and 127, and X means its value is from 128 to 255.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Color</th>
+<th>Alteration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R G B</td>
+<td>NS NS NS NS NS</td>
+</tr>
+<tr class="even">
+<td>!R G !B</td>
+<td>N NS NS R R</td>
+</tr>
+<tr class="odd">
+<td>R G !B</td>
+<td>NS N N N R</td>
+</tr>
+<tr class="even">
+<td>R !G !B</td>
+<td>N N R R R</td>
+</tr>
+<tr class="odd">
+<td>R !G B</td>
+<td>NS R N NS R</td>
+</tr>
+<tr class="even">
+<td>!R !G B</td>
+<td>R R N N NS</td>
+</tr>
+<tr class="odd">
+<td>!R G B</td>
+<td>N R NS R N</td>
+</tr>
+<tr class="even">
+<td>!R !G !B</td>
+<td>N N N N N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="case" class="level2">
+<h2 class="anchored" data-anchor-id="case">Case</h2>
+<p>(L = Left Foot; R = Right Foot; B = Both Feet; G = Lie Down on the Ground; C = Criss-Cross Apple Sauce, W = Lean against Wall)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ergative</td>
+<td>B B B B B</td>
+</tr>
+<tr class="even">
+<td>Absolutive</td>
+<td>C R B G L</td>
+</tr>
+<tr class="odd">
+<td>Genitive</td>
+<td>R G C C L</td>
+</tr>
+<tr class="even">
+<td>Locative</td>
+<td>B C L L R</td>
+</tr>
+<tr class="odd">
+<td>Ablative</td>
+<td>R L R G G</td>
+</tr>
+<tr class="even">
+<td>Allative</td>
+<td>B C G G C</td>
+</tr>
+<tr class="odd">
+<td>Instrumental</td>
+<td>L L B C G</td>
+</tr>
+<tr class="even">
+<td>Vocative</td>
+<td>G G R C C</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="goodness" class="level2">
+<h2 class="anchored" data-anchor-id="goodness">Goodness</h2>
+<p>(N = Normal; F = Flap hands downwards violently; S = Six Seven)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Goodness</th>
+<th>Gesture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Super good</td>
+<td>N N N</td>
+</tr>
+<tr class="even">
+<td>Good</td>
+<td>F N N</td>
+</tr>
+<tr class="odd">
+<td>Bad</td>
+<td>S N S</td>
+</tr>
+<tr class="even">
+<td>Super bad</td>
+<td>F F S</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="person" class="level2">
+<h2 class="anchored" data-anchor-id="person">Person</h2>
+<ul>
+<li><p>The second vowel gets no vowel alteration - only the first may do so</p></li>
+<li><p>If the second vowel is the exact same as the first, it’s gemination instead of a dipthong</p></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Person</th>
+<th>Vowels</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First</td>
+<td>Ø Ø Ø Ø Ø</td>
+</tr>
+<tr class="even">
+<td>Second</td>
+<td>Ø i i i i</td>
+</tr>
+<tr class="odd">
+<td>Third</td>
+<td>a Ø Ø Ø u</td>
+</tr>
+<tr class="even">
+<td>General</td>
+<td>u o e a o</td>
+</tr>
+</tbody>
+</table>
+<p>Second person is only for someone actively in a conversation, so the audience of a speech is third person or general. General means not just people outside the conversation but literally any subset of people, equivalent to “one” or “people”.</p>
+</section>
+<section id="romanization-of-nouns" class="level2">
+<h2 class="anchored" data-anchor-id="romanization-of-nouns">Romanization of nouns</h2>
+<p>Apart from what exists in the sound inventory chart for vowels, there’s also a romanization for features between the root consonants.</p>
+<p>Breathy voice - add ⟨h⟩ to the vowel</p>
+<p>Creaky voice - add ⟨!⟩ to the vowel</p>
+<p>Nasal vowel - if the vowel is phonetically rounded, add ⟨n⟩, otherwise ⟨m⟩</p>
+<p>Rhotic vowel - if the vowel is phonetically rounded, add ⟨y⟩, otherwise ⟨r⟩</p>
+<p>Second vowel - write it after the first vowel, same glyphs</p>
+<p>Semivowels - write ⟨y⟩ or ⟨w⟩ right after the consonant</p>
+<p>Short vowel - write ⟨%⟩ after the vowel</p>
+<p>Long vowel - write ⟨^⟩ after the vowel</p>
+</section>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<p>A bar represents that the pattern has restarted. If the number of consonants is at most the period of that pattern, there won’t be a bar.</p>
+<p>emagehttsoli:</p>
+<ul>
+<li>root: bbbb g tts l (4 consonants, approximately meaning “creature”)</li>
+<li>vowels: e e o i -&gt; outside Zorbbbbistan and Limitland</li>
+<li>alterations: NS N N N -&gt; R G !B (intended yellow)</li>
+<li>manners: N B N | N -&gt; kinda abstract</li>
+<li>liquids: N N N | N -&gt; unbelievably god</li>
+<li>semivowels: N N N -&gt; labor</li>
+<li>second vowels: a Ø Ø Ø -&gt; third person</li>
+<li>lenghths: N N N | N -&gt; beyond discrete (intended octonion)</li>
+</ul>
+<p>The rest isn’t recorded in the romanization, but there is also stuff like gestures and orientations that reveal “super bad”, “very living”, and the ergative case.</p>
+<p>In other words, it means “minion”! (specifically when it’s doing something to something else)</p>
+<p>Yes, the Proto-Zorbbbbistanis believed that minions must be counted with 8D numbers. Don’t ask.</p>
+<p>zorbbbb:</p>
+<ul>
+<li>root: df bbbb (2 consonants, approximately meaning “land”)</li>
+<li>vowels: o Ø -&gt; inside Zorbbbbistan and Limitland (since the second vowel is null, the second feature for all other components is unknown)</li>
+<li>alterations: R ? -&gt; !R !G B (intended blue)</li>
+<li>manners: N ? -&gt; unbelievably concrete (this is what is intended, but it’s ambiguous without context since other levels of abstractness start with N too)</li>
+<li>liquids: N ? -&gt; kinda trash (also ambiguous)</li>
+<li>semivowels: N ? -&gt; nature (guess what? ambiguous!)</li>
+<li>second vowels: Ø Ø -&gt; first person</li>
+<li>lengths: N ? -&gt; 1D discrete (yet again, ambiguous, but hey, at least you don’t need 8 different dimensions to count “zorbbbb”s now)</li>
+</ul>
+<p>There are other unrecorded features too - “super good”, “unbelievably nonliving”, and the locative case (most likely, since you’ll probably see “I am in Zorbbbb” more often than, say, “Zorbbbb ate me”).</p>
+<p>The planet Zorbbbb is what this means. You may be wondering how a planet can be inside two of its countries. It’s because the name for the planet came later, once Proto-Zorbbbbistani astronomy became more sophisticated. At first, it only referred to the capital of both Zorbbbbistan and Limitland.</p>
+</section>
+<section id="some-notes-about-nouns" class="level2">
+<h2 class="anchored" data-anchor-id="some-notes-about-nouns">Some notes about nouns</h2>
+<p>There are also case <em>endings</em>, along with the body positions coming with it, making these orientations optional but still highly recommended in formal speech. Note that these are the same ending as speed for verbs, but this is due to some etymological quirk - they also converged before “no speed” energed.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ergative</td>
+<td>- E tts</td>
+</tr>
+<tr class="even">
+<td>Absolutive</td>
+<td>- E g</td>
+</tr>
+<tr class="odd">
+<td>Genitive</td>
+<td>- E ?!</td>
+</tr>
+<tr class="even">
+<td>Locative</td>
+<td>- ?! bbbb</td>
+</tr>
+<tr class="odd">
+<td>Ablative</td>
+<td>- ?! df</td>
+</tr>
+<tr class="even">
+<td>Allative</td>
+<td>- ?! l</td>
+</tr>
+<tr class="odd">
+<td>Instrumental</td>
+<td>- ?! tts</td>
+</tr>
+<tr class="even">
+<td>Vocative</td>
+<td>- ?! g</td>
+</tr>
+</tbody>
+</table>
+<p>Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “zbk”, is simply “zbk”, no vowels, tones, vowel alterations, gestures, etc.</p>
+<p>Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is “sgm”. For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ergative</td>
+<td>C G G R C</td>
+</tr>
+<tr class="even">
+<td>Absolutive</td>
+<td>B B B B B</td>
+</tr>
+<tr class="odd">
+<td>Genitive</td>
+<td>L C R B G</td>
+</tr>
+<tr class="even">
+<td>Locative</td>
+<td>L R G C C</td>
+</tr>
+<tr class="odd">
+<td>Ablative</td>
+<td>R B C L L</td>
+</tr>
+<tr class="even">
+<td>Allative</td>
+<td>G R L R G</td>
+</tr>
+<tr class="odd">
+<td>Instrumental</td>
+<td>C B C G G</td>
+</tr>
+<tr class="even">
+<td>Vocative</td>
+<td>G L L B C</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="verb-form" class="level2">
+<h2 class="anchored" data-anchor-id="verb-form">Verb Form</h2>
+<p>There are 9 auxiliary verbs to account for the main 9 tense-aspect combinations.</p>
+<p>Verbs agree pattern-wise with the absolutive when they’re negative, the ergative when they’re positive, and the vocative when they’re ambiguous about the affirmativement. If the ergative or vocative nouns don’t exist for non-negative verbs, then use the next lowest verbal argument, with the hierarchy vocative -&gt; absolutive -&gt; ergative. But, they don’t take on the specific pattern of the case itself, just all the other patterns from that noun.</p>
+<p>Verbs are conjugated in an agglutinative manner with respect to the following:</p>
+<p>Tense (Distant, Near, Now)</p>
+<p>Aspect (Somewhat done, Almost done, Other)</p>
+<p>Transitivity (Intransitive, Transitive, Ditransitive)</p>
+<p>Affirmativement (Positive, Negative, Ambiguous)</p>
+<p>Mood (Indicative, Imperative, Interrogative)</p>
+<p>Emotion (Apprehensive, Admirative, Other)</p>
+<p>Extremity (Weak, Normal, Extreme)</p>
+<p>Effectiveness (No net effect, Some net effect, Huge net effect)</p>
+<p>Evidentiality (First-hand No-cap, Second-hand No-cap, Greater No-cap, First-hand Some-cap, Second-hand Some-cap, Greater Some-cap, First-hand Full-cap, Second-hand Full-cap, Greater Full-cap)</p>
+<p>Speed (Super Fast, Very Fast, Pretty Fast, Kinda Fast, Super Slow, Very Slow, Pretty Slow, Kinda Slow, No Speed)</p>
+<p>Each possibility has a suffix added in this order.</p>
+<p>There are <img src="https://latex.codecogs.com/png.latex?8916100448256%E2%80%8B%E2%80%8B"> possible forms of a single verb.</p>
+<section id="tense" class="level3">
+<h3 class="anchored" data-anchor-id="tense">Tense</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tense</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distant</td>
+<td>- bbbb df</td>
+</tr>
+<tr class="even">
+<td>Near</td>
+<td>- bbbb l</td>
+</tr>
+<tr class="odd">
+<td>Now</td>
+<td>- bbbb tts</td>
+</tr>
+</tbody>
+</table>
+<p>Obviously, since an unspecified “now” is an instant, and a verb must happen over an interval of time, “now” means the interval of 11.802 eye blinks between either side of that instant.</p>
+</section>
+<section id="aspect" class="level3">
+<h3 class="anchored" data-anchor-id="aspect">Aspect</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Somewhat done</td>
+<td>- bbbb g</td>
+</tr>
+<tr class="even">
+<td>Almost done</td>
+<td>- bbbb E</td>
+</tr>
+<tr class="odd">
+<td>Other</td>
+<td>- bbbb ?!</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="transitivity" class="level3">
+<h3 class="anchored" data-anchor-id="transitivity">Transitivity</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Transitivity</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intransitive</td>
+<td>-df bbbb</td>
+</tr>
+<tr class="even">
+<td>Transitive</td>
+<td>- df l</td>
+</tr>
+<tr class="odd">
+<td>Ditransitive</td>
+<td>- df tts</td>
+</tr>
+</tbody>
+</table>
+<p>Ditransitive means the verb also acts on the vocative - that is, the audience experiences in their mind whatever the verb is, so it’s a second argument.</p>
+</section>
+<section id="affirmation" class="level3">
+<h3 class="anchored" data-anchor-id="affirmation">Affirmation</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Affirmation</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Positive</td>
+<td>-df g</td>
+</tr>
+<tr class="even">
+<td>Negative</td>
+<td>-df E</td>
+</tr>
+<tr class="odd">
+<td>Ambiguous</td>
+<td>-df ?!</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mood" class="level3">
+<h3 class="anchored" data-anchor-id="mood">Mood</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Mood</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Indicative</td>
+<td>- l bbbb</td>
+</tr>
+<tr class="even">
+<td>Interrogative</td>
+<td>- l df</td>
+</tr>
+<tr class="odd">
+<td>Imperative</td>
+<td>- l tts</td>
+</tr>
+</tbody>
+</table>
+<p>The interrogative mood is only for yes/no questions. Wh-questions just put the question pronoun in the same position as a normal subject or object. Interrogative is basically about willing something to happen, so not only second person.</p>
+</section>
+<section id="emotion" class="level3">
+<h3 class="anchored" data-anchor-id="emotion">Emotion</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Emotion</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admirative</td>
+<td>- l g</td>
+</tr>
+<tr class="even">
+<td>Apprehensive</td>
+<td>- l E</td>
+</tr>
+<tr class="odd">
+<td>Other</td>
+<td>- l ?!</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="extremity" class="level3">
+<h3 class="anchored" data-anchor-id="extremity">Extremity</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Extremity</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weak</td>
+<td>- tts bbbb</td>
+</tr>
+<tr class="even">
+<td>Normal</td>
+<td>- tts df</td>
+</tr>
+<tr class="odd">
+<td>Extreme</td>
+<td>- tts l</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="effectiveness" class="level3">
+<h3 class="anchored" data-anchor-id="effectiveness">Effectiveness</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Effectiveness</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>No net effect</td>
+<td>- tts g</td>
+</tr>
+<tr class="even">
+<td>Some net effect</td>
+<td>- tts E</td>
+</tr>
+<tr class="odd">
+<td>Huge net effect</td>
+<td>- tts ?!</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="evidentiality" class="level3">
+<h3 class="anchored" data-anchor-id="evidentiality">Evidentiality</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Evidentiality</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First-hand No-cap</td>
+<td>- g bbbb</td>
+</tr>
+<tr class="even">
+<td>Second-hand No-cap</td>
+<td>- g df</td>
+</tr>
+<tr class="odd">
+<td>Greater No-cap</td>
+<td>- g l</td>
+</tr>
+<tr class="even">
+<td>First-hand Some-cap</td>
+<td>- g tts</td>
+</tr>
+<tr class="odd">
+<td>Second-hand Some-cap</td>
+<td>- g E</td>
+</tr>
+<tr class="even">
+<td>Greater Some-cap</td>
+<td>- g ?!</td>
+</tr>
+<tr class="odd">
+<td>First-hand Full-cap</td>
+<td>- E bbbb</td>
+</tr>
+<tr class="even">
+<td>Second-hand Full-cap</td>
+<td>- E df</td>
+</tr>
+<tr class="odd">
+<td>Greater Full-cap</td>
+<td>- E l</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="speed" class="level3">
+<h3 class="anchored" data-anchor-id="speed">Speed</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Speed</th>
+<th>Suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Super Fast</td>
+<td>- E tts</td>
+</tr>
+<tr class="even">
+<td>Very Fast</td>
+<td>- E g</td>
+</tr>
+<tr class="odd">
+<td>Pretty Fast</td>
+<td>- E ?!</td>
+</tr>
+<tr class="even">
+<td>Kinda Fast</td>
+<td>- ?! bbbb</td>
+</tr>
+<tr class="odd">
+<td>Super Slow</td>
+<td>- ?! df</td>
+</tr>
+<tr class="even">
+<td>Very Slow</td>
+<td>- ?! l</td>
+</tr>
+<tr class="odd">
+<td>Pretty Slow</td>
+<td>- ?! tts</td>
+</tr>
+<tr class="even">
+<td>Kinda Slow</td>
+<td>- ?! g</td>
+</tr>
+<tr class="odd">
+<td>No Speed</td>
+<td>- ?! E</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="some-notes-about-verbs" class="level3">
+<h3 class="anchored" data-anchor-id="some-notes-about-verbs">Some notes about verbs</h3>
+<p>The nine auxiliaries are conjugated in a special way. They, just like the holy pronouns, have no conjugations, just the raw verb. They appear before the main verb.</p>
+<p>The auxiliaries are as follows:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tense</th>
+<th>Aspect</th>
+<th>Auxiliary (English)</th>
+<th>Auxiliary (Proto-Zorbbbb)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distant</td>
+<td>Starting</td>
+<td>Consume</td>
+<td>bbbb tts E ?! ?!</td>
+</tr>
+<tr class="even">
+<td>Distant</td>
+<td>Almost done</td>
+<td>Observe</td>
+<td>df df E</td>
+</tr>
+<tr class="odd">
+<td>Distant</td>
+<td>Other</td>
+<td>Flee</td>
+<td>l l g df</td>
+</tr>
+<tr class="even">
+<td>Near</td>
+<td>Starting</td>
+<td>Energize</td>
+<td>?! bbbb g E ?!</td>
+</tr>
+<tr class="odd">
+<td>Near</td>
+<td>Almost done</td>
+<td>Alter</td>
+<td>tts l E g</td>
+</tr>
+<tr class="even">
+<td>Near</td>
+<td>Other</td>
+<td>Destroy</td>
+<td>bbbb E df</td>
+</tr>
+<tr class="odd">
+<td>Now</td>
+<td>Starting</td>
+<td>Invent</td>
+<td>l g bbbb tts</td>
+</tr>
+<tr class="even">
+<td>Now</td>
+<td>Almost done</td>
+<td>Stop</td>
+<td>df tts ?!</td>
+</tr>
+<tr class="odd">
+<td>Now</td>
+<td>Other</td>
+<td>Break</td>
+<td>g g g tts ?!</td>
+</tr>
+</tbody>
+</table>
+<p>The meanings of the tense auxiliaries may not make much sense, but they basically obtained a second meaning through semantic drift. Maybe you can see how “flee”, for example, might be related to the idea of a distant time, since it results in distant space.</p>
+<p>Tense also changes the vowel alteration of the verb.</p>
+<p>(NS = Nasal; N = Normal; R = R-Colored)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tense</th>
+<th>Alteration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Past</td>
+<td>+NS</td>
+</tr>
+<tr class="even">
+<td>Present</td>
+<td>+N</td>
+</tr>
+<tr class="odd">
+<td>Future</td>
+<td>+R</td>
+</tr>
+</tbody>
+</table>
+<p>Whatever vowel alteration pattern the absolutive gets, the verb takes this and combines it with this addition. For example, if the patient is blue, it would be NS R N, but if the verb is past tense, then it turns into N R+NS NS. You can think of N as zero, and you can think of NS and R as switches. Combining NS and NS or R and R results in N, and combining N with something results in that thing.</p>
+<p>Also, verbs that mean “to be (emotion)” have their own special conjugations. Basically, the suffix is doubled. So, here’s what transitivity for “to be (emotion)” would work:</p>
+<p>Intransitive: - df bbbb df bbbb Transitive: - df l df l Ditransitive: - df tts df tts</p>
+</section>
+</section>
+</section>
+<section id="number-system" class="level1">
+<h1>Number System</h1>
+<p>If you looked at the noun morphology, you’ll realize that the only grammatical number is for the number of dimensions it has and whether it’s discrete or continuous - not really for enumerating stuff.</p>
+<p>There is an algorithm to encode any positive integer <img src="https://latex.codecogs.com/png.latex?n"> into words.</p>
+<p>First, we list all the prime numbers in a row. Since <img src="https://latex.codecogs.com/png.latex?1"> is considered the <img src="https://latex.codecogs.com/png.latex?0%5E%5Ctext%7Bth%7D"> prime number by Proto-Zorbbbbistani mathematicians, this is included in the beginning.</p>
+<ul>
+<li><p>Take the largest prime number that is at most <img src="https://latex.codecogs.com/png.latex?n">, and mark it on that row.</p></li>
+<li><p>Subtract this number from <img src="https://latex.codecogs.com/png.latex?n">.</p></li>
+<li><p>If the difference is <img src="https://latex.codecogs.com/png.latex?0"> or <img src="https://latex.codecogs.com/png.latex?1">, stop.</p></li>
+<li><p>Otherwise, repeat this process on the difference.</p></li>
+</ul>
+<p>Now, in this list, we mark an unpresent prime with <em>bbbb</em> and a present prime with <em>tts</em>.</p>
+<p>See the Python implementation below:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> is_prime(n):</span>
+<span id="cb1-2">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb1-3">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb1-4">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Check all the odd numbers up to sqrt(n) instead of all integers since it's twice as fast</span></span>
+<span id="cb1-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>(n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>):</span>
+<span id="cb1-6">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb1-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb1-8">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> get_primes(n):</span>
+<span id="cb1-11">    primes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb1-12">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> (n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>):</span>
+<span id="cb1-13">        k <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> n</span>
+<span id="cb1-14">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> is_prime(k):</span>
+<span id="cb1-15">            k <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb1-16">        primes.insert(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, k)</span>
+<span id="cb1-17">        n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-=</span> k</span>
+<span id="cb1-18">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb1-19">        primes.insert(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-20">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> primes</span>
+<span id="cb1-21"></span>
+<span id="cb1-22"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> make_root_word(n):</span>
+<span id="cb1-23">    used_primes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> get_primes(n)</span>
+<span id="cb1-24">    total_primes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]</span>
+<span id="cb1-25">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, n<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>):</span>
+<span id="cb1-26">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> is_prime(i):</span>
+<span id="cb1-27">            total_primes.append(i)</span>
+<span id="cb1-28">    primes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb1-29">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> total_primes:</span>
+<span id="cb1-30">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> used_primes:</span>
+<span id="cb1-31">            primes.append(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-32">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb1-33">            primes.append(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)</span>
+<span id="cb1-34">    root_word <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span></span>
+<span id="cb1-35">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> primes:</span>
+<span id="cb1-36">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb1-37">            root_word <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bbbb "</span></span>
+<span id="cb1-38">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb1-39">            root_word <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"tts "</span></span>
+<span id="cb1-40">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> root_word</span></code></pre></div>
+<p>This algorithm is quite similar to how you’d encode a number in binary with a unique sum:</p>
+<p><img src="https://latex.codecogs.com/png.latex?n%20=%20%5Csum_%7Bi=0%7D%5E%7Bk%7D%20C_i%20X_i">, where <img src="https://latex.codecogs.com/png.latex?C_i%20%5Cin%20%7B0,%201%7D"> and <img src="https://latex.codecogs.com/png.latex?k"> is the number such that <img src="https://latex.codecogs.com/png.latex?X_k%20%5Cleq%20n"> but <img src="https://latex.codecogs.com/png.latex?X_%7Bk+1%7D%20%3E%20n">.</p>
+<p>The only difference is that <img src="https://latex.codecogs.com/png.latex?X_i%20=%202%5Ei"> for a binary system, but it’s the <img src="https://latex.codecogs.com/png.latex?i%5E%5Ctext%7Bth%7D"> prime number in the Proto-Zorbbbbistani system.</p>
+<p>How did this system originate? Humans use base 5, 10, or 20 to count using either their fingers on one hand, their fingers on both hands, or their fingers on both hands and their toes on both feet. Computers, fundamentally working in “on”s and “off”s, use base 2 or base 16.</p>
+<p>Proto-Zorbbbbistanis, however, were very greedy but in a weird way. At the annual national Zorbbbbistani meeting, there were <img src="https://latex.codecogs.com/png.latex?n"> candies to eat. The representatives of each territory had to take some of that candy and distribute it across their respective territory.</p>
+<p>There was national law (with a capital punishment for any violators) about how candies must be distributed with three parts:</p>
+<ul>
+<li><p>A representative must distribute their candies evenly for anyone in the territory they govern who gets some (that is, any constituent can either not get a candy, or they get the same amount as everyone else who got a candy).</p></li>
+<li><p>Someone must get at least two candies.</p></li>
+<li><p>The representative must be among the people who receive candy.</p></li>
+</ul>
+<p>A prime number would ensure that if the candies were distributed evenly, everyone who got a candy would either get a single one, or one person would get all of them. However, the first case violates the second part. The third part then guarantees that the representative is the one who gains all these candies. This loophole was never amended, and this corruption displayed by the Proto-Zorbbbbistani government is what led to their collapse.</p>
+</section>
+<section id="syntax" class="level1">
+<h1>Syntax</h1>
+<p>The overall word order is VOS. Apart from the <img src="https://latex.codecogs.com/png.latex?VP%20%5Cto%20V%20O">, everything else is head-final.</p>
+<section id="recursion" class="level2">
+<h2 class="anchored" data-anchor-id="recursion">Recursion</h2>
+<p>The particle <em>tts tts</em> means approximately “such that”. In English, consider the sentence “The brown cat sees the big dog”. The particle “such that” introduces a single precondition for the main sentence to be true, and it would be recursed that way. In Proto-Zorbbbb, the sentence above would be phrased like “Such that the cat is brown, such that the dog is big, the cat sees the dog”. Note that each precondition has exactly one condition, and there can be infinitely many preconditions, since you can have the rule <img src="https://latex.codecogs.com/png.latex?S%20%5Cto%20P%20S">, where <img src="https://latex.codecogs.com/png.latex?S"> is a sentence and <img src="https://latex.codecogs.com/png.latex?P"> is a precondition.</p>
+<p>This can be used for relative clauses, too. “I don’t like the dog that bit me” would become “Such that the dog bit me, I don’t like the dog”.</p>
+<p>Another use of “that” is in “I think that you are dumb”. This can also be phrased with “such that” - “Such that you are dumb, I think about you”. The allative case is used for “about”.</p>
+<p>The “such that” agrees with the absolutive of the sentence immediately following it.</p>
+<p>Adpositional recursion is simple - just use the noun cases that exist. These always occur before the noun they modify. <img src="https://latex.codecogs.com/png.latex?N%20%5Cto%20A%20N">, you can write, where <img src="https://latex.codecogs.com/png.latex?A"> is an adpositional phrase and <img src="https://latex.codecogs.com/png.latex?N"> is a noun (or noun phrase - they aren’t separate categories like they are in English).</p>
+</section>
+</section>
+<section id="logic" class="level1">
+<h1>Logic</h1>
+<section id="copula" class="level2">
+<h2 class="anchored" data-anchor-id="copula">Copula</h2>
+<p>A copula is the thing mapping X to Y in “X is Y”. However, there are two things that “is” can convey. Either <img src="https://latex.codecogs.com/png.latex?X%20=%20Y">, or <img src="https://latex.codecogs.com/png.latex?X%20%5Cin%20Y"> (and if <img src="https://latex.codecogs.com/png.latex?X"> too is a set instead of a single object, then <img src="https://latex.codecogs.com/png.latex?X%20%5Csubseteq%20Y">).</p>
+<p>Proto-Zorbbbb distinguishes <img src="https://latex.codecogs.com/png.latex?X%20=%20Y"> and <img src="https://latex.codecogs.com/png.latex?X%20%5Cin%20Y"> with two different verbs. However, any noun is not distinguished from the set containing just that noun, so the same word is used for <img src="https://latex.codecogs.com/png.latex?X%20%5Cin%20Y"> and <img src="https://latex.codecogs.com/png.latex?X%20%5Csubseteq%20Y">.</p>
+<p>The root for “<img src="https://latex.codecogs.com/png.latex?=">” is “bbbb bbbb bbbb bbbb tts”, and the root for “<img src="https://latex.codecogs.com/png.latex?%5Cin">” is “l l E l df”.</p>
+</section>
+<section id="operators" class="level2">
+<h2 class="anchored" data-anchor-id="operators">Operators</h2>
+<p>Conjunctions work the same way as they would for a programming language. If you have two statements (basically boolean values) <img src="https://latex.codecogs.com/png.latex?P"> and <img src="https://latex.codecogs.com/png.latex?Q">, then <img src="https://latex.codecogs.com/png.latex?P%20%5Cwedge%20Q"> would be expressed with the root “l E df bbbb”. Also, <img src="https://latex.codecogs.com/png.latex?P%20%5Clor%20Q"> would be expressed with the root “bbbb df E l” (yeah, it’s just backwards). It would go between the two sentences. Finally, <img src="https://latex.codecogs.com/png.latex?P%20%5Coplus%20Q"> would be expressed with the root “l bbbb l bbbb df df E”.</p>
+<p>There is a shorthand construction for conjunctions on lists. And no, there are no endless debates on Oxford commas. You just put the conjunction before all of the stuff if it is the same conjunction. Otherwise, you’d have to put a conjunction between each unit.</p>
+<p>For example, “I like dogs, cats, and monkeys” would be expressed as “and I like dogs I like cats I like monkeys”.</p>
+<p>Like the recursive “such that” particle, conjunctions agree with the absolutive of the sentence immediately following them too.</p>
+</section>
+<section id="quantifiers" class="level2">
+<h2 class="anchored" data-anchor-id="quantifiers">Quantifiers</h2>
+<p>The word for “all” is the same as the word for “and”, the word for “exactly [n]” is the same as the word for “xor”, and the word for “at least one” is the same as the word for “or”. They are verbs though, not adjectives.</p>
+<p>“All dogs are stinky” would be something like “such that dogs [and] apply, dogs stink”. Also, “[n] dogs are stinky” would be something like “such that n dogs [xor] apply, dogs stink”.</p>
+</section>
+</section>
+<section id="lexicon" class="level1">
+<h1>Lexicon</h1>
+<p>Below are the roots for all the nouns and verbs. There are not that many (fewer than Toki Pona, actually), since quite literally millions of new words and meanings can be generated from a single root.</p>
+<p><em>in progress</em></p>
+<section id="nouns-1" class="level2">
+<h2 class="anchored" data-anchor-id="nouns-1">Nouns</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Noun</th>
+<th>Root</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="verbs" class="level2">
+<h2 class="anchored" data-anchor-id="verbs">Verbs</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Verb</th>
+<th>Root</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="examples-1" class="level1">
+<h1>Examples</h1>
+<p><em>in progress</em></p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Great conlang, right? The only problem is, this language is NOT staying stable. Stay tuned for it to evolve into Zorbbbb!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Conlangs</category>
+  <guid>https://vaishnavs.net/posts/Proto-Zorbbbb/</guid>
+  <pubDate>Mon, 17 Aug 2026 18:30:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Proto-Zorbbbb/number_system.png" medium="image" type="image/png" height="142" width="144"/>
+</item>
 <item>
   <title>Semantics Part 1: Theory Behind Meanings</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>

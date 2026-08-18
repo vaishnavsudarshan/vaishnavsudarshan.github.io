@@ -1,9 +1,10 @@
 ---
 title: "Proto-Zorbbbb"
 author: "Vaishnav Sudarshan"
-date: "2026-3-10"
+date: "2026-8-18"
 categories:  [Conlangs]
-abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb and possibly Limit and West Jikur Sign Language. 
+image: "number_system.png"
+abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb.
 ---
 
 # Introduction
@@ -14,7 +15,7 @@ A lot of features that *should* exist aren't yet present. This is because Proto-
 
 # Lore
 
-Zorbbbb is a planet. 
+Zorbbbb is a planet from an unknown solar system and galaxy, and it's what the country, and in turn the language, is named after. 
 
 Proto-Zorbbbb is what evolved later into Zorbbbb, and strongly influenced West Jikur Sign Language, and Limit. Some Limitian linguists believe that Proto-Zorbbbb may be the ancestor of Limit and WJSL, but it's hard to prove. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani buildings. That's good, because otherwise it would have been impossible to reconstruct it using Zorbbbb, which is completely different, and Limit and WJSL, which might not even be related to it. 
 
@@ -39,7 +40,7 @@ Fun fact: Tolkien wrote Lord of the Rings to house his conlangs like Sindarin an
 
 Let's start with the sound inventory. 
 
-![_Proto-Zorbbbb Phone Inventory (color-coded to show which allophones are under which phoneme)_]([inventory.png]){.lightbox}.
+![_Proto-Zorbbbb Phone Inventory (color-coded to show which allophones are under which phoneme)_](inventory.png){.lightbox}
 
 Note that there are a bunch of seemingly unproducable sounds here. For example, the glottal nasal. If there is a closure at the glottis, how can air escape through the nasal cavities? It's simple - Proto-Zorbbbistanis were able to manipulate 4D space, allowing air to extend beyond 3D barriers and come back. This phenomenon is kind of like if you live on the real number line and there is a barrier at x=0 and you want to cross from the negatives to the positives, you can jump into the complex plane to go around it. 
 
@@ -99,6 +100,17 @@ There are characters for bbbb, df, l, E, ?!, g, tts, word boundaries, and senten
 
 The orthography is also cursive. The Proto-Zorbbbbistanis used to trace writing in the air before paper came along. They could only manipulate the 4th dimension in their mouths, not outside, so they couldn't teleport their hands. As a result, the writing was analyzed as cursive. 
 
+Note that the allograph in the second romanization is switching the case of the first letter, except for ?!, where ? turns to !. Also, 0 refers to word bounaries (spaces) and 1 refers to sentence boundaries (periods). 
+
+See the font [here](orthography.png). 
+
+<details>
+<summary>Fontmaking</summary>
+
+I used the website [https://www.textstudio.com/font-maker](https://www.textstudio.com/font-maker) to map each character 
+
+</details>
+
 # Nouns
 
 All nouns have genders, class, animacy, number, politeness, abstractness, color, case, goodness, and person. This means that, theoretically, there are $134217728$ combinations of each noun. Each will have a sequence of something.
@@ -106,24 +118,33 @@ All nouns have genders, class, animacy, number, politeness, abstractness, color,
 Now, let’s go into the specific categories for each one.
 
 Location: Vowel
+
 Animacy: Musical note
+
 Class: Semivowel (right after consonant)
+
 Number: Vowel length
+
 Politeness: Liquid (right after semivowel - or consonant, if the semivowel doesn't exist)
+
 Abstractness: Speech manner
+
 Color: Altered vowel
+
 Case: Exercise
+
 Goodness: Gesture
+
 Person: Second Vowel
 
 ## Location
 
 | Location                              |  Vowel  |
 |---------------------------------------|---------|
-|Inside Zorbbbbistan, inside Limitland  |O A Ø U E|
-|Inside Zorbbbbistan, outside Limitland |A Ø I O Ø|
-|Outside Zorbbbbistan, inside Limitland |U Ø I A Ø|
-|Outside Zorbbbbistan, outside Limitland|E E O I A|
+|Inside Zorbbbbistan, inside Limitland  |o a Ø u e|
+|Inside Zorbbbbistan, outside Limitland |a Ø i o Ø|
+|Outside Zorbbbbistan, inside Limitland |u Ø i a Ø|
+|Outside Zorbbbbistan, outside Limitland|e e o i a|
 
 ## Animacy
 
@@ -269,12 +290,19 @@ Second person is only for someone actively in a conversation, so the audience of
 Apart from what exists in the sound inventory chart for vowels, there's also a romanization for features between the root consonants. 
 
 Breathy voice - add ⟨h⟩ to the vowel
+
 Creaky voice - add ⟨!⟩ to the vowel
+
 Nasal vowel - if the vowel is phonetically rounded, add ⟨n⟩, otherwise ⟨m⟩
+
 Rhotic vowel - if the vowel is phonetically rounded, add ⟨y⟩, otherwise ⟨r⟩
+
 Second vowel - write it after the first vowel, same glyphs
+
 Semivowels - write ⟨y⟩ or ⟨w⟩ right after the consonant
+
 Short vowel - write ⟨%⟩ after the vowel
+
 Long vowel - write ⟨^⟩ after the vowel
 
 ## Examples
@@ -352,14 +380,23 @@ Verbs agree pattern-wise with the absolutive when they're negative, the ergative
 Verbs are conjugated in an agglutinative manner with respect to the following: 
 
 Tense (Distant, Near, Now)
+
 Aspect (Somewhat done, Almost done, Other)
+
 Transitivity (Intransitive, Transitive, Ditransitive)
+
 Affirmativement (Positive, Negative, Ambiguous)
+
 Mood (Indicative, Imperative, Interrogative)
+
 Emotion (Apprehensive, Admirative, Other)
+
 Extremity (Weak, Normal, Extreme)
+
 Effectiveness (No net effect, Some net effect, Huge net effect)
+
 Evidentiality (First-hand No-cap, Second-hand No-cap, Greater No-cap, First-hand Some-cap, Second-hand Some-cap, Greater Some-cap, First-hand Full-cap, Second-hand Full-cap, Greater Full-cap)
+
 Speed (Super Fast, Very Fast, Pretty Fast, Kinda Fast, Super Slow, Very Slow, Pretty Slow, Kinda Slow, No Speed)
 
 Each possibility has a suffix added in this order.
@@ -496,7 +533,7 @@ Tense also changes the vowel alteration of the verb.
 
 Whatever vowel alteration pattern the absolutive gets, the verb takes this and combines it with this addition. For example, if the patient is blue, it would be NS R N, but if the verb is past tense, then it turns into N R+NS NS. You can think of N as zero, and you can think of NS and R as switches. Combining NS and NS or R and R results in N, and combining N with something results in that thing. 
 
-Also, verbs that mean "to be [emotion]" have their own special conjugations. Basically, the suffix is doubled. So, here's what transitivity for "to be [emotion]" would work:
+Also, verbs that mean "to be (emotion)" have their own special conjugations. Basically, the suffix is doubled. So, here's what transitivity for "to be (emotion)" would work:
 
 Intransitive: - df bbbb df bbbb
 Transitive: - df l df l
@@ -562,6 +599,7 @@ def make_root_word(n):
             root_word += "bbbb "
         else:
             root_word += "tts "
+    return root_word
 ```
 
 This algorithm is quite similar to how you'd encode a number in binary with a unique sum:
