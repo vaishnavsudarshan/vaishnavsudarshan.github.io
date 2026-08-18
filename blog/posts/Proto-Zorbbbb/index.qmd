@@ -356,7 +356,7 @@ There are also case *endings*, along with the body positions coming with it, mak
 |Instrumental| -  ?! tts |
 |Vocative    | -  ?! g   |
 
-Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “zbk”, is simply “zbk”, no vowels, tones, vowel alterations, gestures, etc. 
+Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “df bbbb g”, is simply “df bbbb g”, no vowels, tones, vowel alterations, gestures, etc. 
 
 Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is "sgm". For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:
 
@@ -425,7 +425,7 @@ Obviously, since an unspecified "now" is an instant, and a verb must happen over
 
 |Transitivity| Suffix  |
 |------------|---------|
-|Intransitive|-df  bbbb|
+|Intransitive|-df bbbb |
 |Transitive  |- df l   |
 |Ditransitive|- df tts |
 
@@ -646,15 +646,15 @@ A copula is the thing mapping X to Y in "X is Y". However, there are two things 
 
 Proto-Zorbbbb distinguishes $X = Y$ and $X \in Y$ with two different verbs. However, any noun is not distinguished from the set containing just that noun, so the same word is used for $X \in Y$ and $X \subseteq Y$. 
 
-The root for "$=$" is "bbbb bbbb bbbb bbbb tts", and the root for "$\in$" is "l l E l df".
+The root for "$=$" is "tts tts tts bbbb", and the root for "$\in$" is "l l E l df".
 
 ## Operators 
 
-Conjunctions work the same way as they would for a programming language. If you have two statements (basically boolean values) $P$ and $Q$, then $P \wedge Q$ would be expressed with the root "l E df bbbb". Also, $P \lor Q$ would be expressed with the root "bbbb df E l" (yeah, it's just backwards). It would go between the two sentences. Finally, $P \oplus Q$ would be expressed with the root "l bbbb l bbbb df df E". 
+Conjunctions work the same way as they would for a programming language. If you have two statements (basically boolean values) $P$ and $Q$, then $P \wedge Q$ would be expressed with the root "l E df bbbb". Also, $P \lor Q$ would be expressed with the root "bbbb df E l" (yeah, it's just backwards). It would go between the two units. Finally, $P \oplus Q$ would be expressed with the root "l bbbb l bbbb df df E". 
 
 There is a shorthand construction for conjunctions on lists. And no, there are no endless debates on Oxford commas. You just put the conjunction before all of the stuff if it is the same conjunction. Otherwise, you'd have to put a conjunction between each unit. 
 
-For example, "I like dogs, cats, and monkeys" would be expressed as "and I like dogs I like cats I like monkeys". 
+For example, "I like dogs, cats, and monkeys" would be expressed as "and I like dogs I like cats I like monkeys", or "I like and dogs cats monkeys".  
 
 Like the recursive "such that" particle, conjunctions agree with the absolutive of the sentence immediately following them too. 
 
@@ -674,17 +674,50 @@ Below are the roots for all the nouns and verbs. There are not that many (fewer 
 
 | Noun           | Root           |
 |----------------|----------------|
-|
+| Beast          |bbbb g tts l    |
+| Land           |df bbbb         |
+| Pride          |E E df ?!       |
+| Burden         |?! g g bbbb     |
+
 
 ## Verbs
 
 | Verb           | Root           |
 |----------------|----------------|
-|
+|Equals          |tts tts tts bbbb|
+|Subset          |l l E l df      |
+|Lose            |l g g           |
+|Walk            |df E df         |
 
 # Examples
 
 *in progress*
+
+## The Universal Declaration of Human Rights, Article I
+
+When you go on Wikipedia and look at its article on some language, it always gives a translation of the The Universal Declaration of Human Rights, Article I:
+
+All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
+
+Let's do the first sentence. 
+
+"Human beings" is derived from the root for "beast" - *bbbb g tts l*.
+
+Proto-Zorbbbb doesn't allow for the passive construction. Instead, we shall denote the "born" part using "*dfbbbbg* invented". The "free and equal in dignity and rights" shall be expressed with "such that all beasts' dignity and rights are free and equal". The closest verb to "to be free" is "to walk", and the closest verb to "to be equal" is "to lose". "Dignity" and "pride" are not distinguished in Proto-Zorbbbb, and similarly for "burden" and "rights" (since having equal rights also means having equal limitations of rights).  
+
+So, with the syntax of Proto-Zorbbbb, this sentence would become "such that all beasts' and dignity rights and are free are equal, dfbbbbg invented and beast". 
+
+Let's write the raw consonants for now:
+
+*tts-tts l-E-df-bbbb df-E-df-bbbb-tts-bbbb-g-df-bbbb-df-g-bbbb-bbbb-l-g-tts-l-tts-E-g-l-?!-bbbb l-g-g-bbbb-tts-bbbb-g-df-bbbb-df-g-bbbb-bbbb-l-g-tts-l-tts-E-g-l-?!-bbbb l-E-df-bbbb bbbb-g-tts-l-E-?! l-E-df-bbbb E-E-df-?!-E-g ?!-g-g-bbbb-E-g  l-g-bbbb-tts-bbbb-df-bbbb-?!-df-l-df-g-l-bbbb-l-g-tts-l-tts-?!-g-l-E-tts  l-E-df-bbbb bbbb-g-tts-l-E-g  df-bbbb-g-E-tts*
+
+such-that and walk lose and beast-gen and pride-abs burden-abs invent god-erg and beast-abs
+
+And these verbs have all those giant suffixes. Decode them yourelf (exercise for the reader, right)?
+
+ALSO, I AM NOT GONNA FILL IN THE VOWELS OR WRITE THE PHONETIC IPA TRANSCRIPTION FOR THE SAKE OF MY OWN SANITY!!! 
+
+Translating just that first sentence was so mentally exhausting, so I'm not doing the second. 
 
 # Conclusion
 

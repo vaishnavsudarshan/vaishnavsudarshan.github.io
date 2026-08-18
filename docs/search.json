@@ -207,7 +207,7 @@
     "href": "posts/Proto-Zorbbbb/index.html#some-notes-about-nouns",
     "title": "Proto-Zorbbbb",
     "section": "Some notes about nouns",
-    "text": "Some notes about nouns\nThere are also case endings, along with the body positions coming with it, making these orientations optional but still highly recommended in formal speech. Note that these are the same ending as speed for verbs, but this is due to some etymological quirk - they also converged before “no speed” energed.\n\n\n\nCase\nPosition\n\n\n\n\nErgative\n- E tts\n\n\nAbsolutive\n- E g\n\n\nGenitive\n- E ?!\n\n\nLocative\n- ?! bbbb\n\n\nAblative\n- ?! df\n\n\nAllative\n- ?! l\n\n\nInstrumental\n- ?! tts\n\n\nVocative\n- ?! g\n\n\n\nHoly nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “zbk”, is simply “zbk”, no vowels, tones, vowel alterations, gestures, etc.\nAlso, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is “sgm”. For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:\n\n\n\nCase\nPosition\n\n\n\n\nErgative\nC G G R C\n\n\nAbsolutive\nB B B B B\n\n\nGenitive\nL C R B G\n\n\nLocative\nL R G C C\n\n\nAblative\nR B C L L\n\n\nAllative\nG R L R G\n\n\nInstrumental\nC B C G G\n\n\nVocative\nG L L B C"
+    "text": "Some notes about nouns\nThere are also case endings, along with the body positions coming with it, making these orientations optional but still highly recommended in formal speech. Note that these are the same ending as speed for verbs, but this is due to some etymological quirk - they also converged before “no speed” energed.\n\n\n\nCase\nPosition\n\n\n\n\nErgative\n- E tts\n\n\nAbsolutive\n- E g\n\n\nGenitive\n- E ?!\n\n\nLocative\n- ?! bbbb\n\n\nAblative\n- ?! df\n\n\nAllative\n- ?! l\n\n\nInstrumental\n- ?! tts\n\n\nVocative\n- ?! g\n\n\n\nHoly nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “df bbbb g”, is simply “df bbbb g”, no vowels, tones, vowel alterations, gestures, etc.\nAlso, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is “sgm”. For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:\n\n\n\nCase\nPosition\n\n\n\n\nErgative\nC G G R C\n\n\nAbsolutive\nB B B B B\n\n\nGenitive\nL C R B G\n\n\nLocative\nL R G C C\n\n\nAblative\nR B C L L\n\n\nAllative\nG R L R G\n\n\nInstrumental\nC B C G G\n\n\nVocative\nG L L B C"
   },
   {
     "objectID": "posts/Proto-Zorbbbb/index.html#verb-form",
@@ -228,14 +228,14 @@
     "href": "posts/Proto-Zorbbbb/index.html#copula",
     "title": "Proto-Zorbbbb",
     "section": "Copula",
-    "text": "Copula\nA copula is the thing mapping X to Y in “X is Y”. However, there are two things that “is” can convey. Either \\(X = Y\\), or \\(X \\in Y\\) (and if \\(X\\) too is a set instead of a single object, then \\(X \\subseteq Y\\)).\nProto-Zorbbbb distinguishes \\(X = Y\\) and \\(X \\in Y\\) with two different verbs. However, any noun is not distinguished from the set containing just that noun, so the same word is used for \\(X \\in Y\\) and \\(X \\subseteq Y\\).\nThe root for “\\(=\\)” is “bbbb bbbb bbbb bbbb tts”, and the root for “\\(\\in\\)” is “l l E l df”."
+    "text": "Copula\nA copula is the thing mapping X to Y in “X is Y”. However, there are two things that “is” can convey. Either \\(X = Y\\), or \\(X \\in Y\\) (and if \\(X\\) too is a set instead of a single object, then \\(X \\subseteq Y\\)).\nProto-Zorbbbb distinguishes \\(X = Y\\) and \\(X \\in Y\\) with two different verbs. However, any noun is not distinguished from the set containing just that noun, so the same word is used for \\(X \\in Y\\) and \\(X \\subseteq Y\\).\nThe root for “\\(=\\)” is “tts tts tts bbbb”, and the root for “\\(\\in\\)” is “l l E l df”."
   },
   {
     "objectID": "posts/Proto-Zorbbbb/index.html#operators",
     "href": "posts/Proto-Zorbbbb/index.html#operators",
     "title": "Proto-Zorbbbb",
     "section": "Operators",
-    "text": "Operators\nConjunctions work the same way as they would for a programming language. If you have two statements (basically boolean values) \\(P\\) and \\(Q\\), then \\(P \\wedge Q\\) would be expressed with the root “l E df bbbb”. Also, \\(P \\lor Q\\) would be expressed with the root “bbbb df E l” (yeah, it’s just backwards). It would go between the two sentences. Finally, \\(P \\oplus Q\\) would be expressed with the root “l bbbb l bbbb df df E”.\nThere is a shorthand construction for conjunctions on lists. And no, there are no endless debates on Oxford commas. You just put the conjunction before all of the stuff if it is the same conjunction. Otherwise, you’d have to put a conjunction between each unit.\nFor example, “I like dogs, cats, and monkeys” would be expressed as “and I like dogs I like cats I like monkeys”.\nLike the recursive “such that” particle, conjunctions agree with the absolutive of the sentence immediately following them too."
+    "text": "Operators\nConjunctions work the same way as they would for a programming language. If you have two statements (basically boolean values) \\(P\\) and \\(Q\\), then \\(P \\wedge Q\\) would be expressed with the root “l E df bbbb”. Also, \\(P \\lor Q\\) would be expressed with the root “bbbb df E l” (yeah, it’s just backwards). It would go between the two units. Finally, \\(P \\oplus Q\\) would be expressed with the root “l bbbb l bbbb df df E”.\nThere is a shorthand construction for conjunctions on lists. And no, there are no endless debates on Oxford commas. You just put the conjunction before all of the stuff if it is the same conjunction. Otherwise, you’d have to put a conjunction between each unit.\nFor example, “I like dogs, cats, and monkeys” would be expressed as “and I like dogs I like cats I like monkeys”, or “I like and dogs cats monkeys”.\nLike the recursive “such that” particle, conjunctions agree with the absolutive of the sentence immediately following them too."
   },
   {
     "objectID": "posts/Proto-Zorbbbb/index.html#quantifiers",
@@ -249,14 +249,21 @@
     "href": "posts/Proto-Zorbbbb/index.html#nouns-1",
     "title": "Proto-Zorbbbb",
     "section": "Nouns",
-    "text": "Nouns\n\n\n\nNoun\nRoot"
+    "text": "Nouns\n\n\n\nNoun\nRoot\n\n\n\n\nBeast\nbbbb g tts l\n\n\nLand\ndf bbbb\n\n\nPride\nE E df ?!\n\n\nBurden\n?! g g bbbb"
   },
   {
     "objectID": "posts/Proto-Zorbbbb/index.html#verbs",
     "href": "posts/Proto-Zorbbbb/index.html#verbs",
     "title": "Proto-Zorbbbb",
     "section": "Verbs",
-    "text": "Verbs\n\n\n\nVerb\nRoot"
+    "text": "Verbs\n\n\n\nVerb\nRoot\n\n\n\n\nEquals\ntts tts tts bbbb\n\n\nSubset\nl l E l df\n\n\nLose\nl g g\n\n\nWalk\ndf E df"
+  },
+  {
+    "objectID": "posts/Proto-Zorbbbb/index.html#the-universal-declaration-of-human-rights-article-i",
+    "href": "posts/Proto-Zorbbbb/index.html#the-universal-declaration-of-human-rights-article-i",
+    "title": "Proto-Zorbbbb",
+    "section": "The Universal Declaration of Human Rights, Article I",
+    "text": "The Universal Declaration of Human Rights, Article I\nWhen you go on Wikipedia and look at its article on some language, it always gives a translation of the The Universal Declaration of Human Rights, Article I:\nAll human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.\nLet’s do the first sentence.\n“Human beings” is derived from the root for “beast” - bbbb g tts l.\nProto-Zorbbbb doesn’t allow for the passive construction. Instead, we shall denote the “born” part using “dfbbbbg invented”. The “free and equal in dignity and rights” shall be expressed with “such that all beasts’ dignity and rights are free and equal”. The closest verb to “to be free” is “to walk”, and the closest verb to “to be equal” is “to lose”. “Dignity” and “pride” are not distinguished in Proto-Zorbbbb, and similarly for “burden” and “rights” (since having equal rights also means having equal limitations of rights).\nSo, with the syntax of Proto-Zorbbbb, this sentence would become “such that all beasts’ and dignity rights and are free are equal, dfbbbbg invented and beast”.\nLet’s write the raw consonants for now:\ntts-tts l-E-df-bbbb df-E-df-bbbb-tts-bbbb-g-df-bbbb-df-g-bbbb-bbbb-l-g-tts-l-tts-E-g-l-?!-bbbb l-g-g-bbbb-tts-bbbb-g-df-bbbb-df-g-bbbb-bbbb-l-g-tts-l-tts-E-g-l-?!-bbbb l-E-df-bbbb bbbb-g-tts-l-E-?! l-E-df-bbbb E-E-df-?!-E-g ?!-g-g-bbbb-E-g l-g-bbbb-tts-bbbb-df-bbbb-?!-df-l-df-g-l-bbbb-l-g-tts-l-tts-?!-g-l-E-tts l-E-df-bbbb bbbb-g-tts-l-E-g df-bbbb-g-E-tts\nsuch-that and walk lose and beast-gen and pride-abs burden-abs invent god-erg and beast-abs\nAnd these verbs have all those giant suffixes. Decode them yourelf (exercise for the reader, right)?\nALSO, I AM NOT GONNA FILL IN THE VOWELS OR WRITE THE PHONETIC IPA TRANSCRIPTION FOR THE SAKE OF MY OWN SANITY!!!\nTranslating just that first sentence was so mentally exhausting, so I’m not doing the second."
   },
   {
     "objectID": "posts/Phonetics/index.html",
