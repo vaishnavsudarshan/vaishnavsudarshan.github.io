@@ -3,7 +3,7 @@ title: "Proto-Zorbbbb"
 author: "Vaishnav Sudarshan"
 date: "2026-8-18"
 categories:  [Conlangs]
-image: "number_system.png"
+image: "example_script.png"
 abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb.
 ---
 
@@ -358,7 +358,7 @@ There are also case *endings*, along with the body positions coming with it, mak
 
 Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “df bbbb g”, is simply “df bbbb g”, no vowels, tones, vowel alterations, gestures, etc. 
 
-Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is "E g bbbb". For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:
+Also, monkeys have special declensions. The root for all monkeys is simply the root for the generic pronoun, which is "E g bbbb". For every pattern for monkeys, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:
 
 | Case       | Position  |
 |------------|-----------|
@@ -370,6 +370,8 @@ Also, personal pronouns have special declensions too. The root for all pronouns 
 |Allative    | G R L R G |
 |Instrumental| C B C G G |
 |Vocative    | G L L B C |
+
+(Monkeys do not fall under beasts). 
 
 ## Verb Form
 
@@ -722,6 +724,27 @@ And these verbs have all those giant suffixes. Decode them yourelf (exercise for
 ALSO, I AM NOT GONNA FILL IN THE VOWELS OR WRITE THE PHONETIC IPA TRANSCRIPTION FOR THE SAKE OF MY OWN SANITY!!! 
 
 Translating just that first sentence was so mentally exhausting, so I'm not doing the second. 
+
+At least transcribing it shall be easy, since none of the noun agreement stuff is even recorded.
+
+![The same thing in the orthography](example_script.png){.lightbox}
+
+<details>
+<summary>How I did this while still being lazy (It's really not that deep)</summary>
+
+Once I installed my font, Paint allowed me to type it with the text feature. 
+
+I first copy and pasted the raw consonants into a Google Doc. I then cut each consonant to just the first letter. The dashes had served their visual purpose now, which was to show me where I should stop deleting, so I removed all of them right after. 
+
+Then, to account for the allographs, I swapped the case of the first letter after each space (and remember that ? became ! because yes). The $0$ key is what maps to the glyph for word boundaries, so I swapped each space with a $0$. 
+
+It was now time to put this into a text box in Paint, so I pasted what I had so far. To get a bunch of lines with blocks of $8$ characters, I just pressed enter to make a new line every $8$ characters (with a single character on the last line). 
+
+But now I had to reverse every other line. To do this like a machine, I put a bar at the end of these lines. Then, I took the first character in the section before the bar and put it right after the bar, until the bar was at the beginning, at which point it had served its purpose, so buh-bye!
+
+Coding this would definitely have allowed me to be even lazier (since the algorithm is simple), but it was almost midnight when I typed this and I needed a mind-numbing exercise to do to get sleepy anyway. At least it didn't feel like it was done manually in the sense that I could rely solely on muscle memory after the algorithm was perfected. 
+
+</details>
 
 # Conclusion
 

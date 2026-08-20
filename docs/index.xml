@@ -625,7 +625,7 @@ Fontmaking
 </tbody>
 </table>
 <p>Holy nouns that are superior to even the highest of the politeness level transcend declension. There is actually no declension, just a sequence of consonants. For example, the word for the Proto-Zorbbbb god, “df bbbb g”, is simply “df bbbb g”, no vowels, tones, vowel alterations, gestures, etc.</p>
-<p>Also, personal pronouns have special declensions too. The root for all pronouns is simply the root for the generic pronoun, which is “sgm”. For every pattern for personal pronouns, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:</p>
+<p>Also, monkeys have special declensions. The root for all monkeys is simply the root for the generic pronoun, which is “E g bbbb”. For every pattern for monkeys, the bottom most pattern is moved to the top, and the right most is moved to the left, pushing everything else down or right. For example, here’s what the example for case:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -668,6 +668,7 @@ Fontmaking
 </tr>
 </tbody>
 </table>
+<p>(Monkeys do not fall under beasts).</p>
 </section>
 <section id="verb-form" class="level2">
 <h2 class="anchored" data-anchor-id="verb-form">Verb Form</h2>
@@ -1447,6 +1448,24 @@ font-style: inherit;">return</span> root_word</span></code></pre></div>
 <p>And these verbs have all those giant suffixes. Decode them yourelf (exercise for the reader, right)?</p>
 <p>ALSO, I AM NOT GONNA FILL IN THE VOWELS OR WRITE THE PHONETIC IPA TRANSCRIPTION FOR THE SAKE OF MY OWN SANITY!!!</p>
 <p>Translating just that first sentence was so mentally exhausting, so I’m not doing the second.</p>
+<p>At least transcribing it shall be easy, since none of the noun agreement stuff is even recorded.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="example_script.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="The same thing in the orthography"><img src="https://vaishnavs.net/posts/Proto-Zorbbbb/example_script.png" class="img-fluid figure-img" alt="The same thing in the orthography"></a></p>
+<figcaption>The same thing in the orthography</figcaption>
+</figure>
+</div>
+<details>
+<summary>
+How I did this while still being lazy (It’s really not that deep)
+</summary>
+<p>Once I installed my font, Paint allowed me to type it with the text feature.</p>
+<p>I first copy and pasted the raw consonants into a Google Doc. I then cut each consonant to just the first letter. The dashes had served their visual purpose now, which was to show me where I should stop deleting, so I removed all of them right after.</p>
+<p>Then, to account for the allographs, I swapped the case of the first letter after each space (and remember that ? became ! because yes). The <img src="https://latex.codecogs.com/png.latex?0"> key is what maps to the glyph for word boundaries, so I swapped each space with a <img src="https://latex.codecogs.com/png.latex?0">.</p>
+<p>It was now time to put this into a text box in Paint, so I pasted what I had so far. To get a bunch of lines with blocks of <img src="https://latex.codecogs.com/png.latex?8"> characters, I just pressed enter to make a new line every <img src="https://latex.codecogs.com/png.latex?8"> characters (with a single character on the last line).</p>
+<p>But now I had to reverse every other line. To do this like a machine, I put a bar at the end of these lines. Then, I took the first character in the section before the bar and put it right after the bar, until the bar was at the beginning, at which point it had served its purpose, so buh-bye!</p>
+<p>Coding this would definitely have allowed me to be even lazier (since the algorithm is simple), but it was almost midnight when I typed this and I needed a mind-numbing exercise to do to get sleepy anyway. At least it didn’t feel like it was done manually in the sense that I could rely solely on muscle memory after the algorithm was perfected.</p>
+</details>
 </section>
 </section>
 <section id="conclusion" class="level1">
@@ -1460,7 +1479,7 @@ font-style: inherit;">return</span> root_word</span></code></pre></div>
   <category>Conlangs</category>
   <guid>https://vaishnavs.net/posts/Proto-Zorbbbb/</guid>
   <pubDate>Mon, 17 Aug 2026 18:30:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Proto-Zorbbbb/number_system.png" medium="image" type="image/png" height="142" width="144"/>
+  <media:content url="https://vaishnavs.net/posts/Proto-Zorbbbb/example_script.png" medium="image" type="image/png" height="223" width="144"/>
 </item>
 <item>
   <title>Semantics Part 1: Theory Behind Meanings</title>
