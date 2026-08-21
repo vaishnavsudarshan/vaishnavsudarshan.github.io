@@ -24,7 +24,7 @@
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>I made a conlang out of a friend’s Discord username. If you know you know. Otherwise don’t ask. Hopefully, this language is better than <a href="https://vaishnavs.net/posts/Limit%20riLmOtOpU/">Limit</a>, because I recently finished reading David J. Peterson’s book <em>The Art of Language Invention</em>.</p>
-<p>A lot of features that <em>should</em> exist aren’t yet present. This is because Proto-Zorbbbb, is, well, a proto-language. Just wait for my blog post on Zorbbbb to see that evolution emerge.</p>
+<p>A lot of features that <em>should</em> exist aren’t yet present. This is because Proto-Zorbbbb, is, well, a proto-language. Just wait for my blog post on Zorbbbb to see that evolution emerge. But unlike Proto-Indo-European, where there’s no need to learn it because you might as well learn Vedic Sanskrit or Ancient Greek and not miss out on much, Proto-Zorbbbb is VERY different from Zorbbbb and barely recognizable as belonging to the same language family.</p>
 </section>
 <section id="lore" class="level1">
 <h1>Lore</h1>
@@ -1276,7 +1276,7 @@ font-style: inherit;">return</span> root_word</span></code></pre></div>
 </section>
 <section id="syntax" class="level1">
 <h1>Syntax</h1>
-<p>The overall word order is VOS. Apart from the <img src="https://latex.codecogs.com/png.latex?VP%20%5Cto%20V%20O">, everything else is head-final.</p>
+<p>The overall word order is VOS. Apart from the <img src="https://latex.codecogs.com/png.latex?VP%20%5Cto%20V%20O">, everything else is head-final. There is no movement (just let it descend into Zorbbbb).</p>
 <section id="recursion" class="level2">
 <h2 class="anchored" data-anchor-id="recursion">Recursion</h2>
 <p>The particle <em>tts tts</em> means approximately “such that”. In English, consider the sentence “The brown cat sees the big dog”. The particle “such that” introduces a single precondition for the main sentence to be true, and it would be recursed that way. In Proto-Zorbbbb, the sentence above would be phrased like “Such that the cat is brown, such that the dog is big, the cat sees the dog”. Note that each precondition has exactly one condition, and there can be infinitely many preconditions, since you can have the rule <img src="https://latex.codecogs.com/png.latex?S%20%5Cto%20P%20S">, where <img src="https://latex.codecogs.com/png.latex?S"> is a sentence and <img src="https://latex.codecogs.com/png.latex?P"> is a precondition.</p>
@@ -1410,6 +1410,17 @@ How I did this while still being lazy (It’s really not that deep)
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <p>Great conlang, right? The only problem is, this language is NOT staying stable. Stay tuned for it to evolve into Zorbbbb!</p>
+</section>
+<section id="further-information" class="level1">
+<h1>Further Information</h1>
+<ul>
+<li><p><a href="https://www.goodreads.com/en/book/show/24611649-the-art-of-language-invention">The Art of Language Invention</a> is a great resource for learning about the components of a conlang, and most of it is applicable to just understanding linguistics concepts in general.</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=FHK1gO2Mh68&amp;list=PL6xPxnYMQpqsooCDYtQQSiD2O3YO0b2nN">Biblaridion’s How to Make a Language series</a> is another great resource to learn what things to consider while conlanging.</p></li>
+<li><p>I was inspired by Arabic to use root-and-pattern morphology (read my article on <a href="https://vaishnavs.net/posts/Morphology/">morphology</a> to learn about this) and also a cursive writing system.</p></li>
+<li><p>The phenomenon of alternating the writing direction to not have to move your pen to the beginning of a line is caled <a href="https://en.wikipedia.org/wiki/Boustrophedon">boustrophedon</a>, common in inscriptions from Ancient Greece.</p></li>
+<li><p>I sought a number system that doesn’t use powers of bases, because there are a lot of ways to <a href="https://en.wikipedia.org/wiki/Integer_partition">partition</a> an integer. The only main contraint was that there had to be a unique partition for each number.</p></li>
+<li><p>The decision to split the copula into “equals” and “belongs to” was based on the logical fallacy “I am an animal, and my cat is an animal, therefore I am my cat”. The flaw here is obviously common sense, but most of the Proto-Zorbbbbistanis were NOT smart, so the prescriptivist intellectuals had to fix this by creating the distinction.</p></li>
+</ul>
 
 
 </section>
