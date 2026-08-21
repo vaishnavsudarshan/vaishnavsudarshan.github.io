@@ -3,14 +3,14 @@ title: "Morphosyntax"
 author: "Vaishnav Sudarshan"
 date: "2026-3-10"
 categories:  [Cool Linguistics Stuff]
-abstract: Where morphology and syntax have a sequel.
+abstract: Where morphology and syntax converge. 
 ---
 
 # Introduction
 
-How do different languages organize words and how they relate to each other? If you read morphology and syntax, you might realize that this question can't be answered from either one in isolation - they must merge here to be answered. So, let's get into it.
+How do different languages organize words and how they relate to each other? If you have read [morphology](https://vaishnavs.net/posts/Morphology/) and [syntax](https://vaishnavs.net/posts/Syntax-Part-1/), you might realize that this question can't be answered from either one in isolation - they must merge here to be answered. So, let's get into it. 
 
-# Word Order
+# Word Order 
 
 The most basic way to figure out how words are arranged is how the following sentence would be ordered in a language:
 
@@ -24,13 +24,23 @@ If you have three brain cells, you probably know that if you allow "blue" and "b
 
 I apologize for the unprovoked parallelism, this has no intended poetic effect, I promise. 
 
-These are the very basic factors that are pretty much universal (cough cough Craftic without any objects). However, you can also worry about prepositions or postpositions (whether that sort of particle comes before or after the noun - in English, you say "to the house", but in Hindi, you say "ghar ko", or literally, "[the] house to"). 
+These are the very basic factors that are pretty much universal (cough cough Craftic without any objects). However, you can also worry about prepositions or postpositions (whether that sort of particle comes before or after the noun - in English, you say "to the house", but in Hindi, you say "ghar ko", or literally, "[the] house to"), and a bunch of other orderings.
+
+Recall from [Syntax Part 1](https://vaishnavs.net/posts/Syntax-Part-1/) that these orderings are all part of a larger concept called head-directionality. 
+
+Anyway, I want to talk about is how analytic and synthetic languages differ with how free their word order is. 
+
+Analytic languages don't inflect for stuff like case, and case is what determines the relations between the nouns in a sentence. Because syntactic roles are not marked on nouns, word order is what determines that, so analytic languages have strict word order. You can say "the guy saw the city", but if you say "saw the city the guy" or "the city saw the guy", it would either sound ungrammatical or nonsensical. 
+
+Meanwhile, synthetic languages have a lot more inflection, including case oftentimes. 
 
 # Nouns
 
 ## Cases
 
-## Classes
+## Classes and Genders
+
+Nouns in many languages are 
 
 # Verbs
 
@@ -38,7 +48,7 @@ These are the very basic factors that are pretty much universal (cough cough Cra
 
 ## TAM
 
-
+# Agreement
 
 # Inflection/Derivation
 

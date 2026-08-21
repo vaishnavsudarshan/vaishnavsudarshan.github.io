@@ -1102,81 +1102,20 @@ Fontmaking
 </ul>
 <p>Now, in this list, we mark an unpresent prime with <em>bbbb</em> and a present prime with <em>tts</em>.</p>
 <p>See the Python implementation below:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> is_prime(n):</span>
-<span id="cb1-2">    <span class="cf" style="color: #003B4F;
+font-style: inherit;">from</span> sympy <span class="im" style="color: #00769E;
 background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>:</span>
-<span id="cb1-3">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span></span>
-<span id="cb1-4">    <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Check all the odd numbers up to sqrt(n) instead of all integers since it's twice as fast</span></span>
-<span id="cb1-5">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>, <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>(n <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">**</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>), <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>):</span>
-<span id="cb1-6">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%</span> i <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>:</span>
-<span id="cb1-7">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span></span>
-<span id="cb1-8">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span>
-<span id="cb1-9"></span>
-<span id="cb1-10"><span class="kw" style="color: #003B4F;
+font-style: inherit;">import</span> isprime</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">def</span> get_primes(n):</span>
-<span id="cb1-11">    primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-4">    primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> []</span>
-<span id="cb1-12">    <span class="cf" style="color: #003B4F;
+<span id="cb1-5">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">while</span> (n <span class="op" style="color: #5E5E5E;
@@ -1184,28 +1123,28 @@ background-color: null;
 font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>):</span>
-<span id="cb1-13">        k <span class="op" style="color: #5E5E5E;
+<span id="cb1-6">        k <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> n</span>
-<span id="cb1-14">        <span class="cf" style="color: #003B4F;
+<span id="cb1-7">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">while</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">not</span> is_prime(k):</span>
-<span id="cb1-15">            k <span class="op" style="color: #5E5E5E;
+font-style: inherit;">not</span> isprime(k):</span>
+<span id="cb1-8">            k <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">-=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span></span>
-<span id="cb1-16">        primes.insert(<span class="dv" style="color: #AD0000;
+<span id="cb1-9">        primes.insert(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>, k)</span>
-<span id="cb1-17">        n <span class="op" style="color: #5E5E5E;
+<span id="cb1-10">        n <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">-=</span> k</span>
-<span id="cb1-18">    <span class="cf" style="color: #003B4F;
+<span id="cb1-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
@@ -1213,29 +1152,29 @@ background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>:</span>
-<span id="cb1-19">        primes.insert(<span class="dv" style="color: #AD0000;
+<span id="cb1-12">        primes.insert(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>)</span>
-<span id="cb1-20">    <span class="cf" style="color: #003B4F;
+<span id="cb1-13">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> primes</span>
-<span id="cb1-21"></span>
-<span id="cb1-22"><span class="kw" style="color: #003B4F;
+<span id="cb1-14"></span>
+<span id="cb1-15"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">def</span> make_root_word(n):</span>
-<span id="cb1-23">    used_primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-16">    used_primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> get_primes(n)</span>
-<span id="cb1-24">    total_primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-17">    total_primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>]</span>
-<span id="cb1-25">    <span class="cf" style="color: #003B4F;
+<span id="cb1-18">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
@@ -1250,51 +1189,51 @@ background-color: null;
 font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>):</span>
-<span id="cb1-26">        <span class="cf" style="color: #003B4F;
+<span id="cb1-19">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> is_prime(i):</span>
-<span id="cb1-27">            total_primes.append(i)</span>
-<span id="cb1-28">    primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-20">            total_primes.append(i)</span>
+<span id="cb1-21">    primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> []</span>
-<span id="cb1-29">    <span class="cf" style="color: #003B4F;
+<span id="cb1-22">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> total_primes:</span>
-<span id="cb1-30">        <span class="cf" style="color: #003B4F;
+<span id="cb1-23">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> used_primes:</span>
-<span id="cb1-31">            primes.append(<span class="dv" style="color: #AD0000;
+<span id="cb1-24">            primes.append(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>)</span>
-<span id="cb1-32">        <span class="cf" style="color: #003B4F;
+<span id="cb1-25">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">else</span>:</span>
-<span id="cb1-33">            primes.append(<span class="dv" style="color: #AD0000;
+<span id="cb1-26">            primes.append(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>)</span>
-<span id="cb1-34">    root_word <span class="op" style="color: #5E5E5E;
+<span id="cb1-27">    root_word <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span></span>
-<span id="cb1-35">    <span class="cf" style="color: #003B4F;
+<span id="cb1-28">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> primes:</span>
-<span id="cb1-36">        <span class="cf" style="color: #003B4F;
+<span id="cb1-29">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> i <span class="op" style="color: #5E5E5E;
@@ -1302,21 +1241,21 @@ background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>:</span>
-<span id="cb1-37">            root_word <span class="op" style="color: #5E5E5E;
+<span id="cb1-30">            root_word <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bbbb "</span></span>
-<span id="cb1-38">        <span class="cf" style="color: #003B4F;
+<span id="cb1-31">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">else</span>:</span>
-<span id="cb1-39">            root_word <span class="op" style="color: #5E5E5E;
+<span id="cb1-32">            root_word <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"tts "</span></span>
-<span id="cb1-40">    <span class="cf" style="color: #003B4F;
+<span id="cb1-33">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> root_word</span></code></pre></div>
@@ -3247,7 +3186,9 @@ Multiplication ==&gt; 2["2"]
 <section id="allomorphy" class="level1">
 <h1>Allomorphy</h1>
 <p>Allomorphy is when the meaning of a morpheme may take on a different form based on the environment, just like how allophony is when the production of a phoneme may change based on the environment.</p>
-<p>Allomorphs often occur as a result of the phonological environment. Take the words “ineffective”, “imperfect”, “illiterate”, and “irrelevant”. All</p>
+<p>Allomorphs often occur as a result of the phonological environment.</p>
+<p>Take the words “ineffective”, “imperfect”, “illiterate”, and “irrelevant”. All of these prefixes have the exact same function - to negate “effective”, “perfect”, “literate”, and “relevant”, respectively. The prefix “in” seems to be the default one, because while “im” occurs before bilabials while “ir” and “il” occur before their corresponding liquids, “in” appears everywhere else. You can probably see how this emerged from phonological assimilation. Therefore, we call “im”, “il”, and “ir” as <em>allomorphs</em> of “in”.</p>
+<p>Another example is comparatives. Have you noticed how “easy” as a comparative can either be “easier” (don’t mind the spelling, since phonologically, the vowel doesn’t change, and sandhi is another beast we don’t need right now) or “more easy”, but “difficult” as a comparative, at least to most people, should be “more difficult” and “difficulter” sounds ungrammatical? It’s because “more” is required if the base form is at least three syllables - otherwise, either “more” or “er” is ok. This is also allomorphy, since they both make something a comparative but take different forms.</p>
 <section id="types-of-morphology-across-languages" class="level2">
 <h2 class="anchored" data-anchor-id="types-of-morphology-across-languages">Types of Morphology Across Languages</h2>
 <p>When classifying different morphologies, there are few things to keep in mind. Let’s look at them and zoom in.</p>
@@ -3256,7 +3197,7 @@ Multiplication ==&gt; 2["2"]
 <p>The first continuum ranges from one morpheme per word to multiple morphemes put together in a word to entire sentences fit in a word. In that order, the types of languages would be analytic, synthetic, and polysynthetic.</p>
 <section id="analytic-languages" class="level4">
 <h4 class="anchored" data-anchor-id="analytic-languages">Analytic languages</h4>
-<p>Analytic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on <em>inflection</em>, or altering the form of words - instead, they rely on <em>particles</em>, which are words that are put next to other words to c hange the grammatical meaning.</p>
+<p>Analytic languages would be something like Mandarin - the sentence “I don’t drink tea” would be “我不喝茶” (“Wǒ bù hē chá”). Each word is its own morpheme here. Purely analytic languages don’t rely on <em>inflection</em>, or altering the form of words - instead, they rely on <em>particles</em>, which are words that are put next to other words to change the grammatical meaning.</p>
 <p>As a sidenote, Google Translate clearly agrees that each character is a word in this case, as shown here.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -3276,14 +3217,16 @@ Multiplication ==&gt; 2["2"]
 <section id="clarification-on-words" class="level4">
 <h4 class="anchored" data-anchor-id="clarification-on-words">Clarification on “Words”</h4>
 <p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just thinking about the general density of morphemes.</p>
+<p>The idea of free and bound morphemes can also help to clarify this - bound morphemes obviously can’t count as their own word, so it’s basically asking how many bound morphemes there are compared to free morphemes.</p>
 </section>
 </section>
-<section id="spectrum-2" class="level3">
-<h3 class="anchored" data-anchor-id="spectrum-2">Spectrum 2</h3>
-<p>The second continuum ranges from very clear distinctions between morphemes to completely unique, unpredictable morphemes outlining certain features- agglutinative to fusional.</p>
+<section id="meanings-per-morpheme" class="level3">
+<h3 class="anchored" data-anchor-id="meanings-per-morpheme">Meanings per morpheme</h3>
+<p>Among synthetic and polysynthetic languages, we have a further division - how many units of meaning a morpheme can take.</p>
 <section id="agglutinative-languages" class="level4">
 <h4 class="anchored" data-anchor-id="agglutinative-languages">Agglutinative Languages</h4>
-<p>An agglutinative language like Turkish clearly separates all of its morphemes. Take the “word” (more like sentence) “Evlerimizdenmişsiniz”.</p>
+<p>An agglutinative language like Turkish clearly separates all of its morphemes, which each have a single meaning.</p>
+<p>Take the “word” (more like sentence) “Evlerimizdenmişsiniz”.</p>
 <p>Breakdown:</p>
 <p>Ev → “house” (root noun)</p>
 <p>-ler → plural → Evler = “houses”</p>
@@ -3294,16 +3237,17 @@ Multiplication ==&gt; 2["2"]
 </section>
 <section id="fusional-languages" class="level4">
 <h4 class="anchored" data-anchor-id="fusional-languages">Fusional Languages</h4>
-<p>However, look at fusional languages. In Spanish, “hablamos” means “we speak”, with the ending “-amos” indicating that the pronoun is first person, and also plural (“we”). If you just knew the first person ending that’s not plural (“-o”), then you still wouldn’t be able to derive the ending “-amos” from that.</p>
+<p>Now, look at fusional languages. In Spanish, “hablamos” means “we speak”, with the ending “-amos” indicating that the pronoun is first person, and also plural (“we”). If you just knew the first person ending that’s not plural (“-o”), then you still wouldn’t be able to derive the ending “-amos” from that.</p>
+<p>In other words, the “-o” encodes plural, first person, and present tense all in one tiny morpheme, so it’s called <em>fusional</em>.</p>
 </section>
 </section>
-<section id="consonantal-root-systems" class="level3">
-<h3 class="anchored" data-anchor-id="consonantal-root-systems">Consonantal Root Systems</h3>
+</section>
+<section id="consonantal-root-systems" class="level2">
+<h2 class="anchored" data-anchor-id="consonantal-root-systems">Consonantal Root Systems</h2>
 <p>There is a feature in languages where the root meaning is carried out through the consonants, and the vowels between them just modify the meaning. This is pretty much unseen outside of Afro-Asiatic langauges.</p>
 <p>Most famously, Semitic languages (a sub-branch of Afro-Asiatic) such as Arabic and Hebrew use the triconsonantal root system. In Arabic, for example, the root “k-t-b” has to do with writing and books. The word “kitab” means “book”, the word “katib” means “writer”, and the word “maktaba” means “library”.</p>
 <p>Note that the extra consonant “m” in “maktaba” is added, because Arabic itself isn’t purely consonantal, and uses affixes as well. Interestingly, the word “kitab” spread to many languages like Farsi or Hindi to mean “book”, but since those languages aren’t Semitic, they don’t think of “kitab” using the triconsonantal root system, but rather just as any other word.</p>
 <p>Germanic languages like English do <em>just</em> a little. Primarily, this is shown in tense changes, like “s<em>i</em>ng” -&gt; “s<em>u</em>ng” -&gt; “s<em>a</em>ng”, or “r<em>u</em>n” -&gt; “r<em>u</em>n” -&gt; “r<em>a</em>n” as opposed to something like “reprimand” -&gt; “reprimand<em>ed</em>” -&gt; “reprimand<em>ed</em>”, where the latter is regular.</p>
-</section>
 </section>
 </section>
 <section id="merging-morphemes-subconsciously" class="level1">
@@ -3323,11 +3267,24 @@ Multiplication ==&gt; 2["2"]
 </section>
 <section id="note" class="level1">
 <h1>Note</h1>
-<p>One important thing to note is that trying to classify languages into categories like this isn’t super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian. As a result, these spectrums don’t necessarily account for every single language. Arabic, for example, can’t really be plotted on the 2D grid of the two spectrums, because a consonantal root system is way more complicated. There are many more morphological spectrums (like concatenative and non-concatenative, the latter of which Arabic falls into) that could exist as well, but these are just the most commonly used references ones.</p>
+<p>One important thing to note is that trying to classify languages into categories like this isn’t super helpful. Early ideas from linguistics are usually western concepts, because the languages linguists were studying were mostly Eurasian.</p>
+<p>As a result, these divisions between analytic and synthetic and agglutinative and fusional don’t necessarily account for every single language. Arabic, for example, can’t really be plotted with these alone, because a consonantal root system is way more complicated.</p>
+<p>There are many more morphological spectrums (like concatenative and non-concatenative, the latter of which Arabic falls into) that could exist as well, but these are just the most commonly used references ones.</p>
+</section>
+<section id="inflection-vs.-derivation" class="level1">
+<h1>Inflection vs.&nbsp;Derivation</h1>
+<p>Morphemes fall into two types. <em>Inflection</em> (as we’ve seen for synthetic languages) means the word still has the same part of speech (AHH, SYNTAX!!!) and something else has been altered. Going back to the comparative morpheme “er” (for two-syllabled words), note that it turns an adjective into another adjective. You can say “I am a greedy politician”, but you can also say “I am a greedi<em>er</em> politican”, and both exist in the same position as an adjective.</p>
+<p>Meanwhile, <em>derivation</em> uses a morpheme to convert a word of on part of speech to another. This way, you don’t need to make a new word for the same semantic concept that’s just in a different part of speech. A good example is the “ly” suffix in English, which converts an adjective to an adverb, and it can also convert a noun to an adjective, because it’s etymologically related to the suffix “like”. Converting an adjective to an adverb is seen in the sentence “I quickly exposed the politician who greedily stole money”, where the adjectives that the two adverbs are derived from are “quick” and “greedy”. You can see the morpheme’s secondary derivational role with “friendly” and “worldly”, as well as “childlike”, and the nouns they are derived from is quite obvious.</p>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <p>So, now we know how meanings can be arranged within “words” of a language. However, how do these meanings interact? This is what we need syntax for, which will be covered next.</p>
+</section>
+<section id="further-information" class="level1">
+<h1>Further Information</h1>
+<ul>
+<li>The Art of Language Invention by David J. Peterson has some amazing information about morphology, both in describing natlangs and making conlangs.</li>
+</ul>
 
 
 </section>

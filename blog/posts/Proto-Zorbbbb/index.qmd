@@ -4,14 +4,14 @@ author: "Vaishnav Sudarshan"
 date: "2026-8-18"
 categories:  [Conlangs]
 image: "example_script.png"
-abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb.
+abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb. Please don't try to speak it, because each verb has almost nine trillion forms, the number system is based on prime numbers rather than the powers of a base, you must have perfect pitch, and your mouth must be capable of manipulating 4D space. 
 ---
 
 # Introduction
 
 I made a conlang out of a friend's Discord username. If you know you know. Otherwise don't ask. Hopefully, this language is better than [Limit](https://vaishnavs.net/posts/Limit%20riLmOtOpU/), because I recently finished reading David J. Peterson's book *The Art of Language Invention*. 
 
-A lot of features that *should* exist aren't yet present. This is because Proto-Zorbbbb, is, well, a proto-language. Just wait for my blog post on Zorbbbb to see that evolution emerge. 
+A lot of features that *should* exist aren't yet present. This is because Proto-Zorbbbb, is, well, a proto-language. Just wait for my blog post on Zorbbbb to see that evolution emerge. But unlike Proto-Indo-European, where there's no need to learn it because you might as well learn Vedic Sanskrit or Ancient Greek and not miss out on much, Proto-Zorbbbb is VERY different from Zorbbbb and barely recognizable as belonging to the same language family. 
 
 # Lore
 
@@ -562,20 +562,13 @@ Now, in this list, we mark an unpresent prime with *bbbb* and a present prime wi
 See the Python implementation below:
 
 ```python
-def is_prime(n):
-    if n % 2 == 0:
-        return False
-    # Check all the odd numbers up to sqrt(n) instead of all integers since it's twice as fast
-    for i in range(3, int(n ** 0.5), 2):
-        if n % i == 0:
-            return False
-    return True
+from sympy import isprime
 
 def get_primes(n):
     primes = []
     while (n > 1):
         k = n
-        while not is_prime(k):
+        while not isprime(k):
             k -= 1
         primes.insert(0, k)
         n -= k
@@ -630,7 +623,7 @@ After repeatedly taking the largest prime number every annual meeting, this even
 
 # Syntax
 
-The overall word order is VOS. Apart from the $VP \to V O$, everything else is head-final. 
+The overall word order is VOS. Apart from the $VP \to V O$, everything else is head-final. There is no movement (just let it descend into Zorbbbb). 
 
 ## Recursion 
 
@@ -749,3 +742,17 @@ Coding this would definitely have allowed me to be even lazier (since the algori
 # Conclusion
 
 Great conlang, right? The only problem is, this language is NOT staying stable. Stay tuned for it to evolve into Zorbbbb! 
+
+# Further Information
+
+* [The Art of Language Invention](https://www.goodreads.com/en/book/show/24611649-the-art-of-language-invention) is a great resource for learning about the components of a conlang, and most of it is applicable to just understanding linguistics concepts in general. 
+
+* [Biblaridion's How to Make a Language series](https://www.youtube.com/watch?v=FHK1gO2Mh68&list=PL6xPxnYMQpqsooCDYtQQSiD2O3YO0b2nN) is another great resource to learn what things to consider while conlanging. 
+
+* I was inspired by Arabic to use root-and-pattern morphology (read my article on [morphology](https://vaishnavs.net/posts/Morphology/) to learn about this) and also a cursive writing system. 
+
+* The phenomenon of alternating the writing direction to not have to move your pen to the beginning of a line is caled [boustrophedon](https://en.wikipedia.org/wiki/Boustrophedon), common in inscriptions from Ancient Greece. 
+
+* I sought a number system that doesn't use powers of bases, because there are a lot of ways to [partition](https://en.wikipedia.org/wiki/Integer_partition) an integer. The only main contraint was that there had to be a unique partition for each number.
+
+* The decision to split the copula into "equals" and "belongs to" was based on the logical fallacy "I am an animal, and my cat is an animal, therefore I am my cat". The flaw here is obviously common sense, but most of the Proto-Zorbbbbistanis were NOT smart, so the prescriptivist intellectuals had to fix this by creating the distinction.
