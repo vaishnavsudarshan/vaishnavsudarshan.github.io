@@ -2,4 +2,4 @@
 
 A picture is worth a thousand words. But what if a picture is QUITE LITERALLY a thousand words???
 
-We have a 25 by 40 grid of squares. Colors and other artistic variables affect morphosyntactosemantic stuff. 
+We have a 25 by 40 grid of squares. 

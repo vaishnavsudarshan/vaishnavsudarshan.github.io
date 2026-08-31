@@ -2,8 +2,8 @@
 title: "Semantics Part 1: Theory Behind Meanings"
 author: "Vaishnav Sudarshan"
 date: "2026-8-03"
-categories:  [Linguistics, Philosophy, Math]
-tags: [Logic, Psychology]
+categories:  [Linguistics, Math]
+tags: [Logic, Psychology, Philosophy]
 image: not_hot1.png
 abstract: We know how meanings are arranged and put together, but how are they actually understood?
 ---

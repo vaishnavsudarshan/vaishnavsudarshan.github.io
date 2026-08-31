@@ -297,9 +297,107 @@ In syntax, recursion is when you can put a constituent inside another constituen
 
 English allows for infinite recursion like this, which is why there is no limit to how long a sentence can be - we can always just recurse one more time. For example, "the uncle" can have "of the person" added to it. We don't need to explicitly worry about a base case - no matter how long the sentence is, we can always ultimately simplify it down to a single noun (or generally a single constituent or unit), which is the base case. You can also recurse the other direction, like adding "the toy of" before "the monkey".
 
+The connection between syntactic recursion and recursion in math is better shown when you look at the syntax tree. Two of the rules that English has to make noun phrases are $NP \to A \ \ NP$ and $NP \to N$.
+
+Here is the "tree" for the word (and NP) "dogs":
+
+```{mermaid}
+graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --> N
+N --> dogs
+
+class NP np;
+class N np;
+
+```
+
+Now, here's the tree for "brown dogs":
+
+```{mermaid}
+graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --> A
+A --> brown
+NP --> NP1["NP"]
+NP1 --> N
+N --> dogs
+
+class NP np;
+class NP1 np;
+class N np;
+class A a;
+
+```
+
+Now, here's the tree for "big brown dogs":
+
+```{mermaid}
+graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --> A
+A --> big
+NP --> NP1["NP"]
+NP1 --> A1["A"]
+A1 --> brown
+NP1 --> NP2["NP"]
+NP2 --> N
+N --> dogs
+
+class NP np;
+class NP1 np;
+class NP2 np;
+class N np;
+class A a;
+class A1 a;
+
+```
+
+Finally, here's the tree for "friendly big brown dogs":
+
+```{mermaid}
+graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --> A
+A --> friendly
+NP --> NP1["NP"]
+NP1 --> A1["A"]
+A1 --> big
+NP1 --> NP2["NP"]
+NP2 --> A2["A"]
+A2 --> brown
+NP2 --> NP3["NP"]
+NP3 --> N
+N --> dogs
+
+class NP np;
+class NP1 np;
+class NP2 np;
+class NP3 np;
+class N np;
+class A a;
+class A1 a;
+class A2 a;
+
+```
+
+Do you see how geometrically, this doesn't look that different from Serpenski's Triangle? 
+
+In Serpenski's Triangle, you can zoom in to one of the corner triangles and it looks just like the overall triangle and you can do this over and over again (until you stop drawing, which is the base case). 
+
+In these trees, you can decompose an NP into A NP, and zoom into the tree of that NP and do the same thing, until the NP just turns into a single noun, which is the base case. In theory, you can just stack infinite adjectives before one another (keeping in mind that English does have rules for what order adjectives can come in, though). 
+
 # More Examples of English Recursion
 
-English doesn't just need "of" (or equivalently, "'s") to be able to recurse. Using "of" means a noun phrase is being a recursed.  Here are some other examples of English being able to recurse on different constituents.
+English doesn't just need "of" (or equivalently, "'s") or stacking adjectives to be able to recurse. Using posessions or adjectives means a noun phrase is being a recursed. Here are some other examples of English being able to recurse on different constituents.
 
 There can be recursion on full sentences (specifically of the structure where a noun phrase is the subject and it enacts a verb phrase). For example, "I ate food" is a complete sentence. You can also insert this into "You think that I ate food", which itself is another complete sentence. You can further insert this into "He doesn't believe that you think that I ate food", and so on. 
 

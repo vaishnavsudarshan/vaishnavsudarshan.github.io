@@ -19,3 +19,5 @@ title-block-banner: true
 ```
 
 If you are new to my blog and want to know where to start, click [here](order.qmd). 
+
+Also, if you want to do some fun puzzles about linguistics and AI, go [here](https://vaishnavs.net/puzzling/). 

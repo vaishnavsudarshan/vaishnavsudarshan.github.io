@@ -10,7 +10,7 @@ abstract: Where morphology and syntax converge.
 
 How do different languages organize words and how they relate to each other? If you have read [morphology](https://vaishnavs.net/posts/Morphology/) and [syntax](https://vaishnavs.net/posts/Syntax-Part-1/), you might realize that this question can't be answered from either one in isolation - they must merge here to be answered. So, let's get into it. 
 
-# Word Order 
+# Word order 
 
 The most basic way to figure out how words are arranged is how the following sentence would be ordered in a language:
 
@@ -20,9 +20,9 @@ If you have a single brain cell, you probably know that "I" is the subject, "lik
 
 If you have two brain cells, you probably know that there are three elements here (treating "blue book" as a single unit), so the number of ways to rearrange this is $3! = 6$, namely SVO (English), SOV (Tamil), VSO (Arabic), VOS (Proto-Zorbbbb), OVS (Klingon), and OSV (Yoda) (notice how we went from real languages to aliens???)
 
-If you have three brain cells, you probably know that if you allow "blue" and "book" to switch places, then there are $2! \cdot 3! = 12$ orderings. 
+If you have three brain cells, you probably know that if you additionally allow "blue" and "book" to switch places, then there are $2! \cdot 3! = 12$ orderings. English says "the blue book", while French says "le livre bleu", or "the book blue". 
 
-I apologize for the unprovoked parallelism, this has no intended poetic effect, I promise. 
+I apologize for the unprovoked parallelism, this has no intended poetic effect, I promise. Also, remember not to learn neuroscience from me, because a single brain cell isn't enough to understand morphosyntax. 
 
 These are the very basic factors that are pretty much universal (cough cough Craftic without any objects). However, you can also worry about prepositions or postpositions (whether that sort of particle comes before or after the noun - in English, you say "to the house", but in Hindi, you say "ghar ko", or literally, "[the] house to"), and a bunch of other orderings.
 
@@ -30,33 +30,114 @@ Recall from [Syntax Part 1](https://vaishnavs.net/posts/Syntax-Part-1/) that the
 
 Anyway, I want to talk about is how analytic and synthetic languages differ with how free their word order is. 
 
-Analytic languages don't inflect for stuff like case, and case is what determines the relations between the nouns in a sentence. Because syntactic roles are not marked on nouns, word order is what determines that, so analytic languages have strict word order. You can say "the guy saw the city", but if you say "saw the city the guy" or "the city saw the guy", it would either sound ungrammatical or nonsensical. 
+Analytic languages don't inflect for stuff like case, and case is what determines the relations between the nouns in a sentence. Because syntactic roles are not marked on nouns, word order is what determines that, so analytic languages have strict word order. You can say "the guy sees the city", but if you say "sees the city the guy" or "the city sees the guy", it would either sound ungrammatical or nonsensical. 
 
-Meanwhile, synthetic languages have a lot more inflection, including case oftentimes. 
+Meanwhile, synthetic languages have a lot more inflection, including case oftentimes. Because the nouns already have a morpheme attached that indicates what syntactic role they play, word order isn't as important. That same sentence in Sanskrit would be "purushah nagaram pashyati", or /pʊɾʊʃəhə n̪əgəɾəm pəʃjət̪i/, naturally. However, any order would have been grammatical to most speakers, because even if someone said "nagaram pashyati purushah", the case endings still indicate that it's the guy who did the seeing and the city was the thing being seen. As a result, while there is a naturally preferred word order, the redundancy it gives doesn't need to exist for the sentence to be understood, so any order is fine. 
 
 # Nouns
 
+Now, we'll get into how nouns and verbs, the parts of speech that are the most universal, work cross-linguistically. With just a noun and a verb, you can already make a lot of sentences, like "I slept" or "you eat".
+
+Let's start with nouns. 
+
 ## Cases
 
-## Classes and Genders
+We've already seen how the presence of a case system affects how free the word order of a language is, but let's get into cases themselves.
 
-Nouns in many languages are 
+A language with cases usually has morphemes attached to nouns for the following roles:
+
+* Subject (what does the action)
+
+* Object (what the action happens to)
+
+* Various prepositional roles, which I put stuff like genitive (possession), dative (what receives the action), and vocative (addressing the audience) under as well, and it also includes more obvious prepositional stuff like locative (where something is) and ablative (where something comes from).
+
+For example, let's look at the Sanskrit example again - "purushah nagaram pashyati". The "ah" morpheme represents the masculine nominative case, and the "am" morpheme represents the neuter accusative case (we'll get into the nuances behind nominative and accusative very soon). 
+
+If you instead wanted to convey the nonsensical sentence "the city sees the guy", you would have to change the cases, because as we've seen previously, word order won't change the meaning. In this case, (changing the word order to OSV instead of SOV so we can just observe the case change) it would be "purusham nagaram pashyati". The "am" morpheme is also for the masculine accusative case AND the neuter nominative case. Even though the case of "nagaram" may be ambiguous on its own, we can find out that "purusham" is in the accusative case, which means the former must be nominative. 
+
+Now, suppose you wanted to say "the guy sees the city with the dog". The "with the dog" part would use the instrumental case. The nominative case for "the dog" would be masculine, so "kuttah". In the masculine instrumental case, you would use the morpheme "eṇa" plus the postposition "saha", so "with the dog" would be "kutteṇa saha", or /kʊtteɳə səhə/. The whole sentence would be "purushah kutteṇa saha nagaram pashyati".
+
+## Grammatical classes
+
+Nouns in many languages are put into different grammatical classes. Nouns from different classes usually behave differently - they may be given separate affixes attached to them, separate verb endings, or separate articles. 
+
+There are a few different ways nouns are classified. 
+
+### Grammatical genders (sex-based classes)
+
+One, which you have probably seen if you ever learned Spanish or French, is to place males and females (this literal biological distinction in languages usually applies to people and sometimes to other animals) into separate categories, and inanimate things can go in either depending on the noun. 
+
+Note that these are called "genders" because it's much easier to remember that in French, the words for "boy" and "girl" are in different categories (*le* garçon and *la* fille, respectively), than it is to remember that "Japan" and "China" (*le* Japon and *la* Chine) are, for example. The term "gender" was given before linguists encountered languages with different types of classes. 
+
+The classification of inanimate nouns has nothing to do with whether they have XX or XY chromosomes, because they don't even have chromosomes. It might not even apply to humans. In German, "the girl" is "*das* Mädchen", which is in the neuter gender, not "*die* Mädchen", as feminine nouns would be be marked. 
+
+Most languages with sex-based grammatical classes mark either a two-way masculine/feminine distinction (like Hindi or French), or a three-way masculine/feminine/neuter distinction (like German or Sanskrit). 
+
+### Animacy-based grammatical classes
+
+Another way to categorize nouns is to use animacy instead. This can be observed in the plural morphemes of Cree. 
+
+The singular for "dog" is "atim", and the plural is "atimwak", with the animate morpheme "wak". Meanwhile, the singular for "hat" is "astotin", and the plural is "astotina", with the inanimate morpheme "a". 
+
+There is also something called an animacy hierarchy in some languages. Instead of just simply "animate" and "inanimate", some nouns are more animate than some other nouns but also less animate than others too. Even speakers in the conversation are considered more animate than speakers outside of it. This also affects word order - more animate nouns must come first, and only then the more inanimate ones. This phenomenon is famously present in Navajo. In English, this would be like if "the cat saw me" was ungrammatical, so you must say "it was me who the cat saw". 
+
+### Other
+
+### Origin 
+
+One reason for why grammatical classes exist is to add a bit of redundancy in environments where a listener may miss a word being said. In English, if someone says, "the house is good", but you don't hear the word "house", then the noun could be almost anything. However, in French, if someone says the same thing, "la maison est bonne", then the number of possible nouns narrows to only 42% of the original amount, because "la" and "bonne" indicate that the noun is feminine. 
+
+Additionally, it's just easier to group stuff semantically. 
+
+Usually, there is a default class. For genders, this is typically neuter, if it exists, or masculine (yeah, I know it's sexist). For the semantics-based class system, there's usually a designateed class for "other". 
+
+## Grammatical number
 
 # Verbs
 
-## Transitive/Intransitive
+## Valency
 
 ## TAM
 
-# Agreement
-
-# Inflection/Derivation
-
+## Agreement
 
 # Alignment
 
+Alignment is related to the concept of noun cases, but all languages, even those without cases, have alignment, where the grammatical roles are expressed through a rigid word order instead of case affixes.
 
+In a transitive sentence, verbs have a valency of at least two - the subject and the object, like "the dog ate food". In an intransitive sentence, verbs have only one argument, like "the dog slept". Alignment is basically whether the "dog" in "the dog slept" is treated like the "dog" or the "food" in "the dog ate food". 
+
+## Nominative-Accusative
+
+Since English shows cases with word order, and the subject comes before the verb, we know that English treats the argument of intransitive verbs the same as the subject of transitive verbs. This is called nominative-accusative alignment. 
+
+## Ergative-Absolutive
+
+Now look at the same sentence in Hindi. "The dog ate food" would be "kuttane khana khaya", or /kʊt̪t̪an̪e kʰan̪a kʰaja/, and "the dog slept" would be "kutta soya", or /kʊt̪t̪a soja/. See what happened? The suffix "ne" was only added to the subject of the transitive sentence, while the argument of the intransitive sentence was treated the same as the object of the transitive sentence by not adding any suffix. This is called ergative-absolutive alignment. 
+
+## Split-Ergativity
+
+Do you recall that we saw Sanskrit use the nominative and accusative cases? Hindi is a descendant of Sanskrit, so why would it be an ergative-absolutive language? Well, it's actually only ergative-absolutive in the simple past tense. In the present tense, for example, Hindi would work the same as English, treating the subject of a transitive sentence like the argument of an intransitive one (using word order, not case morphemes). When a language uses nominative-accusative alignment in some contexts and ergative-absolutive alignment in others, this is called *split-ergativity*. 
+
+## Tripartite 
+
+There's also a third alignment. Instead of aligning the argument of an intransitive verb with either argument of a transitive verb, the intransitive argument gets its own marker. An example of this is from the conlang Na'vi from the movie Avatar (the one about aliens, not airbenders). The word for "viperwolf" is "natang" when it's used in an intransitive sentence, "natangìl" when it's the subject of a transitive sentence, and "natangt" when it's the object of a transitive sentence. 
+
+## Visualization
+
+![See how both types of languages would "align" the noun in an intransitive sentence to one of the nouns in a transitive sentence](alignment.png){.lightbox}
+
+Note that the word order doesn't literally have to change, that's only a way to show how the nouns align. For example, if these relations are marked by case, then the word order would be free. 
 
 # Movement
 
 # How different languages classify parts of speech 
+
+# Conclusion
+
+# Further Information
+
+* The statistic that 42% of French nouns are feminine comes from [here](https://universaldependencies.org/treebanks/fr_ftb/fr_ftb-feat-Gender.html?).
+
+* The Cree animacy example is from [this course](https://socialsci.libretexts.org/Courses/Canada_College/ENGL_LING_200%3A_Introduction_to_Linguistics/04%3A_Words-_Morphology/03%3A_Morphemes). 

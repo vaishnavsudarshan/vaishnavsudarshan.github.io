@@ -232,7 +232,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Last Updated</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">August 15, 2026</p>
+        <p class="date-modified">August 30, 2026</p>
       </div>
     </div>
       
@@ -541,10 +541,132 @@ class M,Det modGroup;
 <h1>Recursion in Syntax</h1>
 <p>In syntax, recursion is when you can put a constituent inside another constituent of the same level. For example, look at the phrase “the monkey of the friend of the neighbor of the student of the uncle”. This is a noun phrase, because the overall constituent is “the monkey”. Inside of the entire phrase, we have “the monkey of the friend of the neighbor of the student” which is also a noun phrase, and inside of that, we have “the monkey of the friend of the neighbor”, which is also a noun phrase, and so on.</p>
 <p>English allows for infinite recursion like this, which is why there is no limit to how long a sentence can be - we can always just recurse one more time. For example, “the uncle” can have “of the person” added to it. We don’t need to explicitly worry about a base case - no matter how long the sentence is, we can always ultimately simplify it down to a single noun (or generally a single constituent or unit), which is the base case. You can also recurse the other direction, like adding “the toy of” before “the monkey”.</p>
+<p>The connection between syntactic recursion and recursion in math is better shown when you look at the syntax tree. Two of the rules that English has to make noun phrases are <span class="math inline">\(NP \to A \ \ NP\)</span> and <span class="math inline">\(NP \to N\)</span>.</p>
+<p>Here is the “tree” for the word (and NP) “dogs”:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --&gt; N
+N --&gt; dogs
+
+class NP np;
+class N np;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Now, here’s the tree for “brown dogs”:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --&gt; A
+A --&gt; brown
+NP --&gt; NP1["NP"]
+NP1 --&gt; N
+N --&gt; dogs
+
+class NP np;
+class NP1 np;
+class N np;
+class A a;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Now, here’s the tree for “big brown dogs”:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --&gt; A
+A --&gt; big
+NP --&gt; NP1["NP"]
+NP1 --&gt; A1["A"]
+A1 --&gt; brown
+NP1 --&gt; NP2["NP"]
+NP2 --&gt; N
+N --&gt; dogs
+
+class NP np;
+class NP1 np;
+class NP2 np;
+class N np;
+class A a;
+class A1 a;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Finally, here’s the tree for “friendly big brown dogs”:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
+classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
+
+NP --&gt; A
+A --&gt; friendly
+NP --&gt; NP1["NP"]
+NP1 --&gt; A1["A"]
+A1 --&gt; big
+NP1 --&gt; NP2["NP"]
+NP2 --&gt; A2["A"]
+A2 --&gt; brown
+NP2 --&gt; NP3["NP"]
+NP3 --&gt; N
+N --&gt; dogs
+
+class NP np;
+class NP1 np;
+class NP2 np;
+class NP3 np;
+class N np;
+class A a;
+class A1 a;
+class A2 a;
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Do you see how geometrically, this doesn’t look that different from Serpenski’s Triangle?</p>
+<p>In Serpenski’s Triangle, you can zoom in to one of the corner triangles and it looks just like the overall triangle and you can do this over and over again (until you stop drawing, which is the base case).</p>
+<p>In these trees, you can decompose an NP into A NP, and zoom into the tree of that NP and do the same thing, until the NP just turns into a single noun, which is the base case. In theory, you can just stack infinite adjectives before one another (keeping in mind that English does have rules for what order adjectives can come in, though).</p>
 </section>
 <section id="more-examples-of-english-recursion" class="level1">
 <h1>More Examples of English Recursion</h1>
-<p>English doesn’t just need “of” (or equivalently, “’s”) to be able to recurse. Using “of” means a noun phrase is being a recursed. Here are some other examples of English being able to recurse on different constituents.</p>
+<p>English doesn’t just need “of” (or equivalently, “’s”) or stacking adjectives to be able to recurse. Using posessions or adjectives means a noun phrase is being a recursed. Here are some other examples of English being able to recurse on different constituents.</p>
 <p>There can be recursion on full sentences (specifically of the structure where a noun phrase is the subject and it enacts a verb phrase). For example, “I ate food” is a complete sentence. You can also insert this into “You think that I ate food”, which itself is another complete sentence. You can further insert this into “He doesn’t believe that you think that I ate food”, and so on.</p>
 <p>The very first sentence we made a tree out of, “The student who the professor whom the dean hired praised left”, is also recursive, because “whom the dean hired” is called a relative clause, and this, describing “professor”, is inside the relative clause “who the professor praised”, which in turn describes “student”.</p>
 <p>Prepositional phrases can also be recursed. If you have the phrase “on the table in the house near the window”, this contains the prepositional phrase “on the table in the house”, which contains the prepositional phrase “on the table”.</p>

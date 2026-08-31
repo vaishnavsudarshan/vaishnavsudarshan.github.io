@@ -2,7 +2,8 @@
 title: "Phonetics"
 author: "Vaishnav Sudarshan"
 date: "2025-09-14"
-categories:  [Linguistics, Biology, Physics]
+categories:  [Linguistics]
+tags: [Biology, Physics]
 abstract: How do sounds work? How do you organize any sound biologically possible for humans? All these and more will be answered in this blog post.
 ---
 
