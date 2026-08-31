@@ -302,90 +302,195 @@ The connection between syntactic recursion and recursion in math is better shown
 Here is the "tree" for the word (and NP) "dogs":
 
 ```{mermaid}
+%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "30px",
+    "primaryTextColor": "#000000",
+    "lineColor": "#000000",
+    "lineWidth": 3
+  },
+  "flowchart": { "htmlLabels": true }
+}}%%
+
 graph TD
-classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
-classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
 
-NP --> N
-N --> dogs
+NP ==> N
+N ==> dogs
 
-class NP np;
-class N np;
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:3px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:3px,color:#000;
+classDef modGroup fill:#fff2cc,stroke:#d4a017,stroke-width:3px,color:#000;
+
+%% WORD CLASS (default purple)
+classDef wordGroup fill:#e0e0ff,stroke:#6b6bbd,stroke-width:3px,color:#000;
+
+class NP nounGroup;
+class N nounGroup;
+
+class dogs wordGroup;
 
 ```
 
 Now, here's the tree for "brown dogs":
 
 ```{mermaid}
+%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "30px",
+    "primaryTextColor": "#000000",
+    "lineColor": "#000000",
+    "lineWidth": 3
+  },
+  "flowchart": { "htmlLabels": true }
+}}%%
+
 graph TD
-classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
-classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
 
-NP --> A
-A --> brown
-NP --> NP1["NP"]
-NP1 --> N
-N --> dogs
+NP ==> A
+A ==> brown
 
-class NP np;
-class NP1 np;
-class N np;
-class A a;
+NP ==> NP1["NP"]
+NP1 ==> N
+N ==> dogs
+
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:3px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:3px,color:#000;
+classDef modGroup fill:#fff2cc,stroke:#d4a017,stroke-width:3px,color:#000;
+
+%% NEW WORD CLASS (default purple)
+classDef wordGroup fill:#e0e0ff,stroke:#6b6bbd,stroke-width:3px,color:#000;
+
+class NP nounGroup;
+class NP1 nounGroup;
+class N nounGroup;
+
+class A modGroup;
+
+class brown wordGroup;
+class dogs wordGroup;
 
 ```
 
 Now, here's the tree for "big brown dogs":
 
 ```{mermaid}
+%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "30px",
+    "primaryTextColor": "#000000",
+    "lineColor": "#000000",
+    "lineWidth": 3
+  },
+  "flowchart": { "htmlLabels": true }
+}}%%
+
 graph TD
-classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
-classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
 
-NP --> A
-A --> big
-NP --> NP1["NP"]
-NP1 --> A1["A"]
-A1 --> brown
-NP1 --> NP2["NP"]
-NP2 --> N
-N --> dogs
+NP ==> A
+A ==> big
 
-class NP np;
-class NP1 np;
-class NP2 np;
-class N np;
-class A a;
-class A1 a;
+NP ==> NP1["NP"]
+NP1 ==> A1["A"]
+A1 ==> brown
+
+NP1 ==> NP2["NP"]
+NP2 ==> N
+N ==> dogs
+
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:3px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:3px,color:#000;
+classDef modGroup fill:#fff2cc,stroke:#d4a017,stroke-width:3px,color:#000;
+
+classDef wordGroup fill:#e0e0ff,stroke:#6b6bbd,stroke-width:3px,color:#000;
+
+class NP nounGroup;
+class NP1 nounGroup;
+class NP2 nounGroup;
+class N nounGroup;
+
+class A modGroup;
+class A1 modGroup;
+
+class big wordGroup;
+class brown wordGroup;
+class dogs wordGroup;
 
 ```
 
 Finally, here's the tree for "friendly big brown dogs":
 
 ```{mermaid}
+%%{init: {
+  "theme": "default",
+  "themeVariables": {
+    "fontSize": "30px",
+    "primaryTextColor": "#000000",
+    "lineColor": "#000000",
+    "lineWidth": 3
+  },
+  "flowchart": { "htmlLabels": true }
+}}%%
+
 graph TD
-classDef np fill:#7ec8ff,stroke:#1b4f72,color:#000;
-classDef a fill:#fff27e,stroke:#7a6a00,color:#000;
 
-NP --> A
-A --> friendly
-NP --> NP1["NP"]
-NP1 --> A1["A"]
-A1 --> big
-NP1 --> NP2["NP"]
-NP2 --> A2["A"]
-A2 --> brown
-NP2 --> NP3["NP"]
-NP3 --> N
-N --> dogs
+NP ==> A
+A ==> friendly
 
-class NP np;
-class NP1 np;
-class NP2 np;
-class NP3 np;
-class N np;
-class A a;
-class A1 a;
-class A2 a;
+NP ==> NP1["NP"]
+NP1 ==> A1["A"]
+A1 ==> big
+
+NP1 ==> NP2["NP"]
+NP2 ==> A2["A"]
+A2 ==> brown
+
+NP2 ==> NP3["NP"]
+NP3 ==> N
+N ==> dogs
+
+%% -----------------------
+%% STYLES
+%% -----------------------
+
+classDef sentenceGroup fill:#ffe6cc,stroke:#ff8c00,stroke-width:3px,color:#000;
+classDef nounGroup fill:#d9ecff,stroke:#1f77b4,stroke-width:3px,color:#000;
+classDef verbGroup fill:#ddffdd,stroke:#2ca02c,stroke-width:3px,color:#000;
+classDef modGroup fill:#fff2cc,stroke:#d4a017,stroke-width:3px,color:#000;
+
+classDef wordGroup fill:#e0e0ff,stroke:#6b6bbd,stroke-width:3px,color:#000;
+
+class NP nounGroup;
+class NP1 nounGroup;
+class NP2 nounGroup;
+class NP3 nounGroup;
+class N nounGroup;
+
+class A modGroup;
+class A1 modGroup;
+class A2 modGroup;
+
+class friendly wordGroup;
+class big wordGroup;
+class brown wordGroup;
+class dogs wordGroup;
 
 ```
 
