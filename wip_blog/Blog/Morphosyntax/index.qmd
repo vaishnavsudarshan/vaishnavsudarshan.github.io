@@ -84,11 +84,13 @@ There is also something called an animacy hierarchy in some languages. Instead o
 
 ### Other
 
+The Bantu languages
+
 ### Origin 
 
 One reason for why grammatical classes exist is to add a bit of redundancy in environments where a listener may miss a word being said. In English, if someone says, "the house is good", but you don't hear the word "house", then the noun could be almost anything. However, in French, if someone says the same thing, "la maison est bonne", then the number of possible nouns narrows to only 42% of the original amount, because "la" and "bonne" indicate that the noun is feminine. 
 
-Additionally, it's just easier to group stuff semantically. 
+Additionally, it's just easier to group stuff semantically. If the topics of people's conversation have certain very common themes, wouldn't it be easier to mark that grammatically so they would have slightly more cognitive space to talk deeper about that theme instead of having to first identify it through context? This is especially true for the Bantu system. 
 
 Usually, there is a default class. For genders, this is typically neuter, if it exists, or masculine (yeah, I know it's sexist). For the semantics-based class system, there's usually a designateed class for "other". 
 
