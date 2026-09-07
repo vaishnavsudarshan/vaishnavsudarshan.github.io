@@ -19,6 +19,10 @@ website:
             href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1 
       - icon: graph-up-arrow
         href: https://tinyurl.com/vaishnav-blog-stats
+      - icon: info-circle
+        href: https://vaishnavs.net/colophon.qmd
+      - icon: puzzle-piece
+        href: https://vaishnavs.net/puzzles.qmd 
   comments: 
     giscus: 
       repo: vaishnavsudarshan/vaishnavsudarshan.github.io 

@@ -134,11 +134,48 @@ Verbs are the other part of speech that is almost universal. They are usually se
 
 ## Valency
 
-Valency is how many arguments a verb takes. An *argument* is basically an $NP$ that is mandatory within a version of a verb. "I ate" is ambitransitive. It can either have a valency of $1$, which makes a verb where only the subject matters. Or it can have a valency of $2$, where in that version of the verb, something has to be eaten too. 
+Valency is how many arguments a verb takes. An *argument* is basically an $NP$ that is mandatory within a version of a verb. This is a superset of transitivity, too - focusing on objects, such as direct and indirect. In English, the subject is always mandatory, making the valency usually one more than the transitivity. 
 
-It gets confusing because you might think anything that can have a case for it is an argument. However, it depends on what's actually necessary for that version of the verb. For "I ate in the house", the "ate" will never care about *where* it's being eaten - not in any version of the verb. 
+The sentence "I ate" is ambitransitive. It can either have a valency of $1$, which makes a verb where only the subject matters. Or it can have a valency of $2$, where in that version of the verb, something has to be eaten too. 
+
+It gets confusing because you might think anything that can have a case for it is an argument. However, it depends on what's actually necessary for that version of the verb. For "I ate food in the house", the "ate" will never care about *where* it's being eaten - not in any version of the verb. The $PP$ "in the house" is considered an adjunct, not an argument, because the universe will not collapse from a void in semantic space. 
+
+Now, if you remove "food", the sentence is still grammatical, right? Wouldn't that make it an adjunct? However, that is just because the "ate" basically becomes a new word, "ate", with the same form but slightly different semantic meaning and syntactic behavior. Whether something is an adjunct or an argument of a new word depends on the semantic analysis. 
+
+In English, a verb's valency is among $\{0, 1, 2, 3, 4\}$. 
+
+| Valency | Example    | Explanation                                                                     |
+|---------|------------|---------------------------------------------------------------------------------|
+| 0       |"It rains"  |It might seem like "it" is an argument, but semantically, it is a dummy argument.|
+| 1       |"I sleep"   |The only thing involved is "I".                                                  |
+| 2       |"I eat food"|The subject and the object are both arguments.                                   |
+| 3       |"I give you stuff"|The dative "you" is now introduced.                                        |
+| 4       |"I bet you $5 on the game"| Some analyses include "on the game" as an argument.               |
 
 ## TAM
+
+TAM stands for tense, aspect, and mood. 
+
+### Tense
+
+Tense is when the action happens. English has past, present, and future. This might be a suffix (like "-ed" in English for past), an auxiliary verb (like "will" in English for future), or a separate optional time word (like "kemarin" for "yesterday" in Indonesian, which otherwise doesn't have tense morphology). 
+
+Tense can also combine these. In French, for the default past tense, known as the *passé composé*, you must conjugate the auxiliary verbs "avior" or "être" (meaning "have" and "be" respectively) in the present tense, and then add a verb form which, in the regular form, is like the infinitive but with a suffix like "-é", "-i", or "-u" rather than the infinitive endings "-er", "-ir", or "-re", depending on the verb.
+
+I talk more about the semantics of tense in [semantics](vaishnavs.net/posts/Semantics/), but this just shows briefly how it is expressed morphosyntactically.
+
+### Aspect
+
+Aspect is how the action unfolds within a time frame. It's kind of hard to formalize, but you usually understand it subconsciously. Compare "I will be leaving" versus "I will leave" versus "I will have been leaving" versus "I will have left". It's weird, but you probably get what I mean. 
+
+### Mood
+
+Mood is how a verb expresses the speaker's emotion or intention about the action. Others might yell at me, but I'm gonna group modality and evidentiality under mood too, since they're similar. 
+
+The indicative mood is usually the default, which just states a fact, like "I exist". The interrogative asks a question, like "Do you exist?". The imperative gives a command, like "Exist!". There are a lot more too, like conditional, subjunctive (hypothetical), and more. One especially cool mood is the admirative, which is a separate morphological form just for how surprised you are, like in Balkan languages. 
+
+Evidentiality (also in Balkan languages) is a form that indicates where the speaker got their information from - first-hand, second-hand, heresay, etc.  
+
 
 ## Agreement
 
