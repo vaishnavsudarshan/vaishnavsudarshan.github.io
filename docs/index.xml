@@ -1429,6 +1429,7 @@ How I did this while still being lazy (It’s really not that deep)
 
  ]]></description>
   <category>Conlangs</category>
+  <category>Linguistics</category>
   <guid>https://vaishnavs.net/posts/Proto-Zorbbbb/</guid>
   <pubDate>Tue, 18 Aug 2026 07:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Proto-Zorbbbb/example_script.png" medium="image" type="image/png" height="223" width="144"/>
@@ -1800,102 +1801,6 @@ Spoiler: Explains the main idea of the problem
   <guid>https://vaishnavs.net/posts/Semantics/</guid>
   <pubDate>Mon, 03 Aug 2026 07:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Semantics/not_hot1.png" medium="image" type="image/png" height="74" width="144"/>
-</item>
-<item>
-  <title>Craftic</title>
-  <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Craftic/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>After I made my conlang <a href="https://vaishnavs.net/posts/Limit%20riLmOtOpU/">“Limit”</a> (which was kinda mid), and then planned out “Proto-Zorbbbb” (I’m working on it), I felt that I needed to make something better.</p>
-<p>It’s probably not better because, (a) it’s based on <a href="https://neal.fun/infinite-craft/"><em>Infinite Craft</em></a> which everyone was obsessed with in 2023, and (b) it took like 5 minutes to make.</p>
-<p>So, enjoy!</p>
-</section>
-<section id="craftic" class="level1">
-<h1>Craftic</h1>
-<p>“Craftic” is an exonym. The endonym is this:</p>
-<p>satatatatatabuloqutabuloqoquloqutatabuloqutabulqoqoqutatatatabulqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqo quloqoqoqutatatatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatata buloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoqulqutatabuloqutabuloqoqoqoqoqe</p>
-<section id="nouns-and-noun-phrases-derived-from-phonology" class="level2">
-<h2 class="anchored" data-anchor-id="nouns-and-noun-phrases-derived-from-phonology">Nouns (and noun phrases) (derived from phonology)</h2>
-<p>All nouns are derived from Infinite Craft. Note that phonemes have no extra allophones, and would just be pronounced like how they would if the same symbol was written in square brackets. Sound and written representation:</p>
-<p>l (/ɬ/) = water</p>
-<p>k (/ʞ/) = fire</p>
-<p>m (/m/) = wind</p>
-<p>b (/ʙ/) = earth</p>
-<p>u (/y/) = plus</p>
-<p>a (/a/) = start parentheses</p>
-<p>q (/ħ/) = end parentheses</p>
-<p>Each phoneme is also a morpheme, you’re welcome!</p>
-<p>If there are any adjacent vowels, put a [t] between them, and if there are any adjacent consonants, put an [o] between them (very restrictive CV phonotactics). If a vowel starts a word, add a [ç], written as “s”, and if a consonant ends a word, add an [œ], written as “e”.</p>
-<p>Parentheses are required for adding any units that aren’t fundamental.</p>
-<p>There is communtative property symmetry, where both ways to put two things together are valid with the same meaning (so a non-one-to-one mapping).</p>
-<p>Cloud = [Steam] + [Smoke] = [Water + Fire] + [Fire + Wind] = salukoqutakumoqe</p>
-<p>Oh yeah, I should have mentioned that you’ll sound insane if you try to pronounce anything.</p>
-<section id="actual-noun-orthography" class="level3">
-<h3 class="anchored" data-anchor-id="actual-noun-orthography">Actual Noun Orthography</h3>
-<p>An alphabet (top/down) is used in actual Craftic, the romanization is just for simplification. Here is the key:</p>
-<p><a href="craftic_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="craftic orthography for nouns"><img src="https://vaishnavs.net/posts/Craftic/craftic_table.png" class="img-fluid" alt="craftic orthography for nouns"></a>.</p>
-<p>As you can see, all the letters start and end with the same shape. This allows for a word to be transcribed without lifting your pen, so it is continuous (however, the curve is not differentiable because some letters contain sharp turns). [t] and [o], as well as [ç] and [œ], don’t have their own glyphs, because they can be inferred when you read it - the environments and the sounds are one to one. At the start of a word, the first letter should start with a stroke going up-right before writing its normal variant, and at the end of a word, the last letter should end with another up-right stroke after writing its normal variant.</p>
-<p>This is what the word “cloud” (salukoqutakumoqe) looks like:</p>
-<p><a href="craftic_cloud.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="“cloud” written in the Craftic orthography"><img src="https://vaishnavs.net/posts/Craftic/craftic_cloud.png" class="img-fluid" alt="“cloud” written in the Craftic orthography"></a>.</p>
-</section>
-</section>
-<section id="verbs" class="level2">
-<h2 class="anchored" data-anchor-id="verbs">Verbs</h2>
-<p>All verbs must be expressed by actually doing them. If it is biologically impossible to do so, or you will get in trouble for doing so, then try your best to mimic the action by gesturing.</p>
-<p>There are some agreed upon gestures that you shouldn’t make your own of. For example, if others have already established the precedent that the verb “punch” is represented by punching the listener’s face, you must also use that same gesture for that word.</p>
-<p>However, if others haven’t yet invented the gesture for a certain word, you may take the opportunity to seize the “First Discovery”, like how it works in Infinite Craft, and invent your own gesture for it.</p>
-<p>For orthographical purposes, all verbs are pictogram representations of what they mean, usually involving a stick figure as a placeholder for the subject. For example, the word “jump” is written as this: <a href="craftic_jump.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="craftic symbol for “jump”"><img src="https://vaishnavs.net/posts/Craftic/craftic_jump.png" class="img-fluid" alt="craftic symbol for “jump”"></a>.</p>
-<p>What if there is an object? Craftic doesn’t actually distinguish between transitive and intransitive. Instead, if there is an object, it is treated as a subject, that accepts the verb “accepts”.</p>
-</section>
-<section id="adjectives-and-adverbs" class="level2">
-<h2 class="anchored" data-anchor-id="adjectives-and-adverbs">Adjectives and Adverbs</h2>
-<p>So, adjectives and adverbs on their own don’t really exist.</p>
-<p>If a noun phrase involving an adjective exists in Infinite Craft (like “little red book”), then you can just use that as a noun.</p>
-<p>Otherwise, just use a noun that the adjective is close to. For example, if you want to say “scary”, say “monster” instead. Once a speaker coins a new match, that is what sticks forever. Adverbs work very similarly. Instead of saying “quickly”, just say “cheetah”. Both come before the thing they modify.</p>
-</section>
-<section id="prepositions" class="level2">
-<h2 class="anchored" data-anchor-id="prepositions">Prepositions</h2>
-<p>Prepositions can’t really be expressed as words, but instead are shown through verbs.</p>
-<p>“of” is expressed using “have”, “in” and “from” are expressed using “exist”, etc.</p>
-</section>
-<section id="general-syntax" class="level2">
-<h2 class="anchored" data-anchor-id="general-syntax">General Syntax</h2>
-<p>In speech, the verb gesture is performed at the same time as the subject, and is elongated for as long as it takes to finish pronouncing the subject.</p>
-<p>In writing, the subject is written on the top, letters horizontal and left to right, then the verb is written underneath.</p>
-<p>There aren’t technically any grammatical case markings. The accusative and dative cases are their own pair with the verb “accept”. The genitive case doesn’t really exist.</p>
-<p>By the way, the symbol for “accept” is this:</p>
-<p><a href="craftic_accept.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="craftic symbol for “accept”"><img src="https://vaishnavs.net/posts/Craftic/craftic_accept.png" class="img-fluid" alt="craftic symbol for “accept”"></a>.</p>
-<p>For comparing A to B in quality X, just say “A X, B ! X”</p>
-<p>This is what “my evil cat from France eats yummier food than the dog” would look like:</p>
-<p>I have</p>
-<p>Villain cat accept</p>
-<p>Villain cat exist</p>
-<p>France accept</p>
-<p>Villain cat eat</p>
-<p>(Ice cream) food accept</p>
-<p>Dog eat</p>
-<p>(Brussels sprouts) food accept</p>
-</section>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>Please feel free to roast Craftic in the comments.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Conlangs</category>
-  <guid>https://vaishnavs.net/posts/Craftic/</guid>
-  <pubDate>Thu, 16 Jul 2026 07:00:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Craftic/craftic_jump.png" medium="image" type="image/png" height="164" width="144"/>
 </item>
 <item>
   <title>What is a Language?</title>
@@ -2370,6 +2275,7 @@ linkStyle default stroke-width:5px;
 
  ]]></description>
   <category>Linguistics</category>
+  <category>History</category>
   <guid>https://vaishnavs.net/posts/Historical-Linguistics-2/</guid>
   <pubDate>Tue, 30 Jun 2026 07:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Historical-Linguistics-2/hundred.png" medium="image" type="image/png" height="69" width="144"/>
@@ -3117,6 +3023,7 @@ Multiplication ==&gt; 2["2"]
 
  ]]></description>
   <category>Linguistics</category>
+  <category>History</category>
   <guid>https://vaishnavs.net/posts/Historical-Linguistics-1/</guid>
   <pubDate>Thu, 29 Jan 2026 08:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Historical-Linguistics-1/ie.png" medium="image" type="image/png" height="143" width="144"/>
@@ -3910,6 +3817,102 @@ Cool fact to bore your friends with and be called a nerd!!!
   <guid>https://vaishnavs.net/posts/Writing-Systems/</guid>
   <pubDate>Sat, 23 Aug 2025 07:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Writing-Systems/brahmi_script_qutub_minar.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Craftic</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Craftic/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>After I made my conlang <a href="https://vaishnavs.net/posts/Limit%20riLmOtOpU/">“Limit”</a> (which was kinda mid), and then planned out “Proto-Zorbbbb” (I’m working on it), I felt that I needed to make something better.</p>
+<p>It’s probably not better because, (a) it’s based on <a href="https://neal.fun/infinite-craft/"><em>Infinite Craft</em></a> which everyone was obsessed with in 2023, and (b) it took like 5 minutes to make.</p>
+<p>So, enjoy!</p>
+</section>
+<section id="craftic" class="level1">
+<h1>Craftic</h1>
+<p>“Craftic” is an exonym. The endonym is this:</p>
+<p>satatatatatabuloqutabuloqoquloqutatabuloqutabulqoqoqutatatatabulqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqo quloqoqoqutatatatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatata buloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoqulqutatabuloqutabuloqoqoqoqoqe</p>
+<section id="nouns-and-noun-phrases-derived-from-phonology" class="level2">
+<h2 class="anchored" data-anchor-id="nouns-and-noun-phrases-derived-from-phonology">Nouns (and noun phrases) (derived from phonology)</h2>
+<p>All nouns are derived from Infinite Craft. Note that phonemes have no extra allophones, and would just be pronounced like how they would if the same symbol was written in square brackets. Sound and written representation:</p>
+<p>l (/ɬ/) = water</p>
+<p>k (/ʞ/) = fire</p>
+<p>m (/m/) = wind</p>
+<p>b (/ʙ/) = earth</p>
+<p>u (/y/) = plus</p>
+<p>a (/a/) = start parentheses</p>
+<p>q (/ħ/) = end parentheses</p>
+<p>Each phoneme is also a morpheme, you’re welcome!</p>
+<p>If there are any adjacent vowels, put a [t] between them, and if there are any adjacent consonants, put an [o] between them (very restrictive CV phonotactics). If a vowel starts a word, add a [ç], written as “s”, and if a consonant ends a word, add an [œ], written as “e”.</p>
+<p>Parentheses are required for adding any units that aren’t fundamental.</p>
+<p>There is communtative property symmetry, where both ways to put two things together are valid with the same meaning (so a non-one-to-one mapping).</p>
+<p>Cloud = [Steam] + [Smoke] = [Water + Fire] + [Fire + Wind] = salukoqutakumoqe</p>
+<p>Oh yeah, I should have mentioned that you’ll sound insane if you try to pronounce anything.</p>
+<section id="actual-noun-orthography" class="level3">
+<h3 class="anchored" data-anchor-id="actual-noun-orthography">Actual Noun Orthography</h3>
+<p>An alphabet (top/down) is used in actual Craftic, the romanization is just for simplification. Here is the key:</p>
+<p><a href="craftic_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="craftic orthography for nouns"><img src="https://vaishnavs.net/posts/Craftic/craftic_table.png" class="img-fluid" alt="craftic orthography for nouns"></a>.</p>
+<p>As you can see, all the letters start and end with the same shape. This allows for a word to be transcribed without lifting your pen, so it is continuous (however, the curve is not differentiable because some letters contain sharp turns). [t] and [o], as well as [ç] and [œ], don’t have their own glyphs, because they can be inferred when you read it - the environments and the sounds are one to one. At the start of a word, the first letter should start with a stroke going up-right before writing its normal variant, and at the end of a word, the last letter should end with another up-right stroke after writing its normal variant.</p>
+<p>This is what the word “cloud” (salukoqutakumoqe) looks like:</p>
+<p><a href="craftic_cloud.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="“cloud” written in the Craftic orthography"><img src="https://vaishnavs.net/posts/Craftic/craftic_cloud.png" class="img-fluid" alt="“cloud” written in the Craftic orthography"></a>.</p>
+</section>
+</section>
+<section id="verbs" class="level2">
+<h2 class="anchored" data-anchor-id="verbs">Verbs</h2>
+<p>All verbs must be expressed by actually doing them. If it is biologically impossible to do so, or you will get in trouble for doing so, then try your best to mimic the action by gesturing.</p>
+<p>There are some agreed upon gestures that you shouldn’t make your own of. For example, if others have already established the precedent that the verb “punch” is represented by punching the listener’s face, you must also use that same gesture for that word.</p>
+<p>However, if others haven’t yet invented the gesture for a certain word, you may take the opportunity to seize the “First Discovery”, like how it works in Infinite Craft, and invent your own gesture for it.</p>
+<p>For orthographical purposes, all verbs are pictogram representations of what they mean, usually involving a stick figure as a placeholder for the subject. For example, the word “jump” is written as this: <a href="craftic_jump.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="craftic symbol for “jump”"><img src="https://vaishnavs.net/posts/Craftic/craftic_jump.png" class="img-fluid" alt="craftic symbol for “jump”"></a>.</p>
+<p>What if there is an object? Craftic doesn’t actually distinguish between transitive and intransitive. Instead, if there is an object, it is treated as a subject, that accepts the verb “accepts”.</p>
+</section>
+<section id="adjectives-and-adverbs" class="level2">
+<h2 class="anchored" data-anchor-id="adjectives-and-adverbs">Adjectives and Adverbs</h2>
+<p>So, adjectives and adverbs on their own don’t really exist.</p>
+<p>If a noun phrase involving an adjective exists in Infinite Craft (like “little red book”), then you can just use that as a noun.</p>
+<p>Otherwise, just use a noun that the adjective is close to. For example, if you want to say “scary”, say “monster” instead. Once a speaker coins a new match, that is what sticks forever. Adverbs work very similarly. Instead of saying “quickly”, just say “cheetah”. Both come before the thing they modify.</p>
+</section>
+<section id="prepositions" class="level2">
+<h2 class="anchored" data-anchor-id="prepositions">Prepositions</h2>
+<p>Prepositions can’t really be expressed as words, but instead are shown through verbs.</p>
+<p>“of” is expressed using “have”, “in” and “from” are expressed using “exist”, etc.</p>
+</section>
+<section id="general-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="general-syntax">General Syntax</h2>
+<p>In speech, the verb gesture is performed at the same time as the subject, and is elongated for as long as it takes to finish pronouncing the subject.</p>
+<p>In writing, the subject is written on the top, letters horizontal and left to right, then the verb is written underneath.</p>
+<p>There aren’t technically any grammatical case markings. The accusative and dative cases are their own pair with the verb “accept”. The genitive case doesn’t really exist.</p>
+<p>By the way, the symbol for “accept” is this:</p>
+<p><a href="craftic_accept.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="craftic symbol for “accept”"><img src="https://vaishnavs.net/posts/Craftic/craftic_accept.png" class="img-fluid" alt="craftic symbol for “accept”"></a>.</p>
+<p>For comparing A to B in quality X, just say “A X, B ! X”</p>
+<p>This is what “my evil cat from France eats yummier food than the dog” would look like:</p>
+<p>I have</p>
+<p>Villain cat accept</p>
+<p>Villain cat exist</p>
+<p>France accept</p>
+<p>Villain cat eat</p>
+<p>(Ice cream) food accept</p>
+<p>Dog eat</p>
+<p>(Brussels sprouts) food accept</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Please feel free to roast Craftic in the comments.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Conlangs</category>
+  <guid>https://vaishnavs.net/posts/Craftic/</guid>
+  <pubDate>Wed, 16 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Craftic/craftic_jump.png" medium="image" type="image/png" height="164" width="144"/>
 </item>
 <item>
   <title>Limit riLmOtOpU (Limit For Monkeys)</title>

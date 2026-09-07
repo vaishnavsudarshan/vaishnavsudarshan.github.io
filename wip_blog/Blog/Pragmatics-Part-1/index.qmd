@@ -2,8 +2,8 @@
 title: "Pragmatics"
 author: "Vaishnav Sudarshan"
 date: "2026-22-5"
-categories:  [Linguistics, Philosophy]
-tags: [Economics]
+categories:  [Linguistics, Math]
+tags: [Economics, Philosophy]
 abstract: What do nonverbal cues reveal about meaning in context in a conversation?
 ---
 
@@ -23,4 +23,4 @@ abstract: What do nonverbal cues reveal about meaning in context in a conversati
 
 # Flouting Maxims
 
-# Balancing and Optimization
+# Game Theory

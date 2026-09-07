@@ -3,7 +3,7 @@ title: "Phonology"
 author: "Vaishnav Sudarshan"
 date: "2025-9-14"
 categories:  [Linguistics]
-tags: [Psychology]
+tags: [Psychology, Neuroscience]
 abstract: We know how sounds work biologically, but how do languages perceive them?
 image: french_phonology.png
 ---

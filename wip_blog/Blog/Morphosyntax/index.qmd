@@ -38,7 +38,11 @@ Meanwhile, synthetic languages have a lot more inflection, including case oftent
 
 Now, we'll get into how nouns and verbs, the parts of speech that are the most universal, work cross-linguistically. With just a noun and a verb, you can already make a lot of sentences, like "I slept" or "you eat".
 
-Let's start with nouns. 
+Let's start with nouns - you learned it in school as "a person, place, thing, or idea", which basically sums it up. The only problem I have with this is that I would put all of it under "entity". Otherwise, it's probably too narrow. The word "dog" is indisputably a noun, but it's not a person (usually refers to humans), or a thing ("things" are considered inanimate, at least to me), or a place (though that's semantically vague if you think about it so *maybe*?), or an idea (dogs are not abstract). 
+
+Anyway, that was just my tangent - use "entity" to not open up a can of worms. But hey, if "person, place, thing, or idea" encompasses all nouns in your idiolect through non-compositional semantics (since the reference isn't completely literally derived from its parts), then go for it - who am I to be a prescriptivist?
+
+You can also define nouns syntactically, rather than semantically. It's simply a type of constituent category $NP$ that satisfies properties IN ENGLISH such as $S \to NP \ \ VP$, $NP \to Adj \ \ NP$, $PP \to P \ \ NP$, etc. You might analyze it differently in other languages. 
 
 ## Cases
 
@@ -64,7 +68,7 @@ Nouns in many languages are put into different grammatical classes. Nouns from d
 
 There are a few different ways nouns are classified. 
 
-### Grammatical genders (sex-based classes)
+### Grammatical genders 
 
 One, which you have probably seen if you ever learned Spanish or French, is to place males and females (this literal biological distinction in languages usually applies to people and sometimes to other animals) into separate categories, and inanimate things can go in either depending on the noun. 
 
@@ -76,7 +80,7 @@ Most languages with sex-based grammatical classes mark either a two-way masculin
 
 ### Animacy-based grammatical classes
 
-Another way to categorize nouns is to use animacy instead. This can be observed in the plural morphemes of Cree. 
+Another way to categorize nouns is to use animacy instead. This can be observed in the plural morphemes of Cree:
 
 The singular for "dog" is "atim", and the plural is "atimwak", with the animate morpheme "wak". Meanwhile, the singular for "hat" is "astotin", and the plural is "astotina", with the inanimate morpheme "a". 
 
@@ -84,7 +88,31 @@ There is also something called an animacy hierarchy in some languages. Instead o
 
 ### Other
 
-The Bantu languages
+The Bantu languages have a different system, where nouns are grouped semantically. 
+
+Look at this data for the following nouns:
+
+|English       |Swahili  |
+|--------------|---------|
+|Kenyan person |Mkenya   |
+|Chinese person|Mchina   |
+|Kenyan people |Wakenya  |
+|Chinese people|Wachina  |
+|Person        |Mtu      |
+|People        |Watu     |
+|Knife         |Kisu     |
+|Knives        |Visu     |
+|Book          |Kitabu   |
+|Books         |Vitabu   |
+|Beauty        |Uzuri    |
+|Culture       |Utamaduni|
+|Poverty       |Umaskini |
+|Eye           |Jicho    |
+|Eyes          |Macho    |
+|Stone         |Jiwe     |
+|Stones        |Mawe     |
+
+Look specifically at common prefixes. You'll notice that from this data, we have classes for people, for objects, for abstract concepts, and for this weird class involving eyes and stones (likely doesn't make sense for English speakers). These prefixes also change for number with fusional morphology (so instead of adding a plural morpheme, the class prefix changes form). These classes don't seem to be based on solely gender or animacy (but the latter is partially a factor), but rather on semantic categories. 
 
 ### Origin 
 
@@ -96,9 +124,19 @@ Usually, there is a default class. For genders, this is typically neuter, if it 
 
 ## Grammatical number
 
+Another thing that nouns can be marked for is number. Since languages tend to be much older than major mathematical developments, the distinctions might seem somewhat primitive. 
+
+Most languages that distinguish number have singular and plural (one vs. not one). Isn't that weird? You can see one dog, two dog*s*, zero dog*s*, or $\pi$ dog*s* (grammatically, that is - I hope that last one isn't literally happening because I'd feel bad for that almost one seventh of a dog). And I guess $i$ dog*s* too, but again, that's only how your brain subconsciously inflects the noun, not because this makes any sense at all. Instead of splitting them into categories which both have infinite values, one category has $1$ possible value, while the other has $2^{\aleph_0}$ possible values - what an imbalance, huh? 
+
 # Verbs
 
+Verbs are the other part of speech that is almost universal. They are usually semantically defined as "actions, states, or occurrences". I mean I guess - depends on how far you stretch this. A less ambiguous and more mathematically rigorous way, with syntax, is to define verbs as a type of constituent category $VP$ in English with properties such as $VP \to VP \ \ PP$, $VP \to VP \ \ Adv$, $S \to NP \ \ VP$, etc. Again, this isn't a very *universal* definition, but you can do an analogous thing in other languages. Universally, it's just a type of syntactic category with certain properties. 
+
 ## Valency
+
+Valency is how many arguments a verb takes. An *argument* is basically an $NP$ that is mandatory within a version of a verb. "I ate" is ambitransitive. It can either have a valency of $1$, which makes a verb where only the subject matters. Or it can have a valency of $2$, where in that version of the verb, something has to be eaten too. 
+
+It gets confusing because you might think anything that can have a case for it is an argument. However, it depends on what's actually necessary for that version of the verb. For "I ate in the house", the "ate" will never care about *where* it's being eaten - not in any version of the verb. 
 
 ## TAM
 

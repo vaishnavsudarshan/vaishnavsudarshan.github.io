@@ -2,7 +2,8 @@
 title: "Proto-Zorbbbb"
 author: "Vaishnav Sudarshan"
 date: "2026-8-18"
-categories:  [Conlangs]
+categories:  [Conlangs, Linguistics]
+tags: [Cryptography]
 image: "example_script.png"
 abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb. Please don't try to speak it, because each verb has almost nine trillion forms, the number system is based on prime numbers rather than the powers of a base, you must have perfect pitch, and your mouth must be capable of manipulating 4D space. 
 ---
