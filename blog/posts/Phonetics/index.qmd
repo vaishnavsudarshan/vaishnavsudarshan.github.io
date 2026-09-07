@@ -7,10 +7,6 @@ tags: [Biology, Physics]
 abstract: How do sounds work? How do you organize any sound biologically possible for humans? All these and more will be answered in this blog post.
 ---
 
-> This is a series of blogs about linguistics. See also: [_Morphology and Semantics_](../Morphology-and-Semantics/), [_Writing Systems_](../Writing-Systems/), [_Phonetics and Phonology Part 2_](../Phonetics-and-Phonology-Part2/) 
-
-
-
 # How Sounds Work
 At first, the question of "how do sounds work" may seem dumb - you just vibrate your vocal cords, right? However, it's more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people's mouths. Now, it's more difficult to do so, and you may struggle - unless, of course, you're a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven't already. 
 

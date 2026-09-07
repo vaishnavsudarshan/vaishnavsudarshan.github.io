@@ -10,7 +10,329 @@
 <atom:link href="https://vaishnavs.net/index.xml" rel="self" type="application/rss+xml"/>
 <description>Vaishnav Sudarshan&#39;s blog on linguistics, math, computer science and natural language processing</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Tue, 18 Aug 2026 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 07 Sep 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Morphosyntax</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Morphosyntax/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>How do different languages organize words and how they relate to each other? If you have read <a href="https://vaishnavs.net/posts/Morphology/">morphology</a> and <a href="https://vaishnavs.net/posts/Syntax-Part-1/">syntax</a>, you might realize that this question can’t be answered from either one in isolation - they must merge here to be answered. So, let’s get into it.</p>
+</section>
+<section id="word-order" class="level1">
+<h1>Word order</h1>
+<p>The most basic way to figure out how words are arranged is how the following sentence would be ordered in a language:</p>
+<p>“I like [the] blue book”.</p>
+<p>If you have a single brain cell, you probably know that “I” is the subject, “like” is the verb, and “blue book” is the object.</p>
+<p>If you have two brain cells, you probably know that there are three elements here (treating “blue book” as a single unit), so the number of ways to rearrange this is <img src="https://latex.codecogs.com/png.latex?3!%20=%206">, namely SVO (English), SOV (Tamil), VSO (Arabic), VOS (Proto-Zorbbbb), OVS (Klingon), and OSV (Yoda) (notice how we went from real languages to aliens??? That’s because most humans prefer to talk about the subject before the object!)</p>
+<p>If you have three brain cells, you probably know that if you additionally allow “blue” and “book” to switch places, then there are <img src="https://latex.codecogs.com/png.latex?2!%20%5Ccdot%203!%20=%2012"> orderings. English says “the blue book”, while French says “le livre bleu”, or “the book blue”.</p>
+<p>I apologize for the unprovoked parallelism, this has no intended poetic effect, I promise. Also, remember not to learn neuroscience from me, because a single brain cell isn’t enough to understand morphosyntax.</p>
+<p>These are the very basic factors that are pretty much universal (cough cough Craftic without any objects). However, you can also worry about prepositions or postpositions (whether that sort of particle comes before or after the noun - in English, you say “to the house”, but in Hindi, you say “ghar ko”, or literally, “[the] house to”), and a bunch of other orderings.</p>
+<p>Recall from <a href="https://vaishnavs.net/posts/Syntax-Part-1/">syntax</a> that these orderings are all part of a larger concept called head-directionality.</p>
+<p>Anyway, what I want to talk about is how analytic and synthetic languages differ with how free their word order is.</p>
+<p>Analytic languages don’t inflect for stuff like case, and case is what determines the relations between the nouns in a sentence. Because syntactic roles are not marked on nouns, word order is what determines that, so analytic languages have strict word order. You can say “the guy sees the city”, but if you say “sees the city the guy” or “the city sees the guy”, it would either sound ungrammatical or nonsensical.</p>
+<p>Meanwhile, synthetic languages have a lot more inflection, including case oftentimes. Because the nouns already have a morpheme attached that indicates what syntactic role they play, word order isn’t as important. That same sentence in Sanskrit would be “purushah nagaram pashyati”, or /pʊɾʊʃəhə n̪əgəɾəm pəʃjət̪i/, naturally. However, any order would have been grammatical to most speakers, because even if someone said “nagaram pashyati purushah”, the case endings still indicate that it’s the guy who did the seeing and the city was the thing being seen. As a result, while there is a naturally preferred word order, the redundancy it gives doesn’t need to exist for the sentence to be understood, so any order is fine.</p>
+</section>
+<section id="nouns" class="level1">
+<h1>Nouns</h1>
+<p>Now, we’ll get into how nouns and verbs, the parts of speech that are the most universal, work cross-linguistically. With just a noun and a verb, you can already make a lot of sentences, like “I slept” or “you eat”.</p>
+<p>Let’s start with nouns - you learned it in school as “a person, place, thing, or idea”, which basically sums it up. The only problem I have with this is that I would put all of it under “entity”. Otherwise, it’s probably too narrow. The word “dog” is indisputably a noun, but it’s not a person (usually refers to humans), or a thing (“things” are considered inanimate, at least to me), or a place (though that’s semantically vague if you think about it so <em>maybe</em>?), or an idea (dogs are not abstract).</p>
+<p>Anyway, that was just my tangent - use “entity” to not open up a can of worms. But hey, if “person, place, thing, or idea” encompasses all nouns in your idiolect through non-compositional semantics (since the reference isn’t completely literally derived from its parts), then go for it - who am I to be a prescriptivist?</p>
+<p>You can also define nouns syntactically, rather than semantically. It’s simply a type of constituent category <img src="https://latex.codecogs.com/png.latex?NP"> that satisfies properties IN ENGLISH such as <img src="https://latex.codecogs.com/png.latex?S%20%5Cto%20NP%20%5C%20%5C%20VP">, <img src="https://latex.codecogs.com/png.latex?NP%20%5Cto%20Adj%20%5C%20%5C%20NP">, <img src="https://latex.codecogs.com/png.latex?PP%20%5Cto%20P%20%5C%20%5C%20NP">, etc. You might analyze it differently in other languages.</p>
+<section id="cases" class="level2">
+<h2 class="anchored" data-anchor-id="cases">Cases</h2>
+<p>We’ve already seen how the presence of a case system affects how free the word order of a language is, but let’s get into cases themselves.</p>
+<p>A language with cases usually has morphemes attached to nouns for the following roles:</p>
+<ul>
+<li><p>Subject (what does the action)</p></li>
+<li><p>Object (what the action happens to)</p></li>
+<li><p>Various prepositional roles, which I put stuff like genitive (possession), dative (what receives the action), and vocative (addressing the audience) under as well, and it also includes more obvious prepositional stuff like locative (where something is) and ablative (where something comes from).</p></li>
+</ul>
+<p>For example, let’s look at the Sanskrit example again - “purushah nagaram pashyati”. The “ah” morpheme represents the masculine nominative case, and the “am” morpheme represents the neuter accusative case (we’ll get into the nuances behind nominative and accusative very soon).</p>
+<p>If you instead wanted to convey the nonsensical sentence “the city sees the guy”, you would have to change the cases, because as we’ve seen previously, word order won’t change the meaning. In this case, (changing the word order to OSV instead of SOV so we can just observe the case change) it would be “purusham nagaram pashyati”. The “am” morpheme is also for the masculine accusative case AND the neuter nominative case. Even though the case of “nagaram” may be ambiguous on its own, we can find out that “purusham” is in the accusative case, which means the former must be nominative.</p>
+<p>Now, suppose you wanted to say “the guy sees the city with the dog”. The “with the dog” part would use the instrumental case. The nominative case for “the dog” would be masculine, so “kuttah”. In the masculine instrumental case, you would use the morpheme “eṇa” plus the postposition “saha”, so “with the dog” would be “kutteṇa saha”, or /kʊtteɳə səhə/. The whole sentence would be “purushah kutteṇa saha nagaram pashyati”.</p>
+</section>
+<section id="grammatical-classes" class="level2">
+<h2 class="anchored" data-anchor-id="grammatical-classes">Grammatical classes</h2>
+<p>Nouns in many languages are put into different grammatical classes. Nouns from different classes usually behave differently - they may be given separate affixes attached to them, separate verb endings, or separate articles.</p>
+<p>There are a few different ways nouns are classified.</p>
+<section id="grammatical-genders" class="level3">
+<h3 class="anchored" data-anchor-id="grammatical-genders">Grammatical genders</h3>
+<p>One, which you have probably seen if you ever learned Spanish or French, is to place males and females (this literal biological distinction in languages usually applies to people and sometimes to other animals) into separate categories, and inanimate things can go in either depending on the noun.</p>
+<p>Note that these are called “genders” because it’s much easier to remember that in French, the words for “boy” and “girl” are in different categories (<em>le</em> garçon and <em>la</em> fille, respectively), than it is to remember that “Japan” and “China” (<em>le</em> Japon and <em>la</em> Chine) are, for example. The term “gender” was given before linguists encountered languages with different types of classes.</p>
+<p>The classification of inanimate nouns has nothing to do with whether they have XX or XY chromosomes, because they don’t even have chromosomes. It might not even apply to humans. In German, “the girl” is “<em>das</em> Mädchen”, which is in the neuter gender, not “<em>die</em> Mädchen”, as feminine nouns would be be marked.</p>
+<p>Most languages with sex-based grammatical classes mark either a two-way masculine/feminine distinction (like Hindi or French), or a three-way masculine/feminine/neuter distinction (like German or Sanskrit).</p>
+</section>
+<section id="animacy-based-grammatical-classes" class="level3">
+<h3 class="anchored" data-anchor-id="animacy-based-grammatical-classes">Animacy-based grammatical classes</h3>
+<p>Another way to categorize nouns is to use animacy instead. This can be observed in the plural morphemes of Cree:</p>
+<p>The singular for “dog” is “atim”, and the plural is “atimwak”, with the animate morpheme “wak”. Meanwhile, the singular for “hat” is “astotin”, and the plural is “astotina”, with the inanimate morpheme “a”.</p>
+<p>There is also something called an animacy hierarchy in some languages. Instead of just simply “animate” and “inanimate”, some nouns are more animate than some other nouns but also less animate than others too. Even speakers in the conversation are considered more animate than speakers outside of it. This also affects word order - more animate nouns must come first, and only then the more inanimate ones. This phenomenon is famously present in Navajo. In English, this would be like if “the cat saw me” was ungrammatical, so you must say “it was me who the cat saw”.</p>
+</section>
+<section id="other" class="level3">
+<h3 class="anchored" data-anchor-id="other">Other</h3>
+<p>The Bantu languages have a different system, where nouns are grouped semantically.</p>
+<p>Look at this data for the following nouns:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>English</th>
+<th>Swahili</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Kenyan person</td>
+<td>Mkenya</td>
+</tr>
+<tr class="even">
+<td>Chinese person</td>
+<td>Mchina</td>
+</tr>
+<tr class="odd">
+<td>Kenyan people</td>
+<td>Wakenya</td>
+</tr>
+<tr class="even">
+<td>Chinese people</td>
+<td>Wachina</td>
+</tr>
+<tr class="odd">
+<td>Person</td>
+<td>Mtu</td>
+</tr>
+<tr class="even">
+<td>People</td>
+<td>Watu</td>
+</tr>
+<tr class="odd">
+<td>Knife</td>
+<td>Kisu</td>
+</tr>
+<tr class="even">
+<td>Knives</td>
+<td>Visu</td>
+</tr>
+<tr class="odd">
+<td>Book</td>
+<td>Kitabu</td>
+</tr>
+<tr class="even">
+<td>Books</td>
+<td>Vitabu</td>
+</tr>
+<tr class="odd">
+<td>Beauty</td>
+<td>Uzuri</td>
+</tr>
+<tr class="even">
+<td>Culture</td>
+<td>Utamaduni</td>
+</tr>
+<tr class="odd">
+<td>Poverty</td>
+<td>Umaskini</td>
+</tr>
+<tr class="even">
+<td>Eye</td>
+<td>Jicho</td>
+</tr>
+<tr class="odd">
+<td>Eyes</td>
+<td>Macho</td>
+</tr>
+<tr class="even">
+<td>Stone</td>
+<td>Jiwe</td>
+</tr>
+<tr class="odd">
+<td>Stones</td>
+<td>Mawe</td>
+</tr>
+</tbody>
+</table>
+<p>Look specifically at common prefixes. You’ll notice that from this data, we have classes for people, for objects, for abstract concepts, and for this weird class involving eyes and stones (likely doesn’t make sense for English speakers). These prefixes also change for number with fusional morphology (so instead of adding a plural morpheme, the class prefix changes form). These classes don’t seem to be based on solely gender or animacy (but the latter is partially a factor), but rather on semantic categories.</p>
+</section>
+<section id="origin" class="level3">
+<h3 class="anchored" data-anchor-id="origin">Origin</h3>
+<p>One reason for why grammatical classes exist is to add a bit of redundancy in environments where a listener may miss a word being said. In English, if someone says, “the house is good”, but you don’t hear the word “house”, then the noun could be almost anything. However, in French, if someone says the same thing, “la maison est bonne”, then the number of possible nouns narrows to only 42% of the original amount, because “la” and “bonne” indicate that the noun is feminine.</p>
+<p>Additionally, it’s just easier to group stuff semantically. If the topics of people’s conversation have certain very common themes, wouldn’t it be easier to mark that grammatically so they would have slightly more cognitive space to talk deeper about that theme instead of having to first identify it through context? This is especially true for the Bantu system.</p>
+<p>Usually, there is a default class. For genders, this is typically neuter, if it exists, or masculine (yeah, I know it’s sexist). For the semantics-based class system, there’s usually a designateed class for “other”.</p>
+</section>
+</section>
+<section id="grammatical-number" class="level2">
+<h2 class="anchored" data-anchor-id="grammatical-number">Grammatical number</h2>
+<p>Another thing that nouns can be marked for is number. Since languages tend to be much older than major mathematical developments, the distinctions might seem somewhat primitive.</p>
+<p>Most languages that distinguish number have singular and plural (one vs.&nbsp;not one). Isn’t that weird? You can see one dog, two dog<em>s</em>, zero dog<em>s</em>, or <img src="https://latex.codecogs.com/png.latex?%5Cpi"> dog<em>s</em> (grammatically, that is - I hope that last one isn’t literally happening because I’d feel bad for that almost one seventh of a dog). And I guess <img src="https://latex.codecogs.com/png.latex?i"> dog<em>s</em> too, but again, that’s only how your brain subconsciously inflects the noun, not because this makes any sense at all. Instead of splitting them into categories which both have infinite values, one category has <img src="https://latex.codecogs.com/png.latex?1"> possible value, while the other has <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D"> possible values - what an imbalance, huh?</p>
+</section>
+</section>
+<section id="verbs" class="level1">
+<h1>Verbs</h1>
+<p>Verbs are the other part of speech that is almost universal. They are usually semantically defined as “actions, states, or occurrences”. I mean I guess - depends on how far you stretch this. A less ambiguous and more mathematically rigorous way, with syntax, is to define verbs as a type of constituent category <img src="https://latex.codecogs.com/png.latex?VP"> in English with properties such as <img src="https://latex.codecogs.com/png.latex?VP%20%5Cto%20VP%20%5C%20%5C%20PP">, <img src="https://latex.codecogs.com/png.latex?VP%20%5Cto%20VP%20%5C%20%5C%20Adv">, <img src="https://latex.codecogs.com/png.latex?S%20%5Cto%20NP%20%5C%20%5C%20VP">, etc. Again, this isn’t a very <em>universal</em> definition, but you can do an analogous thing in other languages. Universally, it’s just a type of syntactic category with certain properties.</p>
+<section id="valency" class="level2">
+<h2 class="anchored" data-anchor-id="valency">Valency</h2>
+<p>Valency is how many arguments a verb takes. An <em>argument</em> is basically an <img src="https://latex.codecogs.com/png.latex?NP"> that is mandatory within a version of a verb. This is a superset of transitivity, too - focusing on objects, such as direct and indirect. In English, the subject is always mandatory, making the valency usually one more than the transitivity.</p>
+<p>The sentence “I ate” is ambitransitive. It can either have a valency of <img src="https://latex.codecogs.com/png.latex?1">, which makes a verb where only the subject matters. Or it can have a valency of <img src="https://latex.codecogs.com/png.latex?2">, where in that version of the verb, something has to be eaten too.</p>
+<p>It gets confusing because you might think anything that can have a case for it is an argument. However, it depends on what’s actually necessary for that version of the verb. For “I ate food in the house”, the “ate” will never care about <em>where</em> it’s being eaten - not in any version of the verb. The <img src="https://latex.codecogs.com/png.latex?PP"> “in the house” is considered an adjunct, not an argument, because the universe will not collapse from a void in semantic space.</p>
+<p>Now, if you remove “food”, the sentence is still grammatical, right? Wouldn’t that make it an adjunct? However, that is just because the “ate” basically becomes a new word, “ate”, with the same form but slightly different semantic meaning and syntactic behavior. Whether something is an adjunct or an argument of a new word depends on the semantic analysis.</p>
+<p>In English, a verb’s valency is among <img src="https://latex.codecogs.com/png.latex?%5C%7B0,%201,%202,%203,%204%5C%7D">.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Valency</th>
+<th>Example</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>“It rains”</td>
+<td>It might seem like “it” is an argument, but semantically, it is a dummy argument.</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>“I sleep”</td>
+<td>The only thing involved is “I”.</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>“I eat food”</td>
+<td>The subject and the object are both arguments.</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>“I give you stuff”</td>
+<td>The dative “you” is now introduced.</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>“I bet you $5 on the game”</td>
+<td>Some analyses include “on the game” as an argument.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tam" class="level2">
+<h2 class="anchored" data-anchor-id="tam">TAM</h2>
+<p>TAM stands for tense, aspect, and mood.</p>
+<section id="tense" class="level3">
+<h3 class="anchored" data-anchor-id="tense">Tense</h3>
+<p>Tense is when the action happens. English has past, present, and future. This might be a suffix (like “-ed” in English for past), an auxiliary verb (like “will” in English for future), or a separate optional time word (like “kemarin” for “yesterday” in Indonesian, which otherwise doesn’t have tense morphology).</p>
+<p>Tense can also combine these. In French, for the default past tense, known as the <em>passé composé</em>, you must conjugate the auxiliary verbs “avior” or “être” (meaning “have” and “be” respectively) in the present tense, and then add a verb form which, in the regular form, is like the infinitive but with a suffix like “-é”, “-i”, or “-u” rather than the infinitive endings “-er”, “-ir”, or “-re”, depending on the verb.</p>
+<p>I talk more about the semantics of tense in <a href="vaishnavs.net/posts/Semantics/">semantics</a>, but this just shows briefly how it is expressed morphosyntactically.</p>
+</section>
+<section id="aspect" class="level3">
+<h3 class="anchored" data-anchor-id="aspect">Aspect</h3>
+<p>Aspect is how the action unfolds within a time frame. It’s kind of hard to formalize, but you usually understand it subconsciously. Compare “I will be leaving” versus “I will leave” versus “I will have been leaving” versus “I will have left”. It’s weird, but you probably get what I mean.</p>
+</section>
+<section id="mood" class="level3">
+<h3 class="anchored" data-anchor-id="mood">Mood</h3>
+<p>Mood is how a verb expresses the speaker’s emotion or intention about the action. Others might yell at me, but I’m gonna group modality and evidentiality under mood too, since they’re similar.</p>
+<p>The indicative mood is usually the default, which just states a fact, like “I exist”. The interrogative asks a question, like “Do you exist?”. The imperative gives a command, like “Exist!”. There are a lot more too, like conditional, subjunctive (hypothetical), and more. One especially cool mood is the admirative, which is a separate morphological form just for how surprised you are, like in Balkan languages. In Albanian, this is not just derived from existing tenses, but rather its own conjugation class.</p>
+<p>Evidentiality (also in Balkan languages) is a form that indicates where the speaker got their information from - first-hand, second-hand, heresay, etc. If you saw directly that something arrived, in Turkish, you would say “geldi”, but if you heard from someone else about it arriving , you would say “gelmiş” (Turkish also has vowel harmony, making muş and mış allomorphs of this).</p>
+<p>Modality is about <em>modal</em> verbs stuff like “can”, “must”, “should”, etc. In English, these are always auxiliary verbs, but in other languages, these can have their own conjugations.</p>
+</section>
+</section>
+</section>
+<section id="agreement" class="level1">
+<h1>Agreement</h1>
+<p>Verbs in a language might <em>agree</em> with some of their arguments - or encode information that is also encoded by the arguments. Why - isn’t this redundant? Yes. But for the same reason as genders, it’s helpful if you miss some key information. And this time, it’s actually key, not just splitting the possible nouns in half, but rather literally containing a crucial piece of semantic information.</p>
+<p>It’s not just verbs that agree with their nouns - adjectives can agree with nouns, nouns can agree with pronouns, and so on.</p>
+<p>It’s common for the verb to agree with the subject for person and number, like in Spanish, which fuses the two - “I eat” is “yo como”, “she eats” is “ella come”, and “we eat” is “nostros comemos”. Hindi also makes verbs agree for gender - “the boy eats” is “ladka: kha:ta: hai” and “the girl eats” is “ladki: kha:ti: hai”. Mandarin, on the other hand, does not make verbs agree with any noun - “I eat” is “wǒ chī”, “you eat” is “nǐ chī”, and “we eat” is “wǒmen chī”.</p>
+<p>The argument a verb agrees with isn’t necessarily the subject. Since Hindi is ergative in the past tense, it agrees with the object. The sentence “the boy learned Hindi” is “ladka:-ne Hindi si:kh<em>i:</em>”. Note that Hindi is feminine. Compare this to “the boy learns Hindi” - “ladka: Hindi sikht<em>a:</em> hai”. From the previous example, you should have figured out that “-i:” is for feminine and “-a:” is for masculine.</p>
+<p>There is also polypersonal agreement - when the verb agrees with not just the subject or the object, but rather both, as well as possibly an indirect object. In Basque, with full redundancy, “nik zuri liburua eman dizut” means “I have given the book to you”. “nik” means “I”, “zuri” means “to you”, and “liburua” means “the book”. But that’s not the interesting part. “eman” means “give”, and “dizut”, in total, is an auxiliary that encodes tense/aspect (“di-”) and all three arguments (in a fusional way in this case).</p>
+<p>Adjectives tend to agree with nouns, if they do at all, for case, number, gender, stuff like that. English does not do this at all - for example, the plural of “the blue cat” is “the blue cats”. In Spanish, though, “funny monkey” is “mono divertido” if it is male and “mona divertida” if it is female, and “funny monkeys” is “monos divertidos” if they are male and “monas divertidas” if they are female. In German (for case), “den blauen Hund” is “the blue dog” if it is accusative, and “der blaue Hund” if it is nominative.</p>
+<p>Nouns agree with pronouns too. Unlike Indonesian, where “he”, “she”, and “it” are all a single pronoun “dia”, English cares about the gender of the noun when it’s substituted for a pronoun. If you say “Bob is mad because she failed”, and you know Bob is indeed a boy, most people will interpret the “she” to refer to someone else whose success Bob cares about. If it refers to Bob, the pronoun will usually be “he”.</p>
+<p>Since agreement is redundant, many languages drop the noun phrases attached to verbs entirely, having them be optional. That’s why you can say “como” rather than “yo como” in Spanish, or “liburua eman dizut” in Basque, dropping the “nik” and “zuri”.</p>
+</section>
+<section id="alignment" class="level1">
+<h1>Alignment</h1>
+<p>Alignment is related to the concept of noun cases, but all languages, even those without cases, have alignment, where the grammatical roles are expressed through a rigid word order instead of case affixes.</p>
+<p>In a transitive sentence, verbs have a valency of at least two - the subject and the object, like “the dog ate food”. In an intransitive sentence, verbs have only one argument, like “the dog slept”. Alignment is basically whether the “dog” in “the dog slept” is treated like the “dog” or the “food” in “the dog ate food”.</p>
+<section id="nominative-accusative" class="level2">
+<h2 class="anchored" data-anchor-id="nominative-accusative">Nominative-Accusative</h2>
+<p>Since English shows cases with word order, and the subject comes before the verb, we know that English treats the argument of intransitive verbs the same as the subject of transitive verbs. This is called nominative-accusative alignment.</p>
+</section>
+<section id="ergative-absolutive" class="level2">
+<h2 class="anchored" data-anchor-id="ergative-absolutive">Ergative-Absolutive</h2>
+<p>Now look at the same sentence in Hindi. “The dog ate food” would be “kuttane khana khaya”, or /kʊt̪t̪an̪e kʰan̪a kʰaja/, and “the dog slept” would be “kutta soya”, or /kʊt̪t̪a soja/. See what happened? The suffix “ne” was only added to the subject of the transitive sentence, while the argument of the intransitive sentence was treated the same as the object of the transitive sentence by not adding any suffix. This is called ergative-absolutive alignment.</p>
+</section>
+<section id="split-ergativity" class="level2">
+<h2 class="anchored" data-anchor-id="split-ergativity">Split-Ergativity</h2>
+<p>Do you recall that we saw Sanskrit use the nominative and accusative cases? Hindi is a descendant of Sanskrit, so why would it be an ergative-absolutive language? Well, it’s actually only ergative-absolutive in the simple past tense. In the present tense, for example, Hindi would work the same as English, treating the subject of a transitive sentence like the argument of an intransitive one (using word order, not case morphemes). When a language uses nominative-accusative alignment in some contexts and ergative-absolutive alignment in others, this is called <em>split-ergativity</em>.</p>
+</section>
+<section id="tripartite" class="level2">
+<h2 class="anchored" data-anchor-id="tripartite">Tripartite</h2>
+<p>There’s also a third alignment. Instead of aligning the argument of an intransitive verb with either argument of a transitive verb, the intransitive argument gets its own marker. An example of this is from the conlang Na’vi from the movie Avatar (the one about aliens, not airbenders). The word for “viperwolf” is “natang” when it’s used in an intransitive sentence, “natangìl” when it’s the subject of a transitive sentence, and “natangt” when it’s the object of a transitive sentence.</p>
+</section>
+<section id="visualization" class="level2">
+<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="alignment.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="See how both types of languages would “align” the noun in an intransitive sentence to one of the nouns in a transitive sentence"><img src="https://vaishnavs.net/posts/Morphosyntax/alignment.png" class="img-fluid figure-img" alt="See how both types of languages would “align” the noun in an intransitive sentence to one of the nouns in a transitive sentence"></a></p>
+<figcaption>See how both types of languages would “align” the noun in an intransitive sentence to one of the nouns in a transitive sentence</figcaption>
+</figure>
+</div>
+<p>Note that the word order doesn’t literally have to change, that’s only a way to show how the nouns align. For example, if these relations are marked by case, then the word order would be free.</p>
+</section>
+</section>
+<section id="movement" class="level1">
+<h1>Movement</h1>
+<p>Some syntactic frameworks talk about <em>movement</em> - quite self-explanatory, but basically when certain conditions trigger a phrase to <em>move</em> somewhere else. This is either a stylistic choice to emphasize something, or required. I’ll show some examples.</p>
+<p>In German, if a <img src="https://latex.codecogs.com/png.latex?PP"> is at the start of a sentence, the verb is required to come even before the subject. This is because German has V2 word order - the verb must be the second element. That’s why you can say “Ich esse in dem Haus” (“I eat in the house”), but if “in dem Haus” comes first, it must be “In dem Haus esse ich”.</p>
+<p>English actually has remnants of this too. You can say “I have never eaten pineapple on pizza” (very good job if this is true), or “Never have I eaten pineapple on pizza”. The latter is way less common, but it’s still grammatical to most people. However, you can say “I eat in the house” or “In the house, I eat”, but not “In the house eat I”. That’s why the V2 rule mostly died out in English.</p>
+<p>English also has somewhing called <em>wh</em>-movement. <em>Wh</em>y wh (see what I did there)? Well, what English words start with that? Question words - who, what, why, where, when!</p>
+<p>Generally, people will say “what did you eat”, not “you ate what”, UNLESS they are repeating it to confirm something, like: “I ate pineapple on pizza”; “you ate WHAT???” Otherwise, the question word will almost always move to the beginning.</p>
+<p>Not all languages work this way. Hindi would say “tum kya: kha:te ho” for “what do you eat”, and “tum ais kri:m kha:te ho” for “you eat ice cream” - see how it’s in the same position?</p>
+<p>Many European languages, for yes or no questions, put the verb at the very beginning. In French, one of the ways to say “did you eat pineapple on pizza?” is “manges-tu de l’ananas sur la pizza?”, but other more common constructions exist too. In German, this construction is mandatory.</p>
+<p>Navajo’s animacy movement is central to its sentences - the speakers must figure out some way to phrase their sentences to order the noun phrases by animacy.</p>
+<p>English can have optional movement to emphasize stuff. Instead of saying “I ate pineapple on pizza”, you might say “it was the pineapple on pizza that I ate”, if you believe the pineapple on pizza to be the more important and relevant part compared to yourself, the subject. The listener will usually subconsciously think the first noun is the most important, even when it’s not actually. This might explain the emergence of Navajo’s structure.</p>
+<p>Note that the existence of movement depends on the syntactic theory. Chomsky’s Generative Grammar strongly supports it, but Construction Grammar (which largely views Chomsky’s theories to be pseudoscience) believes that rather than having actual movement, there’s just a bunch of different constructions, or ways to put together words.</p>
+</section>
+<section id="how-different-languages-classify-constituents" class="level1">
+<h1>How different languages classify constituents</h1>
+<p>Nouns and verbs are mostly universal. However, some other parts of speech aren’t.</p>
+<p>In Korean, adjectives only encompass the structure <img src="https://latex.codecogs.com/png.latex?NP%20%5Cto%20A%20%5C%20%5C%20NP">. Where in English you’d instead have <img src="https://latex.codecogs.com/png.latex?NP%20%5C%20%5C%20%5B%5Ctext%7Bcopula%7D%5D%20%5C%20%5C%20A">, Korean’s structure is just <img src="https://latex.codecogs.com/png.latex?NP%20%5C%20%5C%20VP"> - so “he is funny” would be treated as something like “he funnies”. So, some instances of adjectives in English are actually verbs in Korean.</p>
+<p>Many languages, including Korean (again!!!), don’t distinguish adjectives and adverbs that modify verbs. So, in Korean, you can just say something like “he runs quick” rather than “he runs quickly”. To be fair, English speakers tend to do this too, but it’s heavily discouraged by prescriptivists.</p>
+<p>Speaking of adverbs, English does inherently distinguish adjective-modifying and verb-modifying adverbs. I have no idea why there are considered the same in traditional grammar, other than the fact that all the prescriptivists are just old people who have no idea what they’re doing and just want to sound smart when they’re really not.</p>
+<p>In Quechua, adjectives are actually nouns, and nouns get “modified” using possession. “hatun” means “bigness” and “wasi” means “house”, so “hatun wasi” semantically means “big house” but literally “house of bigness”. Another example - “runa” is “person” and “allin” is “goodness”, and “runa allin” means “good person”, but literally “person of goodness”.</p>
+<p>I think you now understand that unlike nouns and verbs, adjectives are quite controversial.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>So, most of the gaps that weren’t covered by morphology or syntax alone should haven been covered by this article. Now, we jump from structure to meaning. If you haven’t read <a href="https://vaishnavs.net/posts/Semantics/">semantics</a> yet, then read that. Otherwise, stay tuned for semantics part 2, which talks about embedding vectors, and pragmatics.</p>
+</section>
+<section id="further-information" class="level1">
+<h1>Further Information</h1>
+<ul>
+<li><p>The statistic that 42% of French nouns are feminine comes from <a href="https://universaldependencies.org/treebanks/fr_ftb/fr_ftb-feat-Gender.html?">here</a>.</p></li>
+<li><p>The Cree animacy example is from <a href="https://socialsci.libretexts.org/Courses/Canada_College/ENGL_LING_200%3A_Introduction_to_Linguistics/04%3A_Words-_Morphology/03%3A_Morphemes">this course</a>.</p></li>
+<li><p>This <a href="https://www.youtube.com/shorts/XCRsiJttIAQ">human1011 short</a> talks about a Turkish saying about obligatory evidentiality.</p></li>
+<li><p>Here is an <a href="https://en.wikipedia.org/wiki/Animacy#Navajo_(Din%C3%A9)">example</a> of Navajo animacy order.</p></li>
+<li><p>The first section of <a href="https://learnnavi.org/navi-grammar/">this page</a> talks more about Navi’s tripartite alignment.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>Linguistics</category>
+  <guid>https://vaishnavs.net/posts/Morphosyntax/</guid>
+  <pubDate>Mon, 07 Sep 2026 07:00:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Morphosyntax/alignment.png" medium="image" type="image/png" height="61" width="144"/>
+</item>
 <item>
   <title>Proto-Zorbbbb</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
@@ -3308,9 +3630,6 @@ Multiplication ==&gt; 2["2"]
 
 
 
-<blockquote class="blockquote">
-<p>This is a series of blogs on linguistics. See also: <a href="../Phonology/"><em>Phonology</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics/"><em>Phonetics</em></a></p>
-</blockquote>
 <section id="confusing-introduction" class="level1">
 <h1>Confusing Introduction</h1>
 <p>Previously, in <a href="../../posts/Writing-Systems/index.html">orthographies</a>, <a href="../../posts/Phonology/index.html">phonology</a>, and <a href="../../posts/Phonetics/index.html">phonetics</a>, we’ve discussed <em>sounds</em> and their symbols. Now, we take a step further into <em>meaning</em>.</p>
@@ -3448,9 +3767,6 @@ Multiplication ==&gt; 2["2"]
 
 
 
-<blockquote class="blockquote">
-<p>This is a series of blogs about linguistics. See also: <a href="../Morphology-and-Semantics/"><em>Morphology and Semantics</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part2/"><em>Phonetics and Phonology Part 2</em></a></p>
-</blockquote>
 <section id="how-sounds-work" class="level1">
 <h1>How Sounds Work</h1>
 <p>At first, the question of “how do sounds work” may seem dumb - you just vibrate your vocal cords, right? However, it’s more complicated than that. When you were a baby, you were as educated as a linguistics major in that you were able to identify how different sounds are made from observing people’s mouths. Now, it’s more difficult to do so, and you may struggle - unless, of course, you’re a baby reading this, and in that case, you should become incredibly famous and win a world record if you haven’t already.</p>
@@ -3577,9 +3893,6 @@ Cool fact to bore your friends with and be called a nerd!!!
 
 
 
-<blockquote class="blockquote">
-<p>This is a series of blogs on linguistics. See also: <a href="../Morphology-and-Semantics/"><em>Morphology</em></a>, <a href="../Writing-Systems/"><em>Writing Systems</em></a>, <a href="../Phonetics-and-Phonology-Part1/"><em>Phonetics</em></a></p>
-</blockquote>
 <section id="the-ipa-review" class="level1">
 <h1>The IPA Review</h1>
 <p>The <a href="https://vaishnavs.net/posts/The%20IPA/"><em>International Phonetic Alphabet</em></a>, or the IPA, is how sounds are represented. Each letter is consistent and makes the same sound all the time, because they are defined using the specific terms we talked about in the Phonetics blog post. To fully understand how some of the examples in this post are pronounced, you might want to check out <a href="https://www.ipachart.com/">the IPA chart</a>.</p>
@@ -3913,435 +4226,6 @@ Cool fact to bore your friends with and be called a nerd!!!
   <guid>https://vaishnavs.net/posts/Craftic/</guid>
   <pubDate>Wed, 16 Jul 2025 07:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Craftic/craftic_jump.png" medium="image" type="image/png" height="164" width="144"/>
-</item>
-<item>
-  <title>Limit riLmOtOpU (Limit For Monkeys)</title>
-  <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Limit-riLmOtOpU/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>I first heard of <a href="https://en.wikipedia.org/wiki/Constructed_language">constructed languages</a>, or <em>conlangs</em>, when I heard of <a href="https://en.wikipedia.org/wiki/Esperanto">Esperanto</a>. I did my research and found out that Esperanto is a terrible conlang for reaching its purpose, which was to promote world peace, since it was so Eurocentric. I also heard of <a href="https://en.wikipedia.org/wiki/Toki_Pona">Toki Pona</a>, which combines many different languages, and is very simple due to its limited vocabulary. I wanted to make my own language, which is completely different from any other language, but has very simple grammar and vocabulary.</p>
-<blockquote class="blockquote">
-<p>Limit is my first conlang, and the majority of it was made before I knew any linguistics, so it understandably is really really awful. However, I guess it also means it’s less overcomplicated that my later conlangs.</p>
-</blockquote>
-</section>
-<section id="pronunciation-and-alphabet" class="level2">
-<h2 class="anchored" data-anchor-id="pronunciation-and-alphabet">Pronunciation and Alphabet</h2>
-<p><em>Limit</em> is written in Roman characters (for now, that is; we will introduce the real writing system later), but there are some rules to how the script works.</p>
-<p>Consonants are mostly lowercase, with the only exception being the letter “L”, which is always capitalized. Each consonant is a short sound. Short vowel sounds are lowercase, while long vowel sounds are uppercase. The language is almost phonetic; the pronunciation is exactly what is written, apart from a few rules. There are no silent letters.</p>
-<p>Examples for how to write and pronounce vowels:<br>
-1. A short “O” like in the word “dog” would be lowercase.<br>
-2. A long “A” like in the word “cake” would be uppercase.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A quick note: The letter “U” (capital, which means long) does not contain a “y” sound in its pronunciation. It sounds like the o’s in the word “food” rather than the u in the word “university”.<br>
-There are some vowel and consonant sounds, of course, that cannot be produced with just the Roman alphabet. Therefore, the Limit alphabet contains some extra characters as well.</p>
-</div>
-</div>
-<section id="extra-vowel-sounds" class="level3">
-<h3 class="anchored" data-anchor-id="extra-vowel-sounds">Extra vowel sounds</h3>
-<ul>
-<li>“%” sounds like “oo” in the word “book”.<br>
-</li>
-<li>“@” sounds like “ow” like in the word “now”.<br>
-</li>
-<li>“α” sounds like “ah” like in the word “drama”<br>
-</li>
-<li>“&amp;” sounds like “oi” like in the word “boy”.<br>
-</li>
-<li>“*” sounds like “er” like in the word “singer”.<br>
-</li>
-<li>“^” sounds like “on” like in the word “bon” in French (used for foreign loanwords).</li>
-</ul>
-</section>
-<section id="extra-consonant-sounds" class="level3">
-<h3 class="anchored" data-anchor-id="extra-consonant-sounds">Extra consonant sounds</h3>
-<ul>
-<li>“#” sounds like “zh”, like in the s in “measure”.<br>
-</li>
-<li>“~” sounds like “th”, like in the word “think”.<br>
-</li>
-<li>“β” sounds like the n in “song”.<br>
-</li>
-<li>“!” sounds like “sh”, like in the word “shook”.</li>
-</ul>
-</section>
-<section id="other-adjustments-to-the-alphabet" class="level3">
-<h3 class="anchored" data-anchor-id="other-adjustments-to-the-alphabet">Other adjustments to the alphabet</h3>
-<ul>
-<li>To make the “ar” or “or” sound, take “α” or “O” and add “*”.<br>
-</li>
-<li>The letter “c” is removed as its sound can be made from either “k” or “s”.<br>
-</li>
-<li>The letter “g” only can sound like the g in “gray”, and NOT sound like a j, like in “giraffe”.<br>
-</li>
-<li>The letter “j” is removed as any sound with a “j” can be made from “d#”.<br>
-</li>
-<li>The letter “q” is removed as any “qu” sound can be made with “kw” instead. “u”, however, is still perfectly safe as it is important for various vowel sounds.<br>
-</li>
-<li>The letter “x” is removed as any sound with an “x” can be made from either “ks” or “z”.<br>
-</li>
-<li>The letter “i” is pronounced as IPA [y], like “y” in Finnish or “u” in French.</li>
-<li>The letter “L” is pronounced as IPA character of the same shape, like the “L” sound in the word “pull”.</li>
-<li>Slashes indicate that some specific words are grouped together.</li>
-</ul>
-<p>One last thing: Limit is pronounced in an Australian accent, with the modifications from these rules.</p>
-</section>
-</section>
-<section id="orthography" class="level2">
-<h2 class="anchored" data-anchor-id="orthography">Orthography</h2>
-<p>Every consonant (the default form of each phoneme, ignoring the allophonic variations) is a node representing its position in the IPA when you plot places against manners of articulation. The starting node is a hollow circle for voiceless consonants and a filled in circle for voiced consonants. You draw vectors from one node to the next to represent subsequent consonants. If a word starts with a vowel, you can start with either k or f, in accordance to the sandhi and allophony. If two consecutive consonants are the same, then the vector is a circle with radius <img src="https://latex.codecogs.com/png.latex?1">, starting from that consonant and making a full loop through the <img src="https://latex.codecogs.com/png.latex?n">-th roots of unity (where this node is the local origin), where <img src="https://latex.codecogs.com/png.latex?n"> is the number of consonants you have done before doing this repeated one, and drawing an arrow at the end before getting to that node again. For vowels in between consonants, draw a grid starting from the top-left corner of a vowel diagram to show how deep the vowel is. If the vowel is rounded, shade alternating squares (starting from the top-left corner) like a checkerboard, and otherwise, none of the squares are filled in. Specifically for /i/ and /y/ (since their rectangle would just be a point), draw an X or a ✔ on that line respectively. In the middle of the line, it is optional to put a top hat shaped thingy with a ribbon sticking from it.</p>
-<p>Note that the entire thing is basically a directed multigraph.</p>
-</section>
-<section id="pronouns-and-verbs" class="level2">
-<h2 class="anchored" data-anchor-id="pronouns-and-verbs">Pronouns and Verbs</h2>
-<p>If you have a pronoun and a verb, you have a simple sentence, so let us start here in our journey to learn real Limit words. There is no gender or verb conjugation for each pronoun in Limit, so this should be simple.</p>
-<section id="pronouns" class="level3">
-<h3 class="anchored" data-anchor-id="pronouns">Pronouns</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>English</th>
-<th>Limit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>I</td>
-<td>LI</td>
-</tr>
-<tr class="even">
-<td>You</td>
-<td>dI</td>
-</tr>
-<tr class="odd">
-<td>He/She/It</td>
-<td>krI</td>
-</tr>
-<tr class="even">
-<td>We</td>
-<td>LId</td>
-</tr>
-<tr class="odd">
-<td>You (plural)</td>
-<td>dId</td>
-</tr>
-<tr class="even">
-<td>They</td>
-<td>krId</td>
-</tr>
-</tbody>
-</table>
-<p>To make any of these pronouns formal, just add the prefix “yU”.<br>
-To make any of these pronouns insulting, just add the prefix “yoL”. If you are talking directly to someone, add the suffix “*” or “p*” for “dId” and “dI” respectively.</p>
-</section>
-<section id="verbs" class="level3">
-<h3 class="anchored" data-anchor-id="verbs">Verbs</h3>
-<p>Present tense: Suffix “UL”<br>
-Past tense: Suffix “Uz”<br>
-Future tense: Suffix “Uk”<br>
-To make something infinitive, remove the Uz/UL/Uk and add the suffix “Up”.<br>
-To negate a verb, add the suffix “O#U” or “#U” (depending on if it ends in a vowel or consonant) at the very end of the word.</p>
-<section id="example" class="level4">
-<h4 class="anchored" data-anchor-id="example">Example</h4>
-<ul>
-<li>To eat is “brikUp”.<br>
-</li>
-<li>“I did not eat” would be “LI brikUzO#U”.</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="syntax" class="level2">
-<h2 class="anchored" data-anchor-id="syntax">Syntax</h2>
-<p>Here are some rules for sentence structure:</p>
-<ul>
-<li>The order of a declarative sentence is Subject Object Verb.<br>
-</li>
-<li>Adjectives always come after nouns, attached by a slash, without spaces.<br>
-</li>
-<li>Articles come after nouns as well, also attached by a slash without spaces.<br>
-</li>
-<li>If there is an article and an adjective, the adjective comes after the article, and the adjective and the article are combined with slashes as well.<br>
-</li>
-<li>Adverbs come before the verb or adjective that they modify, with a backslash with no spaces. If they modify an adjective, then it goes before the noun.<br>
-</li>
-<li>There is no distinction between proper and common nouns.<br>
-</li>
-<li>Prepositions work the same way as in English.<br>
-</li>
-<li>Objects, like in English, do not have to just be nouns but also any verb phrase that acts as a noun. Predicate adjectives and predicate nominatives also count as objects.<br>
-</li>
-<li>Prepositional phrases (like “in the house”) count as objects as well.<br>
-</li>
-<li>Indirect objects come right before direct objects.<br>
-</li>
-<li>Indirect objects have the suffix “b”, or “Ob” if the word ends in a consonant.<br>
-</li>
-<li>Predicate adjectives would actually be adverbs, as they modify the word “bLIvUp”.<br>
-Examples:<br>
-Write “I like to eat” in Limit syntax and spelling.<br>
-I tU Et LIk<br>
-Write “I give you a green box” in Limit syntax and spelling.<br>
-I yUhU boks/A/grEn giv</li>
-</ul>
-</section>
-<section id="inflections" class="level2">
-<h2 class="anchored" data-anchor-id="inflections">Inflections</h2>
-<p>To inflect a word ending in O, make the final consonant of the inflection thing voiceless. For example, the plural of “riLmO” (monkey) will be “riLmOt” instead of “riLmOd” (riLmOd is not a real word for that reason). And, the possessive of “riLmO” will be “riLmOf” instead of “riLmOv”. Likewise, you’d say “riLmOkE” instead of “riLmOgE”, “riLmOpU” instead of “riLmObU”, and “riLmOsA” instead of “riLmOzA”.</p>
-</section>
-<section id="punctuation" class="level2">
-<h2 class="anchored" data-anchor-id="punctuation">Punctuation</h2>
-<p>Commas are written as “~”.<br>
-Periods are written as “-”.<br>
-Quotation marks are written as “+” on either end of the quote.<br>
-Question marks are just a word, that being “LE”.</p>
-</section>
-<section id="possession" class="level2">
-<h2 class="anchored" data-anchor-id="possession">Possession</h2>
-<section id="possessive-pronounsadjectives" class="level3">
-<h3 class="anchored" data-anchor-id="possessive-pronounsadjectives">Possessive pronouns/adjectives</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>English</th>
-<th>Limit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>My/Mine</td>
-<td>“LIv”</td>
-</tr>
-<tr class="even">
-<td>Your/Yours</td>
-<td>“krIv”</td>
-</tr>
-<tr class="odd">
-<td>His/Her/Its</td>
-<td>“dIv”</td>
-</tr>
-<tr class="even">
-<td>Our/Ours</td>
-<td>“LIdOv”</td>
-</tr>
-<tr class="odd">
-<td>Your/Yours (plural)</td>
-<td>“krIdOv”</td>
-</tr>
-<tr class="even">
-<td>Their/Theirs</td>
-<td>“dIdOv”</td>
-</tr>
-</tbody>
-</table>
-<p>How to use a possessive noun for a person (for example, “That is Bob’s”):<br>
-Add “Ov” to the end of their name if it ends in a consonant, otherwise add “v”.<br>
-If the noun it modifies is plural, then add “Od” or “d”.<br>
-Examples:<br>
-My books are big = “zO*pOd/LIvOd Lib blivUL”<br>
-The world is mine = “h%d/vU LIv blivUL”</p>
-</section>
-</section>
-<section id="adjectives" class="level2">
-<h2 class="anchored" data-anchor-id="adjectives">Adjectives</h2>
-<section id="articles" class="level3">
-<h3 class="anchored" data-anchor-id="articles">Articles</h3>
-<p>The (singular): vU<br>
-The (plural): vUd<br>
-Indefinite articles are implied if there is no article.<br>
-Remember, the articles go after the noun and before another adjective, connected with a slash.</p>
-</section>
-<section id="demonstratives" class="level3">
-<h3 class="anchored" data-anchor-id="demonstratives">Demonstratives</h3>
-<p>This: #%t<br>
-That: #at<br>
-Those: #atOd<br>
-These: #%tOd<br>
-Demonstratives go after the noun and before another adjective, connected with a slash, just like articles. If they are pronouns, then just treat them as pronouns instead.</p>
-</section>
-<section id="plurals" class="level3">
-<h3 class="anchored" data-anchor-id="plurals">Plurals</h3>
-<p>Adjectives have to agree with their noun in number. If the noun is singular, the adjectives will also be singular, and if the noun is plural, the adjectives will also be plural. To make a noun or an adjective plural, add a “d” if it ends in a vowel, and add an “Od” if it ends in a consonant.<br>
-Adjective phrases also go after the noun, and just the first word of the adjective phrase will be combined with a slash to the noun.<br>
-There will also be a slash after the last word, if the adjective phrase is more than a single word.</p>
-</section>
-</section>
-<section id="adverbs" class="level2">
-<h2 class="anchored" data-anchor-id="adverbs">Adverbs</h2>
-<p>To turn an adjective into an adverb, add the prefix “.@”.<br>
-This is analogous to adding an “ly” at the end in English.<br>
-Adverbs go right before the adjective, verb, or adverb that they modify.<br>
-Example:<br>
-The word for “real” is “gOhO”, which means the word for “really” is “.@gOhO”.<br>
-I am really good = “LI .@gOhO\LimitO#U blivUL”</p>
-</section>
-<section id="allophony" class="level2">
-<h2 class="anchored" data-anchor-id="allophony">Allophony</h2>
-<p>Apply these variations in order:</p>
-<ul>
-<li>Any nasal followed directly by a vowel must be turned into a voiceless trill of the same place of articulation
-<ul>
-<li>For example, the “m” in “Limit” is pronouned like the “pppp” in Proto-Zorbbbb.</li>
-</ul></li>
-<li>Any word starting with a vowel is pronounced with an “f” if the vowel is rounded and a “k” if the vowel is unrounded.</li>
-<li>Any word ending with a vowel must be pronounced with the same consonants that are added if a word starts with a vowel, except rounded and unrounded are reversed.</li>
-<li>Any word ending with a consonant (which is all of them, at this point) must be pronounced, after the consonant, with a monkey scream (a shriek of [ɐ] at the top of your lungs) if the consonant is voiced and a grunt (a very low-pitch, almost confused-sounding [œ]) if the consonant is voiceless. This additional noise is never written. Also, the final consonant is an ejective consonant.</li>
-<li>Starting stops become fricatives, and starting fricatives become stops. This part only applies to pronunciation, not orthography.</li>
-</ul>
-</section>
-<section id="numbers" class="level2">
-<h2 class="anchored" data-anchor-id="numbers">Numbers</h2>
-<p>Base 10 is used, like normal.<br>
-One shorthand is implemented; whenever there is a 1 followed by a 0, it is written as θ.<br>
-Numbers are written as normal Arabic numerals, but obviously they are said differently.<br>
-0: “fA”<br>
-1: “hα”<br>
-2: “rO”<br>
-3: “d#U”<br>
-4: “yA”<br>
-5: “.a”<br>
-6: “brU”<br>
-7: “,O”<br>
-8: “we”<br>
-9: “gI”<br>
-To get more numbers, you do the following:<br>
-Write each digit in the bigger number as the sum of each digit times a power of <img src="https://latex.codecogs.com/png.latex?10">. For example, <img src="https://latex.codecogs.com/png.latex?243"> would be <img src="https://latex.codecogs.com/png.latex?2%20%5Ccdot%2010%5E2+4%20%5Ccdot%2010%5E1+3%20%5Ccdot%2010%5E0">.<br>
-You may know that “time ten to the power of” can also be written as “E”. In Limit, the symbol for this is ““=”, pronounced “sigmα”. Fun fact: this word also means “and”.<br>
-You would write the each place value from highest exponent to lowest.<br>
-Instead of saying plus, you would just combine each term with a slash.<br>
-Units digits do not need to be written as a=0, just a.<br>
-Back to the example of 243, in Limit you would say this as:<br>
-2=2/4=1/3, and pronounce this as rO=rO/yA=hα/jU, and remember that = is pronounced as sigmα.<br>
-For negative numbers, add the suffix “yO”.<br>
-For ordinal numbers, add the suffix “hO”, after the “yO” if it is there.<br>
-For fractions, just use the postposition for “in”, which is the suffix “krA” or “OkrA”. There will be a space after that.<br>
-You can also just list each digit, but then you must indicate the decimal point when applicable, which is pronounced as “%nd” and is written as “*”.<br>
-Example:<br>
-You would say “31.4th” as “jU<img src="https://latex.codecogs.com/png.latex?h%CE%B1/h%CE%B1/yA">hαyOhO”.</p>
-</section>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p>Just say the equivalent declarative sentence, then add “LE-” (which means question mark) to the end.<br>
-Phrasing Examples:<br>
-“Which one do you like?” -&gt; “You one/which like LE-”<br>
-“How are you?” -&gt; “You how are LE-”<br>
-Here’re the interrogative words:<br>
-What:</p>
-</section>
-<section id="commands" class="level2">
-<h2 class="anchored" data-anchor-id="commands">Commands</h2>
-<p>State the equivalent in a future tense declarative sentence, and speak in 2nd person. Use the word for please, “hok”, at the end of the sentence, after the verb.<br>
-Phrasing Examples:<br>
-“Go to bed.” -&gt; “You will to bed go hok-”<br>
-Also, instead of saying “hok”, you can say “bOLOdOwO#O”, which is short for “bU LI dI wopLUkO#U”, which means something along the lines of “or I will kill you”.<br>
-Fun fact: the word “hok” is actually a loanword from Proto-Zorbbbb.</p>
-</section>
-<section id="prepositions" class="level2">
-<h2 class="anchored" data-anchor-id="prepositions">Prepositions</h2>
-<p>First, be sure to note that Limit uses a suffix for prepositions (so they are actually postpositions) like “in”, “at”, “during”, “of”, etc; this means anything that gives the position or time, not something that is being headed towards. This suffix is “gE”, or “OgE”, depending on if the word ends in a vowel or consonant.<br>
-There is also a suffix for something you are heading to. This includes words such as “before”, “to”, or “for”. The suffix is “bU”, or “ObU”, depending on if the word ends in a vowel or consonant.<br>
-Finally, for something you are coming from, such as “from”, “after”, or “past”, the suffix will be either “zA” or “OzA”.</p>
-</section>
-<section id="general-rule-of-affixes" class="level2">
-<h2 class="anchored" data-anchor-id="general-rule-of-affixes">General Rule of Affixes</h2>
-<p>If the word ends in a consonant, and the suffix starts with a consonant, then put an “O” between them.<br>
-If the word ends in a vowel and the suffix starts with a consonant, or the other way around, then there is no need for an extra “O”.<br>
-This same intuition is to be applied to prefixes.</p>
-</section>
-<section id="conjunctions" class="level2">
-<h2 class="anchored" data-anchor-id="conjunctions">Conjunctions</h2>
-<p>The conjunctions (subordinating and coordinating, and also including relative pronouns) are:<br>
-And: “=”<br>
-Or: “bI”<br>
-But: “pA”<br>
-So: “skibidE”<br>
-If: “*m”<br>
-Note for the next two: If these account for plural antecedents, then add a “d”.<br>
-Who/That/Which (as a subordinate): “Ligmα”<br>
-Whose: “Ligmαv”</p>
-</section>
-<section id="abbreviations" class="level2">
-<h2 class="anchored" data-anchor-id="abbreviations">Abbreviations</h2>
-<p>Just like how there’s “ts pmo” for [censored], in Limit there are abbreviations too. Except, between consonants, you must add a “@”. For example, bU LI dI wopLUkO#U becomes bOLOdOwO#O. Also, negation affixes are important enough to count as their own word, so just put #O at the end if it is negated, like in this one.</p>
-</section>
-<section id="comparatives-and-superlatives" class="level2">
-<h2 class="anchored" data-anchor-id="comparatives-and-superlatives">Comparatives and Superlatives</h2>
-<p>How you would phrase this:<br>
-[Subject] [Person, indirect form] [Attribute, locative form] [Win/Lose].<br>
-The [Person, indirect form] can be removed if the sentence is superlative.<br>
-Note that the indirect form and the locative form both have a postpositional ending, so it may be confusing.<br>
-The attribute must be a verb. Nouns, adjectives, and adverbs must be reworded.</p>
-</section>
-<section id="vocabulary-in-progress" class="level2">
-<h2 class="anchored" data-anchor-id="vocabulary-in-progress">VOCABULARY (in progress)</h2>
-<p>Alright, now that you know all the grammar rules, let’s get into the vocabulary, so you can actually speak in Limit. There aren’t that many vocabulary words, instead you must take the basic vocabulary words and combine them. To negate a word (to make it opposite, basically) add the suffix “O#U” or “#U”, which works for verbs, adjectives, nouns, etc. The core vocabulary is mainly for neutral or negative connotation, and to get positive connotation, just negate it.</p>
-<p><strong>Nouns:</strong><br>
-Person: nUvak<br>
-Monkey: riLmO<br>
-Ignorance: zO*p<br>
-World: h%d<br>
-Non-primate organism: tEkU<br>
-Tool: dOmα*<br>
-Name: Eskα<br>
-Age: derUm<br>
-Evilness: Limit<br>
-Time: dUrin<br>
-Motion: cU<br>
-Size: pLevI<br>
-Color: snib<br>
-Goal: wOksO<br>
-X-axis: dAb<br>
-Y-axis: vEb<br>
-Z-axis: LUb<br>
-Nature: nuk<br>
-Quantity: LodO<br>
-Food: gla*nE<br>
-Set: rimU</p>
-<p><strong>Adjectives:</strong></p>
-<p>Evil: Limit<br>
-Small: pLevI<br>
-Slow: kU<br>
-Incorrect: kIf<br>
-Old: derUm<br>
-Ugly: t!Untab<br>
-Cold: mEkO<br>
-Late: dUrin<br>
-Yucky: gla*nE<br>
-Black: snib<br>
-Blue: mraflet<br>
-Yellow: krUgnip<br>
-Red: yundrask<br>
-Liquid: vUgis Weird: kitU</p>
-<p><strong>Verbs (infinitive):</strong><br>
-Hate: netAbUp<br>
-Go: drekInUp<br>
-Use: gUatUp Make: wopLUp<br>
-Not know: zO*pUp Steal: prIksUp<br>
-Want: kutlOrUp</p>
-
-
-</section>
-
- ]]></description>
-  <category>Conlangs</category>
-  <guid>https://vaishnavs.net/posts/Limit-riLmOtOpU/</guid>
-  <pubDate>Thu, 03 Jul 2025 07:00:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Limit-riLmOtOpU/LimitFlag.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
