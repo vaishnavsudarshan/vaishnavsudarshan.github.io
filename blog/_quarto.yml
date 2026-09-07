@@ -9,6 +9,8 @@ website:
   navbar:
     right:
       - about.qmd
+      - colophon.qmd
+      - puzzles.qmd 
       - icon: rss
         href: index.xml
       - icon: github
@@ -19,14 +21,10 @@ website:
             href: https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1 
       - icon: graph-up-arrow
         href: https://tinyurl.com/vaishnav-blog-stats
-      - icon: info-circle
-        href: https://vaishnavs.net/colophon.qmd
-      - icon: puzzle-piece
-        href: https://vaishnavs.net/puzzles.qmd 
   comments: 
     giscus: 
       repo: vaishnavsudarshan/vaishnavsudarshan.github.io 
-      repo-id: R_kgDONzCjJQ 
+      repo-id: R_kgDOzCjJQ 
       category: Announcements 
       category-id: DIC_kwDONzCjJc4C_jEt 
       mapping: pathname 
