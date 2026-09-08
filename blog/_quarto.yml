@@ -10,7 +10,6 @@ website:
     right:
       - about.qmd
       - colophon.qmd
-      - puzzles.qmd 
       - icon: rss
         href: index.xml
       - icon: github

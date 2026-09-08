@@ -276,3 +276,50 @@ So, most of the gaps that weren't covered by morphology or syntax alone should h
 * Here is an [example](https://en.wikipedia.org/wiki/Animacy#Navajo_(Din%C3%A9)) of Navajo animacy order.
 
 * The first section of [this page](https://learnnavi.org/navi-grammar/) talks more about Navi's tripartite alignment. 
+
+
+```{mermaid}
+graph TD
+S --> NP
+S --> VP
+NP --> I
+VP --> V
+V --> saw
+VP --> NP1["NP"]
+NP1 --> NP2["NP"]
+NP2 --> Det
+NP2 --> N
+Det --> the
+NP1 --> PP
+PP --> P
+PP --> NP3["NP"]
+N --> guy
+P --> with
+NP3 --> Det1["Det"]
+NP3 --> N2["N"]
+Det1 --> the1["the"]
+N2 --> binoculars
+```
+
+```{mermaid}
+graph TD
+S --> NP
+S --> VP
+NP --> I
+VP --> VP1["VP"]
+VP --> PP
+VP1 --> V
+VP1 --> NP1["NP"]
+V --> saw
+NP1 --> Det
+Det --> the
+NP1 --> N
+N --> guy
+PP --> P
+P --> with
+PP --> NP2["NP"]
+NP2 --> Det2["Det"]
+NP2 --> N1["N"]
+Det2 --> the1["the"]
+N1 --> binoculars
+```

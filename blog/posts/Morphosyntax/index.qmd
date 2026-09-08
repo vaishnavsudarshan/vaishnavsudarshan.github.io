@@ -77,7 +77,7 @@ Note that these are called "genders" because it's much easier to remember that i
 
 The classification of inanimate nouns has nothing to do with whether they have XX or XY chromosomes, because they don't even have chromosomes. It might not even apply to humans. In German, "the girl" is "*das* Mädchen", which is in the neuter gender, not "*die* Mädchen", as feminine nouns would be be marked. 
 
-Most languages with sex-based grammatical classes mark either a two-way masculine/feminine distinction (like Hindi or French), or a three-way masculine/feminine/neuter distinction (like German or Sanskrit). 
+Most languages with gender-based grammatical classes mark either a two-way masculine/feminine distinction (like Hindi or French), or a three-way masculine/feminine/neuter distinction (like German or Sanskrit). 
 
 ### Animacy-based grammatical classes
 
