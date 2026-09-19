@@ -37,7 +37,7 @@
 <p>Recall from <a href="https://vaishnavs.net/posts/Syntax-Part-1/">syntax</a> that these orderings are all part of a larger concept called head-directionality.</p>
 <p>Anyway, what I want to talk about is how analytic and synthetic languages differ with how free their word order is.</p>
 <p>Analytic languages don’t inflect for stuff like case, and case is what determines the relations between the nouns in a sentence. Because syntactic roles are not marked on nouns, word order is what determines that, so analytic languages have strict word order. You can say “the guy sees the city”, but if you say “sees the city the guy” or “the city sees the guy”, it would either sound ungrammatical or nonsensical.</p>
-<p>Meanwhile, synthetic languages have a lot more inflection, including case oftentimes. Because the nouns already have a morpheme attached that indicates what syntactic role they play, word order isn’t as important. That same sentence in Sanskrit would be “purushah nagaram pashyati”, or /pʊɾʊʃəhə n̪əgəɾəm pəʃjət̪i/, naturally. However, any order would have been grammatical to most speakers, because even if someone said “nagaram pashyati purushah”, the case endings still indicate that it’s the guy who did the seeing and the city was the thing being seen. As a result, while there is a naturally preferred word order, the redundancy it gives doesn’t need to exist for the sentence to be understood, so any order is fine.</p>
+<p>Meanwhile, synthetic languages have a lot more inflection, including case oftentimes. Because the nouns already have a morpheme attached that indicates what syntactic role they play, word order isn’t as important. That same sentence in Sanskrit would be “पुरुषः नगरं पश्यति” (purushah nagaram pashyati), or /pʊɾʊʃəhə n̪əgəɾəm pəʃjət̪i/, naturally. However, any order would have been grammatical to most speakers, because even if someone said “नगरं पश्यति पुरुषः” (nagaram pashyati purushah), the case endings still indicate that it’s the guy who did the seeing and the city was the thing being seen. As a result, while there is a naturally preferred word order, the redundancy it gives doesn’t need to exist for the sentence to be understood, so any order is fine.</p>
 </section>
 <section id="nouns" class="level1">
 <h1>Nouns</h1>
@@ -55,8 +55,8 @@
 <li><p>Various prepositional roles, which I put stuff like genitive (possession), dative (what receives the action), and vocative (addressing the audience) under as well, and it also includes more obvious prepositional stuff like locative (where something is) and ablative (where something comes from).</p></li>
 </ul>
 <p>For example, let’s look at the Sanskrit example again - “purushah nagaram pashyati”. The “ah” morpheme represents the masculine nominative case, and the “am” morpheme represents the neuter accusative case (we’ll get into the nuances behind nominative and accusative very soon).</p>
-<p>If you instead wanted to convey the nonsensical sentence “the city sees the guy”, you would have to change the cases, because as we’ve seen previously, word order won’t change the meaning. In this case, (changing the word order to OSV instead of SOV so we can just observe the case change) it would be “purusham nagaram pashyati”. The “am” morpheme is also for the masculine accusative case AND the neuter nominative case. Even though the case of “nagaram” may be ambiguous on its own, we can find out that “purusham” is in the accusative case, which means the former must be nominative.</p>
-<p>Now, suppose you wanted to say “the guy sees the city with the dog”. The “with the dog” part would use the instrumental case. The nominative case for “the dog” would be masculine, so “kuttah”. In the masculine instrumental case, you would use the morpheme “eṇa” plus the postposition “saha”, so “with the dog” would be “kutteṇa saha”, or /kʊtteɳə səhə/. The whole sentence would be “purushah kutteṇa saha nagaram pashyati”.</p>
+<p>If you instead wanted to convey the nonsensical sentence “the city sees the guy”, you would have to change the cases, because as we’ve seen previously, word order won’t change the meaning. In this case, (changing the word order to OSV instead of SOV so we can just observe the case change) it would be “पुरुषं नगरं पश्यति” (purusham nagaram pashyati). The “am” morpheme is also for the masculine accusative case AND the neuter nominative case. Even though the case of “nagaram” may be ambiguous on its own, we can find out that “purusham” is in the accusative case, which means the former must be nominative.</p>
+<p>Now, suppose you wanted to say “the guy sees the city with the dog”. The “with the dog” part would use the instrumental case. The nominative case for “the dog” would be masculine, so “कुत्तः” (kuttah, /kʊttəhə/). In the masculine instrumental case, you would use the morpheme “eṇa” plus the postposition “saha”, so “with the dog” would be “kutteṇa saha”, or /kʊtteɳə səhə/. The whole sentence would be “पुरुषः कुत्तेण सह नगरं पश्यति” (purushah kutteṇa saha nagaram pashyati) .</p>
 </section>
 <section id="grammatical-classes" class="level2">
 <h2 class="anchored" data-anchor-id="grammatical-classes">Grammatical classes</h2>
@@ -65,7 +65,7 @@
 <section id="grammatical-genders" class="level3">
 <h3 class="anchored" data-anchor-id="grammatical-genders">Grammatical genders</h3>
 <p>One, which you have probably seen if you ever learned Spanish or French, is to place males and females (this literal biological distinction in languages usually applies to people and sometimes to other animals) into separate categories, and inanimate things can go in either depending on the noun.</p>
-<p>Note that these are called “genders” because it’s much easier to remember that in French, the words for “boy” and “girl” are in different categories (<em>le</em> garçon and <em>la</em> fille, respectively), than it is to remember that “Japan” and “China” (<em>le</em> Japon and <em>la</em> Chine) are, for example. The term “gender” was given before linguists encountered languages with different types of classes.</p>
+<p>Note that these are called “genders” because it’s much easier to remember that in French, the words for “boy” and “girl” are in different categories (<em>le</em> garçon and <em>la</em> fille, respectively), than it is to remember that “Mexico” and “China” (<em>le</em> Mexique and <em>la</em> Chine) are, for example. The term “gender” was given before linguists encountered languages with different types of classes.</p>
 <p>The classification of inanimate nouns has nothing to do with whether they have XX or XY chromosomes, because they don’t even have chromosomes. It might not even apply to humans. In German, “the girl” is “<em>das</em> Mädchen”, which is in the neuter gender, not “<em>die</em> Mädchen”, as feminine nouns would be be marked.</p>
 <p>Most languages with gender-based grammatical classes mark either a two-way masculine/feminine distinction (like Hindi or French), or a three-way masculine/feminine/neuter distinction (like German or Sanskrit).</p>
 </section>
@@ -267,7 +267,7 @@
 </section>
 <section id="ergative-absolutive" class="level2">
 <h2 class="anchored" data-anchor-id="ergative-absolutive">Ergative-Absolutive</h2>
-<p>Now look at the same sentence in Hindi. “The dog ate food” would be “kuttane khana khaya”, or /kʊt̪t̪an̪e kʰan̪a kʰaja/, and “the dog slept” would be “kutta soya”, or /kʊt̪t̪a soja/. See what happened? The suffix “ne” was only added to the subject of the transitive sentence, while the argument of the intransitive sentence was treated the same as the object of the transitive sentence by not adding any suffix. This is called ergative-absolutive alignment.</p>
+<p>Now look at the same sentence in Hindi. “The dog ate food” would be “कुत्ते-ने खाना खाया” (kutte-ne khana khaya), or /kʊt̪t̪an̪e kʰan̪a kʰaja/, and “the dog slept” would be “कुत्ता सोया” (kutta soya), or /kʊt̪t̪a soja/. See what happened? The postposition “ne” was only added to the subject of the transitive sentence, while the argument of the intransitive sentence was treated the same as the object of the transitive sentence by not adding any postposition. This is called ergative-absolutive alignment. And note that “kutta:” because “kutte” from case marking when coming before a postposition.</p>
 </section>
 <section id="split-ergativity" class="level2">
 <h2 class="anchored" data-anchor-id="split-ergativity">Split-Ergativity</h2>
@@ -286,6 +286,7 @@
 </figure>
 </div>
 <p>Note that the word order doesn’t literally have to change, that’s only a way to show how the nouns align. For example, if these relations are marked by case, then the word order would be free.</p>
+<p>Now that you know the different types of alignments, try out <a href="https://www.naclo.org/resources/problems/2017/N2017-I.pdf">this NACLO problem</a> about Basque to see which system it uses!</p>
 </section>
 </section>
 <section id="movement" class="level1">
@@ -606,7 +607,7 @@ Fontmaking
 </tbody>
 </table>
 <p>Lemme explain what this means. Discrete means the number of theoretically possible quantities for this noun is at most <img src="https://latex.codecogs.com/png.latex?%5Caleph_0">, and continuous means the number of theoretically possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D">.</p>
-<p>1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for</p>
+<p>1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for, well, beyond.</p>
 </section>
 <section id="politeness" class="level2">
 <h2 class="anchored" data-anchor-id="politeness">Politeness</h2>
@@ -1825,7 +1826,7 @@ style F fill:#ffffff,stroke:#333,stroke-width:2px,font-size:18px
 <h2 class="anchored" data-anchor-id="sense-and-reference">Sense and Reference</h2>
 <p><a href="https://en.wikipedia.org/wiki/Gottlob_Frege">Gottlob Frege</a> first created the distinction between sense and reference. Reference is the actual thing (or set of things) that the word <em>refers</em> to, hence the name. Meanwhile, sense is the ideas and concepts behind what you express that reference as, and how you perceive it.</p>
 <p>Multiple senses can have the same reference - for example, a 2D plane with evenly spaced, perpendicular gridlines of unit length and a fixed origin can be thought of as either the Cartesian plane where each point is of the form <img src="https://latex.codecogs.com/png.latex?(x,%20y)">, the complex plane where each point is of the form <img src="https://latex.codecogs.com/png.latex?x%20+%20i%20y">, or a vector space with basis vectors of <img src="https://latex.codecogs.com/png.latex?%5B1,%200%5D"> and <img src="https://latex.codecogs.com/png.latex?%5B0,%201%5D">, where each point is a vector of the form <img src="https://latex.codecogs.com/png.latex?%5Bx,%20y%5D"> starting from the origin.</p>
-<p>One sense can also point to multiple references - for example, if you think of a “person”, then that reference points to over 8 billion people. You could potentionally solve this problem by saying that the set of all people is still a single set.</p>
+<p>One sense can also point to multiple references - for example, if you think of a “person”, then that reference points to over 8 billion people. You could potentially solve this problem by saying that the set of all people is still a single set.</p>
 <section id="sapir-whorf-hypothesis" class="level3">
 <h3 class="anchored" data-anchor-id="sapir-whorf-hypothesis">Sapir-Whorf Hypothesis</h3>
 <p>There was once a theory, the Sapir-Whorf Hypothesis that the words a language contains limits what the speakers’ brains can perceive. This is now considered to be pseudoscience. A brain’s capacity to perceive meanings isn’t strongly tied to how many distinct senses there are. There is now a less bold claim that is more widely accepted, called <em>linguistics relativity</em> - that someone’s language may affect how they perceive the world, but that doesn’t mean if their language doesn’t distinguish certain references, then their brain is incapable of understanding the difference.</p>
@@ -2868,7 +2869,7 @@ class M,Det modGroup;
 <p>Either this means that you own both the dog and the cat (“[[The dog and the cat] that you own] fought each other”), or your cat fought another dog (“[The dog and [the cat that you own]] fought each other”).</p>
 <p>Another example is “I saw the man with a telescope”, which either means the man has a telescope and you saw him, or you used a telescope to see the man.</p>
 <p>In general, scope ambiguity is when you can’t tell what constituent is being modified.</p>
-<p>Prescriptivists are always like, “commas save lives, people” (“Let’s eat kids” vs “Let’s eat, kids”). However, sentences like these are perfectly acceptable in standard English and the ambiguity can’t just be fixed by adding commas (because that would be considered grammatically incorrect then since prescriptivists say that you can’t put commas in those places). This is just yet another argument for descriptive linguistics - prescriptivists can’t even be consistent with their own objectives, so it’s better to just let language be.</p>
+<p>Prescriptivists are always like, “commas save lives, people” (“I love cooking my parents and my dog” vs “I love cooking, my parents, and my dog”). However, ambiguous sentences like the ones I showed before that are perfectly acceptable in standard English and the ambiguity can’t just be fixed by adding commas (because that would be considered grammatically incorrect then since prescriptivists say that you can’t put commas in those places). This is just yet another argument for descriptive linguistics - prescriptivists can’t even be consistent with their own objectives, so it’s better to just let language be.</p>
 </section>
 <section id="recursion-introduction" class="level1">
 <h1>Recursion Introduction</h1>
@@ -3637,7 +3638,7 @@ Multiplication ==&gt; 2["2"]
 <section id="definition" class="level2">
 <h2 class="anchored" data-anchor-id="definition">Definition</h2>
 <p>A <em>morpheme</em> is loosely defined as a unit of meaning. You may wonder why we do not just use the term “words” to describe these. The answer is that “words” are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that’s generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single “word” because there aren’t any spaces? And then polysynthetic language (like we’ll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn’t easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.</p>
-<p>Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some “insightful” meaning (by which I mean that it’s definitely not intended to be that deep, and any such annotation is surely a stretch).</p>
+<p>Since sound and meaning are independent, know that something like alliteration being meaningful for a piece of literature is not a linguistic thing, but rather a psychological thing.</p>
 </section>
 </section>
 <section id="free-and-bound-morphemes" class="level1">
@@ -3678,8 +3679,8 @@ Multiplication ==&gt; 2["2"]
 </section>
 <section id="clarification-on-words" class="level4">
 <h4 class="anchored" data-anchor-id="clarification-on-words">Clarification on “Words”</h4>
-<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that’s how English treats affixes and adjectives). So, it’s not purely based on how they’re written down, but there doesn’t necessarily need to be a clean line either. It’s just thinking about the general density of morphemes.</p>
-<p>The idea of free and bound morphemes can also help to clarify this - bound morphemes obviously can’t count as their own word, so it’s basically asking how many bound morphemes there are compared to free morphemes.</p>
+<p>But hold on, I thought words aren’t reliable measurements, so why do we use words here? In the case specifically for morphological typology, a “word” is just something that cannot be broken apart by syntax - and it’s not based on writing (for example, under this definition, “mitbringen”, meaning “to bring along” in German, is actually two words, “mit” + “bringen”, because “I bring along” would be “Ich bringe mit”). It’s mainly for thinking about the general density of morphemes. We don’t care about the definitions that are useful for semantics or orthography.</p>
+<p>The idea of free and bound morphemes can also help to clarify this - bound morphemes obviously can’t count as their own word, so it’s basically asking how many bound morphemes are attached in a word.</p>
 </section>
 </section>
 <section id="meanings-per-morpheme" class="level3">

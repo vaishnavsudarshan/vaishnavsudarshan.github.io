@@ -68,7 +68,7 @@ The ancient Greek philosopher [Plato](https://en.wikipedia.org/wiki/Plato) belie
 
 Multiple senses can have the same reference - for example, a 2D plane with evenly spaced, perpendicular gridlines of unit length and a fixed origin can be thought of as either the Cartesian plane where each point is of the form $(x, y)$, the complex plane where each point is of the form $x + i y$, or a vector space with basis vectors of $[1, 0]$ and $[0, 1]$, where each point is a vector of the form $[x, y]$ starting from the origin. 
 
-One sense can also point to multiple references - for example, if you think of a "person", then that reference points to over 8 billion people. You could potentionally solve this problem by saying that the set of all people is still a single set. 
+One sense can also point to multiple references - for example, if you think of a "person", then that reference points to over 8 billion people. You could potentially solve this problem by saying that the set of all people is still a single set. 
 
 ### Sapir-Whorf Hypothesis
 

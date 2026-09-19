@@ -16,7 +16,7 @@ Now, I want to emphasize that GENERALLY, sound and meaning are two separate thin
 
 A *morpheme* is loosely defined as a unit of meaning. You may wonder why we do not just use the term "words" to describe these. The answer is that "words" are quite hard to define - I mean, an app like Word or Google Docs might just measure the number of spaces and then add one, because that's generally convenient in English, but what about something like Mandarin? Would every sentence in Mandarin be a single "word" because there aren't any spaces? And then polysynthetic language (like we'll see later) has the meaning of an entire sentence within a word - what about that? Such a question isn't easy or even helpful and it entirely depends on the culture surrounding that language. Therefore, we use morphemes instead.
 
-Since sound and meaning are independent, if your English teacher ever uses something like alliteration or rhyme to analyze a literary text, now you know that such an analysis is completely bogus. However, another possiblity also exists - your teacher is imagining how that sound is pronounced, and the manner and difficulty could add some "insightful" meaning (by which I mean that it's definitely not intended to be that deep, and any such annotation is surely a stretch).
+Since sound and meaning are independent, know that something like alliteration being meaningful for a piece of literature is not a linguistic thing, but rather a psychological thing. 
 
 # Free and Bound Morphemes
 
@@ -60,9 +60,9 @@ Polysynthetic languages are like an extreme form of regular synthetic languages.
 
 #### Clarification on "Words"
 
-But hold on, I thought words aren't reliable measurements, so why do we use words here? Here, linguists use the practical working definition of a word, which is essentially something that makes sense being separated and independent. For example, morphemes like affixes would just be considered part of that word, but adjectives would be their own word (at least, that's how English treats affixes and adjectives). So, it's not purely based on how they're written down, but there doesn't necessarily need to be a clean line either. It's just thinking about the general density of morphemes. 
+But hold on, I thought words aren't reliable measurements, so why do we use words here? In the case specifically for morphological typology, a "word" is just something that cannot be broken apart by syntax - and it's not based on writing (for example, under this definition, "mitbringen", meaning "to bring along" in German, is actually two words, "mit" + "bringen", because "I bring along" would be "Ich bringe mit"). It's mainly for thinking about the general density of morphemes. We don't care about the definitions that are useful for semantics or orthography. 
 
-The idea of free and bound morphemes can also help to clarify this - bound morphemes obviously can't count as their own word, so it's basically asking how many bound morphemes there are compared to free morphemes. 
+The idea of free and bound morphemes can also help to clarify this - bound morphemes obviously can't count as their own word, so it's basically asking how many bound morphemes are attached in a word. 
 
 ### Meanings per morpheme
 
