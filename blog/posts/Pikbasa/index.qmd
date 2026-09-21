@@ -117,7 +117,7 @@ Did you know that the Spanish spoken in the Canary Islands has a whistled varian
 
 So recall that each pixel is $/RGB/$, where $R, G, B \in \{0, 1, 2, 3\}$, and encode the amount of each red, green, and blue component respectively (with intervals so we have $4^3$ and not $256^3$ phonemes). Here's how we can make this spoken.
 
-X: 
+R: 
 
 |Number|Place of articulation|
 |------|---------------------|
@@ -126,7 +126,7 @@ X:
 |$2$   |Velar                |
 |$3$   |Uvular               |
 
-Y:
+G:
 
 |Number|Manner of articulation|
 |------|----------------------|
@@ -135,7 +135,7 @@ Y:
 |$2$   |Trill                 |
 |$3$   |Click                 |
 
-Z: 
+B: 
 
 |Number|Binary modifications |
 |------|---------------------|
