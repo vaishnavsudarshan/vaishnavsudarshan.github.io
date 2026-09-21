@@ -10,7 +10,505 @@
 <atom:link href="https://vaishnavs.net/index.xml" rel="self" type="application/rss+xml"/>
 <description>Vaishnav Sudarshan&#39;s blog on linguistics, math, computer science and natural language processing</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Mon, 07 Sep 2026 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 16 Sep 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Pikbasa</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Pikbasa/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>A picture is worth a thousand words, as you might have heard. But what if a picture is QUITE LITERALLY a thousand words??? That’s where Pikbasa comes in.</p>
+<p>By the way, if you didn’t know, “basa” is one of the forms of the borrowing of the Sanskrit word “भाषा” (/bʱaʂa/), meaning “language”, into many different Southeast Asian languages. I just didn’t want to call my language “Piklang” because that sounds too boring.</p>
+</section>
+<section id="basic-setup" class="level1">
+<h1>Basic setup</h1>
+<p>We have a matrix of pixels with 40 rows and 25 columns. Each pixel has a certain color and represents a unit of meaning (a thousand words would mean each pixel is a word, or Pikbasa is an isolating language; however, if you analyze each pixel as a morpheme, then we have a polysynthetic language where a picture is forty words - so let’s not do that).</p>
+</section>
+<section id="color-phonemes" class="level1">
+<h1>Color “Phonemes”</h1>
+<p>A pixel’s color can be represented with its RGB values. Each component, from <img src="https://latex.codecogs.com/png.latex?0"> to <img src="https://latex.codecogs.com/png.latex?255">, has four intervals - <img src="https://latex.codecogs.com/png.latex?0:%20%5B0,%2063%5D">, <img src="https://latex.codecogs.com/png.latex?1:%20%5B64,%20127%5D">, <img src="https://latex.codecogs.com/png.latex?2:%20%5B128,%20191%5D">, and <img src="https://latex.codecogs.com/png.latex?3:%20%5B192,%20255%5D">. Three components makes <img src="https://latex.codecogs.com/png.latex?4%5E3=64"> possible colors, which I guess are the phonemes, but all words are one morpheme, and all morphemes are one phoneme, so each phoneme is also a word. Any two colors where each component is in the same interval will not be distinguished, and will be considered the same phoneme - for example, <img src="https://latex.codecogs.com/png.latex?(R,G,B)%20=%20(0,0,0)"> is the same phoneme as <img src="https://latex.codecogs.com/png.latex?(R,G,B)%20=%20(32,32,32)">.</p>
+<p>We can refer to a phoneme with its interval for each color component. For example, <img src="https://latex.codecogs.com/png.latex?/023/"> means the red is between <img src="https://latex.codecogs.com/png.latex?0"> and <img src="https://latex.codecogs.com/png.latex?63">, the green is between <img src="https://latex.codecogs.com/png.latex?128"> and <img src="https://latex.codecogs.com/png.latex?191">, and the blue is between <img src="https://latex.codecogs.com/png.latex?192"> and <img src="https://latex.codecogs.com/png.latex?255">. The order of the phonemes is the same order within the list of the same name here:</p>
+<div id="c707320e" class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">phonemes <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb1-2"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> R <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>):</span>
+<span id="cb1-3">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> G <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>):</span>
+<span id="cb1-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> B <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>):</span>
+<span id="cb1-5">            color <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (R, G, B)</span>
+<span id="cb1-6">            phonemes.append(color)</span></code></pre></div>
+</div>
+<p>By the way, now’s a good time to come clean. Pikbasa is technically not a language. One of the characteristics of a language is that it is productive - a finite amount of building blocks can make infinite sentences. On the other hand, a Pikbasa sentence has <img src="https://latex.codecogs.com/png.latex?25"> words (more details on that in the next section), each with at most <img src="https://latex.codecogs.com/png.latex?64"> possible distinguished colors. While <img src="https://latex.codecogs.com/png.latex?64%5E%7B25%7D"> as an upper bound is huge, it’s not infinite, making Pikbasa not productive. I assume, however, that most of you reading this are not annoying “erm actually” people, so Pikbasa is a language for the purposes of this showcase.</p>
+<p>If you don’t know about phonemes, you might want to read my blog post on <a href="https://vaishnavs.net/posts/Phonology/">phonology</a>.</p>
+</section>
+<section id="within-a-row" class="level1">
+<h1>Within a row</h1>
+<p>Each row of <img src="https://latex.codecogs.com/png.latex?25"> pixels encodes a sentence. There are five chunks of five pixels. The first five indicate the subject, the next five the object, the next five the locative/allative, the next five the ablative, and the final five the verb. Each of these has the same format.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5B%5Ctext%7BColor%7D%5D%5B%5Ctext%7BSize%7D%5D%5B%5Ctext%7BGoodness%7D%5D%5B%5Ctext%7BRoot%7D%5D%5B%5Ctext%7BSyntactic%20Role%7D%5D">.</p>
+<p>Let me clarify these first three a little.</p>
+<p>Color is, well, the literal color, for nouns (but only if there is a single color one wants to specify, and for abstract concepts, it’s what color the symbol for it is written in). The color is encoded by a pixel of the same color. For verbs, it means something totally different - the <em>speed</em> at which the action was done. Slower means earlier phonemes, while faster means later phonemes.</p>
+<p>Size can mean the literal physical volume, quantity, or mass or however you want to define “size” of an object. For verbs, it means how much (or hard) an action was done. Lower size means earlier phonemes, while higher size means later phonemes. Also, if you use it as quantity, then each phoneme’s index corresponds to that exact quantity, except for <img src="https://latex.codecogs.com/png.latex?/333/">, which means at least <img src="https://latex.codecogs.com/png.latex?63">.</p>
+<p>Goodness for both nouns and verbs is how good or bad the speaker views that noun or verb to be. And you guessed it! Worse means earlier phonemes, while better means later phonemes.</p>
+<p>Note that these adjectives/adverbs (except for color of a noun) are based on a scale from <img src="https://latex.codecogs.com/png.latex?1"> to <img src="https://latex.codecogs.com/png.latex?63">, according to the indices of the list of phonemes. Null is <img src="https://latex.codecogs.com/png.latex?0">. Neutral is <img src="https://latex.codecogs.com/png.latex?32">.</p>
+<p>There are <img src="https://latex.codecogs.com/png.latex?64"> semantic roots for nouns and verbs. I will put a dictionary at the end for that.</p>
+<p>Syntactic role is just the last pixel of the chunk, telling you whether it’s the subject, object, locative, ablative, or verb.</p>
+<p>Since there is case marking, the word order is free. Any permutation of these five chunks is acceptable and equally grammatical. However, the order of words within a chunk is fixed.</p>
+</section>
+<section id="nulls-split-ergativity-and-copula" class="level1">
+<h1>Nulls, Split Ergativity, and Copula</h1>
+<p>What if some of the noun phrases or verbs aren’t present? In this case, we use the null symbol <img src="https://latex.codecogs.com/png.latex?/000/">, to indicate the lack of a root and its adjectives. We still keep the syntactic role symbol. We also use the null symbol if some adjectives don’t apply or aren’t wanted to be specified.</p>
+<p>If the verb is a copula, that is the only time it will be null. So, “A is B” would be more like “A (subj) B (obj)”, no verb. “A exists” would be “A (subj)” with everything else null. “A is in B” would be “A (subj) B (loc)” with everything else null. I think you get the idea.</p>
+<p>What about intransitives? Either the subject or the object will be null. If the sentence’s row <img src="https://latex.codecogs.com/png.latex?%5Cbmod%2010"> is at most <img src="https://latex.codecogs.com/png.latex?4">, then the alignment is nominative-accusative, meaning the object is null and the verb’s argument is the subject. Otherwise, the alignment is ergative-absolutive, so the subjet is null and the object is the verb’s argument. Split ergativity, yay!!! Note that rows are zero-indexed, so the first row is row <img src="https://latex.codecogs.com/png.latex?0">. (By the way, you can learn more about split ergativity on my blog post on <a href="http://vaishnavs.net/posts/Morphosyntax/">morphosyntax</a>!)</p>
+</section>
+<section id="multiple-sentences" class="level1">
+<h1>Multiple sentences</h1>
+<p>The structure of a single sentence doesn’t allow you to say much. For example, recursion is nonexistent since sentences have only terminal phrases. So, how would you say “The cat the dog the human owned chased sneezed”? You’d just phrase it as “The human owned the dog. The dog chased the cat. The cat sneezed”, which is allowable from the template. Yeah, I know center embedding is just grammatical sentences larping as ungrammatical ones (you wouldn’t expect “owned chased sneezed” to occur), but it’s one of the simplest instances of recursion in English.</p>
+<p>Possession is indicated through ablative, and recursive possession can be done in a similar way. Note that “A owns B” is expressed as “B from A”.</p>
+<p>Apart from these clarifications, use your creativity to use many sentences (remember, at most <img src="https://latex.codecogs.com/png.latex?40">) to express stuff.</p>
+<p>If you write less than forty sentences, then the rest of the rows are fully null.</p>
+</section>
+<section id="example-translation" class="level1">
+<h1>Example translation</h1>
+<p>Let’s translate the quadratic formula song (if you don’t know, it’s supposed to be sung to the tune of “Pop Goes the Weasel”).</p>
+<p>The original is this: “x is equal to negative b, plus or minus the square root, of b squared minus four a c, all over two a”.</p>
+<p>We can first format it like this:</p>
+<ul>
+<li><p>mystery (subj) is minus variable 1 (obj)</p></li>
+<li><p>variable 1 (subj) change (verb) from 1 function 1 (abl)</p></li>
+<li><p>variable 1 (subj) change (verb) from -1 function 1 (abl)</p></li>
+<li><p>function 1 (subj) to variable 1 (loc)</p></li>
+<li><p>variable 1 (subj) 63 combine in variable 1 (loc)</p></li>
+</ul>
+<p>(switch to ergativity)</p>
+<ul>
+<li><p>self (obj) minus change (verb) from 62 combine (abl)</p></li>
+<li><p>variable 2 (obj) in 62 combine (loc)</p></li>
+<li><p>4 variable 3 (obj) in 62 combine (loc)</p></li>
+<li><p>63 self (obj) in 2 variable 2 (loc)</p></li>
+</ul>
+<p>Umm, yeah. That is very sus. I made each unique instance of “combine” have its magnitude decrement to distingush them. Pikabasa is like Toki Pona in that you must be very creative to even express anything, while it’s hard to decipher what something says.</p>
+<p>Here’s what it looks like:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="quadratic_song.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Pikbasa translation of the quadratic formula song"><img src="https://vaishnavs.net/posts/Pikbasa/quadratic_song.png" class="img-fluid figure-img" alt="Pikbasa translation of the quadratic formula song"></a></p>
+<figcaption>Pikbasa translation of the quadratic formula song</figcaption>
+</figure>
+</div>
+</section>
+<section id="spoken-form" class="level1">
+<h1>Spoken form</h1>
+<p>Did you know that the Spanish spoken in the Canary Islands has a whistled variant? It’s the exact same language, but all the phonemes are encoded as whistles of different frequencies. Another example of encoding a language in a different form might be Morse Code, where English letters are represented as dots and dashes. So, I thought it might be cool if Pikbasa could also have a system of encoding - except this time, there’s a bijection between pixel “phonemes” and oral (consonantal) <em>phonemes</em>.</p>
+<p>So recall that each pixel is <img src="https://latex.codecogs.com/png.latex?/RGB/">, where <img src="https://latex.codecogs.com/png.latex?R,%20G,%20B%20%5Cin%20%5C%7B0,%201,%202,%203%5C%7D">, and encode the amount of each red, green, and blue component respectively (with intervals so we have <img src="https://latex.codecogs.com/png.latex?4%5E3"> and not <img src="https://latex.codecogs.com/png.latex?256%5E3"> phonemes). Here’s how we can make this spoken.</p>
+<p>X:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Place of articulation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td>Bilabial</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td>Alveolar</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?2"></td>
+<td>Velar</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td>Uvular</td>
+</tr>
+</tbody>
+</table>
+<p>Y:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Manner of articulation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td>Stop</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td>Fricative</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?2"></td>
+<td>Trill</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td>Click</td>
+</tr>
+</tbody>
+</table>
+<p>Z:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>Binary modifications</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td>Voiceless unaspirated</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td>Voiced unaspirated</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?2"></td>
+<td>Voiceless aspirated</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td>Voiced aspirated</td>
+</tr>
+</tbody>
+</table>
+<p>Pikabasa is already so weird that we need a little bit of boringness, so we just pronounce the picture left to right, top to bottom.</p>
+</section>
+<section id="dictionary" class="level1">
+<h1>Dictionary</h1>
+<p>While the words for adjectives/adverbs are just a ranking of how true that semantic dimension is on a scale from <img src="https://latex.codecogs.com/png.latex?0"> to <img src="https://latex.codecogs.com/png.latex?63">, nouns have to be mapped manually. Also, let me quickly tell you the syntactic role particles: <img src="https://latex.codecogs.com/png.latex?(%5Ctext%7BSubject%7D,%20%5Ctext%7BObject%7D,%20%5Ctext%7BLocative%7D,%20%5Ctext%7BAblative%7D,%20%5Ctext%7BVerb%7D)%20=%20(0,%2013,%2026,%2039,%2052)"> - so every multiple of 13 is a syntactic particle.</p>
+<p>Anyway, back to the noun or verb roots. They are presented as nouns, but they can and will be used as verbs too - use your creativity for that part, as it may not be obvious.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Pikbasa</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?0"></td>
+<td>Null</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?1"></td>
+<td>Prokaryote</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?2"></td>
+<td>Eukaryote</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?3"></td>
+<td>Polar substance</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?4"></td>
+<td>Nonpolar substance</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?5"></td>
+<td>Nation</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?6"></td>
+<td>Boundary</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?7"></td>
+<td>Movement</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?8"></td>
+<td>Pattern</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?9"></td>
+<td>Time</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?10"></td>
+<td>Nearby place</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?11"></td>
+<td>Far-away place</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?12"></td>
+<td>Process</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?13"></td>
+<td>Meeting</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?14"></td>
+<td>Realm</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?15"></td>
+<td>Language</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?16"></td>
+<td>Idea</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?17"></td>
+<td>Event</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?18"></td>
+<td>Choice</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?19"></td>
+<td>Thought</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?20"></td>
+<td>Destruction</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?21"></td>
+<td>Desire</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?22"></td>
+<td>Question</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?23"></td>
+<td>Tool</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?24"></td>
+<td>Self</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?25"></td>
+<td>Audience</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?26"></td>
+<td>Origin</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?27"></td>
+<td>Set</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?28"></td>
+<td>Condition</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?29"></td>
+<td>Information</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?30"></td>
+<td>Lie</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?31"></td>
+<td>Picture</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?32"></td>
+<td>Justice</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?33"></td>
+<td>Money</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?34"></td>
+<td>Sight</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?35"></td>
+<td>Answer</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?36"></td>
+<td>Attempt</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?37"></td>
+<td>Search</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?38"></td>
+<td>Change</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?39"></td>
+<td>Science</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?40"></td>
+<td>Game</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?41"></td>
+<td>Segment</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?42"></td>
+<td>Entertainment</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?43"></td>
+<td>Evidence</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?44"></td>
+<td>Combination</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?45"></td>
+<td>Translation</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?46"></td>
+<td>Rule</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?47"></td>
+<td>Recursion</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?48"></td>
+<td>Conflict</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?49"></td>
+<td>Variable 1</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?50"></td>
+<td>Variable 2</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?51"></td>
+<td>Variable 3</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?52"></td>
+<td>Function 1</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?53"></td>
+<td>Function 2</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?54"></td>
+<td>Function 3</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?55"></td>
+<td>Mystery</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?56"></td>
+<td>Encryption</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?57"></td>
+<td>Description</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?58"></td>
+<td>Interaction</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?59"></td>
+<td>Necessity</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?60"></td>
+<td>Hierarchy</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?61"></td>
+<td>Growth</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?62"></td>
+<td>Skill</td>
+</tr>
+<tr class="even">
+<td><img src="https://latex.codecogs.com/png.latex?63"></td>
+<td>Other</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="further-information" class="level1">
+<h1>Further information</h1>
+<ul>
+<li><p>More information on the whistled form of Spanish in this National Museum of Language <a href="https://languagemuseum.org/language-of-the-month-august-2023-silbo-gomero/">article</a>.</p></li>
+<li><p>You can listen to the quadratic formula song <a href="https://www.youtube.com/watch?v=VOXYMRcWbF8">here</a>.</p></li>
+<li><p>The four-way voice/aspiration distinction for the whistled form of the blue component was inspired by the same distinction in <a href="https://en.wikipedia.org/wiki/Sanskrit#Consonants">Sanskrit</a>.</p></li>
+<li><p>Here are the <a href="https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words#History">origins</a> of the proverb “a picture is worth a thousand words”.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>Conlangs</category>
+  <guid>https://vaishnavs.net/posts/Pikbasa/</guid>
+  <pubDate>Wed, 16 Sep 2026 07:00:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Pikbasa/quadratic_song.png" medium="image" type="image/png" height="184" width="144"/>
+</item>
 <item>
   <title>Morphosyntax</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
@@ -404,7 +902,7 @@ Slight tangent
 </section>
 <section id="prosody" class="level2">
 <h2 class="anchored" data-anchor-id="prosody">Prosody</h2>
-<p>Since each syllable has a specified musical note and length (as you will see soon), stress really doesn’t exist from these factors. However, the only hope for having prosody is loudness and octave, which are not phonemic. These are both relative binary features - as in, anything that’s not the highest possible octave can be considered “low”, and so on.</p>
+<p>Since each syllable has a specified musical note and length (as you will see soon), stress really doesn’t exist from these factors. However, the only hope for having prosody is loudness and octave, which are not phonemic. These are both relative binary features - as in, anything that’s not the highest possible octave can potentially be considered “low”, and anything that’s not the lowest possible octave can potentially be considered “high”.</p>
 <p>The first syllable is loud if it has up to three consonants. Otherwise, it’s the final. If there’s only one syllable with at least four consonants, then I guess these two cases are the same thing.</p>
 <p>Octave is the other way around. The last syllable has a high octave if it has up to three consonants, otherwise it’s the first.</p>
 <p>Yeah, don’t listen to Proto-Zorbbbbistani poetry.</p>
@@ -606,7 +1104,7 @@ Fontmaking
 </tr>
 </tbody>
 </table>
-<p>Lemme explain what this means. Discrete means the number of theoretically possible quantities for this noun is at most <img src="https://latex.codecogs.com/png.latex?%5Caleph_0">, and continuous means the number of theoretically possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D">.</p>
+<p>Lemme clarify what this means. Discrete means the number of theoretically possible quantities for this noun is at most <img src="https://latex.codecogs.com/png.latex?%5Caleph_0">, and continuous means the number of theoretically possible quantities for this noun is <img src="https://latex.codecogs.com/png.latex?2%5E%7B%5Caleph_0%7D">.</p>
 <p>1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for, well, beyond.</p>
 </section>
 <section id="politeness" class="level2">
@@ -868,6 +1366,7 @@ Fontmaking
 <p>Rhotic vowel - if the vowel is phonetically rounded, add ⟨y⟩, otherwise ⟨r⟩</p>
 <p>Second vowel - write it after the first vowel, same glyphs</p>
 <p>Semivowels - write ⟨y⟩ or ⟨w⟩ right after the consonant</p>
+<p>Liquids - write ⟨L⟩ or ⟨R⟩ right after the semivowel, which may be null</p>
 <p>Short vowel - write ⟨%⟩ after the vowel</p>
 <p>Long vowel - write ⟨^⟩ after the vowel</p>
 </section>
@@ -1431,16 +1930,14 @@ font-style: inherit;">from</span> sympy <span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> isprime</span>
 <span id="cb1-2"></span>
-<span id="cb1-3"></span>
-<span id="cb1-4"></span>
-<span id="cb1-5"><span class="kw" style="color: #003B4F;
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">def</span> get_primes(n):</span>
-<span id="cb1-6">    primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-4">    primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> []</span>
-<span id="cb1-7">    <span class="cf" style="color: #003B4F;
+<span id="cb1-5">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">while</span> (n <span class="op" style="color: #5E5E5E;
@@ -1448,28 +1945,28 @@ background-color: null;
 font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>):</span>
-<span id="cb1-8">        k <span class="op" style="color: #5E5E5E;
+<span id="cb1-6">        k <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> n</span>
-<span id="cb1-9">        <span class="cf" style="color: #003B4F;
+<span id="cb1-7">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">while</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">not</span> isprime(k):</span>
-<span id="cb1-10">            k <span class="op" style="color: #5E5E5E;
+<span id="cb1-8">            k <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">-=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span></span>
-<span id="cb1-11">        primes.insert(<span class="dv" style="color: #AD0000;
+<span id="cb1-9">        primes.insert(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>, k)</span>
-<span id="cb1-12">        n <span class="op" style="color: #5E5E5E;
+<span id="cb1-10">        n <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">-=</span> k</span>
-<span id="cb1-13">    <span class="cf" style="color: #003B4F;
+<span id="cb1-11">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> n <span class="op" style="color: #5E5E5E;
@@ -1477,29 +1974,29 @@ background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>:</span>
-<span id="cb1-14">        primes.insert(<span class="dv" style="color: #AD0000;
+<span id="cb1-12">        primes.insert(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>)</span>
-<span id="cb1-15">    <span class="cf" style="color: #003B4F;
+<span id="cb1-13">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> primes</span>
-<span id="cb1-16"></span>
-<span id="cb1-17"><span class="kw" style="color: #003B4F;
+<span id="cb1-14"></span>
+<span id="cb1-15"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">def</span> make_root_word(n):</span>
-<span id="cb1-18">    used_primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-16">    used_primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> get_primes(n)</span>
-<span id="cb1-19">    total_primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-17">    total_primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>]</span>
-<span id="cb1-20">    <span class="cf" style="color: #003B4F;
+<span id="cb1-18">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
@@ -1514,51 +2011,51 @@ background-color: null;
 font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>):</span>
-<span id="cb1-21">        <span class="cf" style="color: #003B4F;
+<span id="cb1-19">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> is_prime(i):</span>
-<span id="cb1-22">            total_primes.append(i)</span>
-<span id="cb1-23">    primes <span class="op" style="color: #5E5E5E;
+<span id="cb1-20">            total_primes.append(i)</span>
+<span id="cb1-21">    primes <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> []</span>
-<span id="cb1-24">    <span class="cf" style="color: #003B4F;
+<span id="cb1-22">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> total_primes:</span>
-<span id="cb1-25">        <span class="cf" style="color: #003B4F;
+<span id="cb1-23">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> used_primes:</span>
-<span id="cb1-26">            primes.append(<span class="dv" style="color: #AD0000;
+<span id="cb1-24">            primes.append(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">1</span>)</span>
-<span id="cb1-27">        <span class="cf" style="color: #003B4F;
+<span id="cb1-25">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">else</span>:</span>
-<span id="cb1-28">            primes.append(<span class="dv" style="color: #AD0000;
+<span id="cb1-26">            primes.append(<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>)</span>
-<span id="cb1-29">    root_word <span class="op" style="color: #5E5E5E;
+<span id="cb1-27">    root_word <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span></span>
-<span id="cb1-30">    <span class="cf" style="color: #003B4F;
+<span id="cb1-28">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> primes:</span>
-<span id="cb1-31">        <span class="cf" style="color: #003B4F;
+<span id="cb1-29">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">if</span> i <span class="op" style="color: #5E5E5E;
@@ -1566,26 +2063,26 @@ background-color: null;
 font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">0</span>:</span>
-<span id="cb1-32">            root_word <span class="op" style="color: #5E5E5E;
+<span id="cb1-30">            root_word <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bbbb "</span></span>
-<span id="cb1-33">        <span class="cf" style="color: #003B4F;
+<span id="cb1-31">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">else</span>:</span>
-<span id="cb1-34">            root_word <span class="op" style="color: #5E5E5E;
+<span id="cb1-32">            root_word <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"tts "</span></span>
-<span id="cb1-35">    <span class="cf" style="color: #003B4F;
+<span id="cb1-33">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> root_word</span></code></pre></div>
 <p>This algorithm is quite similar to how you’d encode a number in binary with a unique sum:</p>
-<p><img src="https://latex.codecogs.com/png.latex?n%20=%20%5Csum_%7Bi=0%7D%5E%7Bk%7D%20C_i%20X_i">, where <img src="https://latex.codecogs.com/png.latex?C_i%20%5Cin%20%5C%7B0,%201%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?k"> is the number such that <img src="https://latex.codecogs.com/png.latex?X_k%20%5Cleq%20n"> but <img src="https://latex.codecogs.com/png.latex?X_%7Bk+1%7D%20%3E%20n">.</p>
+<p><img src="https://latex.codecogs.com/png.latex?n%20=%20%5Csum%5Climits_%7Bi=0%7D%5E%7Bk%7D%20C_i%20X_i">, where <img src="https://latex.codecogs.com/png.latex?C_i%20%5Cin%20%5C%7B0,%201%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?k"> is the number such that <img src="https://latex.codecogs.com/png.latex?X_k%20%5Cleq%20n"> but <img src="https://latex.codecogs.com/png.latex?X_%7Bk+1%7D%20%3E%20n">.</p>
 <p>The only difference is that <img src="https://latex.codecogs.com/png.latex?X_i%20=%202%5Ei"> for a binary system, but it’s the <img src="https://latex.codecogs.com/png.latex?i%5E%5Ctext%7Bth%7D"> prime number in the Proto-Zorbbbbistani system.</p>
 <p>How did this system originate? Humans use base 5, 10, or 20 to count using either their fingers on one hand, their fingers on both hands, or their fingers on both hands and their toes on both feet. Computers, fundamentally working in “on”s and “off”s, use base 2 or base 16.</p>
 <p>Proto-Zorbbbbistanis, however, were very greedy but in a weird way. At the annual national Zorbbbbistani meeting, there were <img src="https://latex.codecogs.com/png.latex?n"> candies to eat. The representatives of each territory had to take some of that candy and distribute it across their respective territory.</p>
@@ -2138,7 +2635,13 @@ Spoiler: Explains the main idea of the problem
 <section id="what-makes-a-language" class="level1">
 <h1>What makes a language?</h1>
 <p>Since linguistics is the scientific study of language, you can’t really do that without knowing what a language is. A lot of this content will overlap with a field of linguistics called sociolinguistics, but this is more on the philosophical side.</p>
-<p>Most people would agree that a language is a system to communicate with others.</p>
+<p>Most people would agree that a language is a system to communicate with others. Some characteristics linguists define are the following (just to name some of the main ones):</p>
+<ul>
+<li><p>Productive - able to infinite sentences from a finite set of building blocks</p></li>
+<li><p>Systematic - contains rules for what is grammatical</p></li>
+<li><p>Displacement - can refer to things that aren’t right in front of someone while they’re speaking</p></li>
+<li><p>Arbitrary/Duality - arbitrarily constructs meaning from meaningless units</p></li>
+</ul>
 <p>Natural languages (natlangs) like English, French, Hindi, Korean, and Quechua are what most people think of when they think about languages, and they can express most things that the speakers find relevant, usually including abstract thought. Constructed languages (conlangs), like Klingon, Esperanto, Ithkuil, Toki Pona, and Sindarin, though they didn’t develop naturally, are typically able to do the same things.</p>
 <section id="programming-languages" class="level2">
 <h2 class="anchored" data-anchor-id="programming-languages">Programming languages</h2>
@@ -3692,11 +4195,11 @@ Multiplication ==&gt; 2["2"]
 <p>Take the “word” (more like sentence) “Evlerimizdenmişsiniz”.</p>
 <p>Breakdown:</p>
 <p>Ev → “house” (root noun)</p>
-<p>-ler → plural → Evler = “houses”</p>
-<p>-imiz → our → Evlerimiz = “our houses”</p>
-<p>-den → from → Evlerimizden = “from our houses”</p>
-<p>-miş → hearsay/past tense → Evlerimizdenmiş = “it seems it was from our houses”</p>
-<p>-siniz → second person plural → Evlerimizdenmişsiniz = “apparently you (all) were from our houses”</p>
+<p>-ler (plural) → Evler = “houses”</p>
+<p>-imiz (our) → Evlerimiz = “our houses”</p>
+<p>-den (from) → Evlerimizden = “from our houses”</p>
+<p>-miş (hearsay/past tense) → Evlerimizdenmiş = “it seems it was from our houses”</p>
+<p>-siniz (second person plural) → Evlerimizdenmişsiniz = “apparently you (all) were from our houses”</p>
 </section>
 <section id="fusional-languages" class="level4">
 <h4 class="anchored" data-anchor-id="fusional-languages">Fusional Languages</h4>
@@ -4131,102 +4634,6 @@ Cool fact to bore your friends with and be called a nerd!!!
   <guid>https://vaishnavs.net/posts/Writing-Systems/</guid>
   <pubDate>Sat, 23 Aug 2025 07:00:00 GMT</pubDate>
   <media:content url="https://vaishnavs.net/posts/Writing-Systems/brahmi_script_qutub_minar.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Craftic</title>
-  <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Craftic/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>After I made my conlang <a href="https://vaishnavs.net/posts/Limit%20riLmOtOpU/">“Limit”</a> (which was kinda mid), and then planned out “Proto-Zorbbbb” (I’m working on it), I felt that I needed to make something better.</p>
-<p>It’s probably not better because, (a) it’s based on <a href="https://neal.fun/infinite-craft/"><em>Infinite Craft</em></a> which everyone was obsessed with in 2023, and (b) it took like 5 minutes to make.</p>
-<p>So, enjoy!</p>
-</section>
-<section id="craftic" class="level1">
-<h1>Craftic</h1>
-<p>“Craftic” is an exonym. The endonym is this:</p>
-<p>satatatatatabuloqutabuloqoquloqutatabuloqutabulqoqoqutatatatabulqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatatabuloqutabuloqo quloqoqoqutatatatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqoqutabutatata buloqutabuloqoquloqoqoqutatatatatabuloqutabuloqoquloqutatabuloqutabuloqoqoqutatatatabuloqutabuloqoqulqutatabuloqutabuloqoqoqoqoqe</p>
-<section id="nouns-and-noun-phrases-derived-from-phonology" class="level2">
-<h2 class="anchored" data-anchor-id="nouns-and-noun-phrases-derived-from-phonology">Nouns (and noun phrases) (derived from phonology)</h2>
-<p>All nouns are derived from Infinite Craft. Note that phonemes have no extra allophones, and would just be pronounced like how they would if the same symbol was written in square brackets. Sound and written representation:</p>
-<p>l (/ɬ/) = water</p>
-<p>k (/ʞ/) = fire</p>
-<p>m (/m/) = wind</p>
-<p>b (/ʙ/) = earth</p>
-<p>u (/y/) = plus</p>
-<p>a (/a/) = start parentheses</p>
-<p>q (/ħ/) = end parentheses</p>
-<p>Each phoneme is also a morpheme, you’re welcome!</p>
-<p>If there are any adjacent vowels, put a [t] between them, and if there are any adjacent consonants, put an [o] between them (very restrictive CV phonotactics). If a vowel starts a word, add a [ç], written as “s”, and if a consonant ends a word, add an [œ], written as “e”.</p>
-<p>Parentheses are required for adding any units that aren’t fundamental.</p>
-<p>There is communtative property symmetry, where both ways to put two things together are valid with the same meaning (so a non-one-to-one mapping).</p>
-<p>Cloud = [Steam] + [Smoke] = [Water + Fire] + [Fire + Wind] = salukoqutakumoqe</p>
-<p>Oh yeah, I should have mentioned that you’ll sound insane if you try to pronounce anything.</p>
-<section id="actual-noun-orthography" class="level3">
-<h3 class="anchored" data-anchor-id="actual-noun-orthography">Actual Noun Orthography</h3>
-<p>An alphabet (top/down) is used in actual Craftic, the romanization is just for simplification. Here is the key:</p>
-<p><a href="craftic_table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="craftic orthography for nouns"><img src="https://vaishnavs.net/posts/Craftic/craftic_table.png" class="img-fluid" alt="craftic orthography for nouns"></a>.</p>
-<p>As you can see, all the letters start and end with the same shape. This allows for a word to be transcribed without lifting your pen, so it is continuous (however, the curve is not differentiable because some letters contain sharp turns). [t] and [o], as well as [ç] and [œ], don’t have their own glyphs, because they can be inferred when you read it - the environments and the sounds are one to one. At the start of a word, the first letter should start with a stroke going up-right before writing its normal variant, and at the end of a word, the last letter should end with another up-right stroke after writing its normal variant.</p>
-<p>This is what the word “cloud” (salukoqutakumoqe) looks like:</p>
-<p><a href="craftic_cloud.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="“cloud” written in the Craftic orthography"><img src="https://vaishnavs.net/posts/Craftic/craftic_cloud.png" class="img-fluid" alt="“cloud” written in the Craftic orthography"></a>.</p>
-</section>
-</section>
-<section id="verbs" class="level2">
-<h2 class="anchored" data-anchor-id="verbs">Verbs</h2>
-<p>All verbs must be expressed by actually doing them. If it is biologically impossible to do so, or you will get in trouble for doing so, then try your best to mimic the action by gesturing.</p>
-<p>There are some agreed upon gestures that you shouldn’t make your own of. For example, if others have already established the precedent that the verb “punch” is represented by punching the listener’s face, you must also use that same gesture for that word.</p>
-<p>However, if others haven’t yet invented the gesture for a certain word, you may take the opportunity to seize the “First Discovery”, like how it works in Infinite Craft, and invent your own gesture for it.</p>
-<p>For orthographical purposes, all verbs are pictogram representations of what they mean, usually involving a stick figure as a placeholder for the subject. For example, the word “jump” is written as this: <a href="craftic_jump.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="craftic symbol for “jump”"><img src="https://vaishnavs.net/posts/Craftic/craftic_jump.png" class="img-fluid" alt="craftic symbol for “jump”"></a>.</p>
-<p>What if there is an object? Craftic doesn’t actually distinguish between transitive and intransitive. Instead, if there is an object, it is treated as a subject, that accepts the verb “accepts”.</p>
-</section>
-<section id="adjectives-and-adverbs" class="level2">
-<h2 class="anchored" data-anchor-id="adjectives-and-adverbs">Adjectives and Adverbs</h2>
-<p>So, adjectives and adverbs on their own don’t really exist.</p>
-<p>If a noun phrase involving an adjective exists in Infinite Craft (like “little red book”), then you can just use that as a noun.</p>
-<p>Otherwise, just use a noun that the adjective is close to. For example, if you want to say “scary”, say “monster” instead. Once a speaker coins a new match, that is what sticks forever. Adverbs work very similarly. Instead of saying “quickly”, just say “cheetah”. Both come before the thing they modify.</p>
-</section>
-<section id="prepositions" class="level2">
-<h2 class="anchored" data-anchor-id="prepositions">Prepositions</h2>
-<p>Prepositions can’t really be expressed as words, but instead are shown through verbs.</p>
-<p>“of” is expressed using “have”, “in” and “from” are expressed using “exist”, etc.</p>
-</section>
-<section id="general-syntax" class="level2">
-<h2 class="anchored" data-anchor-id="general-syntax">General Syntax</h2>
-<p>In speech, the verb gesture is performed at the same time as the subject, and is elongated for as long as it takes to finish pronouncing the subject.</p>
-<p>In writing, the subject is written on the top, letters horizontal and left to right, then the verb is written underneath.</p>
-<p>There aren’t technically any grammatical case markings. The accusative and dative cases are their own pair with the verb “accept”. The genitive case doesn’t really exist.</p>
-<p>By the way, the symbol for “accept” is this:</p>
-<p><a href="craftic_accept.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="craftic symbol for “accept”"><img src="https://vaishnavs.net/posts/Craftic/craftic_accept.png" class="img-fluid" alt="craftic symbol for “accept”"></a>.</p>
-<p>For comparing A to B in quality X, just say “A X, B ! X”</p>
-<p>This is what “my evil cat from France eats yummier food than the dog” would look like:</p>
-<p>I have</p>
-<p>Villain cat accept</p>
-<p>Villain cat exist</p>
-<p>France accept</p>
-<p>Villain cat eat</p>
-<p>(Ice cream) food accept</p>
-<p>Dog eat</p>
-<p>(Brussels sprouts) food accept</p>
-</section>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>Please feel free to roast Craftic in the comments.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Conlangs</category>
-  <guid>https://vaishnavs.net/posts/Craftic/</guid>
-  <pubDate>Wed, 16 Jul 2025 07:00:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Craftic/craftic_jump.png" medium="image" type="image/png" height="164" width="144"/>
 </item>
 </channel>
 </rss>

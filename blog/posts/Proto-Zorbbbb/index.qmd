@@ -81,7 +81,7 @@ A syllable is just a vowel and, before that, how many ever consonants precede it
 
 ## Prosody
 
-Since each syllable has a specified musical note and length (as you will see soon), stress really doesn't exist from these factors. However, the only hope for having prosody is loudness and octave, which are not phonemic. These are both relative binary features - as in, anything that's not the highest possible octave can be considered "low", and so on. 
+Since each syllable has a specified musical note and length (as you will see soon), stress really doesn't exist from these factors. However, the only hope for having prosody is loudness and octave, which are not phonemic. These are both relative binary features - as in, anything that's not the highest possible octave can potentially be considered "low", and anything that's not the lowest possible octave can potentially be considered "high". 
 
 The first syllable is loud if it has up to three consonants. Otherwise, it's the final. If there's only one syllable with at least four consonants, then I guess these two cases are the same thing. 
 
@@ -192,7 +192,7 @@ All in the same octave starting at one C and ending strictly before the C higher
 | 4D Discrete     | S N S |
 | Beyond Discrete | N N N |
 
-Lemme explain what this means. Discrete means the number of theoretically possible quantities for this noun is at most $\aleph_0$, and continuous means the number of theoretically possible quantities for this noun is $2^{\aleph_0}$. 
+Lemme clarify what this means. Discrete means the number of theoretically possible quantities for this noun is at most $\aleph_0$, and continuous means the number of theoretically possible quantities for this noun is $2^{\aleph_0}$. 
 
 1D means the number belongs on the real number line, 2D for complex, 4D for quaternions, and beyond for, well, beyond. 
 
@@ -301,6 +301,8 @@ Rhotic vowel - if the vowel is phonetically rounded, add ⟨y⟩, otherwise ⟨r
 Second vowel - write it after the first vowel, same glyphs
 
 Semivowels - write ⟨y⟩ or ⟨w⟩ right after the consonant
+
+Liquids - write ⟨L⟩ or ⟨R⟩ right after the semivowel, which may be null
 
 Short vowel - write ⟨%⟩ after the vowel
 
@@ -565,8 +567,6 @@ See the Python implementation below:
 ```python
 from sympy import isprime
 
-
-
 def get_primes(n):
     primes = []
     while (n > 1):
@@ -602,7 +602,7 @@ def make_root_word(n):
 
 This algorithm is quite similar to how you'd encode a number in binary with a unique sum:
 
-$n = \sum_{i=0}^{k} C_i X_i$, where $C_i \in \{0, 1\}$ and $k$ is the number such that $X_k \leq n$ but $X_{k+1} > n$. 
+$n = \sum\limits_{i=0}^{k} C_i X_i$, where $C_i \in \{0, 1\}$ and $k$ is the number such that $X_k \leq n$ but $X_{k+1} > n$. 
 
 The only difference is that $X_i = 2^i$ for a binary system, but it's the $i^\text{th}$ prime number in the Proto-Zorbbbbistani system. 
 

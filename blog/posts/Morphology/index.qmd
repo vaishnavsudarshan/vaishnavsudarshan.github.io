@@ -78,15 +78,15 @@ Breakdown:
 
 Ev → "house" (root noun)
 
--ler → plural → Evler = "houses"
+-ler (plural) → Evler = "houses"
 
--imiz → our → Evlerimiz = "our houses"
+-imiz (our) → Evlerimiz = "our houses"
 
--den → from → Evlerimizden = "from our houses"
+-den (from) → Evlerimizden = "from our houses"
 
--miş → hearsay/past tense → Evlerimizdenmiş = "it seems it was from our houses"
+-miş (hearsay/past tense) → Evlerimizdenmiş = "it seems it was from our houses"
 
--siniz → second person plural → Evlerimizdenmişsiniz = "apparently you (all) were from our houses"
+-siniz (second person plural) → Evlerimizdenmişsiniz = "apparently you (all) were from our houses"
 
 #### Fusional Languages
 
