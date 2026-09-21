@@ -2,9 +2,6 @@ project:
   type: website
   output-dir: ../docs
 
-execute:
-  enabled: false
-
 website:
   title: "Vaishnav Sudarshan's Blog on Cool Stuff"
   site-url: https://vaishnavs.net
