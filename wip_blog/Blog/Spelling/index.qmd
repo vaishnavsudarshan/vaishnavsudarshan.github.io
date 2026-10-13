@@ -1,0 +1,3 @@
+* Phonetic writing systems are bijective functions between strings of phonemes and strings of glyphs. 
+
+* Unambiguous writing systems are functions but not necessarily bijective (such as in french where "paix" meaning "peace" and "paient" meaning "pay" when conjugated with "they" are homophones)

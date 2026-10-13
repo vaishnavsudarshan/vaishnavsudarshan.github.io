@@ -1,0 +1,16 @@
+---
+title: "Nokap"
+author: "Vaishnav Sudarshan"
+date: "2026-3-10"
+categories:  [Conlangs]
+tags: [Chemistry, Food]
+abstract: A language where you cannot lie. Also, its medium is food.
+---
+
+The taste of the food determines the semantics, discouraging lying. Also, it's evolved from English. 
+
+Basically everything is put into a smoothie. 
+
+How it's evolved from English: at some point people dont read text linearly but rather all at once, making the order irrelevant. semantic distinctions are preserved. 
+
+Morphemes are determined from the number of grams. This number encodes all the morphosyntax. While this seems fusional, it's actually agglutinative. Each morpheme is one of the prime factors. Exponents dont matter. 

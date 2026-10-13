@@ -3,7 +3,7 @@ title: "Proto-Zorbbbb"
 author: "Vaishnav Sudarshan"
 date: "2026-8-18"
 categories:  [Conlangs, Linguistics]
-tags: [Cryptography]
+tags: [Cryptography, Earth Science]
 image: "example_script.png"
 abstract: My showcase for Proto-Zorbbbb, the ancestor of Zorbbbb. Please don't try to speak it, because each verb has almost nine trillion forms, the number system is based on prime numbers rather than the powers of a base, you must have perfect pitch, and your mouth must be capable of manipulating 4D space. 
 ---
@@ -22,7 +22,7 @@ Proto-Zorbbbb is what evolved later into Zorbbbb, and strongly influenced West J
 
 West Jikur is a city in rural Limitland inhabited by aliens who *can* process frequencies, just from mechanical oscillations rather than sound waves. More on that entire language in a future blog post. 
 
-Zorbbbbistan and Limitland are countries that overlap in space (since Zorbbbbistan is from the past), and each has land that the other doesn't have too. 
+Ancient Limitland's political boundaries coincided with the tectonic plate of Zorbbbb called the Limit Plate. Zorbbbbistan's boundaries include parts of the Limit Plate (but not all of it, since other parts of it were inhospitable), as well as parts of some other tectonic plates. 
 
 The Proto-Zorbbbbistanis invented their own orthography. Later, with the arrival of English to the planet Zorbbbb, they made their own romanization to teach newcomers their language, but the letter choices might seem nonsensical, since the Proto-Zorbbbbistanis didn't formally learn the alphabet. There is a second romanization that is only used for typing (the default graph's first letter). 
 
@@ -140,12 +140,12 @@ Person: Second Vowel
 
 ## Location
 
-| Location                              |  Vowel  |
-|---------------------------------------|---------|
-|Inside Zorbbbbistan, inside Limitland  |o a Ø u e|
-|Inside Zorbbbbistan, outside Limitland |a Ø i o Ø|
-|Outside Zorbbbbistan, inside Limitland |u Ø i a Ø|
-|Outside Zorbbbbistan, outside Limitland|e e o i a|
+| Location                                |  Vowel  |
+|-----------------------------------------|---------|
+|Inside Zorbbbbistan, inside Limit Plate  |o a Ø u e|
+|Inside Zorbbbbistan, outside Limit Plate |a Ø i o Ø|
+|Outside Zorbbbbistan, inside Limit Plate |u Ø i a Ø|
+|Outside Zorbbbbistan, outside Limit Plate|e e o i a|
 
 ## Animacy
 

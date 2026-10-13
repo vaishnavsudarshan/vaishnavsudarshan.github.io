@@ -1,0 +1,8 @@
+---
+title: "Cardinal Infinity"
+author: "Vaishnav Sudarshan"
+date: "2025-1-29"
+categories:  [Math]
+tags: [Philosophy] 
+abstract: Infinity, when we think of sizes, is a lot more complicated that you think. 
+---

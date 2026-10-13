@@ -1,0 +1,21 @@
+---
+title: "Tokenization"
+author: "Vaishnav Sudarshan"
+date: "2026-22-5"
+categories:  [Linguistics, AI, CS]
+abstract: How do LLMs segment text into pieces that they can understand?
+---
+
+# Introduction
+
+Language is productive. Infinite sentences can be produced by a finite alphabet. However, Large Language Models work (alert: massive oversimplification) by predicting the next chunk of text. That means we need small-ish chunks that can be put together to form any text, so that the LLM can process it. 
+
+# The need for tokens
+
+## Letters
+
+## Words
+
+## Morphemes
+
+# BPE

@@ -139,4 +139,6 @@ So, now we know how meanings can be arranged within "words" of a language. Howev
 
 # Further Information
 
-* The Art of Language Invention by David J. Peterson has some amazing information about morphology, both in describing natlangs and making conlangs. 
+* [The Art of Language Invention](https://www.goodreads.com/en/book/show/24611649-the-art-of-language-invention) by David J. Peterson has some amazing information about morphology, both in describing natlangs and making conlangs. It's great for understanding allomorphy, for example. 
+
+* 

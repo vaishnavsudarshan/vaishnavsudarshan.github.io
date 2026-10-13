@@ -1,9 +1,9 @@
 ---
-title: "Indian Foods That Aren't Indian"
+title: "Food that didn't originate from where you might expect"
 author: "Vaishnav Sudarshan"
 date: "2025-1-29"
 categories:  [History]
 tags: [Economics, Chemistry, Food] 
-abstract: Turns out, a lot of foods that I thought were Indian are actually from very different places. 
+abstract: Turns out, a lot of foods have a completely different origin from where I believed they were from.
 ---
 

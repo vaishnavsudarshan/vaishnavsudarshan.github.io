@@ -10,7 +10,145 @@
 <atom:link href="https://vaishnavs.net/index.xml" rel="self" type="application/rss+xml"/>
 <description>Vaishnav Sudarshan&#39;s blog on linguistics, math, computer science and natural language processing</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Wed, 16 Sep 2026 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Oct 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Language of DNA</title>
+  <dc:creator>Vaishnav Sudarshan</dc:creator>
+  <link>https://vaishnavs.net/posts/Language-Of-Dna/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>All the information that encodes your genes has to exist somewhere, right? Well, I’m pretty sure you know that place is DNA, in your cells. You probably heard of the genetic code too. In fact, if you’ve taken biology, you probably know this stuff in decent detail. I’m here to stretch how far we can view this as a language.</p>
+</section>
+<section id="the-chemistry-of-proteins-rna-and-dna" class="level1">
+<h1>The Chemistry of Proteins, RNA, and DNA</h1>
+<p>You know how the raw form of natural language is phones and sound waves - the stuff you’d see from either the Praat software or a very detailed anatomical procedure on how to pronounce a voiceless uvular-bilabial doubly articulated stop? Similarly, the raw form of genetic information is biochemistry.</p>
+<p>Biochemistry is centered around macromolecules. There are four main types, but the two we will care about are proteins and nucleic acids. Proteins are quite important for a <em>lot</em> of things - for example, speeding up reactions, transport, signaling, and structure, just to name a few. We can think of their functions like semantic reference - what we intend and think about when we say something.</p>
+<section id="proteins" class="level2">
+<h2 class="anchored" data-anchor-id="proteins">Proteins</h2>
+<p>Proteins are quite complicated. At the very surface level, it’s a sequence of amino acids.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="amino_acid.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Here is the structure of a single amino acid."><img src="https://vaishnavs.net/posts/Language-Of-Dna/amino_acid.png" class="img-fluid figure-img" alt="Here is the structure of a single amino acid."></a></p>
+<figcaption>Here is the structure of a single amino acid.</figcaption>
+</figure>
+</div>
+<p>Note that the <img src="https://latex.codecogs.com/png.latex?R"> isn’t a constant molecule. Rather, it’s a variable that represents the group that distinguishes all <img src="https://latex.codecogs.com/png.latex?20"> amino acids.</p>
+<p>However, proteins can fold to form structures, such as alpha helices or beta sheets, and the chemical properties of the environment determine how the <img src="https://latex.codecogs.com/png.latex?R">-groups interact with each other, which determines the 3D shape, which determines the function. The relationship between shape and function might sound suspicious, but it actually makes sense - enzymes (a type of protein), for example, bind to a specific molecule called the substrate, allowing reactions to speed up. Binding is similar to putting together Lego pieces, so the shape of the enzyme must be very exact - otherwise, its shape will match with the wrong type of molecule (or no molecule at all), failing its function.</p>
+</section>
+<section id="dna-and-rna" class="level2">
+<h2 class="anchored" data-anchor-id="dna-and-rna">DNA and RNA</h2>
+<p>DNA and RNA are nucleic acids. Their main function is storing and transmitting information, which is why they are like a language. The NA stands for “nucleic acid”. So what does the first letter stand for? The D stands for deoxyribose, while the R stands for ribose. These are both sugars, except deoxyribose has one less oxygen atom than ribose. This isn’t the only difference. RNA has a single strand of nucleotides (bases with nitrogen in them), while DNA has two strands, making the double helix shape we all know and love.</p>
+</section>
+</section>
+<section id="the-part-resembling-language" class="level1">
+<h1>The part resembling language</h1>
+<section id="nucleotides" class="level2">
+<h2 class="anchored" data-anchor-id="nucleotides">Nucleotides</h2>
+<p>The bases are adenine, cytosine, guanine, and thymine in DNA. In RNA, it’s similar, except with uracil instead of thymine.</p>
+<p>Here’s what these bases look like:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="bases.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Here are the structures of the four bases."><img src="https://vaishnavs.net/posts/Language-Of-Dna/bases.png" class="img-fluid figure-img" alt="Here are the structures of the four bases."></a></p>
+<figcaption>Here are the structures of the four bases.</figcaption>
+</figure>
+</div>
+<p>Also, here is the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/base.html">source</a> of this image.</p>
+<p>These can be represented by the first letters of their names: A, C, G, T, and U.</p>
+<p>These nitrogenous bases are called nucleotides. Long sequences of nucleotides create nucleic acids.</p>
+<p>We can write a DNA sequence as a string of letters, like this:</p>
+<p>5’ A T G C G T A A C G 3’ 3’ T A C G C A T T G C 5’</p>
+<p>The 3’ and 5’ are the direction of the strands, specifically which carbon is on either end (the 3’ is attached to a hydroxyl group, while the 5’ is attached to a phosphate group). Just know that if one strand is 5’ to 3’, the other strand is 3’ to 5’.</p>
+<p>You probably know that A always pairs with T, and C with G. But wouldn’t this be redundant, since the other strand gives the same information? Well, this redundancy serves as an error-correcting mechanism - if one nucleotide goes missing, its corresponding base on the other strand can tell which nucleotide it was.</p>
+</section>
+<section id="codons-and-the-genetic-code" class="level2">
+<h2 class="anchored" data-anchor-id="codons-and-the-genetic-code">Codons and the genetic code</h2>
+<p>A <em>codon</em> is a group of three consecutive nucleotides. The genetic code takes every three codons and maps it to an amino acid. Note that this is for codons of RNA, not DNA. While DNA is meant for long term storage, RNA is what is used to make proteins. By the way, it’s called transcription when DNA is written into RNA (fairly easily, since it’s just base-pairing rules), and translation when RNA is used to make proteins. I’ll get into the linguistics analogy in a bit.</p>
+<p>In translation, ribosomes (organelles to synthesize proteins) read each RNA codon from 5’ to 3’ and add a corresponding amino acid to the protein chain in progress.</p>
+<p>Now, here’s the part we’ve been waiting for - how codons really map to amino acids.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="genetic_code.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="The genetic code wheel, obtained from Wikipedia"><img src="https://vaishnavs.net/posts/Language-Of-Dna/genetic_code.png" class="img-fluid figure-img" alt="The genetic code wheel, obtained from Wikipedia"></a></p>
+<figcaption>The genetic code wheel, obtained from <a href="https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables#">Wikipedia</a></figcaption>
+</figure>
+</div>
+<p>You should note a few things. First, we read the nucleotide from the inside to the outside, since the inside is 5’ and the outside is 3’. Also, note how there are start and stop codons. It’s basically metadata! The ribosome will stop reading the RNA once it encounters either UAA, UAG, or UGA. The start codon AUG actually corresponds to the amino acid methionine, rather than nothing at all, since this starts off the amino acid chain.</p>
+<p>Think of nucleotides as phonetic features of a phone. Vowels and consonants can usually be written in three distinctive features - (height, backness, roundedness) or (place, manner, voice), respectively. Put them together and you get an entire phone. Similarly, codons are like phones, which must have three arguments defining them.</p>
+<p>Amino acids are like phonemes… <em>kind of</em>. They aren’t more abstract or anything, since they are just as physical. But a phoneme can be realized with multiple different phones, similar to how an amino acid can be encoded by multiple different codons. The analogy breaks down a tiny bit when you realize that the phonetic realizations of phonemes can be ambiguous. One phone might be the realization of two different phonemes (think about how in some accents of English, /n/ can sound like [m] before a /p/ or a /b/, but so would /m/, since that’s its default). However, evolution ensured the genetic code was unambiguous, since the organisms who had an ambiguous genetic code would die of getting the wrong proteins all the time! English wasn’t this drastic since mixing up phrases like “warm blanket” and “worn blanket” are pretty rare and not nearly as dangerous.</p>
+<p>Back to the genetic code… wait! It doesn’t seem very efficient! There are only <img src="https://latex.codecogs.com/png.latex?20"> amino acids, but there are <img src="https://latex.codecogs.com/png.latex?61"> codons (<img src="https://latex.codecogs.com/png.latex?4%5E3=64">, but then subtract <img src="https://latex.codecogs.com/png.latex?3"> for the number of stop codons) that can correspond to amino acids! Well, remember how I said that the redundancy of two strands allows for error correction? Similarly, this does the same thing. If a nucleotide is wrong, there’s still a decent chance that the correct amino acid will be produced.</p>
+<p>How can a nucleotide go wrong, though? Glad you asked! That’s where mutations come in.</p>
+</section>
+</section>
+<section id="mutations" class="level1">
+<h1>Mutations</h1>
+<p>A mutation is when the sequence of nucleotides changes unexpectedly. The simplest is a point mutation, where a single nucleotide changes.</p>
+<p>Remember how the genetic code has a bit of redundancy? GUA and GUG map to the same amino acid, valine. That means if the third nucleotide in GUA becomes a G, we’re still good! This is a silent mutation, because it doesn’t annoy us with metaphorical loudness.</p>
+<p>If instead the second nucleotide became a C, we have GCA, or alanine. Because the amino acid changes, this is a missense mutation.</p>
+<p>Now if we have UAU that gets mutated to UAG, our tyrosine becomes a stop codon, meaning the ribosome stops reading the RNA and stops adding to the protein. Uh-oh! There is no way this biological skill issue really works - sounds like nonsense! No, really - it’s called a nonsense mutation.</p>
+<p>Things get a lot more annoying if we insert or delete stuff instead. After all, if sequences of nucleotides are strings, and we want to find the edit distance, we consider insertions and deletions as valid operations too, not just replacements. Since ribosomes read nucleotides in groups of three, this is a bit catastrophic, isn’t it?</p>
+<p>Think about this sequence:</p>
+<p><img src="https://latex.codecogs.com/png.latex?5'%20%5C%20%5C%20%5C%20U%20%5C%20U%20%5C%20C%20%5C%20G%20%5C%20A%20%5C%20G%20%5C%20A%20%5C%20A%20%5C%20C%20%5C%20%5C%20%5C%203'"></p>
+<p><img src="https://latex.codecogs.com/png.latex?5'%20%5C%20%5C%20%5C%20%5BU%20%5C%20U%20%5C%20C%5D%20%5C%20%5C%20%5BG%20%5C%20C%20%5C%20G%5D%20%5C%20%5C%20%5BA%20%5C%20A%20%5C%20C%5D%20%5C%20%5C%20%5C%203'"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Ctext%7BPhe%7D%20%5C%20%5C%20%5Ctext%7BAla%7D%20%5C%20%5C%20%5Ctext%7BAsn%7D"></p>
+<p>Now, suppose we add an extra uracil at position 4.</p>
+<p><img src="https://latex.codecogs.com/png.latex?5'%20%5C%20%5C%20%5C%20U%20%5C%20U%20%5C%20C%20%5C%20U%20%5C%20G%20%5C%20A%20%5C%20G%20%5C%20A%20%5C%20A%20%5C%20C%20%5C%20%5C%20%5C%203'"></p>
+<p><img src="https://latex.codecogs.com/png.latex?5'%20%5C%20%5C%20%5C%20%5BU%20%5C%20U%20%5C%20C%5D%20%5C%20%5C%20%5BU%20%5C%20G%20%5C%20C%5D%20%5C%20%5C%20%5BG%20%5C%20A%20%5C%20A%5D%20%5C%20%5C%20C%20%5C%20%5C%20%5C%203'"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Ctext%7BPhe%7D%20%5C%20%5C%20%5Ctext%7BCyc%7D%20%5C%20%5C%20%5Ctext%7BGlu%7D%20%5C%20%5C%20%5Ctext%7B???%7D"></p>
+<p>Ouch! Now, unless there’s a lucky coincidence where the rest was just a string of “AAAAAAAAAAAA” (nah, that’s an extreme example; it’s a lot easier to be lucky for a single amino acid), the ribosome will make the wrong amino acid most of the time from now on, and the rest of the protein is cooked.</p>
+<p>There are other types of mutations that are a bit bigger and don’t just involve a single nucleotide. This includes repeating a section of the sequence, swapping a section, or reversing a section (duplication, translocation, or inversion, respectively). You can also have insertion and deletion of entire sections, rather than individual nucleotides.</p>
+<p>But hold on! Did you notice that a lot of these mutations seem similar to sound changes? If you’ve read <a href="https://vaishnavs.net/posts/Historical-Linguistics-2/">Historical Linguistics</a>, you might recall insertion or deletion as well, which work exactly the same. Metathesis is like swapping sections (except more for single phonemes rather than entire sequences), and reduplication (not really a common sound change, since it occurs more in morphological processes than phonological ones, but just to extend the analogy) is like repetition.</p>
+<p>While this analogy might excite you, there is a major flaw. Mutations are random and usually happen once on specific words, while sound changes systematically apply to all words at once. However, apart from that, the changes themselves are very analogous.</p>
+</section>
+<section id="evolution-and-other-related-analogies" class="level1">
+<h1>Evolution (and other related analogies)</h1>
+<section id="natural-selection" class="level2">
+<h2 class="anchored" data-anchor-id="natural-selection">Natural Selection</h2>
+<p>Evolution is in part based on mutations. Mutations allow genetic diversity in a population, and organisms with better genetics will likely survive and reproduce, shifting the population’s frequencies of certain alleles (forms of a gene).</p>
+<p>Consider the minions (100 of them) in Gru’s basement. Let’s say there’s a gene where the allele most minions have is to spot and grab bananas very slowly. However, a mutation gives one minion, Otto, a different form of this gene, making it a lot efficient in finding bananas. If Gru dumps a few bananas in his basement every now and then, Otto will be able to steal all the bananas, while the others will die of starvation. At first, only <img src="https://latex.codecogs.com/png.latex?1%20%5C%25"> of the minions in Gru’s basement have banana-eating efficiency. However, after, let’s say, <img src="https://latex.codecogs.com/png.latex?95"> of the minions die, Otto’s allele will be <img src="https://latex.codecogs.com/png.latex?20%20%5C%25"> of the population - a lot more. If Otto has children, and the allele is dominant (meaning any child of Otto will express this allele, regardless of the other parent), then more than <img src="https://latex.codecogs.com/png.latex?20%20%5C%25"> of the population will have this allele. Crazy how that happened, when we think about how a random mutation happened, affecting only <img src="https://latex.codecogs.com/png.latex?1%20%5C%25"> of the minions! Keep in mind that this situation is unrealistic and oversimplified, but it’s just to illustrate natural selection exaggeratedly.</p>
+<p>The thing is, the drivers of language evolution work a bit like this too! At least, we can model it that way. Not just sound changes, but any linguistic change. For example (mainly just phonological evolution), in the phrase “going to”, the velar nasal /ŋ/ got phonologically assimiliated to become the alveolar nasal /n/, since the /t/ is also alveolar. It’s more like “goin-to” at this point. The /u/ in “to” became more centralized, like /ə/. Then, the /t/ itself got reduced, so it sounds like (and I’ll show the full thing in the IPA this time) /goʊwɪnə/. The vowels did some funny stuff to almost neutralize, to get our final word “gonna”, pronounced /gənə/. Notice that each time, the pronunciation got a bit more efficient each time, so our mouths had to do a bit less work. With linguistic variation where one person pronounced “going to” with a bit more ease than another person, more people would gravitate towards the first person’s way of saying it. Again, the analogy breaks down a bit when we realize that the second person could have also adapted the easier way, which is not entirely how genes work.</p>
+</section>
+<section id="family-trees" class="level2">
+<h2 class="anchored" data-anchor-id="family-trees">Family Trees</h2>
+<p>I think a better tie between the evolution of languages and life would be when we examine prokaryotes. Since bacteria and archaebacteria reproduce with binary fission, their “children” would be genetically identical to them, <em>except</em> for mutations. While some eukaryotes can reproduce with mitosis (a bit more complicated than binary fission but similar goal), another issue is that individuals can’t exchange genetic information with one another. Bacteria have plasmids, or bits of DNA outside of them, that can be transferred between each other using something called a pilus.</p>
+<p>Do you see the similarities with languages? When one generation give their language to the next generation, it’s theoretically identical, except for some changes analogous to mutations - but there’s no systematic process to recombine parts of languages. I guess maybe creoles, but it could be thought of as analogous to a pilus instead. That’s my next point. People’s languages influence each other all the time - not just someone’s English with the friends’ English, but even loanwords between languages that most people would agree are distinct. Creoles, in a way, are just a very extreme case of loanwords, since the substrate kind of borrows most of its lexicon from the other language.</p>
+<p>As for families, biologists believe all life on Earth has a common ancestor. This would make the first cell on Earth analogous to the proto-language of a single family. Other language families would be more like alien life forms that evolved independently.</p>
+<p>You can even use the comparative method to reconstruct common ancestor DNA. For example, if you take a sequence of human nucleotides and a sequence of chimpanzee nucleotides, you can align the DNA (remember that insertions and deletions will cause gaps when you align them), and knowing what mutations likely happened can allow you to reconstruct the proteins of the most recent common ancestor.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Hopefully, you now understand the “linguistics” behind your genes, in a way. In the comments, feel free to share any other analogies you’ve noticed between the two fields!</p>
+</section>
+<section id="further-information" class="level1">
+<h1>Further Information</h1>
+<ul>
+<li><p>MIT’s course <a href="https://ocw.mit.edu/courses/24-901-introduction-to-phonology-spring-2026/">24.901 “Introduction to Phonology”</a> had the example of “warm blanket” versus “worn blanket” potentially being ambiguous.</p></li>
+<li><p>The evolution of “going to” as it became “gonna” is shown in David J. Peterson’s <a href="https://www.goodreads.com/en/book/show/24611649-the-art-of-language-invention">The Art of Language Invention</a>.</p></li>
+<li><p><a href="https://en.vectorbuilder.com/tool/sequence-alignment.html">This tool</a> allows you to align two sequences of DNA, which is important for…</p></li>
+<li><p>Doing the <a href="https://www.genome.gov/about-genomics/fact-sheets/Comparative-Genomics-Fact-Sheet">comparative method</a> on DNA!</p></li>
+<li><p>Here is <a href="https://www.quantamagazine.org/all-life-on-earth-today-descended-from-a-single-cell-meet-luca-20241120/">some deeper information</a> about how all life evolved from a single cell.</p></li>
+<li><p>Meanwhile, here’s some of the <a href="https://slate.com/human-interest/2014/08/origin-of-languages-tower-of-babel-proto-languages-and-the-brothers-grimm.html">analogous topic</a> in linguistics, which is a lot more debated.</p></li>
+<li><p><a href="https://www.polilingua.com/blog/post/creole-languages-origins-features.htm">This article</a> explains creoles in more depth.</p></li>
+<li><p>Here is some <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5041012/">history</a> behind the discovery of the genetic code.</p></li>
+<li><p>If you’re more curious about how proteins fold after their initial structure (a sequence of amino acids), you might find <a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold</a> interesting, as it’s an AI that can predict how a protein’s shape will change over time.</p></li>
+<li><p>This goes into a bit more <a href="https://www.genomicseducation.hee.nhs.uk/blog/reading-dna-where-to-start/">detail</a> about how the <img src="https://latex.codecogs.com/png.latex?3'"> and <img src="https://latex.codecogs.com/png.latex?5'"> orientations of DNA work.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>Linguistics</category>
+  <category>Biology</category>
+  <guid>https://vaishnavs.net/posts/Language-Of-Dna/</guid>
+  <pubDate>Mon, 12 Oct 2026 07:00:00 GMT</pubDate>
+  <media:content url="https://vaishnavs.net/posts/Language-Of-Dna/genetic_code.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Pikbasa</title>
   <dc:creator>Vaishnav Sudarshan</dc:creator>
@@ -28,18 +166,23 @@
 </section>
 <section id="basic-setup" class="level1">
 <h1>Basic setup</h1>
-<p>We have a matrix of pixels with 40 rows and 25 columns. Each pixel has a certain color and represents a unit of meaning (a thousand words would mean each pixel is a word, or Pikbasa is an isolating language; however, if you analyze each pixel as a morpheme, then we have a polysynthetic language where a picture is forty words - so let’s not do that).</p>
+<p>We have a matrix of pixels with <img src="https://latex.codecogs.com/png.latex?40"> rows and <img src="https://latex.codecogs.com/png.latex?25"> columns. Each pixel has a certain color and represents a unit of meaning (a thousand words would mean each pixel is a word, or Pikbasa is an isolating language; however, if you analyze each pixel as a morpheme, then we have a polysynthetic language where a picture is forty words - so let’s not do that).</p>
 </section>
 <section id="color-phonemes" class="level1">
 <h1>Color “Phonemes”</h1>
 <p>A pixel’s color can be represented with its RGB values. Each component, from <img src="https://latex.codecogs.com/png.latex?0"> to <img src="https://latex.codecogs.com/png.latex?255">, has four intervals - <img src="https://latex.codecogs.com/png.latex?0:%20%5B0,%2063%5D">, <img src="https://latex.codecogs.com/png.latex?1:%20%5B64,%20127%5D">, <img src="https://latex.codecogs.com/png.latex?2:%20%5B128,%20191%5D">, and <img src="https://latex.codecogs.com/png.latex?3:%20%5B192,%20255%5D">. Three components makes <img src="https://latex.codecogs.com/png.latex?4%5E3=64"> possible colors, which I guess are the phonemes, but all words are one morpheme, and all morphemes are one phoneme, so each phoneme is also a word. Any two colors where each component is in the same interval will not be distinguished, and will be considered the same phoneme - for example, <img src="https://latex.codecogs.com/png.latex?(R,G,B)%20=%20(0,0,0)"> is the same phoneme as <img src="https://latex.codecogs.com/png.latex?(R,G,B)%20=%20(32,32,32)">.</p>
 <p>We can refer to a phoneme with its interval for each color component. For example, <img src="https://latex.codecogs.com/png.latex?/023/"> means the red is between <img src="https://latex.codecogs.com/png.latex?0"> and <img src="https://latex.codecogs.com/png.latex?63">, the green is between <img src="https://latex.codecogs.com/png.latex?128"> and <img src="https://latex.codecogs.com/png.latex?191">, and the blue is between <img src="https://latex.codecogs.com/png.latex?192"> and <img src="https://latex.codecogs.com/png.latex?255">. The order of the phonemes is the same order within the list of the same name here:</p>
-<pre><code>phonemes = []
+<pre><code>
+phonemes = []
 for R in range(4):
     for G in range(4):
         for B in range(4):
             color = (R, G, B)
             phonemes.append(color)
+</code></pre>
+<p>Also, if we want the actual RGB values, say each component at the minimum of its respective interval, we can just multiply each value by <img src="https://latex.codecogs.com/png.latex?64">:</p>
+<pre><code>
+pixels = [(R * 64, G * 64, B * 64) for (R, G, B) in phonemes]
 </code></pre>
 <p>By the way, now’s a good time to come clean. Pikbasa is technically not a language. One of the characteristics of a language is that it is productive - a finite amount of building blocks can make infinite sentences. On the other hand, a Pikbasa sentence has <img src="https://latex.codecogs.com/png.latex?25"> words (more details on that in the next section), each with at most <img src="https://latex.codecogs.com/png.latex?64"> possible distinguished colors. While <img src="https://latex.codecogs.com/png.latex?64%5E%7B25%7D"> as an upper bound is huge, it’s not infinite, making Pikbasa not productive. I assume, however, that most of you reading this are not annoying “erm actually” people, so Pikbasa is a language for the purposes of this showcase.</p>
 <p>If you don’t know about phonemes, you might want to read my blog post on <a href="https://vaishnavs.net/posts/Phonology/">phonology</a>.</p>
@@ -100,7 +243,7 @@ for R in range(4):
 </section>
 <section id="spoken-form" class="level1">
 <h1>Spoken form</h1>
-<p>Did you know that the Spanish spoken in the Canary Islands has a whistled variant? It’s the exact same language, but all the phonemes are encoded as whistles of different frequencies. Another example of encoding a language in a different form might be Morse Code, where English letters are represented as dots and dashes. So, I thought it might be cool if Pikbasa could also have a system of encoding - except this time, there’s a bijection between pixel “phonemes” and oral (consonantal) <em>phonemes</em>.</p>
+<p>Did you know that the Spanish spoken in the Canary Islands has a whistled variant? It’s the exact same language, but all the phonemes are encoded as whistles of different frequencies. Another example of encoding a language in a different form might be Morse Code, where English letters are represented as dots and dashes. So, I thought it might be cool if Pikbasa could also have a system of encoding - except this time, there’s a bijection between pixel “phonemes” and oral (and consonantal) <em>phonemes</em>.</p>
 <p>So recall that each pixel is <img src="https://latex.codecogs.com/png.latex?/RGB/">, where <img src="https://latex.codecogs.com/png.latex?R,%20G,%20B%20%5Cin%20%5C%7B0,%201,%202,%203%5C%7D">, and encode the amount of each red, green, and blue component respectively (with intervals so we have <img src="https://latex.codecogs.com/png.latex?4%5E3"> and not <img src="https://latex.codecogs.com/png.latex?256%5E3"> phonemes). Here’s how we can make this spoken.</p>
 <p>R:</p>
 <table class="caption-top table">
@@ -187,7 +330,7 @@ for R in range(4):
 </section>
 <section id="dictionary" class="level1">
 <h1>Dictionary</h1>
-<p>While the words for adjectives/adverbs are just a ranking of how true that semantic dimension is on a scale from <img src="https://latex.codecogs.com/png.latex?0"> to <img src="https://latex.codecogs.com/png.latex?63">, nouns have to be mapped manually. Also, let me quickly tell you the syntactic role particles: <img src="https://latex.codecogs.com/png.latex?(%5Ctext%7BSubject%7D,%20%5Ctext%7BObject%7D,%20%5Ctext%7BLocative%7D,%20%5Ctext%7BAblative%7D,%20%5Ctext%7BVerb%7D)%20=%20(0,%2013,%2026,%2039,%2052)"> - so every multiple of 13 is a syntactic particle.</p>
+<p>While the words for adjectives/adverbs are just a ranking of how true that semantic dimension is on a scale from <img src="https://latex.codecogs.com/png.latex?0"> to <img src="https://latex.codecogs.com/png.latex?63">, nouns have to be mapped manually. Also, let me quickly tell you the syntactic role particles: <img src="https://latex.codecogs.com/png.latex?(%5Ctext%7BSubject%7D,%20%5Ctext%7BObject%7D,%20%5Ctext%7BLocative%7D,%20%5Ctext%7BAblative%7D,%20%5Ctext%7BVerb%7D)%20=%20(0,%2013,%2026,%2039,%2052)"> - so every multiple of <img src="https://latex.codecogs.com/png.latex?13"> is a syntactic particle.</p>
 <p>Anyway, back to the noun or verb roots. They are presented as nouns, but they can and will be used as verbs too - use your creativity for that part, as it may not be obvious.</p>
 <table class="caption-top table">
 <thead>
@@ -456,6 +599,10 @@ for R in range(4):
 </tbody>
 </table>
 </section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Now the proverb is fully accurate in this language - at least under a certain definition of “word”, a highly contentious <em>word</em> with lots of debate surrounding it (you’ll know this if you read about <a href="https://vaishnavs.net/posts/Morphology/">morphology</a>).</p>
+</section>
 <section id="further-information" class="level1">
 <h1>Further information</h1>
 <ul>
@@ -463,6 +610,7 @@ for R in range(4):
 <li><p>You can listen to the quadratic formula song <a href="https://www.youtube.com/watch?v=VOXYMRcWbF8">here</a>.</p></li>
 <li><p>The four-way voice/aspiration distinction for the whistled form of the blue component was inspired by the same distinction in <a href="https://en.wikipedia.org/wiki/Sanskrit#Consonants">Sanskrit</a>.</p></li>
 <li><p>Here are the <a href="https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words#History">origins</a> of the proverb “a picture is worth a thousand words”.</p></li>
+<li><p>You can see what I mean by Toki Pona being relatively easy to encode but harder to decode by <a href="https://wasona.com/">learning</a> it.</p></li>
 </ul>
 
 
@@ -817,7 +965,7 @@ for R in range(4):
 <p>Zorbbbb is a planet from an unknown solar system and galaxy, and it’s what the country, and in turn the language, is named after.</p>
 <p>Proto-Zorbbbb is what evolved later into Zorbbbb, and strongly influenced West Jikur Sign Language, and Limit. Some Limitian linguists believe that Proto-Zorbbbb may be the ancestor of Limit and WJSL, but it’s hard to prove. Zorbbbb is nowadays a dead language since Zorbbbbistan no longer exists, but many Proto-Zorbbbb resources are found in the corners of Limitland, in ancient Zorbbbbistani buildings. That’s good, because otherwise it would have been impossible to reconstruct it using Zorbbbb, which is completely different, and Limit and WJSL, which might not even be related to it.</p>
 <p>West Jikur is a city in rural Limitland inhabited by aliens who <em>can</em> process frequencies, just from mechanical oscillations rather than sound waves. More on that entire language in a future blog post.</p>
-<p>Zorbbbbistan and Limitland are countries that overlap in space (since Zorbbbbistan is from the past), and each has land that the other doesn’t have too.</p>
+<p>Ancient Limitland’s political boundaries coincided with the tectonic plate of Zorbbbb called the Limit Plate. Zorbbbbistan’s boundaries include parts of the Limit Plate (but not all of it, since other parts of it were inhospitable), as well as parts of some other tectonic plates.</p>
 <p>The Proto-Zorbbbbistanis invented their own orthography. Later, with the arrival of English to the planet Zorbbbb, they made their own romanization to teach newcomers their language, but the letter choices might seem nonsensical, since the Proto-Zorbbbbistanis didn’t formally learn the alphabet. There is a second romanization that is only used for typing (the default graph’s first letter).</p>
 <details>
 <summary>
@@ -914,19 +1062,19 @@ Fontmaking
 </thead>
 <tbody>
 <tr class="odd">
-<td>Inside Zorbbbbistan, inside Limitland</td>
+<td>Inside Zorbbbbistan, inside Limit Plate</td>
 <td>o a Ø u e</td>
 </tr>
 <tr class="even">
-<td>Inside Zorbbbbistan, outside Limitland</td>
+<td>Inside Zorbbbbistan, outside Limit Plate</td>
 <td>a Ø i o Ø</td>
 </tr>
 <tr class="odd">
-<td>Outside Zorbbbbistan, inside Limitland</td>
+<td>Outside Zorbbbbistan, inside Limit Plate</td>
 <td>u Ø i a Ø</td>
 </tr>
 <tr class="even">
-<td>Outside Zorbbbbistan, outside Limitland</td>
+<td>Outside Zorbbbbistan, outside Limit Plate</td>
 <td>e e o i a</td>
 </tr>
 </tbody>
@@ -4214,7 +4362,8 @@ Multiplication ==&gt; 2["2"]
 <section id="further-information" class="level1">
 <h1>Further Information</h1>
 <ul>
-<li>The Art of Language Invention by David J. Peterson has some amazing information about morphology, both in describing natlangs and making conlangs.</li>
+<li><p><a href="https://www.goodreads.com/en/book/show/24611649-the-art-of-language-invention">The Art of Language Invention</a> by David J. Peterson has some amazing information about morphology, both in describing natlangs and making conlangs. It’s great for understanding allomorphy, for example.</p></li>
+<li></li>
 </ul>
 
 
@@ -4349,6 +4498,8 @@ Cool fact to bore your friends with and be called a nerd!!!
 
  ]]></description>
   <category>Linguistics</category>
+  <category>Biology</category>
+  <category>Physics</category>
   <guid>https://vaishnavs.net/posts/Phonetics/</guid>
   <pubDate>Sun, 14 Sep 2025 07:00:00 GMT</pubDate>
 </item>
@@ -4491,114 +4642,6 @@ Cool fact to bore your friends with and be called a nerd!!!
   <category>Linguistics</category>
   <guid>https://vaishnavs.net/posts/The-IPA/</guid>
   <pubDate>Sun, 14 Sep 2025 07:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Writing Systems</title>
-  <dc:creator>Vaishnav Sudarshan</dc:creator>
-  <link>https://vaishnavs.net/posts/Writing-Systems/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Have you ever wondered how kids sing their “abc’s” in different places? In some places, kids sing their “alpha beta gamma’s” or their “alif baa jiim’s”, which are pretty similar to our own. In some places, kids recite their “ka kha ga gha nga’s”, quite different from our own. Yet in other places, such a song about their “alphabet” would be physically impossible, with kids thinking this is a preposterous and cruel joke. All of these are tricks for remembering letters, which are part of writing systems. Writing systems are also known as <a href="https://en.wikipedia.org/wiki/Orthography"><em>orthographies</em></a>. You already know at least one - the Latin alphabet, which you’re reading right now. Here’s an overview of how all the different writing systems work.</p>
-</section>
-<section id="phonetic-orthographies" class="level1">
-<h1>Phonetic Orthographies</h1>
-<p>In phonetic writing systems, symbols are written based on sound. For example, in the Latin alphabet, the word “cat” is written with a “c” for the “c” sound, “a” for the “a” sound, and “t” for the “t” sound. Of course, it’s not always one-to-one, or even consistent, in English itself (cough cough, “<em>cough</em>”), but the main point still stands - it’s based on sound. In our language, you wouldn’t draw an image of a cat to represent a cat, you’d just write “cat” based on the sounds of the word. Here are the types of phonetic writing systems:</p>
-<section id="alphabets" class="level2">
-<h2 class="anchored" data-anchor-id="alphabets">Alphabets</h2>
-<p>Alphabets work by having symbols for vowels and consonants, and they’re just written without really being treated as separate phonemes. These are arguably the simplest. Apart from the Latin alphabet, some others are Cyrillic, Greek, IPA, Georgian, Armenian, etc. Korean’s writing system, Hangeul, is kind of like an alphabet because it writes out its vowels and consonants, but it arranges each syllable into its own block. For example, the characters for “ba” would be 바, but the characters for “bo” would be 보. Furthermore, the characters for “bol” would be 볼. The word alphabet comes from the first to letters of Greek, alpha and beta.</p>
-</section>
-<section id="abjads" class="level2">
-<h2 class="anchored" data-anchor-id="abjads">Abjads</h2>
-<p>Most alphabets evolved from <a href="https://en.wikipedia.org/wiki/Abjad"><em>abjads</em></a>. Abjads are like alphabets, except usually, most of the vowels aren’t written, and instead inferred from context. Only long vowels are written. Sometimes, for clarity, the short vowels may be written in with diacritics. For example, in the Quran, even though the Arabic script is an abjad, all the vowels were written so that there aren’t any misinterpretations. The word “abjad” comes from the first sounds of the four letters of the Arabic script, “a”, “b”, “j”, and “d”, which is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”.</p>
-<p>The most prominent example of abjads are the orthographies of Semitic languages, which it works well for due to their triconsonantal root system, where consonants carry the meaning and vowels just modify the word. Hwvr, f y d ths n nglsh, t wll b prtt mssd p nd nt t ll ntllgbl.</p>
-</section>
-<section id="syllabaries" class="level2">
-<h2 class="anchored" data-anchor-id="syllabaries">Syllabaries</h2>
-<p>In <a href="https://en.wikipedia.org/wiki/Syllabary"><em>syllabaries</em></a>, each symbol is a syllable, usually a pair of consonant and vowel. These work well for languages that don’t have crazy consonant clusters, like Japanese and Cherokee. However, if a language has a lot of possible syllables due to its large phonology, then there would be way too many symbols. <a href="Hiragana_and_Katakana.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Chart showing the two syllabaries of Japanese source(https://cherryblossomstories.com/wp-content/uploads/2013/05/Hiragana-and-Katakana.jpg"><img src="https://vaishnavs.net/posts/Writing-Systems/Hiragana_and_Katakana.jpg" class="img-fluid" alt="Chart showing the two syllabaries of Japanese source(https://cherryblossomstories.com/wp-content/uploads/2013/05/Hiragana-and-Katakana.jpg"></a></p>
-</section>
-<section id="abugidas" class="level2">
-<h2 class="anchored" data-anchor-id="abugidas">Abugidas</h2>
-<p><a href="https://en.wikipedia.org/wiki/Abugida"><em>Abugidas</em></a>, in my opinion, are by far the coolest type of phonetic orthography. How it works is that if you write a consonant on its own, it comes with a vowel after it. For example, the /k/ sound in <a href="https://en.wikipedia.org/wiki/Devanagari"><em>Devanagari</em></a>, क, is actually pronounced /kə/ because without altering the consonant, it comes with an /ə/ sound. To make it a different vowel, you add a diacritic. So, /ke/ would be के. And, to make it just /k/ with no vowel, you make it क्. The most popular abugidas are from India, including Devanagiri, Tamil, Bengali, etc. However, the word “abugida” comes from the Ge’ez script from Ethiopia, where the first four letters are “a”, “bu”, “gi”, and “da” (and this arrangement is cognate with Greek’s “alpha”, “beta”, “gamma”, “delta”, just like with the word “Abjad”). Another notable abugida, apart from Indian scripts, Southeast Asian scripts, and the Ge’ez script, is the Cree script. For changing the vowel, Cree doesn’t actually add a diacritic, but instead modifies the consonant through rotations. Cree is actually partially inspired by Devanagiri.</p>
-</section>
-</section>
-<section id="semantic-orthographies" class="level1">
-<h1>Semantic Orthographies</h1>
-<p>Instead of writing symbols based on sound, some languages have orthographies where symbols are based on meaning.</p>
-<section id="logographies" class="level2">
-<h2 class="anchored" data-anchor-id="logographies">Logographies</h2>
-<p>The most common type of semantic writing system is a logography, and the most famous type of logography is <a href="https://en.wikipedia.org/wiki/Hanzi"><em>Hanzi</em></a> from Sinitic languages, which is also what Japanese’s Kanji is based on. For example, look at the symbol for “yi” in Mandarin or “ichi” in Japanese, which means “one”: “一” Now, for “er” in Mandarin or “ni” in Japanese, which means “two”: “二” So, sometimes, the symbol looks like what it means. However, many logographic symbols have evolved so much that they don’t seem to resemble what they mean. For example, “马” means “horse” (pronounced as “ma”). This looks nothing like a horse, but the ancient form of this symbol did.</p>
-<p>Sometimes, it can be more complicated than this. In Mandarin, each symbol is generally one syllable as well, and sometimes symbols are made based on their relation with other semantic meanings, so you can build up symbols from smaller symbols. For example, the symbol for “forest” is: 森 while the symbol for “tree” is: 木</p>
-<p>Also, symbols whose words sound similar can also be used for clarification. This is called the <em>rebus principle</em>. In Chinese, most characters contain a semantic part, like the symbol for “tree” that we saw, and also a phonetic part, that indicates how it’s pronounced. For example, the word for “mom”, “妈”, which is pronounced as “ma”, contains the symbol for “horse” (“马”) we saw earlier, since that too is pronounced as “ma”, even though “mom” has nothing to do with “horse” in terms of meaning. Only the left half actually semantically has anything to do with “mom”. Only a small percentage of Chinese characters are actually purely logographic - the vast majority follow the rebus principle. Therefore, it’s more accurate to call Hanzi a logo-syllabary, instead of a logography.</p>
-<p>Egyptian hieroglyphs were part logography, part phonetic as well. Some symbols worked just like the ancient form of Chinese, and others evolved into more of a syllabary or abjad.</p>
-</section>
-<section id="pictographies" class="level2">
-<h2 class="anchored" data-anchor-id="pictographies">Pictographies</h2>
-<p>Pictographies are kind of like logographies, except that it’s much more literal, without much evolution. Unlike Hanzi, where a lot of characters are derived from abstract connections, pictographies are literal depictions. This is likely where writing started first. An example is the Mayan script, where a lot of it was pictographic, but other symbols evolved into being logographic or syllabic. Also, even emojis are largely pictographic. However, pictographs, like logographs, still just represent words. <a href="mayan_inscription.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="A page showing the Mayan pictographies written down [source](https://3.bp.blogspot.com/_qTDAEasFLtU/S2bCBrxYEBI/AAAAAAAAG1A/eHIKTkXQ2gI/s1600/Tables+for+the+planet+Venus+duo.jpg"><img src="https://vaishnavs.net/posts/Writing-Systems/mayan_inscription.png" class="img-fluid" alt="A page showing the Mayan pictographies written down [source](https://3.bp.blogspot.com/_qTDAEasFLtU/S2bCBrxYEBI/AAAAAAAAG1A/eHIKTkXQ2gI/s1600/Tables+for+the+planet+Venus+duo.jpg"></a></p>
-</section>
-<section id="ideographies" class="level2">
-<h2 class="anchored" data-anchor-id="ideographies">Ideographies</h2>
-<p>Ideographies are another type of semantic orthography, where an idea or a concept is directly written, without being tied to a specific sound. For example, some street signs symbols that don’t have words but rather symbols, some of the more ancient Hanzi initially, or even some of the more abstract emojis as well are ideographies.</p>
-</section>
-</section>
-<section id="evolution-of-writing" class="level1">
-<h1>Evolution of writing</h1>
-<p>Many writing systems evolved from Egyptian hieroglyphs, to become primarily alphabets, abjads, or even abugidas. This is primarily in Europe, the Middle East, and North Africa, where Egypt indirectly influenced. For example, the European alphabets evolved from Ancient Greek’s alphabet (Latin through the Etruscan alphabet, which in turn came from the Ancient Greek alphabet), which evolved from Phoenecian’s abjad, which evolved from Egyptian hieroglyphs. Also, the Semitic abjads evolved from Phoenician’s abjad too. The Semitic languages are written from right to left, because it chose a direction to write from Phoenecian, which alternated. Ancient Greek also initially alternated directions line by line, but then chose to stick with only left to right, which all the European languages are written with now.</p>
-<p>In India, as well as some parts of Southeast Asia, including Myanmar, Laos, and Thailand, the orthography (all abugidas) of those languages evolved from the <em>Brahmi</em> script, which was an abugida. It’s not certain where the Brahmi script is from, though it’s suggested to come from Egyptian hieroglyphs too, but it could also be an artificially created script that evolved naturally.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="brahmi_script_qutub_minar.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, source"><img src="https://vaishnavs.net/posts/Writing-Systems/brahmi_script_qutub_minar.jpg" class="img-fluid figure-img" alt="An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, source"></a></p>
-<figcaption>An example of Brahmi script found on The Iron Pillar in Qutub Minar, New Delhi, <a href="https://live.staticflickr.com/2869/12901396153_374f862d10_b.jpg">source</a></figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Cool fact to bore your friends with and be called a nerd!!!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The Brahmi script was initially all straight lines and sharp angles. In South India, Southeast Asia, and Sri Lanka, the letters look more curvy, because they were written on leaves, so sharp turns and straight lines would tear the leaves. However, in North India, the letters can be more angular and sharp, but still also some curves, because they were written on both leaves and stone.</p>
-</div>
-</div>
-<p>In China and Japan, the characters are derived from the Ancient Chinese logographic characters. In Japan, there are three writing systems. Two are syllabaries derived from Chinese, and the other is the normal Chinese logography.</p>
-<p>In both Koreas, Hangeul is used. Hangeul is an artificially created script that was made to address the high percentage of illiteracy, due to the fact that Chinese characters were way to hard for the common people to learn. However, Hangeul was designed to be very simple.</p>
-<p>The Cherokee syllabary was made after one Native American looked at the European colonizers’ writing and tried to mimic the symbols to make a writing system for Cherokee. He’d seen both the Latin and Cyrillic scripts. However, the symbols in Cherokee that look similar to the European writing make completely different sounds, as he only knew the shape of the symbols, not what sound they made.</p>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>OK, that phonetic writing system stuff was cool, but you need to know how sounds actually work to use the symbols that represent them. Read <a href="https://vaishnavs.net/posts/Phonetics/">phonetics</a> to find out how!</p>
-</section>
-<section id="challenge-yourself-with-these-naclo-problems" class="level1">
-<h1>Challenge yourself with these NACLO problems</h1>
-<p>Also, now that you know about writing systems, try out these problems!</p>
-<p><a href="https://www.naclo.org/resources/problems/2007/N2007-D.pdf">Hmong</a></p>
-<p><a href="https://www.naclo.org/resources/problems/2021/N2021-K.pdf">Putting a Place to a Name</a></p>
-<p><a href="https://naclo.org/resources/problems/2025/N2025-E.pdf">Around the World in Armenian</a></p>
-<p>Unlike other blog posts where I put the problem right next to the corresponding information section, here I put them problems in their own section. This is because a big part of the problems is to find out what system they use.</p>
-</section>
-<section id="further-information" class="level1">
-<h1>Further Information</h1>
-<ul>
-<li><a href="https://sites.utexas.edu/dsb/tokens/the-evolution-of-writing/">This article</a> is</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>Linguistics</category>
-  <guid>https://vaishnavs.net/posts/Writing-Systems/</guid>
-  <pubDate>Sat, 23 Aug 2025 07:00:00 GMT</pubDate>
-  <media:content url="https://vaishnavs.net/posts/Writing-Systems/brahmi_script_qutub_minar.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

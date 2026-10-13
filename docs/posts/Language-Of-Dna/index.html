@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vaishnav Sudarshan">
+<meta name="dcterms.date" content="2026-10-12">
+
+<title>The Language of DNA – Vaishnav Sudarshan’s Blog on Cool Stuff</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f9e6e4d29af3f5f6ee06eaf03ed5edd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" src="https://umami-production-36aa.up.railway.app/script.js" data-website-id="6558c60e-1ff1-49ad-bd30-bbf782d457c7"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Vaishnav Sudarshan’s Blog on Cool Stuff</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../colophon.html"> 
+<span class="menu-text">Colophon</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io">
+ <span class="dropdown-text">Source code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/vaishnavsudarshan/vaishnavsudarshan.github.io/discussions/1">
+ <span class="dropdown-text">Discussion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://tinyurl.com/vaishnav-blog-stats"> <i class="bi bi-graph-up-arrow" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">The Language of DNA</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Linguistics</div>
+                <div class="quarto-category">Biology</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Vaishnav Sudarshan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Originally Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 12, 2026</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Last Updated</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">October 12, 2026</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      There is an entire “language” that encodes all of your genetic information. Although a lot of this content is not that niche, I’ll present it from a more linguistic perspective.
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>All the information that encodes your genes has to exist somewhere, right? Well, I’m pretty sure you know that place is DNA, in your cells. You probably heard of the genetic code too. In fact, if you’ve taken biology, you probably know this stuff in decent detail. I’m here to stretch how far we can view this as a language.</p>
+</section>
+<section id="the-chemistry-of-proteins-rna-and-dna" class="level1">
+<h1>The Chemistry of Proteins, RNA, and DNA</h1>
+<p>You know how the raw form of natural language is phones and sound waves - the stuff you’d see from either the Praat software or a very detailed anatomical procedure on how to pronounce a voiceless uvular-bilabial doubly articulated stop? Similarly, the raw form of genetic information is biochemistry.</p>
+<p>Biochemistry is centered around macromolecules. There are four main types, but the two we will care about are proteins and nucleic acids. Proteins are quite important for a <em>lot</em> of things - for example, speeding up reactions, transport, signaling, and structure, just to name a few. We can think of their functions like semantic reference - what we intend and think about when we say something.</p>
+<section id="proteins" class="level2">
+<h2 class="anchored" data-anchor-id="proteins">Proteins</h2>
+<p>Proteins are quite complicated. At the very surface level, it’s a sequence of amino acids.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="amino_acid.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Here is the structure of a single amino acid."><img src="amino_acid.png" class="img-fluid figure-img" alt="Here is the structure of a single amino acid."></a></p>
+<figcaption>Here is the structure of a single amino acid.</figcaption>
+</figure>
+</div>
+<p>Note that the <span class="math inline">\(R\)</span> isn’t a constant molecule. Rather, it’s a variable that represents the group that distinguishes all <span class="math inline">\(20\)</span> amino acids.</p>
+<p>However, proteins can fold to form structures, such as alpha helices or beta sheets, and the chemical properties of the environment determine how the <span class="math inline">\(R\)</span>-groups interact with each other, which determines the 3D shape, which determines the function. The relationship between shape and function might sound suspicious, but it actually makes sense - enzymes (a type of protein), for example, bind to a specific molecule called the substrate, allowing reactions to speed up. Binding is similar to putting together Lego pieces, so the shape of the enzyme must be very exact - otherwise, its shape will match with the wrong type of molecule (or no molecule at all), failing its function.</p>
+</section>
+<section id="dna-and-rna" class="level2">
+<h2 class="anchored" data-anchor-id="dna-and-rna">DNA and RNA</h2>
+<p>DNA and RNA are nucleic acids. Their main function is storing and transmitting information, which is why they are like a language. The NA stands for “nucleic acid”. So what does the first letter stand for? The D stands for deoxyribose, while the R stands for ribose. These are both sugars, except deoxyribose has one less oxygen atom than ribose. This isn’t the only difference. RNA has a single strand of nucleotides (bases with nitrogen in them), while DNA has two strands, making the double helix shape we all know and love.</p>
+</section>
+</section>
+<section id="the-part-resembling-language" class="level1">
+<h1>The part resembling language</h1>
+<section id="nucleotides" class="level2">
+<h2 class="anchored" data-anchor-id="nucleotides">Nucleotides</h2>
+<p>The bases are adenine, cytosine, guanine, and thymine in DNA. In RNA, it’s similar, except with uracil instead of thymine.</p>
+<p>Here’s what these bases look like:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="bases.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Here are the structures of the four bases."><img src="bases.png" class="img-fluid figure-img" alt="Here are the structures of the four bases."></a></p>
+<figcaption>Here are the structures of the four bases.</figcaption>
+</figure>
+</div>
+<p>Also, here is the <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/base.html">source</a> of this image.</p>
+<p>These can be represented by the first letters of their names: A, C, G, T, and U.</p>
+<p>These nitrogenous bases are called nucleotides. Long sequences of nucleotides create nucleic acids.</p>
+<p>We can write a DNA sequence as a string of letters, like this:</p>
+<p>5’ A T G C G T A A C G 3’ 3’ T A C G C A T T G C 5’</p>
+<p>The 3’ and 5’ are the direction of the strands, specifically which carbon is on either end (the 3’ is attached to a hydroxyl group, while the 5’ is attached to a phosphate group). Just know that if one strand is 5’ to 3’, the other strand is 3’ to 5’.</p>
+<p>You probably know that A always pairs with T, and C with G. But wouldn’t this be redundant, since the other strand gives the same information? Well, this redundancy serves as an error-correcting mechanism - if one nucleotide goes missing, its corresponding base on the other strand can tell which nucleotide it was.</p>
+</section>
+<section id="codons-and-the-genetic-code" class="level2">
+<h2 class="anchored" data-anchor-id="codons-and-the-genetic-code">Codons and the genetic code</h2>
+<p>A <em>codon</em> is a group of three consecutive nucleotides. The genetic code takes every three codons and maps it to an amino acid. Note that this is for codons of RNA, not DNA. While DNA is meant for long term storage, RNA is what is used to make proteins. By the way, it’s called transcription when DNA is written into RNA (fairly easily, since it’s just base-pairing rules), and translation when RNA is used to make proteins. I’ll get into the linguistics analogy in a bit.</p>
+<p>In translation, ribosomes (organelles to synthesize proteins) read each RNA codon from 5’ to 3’ and add a corresponding amino acid to the protein chain in progress.</p>
+<p>Now, here’s the part we’ve been waiting for - how codons really map to amino acids.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="genetic_code.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="The genetic code wheel, obtained from Wikipedia"><img src="genetic_code.png" class="img-fluid figure-img" alt="The genetic code wheel, obtained from Wikipedia"></a></p>
+<figcaption>The genetic code wheel, obtained from <a href="https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables#">Wikipedia</a></figcaption>
+</figure>
+</div>
+<p>You should note a few things. First, we read the nucleotide from the inside to the outside, since the inside is 5’ and the outside is 3’. Also, note how there are start and stop codons. It’s basically metadata! The ribosome will stop reading the RNA once it encounters either UAA, UAG, or UGA. The start codon AUG actually corresponds to the amino acid methionine, rather than nothing at all, since this starts off the amino acid chain.</p>
+<p>Think of nucleotides as phonetic features of a phone. Vowels and consonants can usually be written in three distinctive features - (height, backness, roundedness) or (place, manner, voice), respectively. Put them together and you get an entire phone. Similarly, codons are like phones, which must have three arguments defining them.</p>
+<p>Amino acids are like phonemes… <em>kind of</em>. They aren’t more abstract or anything, since they are just as physical. But a phoneme can be realized with multiple different phones, similar to how an amino acid can be encoded by multiple different codons. The analogy breaks down a tiny bit when you realize that the phonetic realizations of phonemes can be ambiguous. One phone might be the realization of two different phonemes (think about how in some accents of English, /n/ can sound like [m] before a /p/ or a /b/, but so would /m/, since that’s its default). However, evolution ensured the genetic code was unambiguous, since the organisms who had an ambiguous genetic code would die of getting the wrong proteins all the time! English wasn’t this drastic since mixing up phrases like “warm blanket” and “worn blanket” are pretty rare and not nearly as dangerous.</p>
+<p>Back to the genetic code… wait! It doesn’t seem very efficient! There are only <span class="math inline">\(20\)</span> amino acids, but there are <span class="math inline">\(61\)</span> codons (<span class="math inline">\(4^3=64\)</span>, but then subtract <span class="math inline">\(3\)</span> for the number of stop codons) that can correspond to amino acids! Well, remember how I said that the redundancy of two strands allows for error correction? Similarly, this does the same thing. If a nucleotide is wrong, there’s still a decent chance that the correct amino acid will be produced.</p>
+<p>How can a nucleotide go wrong, though? Glad you asked! That’s where mutations come in.</p>
+</section>
+</section>
+<section id="mutations" class="level1">
+<h1>Mutations</h1>
+<p>A mutation is when the sequence of nucleotides changes unexpectedly. The simplest is a point mutation, where a single nucleotide changes.</p>
+<p>Remember how the genetic code has a bit of redundancy? GUA and GUG map to the same amino acid, valine. That means if the third nucleotide in GUA becomes a G, we’re still good! This is a silent mutation, because it doesn’t annoy us with metaphorical loudness.</p>
+<p>If instead the second nucleotide became a C, we have GCA, or alanine. Because the amino acid changes, this is a missense mutation.</p>
+<p>Now if we have UAU that gets mutated to UAG, our tyrosine becomes a stop codon, meaning the ribosome stops reading the RNA and stops adding to the protein. Uh-oh! There is no way this biological skill issue really works - sounds like nonsense! No, really - it’s called a nonsense mutation.</p>
+<p>Things get a lot more annoying if we insert or delete stuff instead. After all, if sequences of nucleotides are strings, and we want to find the edit distance, we consider insertions and deletions as valid operations too, not just replacements. Since ribosomes read nucleotides in groups of three, this is a bit catastrophic, isn’t it?</p>
+<p>Think about this sequence:</p>
+<p><span class="math inline">\(5' \ \ \ U \ U \ C \ G \ A \ G \ A \ A \ C \ \ \ 3'\)</span></p>
+<p><span class="math inline">\(5' \ \ \ [U \ U \ C] \ \ [G \ C \ G] \ \ [A \ A \ C] \ \ \ 3'\)</span></p>
+<p><span class="math inline">\(\text{Phe} \ \ \text{Ala} \ \ \text{Asn}\)</span></p>
+<p>Now, suppose we add an extra uracil at position 4.</p>
+<p><span class="math inline">\(5' \ \ \ U \ U \ C \ U \ G \ A \ G \ A \ A \ C \ \ \ 3'\)</span></p>
+<p><span class="math inline">\(5' \ \ \ [U \ U \ C] \ \ [U \ G \ C] \ \ [G \ A \ A] \ \ C \ \ \ 3'\)</span></p>
+<p><span class="math inline">\(\text{Phe} \ \ \text{Cyc} \ \ \text{Glu} \ \ \text{???}\)</span></p>
+<p>Ouch! Now, unless there’s a lucky coincidence where the rest was just a string of “AAAAAAAAAAAA” (nah, that’s an extreme example; it’s a lot easier to be lucky for a single amino acid), the ribosome will make the wrong amino acid most of the time from now on, and the rest of the protein is cooked.</p>
+<p>There are other types of mutations that are a bit bigger and don’t just involve a single nucleotide. This includes repeating a section of the sequence, swapping a section, or reversing a section (duplication, translocation, or inversion, respectively). You can also have insertion and deletion of entire sections, rather than individual nucleotides.</p>
+<p>But hold on! Did you notice that a lot of these mutations seem similar to sound changes? If you’ve read <a href="https://vaishnavs.net/posts/Historical-Linguistics-2/">Historical Linguistics</a>, you might recall insertion or deletion as well, which work exactly the same. Metathesis is like swapping sections (except more for single phonemes rather than entire sequences), and reduplication (not really a common sound change, since it occurs more in morphological processes than phonological ones, but just to extend the analogy) is like repetition.</p>
+<p>While this analogy might excite you, there is a major flaw. Mutations are random and usually happen once on specific words, while sound changes systematically apply to all words at once. However, apart from that, the changes themselves are very analogous.</p>
+</section>
+<section id="evolution-and-other-related-analogies" class="level1">
+<h1>Evolution (and other related analogies)</h1>
+<section id="natural-selection" class="level2">
+<h2 class="anchored" data-anchor-id="natural-selection">Natural Selection</h2>
+<p>Evolution is in part based on mutations. Mutations allow genetic diversity in a population, and organisms with better genetics will likely survive and reproduce, shifting the population’s frequencies of certain alleles (forms of a gene).</p>
+<p>Consider the minions (100 of them) in Gru’s basement. Let’s say there’s a gene where the allele most minions have is to spot and grab bananas very slowly. However, a mutation gives one minion, Otto, a different form of this gene, making it a lot efficient in finding bananas. If Gru dumps a few bananas in his basement every now and then, Otto will be able to steal all the bananas, while the others will die of starvation. At first, only <span class="math inline">\(1 \%\)</span> of the minions in Gru’s basement have banana-eating efficiency. However, after, let’s say, <span class="math inline">\(95\)</span> of the minions die, Otto’s allele will be <span class="math inline">\(20 \%\)</span> of the population - a lot more. If Otto has children, and the allele is dominant (meaning any child of Otto will express this allele, regardless of the other parent), then more than <span class="math inline">\(20 \%\)</span> of the population will have this allele. Crazy how that happened, when we think about how a random mutation happened, affecting only <span class="math inline">\(1 \%\)</span> of the minions! Keep in mind that this situation is unrealistic and oversimplified, but it’s just to illustrate natural selection exaggeratedly.</p>
+<p>The thing is, the drivers of language evolution work a bit like this too! At least, we can model it that way. Not just sound changes, but any linguistic change. For example (mainly just phonological evolution), in the phrase “going to”, the velar nasal /ŋ/ got phonologically assimiliated to become the alveolar nasal /n/, since the /t/ is also alveolar. It’s more like “goin-to” at this point. The /u/ in “to” became more centralized, like /ə/. Then, the /t/ itself got reduced, so it sounds like (and I’ll show the full thing in the IPA this time) /goʊwɪnə/. The vowels did some funny stuff to almost neutralize, to get our final word “gonna”, pronounced /gənə/. Notice that each time, the pronunciation got a bit more efficient each time, so our mouths had to do a bit less work. With linguistic variation where one person pronounced “going to” with a bit more ease than another person, more people would gravitate towards the first person’s way of saying it. Again, the analogy breaks down a bit when we realize that the second person could have also adapted the easier way, which is not entirely how genes work.</p>
+</section>
+<section id="family-trees" class="level2">
+<h2 class="anchored" data-anchor-id="family-trees">Family Trees</h2>
+<p>I think a better tie between the evolution of languages and life would be when we examine prokaryotes. Since bacteria and archaebacteria reproduce with binary fission, their “children” would be genetically identical to them, <em>except</em> for mutations. While some eukaryotes can reproduce with mitosis (a bit more complicated than binary fission but similar goal), another issue is that individuals can’t exchange genetic information with one another. Bacteria have plasmids, or bits of DNA outside of them, that can be transferred between each other using something called a pilus.</p>
+<p>Do you see the similarities with languages? When one generation give their language to the next generation, it’s theoretically identical, except for some changes analogous to mutations - but there’s no systematic process to recombine parts of languages. I guess maybe creoles, but it could be thought of as analogous to a pilus instead. That’s my next point. People’s languages influence each other all the time - not just someone’s English with the friends’ English, but even loanwords between languages that most people would agree are distinct. Creoles, in a way, are just a very extreme case of loanwords, since the substrate kind of borrows most of its lexicon from the other language.</p>
+<p>As for families, biologists believe all life on Earth has a common ancestor. This would make the first cell on Earth analogous to the proto-language of a single family. Other language families would be more like alien life forms that evolved independently.</p>
+<p>You can even use the comparative method to reconstruct common ancestor DNA. For example, if you take a sequence of human nucleotides and a sequence of chimpanzee nucleotides, you can align the DNA (remember that insertions and deletions will cause gaps when you align them), and knowing what mutations likely happened can allow you to reconstruct the proteins of the most recent common ancestor.</p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Hopefully, you now understand the “linguistics” behind your genes, in a way. In the comments, feel free to share any other analogies you’ve noticed between the two fields!</p>
+</section>
+<section id="further-information" class="level1">
+<h1>Further Information</h1>
+<ul>
+<li><p>MIT’s course <a href="https://ocw.mit.edu/courses/24-901-introduction-to-phonology-spring-2026/">24.901 “Introduction to Phonology”</a> had the example of “warm blanket” versus “worn blanket” potentially being ambiguous.</p></li>
+<li><p>The evolution of “going to” as it became “gonna” is shown in David J. Peterson’s <a href="https://www.goodreads.com/en/book/show/24611649-the-art-of-language-invention">The Art of Language Invention</a>.</p></li>
+<li><p><a href="https://en.vectorbuilder.com/tool/sequence-alignment.html">This tool</a> allows you to align two sequences of DNA, which is important for…</p></li>
+<li><p>Doing the <a href="https://www.genome.gov/about-genomics/fact-sheets/Comparative-Genomics-Fact-Sheet">comparative method</a> on DNA!</p></li>
+<li><p>Here is <a href="https://www.quantamagazine.org/all-life-on-earth-today-descended-from-a-single-cell-meet-luca-20241120/">some deeper information</a> about how all life evolved from a single cell.</p></li>
+<li><p>Meanwhile, here’s some of the <a href="https://slate.com/human-interest/2014/08/origin-of-languages-tower-of-babel-proto-languages-and-the-brothers-grimm.html">analogous topic</a> in linguistics, which is a lot more debated.</p></li>
+<li><p><a href="https://www.polilingua.com/blog/post/creole-languages-origins-features.htm">This article</a> explains creoles in more depth.</p></li>
+<li><p>Here is some <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5041012/">history</a> behind the discovery of the genetic code.</p></li>
+<li><p>If you’re more curious about how proteins fold after their initial structure (a sequence of amino acids), you might find <a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold</a> interesting, as it’s an AI that can predict how a protein’s shape will change over time.</p></li>
+<li><p>This goes into a bit more <a href="https://www.genomicseducation.hee.nhs.uk/blog/reading-dna-where-to-start/">detail</a> about how the <span class="math inline">\(3'\)</span> and <span class="math inline">\(5'\)</span> orientations of DNA work.</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/vaishnavs\.net");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="light">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "vaishnavsudarshan/vaishnavsudarshan.github.io";
+    script.dataset.repoId = "R_kgDOzCjJQ";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDONzCjJc4C_jEt";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "bottom";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
