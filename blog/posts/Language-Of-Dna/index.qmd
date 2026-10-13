@@ -158,3 +158,4 @@ Hopefully, you now understand the "linguistics" behind your genes, in a way. In 
 * If you're more curious about how proteins fold after their initial structure (a sequence of amino acids), you might find [AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) interesting, as it's an AI that can predict how a protein's shape will change over time. 
 
 * This goes into a bit more [detail](https://www.genomicseducation.hee.nhs.uk/blog/reading-dna-where-to-start/) about how the $3'$ and $5'$ orientations of DNA work. 
+
